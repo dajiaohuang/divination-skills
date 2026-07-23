@@ -30,7 +30,7 @@ SOURCE_ID = "SRC-ZIWEI-PROJECT-SPEC-001"
 CALENDAR_SOURCE_ID = "SRC-ZIWEI-LUNARPY-001"
 LINEAGE = "project-native-ziwei-structural-v0.4"
 SCHEMA_VERSION = "0.4.0"
-ENGINE_VERSION = "0.4.0"
+ENGINE_VERSION = "0.4.1"
 MIN_YEAR = 1900
 MAX_YEAR = 2099
 
@@ -74,9 +74,7 @@ FIVE_ELEMENT_BUREAUS = {
     "土": ("土五局", 5),
     "火": ("火六局", 6),
 }
-NAYIN_ELEMENTS = tuple(
-    "金火木土金火水土金木水土火木水金火木土金火水土金木水土火木水"
-)
+NAYIN_ELEMENTS = tuple("金火木土金火水土金木水土火木水金火木土金火水土金木水土火木水")
 SOUL_RULERS = {
     "子": "贪狼",
     "丑": "巨门",
@@ -168,7 +166,9 @@ def _star_positions(
     soul_index: int,
 ) -> tuple[dict[int, list[str]], dict[int, list[str]], dict[int, list[str]]]:
     ziwei = _ziwei_index(lunar_day, bureau_number)
-    tianfu = (4 - ziwei) % 12
+    # PALACE_BRANCHES is indexed from 寅.  In that coordinate system 天府 is
+    # mirrored directly across the 12-palace ring from 紫微.
+    tianfu = (-ziwei) % 12
     major: dict[int, list[str]] = {index: [] for index in range(12)}
     minor: dict[int, list[str]] = {index: [] for index in range(12)}
     auxiliary: dict[int, list[str]] = {index: [] for index in range(12)}
@@ -232,8 +232,9 @@ def _star_positions(
         ("红鸾", (branch_index("卯") - year_offset) % 12),
         ("天喜", (branch_index("卯") - year_offset + 6) % 12),
         ("天德", (branch_index("酉") + year_offset) % 12),
-        ("月德", (branch_index("子") + year_offset) % 12),
-        ("解神", (branch_index("戌") - year_offset) % 12),
+        ("月德", (branch_index("巳") + year_offset) % 12),
+        ("年解", (branch_index("戌") - year_offset) % 12),
+        ("解神", branch_index(("申", "戌", "子", "寅", "辰", "午")[(lunar_month - 1) // 2])),
         ("天伤", (soul_index - role_index["仆役"]) % 12),
         ("天使", (soul_index - role_index["疾厄"]) % 12),
     )
@@ -387,9 +388,7 @@ def _normalize_input(
 
     time_index = _time_index(local.hour)
     basis_local = (
-        local + timedelta(days=1)
-        if time_index == 12 and late_zi_policy == "next_day"
-        else local
+        local + timedelta(days=1) if time_index == 12 and late_zi_policy == "next_day" else local
     )
     solar = Solar.fromYmdHms(
         basis_local.year,
@@ -579,9 +578,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
             "lineage": LINEAGE,
         },
         "computed_facts": {
-            "solar_date": (
-                f"{solar.getYear():04d}-{solar.getMonth():02d}-{solar.getDay():02d}"
-            ),
+            "solar_date": (f"{solar.getYear():04d}-{solar.getMonth():02d}-{solar.getDay():02d}"),
             "lunar_date": f"{lunar.getYear()}年{lunar_month_label}月{lunar.getDayInChinese()}",
             "chinese_date": f"{lunar.getYearInGanZhi()}年 {lunar.getTimeInGanZhi()}时",
             "raw_dates": {

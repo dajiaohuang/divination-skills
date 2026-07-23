@@ -4,7 +4,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-001",
-      "expected_output_sha256": "d84041e96e055f08f0a098be9e7c923a47880548f6526df1d78ebfd230b93c7e",
+      "expected_output_sha256": "ff469304a58cbdc2531ec8e3aca6ade64ae9cfbfd4e45e57b3c8d6532405bae8",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -22,7 +22,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-002",
-      "expected_output_sha256": "3d5608bf59ab2f6b51c9449a97be53ee1243bcd0553bc485d5cee1c1adbb623b",
+      "expected_output_sha256": "4e6b7c94bea7d2bef0cc4ceb7fa1a2d6077fb2fe70b3640549c812957760560c",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -40,7 +40,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-003",
-      "expected_output_sha256": "94b34d7526e166fcddd9ae86f52741aac922e398e798b64385c8ddd9573c2ee1",
+      "expected_output_sha256": "9eb68bd306f2908d59217c04ba7513d837763149eb2105ea80a4702e93a27af2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -58,7 +58,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-004",
-      "expected_output_sha256": "79f2643b9a8b0e8d9d3944ef0b29247c50bc4e66b1feabe14da02a9b98d0bca2",
+      "expected_output_sha256": "bb4ae72c79ec428d07e7cc92a9c71e2aaa5d6c841a0a8a858c4f6a5da4541cfc",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -76,7 +76,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-005",
-      "expected_output_sha256": "c43614662a8c78c00d6d38e485b118fd3a105baa5b81be3f9b5f020eb42c2012",
+      "expected_output_sha256": "90d920a348fa852f1f5873305a73619d5a3ae4de25b2114d44fbddddcf452277",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -94,7 +94,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-006",
-      "expected_output_sha256": "477b61fd3697dac79be1cc779b228e292facae67fecbb3c57aee8b01384aabed",
+      "expected_output_sha256": "81c3e62c5219e0075dd8d1a4b921b95442c85f107670d1654fd6e6ec9b3342a9",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -112,7 +112,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-007",
-      "expected_output_sha256": "3604f92d1658d65c6a23482b51acdded129aa129902d1249816488179e228664",
+      "expected_output_sha256": "e6c3cd0a0c4560c687360a3fb42f9a9d02efeb591251f80ccaf234e85be85976",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -130,7 +130,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-008",
-      "expected_output_sha256": "dadd9ddb7c3b32bba510aeb10ce45caf1b4627297d6b76d4e8e3b81fe2ddf8eb",
+      "expected_output_sha256": "2f0931f4e9fe677f3322d0e5b2e738957fdcc468c0acb032ae86abdc3b810b65",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -148,7 +148,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-009",
-      "expected_output_sha256": "7bab87a662e4b4040550dfc566206f5c4ed1bb987ee3b3bd983158acfda446c7",
+      "expected_output_sha256": "d11d836d568f25c0fb826b51a94819f14f2da9465d9e3026afd45ffacbde9423",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -166,7 +166,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-010",
-      "expected_output_sha256": "8b3c808cd51ba8e907b884bb3a320eebd301270f746a3faa254708d1d7e1d172",
+      "expected_output_sha256": "84104035c3798c6c7da9e2a43ae6edd49272bf2a5aae58702d6cb4124d30db34",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -184,7 +184,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-011",
-      "expected_output_sha256": "42b16aa68a6c37079dd6f188f4347fcef70ed3f0e567043d968049ff3be7d4a7",
+      "expected_output_sha256": "fc244e3dd647256a81e49fdbfb34dba019143ce160a355b461bca8e41e3448a2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -202,7 +202,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-012",
-      "expected_output_sha256": "7181efea1983cdf8b6246c85c1fc863c982dac07d45dba2e981208da03d29319",
+      "expected_output_sha256": "e5667b356fa170de28ce9d0b8a03edc590fde86f3366021db8bbd39a3a72d3c7",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -220,7 +220,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-013",
-      "expected_output_sha256": "40033c07098d949dae4f0d1df0ab7992e7f2126586b67c1b783b29be9d2eaf66",
+      "expected_output_sha256": "f985278bc301ced03cd03af9035e12dd1400eb26c18c3b1e4fc224303feab8fc",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -238,7 +238,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-014",
-      "expected_output_sha256": "d4e7d44e9292beaf8c8581d816340a824045e8ef7ea392ef53f24a505f16066a",
+      "expected_output_sha256": "34cdc49a9d2fe1cbbd8dfdee2937014c6ee90df4f3c949df3dd911b410ec7dbb",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -256,7 +256,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-015",
-      "expected_output_sha256": "508223284b2a3584686b6e46a5dbcbbabcad947b50b0cc9a83293c5fe8f42778",
+      "expected_output_sha256": "281d647af943c9af079ca6f98459694d29868a200c91caf472073a14d9df1a24",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -274,7 +274,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-016",
-      "expected_output_sha256": "b0c014d240538a271b476618d39f234481931391bb95c43988e493784b38a06f",
+      "expected_output_sha256": "df274aba765010bb501d2a0df2b61f5267f83a6c5543c606931e1ba47c19fed0",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -292,7 +292,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-017",
-      "expected_output_sha256": "c5b0a147f9ac2b6323371ebb7cf4f61f1db1c1c8faa16e1d2ada4fffb622b990",
+      "expected_output_sha256": "34d349dca9fcab43e52d99cf0b4218fa94dcc6660aee9933c35c17f6c75d4b4a",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -310,7 +310,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-018",
-      "expected_output_sha256": "902e5f67ea24e867f0bb40a05e7c73b0293b29bcc3cd6ed9df74f2bb946d74ea",
+      "expected_output_sha256": "0814a14eb629376ae0a2cab5369acd08d9a4b9838f7f1cd14ef6e4ca24c8a41a",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -328,7 +328,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-019",
-      "expected_output_sha256": "4b008878f7b18df3df1e1b615813a3d5616808348c95e3b8adbc4a20eb8fe611",
+      "expected_output_sha256": "ca9ad91fc3aede71df2ce77592902bfd4276b20f55b7c6b83d5585dfa1968ef3",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -346,7 +346,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-020",
-      "expected_output_sha256": "78dce19a69427d73e272bd7ca3c16059748d0b0772765e0c599a3c6676fac938",
+      "expected_output_sha256": "b1e7ffa2f8e84ac1452726bc3d21c8b5a988547be33be24cd56a82be72dafe93",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -364,7 +364,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-021",
-      "expected_output_sha256": "650741415765f7ee7470452ed9479806ed12a215afe86ec582fcbd75298016b6",
+      "expected_output_sha256": "3faa21a3423f1fc9d431f2265d6742a85dd4704b9e9d68538514fd860c4f13d7",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -382,7 +382,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-022",
-      "expected_output_sha256": "eceb9d33ee3dff99edd337db75e1857a4aeb5b671ffcc057ce8c0dbebeb62517",
+      "expected_output_sha256": "b5820f37d9f7aeb14e36c3ea1f337889fb8a88da8e43dc906bfe49aa3be503a7",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -400,7 +400,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-023",
-      "expected_output_sha256": "871d6c36b67f7cb17d8fbd10e4e248fcdbe20b289c9e61220db3568b13b10ad8",
+      "expected_output_sha256": "7f27b7d2adf3da1f0f49cd2801f699de6f2296d57650b62b4c4a82faa35821bf",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -418,7 +418,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-024",
-      "expected_output_sha256": "e65026d76e2f43e8f58ca52b5185ad5d51beaef2f7593701ec75c9f9f075d8b7",
+      "expected_output_sha256": "8a89c287a6c431ca1025c2c3aec4783e23f5f90890635aeec7c40a62699d3ce2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -436,7 +436,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-025",
-      "expected_output_sha256": "072c90f5050548ab7ee8748f378a0df00b63f19256abb63b569ed659781b9d91",
+      "expected_output_sha256": "4227fab03b83f4aba20139cec2de5852bbbf20883e4a8b281b33e4c3024e68f2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -454,7 +454,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-026",
-      "expected_output_sha256": "48ec0c26be07c81e39441479a2c5f85525b4037547365f5037c5ff98a3f6e1fa",
+      "expected_output_sha256": "3f4ef124d07aad66ed73074e7c71c955b17180443abced50cb030182a7c08720",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -472,7 +472,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-027",
-      "expected_output_sha256": "2e3015373deb22f48830a7152474654d24dfab7fa5aa3661d3e9615337b1b77a",
+      "expected_output_sha256": "d5ffa4fe017671e431ad6ce73e53d34d52368aea2da9f9e392d77ec878f7c83b",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -490,7 +490,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-028",
-      "expected_output_sha256": "077030f9fde8ce805c0757b513adea98366b398aeb5852657a96871e95d855a3",
+      "expected_output_sha256": "5cbaac2d41b8b52cdd92e7baab54d7898d345936bfc24d4f7d1319968ecbd693",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -508,7 +508,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-029",
-      "expected_output_sha256": "3b7088385e1fbb68a74f8b4858f9703c6e848b09f77c27a7218e0a23c88bb84f",
+      "expected_output_sha256": "41cbf36d0e5dc41d1089ac1b2c916c0404eb3d06e3d0d90c73ad2033ef7fa34c",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -526,7 +526,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-030",
-      "expected_output_sha256": "2952f1b9f9b6539d1ee21618237efdadab6d888c539ec812f005625f685564b4",
+      "expected_output_sha256": "3b55fdd76d314bfcbaf1445ce16cfb1e16fb1e2dd8ebb8a3404b2121bce800f0",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -544,7 +544,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-031",
-      "expected_output_sha256": "4826e49fa1a6c199b91906e478d78bc8acd8e157aaf5c952070265d6df124ae5",
+      "expected_output_sha256": "f2e324c521e0c3a016be719e698e1271c42c8d4c0394746cb42ee2f166543a37",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -562,7 +562,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-032",
-      "expected_output_sha256": "0ebefe0094065a7ef97de9e7b1b2798dbbf46838eb1c6c0ff48d899553aec90e",
+      "expected_output_sha256": "3a29b4e6d8e7d9910aa8531a1c9e2f4077c0eb153eeafc62eeb5db04302c0337",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -580,7 +580,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-033",
-      "expected_output_sha256": "a0ffb70c27e308978eec2bdbc4414be6ccdd11143c5b41c17660f6996d60c8b6",
+      "expected_output_sha256": "9b2322153ad452bff7cf5cfa9f60c8f31b939b8ade71a4aa0b207114dd3ee9ed",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -598,7 +598,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-034",
-      "expected_output_sha256": "a8e94bfec2ce756c15baa25309df646be276519774f072ea77c1cf8183e646f1",
+      "expected_output_sha256": "963df9b2b7a38441ea54592661327a4ed1ec5c756e7729c49199218804393ead",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -616,7 +616,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-035",
-      "expected_output_sha256": "0ca9dd6cb3a5de7d34d570ce4aedbf057f41d43d0144cbaf8fb9841d2b9cb4d2",
+      "expected_output_sha256": "2a0d85120dbd8d79cae0a4ab49eb99b7d11971bec0ef4470ad087c039b2e67dd",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -634,7 +634,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-036",
-      "expected_output_sha256": "62c24f35c2bb553f59b061caab3e1db574e0a18378fe202321725b3f8202e8d1",
+      "expected_output_sha256": "b6e4932a8d8e9a2b4328f5c9422c75f48acb3cb13fc623f272218197a64a27c1",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -652,7 +652,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-037",
-      "expected_output_sha256": "1224036062b64b370fc78a6230af0d828d99b7894fb5ccd37cc5ba902d4e6912",
+      "expected_output_sha256": "c10f99bf7168511252edf6d3ed0b60112c4a32711cf683efac5ef7f3ffa674b2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -670,7 +670,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-038",
-      "expected_output_sha256": "7afe99d0f5ed61ab9c238a37d38847a5732a7f104a0ec283791c1678a569bfd2",
+      "expected_output_sha256": "006cd7ed45f1bb8222b41082fa973dbd561ba67bb6e28957d52c142d71e38042",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -688,7 +688,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-039",
-      "expected_output_sha256": "1fc2534cdcd7ecb8a925729c11b8942fae54fa5d25a90d61b26c6bcc8456a994",
+      "expected_output_sha256": "b57cc8935eb6edc3db5cbf5ac3e3cd0e0449e79a10d7e04d01e29b32e9e2e8af",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -706,7 +706,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-040",
-      "expected_output_sha256": "2024a42b8aa5a85601076f32bbcb1137115b3d3a15e41d96d325ca9c56ec444b",
+      "expected_output_sha256": "f098f270f4ca542136451022e68e7554e33351b2c0c5ba79d3965317c0ce8642",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -724,7 +724,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-041",
-      "expected_output_sha256": "63bcada20ddcc66f170975e641d285d2f82d800c748c4acbebf22ed8344a5197",
+      "expected_output_sha256": "e1883b552a58c8d62d954ef2f31b997889d33e1ec88cae8fb683350b1d844a6a",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -742,7 +742,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-042",
-      "expected_output_sha256": "59a46eb8a70e07e11775e8a275fd8914729870d4b4b20a95c315d90efb307523",
+      "expected_output_sha256": "78a113189248c8781d41800d7c844042912b750d615515b7663452bae61bfc47",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -760,7 +760,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-043",
-      "expected_output_sha256": "6c3106aafc08e43e16c109eebcfb4d8f24f56597f28595edd9d217e9233e82d8",
+      "expected_output_sha256": "3368223803bcf5a8a91083afc7d4283800b88b399d9b40125c3b0e38271e3fbd",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -778,7 +778,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-044",
-      "expected_output_sha256": "e36ff9e9bca21a1d4e82cd70c2e81c77c19b99cbaa2ac1dd598ab7a55668a66b",
+      "expected_output_sha256": "a8dcd1e45220e9c7436b05292baa8ba4abb9c7c6852e559ebe51ce694683168b",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -796,7 +796,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-045",
-      "expected_output_sha256": "233786f075d5756b037657ec65d0e53d4187ac40b05bad6da7577d8e7d3c20fd",
+      "expected_output_sha256": "9fff657beff4b3c4e83f11e0f35ca1206b705dc48538ad651f6464c8cd020ba5",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -814,7 +814,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-046",
-      "expected_output_sha256": "ed7d4261db237c6a00e505e2da33518d631e0d1c31b31aedd8d2a10000ba8007",
+      "expected_output_sha256": "c8ff12805d29e0ad3cb8277c72f35f38e9dacabb6868f10e8ef9fd628f140a0b",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -832,7 +832,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-047",
-      "expected_output_sha256": "c51824015472d7e4789233037d0e49b920ac891477d9e4226c6529dfdeb7868d",
+      "expected_output_sha256": "9f0cc2ada49d0faf26b4d2eee80222bc1285931bd2dd8624ac264d32af317472",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -850,7 +850,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-048",
-      "expected_output_sha256": "3771576e7dbffbbdfae595f2d286e343ba8b92f335a09bdcc5794b227367c4c8",
+      "expected_output_sha256": "8d71c9a4be32744cc200091cbce56401b778f291a829595cdbde67d7c70dd1cf",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -868,7 +868,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-049",
-      "expected_output_sha256": "0be2852232a92c28371a1f38c6f2274bb6a1b713c4bae9fd2464127715d1e472",
+      "expected_output_sha256": "9cbc4e480299d828dcacdacfc45be44fd15765e24ec4536d93ea94e5e208969e",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -886,7 +886,7 @@
     {
       "accepted": false,
       "candidate_id": "BAZI-SYNASTRY-EXPERT-050",
-      "expected_output_sha256": "c92680714b08c5e90d1b450fab951d65d61effb297a909dd0e321de244249e9c",
+      "expected_output_sha256": "96d178697ca97c0ce9f5824ed6dbafe0668bf24196466b7beb4525e381e54bbe",
       "review": {
         "decision": "pending",
         "notes": "",

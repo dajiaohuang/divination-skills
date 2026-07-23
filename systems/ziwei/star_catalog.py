@@ -59,6 +59,7 @@ for _name, _category, _element in (
     ("天喜", "romance", "水"),
     ("天德", "resolution", "火"),
     ("月德", "resolution", "火"),
+    ("年解", "resolution", "木"),
     ("解神", "resolution", "木"),
     ("天伤", "auxiliary", None),
     ("天使", "auxiliary", None),

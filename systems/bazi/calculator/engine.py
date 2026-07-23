@@ -12,7 +12,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from lunar_python import Solar
 
 ENGINE_NAME = "divination-skills-bazi"
-ENGINE_VERSION = "0.1.0"
+ENGINE_VERSION = "0.1.1"
 MIN_YEAR = 1900
 MAX_YEAR = 2100
 BEIJING = ZoneInfo("Asia/Shanghai")
@@ -54,9 +54,51 @@ JIE_TERMS = (
 )
 
 PAIR_RELATIONS = {
-    "combine": (("子", "丑"), ("寅", "亥"), ("卯", "戌"), ("辰", "酉"), ("巳", "申"), ("午", "未")),
-    "clash": (("子", "午"), ("丑", "未"), ("寅", "申"), ("卯", "酉"), ("辰", "戌"), ("巳", "亥")),
-    "harm": (("子", "未"), ("丑", "午"), ("寅", "巳"), ("卯", "辰"), ("申", "亥"), ("酉", "戌")),
+    "combine": (
+        ("子", "丑"),
+        ("寅", "亥"),
+        ("卯", "戌"),
+        ("辰", "酉"),
+        ("巳", "申"),
+        ("午", "未"),
+    ),
+    "clash": (
+        ("子", "午"),
+        ("丑", "未"),
+        ("寅", "申"),
+        ("卯", "酉"),
+        ("辰", "戌"),
+        ("巳", "亥"),
+    ),
+    "harm": (
+        ("子", "未"),
+        ("丑", "午"),
+        ("寅", "巳"),
+        ("卯", "辰"),
+        ("申", "亥"),
+        ("酉", "戌"),
+    ),
+    "break": (
+        ("子", "酉"),
+        ("丑", "辰"),
+        ("寅", "亥"),
+        ("卯", "午"),
+        ("巳", "申"),
+        ("未", "戌"),
+    ),
+    # Only the two pairs containing each harmony group's cardinal branch are
+    # labeled half_harmony.  The remaining birth–tomb pair is an arching
+    # relation in some lineages and is intentionally not collapsed into it.
+    "half_harmony": (
+        ("申", "子"),
+        ("子", "辰"),
+        ("亥", "卯"),
+        ("卯", "未"),
+        ("寅", "午"),
+        ("午", "戌"),
+        ("巳", "酉"),
+        ("酉", "丑"),
+    ),
 }
 
 THREE_HARMONIES = (

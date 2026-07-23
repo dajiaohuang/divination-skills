@@ -1,7 +1,7 @@
 {
   "analysis_id": "ANALYSIS-BAZI-040",
   "case_id": "CASE-BAZI-STANDARD-040",
-  "computed_facts_sha256": "e4ad77573ac931be93f1a0dc8ac59d8ba705a36626028cb7caf06fc8ebfc06f4",
+  "computed_facts_sha256": "7589731108a1b1f4936a2c4d9b9cce9c22fd57bd1c7a54e06401a6d7f07c0e1f",
   "data_classification": "synthetic",
   "reasoning_chain": [
     {
@@ -80,6 +80,17 @@
       ],
       "section": "symbolic_relationships",
       "statement": "Ten Gods are relational labels calculated from the day stem; no event claim is added."
+    },
+    {
+      "claim_id": "CLAIM-008",
+      "fact_ids": [
+        "bazi.branch_relation.001"
+      ],
+      "rule_ids": [
+        "BAZI-FACT-BRANCH-REL-001"
+      ],
+      "section": "symbolic_relationships",
+      "statement": "Recorded branch relation half_harmony connects year, day."
     }
   ],
   "review": {

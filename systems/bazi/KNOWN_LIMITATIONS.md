@@ -12,3 +12,5 @@
 - Rectification scans double-hour ranges only and returns `underdetermined` when retained events
   cannot separate candidates; it cannot establish a unique minute.
 - Reader and validator accept structured JSON or explicit four-pillar text only, not OCR/PDF.
+- The user-supplied external regression covers one chart; its unreported provider/version prevents
+  broader compatibility claims.

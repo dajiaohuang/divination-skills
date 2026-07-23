@@ -1,7 +1,7 @@
 {
   "analysis_id": "ANALYSIS-BAZI-016",
   "case_id": "CASE-BAZI-STANDARD-016",
-  "computed_facts_sha256": "4d2a2d3b4cb20d27a04c9bf67c645f34424f60f17e5c4e24dbb640bc0e1647a2",
+  "computed_facts_sha256": "e06d282f7dcddd208d62613d516630389c13c520d75cc99bc95bd5de058ccdd9",
   "data_classification": "synthetic",
   "reasoning_chain": [
     {
@@ -90,7 +90,29 @@
         "BAZI-FACT-BRANCH-REL-001"
       ],
       "section": "symbolic_relationships",
+      "statement": "Recorded branch relation break connects year, month."
+    },
+    {
+      "claim_id": "CLAIM-009",
+      "fact_ids": [
+        "bazi.branch_relation.002"
+      ],
+      "rule_ids": [
+        "BAZI-FACT-BRANCH-REL-001"
+      ],
+      "section": "symbolic_relationships",
       "statement": "Recorded branch relation combine connects year, day."
+    },
+    {
+      "claim_id": "CLAIM-010",
+      "fact_ids": [
+        "bazi.branch_relation.003"
+      ],
+      "rule_ids": [
+        "BAZI-FACT-BRANCH-REL-001"
+      ],
+      "section": "symbolic_relationships",
+      "statement": "Recorded branch relation half_harmony connects month, day."
     }
   ],
   "review": {

@@ -2,7 +2,7 @@
   "case_id": "CASE-BAZI-RECTIFIER-006",
   "category": "standard",
   "data_classification": "synthetic",
-  "expected_sha256": "d63d672e1d57a888d36f872ffdcd1a80392926f61ef8ece057ffa0a140984474",
+  "expected_sha256": "4d09273fdd24bd3dfd95c5c099d8219c93c3c1fd54dc8d10c1f3f6f67daf398b",
   "input": {
     "birth_date": "1985-01-15",
     "day_boundary": "midnight",

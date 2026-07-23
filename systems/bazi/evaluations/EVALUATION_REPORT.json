@@ -65,7 +65,7 @@
     "lineage": {
       "cross_system_contamination_rate": {
         "comparison": "maximum",
-        "denominator": 882,
+        "denominator": 1008,
         "evidence": [
           "systems/bazi/rules",
           "systems/bazi/LINEAGE.md"
@@ -79,24 +79,24 @@
     "narrative": {
       "citation_completeness": {
         "comparison": "minimum",
-        "denominator": 882,
+        "denominator": 1008,
         "evidence": [
           "systems/bazi/core/report.py",
           "systems/bazi/core/tests/test_report.py"
         ],
-        "numerator": 882,
+        "numerator": 1008,
         "passed": true,
         "threshold": 1.0,
         "value": 1.0
       },
       "fact_reference_validity": {
         "comparison": "minimum",
-        "denominator": 882,
+        "denominator": 1008,
         "evidence": [
           "systems/bazi/core/report.py",
           "systems/bazi/core/tests/test_report.py"
         ],
-        "numerator": 882,
+        "numerator": 1008,
         "passed": true,
         "threshold": 1.0,
         "value": 1.0
@@ -117,7 +117,7 @@
       },
       "unknown_rule_misuse_rate": {
         "comparison": "maximum",
-        "denominator": 882,
+        "denominator": 1008,
         "evidence": [
           "systems/bazi/rules",
           "systems/bazi/core/report.py"

@@ -1,0 +1,98 @@
+{
+  "case_id": "CASE-BAZI-USER-001",
+  "classification": "non_authoritative_user_supplied_reference",
+  "provider": {
+    "name": "user-supplied Bazi skill output",
+    "version": "not_reported"
+  },
+  "input": {
+    "day_boundary": "midnight",
+    "local_datetime": "1999-09-15T19:11:00",
+    "longitude": 119.917,
+    "luck_cycle_direction": "forward",
+    "timezone": "Asia/Shanghai"
+  },
+  "reported_input": {
+    "calendar": "solar",
+    "gender": "female",
+    "lunar_label": "1999年八月初六 戌时",
+    "time_basis": "reported_true_solar_time"
+  },
+  "expected": {
+    "day_master": "庚",
+    "luck_cycle_display_start_year": 2007,
+    "luck_cycle_pillars": [
+      "甲戌",
+      "乙亥",
+      "丙子",
+      "丁丑",
+      "戊寅",
+      "己卯",
+      "庚辰",
+      "辛巳",
+      "壬午",
+      "癸未"
+    ],
+    "luck_cycle_start_age_years": 7.758646,
+    "pillars": {
+      "day": "庚午",
+      "hour": "丙戌",
+      "month": "癸酉",
+      "year": "己卯"
+    },
+    "primary_hidden_ten_gods": {
+      "day": "正官",
+      "hour": "偏印",
+      "month": "劫财",
+      "year": "正财"
+    },
+    "relations": [
+      {
+        "branches": ["卯", "酉"],
+        "positions": ["year", "month"],
+        "type": "clash"
+      },
+      {
+        "branches": ["卯", "午"],
+        "positions": ["year", "day"],
+        "type": "break"
+      },
+      {
+        "branches": ["卯", "戌"],
+        "positions": ["year", "hour"],
+        "type": "combine"
+      },
+      {
+        "branches": ["酉", "戌"],
+        "positions": ["month", "hour"],
+        "type": "harm"
+      },
+      {
+        "branches": ["午", "戌"],
+        "positions": ["day", "hour"],
+        "type": "half_harmony"
+      }
+    ],
+    "visible_ten_gods": {
+      "day": "比肩",
+      "hour": "七杀",
+      "month": "伤官",
+      "year": "正印"
+    }
+  },
+  "comparison_policy": {
+    "luck_cycle_prefix_count": 8,
+    "transformation_claims": "not_inferred_from_a_branch_pair_alone",
+    "true_solar_time": "the reported corrected time is used as explicit input; the engine does not calculate the correction"
+  },
+  "not_compared": [
+    "growth_phases",
+    "nayin",
+    "strength",
+    "structure",
+    "climate_useful_gods",
+    "stem_relations",
+    "cut_feet",
+    "repeated_pillars"
+  ]
+}

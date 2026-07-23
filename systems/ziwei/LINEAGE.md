@@ -15,3 +15,8 @@ described as identity.
 Dynamic rotations are a named project-native structural policy, not a universal Ziwei standard.
 Brightness remains unavailable. iztro 2.5.8 is reference-only and cannot define, execute, test, or
 ship the production lineage.
+
+A user-supplied 文墨天机 API 1.1.5 / App 2.5.20 export is retained as a non-authoritative regression
+reference. It independently exposed the 天府 coordinate error and corroborates the repaired
+fourteen-major-star layout for one chart. One external chart is not practitioner acceptance or
+broad cross-lineage validation.

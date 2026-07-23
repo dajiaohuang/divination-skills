@@ -12,3 +12,5 @@
 - Synastry is limited to project-native structural palace/star comparisons; it does not contain a
   practitioner-approved compatibility or relationship-outcome rule set.
 - iztro is an ignored comparison reference only and cannot be used to fill missing runtime facts.
+- The 文墨天机 regression currently covers one chart and cannot establish cross-version or
+  cross-school equivalence.

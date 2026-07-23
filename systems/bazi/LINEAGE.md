@@ -35,3 +35,7 @@ Each is represented in `disputes/`; product output must disclose any non-default
 Solar-term geometry is checked against the Hong Kong Observatory description that the 24 terms are spaced at 15-degree ecliptic-longitude intervals. Timestamp-aware behavior is compared against `lunar-python`; an independent `sxtwl-modern` implementation agrees on all four pillars for 17 non-boundary-date standard cases. Its day-level API cannot adjudicate the exact instant on a Jie date, so those three exclusions are recorded in `tests/COMPARATOR_REPORT.md`. Classical interpretive claims remain out of scope until accepted sources and expert review are available.
 
 The opt-in seasonal-support path is defined only by `strength/SEASONAL_SUPPORT_SPEC.md`. Its labels must not be presented as canonical Ziping conclusions or used to select useful gods.
+
+A user-supplied external Bazi Skill export additionally corroborates one 1999 chart's four pillars,
+Ten Gods, five branch relations, and forward luck-cycle prefix. Its provider and version were not
+reported, so it remains a non-authoritative regression reference rather than a production source.

@@ -12,8 +12,8 @@
           "ziwei.palace.000.auxiliaryStars.003",
           "ziwei.palace.000.auxiliaryStars.004",
           "ziwei.palace.000.auxiliaryStars.005",
-          "ziwei.palace.000.auxiliaryStars.006",
           "ziwei.palace.000.majorStars.001",
+          "ziwei.palace.000.majorStars.002",
           "ziwei.palace.004",
           "ziwei.palace.006",
           "ziwei.palace.008"
@@ -40,6 +40,7 @@
           "ziwei.palace.001.auxiliaryStars.003",
           "ziwei.palace.001.auxiliaryStars.004",
           "ziwei.palace.001.auxiliaryStars.005",
+          "ziwei.palace.001.majorStars.001",
           "ziwei.palace.005",
           "ziwei.palace.007",
           "ziwei.palace.009"
@@ -96,6 +97,7 @@
           "ziwei.palace.003.auxiliaryStars.004",
           "ziwei.palace.003.auxiliaryStars.005",
           "ziwei.palace.003.auxiliaryStars.006",
+          "ziwei.palace.003.majorStars.001",
           "ziwei.palace.003.minorStars.001",
           "ziwei.palace.007",
           "ziwei.palace.009",
@@ -160,6 +162,7 @@
           "ziwei.palace.005.auxiliaryStars.007",
           "ziwei.palace.005.auxiliaryStars.008",
           "ziwei.palace.005.auxiliaryStars.009",
+          "ziwei.palace.005.auxiliaryStars.010",
           "ziwei.palace.005.majorStars.001",
           "ziwei.palace.009",
           "ziwei.palace.011"
@@ -191,6 +194,7 @@
           "ziwei.palace.006.auxiliaryStars.006",
           "ziwei.palace.006.auxiliaryStars.007",
           "ziwei.palace.006.auxiliaryStars.008",
+          "ziwei.palace.006.auxiliaryStars.009",
           "ziwei.palace.006.majorStars.001",
           "ziwei.palace.006.minorStars.001",
           "ziwei.palace.010"
@@ -220,7 +224,6 @@
           "ziwei.palace.007.auxiliaryStars.004",
           "ziwei.palace.007.auxiliaryStars.005",
           "ziwei.palace.007.majorStars.001",
-          "ziwei.palace.007.majorStars.002",
           "ziwei.palace.007.minorStars.001",
           "ziwei.palace.011"
         ],
@@ -250,8 +253,7 @@
           "ziwei.palace.008.auxiliaryStars.004",
           "ziwei.palace.008.auxiliaryStars.005",
           "ziwei.palace.008.auxiliaryStars.006",
-          "ziwei.palace.008.majorStars.001",
-          "ziwei.palace.008.majorStars.002"
+          "ziwei.palace.008.majorStars.001"
         ],
         "finding_id": "ziwei.finding.core.palace-008",
         "finding_type": "ziwei.structural_palace_summary",
@@ -279,8 +281,7 @@
           "ziwei.palace.009.auxiliaryStars.004",
           "ziwei.palace.009.auxiliaryStars.005",
           "ziwei.palace.009.auxiliaryStars.006",
-          "ziwei.palace.009.majorStars.001",
-          "ziwei.palace.009.majorStars.002"
+          "ziwei.palace.009.majorStars.001"
         ],
         "finding_id": "ziwei.finding.core.palace-009",
         "finding_type": "ziwei.structural_palace_summary",
@@ -398,9 +399,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.005",
+        "target_palace_fact_id": "ziwei.palace.001",
         "target_star": "太阴",
-        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.001.majorStars.001",
         "transformation": "科"
       },
       {
@@ -432,9 +433,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.007",
+        "target_palace_fact_id": "ziwei.palace.003",
         "target_star": "巨门",
-        "target_star_fact_id": "ziwei.palace.007.majorStars.002",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
         "transformation": "禄"
       },
       {
@@ -500,9 +501,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.009",
+        "target_palace_fact_id": "ziwei.palace.005",
         "target_star": "天梁",
-        "target_star_fact_id": "ziwei.palace.009.majorStars.002",
+        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
         "transformation": "禄"
       },
       {
@@ -568,9 +569,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.002",
+        "target_palace_fact_id": "ziwei.palace.010",
         "target_star": "破军",
-        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
         "transformation": "禄"
       },
       {
@@ -580,14 +581,14 @@
           "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
         ],
         "scope": "palace_stem",
-        "self_transformation": false,
+        "self_transformation": true,
         "source_ids": [
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.007",
+        "target_palace_fact_id": "ziwei.palace.003",
         "target_star": "巨门",
-        "target_star_fact_id": "ziwei.palace.007.majorStars.002",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
         "transformation": "权"
       },
       {
@@ -602,9 +603,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.005",
+        "target_palace_fact_id": "ziwei.palace.001",
         "target_star": "太阴",
-        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.001.majorStars.001",
         "transformation": "科"
       },
       {
@@ -619,9 +620,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.006",
+        "target_palace_fact_id": "ziwei.palace.002",
         "target_star": "贪狼",
-        "target_star_fact_id": "ziwei.palace.006.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
         "transformation": "忌"
       },
       {
@@ -653,9 +654,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.002",
+        "target_palace_fact_id": "ziwei.palace.010",
         "target_star": "破军",
-        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
         "transformation": "权"
       },
       {
@@ -716,14 +717,14 @@
           "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
         ],
         "scope": "palace_stem",
-        "self_transformation": false,
+        "self_transformation": true,
         "source_ids": [
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.009",
+        "target_palace_fact_id": "ziwei.palace.005",
         "target_star": "天梁",
-        "target_star_fact_id": "ziwei.palace.009.majorStars.002",
+        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
         "transformation": "权"
       },
       {
@@ -750,14 +751,14 @@
           "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
         ],
         "scope": "palace_stem",
-        "self_transformation": true,
+        "self_transformation": false,
         "source_ids": [
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.005",
+        "target_palace_fact_id": "ziwei.palace.001",
         "target_star": "太阴",
-        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.001.majorStars.001",
         "transformation": "忌"
       },
       {
@@ -840,9 +841,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.005",
+        "target_palace_fact_id": "ziwei.palace.001",
         "target_star": "太阴",
-        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.001.majorStars.001",
         "transformation": "禄"
       },
       {
@@ -886,14 +887,14 @@
           "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
         ],
         "scope": "palace_stem",
-        "self_transformation": true,
+        "self_transformation": false,
         "source_ids": [
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.007",
+        "target_palace_fact_id": "ziwei.palace.003",
         "target_star": "巨门",
-        "target_star_fact_id": "ziwei.palace.007.majorStars.002",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
         "transformation": "忌"
       },
       {
@@ -908,9 +909,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.006",
+        "target_palace_fact_id": "ziwei.palace.002",
         "target_star": "贪狼",
-        "target_star_fact_id": "ziwei.palace.006.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
         "transformation": "禄"
       },
       {
@@ -925,9 +926,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.005",
+        "target_palace_fact_id": "ziwei.palace.001",
         "target_star": "太阴",
-        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.001.majorStars.001",
         "transformation": "权"
       },
       {
@@ -993,9 +994,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.006",
+        "target_palace_fact_id": "ziwei.palace.002",
         "target_star": "贪狼",
-        "target_star_fact_id": "ziwei.palace.006.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
         "transformation": "权"
       },
       {
@@ -1005,14 +1006,14 @@
           "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
         ],
         "scope": "palace_stem",
-        "self_transformation": true,
+        "self_transformation": false,
         "source_ids": [
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.009",
+        "target_palace_fact_id": "ziwei.palace.005",
         "target_star": "天梁",
-        "target_star_fact_id": "ziwei.palace.009.majorStars.002",
+        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
         "transformation": "科"
       },
       {
@@ -1078,9 +1079,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.005",
+        "target_palace_fact_id": "ziwei.palace.001",
         "target_star": "太阴",
-        "target_star_fact_id": "ziwei.palace.005.majorStars.001",
+        "target_star_fact_id": "ziwei.palace.001.majorStars.001",
         "transformation": "科"
       },
       {
@@ -1112,9 +1113,9 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "target_palace_fact_id": "ziwei.palace.007",
+        "target_palace_fact_id": "ziwei.palace.003",
         "target_star": "巨门",
-        "target_star_fact_id": "ziwei.palace.007.majorStars.002",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
         "transformation": "禄"
       },
       {
@@ -1179,8 +1180,8 @@
           "ziwei.palace.000.auxiliaryStars.003",
           "ziwei.palace.000.auxiliaryStars.004",
           "ziwei.palace.000.auxiliaryStars.005",
-          "ziwei.palace.000.auxiliaryStars.006",
           "ziwei.palace.000.majorStars.001",
+          "ziwei.palace.000.majorStars.002",
           "ziwei.palace.004",
           "ziwei.palace.006",
           "ziwei.palace.008"
@@ -1200,7 +1201,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "田宅位于寅宫；主星为紫微。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "田宅位于寅宫；主星为紫微、天府。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.property"
       },
       {
@@ -1211,11 +1212,12 @@
           "ziwei.palace.001.auxiliaryStars.003",
           "ziwei.palace.001.auxiliaryStars.004",
           "ziwei.palace.001.auxiliaryStars.005",
+          "ziwei.palace.001.majorStars.001",
           "ziwei.palace.005",
           "ziwei.palace.007",
           "ziwei.palace.009"
         ],
-        "is_empty_major_palace": true,
+        "is_empty_major_palace": false,
         "label": "官禄",
         "limitations": [
           "No fixed event is inferred from this structure.",
@@ -1230,7 +1232,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "官禄位于卯宫；主星为空宫。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "官禄位于卯宫；主星为太阴。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.career"
       },
       {
@@ -1263,7 +1265,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "仆役位于辰宫；主星为破军。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "仆役位于辰宫；主星为贪狼。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.associates"
       },
       {
@@ -1275,12 +1277,13 @@
           "ziwei.palace.003.auxiliaryStars.004",
           "ziwei.palace.003.auxiliaryStars.005",
           "ziwei.palace.003.auxiliaryStars.006",
+          "ziwei.palace.003.majorStars.001",
           "ziwei.palace.003.minorStars.001",
           "ziwei.palace.007",
           "ziwei.palace.009",
           "ziwei.palace.011"
         ],
-        "is_empty_major_palace": true,
+        "is_empty_major_palace": false,
         "label": "迁移",
         "limitations": [
           "No fixed event is inferred from this structure.",
@@ -1295,7 +1298,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "迁移位于巳宫；主星为空宫。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "迁移位于巳宫；主星为巨门。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.travel"
       },
       {
@@ -1331,7 +1334,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "疾厄位于午宫；主星为廉贞、天府。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "疾厄位于午宫；主星为廉贞、天相。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.health"
       },
       {
@@ -1347,6 +1350,7 @@
           "ziwei.palace.005.auxiliaryStars.007",
           "ziwei.palace.005.auxiliaryStars.008",
           "ziwei.palace.005.auxiliaryStars.009",
+          "ziwei.palace.005.auxiliaryStars.010",
           "ziwei.palace.005.majorStars.001",
           "ziwei.palace.009",
           "ziwei.palace.011"
@@ -1366,7 +1370,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "财帛位于未宫；主星为太阴。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "财帛位于未宫；主星为天梁。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.wealth"
       },
       {
@@ -1382,6 +1386,7 @@
           "ziwei.palace.006.auxiliaryStars.006",
           "ziwei.palace.006.auxiliaryStars.007",
           "ziwei.palace.006.auxiliaryStars.008",
+          "ziwei.palace.006.auxiliaryStars.009",
           "ziwei.palace.006.majorStars.001",
           "ziwei.palace.006.minorStars.001",
           "ziwei.palace.010"
@@ -1401,7 +1406,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "子女位于申宫；主星为贪狼。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "子女位于申宫；主星为七杀。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.children"
       },
       {
@@ -1415,7 +1420,6 @@
           "ziwei.palace.007.auxiliaryStars.004",
           "ziwei.palace.007.auxiliaryStars.005",
           "ziwei.palace.007.majorStars.001",
-          "ziwei.palace.007.majorStars.002",
           "ziwei.palace.007.minorStars.001",
           "ziwei.palace.011"
         ],
@@ -1434,7 +1438,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "夫妻位于酉宫；主星为天同、巨门。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "夫妻位于酉宫；主星为天同。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.spouse"
       },
       {
@@ -1449,8 +1453,7 @@
           "ziwei.palace.008.auxiliaryStars.004",
           "ziwei.palace.008.auxiliaryStars.005",
           "ziwei.palace.008.auxiliaryStars.006",
-          "ziwei.palace.008.majorStars.001",
-          "ziwei.palace.008.majorStars.002"
+          "ziwei.palace.008.majorStars.001"
         ],
         "is_empty_major_palace": false,
         "label": "兄弟",
@@ -1467,7 +1470,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "兄弟位于戌宫；主星为武曲、天相。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "兄弟位于戌宫；主星为武曲。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.siblings"
       },
       {
@@ -1482,8 +1485,7 @@
           "ziwei.palace.009.auxiliaryStars.004",
           "ziwei.palace.009.auxiliaryStars.005",
           "ziwei.palace.009.auxiliaryStars.006",
-          "ziwei.palace.009.majorStars.001",
-          "ziwei.palace.009.majorStars.002"
+          "ziwei.palace.009.majorStars.001"
         ],
         "is_empty_major_palace": false,
         "label": "命宫",
@@ -1500,7 +1502,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "命宫位于亥宫；主星为太阳、天梁。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "命宫位于亥宫；主星为太阳。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.life"
       },
       {
@@ -1530,7 +1532,7 @@
           "SRC-ZIWEI-PROJECT-SPEC-001",
           "SRC-ZIWEI-QUANSHU-001"
         ],
-        "statement": "父母位于子宫；主星为七杀。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "statement": "父母位于子宫；主星为破军。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
         "term_id": "ziwei.palace.parents"
       },
       {

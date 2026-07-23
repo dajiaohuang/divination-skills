@@ -87,9 +87,10 @@ def test_late_zi_policy_is_explicit_and_changes_basis() -> None:
     }
     current = calculate({**common, "late_zi_policy": "current_day"})
     following = calculate({**common, "late_zi_policy": "next_day"})
-    assert current["normalized_input"]["local_datetime"] == following["normalized_input"][
-        "local_datetime"
-    ]
+    assert (
+        current["normalized_input"]["local_datetime"]
+        == following["normalized_input"]["local_datetime"]
+    )
     assert current["computed_facts"]["solar_date"] != following["computed_facts"]["solar_date"]
 
 
@@ -119,8 +120,7 @@ def test_every_catalogued_star_has_a_direct_placement_case() -> None:
     for path in _case_files("golden"):
         case = json.loads(path.read_text(encoding="utf-8"))
         observed.update(
-            key.split(":", 1)[1]
-            for key in case["expected_intermediate"]["star_placements"]
+            key.split(":", 1)[1] for key in case["expected_intermediate"]["star_placements"]
         )
     assert set(STAR_METADATA) <= observed
 
@@ -140,14 +140,14 @@ def test_every_catalogued_star_has_a_direct_known_position_assertion() -> None:
         "武曲": 8,
         "天同": 7,
         "廉贞": 4,
-        "天府": 4,
-        "太阴": 5,
-        "贪狼": 6,
-        "巨门": 7,
-        "天相": 8,
-        "天梁": 9,
-        "七杀": 10,
-        "破军": 2,
+        "天府": 0,
+        "太阴": 1,
+        "贪狼": 2,
+        "巨门": 3,
+        "天相": 4,
+        "天梁": 5,
+        "七杀": 6,
+        "破军": 10,
         "文昌": 8,
         "文曲": 2,
         "左辅": 2,
@@ -175,8 +175,9 @@ def test_every_catalogued_star_has_a_direct_known_position_assertion() -> None:
         "红鸾": 1,
         "天喜": 7,
         "天德": 7,
-        "月德": 10,
-        "解神": 8,
+        "月德": 3,
+        "年解": 8,
+        "解神": 6,
         "天伤": 5,
         "天使": 7,
     }
@@ -264,12 +265,8 @@ def test_timing_boundaries_change_only_at_declared_boundary() -> None:
         target_local_datetime="2026-07-23T23:00:00",
         timezone="Asia/Shanghai",
     )
-    assert before["layers"]["daily"]["palace_index"] == after["layers"]["daily"][
-        "palace_index"
-    ]
-    assert before["layers"]["hourly"]["palace_index"] != after["layers"]["hourly"][
-        "palace_index"
-    ]
+    assert before["layers"]["daily"]["palace_index"] == after["layers"]["daily"]["palace_index"]
+    assert before["layers"]["hourly"]["palace_index"] != after["layers"]["hourly"]["palace_index"]
 
 
 def test_day_and_month_boundaries_are_explicit() -> None:
@@ -284,21 +281,21 @@ def test_day_and_month_boundaries_are_explicit() -> None:
         target_local_datetime="2026-02-17T00:00:00",
         timezone="Asia/Shanghai",
     )
-    assert day_before["layers"]["daily"]["palace_index"] != day_after["layers"]["daily"][
-        "palace_index"
-    ]
-    assert day_before["layers"]["monthly"]["palace_index"] != day_after["layers"][
-        "monthly"
-    ]["palace_index"]
+    assert (
+        day_before["layers"]["daily"]["palace_index"]
+        != day_after["layers"]["daily"]["palace_index"]
+    )
+    assert (
+        day_before["layers"]["monthly"]["palace_index"]
+        != day_after["layers"]["monthly"]["palace_index"]
+    )
     assert day_before["timeline"]["entries"] != day_after["timeline"]["entries"]
 
 
 def test_decadal_boundary_changes_at_nominal_year_boundary() -> None:
     chart = _chart()
     current = next(
-        item
-        for item in chart["computed_facts"]["palaces"]
-        if item["decadal"]["start_age"] > 1
+        item for item in chart["computed_facts"]["palaces"] if item["decadal"]["start_age"] > 1
     )
     birth_year = int(chart["computed_facts"]["solar_date"][:4])
     boundary_year = birth_year + current["decadal"]["start_age"] - 1
@@ -312,9 +309,7 @@ def test_decadal_boundary_changes_at_nominal_year_boundary() -> None:
         target_local_datetime=f"{boundary_year:04d}-01-01T00:00:00",
         timezone="Asia/Shanghai",
     )
-    assert before["layers"]["decadal"]["palace_index"] != after["layers"]["decadal"][
-        "palace_index"
-    ]
+    assert before["layers"]["decadal"]["palace_index"] != after["layers"]["decadal"]["palace_index"]
 
 
 def test_reader_and_validator_never_overwrite_native_facts() -> None:

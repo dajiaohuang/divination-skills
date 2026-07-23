@@ -2,7 +2,7 @@
   "case_id": "CASE-ZIWEI-SYNASTRY-006",
   "category": "standard",
   "data_classification": "synthetic",
-  "expected_sha256": "00595af38095e8774a01e230c467af65cd2b0ccd0022ed723820b6e17650d4e8",
+  "expected_sha256": "8a3a9c79fb9b037b9b9fade895087c28aba0c018661d1db641df6f1fc9ad8a0b",
   "input": {
     "chart_a": {
       "calculation_gender": "female",

@@ -4,7 +4,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-001",
-      "expected_output_sha256": "44d3efd29c6872b7dd6efba1c8ac8a324664cc86de547bf66145604b68faecba",
+      "expected_output_sha256": "8ad94b8d44c25b8f71f68bee5eaabfddba6ba0f00dc35f79b334618baca9ebb2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -22,7 +22,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-002",
-      "expected_output_sha256": "1e7f4d14a5b0726cb29e09e7fbf8a497fcbb154dbcd01f41efbdfebda8c12ae1",
+      "expected_output_sha256": "edc2cce1fca56c182e6696918836e16f8e41c14948a4c1257e5cb7982f39f385",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -40,7 +40,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-003",
-      "expected_output_sha256": "88e5d4662b2ba7c88ba45358925a49dc7b0bd4512836db294243feb76bb595af",
+      "expected_output_sha256": "cd9a5c0002e01666d0fa381248127655b680a3b3ae5f06a884189f025f182e6b",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -58,7 +58,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-004",
-      "expected_output_sha256": "11b8f1ce6f5109cdc4d7be87870f0c1e217f0f484ced82bc7233b82372827328",
+      "expected_output_sha256": "66c1d5ecb0374dc5f2673bb0ed58264001557dee1210d3ed1bab44f5886684f2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -76,7 +76,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-005",
-      "expected_output_sha256": "3aac4c03e0188b8cfe713c27cd73823063362c85a04547d45e588cc5b4780314",
+      "expected_output_sha256": "e15e5f474a92d6911e96d96b090ee6edc184f871e259ee82df786211b5dfc60a",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -94,7 +94,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-006",
-      "expected_output_sha256": "00595af38095e8774a01e230c467af65cd2b0ccd0022ed723820b6e17650d4e8",
+      "expected_output_sha256": "8a3a9c79fb9b037b9b9fade895087c28aba0c018661d1db641df6f1fc9ad8a0b",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -112,7 +112,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-007",
-      "expected_output_sha256": "de3158c7dd09806649855fe2902b50e30abce6f6df88020b7dec055d7e89bd92",
+      "expected_output_sha256": "29d4224093d2956a83fbcac04e28f8125feaa367cf564e966125bc591b763789",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -130,7 +130,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-008",
-      "expected_output_sha256": "9343fe4df3fb358c48f58a3a2ab704190199053b5c383bcefff06b59cca3edf3",
+      "expected_output_sha256": "ffac3622d34bfd5d19f8a2fb44e18c6a3ed53b919b57c98fbc394067d1f2fed7",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -148,7 +148,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-009",
-      "expected_output_sha256": "73546231a137ff46fcd38e68f4d7a9fc84d0b0818d23f76542e087d7408ab4da",
+      "expected_output_sha256": "0c18f1ce2158f50186d247e084b48ed43f0646badf42b73685143e935c8c788b",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -166,7 +166,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-010",
-      "expected_output_sha256": "17e2bd544094d5aecc7f97690e4ddba3fe9a0f46bd1ce2d01ddcf2c7739ecb55",
+      "expected_output_sha256": "8f168c654d2b60720e06aa1d07d3d328cfe0b73e2e45f2e144901908eb79b467",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -184,7 +184,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-011",
-      "expected_output_sha256": "b145d38ea9ff576689d958d46ea3c2243ff2e83ba5817f381c15e6e5d0afd7aa",
+      "expected_output_sha256": "b0d52ac71c3e9d99fbc5acdb89e2ddeefab874a163b37d711c50f907792de362",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -202,7 +202,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-012",
-      "expected_output_sha256": "6aa4236dcad433341ab3ec8ba2ca9035e674c21c92ea0c9078219b0d29dfe29b",
+      "expected_output_sha256": "88eee5c479ff653301dc52d536d761e4c004445917d37b2421bf73096542bc7e",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -220,7 +220,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-013",
-      "expected_output_sha256": "9003f15e3408e136598546844485ec2a1a94964de4a686a9c834a8868e7782d6",
+      "expected_output_sha256": "086a6350c55b51a9223fc0cddac3ae09996e7e942f138811a5c5e146dd50b55f",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -238,7 +238,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-014",
-      "expected_output_sha256": "80cb7729826d7aa082817c208789d071ef2ec0449f0b94b0e7d6d45c48cd82b5",
+      "expected_output_sha256": "06af0dc66bcef87cf687a97a1d6ffab49a66b25b68a798e6498ca4bbf9ad3abb",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -256,7 +256,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-015",
-      "expected_output_sha256": "fea2c6b7f089bae521cfe83de3d2dd4a510f40c0b5fe55f6c8601d379a317590",
+      "expected_output_sha256": "4c6a3e457cefb5d1eba5a860a302aecbf8a34edbe8e95ef4a6d83d2dec65c7da",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -274,7 +274,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-016",
-      "expected_output_sha256": "0087bd3ac5254b71e67fc6c0d4801e6b337ff4913fa2c75e5d670858582c4770",
+      "expected_output_sha256": "33816d08b5480941a5edadc1b5884a15fcf844a673152db5c414d3116ba75cc0",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -292,7 +292,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-017",
-      "expected_output_sha256": "0d19c870a5615fbac367f163f7b3a2baa1dbabba517d8b50bef9d1ebefa57d53",
+      "expected_output_sha256": "e527380417bc2b5f87517091ccfe9302159a8c0d20041855fb4150d887a7d843",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -310,7 +310,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-018",
-      "expected_output_sha256": "4b39a539b85222cfb88274d1c416676afe5168f7767165077084b54d8c013f81",
+      "expected_output_sha256": "9dd58281bbf3b29734d17b199f0a4d61b440519a3f8e0de8854594a90f926ac2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -328,7 +328,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-019",
-      "expected_output_sha256": "f5a39d3f06e0bed96ac155ca085f88025e888d11767a1870d6b167e2ab6cd9f4",
+      "expected_output_sha256": "1632391b041c8262331814c3c482d315a983eebf9649278ed1e2a10e96e2f1f7",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -346,7 +346,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-020",
-      "expected_output_sha256": "09dccfd82f024cc0c7338808c6b93c89d7593d5b78331a7efb3ce0c65b4cbb51",
+      "expected_output_sha256": "a4a1af223d7dfd0b452bd48e79a454b19f979edd9d15ddf37bfbf96a0ba9433d",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -364,7 +364,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-021",
-      "expected_output_sha256": "1ce8741c0bb04574062c7b4bf10d58862a6b3a5336b8eeec7b721781b5e7cf3a",
+      "expected_output_sha256": "86c0906030cd345112b2292f01b2f9af22608c62534db65fad65380ff6c0901e",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -382,7 +382,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-022",
-      "expected_output_sha256": "fe955a1f7a9ebcabbaf3d5a305fecfc198ed0f2fdcedd18f47309d0c530fedf3",
+      "expected_output_sha256": "f02d211f807a866ee755a32061baef64af0fa4d8aff367a790611bfb50923eff",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -400,7 +400,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-023",
-      "expected_output_sha256": "49191e121ca3e2ac5992132010ffe317ae224bde38f3523799c42a40d7578a2a",
+      "expected_output_sha256": "346d2fcef72af35161195fc6e2d7e27e9e4750261c78ad291cf5793c5495b3ef",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -418,7 +418,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-024",
-      "expected_output_sha256": "535a3c8b4563c5959239321cf21639c44d7e18acef2a1f334d8a4f4c1c73a883",
+      "expected_output_sha256": "ce205604a6417d5aa15d16652df02dcb334999759bc187a44a4b974a50557c45",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -436,7 +436,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-025",
-      "expected_output_sha256": "85d3717861157b28f49da1f9512e44f7607b0552b8aed9884fba7e5588cbab02",
+      "expected_output_sha256": "d14d04954642f2eacd3ff18380eff8bccb7d309949f5f062a5054837b9a16777",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -454,7 +454,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-026",
-      "expected_output_sha256": "c3fbb5f55b9b43651ef03374405bcf105c7027478b9f8f1fa532cfbaab8b089d",
+      "expected_output_sha256": "4e54708024936e45dff52669dc4b15fa4344e636f9d7fd190818aacfec291448",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -472,7 +472,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-027",
-      "expected_output_sha256": "001e6eab99497add24a85820bf86f6012c90342088d5b715efb8b9ff58fc7a61",
+      "expected_output_sha256": "897c981ec427d4f3f7accfbbc1ecbfb9466d9604eb9b4565170a49b65a3e0b74",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -490,7 +490,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-028",
-      "expected_output_sha256": "c40f33e119b188b1e391cf7635acd6143e78effc1e36a352c15e735a76289b7f",
+      "expected_output_sha256": "5d49958103dcfdf336484d5199ce43342181f629fa1f6c146ed75f228e9d598f",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -508,7 +508,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-029",
-      "expected_output_sha256": "10ee8f8630e7f9e994d53bf0e2b16a2489f8c0896acf649b6ef618f8ab00e967",
+      "expected_output_sha256": "9539942e3b276e26c91c97e6f8fec186d636e9fa45ac53d30d614d71fff04211",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -526,7 +526,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-030",
-      "expected_output_sha256": "a51ba79d6a0a20dcd0505ff57c2105ca4d6b3a6e534491dadbf95396f90e974b",
+      "expected_output_sha256": "d1890f71312e60408b4424b8ad4541648280a98f4c3dceebab539e45a151fe72",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -544,7 +544,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-031",
-      "expected_output_sha256": "a97fe9b42b3db4791ace7f3a3bd0701d5a2dcbf8166c98f04acffd6a293934f3",
+      "expected_output_sha256": "b3a55cc1a33b56caf5f2cdaffb12974c6687618c986fbc1d23c60270943f0348",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -562,7 +562,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-032",
-      "expected_output_sha256": "69700317a90c8f72ac13a1d773a88f236773386632a2d3c8fc2581ed3b0973f8",
+      "expected_output_sha256": "44b16457d8c2fa00782ec874041b8c8270d06b0c1b74e3d1dbacc95bc82b446e",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -580,7 +580,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-033",
-      "expected_output_sha256": "599fed3770aeb536ec65e240803a8bd50e6a67482af9c098fc94a75826e99a2e",
+      "expected_output_sha256": "581eeff60530e1515db0f3b218cf4ae2b0774d6aade88a7249d36bccd3a3e436",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -598,7 +598,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-034",
-      "expected_output_sha256": "a842fb89f4045a896d319293a4e93dbde9ddf8f812449c2a5152523701405ead",
+      "expected_output_sha256": "ea9a5908f25cb081011089b47fa4143f54873d14f4ceed729002eb6a1bc010b0",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -616,7 +616,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-035",
-      "expected_output_sha256": "70ac9ed5928b7e388ffbcd9c2e08bf07d43841a2e3dd57e013f4c1f1572868c8",
+      "expected_output_sha256": "b68acacf92ad7fecc6bef1fec15df2ee94a53c7db5f54354fa473a7e498123ed",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -634,7 +634,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-036",
-      "expected_output_sha256": "c20aabf869f8e53eddaf40b6eac1689de6f3b22c33df6c3b229cf548410befe2",
+      "expected_output_sha256": "f0197c1c04e6a530cca182ea566da82dff84a86073aa01ae06d361ffc12a81e8",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -652,7 +652,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-037",
-      "expected_output_sha256": "da01f24c094797ff147fe22f2d8f326f27a814e62f2f3fd48ec80abf9fc0a0f2",
+      "expected_output_sha256": "023767dec648fd9af32f5078e664dc118555a2114125d0f454973b77cd1301e0",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -670,7 +670,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-038",
-      "expected_output_sha256": "ed6537bf100223ef54a9dfe9a6cfb03528948bf7982a9415201a5949d50d9a56",
+      "expected_output_sha256": "7b646e6e18fb5ea0822895fcd4729bae3ca5ddfbcf52e8c03d372507d19b5346",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -688,7 +688,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-039",
-      "expected_output_sha256": "f336c8ac3fed4abff38b43043f0a9462849e5e71eeac255d022a7c31f0a97669",
+      "expected_output_sha256": "862e90440d0056a070ab1b4958c32d94d684fff601a31b65434c79061682726b",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -706,7 +706,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-040",
-      "expected_output_sha256": "55ab01eb38676116d1708582120475ca7d34c48251786a21f83210caca672174",
+      "expected_output_sha256": "8a742c0339ca05e031227b21f1fa7c4662693335527e3b527ca0d5cea21d5e43",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -724,7 +724,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-041",
-      "expected_output_sha256": "0314595ee2d56c68054b02d363960af38e2b1183d63f862ae7d16e80a70eb061",
+      "expected_output_sha256": "1eac74dcfe44364659a6bc9b30a77a82026ab62cbb591e034c59e8a0867fb1f0",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -742,7 +742,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-042",
-      "expected_output_sha256": "92c993a61376c5d41b162b627dfc7e5242813789ea3dcefd7c20017d6c94c72b",
+      "expected_output_sha256": "64f05f9a24bd0477b568db133e058d7477dc47b0a22eb660bbac4e5b98ea2a52",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -760,7 +760,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-043",
-      "expected_output_sha256": "682b55a1824286aae0e07790ea28177d11b01e30902caf44eadfb3fd68c28304",
+      "expected_output_sha256": "a6eb27e743c8e1ab57c68f4a5767500c8e59df4e1bd6fb705e62732bbe1511a2",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -778,7 +778,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-044",
-      "expected_output_sha256": "8ad1dd51e94ad77e7fda175f695db79e33efb6b0599d48ac4d8bda43b5ae0b24",
+      "expected_output_sha256": "ad6a17d4215f253c7f873e450e8aaf302277eae531c989dc9902eb5585f30d4e",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -796,7 +796,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-045",
-      "expected_output_sha256": "d1221e5171f55e66f479d47de3897f1a2f113e8538d9090041ce4fda26e5b199",
+      "expected_output_sha256": "787d9258e8f2e62549ca57553e25c6479a8968e94a3e21ac38d9256d8ae8ad76",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -814,7 +814,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-046",
-      "expected_output_sha256": "5dc3475aceb4d8af9827e8bf2913aa5bcfa02d2041f6b7ebf665f05421642708",
+      "expected_output_sha256": "61c8db3749234b464c96e04f4e2b05e01dfeb43dd1c10d1fd6050ffbf8d7f661",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -832,7 +832,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-047",
-      "expected_output_sha256": "98bfab21913d39e33efb9dc07211df30be78b535e954c97a826c282b10cd09dd",
+      "expected_output_sha256": "21e961733e4291ce05af68381b3faf26a315c8a74e154d1ffd2e0e1b3c6acdbf",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -850,7 +850,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-048",
-      "expected_output_sha256": "73b9d318b733d876a9be3d03dc6edf9c8c76e01d76246e211f066c19e779b993",
+      "expected_output_sha256": "295e5f0ecb1c9cf6ec69a614c145fafb2e129057c727462b97596b6812e7c72c",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -868,7 +868,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-049",
-      "expected_output_sha256": "f20dba20ffee59de7c6671fc74335266da89f2a33b395f1deaa8ebd58fd50dfe",
+      "expected_output_sha256": "0c6311f4c1532581b5c9374cdaa0b824394ac1279dcfe1510360e0f8bb8f2b30",
       "review": {
         "decision": "pending",
         "notes": "",
@@ -886,7 +886,7 @@
     {
       "accepted": false,
       "candidate_id": "ZIWEI-SYNASTRY-EXPERT-050",
-      "expected_output_sha256": "036e9a47624cf73364b7d1263d4f5638ab9832a64782bc1241836ef726211ea9",
+      "expected_output_sha256": "c9a27e64d6e2df7b3c87e47edd5796715b18f9a3a5dda55175f22e072c7fd49e",
       "review": {
         "decision": "pending",
         "notes": "",
