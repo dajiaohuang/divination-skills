@@ -1,7 +1,12 @@
 {
   "source_id": "SRC-NUMEROLOGY-CHEIRO-001",
   "title": "Cheiro's Book of Numbers, Volumes 1–2",
-  "creators": [{ "name": "Cheiro", "role": "author" }],
+  "creators": [
+    {
+      "name": "Cheiro",
+      "role": "author"
+    }
+  ],
   "source_type": "book",
   "language": "en",
   "publication_date": "1927",
@@ -14,7 +19,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-NUMEROLOGY-CHEIRO-001.md",
+    "sha256": "67f2ab35a1eb1316bf5f05bcbeff2d5988ac416cdf44a25e4c8fe5904d5549d7"
+  },
   "license": {
     "identifier": "Public-Domain-original/metadata-and-table-facts-only",
     "text_available": true,
@@ -35,8 +44,12 @@
     "evidence": "The 1927 underlying work is public domain in the United States; production uses uncopyrightable mapping facts and project-authored explanations only."
   },
   "usage_status": "production",
-  "systems": ["numerology"],
-  "lineages": ["chaldean-name-cheiro-v0.3"],
+  "systems": [
+    "numerology"
+  ],
+  "lineages": [
+    "chaldean-name-cheiro-v0.3"
+  ],
   "quality": {
     "authority": "practitioner",
     "independence": "independent",

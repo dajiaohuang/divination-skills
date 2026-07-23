@@ -22,6 +22,9 @@
           "element": "earth",
           "orientation": "upright",
           "identity_lineage": "rws-identity-v0.3",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"
@@ -40,6 +43,9 @@
           "element": "water",
           "orientation": "upright",
           "identity_lineage": "rws-identity-v0.3",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"
@@ -58,6 +64,9 @@
           "element": "water",
           "orientation": "upright",
           "identity_lineage": "rws-identity-v0.3",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"
@@ -76,6 +85,9 @@
           "element": "water",
           "orientation": "upright",
           "identity_lineage": "rws-identity-v0.3",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"
@@ -94,6 +106,9 @@
           "element": "earth",
           "orientation": "upright",
           "identity_lineage": "rws-identity-v0.3",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"

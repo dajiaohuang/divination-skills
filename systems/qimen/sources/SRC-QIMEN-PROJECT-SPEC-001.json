@@ -1,19 +1,59 @@
 {
   "source_id": "SRC-QIMEN-PROJECT-SPEC-001",
   "title": "Project Shijia Zhuanpan Chaibu full-chart specification v0.3",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "zh-Hans",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.3.0",
-  "locators": [{ "kind": "local", "value": "systems/qimen/LINEAGE.md", "stable": true }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/qimen/LINEAGE.md",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/qimen/LINEAGE.md" },
-  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
-  "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "allowed" },
-  "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Project-authored calculation transcription and safety wording; no copied commentary." },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-QIMEN-PROJECT-SPEC-001.md",
+    "sha256": "124c71c5e2ab921fdedeb41ab95964413b536f31a569593887730bfc9399bcd9"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Project-authored calculation transcription and safety wording; no copied commentary."
+  },
   "usage_status": "production",
-  "systems": ["qimen"],
-  "lineages": ["shijia-zhuanpan-chaibu-v0.3", "shijia-zhuanpan-chaibu-full-v0.3"],
-  "quality": { "authority": "unknown", "independence": "derived", "reliability": "medium", "notes": "Foundation tables pending independent practitioner acceptance." }
+  "systems": [
+    "qimen"
+  ],
+  "lineages": [
+    "shijia-zhuanpan-chaibu-v0.3",
+    "shijia-zhuanpan-chaibu-full-v0.3"
+  ],
+  "quality": {
+    "authority": "unknown",
+    "independence": "derived",
+    "reliability": "medium",
+    "notes": "Foundation tables pending independent practitioner acceptance."
+  }
 }

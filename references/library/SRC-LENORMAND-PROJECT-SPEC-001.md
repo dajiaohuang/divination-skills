@@ -1,0 +1,601 @@
+---
+source_id: "SRC-LENORMAND-PROJECT-SPEC-001"
+title: "Project Lenormand 36 text deck and layouts v0.3"
+parser_version: "1.0.1"
+retrieved_at: "2026-07-23"
+manifest_path: "systems/lenormand/sources/SRC-LENORMAND-PROJECT-SPEC-001.json"
+capture_mode: "full"
+aggregate_payload_sha256: "6727534ab4eaa0cbd86d05f6983c92b56b25ca97483239b2db125249c24abcf3"
+license: "Apache-2.0"
+---
+
+# Project Lenormand 36 text deck and layouts v0.3
+
+> Generated audit snapshot. The structured source manifest remains the
+> authority for rights, lineage, and production status.
+
+## Provenance
+
+- Source ID: `SRC-LENORMAND-PROJECT-SPEC-001`
+- Manifest: `systems/lenormand/sources/SRC-LENORMAND-PROJECT-SPEC-001.json`
+- Type: `standard`
+- Language: `en`
+- Edition/version: `0.3.0`
+- Retrieved: `2026-07-23`
+- Usage status: `production`
+- Systems: `lenormand`
+- Lineages: `lenormand-36-project-v0.3`, `game-of-hope-identity-v0.3`
+
+## Rights envelope
+
+- License: `Apache-2.0`
+- Rights review: `accepted`
+- Derivative use: `allowed`
+- Dataset use: `allowed`
+- Evidence: Conventional identifiers with original project keyword wording; no art or guidebook prose.
+
+## Locator capture ledger
+
+### Locator 1
+
+- Registered: systems/lenormand/data/deck.json
+- Resolved: systems/lenormand/data/deck.json
+- Status: `captured`
+- Media type: `text/markdown`
+- SHA-256: `80f98acbd8445d2dc64e87480143d605fa5fed125b4d78726949e13ef4234ccd`
+- Note: Copied from the repository-local authoritative contract.
+
+#### Parsed material
+
+[
+  {
+    "name": "Rider",
+    "number": 1,
+    "reversed": [
+      "news",
+      "arrival",
+      "movement"
+    ],
+    "symbol_id": "lenormand.01.rider",
+    "upright": [
+      "news",
+      "arrival",
+      "movement"
+    ]
+  },
+  {
+    "name": "Clover",
+    "number": 2,
+    "reversed": [
+      "small chance",
+      "brief ease",
+      "lightness"
+    ],
+    "symbol_id": "lenormand.02.clover",
+    "upright": [
+      "small chance",
+      "brief ease",
+      "lightness"
+    ]
+  },
+  {
+    "name": "Ship",
+    "number": 3,
+    "reversed": [
+      "distance",
+      "journey",
+      "expansion"
+    ],
+    "symbol_id": "lenormand.03.ship",
+    "upright": [
+      "distance",
+      "journey",
+      "expansion"
+    ]
+  },
+  {
+    "name": "House",
+    "number": 4,
+    "reversed": [
+      "home",
+      "stability",
+      "private structure"
+    ],
+    "symbol_id": "lenormand.04.house",
+    "upright": [
+      "home",
+      "stability",
+      "private structure"
+    ]
+  },
+  {
+    "name": "Tree",
+    "number": 5,
+    "reversed": [
+      "slow growth",
+      "roots",
+      "wellbeing context"
+    ],
+    "symbol_id": "lenormand.05.tree",
+    "upright": [
+      "slow growth",
+      "roots",
+      "wellbeing context"
+    ]
+  },
+  {
+    "name": "Clouds",
+    "number": 6,
+    "reversed": [
+      "confusion",
+      "mixed visibility",
+      "temporary uncertainty"
+    ],
+    "symbol_id": "lenormand.06.clouds",
+    "upright": [
+      "confusion",
+      "mixed visibility",
+      "temporary uncertainty"
+    ]
+  },
+  {
+    "name": "Snake",
+    "number": 7,
+    "reversed": [
+      "complexity",
+      "indirect route",
+      "careful strategy"
+    ],
+    "symbol_id": "lenormand.07.snake",
+    "upright": [
+      "complexity",
+      "indirect route",
+      "careful strategy"
+    ]
+  },
+  {
+    "name": "Coffin",
+    "number": 8,
+    "reversed": [
+      "closure",
+      "pause",
+      "ending"
+    ],
+    "symbol_id": "lenormand.08.coffin",
+    "upright": [
+      "closure",
+      "pause",
+      "ending"
+    ]
+  },
+  {
+    "name": "Bouquet",
+    "number": 9,
+    "reversed": [
+      "appreciation",
+      "gift",
+      "pleasant invitation"
+    ],
+    "symbol_id": "lenormand.09.bouquet",
+    "upright": [
+      "appreciation",
+      "gift",
+      "pleasant invitation"
+    ]
+  },
+  {
+    "name": "Scythe",
+    "number": 10,
+    "reversed": [
+      "quick cut",
+      "sudden choice",
+      "sharp boundary"
+    ],
+    "symbol_id": "lenormand.10.scythe",
+    "upright": [
+      "quick cut",
+      "sudden choice",
+      "sharp boundary"
+    ]
+  },
+  {
+    "name": "Whip",
+    "number": 11,
+    "reversed": [
+      "repetition",
+      "debate",
+      "friction"
+    ],
+    "symbol_id": "lenormand.11.whip",
+    "upright": [
+      "repetition",
+      "debate",
+      "friction"
+    ]
+  },
+  {
+    "name": "Birds",
+    "number": 12,
+    "reversed": [
+      "conversation",
+      "nervous activity",
+      "paired exchange"
+    ],
+    "symbol_id": "lenormand.12.birds",
+    "upright": [
+      "conversation",
+      "nervous activity",
+      "paired exchange"
+    ]
+  },
+  {
+    "name": "Child",
+    "number": 13,
+    "reversed": [
+      "small beginning",
+      "novelty",
+      "simplicity"
+    ],
+    "symbol_id": "lenormand.13.child",
+    "upright": [
+      "small beginning",
+      "novelty",
+      "simplicity"
+    ]
+  },
+  {
+    "name": "Fox",
+    "number": 14,
+    "reversed": [
+      "self-interest",
+      "work tactic",
+      "verification"
+    ],
+    "symbol_id": "lenormand.14.fox",
+    "upright": [
+      "self-interest",
+      "work tactic",
+      "verification"
+    ]
+  },
+  {
+    "name": "Bear",
+    "number": 15,
+    "reversed": [
+      "power",
+      "protection",
+      "resource control"
+    ],
+    "symbol_id": "lenormand.15.bear",
+    "upright": [
+      "power",
+      "protection",
+      "resource control"
+    ]
+  },
+  {
+    "name": "Stars",
+    "number": 16,
+    "reversed": [
+      "orientation",
+      "pattern",
+      "hopeful direction"
+    ],
+    "symbol_id": "lenormand.16.stars",
+    "upright": [
+      "orientation",
+      "pattern",
+      "hopeful direction"
+    ]
+  },
+  {
+    "name": "Stork",
+    "number": 17,
+    "reversed": [
+      "change",
+      "relocation",
+      "improvement effort"
+    ],
+    "symbol_id": "lenormand.17.stork",
+    "upright": [
+      "change",
+      "relocation",
+      "improvement effort"
+    ]
+  },
+  {
+    "name": "Dog",
+    "number": 18,
+    "reversed": [
+      "loyalty",
+      "support",
+      "trusted connection"
+    ],
+    "symbol_id": "lenormand.18.dog",
+    "upright": [
+      "loyalty",
+      "support",
+      "trusted connection"
+    ]
+  },
+  {
+    "name": "Tower",
+    "number": 19,
+    "reversed": [
+      "institution",
+      "distance",
+      "formal boundary"
+    ],
+    "symbol_id": "lenormand.19.tower",
+    "upright": [
+      "institution",
+      "distance",
+      "formal boundary"
+    ]
+  },
+  {
+    "name": "Garden",
+    "number": 20,
+    "reversed": [
+      "public space",
+      "network",
+      "gathering"
+    ],
+    "symbol_id": "lenormand.20.garden",
+    "upright": [
+      "public space",
+      "network",
+      "gathering"
+    ]
+  },
+  {
+    "name": "Mountain",
+    "number": 21,
+    "reversed": [
+      "obstacle",
+      "delay",
+      "large constraint"
+    ],
+    "symbol_id": "lenormand.21.mountain",
+    "upright": [
+      "obstacle",
+      "delay",
+      "large constraint"
+    ]
+  },
+  {
+    "name": "Crossroads",
+    "number": 22,
+    "reversed": [
+      "options",
+      "choice",
+      "diverging path"
+    ],
+    "symbol_id": "lenormand.22.crossroads",
+    "upright": [
+      "options",
+      "choice",
+      "diverging path"
+    ]
+  },
+  {
+    "name": "Mice",
+    "number": 23,
+    "reversed": [
+      "erosion",
+      "worry",
+      "small losses"
+    ],
+    "symbol_id": "lenormand.23.mice",
+    "upright": [
+      "erosion",
+      "worry",
+      "small losses"
+    ]
+  },
+  {
+    "name": "Heart",
+    "number": 24,
+    "reversed": [
+      "affection",
+      "desire",
+      "valued connection"
+    ],
+    "symbol_id": "lenormand.24.heart",
+    "upright": [
+      "affection",
+      "desire",
+      "valued connection"
+    ]
+  },
+  {
+    "name": "Ring",
+    "number": 25,
+    "reversed": [
+      "agreement",
+      "cycle",
+      "commitment"
+    ],
+    "symbol_id": "lenormand.25.ring",
+    "upright": [
+      "agreement",
+      "cycle",
+      "commitment"
+    ]
+  },
+  {
+    "name": "Book",
+    "number": 26,
+    "reversed": [
+      "unknown information",
+      "study",
+      "privacy"
+    ],
+    "symbol_id": "lenormand.26.book",
+    "upright": [
+      "unknown information",
+      "study",
+      "privacy"
+    ]
+  },
+  {
+    "name": "Letter",
+    "number": 27,
+    "reversed": [
+      "message",
+      "document",
+      "record"
+    ],
+    "symbol_id": "lenormand.27.letter",
+    "upright": [
+      "message",
+      "document",
+      "record"
+    ]
+  },
+  {
+    "name": "Man",
+    "number": 28,
+    "reversed": [
+      "person marker",
+      "social role",
+      "human agency"
+    ],
+    "symbol_id": "lenormand.28.man",
+    "upright": [
+      "person marker",
+      "social role",
+      "human agency"
+    ]
+  },
+  {
+    "name": "Woman",
+    "number": 29,
+    "reversed": [
+      "person marker",
+      "social role",
+      "human agency"
+    ],
+    "symbol_id": "lenormand.29.woman",
+    "upright": [
+      "person marker",
+      "social role",
+      "human agency"
+    ]
+  },
+  {
+    "name": "Lily",
+    "number": 30,
+    "reversed": [
+      "maturity",
+      "peace",
+      "long practice"
+    ],
+    "symbol_id": "lenormand.30.lily",
+    "upright": [
+      "maturity",
+      "peace",
+      "long practice"
+    ]
+  },
+  {
+    "name": "Sun",
+    "number": 31,
+    "reversed": [
+      "clarity",
+      "energy",
+      "visible success"
+    ],
+    "symbol_id": "lenormand.31.sun",
+    "upright": [
+      "clarity",
+      "energy",
+      "visible success"
+    ]
+  },
+  {
+    "name": "Moon",
+    "number": 32,
+    "reversed": [
+      "recognition",
+      "sensitivity",
+      "rhythm"
+    ],
+    "symbol_id": "lenormand.32.moon",
+    "upright": [
+      "recognition",
+      "sensitivity",
+      "rhythm"
+    ]
+  },
+  {
+    "name": "Key",
+    "number": 33,
+    "reversed": [
+      "solution",
+      "access",
+      "importance"
+    ],
+    "symbol_id": "lenormand.33.key",
+    "upright": [
+      "solution",
+      "access",
+      "importance"
+    ]
+  },
+  {
+    "name": "Fish",
+    "number": 34,
+    "reversed": [
+      "flow",
+      "trade",
+      "resources"
+    ],
+    "symbol_id": "lenormand.34.fish",
+    "upright": [
+      "flow",
+      "trade",
+      "resources"
+    ]
+  },
+  {
+    "name": "Anchor",
+    "number": 35,
+    "reversed": [
+      "stability",
+      "work",
+      "long duration"
+    ],
+    "symbol_id": "lenormand.35.anchor",
+    "upright": [
+      "stability",
+      "work",
+      "long duration"
+    ]
+  },
+  {
+    "name": "Cross",
+    "number": 36,
+    "reversed": [
+      "burden",
+      "meaningful difficulty",
+      "duty"
+    ],
+    "symbol_id": "lenormand.36.cross",
+    "upright": [
+      "burden",
+      "meaningful difficulty",
+      "duty"
+    ]
+  }
+]
+
+## Manifest quality note
+
+Engineering baseline pending practitioner review.
+
+## Reproducibility
+
+- Parser: `tooling/scripts/build_reference_library.py` v1.0.1
+- Aggregate payload SHA-256: `6727534ab4eaa0cbd86d05f6983c92b56b25ca97483239b2db125249c24abcf3`
+- Use `--check` to verify tracked snapshot integrity; run without it to refresh remote material.

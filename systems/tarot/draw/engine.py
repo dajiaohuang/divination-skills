@@ -156,6 +156,7 @@ def draw_cards(payload: dict[str, Any]) -> dict[str, Any]:
                 "element": card["element"],
                 "orientation": orientation,
                 "identity_lineage": "rws-identity-v0.3",
+                "rule_ids": ["TAROT-CARD-IDENTITY-001"],
                 "source_ids": [PROJECT_SOURCE, HISTORICAL_SOURCE],
             }
         )
@@ -177,6 +178,8 @@ def draw_cards(payload: dict[str, Any]) -> dict[str, Any]:
         "normalized_input": normalized,
         "audit": {
             "algorithm": ALGORITHM,
+            "selection_policy": "without_replacement",
+            "rule_ids": ["TAROT-DRAW-UNIQUE-001"],
             "seed_hex": seed_hex,
             "seed_commitment": hashlib.sha256(b"tarot-seed-v1\x00" + seed).hexdigest(),
             "deck_sha256": deck_hash,

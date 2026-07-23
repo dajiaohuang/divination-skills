@@ -1,0 +1,1659 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-VEDIC-NATAL-001",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "astronomy": {
+      "ayanamsha": {
+        "anchor_sidereal_longitude_degrees": 180.0,
+        "anchor_star": "Spica/Chitra",
+        "anchor_tropical_longitude_degrees": 203.83352329,
+        "annual_aberration_applied": false,
+        "degrees": 23.83352329,
+        "name": "true_citra",
+        "proper_motion_applied": false,
+        "rule_ids": [
+          "VEDIC-CAL-SIDEREAL-001"
+        ],
+        "source_ids": [
+          "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+          "SRC-VEDIC-PROJECT-SPEC-001"
+        ],
+        "spica_dec_degrees_j2000": -11.1613194444,
+        "spica_ra_hours_j2000": 13.4198830556
+      },
+      "fact_id": "vedic.astronomy.baseline",
+      "rule_ids": [
+        "VEDIC-CAL-GRAHA-001",
+        "VEDIC-CAL-MEAN-NODE-001",
+        "VEDIC-CAL-SIDEREAL-001"
+      ],
+      "source_ids": [
+        "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+        "SRC-VEDIC-PROJECT-SPEC-001"
+      ]
+    }
+  },
+  "expected_output": {
+    "computed_facts": {
+      "astronomy": {
+        "ayanamsha": {
+          "anchor_sidereal_longitude_degrees": 180.0,
+          "anchor_star": "Spica/Chitra",
+          "anchor_tropical_longitude_degrees": 203.83352329,
+          "annual_aberration_applied": false,
+          "degrees": 23.83352329,
+          "name": "true_citra",
+          "proper_motion_applied": false,
+          "rule_ids": [
+            "VEDIC-CAL-SIDEREAL-001"
+          ],
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+            "SRC-VEDIC-PROJECT-SPEC-001"
+          ],
+          "spica_dec_degrees_j2000": -11.1613194444,
+          "spica_ra_hours_j2000": 13.4198830556
+        },
+        "fact_id": "vedic.astronomy.baseline",
+        "rule_ids": [
+          "VEDIC-CAL-GRAHA-001",
+          "VEDIC-CAL-MEAN-NODE-001",
+          "VEDIC-CAL-SIDEREAL-001"
+        ],
+        "source_ids": [
+          "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+          "SRC-VEDIC-PROJECT-SPEC-001"
+        ]
+      },
+      "lineages": {
+        "jaimini": {
+          "arudha_lagna": {
+            "distance_steps": 1,
+            "exception_applied": false,
+            "exception_policy": "tenth_from_lord_when_same_or_seventh",
+            "fact_id": "vedic.jaimini.arudha_lagna",
+            "lagna_lord": "jupiter",
+            "lord_sign": "Aries",
+            "lord_sign_index": 0,
+            "ordinary_result_sign": "Taurus",
+            "rule_ids": [
+              "VEDIC-JAIMINI-ARUDHA-001"
+            ],
+            "sign": "Taurus",
+            "sign_index": 1,
+            "source_ids": [
+              "SRC-VEDIC-JAIMINI-RAO-1949-001",
+              "SRC-VEDIC-JAIMINI-READER-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "source_sign": "Pisces",
+            "source_sign_index": 11
+          },
+          "chara_karakas": [
+            {
+              "body": "sun",
+              "effective_degree_in_sign": 28.33729663,
+              "fact_id": "vedic.jaimini.karaka.ak",
+              "karaka": "AK",
+              "rahu_reversal_applied": false,
+              "rank": 1,
+              "rule_ids": [
+                "VEDIC-JAIMINI-KARAKA-SEVEN-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            {
+              "body": "venus",
+              "effective_degree_in_sign": 25.32996548,
+              "fact_id": "vedic.jaimini.karaka.amk",
+              "karaka": "AmK",
+              "rahu_reversal_applied": false,
+              "rank": 2,
+              "rule_ids": [
+                "VEDIC-JAIMINI-KARAKA-SEVEN-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            {
+              "body": "saturn",
+              "effective_degree_in_sign": 23.10984849,
+              "fact_id": "vedic.jaimini.karaka.bk",
+              "karaka": "BK",
+              "rahu_reversal_applied": false,
+              "rank": 3,
+              "rule_ids": [
+                "VEDIC-JAIMINI-KARAKA-SEVEN-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            {
+              "body": "mars",
+              "effective_degree_in_sign": 14.29136713,
+              "fact_id": "vedic.jaimini.karaka.mk",
+              "karaka": "MK",
+              "rahu_reversal_applied": false,
+              "rank": 4,
+              "rule_ids": [
+                "VEDIC-JAIMINI-KARAKA-SEVEN-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            {
+              "body": "jupiter",
+              "effective_degree_in_sign": 10.40166624,
+              "fact_id": "vedic.jaimini.karaka.pk",
+              "karaka": "PK",
+              "rahu_reversal_applied": false,
+              "rank": 5,
+              "rule_ids": [
+                "VEDIC-JAIMINI-KARAKA-SEVEN-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            {
+              "body": "mercury",
+              "effective_degree_in_sign": 4.26495122,
+              "fact_id": "vedic.jaimini.karaka.gk",
+              "karaka": "GK",
+              "rahu_reversal_applied": false,
+              "rank": 6,
+              "rule_ids": [
+                "VEDIC-JAIMINI-KARAKA-SEVEN-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            {
+              "body": "moon",
+              "effective_degree_in_sign": 2.43771945,
+              "fact_id": "vedic.jaimini.karaka.dk",
+              "karaka": "DK",
+              "rahu_reversal_applied": false,
+              "rank": 7,
+              "rule_ids": [
+                "VEDIC-JAIMINI-KARAKA-SEVEN-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            }
+          ],
+          "fact_id": "vedic.lineage.jaimini",
+          "karaka_policy": "seven",
+          "lineage": "jaimini-structural-v0.1",
+          "rashi_drishti": [
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.01",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "movable",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Aries",
+              "source_sign_index": 0,
+              "target_sign_indices": [
+                4,
+                7,
+                10
+              ],
+              "target_signs": [
+                "Leo",
+                "Scorpio",
+                "Aquarius"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.02",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "fixed",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Taurus",
+              "source_sign_index": 1,
+              "target_sign_indices": [
+                3,
+                6,
+                9
+              ],
+              "target_signs": [
+                "Cancer",
+                "Libra",
+                "Capricorn"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.03",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "dual",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Gemini",
+              "source_sign_index": 2,
+              "target_sign_indices": [
+                5,
+                8,
+                11
+              ],
+              "target_signs": [
+                "Virgo",
+                "Sagittarius",
+                "Pisces"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.04",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "movable",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Cancer",
+              "source_sign_index": 3,
+              "target_sign_indices": [
+                1,
+                7,
+                10
+              ],
+              "target_signs": [
+                "Taurus",
+                "Scorpio",
+                "Aquarius"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.05",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "fixed",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Leo",
+              "source_sign_index": 4,
+              "target_sign_indices": [
+                0,
+                6,
+                9
+              ],
+              "target_signs": [
+                "Aries",
+                "Libra",
+                "Capricorn"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.06",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "dual",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Virgo",
+              "source_sign_index": 5,
+              "target_sign_indices": [
+                2,
+                8,
+                11
+              ],
+              "target_signs": [
+                "Gemini",
+                "Sagittarius",
+                "Pisces"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.07",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "movable",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Libra",
+              "source_sign_index": 6,
+              "target_sign_indices": [
+                1,
+                4,
+                10
+              ],
+              "target_signs": [
+                "Taurus",
+                "Leo",
+                "Aquarius"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.08",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "fixed",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Scorpio",
+              "source_sign_index": 7,
+              "target_sign_indices": [
+                0,
+                3,
+                9
+              ],
+              "target_signs": [
+                "Aries",
+                "Cancer",
+                "Capricorn"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.09",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "dual",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Sagittarius",
+              "source_sign_index": 8,
+              "target_sign_indices": [
+                2,
+                5,
+                11
+              ],
+              "target_signs": [
+                "Gemini",
+                "Virgo",
+                "Pisces"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.10",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "movable",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Capricorn",
+              "source_sign_index": 9,
+              "target_sign_indices": [
+                1,
+                4,
+                7
+              ],
+              "target_signs": [
+                "Taurus",
+                "Leo",
+                "Scorpio"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.11",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "fixed",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Aquarius",
+              "source_sign_index": 10,
+              "target_sign_indices": [
+                0,
+                3,
+                6
+              ],
+              "target_signs": [
+                "Aries",
+                "Cancer",
+                "Libra"
+              ]
+            },
+            {
+              "fact_id": "vedic.jaimini.rashi_drishti.12",
+              "rule_ids": [
+                "VEDIC-JAIMINI-RASHI-DRISHTI-001"
+              ],
+              "source_class": "dual",
+              "source_ids": [
+                "SRC-VEDIC-JAIMINI-RAO-1949-001",
+                "SRC-VEDIC-JAIMINI-READER-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Pisces",
+              "source_sign_index": 11,
+              "target_sign_indices": [
+                2,
+                5,
+                8
+              ],
+              "target_signs": [
+                "Gemini",
+                "Virgo",
+                "Sagittarius"
+              ]
+            }
+          ],
+          "rule_ids": [
+            "VEDIC-JAIMINI-KARAKA-SEVEN-001",
+            "VEDIC-JAIMINI-RASHI-DRISHTI-001",
+            "VEDIC-JAIMINI-ARUDHA-001"
+          ],
+          "source_ids": [
+            "SRC-VEDIC-JAIMINI-RAO-1949-001",
+            "SRC-VEDIC-JAIMINI-READER-001",
+            "SRC-VEDIC-PROJECT-SPEC-001"
+          ]
+        },
+        "kp": {
+          "completeness": "stellar_identity_only",
+          "fact_id": "vedic.lineage.kp",
+          "lineage": "kp-stellar-v0.1",
+          "rule_ids": [
+            "VEDIC-KP-SUBLORD-001",
+            "VEDIC-BOUNDARY-001"
+          ],
+          "source_ids": [
+            "SRC-VEDIC-KP-INTRO-001",
+            "SRC-VEDIC-PROJECT-SPEC-001"
+          ],
+          "stellar_identities": [
+            {
+              "body": "lagna",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.lagna",
+              "longitude_degrees": 351.06886615,
+              "nakshatra": "Revati",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Pisces",
+              "sign_lord": "jupiter",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "mercury",
+              "sub_end_longitude": 351.55555556,
+              "sub_lord": "venus",
+              "sub_start_longitude": 349.33333333
+            },
+            {
+              "body": "sun",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.sun",
+              "longitude_degrees": 148.33729663,
+              "nakshatra": "Uttara Phalguni",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Leo",
+              "sign_lord": "sun",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "sun",
+              "sub_end_longitude": 148.44444444,
+              "sub_lord": "moon",
+              "sub_start_longitude": 147.33333333
+            },
+            {
+              "body": "moon",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.moon",
+              "longitude_degrees": 212.43771945,
+              "nakshatra": "Vishakha",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Scorpio",
+              "sign_lord": "mars",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "jupiter",
+              "sub_end_longitude": 213.33333333,
+              "sub_lord": "rahu",
+              "sub_start_longitude": 211.33333333
+            },
+            {
+              "body": "mercury",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.mercury",
+              "longitude_degrees": 154.26495122,
+              "nakshatra": "Uttara Phalguni",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Virgo",
+              "sign_lord": "mercury",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "sun",
+              "sub_end_longitude": 155.11111111,
+              "sub_lord": "saturn",
+              "sub_start_longitude": 153.0
+            },
+            {
+              "body": "venus",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.venus",
+              "longitude_degrees": 115.32996548,
+              "nakshatra": "Ashlesha",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Cancer",
+              "sign_lord": "moon",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "mercury",
+              "sub_end_longitude": 116.11111111,
+              "sub_lord": "rahu",
+              "sub_start_longitude": 114.11111111
+            },
+            {
+              "body": "mars",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.mars",
+              "longitude_degrees": 224.29136713,
+              "nakshatra": "Anuradha",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Scorpio",
+              "sign_lord": "mars",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "saturn",
+              "sub_end_longitude": 224.88888889,
+              "sub_lord": "rahu",
+              "sub_start_longitude": 222.88888889
+            },
+            {
+              "body": "jupiter",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.jupiter",
+              "longitude_degrees": 10.40166624,
+              "nakshatra": "Ashwini",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Aries",
+              "sign_lord": "mars",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "ketu",
+              "sub_end_longitude": 11.44444444,
+              "sub_lord": "saturn",
+              "sub_start_longitude": 9.33333333
+            },
+            {
+              "body": "saturn",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.saturn",
+              "longitude_degrees": 23.10984849,
+              "nakshatra": "Bharani",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Aries",
+              "sign_lord": "mars",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "venus",
+              "sub_end_longitude": 24.0,
+              "sub_lord": "saturn",
+              "sub_start_longitude": 21.88888889
+            },
+            {
+              "body": "rahu",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.rahu",
+              "longitude_degrees": 106.93202159,
+              "nakshatra": "Ashlesha",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Cancer",
+              "sign_lord": "moon",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "mercury",
+              "sub_end_longitude": 108.55555556,
+              "sub_lord": "mercury",
+              "sub_start_longitude": 106.66666667
+            },
+            {
+              "body": "ketu",
+              "boundary_policy": "half_open",
+              "fact_id": "vedic.kp.stellar.ketu",
+              "longitude_degrees": 286.93202159,
+              "nakshatra": "Shravana",
+              "rule_ids": [
+                "VEDIC-KP-SUBLORD-001"
+              ],
+              "sign": "Capricorn",
+              "sign_lord": "saturn",
+              "source_ids": [
+                "SRC-VEDIC-KP-INTRO-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "star_lord": "moon",
+              "sub_end_longitude": 287.77777778,
+              "sub_lord": "saturn",
+              "sub_start_longitude": 285.66666667
+            }
+          ],
+          "unsupported": [
+            "placidus_cusps",
+            "cusp_sub_lords",
+            "ruling_planets",
+            "significator_ranking",
+            "horary_number_chart",
+            "event_judgment"
+          ]
+        },
+        "parashari": {
+          "fact_id": "vedic.lineage.parashari",
+          "house_policy": "whole_sign_from_sidereal_lagna",
+          "lineage": "parashari-structural-v0.1",
+          "navamsha": [
+            {
+              "body": "lagna",
+              "division": 7,
+              "fact_id": "vedic.parashari.navamsha.lagna",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Capricorn",
+              "sign_index": 9,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Pisces",
+              "source_sign_class": "dual"
+            },
+            {
+              "body": "sun",
+              "division": 9,
+              "fact_id": "vedic.parashari.navamsha.sun",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Sagittarius",
+              "sign_index": 8,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Leo",
+              "source_sign_class": "fixed"
+            },
+            {
+              "body": "moon",
+              "division": 1,
+              "fact_id": "vedic.parashari.navamsha.moon",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Cancer",
+              "sign_index": 3,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Scorpio",
+              "source_sign_class": "fixed"
+            },
+            {
+              "body": "mercury",
+              "division": 2,
+              "fact_id": "vedic.parashari.navamsha.mercury",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Aquarius",
+              "sign_index": 10,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Virgo",
+              "source_sign_class": "dual"
+            },
+            {
+              "body": "venus",
+              "division": 8,
+              "fact_id": "vedic.parashari.navamsha.venus",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Aquarius",
+              "sign_index": 10,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Cancer",
+              "source_sign_class": "movable"
+            },
+            {
+              "body": "mars",
+              "division": 5,
+              "fact_id": "vedic.parashari.navamsha.mars",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Scorpio",
+              "sign_index": 7,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Scorpio",
+              "source_sign_class": "fixed"
+            },
+            {
+              "body": "jupiter",
+              "division": 4,
+              "fact_id": "vedic.parashari.navamsha.jupiter",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Cancer",
+              "sign_index": 3,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Aries",
+              "source_sign_class": "movable"
+            },
+            {
+              "body": "saturn",
+              "division": 7,
+              "fact_id": "vedic.parashari.navamsha.saturn",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Libra",
+              "sign_index": 6,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Aries",
+              "source_sign_class": "movable"
+            },
+            {
+              "body": "rahu",
+              "division": 6,
+              "fact_id": "vedic.parashari.navamsha.rahu",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Sagittarius",
+              "sign_index": 8,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Cancer",
+              "source_sign_class": "movable"
+            },
+            {
+              "body": "ketu",
+              "division": 6,
+              "fact_id": "vedic.parashari.navamsha.ketu",
+              "rule_ids": [
+                "VEDIC-PARASHARI-NAVAMSHA-001"
+              ],
+              "sign": "Gemini",
+              "sign_index": 2,
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ],
+              "source_sign": "Capricorn",
+              "source_sign_class": "movable"
+            }
+          ],
+          "rule_ids": [
+            "VEDIC-PARASHARI-WHOLE-SIGN-001",
+            "VEDIC-PARASHARI-NAVAMSHA-001",
+            "VEDIC-PARASHARI-VIMSHOTTARI-001"
+          ],
+          "source_ids": [
+            "SRC-VEDIC-BPHS-WIKISOURCE-001",
+            "SRC-VEDIC-BRIHAT-JATAKA-1885-001",
+            "SRC-VEDIC-PROJECT-SPEC-001"
+          ],
+          "vimshottari": {
+            "balance_years_at_birth": 1.0747366598,
+            "birth_lord": "jupiter",
+            "birth_nakshatra": "Vishakha",
+            "elapsed_years_at_birth": 14.9252633402,
+            "fact_id": "vedic.parashari.vimshottari",
+            "periods": [
+              {
+                "active_at_birth": true,
+                "end_utc": "2000-10-12T00:01:53.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.01",
+                "lord": "jupiter",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "1984-10-12T02:54:41.185192Z",
+                "years": 16
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2019-10-12T14:36:41.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.02",
+                "lord": "saturn",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2000-10-12T00:01:53.185192Z",
+                "years": 19
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2036-10-11T17:33:05.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.03",
+                "lord": "mercury",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2019-10-12T14:36:41.185192Z",
+                "years": 17
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2043-10-12T10:17:29.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.04",
+                "lord": "ketu",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2036-10-11T17:33:05.185192Z",
+                "years": 7
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2063-10-12T06:41:29.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.05",
+                "lord": "venus",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2043-10-12T10:17:29.185192Z",
+                "years": 20
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2069-10-11T17:36:41.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.06",
+                "lord": "sun",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2063-10-12T06:41:29.185192Z",
+                "years": 6
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2079-10-12T03:48:41.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.07",
+                "lord": "moon",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2069-10-11T17:36:41.185192Z",
+                "years": 10
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2086-10-11T20:33:05.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.08",
+                "lord": "mars",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2079-10-12T03:48:41.185192Z",
+                "years": 7
+              },
+              {
+                "active_at_birth": false,
+                "end_utc": "2104-10-12T05:18:41.185192Z",
+                "fact_id": "vedic.parashari.vimshottari.09",
+                "lord": "rahu",
+                "rule_ids": [
+                  "VEDIC-PARASHARI-VIMSHOTTARI-001"
+                ],
+                "source_ids": [
+                  "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                  "SRC-VEDIC-PROJECT-SPEC-001"
+                ],
+                "start_utc": "2086-10-11T20:33:05.185192Z",
+                "years": 18
+              }
+            ],
+            "rule_ids": [
+              "VEDIC-PARASHARI-VIMSHOTTARI-001"
+            ],
+            "source_ids": [
+              "SRC-VEDIC-BPHS-WIKISOURCE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "year_length_days": 365.2425
+          }
+        }
+      },
+      "sidereal_chart": {
+        "fact_id": "vedic.sidereal_chart",
+        "house_policy": "whole_sign_from_sidereal_lagna",
+        "lagna": {
+          "body": "lagna",
+          "degree_in_sign": 21.06886615,
+          "fact_id": "vedic.angle.lagna",
+          "house": 1,
+          "longitude_degrees": 351.06886615,
+          "nakshatra": {
+            "degrees_within": 4.40219949,
+            "fact_id": "vedic.nakshatra.27",
+            "fraction_elapsed": 0.330164961424,
+            "index": 26,
+            "lord": "mercury",
+            "name": "Revati",
+            "number": 27,
+            "pada": 2,
+            "rule_ids": [
+              "VEDIC-CAL-NAKSHATRA-001"
+            ],
+            "source_ids": [
+              "SRC-VEDIC-BPHS-WIKISOURCE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ]
+          },
+          "rule_ids": [
+            "VEDIC-CAL-LAGNA-001",
+            "VEDIC-CAL-SIDEREAL-001"
+          ],
+          "sign": "Pisces",
+          "sign_index": 11,
+          "sign_lord": "jupiter",
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+            "SRC-VEDIC-PROJECT-SPEC-001"
+          ],
+          "tropical_longitude_degrees": 14.90238945
+        },
+        "positions": [
+          {
+            "body": "sun",
+            "degree_in_sign": 28.33729663,
+            "distance_au": 1.005708271,
+            "fact_id": "vedic.position.sun",
+            "house": 6,
+            "latitude_degrees": -1.133e-05,
+            "longitude_degrees": 148.33729663,
+            "nakshatra": {
+              "degrees_within": 1.67062997,
+              "fact_id": "vedic.nakshatra.12",
+              "fraction_elapsed": 0.125297247403,
+              "index": 11,
+              "lord": "sun",
+              "name": "Uttara Phalguni",
+              "number": 12,
+              "pada": 1,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "retrograde": false,
+            "rule_ids": [
+              "VEDIC-CAL-GRAHA-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Leo",
+            "sign_index": 4,
+            "sign_lord": "sun",
+            "source_ids": [
+              "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": 0.97456446,
+            "tropical_longitude_degrees": 172.17081993
+          },
+          {
+            "body": "moon",
+            "degree_in_sign": 2.43771945,
+            "distance_au": 0.0026959201,
+            "fact_id": "vedic.position.moon",
+            "house": 9,
+            "latitude_degrees": 5.01249904,
+            "longitude_degrees": 212.43771945,
+            "nakshatra": {
+              "degrees_within": 12.43771945,
+              "fact_id": "vedic.nakshatra.16",
+              "fraction_elapsed": 0.932828958764,
+              "index": 15,
+              "lord": "jupiter",
+              "name": "Vishakha",
+              "number": 16,
+              "pada": 4,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "retrograde": false,
+            "rule_ids": [
+              "VEDIC-CAL-GRAHA-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Scorpio",
+            "sign_index": 7,
+            "sign_lord": "mars",
+            "source_ids": [
+              "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": 11.95719542,
+            "tropical_longitude_degrees": 236.27124274
+          },
+          {
+            "body": "mercury",
+            "degree_in_sign": 4.26495122,
+            "distance_au": 1.3924968475,
+            "fact_id": "vedic.position.mercury",
+            "house": 7,
+            "latitude_degrees": 1.18689062,
+            "longitude_degrees": 154.26495122,
+            "nakshatra": {
+              "degrees_within": 7.59828455,
+              "fact_id": "vedic.nakshatra.12",
+              "fraction_elapsed": 0.569871341572,
+              "index": 11,
+              "lord": "sun",
+              "name": "Uttara Phalguni",
+              "number": 12,
+              "pada": 3,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "retrograde": false,
+            "rule_ids": [
+              "VEDIC-CAL-GRAHA-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Virgo",
+            "sign_index": 5,
+            "sign_lord": "mercury",
+            "source_ids": [
+              "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": 1.77865209,
+            "tropical_longitude_degrees": 178.09847451
+          },
+          {
+            "body": "venus",
+            "degree_in_sign": 25.32996548,
+            "distance_au": 0.3708744342,
+            "fact_id": "vedic.position.venus",
+            "house": 5,
+            "latitude_degrees": -6.1887624,
+            "longitude_degrees": 115.32996548,
+            "nakshatra": {
+              "degrees_within": 8.66329882,
+              "fact_id": "vedic.nakshatra.09",
+              "fraction_elapsed": 0.649747411303,
+              "index": 8,
+              "lord": "mercury",
+              "name": "Ashlesha",
+              "number": 9,
+              "pada": 3,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "retrograde": false,
+            "rule_ids": [
+              "VEDIC-CAL-GRAHA-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Cancer",
+            "sign_index": 3,
+            "sign_lord": "moon",
+            "source_ids": [
+              "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": 0.16655967,
+            "tropical_longitude_degrees": 139.16348878
+          },
+          {
+            "body": "mars",
+            "degree_in_sign": 14.29136713,
+            "distance_au": 1.2700745383,
+            "fact_id": "vedic.position.mars",
+            "house": 9,
+            "latitude_degrees": -1.8233093,
+            "longitude_degrees": 224.29136713,
+            "nakshatra": {
+              "degrees_within": 10.9580338,
+              "fact_id": "vedic.nakshatra.17",
+              "fraction_elapsed": 0.821852534741,
+              "index": 16,
+              "lord": "saturn",
+              "name": "Anuradha",
+              "number": 17,
+              "pada": 4,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "retrograde": false,
+            "rule_ids": [
+              "VEDIC-CAL-GRAHA-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Scorpio",
+            "sign_index": 7,
+            "sign_lord": "mars",
+            "source_ids": [
+              "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": 0.65894186,
+            "tropical_longitude_degrees": 248.12489042
+          },
+          {
+            "body": "jupiter",
+            "degree_in_sign": 10.40166624,
+            "distance_au": 4.1623839206,
+            "fact_id": "vedic.position.jupiter",
+            "house": 2,
+            "latitude_degrees": -1.49176825,
+            "longitude_degrees": 10.40166624,
+            "nakshatra": {
+              "degrees_within": 10.40166624,
+              "fact_id": "vedic.nakshatra.01",
+              "fraction_elapsed": 0.780124968181,
+              "index": 0,
+              "lord": "ketu",
+              "name": "Ashwini",
+              "number": 1,
+              "pada": 4,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "retrograde": true,
+            "rule_ids": [
+              "VEDIC-CAL-GRAHA-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Aries",
+            "sign_index": 0,
+            "sign_lord": "mars",
+            "source_ids": [
+              "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": -0.06948959,
+            "tropical_longitude_degrees": 34.23518954
+          },
+          {
+            "body": "saturn",
+            "degree_in_sign": 23.10984849,
+            "distance_au": 8.5918010073,
+            "fact_id": "vedic.position.saturn",
+            "house": 2,
+            "latitude_degrees": -2.53061026,
+            "longitude_degrees": 23.10984849,
+            "nakshatra": {
+              "degrees_within": 9.77651516,
+              "fact_id": "vedic.nakshatra.02",
+              "fraction_elapsed": 0.733238636759,
+              "index": 1,
+              "lord": "venus",
+              "name": "Bharani",
+              "number": 2,
+              "pada": 3,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "retrograde": true,
+            "rule_ids": [
+              "VEDIC-CAL-GRAHA-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Aries",
+            "sign_index": 0,
+            "sign_lord": "mars",
+            "source_ids": [
+              "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": -0.02873445,
+            "tropical_longitude_degrees": 46.94337178
+          },
+          {
+            "body": "rahu",
+            "degree_in_sign": 16.93202159,
+            "fact_id": "vedic.position.rahu",
+            "house": 5,
+            "latitude_degrees": 0.0,
+            "longitude_degrees": 106.93202159,
+            "nakshatra": {
+              "degrees_within": 0.26535492,
+              "fact_id": "vedic.nakshatra.09",
+              "fraction_elapsed": 0.019901618982,
+              "index": 8,
+              "lord": "mercury",
+              "name": "Ashlesha",
+              "number": 9,
+              "pada": 1,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "node_policy": "mean",
+            "retrograde": true,
+            "rule_ids": [
+              "VEDIC-CAL-MEAN-NODE-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Cancer",
+            "sign_index": 3,
+            "sign_lord": "moon",
+            "source_ids": [
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": -0.05295376,
+            "tropical_longitude_degrees": 130.76554488
+          },
+          {
+            "body": "ketu",
+            "degree_in_sign": 16.93202159,
+            "fact_id": "vedic.position.ketu",
+            "house": 11,
+            "latitude_degrees": 0.0,
+            "longitude_degrees": 286.93202159,
+            "nakshatra": {
+              "degrees_within": 6.93202159,
+              "fact_id": "vedic.nakshatra.22",
+              "fraction_elapsed": 0.519901618982,
+              "index": 21,
+              "lord": "moon",
+              "name": "Shravana",
+              "number": 22,
+              "pada": 3,
+              "rule_ids": [
+                "VEDIC-CAL-NAKSHATRA-001"
+              ],
+              "source_ids": [
+                "SRC-VEDIC-BPHS-WIKISOURCE-001",
+                "SRC-VEDIC-PROJECT-SPEC-001"
+              ]
+            },
+            "node_policy": "mean",
+            "retrograde": true,
+            "rule_ids": [
+              "VEDIC-CAL-MEAN-NODE-001",
+              "VEDIC-CAL-SIDEREAL-001"
+            ],
+            "sign": "Capricorn",
+            "sign_index": 9,
+            "sign_lord": "saturn",
+            "source_ids": [
+              "SRC-VEDIC-PROJECT-SPEC-001"
+            ],
+            "speed_degrees_per_day": -0.05295376,
+            "tropical_longitude_degrees": 310.76554488
+          }
+        ],
+        "rule_ids": [
+          "VEDIC-CAL-GRAHA-001",
+          "VEDIC-CAL-LAGNA-001",
+          "VEDIC-PARASHARI-WHOLE-SIGN-001"
+        ],
+        "source_ids": [
+          "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+          "SRC-VEDIC-BPHS-WIKISOURCE-001",
+          "SRC-VEDIC-PROJECT-SPEC-001"
+        ]
+      }
+    },
+    "derived_findings": [],
+    "engine": {
+      "dependencies": {
+        "astronomy-engine": "2.1.19",
+        "tzdata": "2026.3"
+      },
+      "name": "divination-skills-vedic-multilineage",
+      "repository_dependencies": [],
+      "source_ids": [
+        "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+        "SRC-VEDIC-PROJECT-SPEC-001",
+        "SRC-VEDIC-BPHS-WIKISOURCE-001",
+        "SRC-VEDIC-BRIHAT-JATAKA-1885-001",
+        "SRC-VEDIC-JAIMINI-RAO-1949-001",
+        "SRC-VEDIC-JAIMINI-READER-001",
+        "SRC-VEDIC-KP-INTRO-001",
+        "SRC-TIME-PYTHON-ZONEINFO-001",
+        "SRC-TIME-TZDATA-001"
+      ],
+      "version": "0.1.0"
+    },
+    "narrative": null,
+    "normalized_input": {
+      "ayanamsha": "true_citra",
+      "coordinate_frame": "geocentric_true_ecliptic_of_date",
+      "fold": 0,
+      "jaimini_karaka_policy": "seven",
+      "latitude": 31.3,
+      "lineages": [
+        "parashari",
+        "jaimini",
+        "kp"
+      ],
+      "local_datetime": "1999-09-15T19:05:00+08:00",
+      "longitude": 119.917,
+      "node_policy": "mean",
+      "timezone": "Asia/Shanghai",
+      "utc_datetime": "1999-09-15T11:05:00Z"
+    },
+    "raw_input": {
+      "latitude": 31.3,
+      "local_datetime": "1999-09-15T19:05:00",
+      "longitude": 119.917,
+      "timezone": "Asia/Shanghai"
+    },
+    "schema_version": "0.1.0",
+    "trace": [
+      {
+        "rule_ids": [
+          "VEDIC-CAL-TIME-001"
+        ],
+        "source_ids": [
+          "SRC-TIME-PYTHON-ZONEINFO-001",
+          "SRC-TIME-TZDATA-001",
+          "SRC-VEDIC-PROJECT-SPEC-001"
+        ],
+        "stage": "time_normalization"
+      },
+      {
+        "rule_ids": [
+          "VEDIC-CAL-GRAHA-001",
+          "VEDIC-CAL-LAGNA-001"
+        ],
+        "source_ids": [
+          "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+          "SRC-VEDIC-PROJECT-SPEC-001"
+        ],
+        "stage": "tropical_astronomy"
+      },
+      {
+        "rule_ids": [
+          "VEDIC-CAL-SIDEREAL-001"
+        ],
+        "source_ids": [
+          "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+          "SRC-VEDIC-PROJECT-SPEC-001"
+        ],
+        "stage": "sidereal_conversion"
+      },
+      {
+        "lineages": [
+          "parashari",
+          "jaimini",
+          "kp"
+        ],
+        "rule_ids": [
+          "VEDIC-LINEAGE-ISOLATION-001"
+        ],
+        "source_ids": [
+          "SRC-VEDIC-PROJECT-SPEC-001"
+        ],
+        "stage": "lineage_modules"
+      }
+    ],
+    "validation": {
+      "status": "valid_with_warnings",
+      "warnings": [
+        {
+          "code": "spica_proper_motion_not_applied",
+          "message": "The true-Citra anchor uses declared J2000 Spica coordinates."
+        },
+        {
+          "code": "mean_nodes",
+          "message": "Rahu and Ketu use the mean-node policy."
+        },
+        {
+          "code": "structural_only",
+          "message": "No predictive or remedial interpretation is produced."
+        },
+        {
+          "code": "kp_stellar_only",
+          "message": "KP output is a stellar identity layer, not a complete KP chart."
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A future event is guaranteed.",
+    "Rules from an unselected lineage were silently applied.",
+    "The bounded KP stellar layer is described as a complete KP chart."
+  ],
+  "lineage": "true-citra-multi-lineage-v0.1",
+  "must_match_rules": [
+    "VEDIC-CAL-TIME-001",
+    "VEDIC-CAL-SIDEREAL-001",
+    "VEDIC-CAL-GRAHA-001",
+    "VEDIC-CAL-MEAN-NODE-001",
+    "VEDIC-CAL-LAGNA-001",
+    "VEDIC-CAL-NAKSHATRA-001",
+    "VEDIC-LINEAGE-ISOLATION-001",
+    "VEDIC-PARASHARI-WHOLE-SIGN-001",
+    "VEDIC-PARASHARI-NAVAMSHA-001",
+    "VEDIC-PARASHARI-VIMSHOTTARI-001",
+    "VEDIC-JAIMINI-KARAKA-SEVEN-001",
+    "VEDIC-JAIMINI-RASHI-DRISHTI-001",
+    "VEDIC-JAIMINI-ARUDHA-001",
+    "VEDIC-KP-SUBLORD-001",
+    "VEDIC-BOUNDARY-001"
+  ],
+  "normalized_input": {
+    "ayanamsha": "true_citra",
+    "coordinate_frame": "geocentric_true_ecliptic_of_date",
+    "fold": 0,
+    "jaimini_karaka_policy": "seven",
+    "latitude": 31.3,
+    "lineages": [
+      "parashari",
+      "jaimini",
+      "kp"
+    ],
+    "local_datetime": "1999-09-15T19:05:00+08:00",
+    "longitude": 119.917,
+    "node_policy": "mean",
+    "timezone": "Asia/Shanghai",
+    "utc_datetime": "1999-09-15T11:05:00Z"
+  },
+  "raw_input": {
+    "latitude": 31.3,
+    "local_datetime": "1999-09-15T19:05:00",
+    "longitude": 119.917,
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Deterministic engineering fixture; independent Jyotisha domain sign-off remains pending.",
+      "reviewed_at": "2026-07-24",
+      "reviewer_id": "pinned-engineering-regression",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "Pinned Astronomy Engine 2.1.19",
+      "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+    },
+    {
+      "locator": "Vedic v0.1 calculation contract",
+      "source_id": "SRC-VEDIC-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "vedic-astrology",
+  "title": "Multi-lineage chart for Shanghai 1999"
+}

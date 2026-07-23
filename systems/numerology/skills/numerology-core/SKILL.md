@@ -14,7 +14,8 @@ Use only the frozen mapping and show every reduction.
    `transliteration`; never infer it.
 3. Run `scripts/calculate.py <input.json>`.
 4. Show mapping lineage, transliteration policy, every normalized character and assigned value,
-   raw name/date totals, reduction steps, final values, and master-number policy.
+   raw name/date totals, reduction steps, final values, and the separate date/name
+   master-number policies.
 5. Cite `NUMEROLOGY-CAL-TRACE-001` for the audit trace. Cite
    `NUMEROLOGY-CAL-CHALDEAN-NAME-001` and the Cheiro source only for explicitly selected
    Chaldean name totals; the Pythagorean mapping remains project policy.

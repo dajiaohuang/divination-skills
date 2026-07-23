@@ -1,15 +1,28 @@
 {
   "source_id": "SRC-ZIWEI-LUNARPY-001",
   "title": "lunar-python 1.4.8 calendrical conversion",
-  "creators": [{ "name": "6tail and contributors", "role": "maintainer" }],
+  "creators": [
+    {
+      "name": "6tail and contributors",
+      "role": "maintainer"
+    }
+  ],
   "source_type": "software",
   "language": "zh-Hans",
   "edition_or_version": "1.4.8",
   "locators": [
-    { "kind": "url", "value": "https://pypi.org/project/lunar-python/1.4.8/", "stable": true }
+    {
+      "kind": "url",
+      "value": "https://pypi.org/project/lunar-python/1.4.8/",
+      "stable": true
+    }
   ],
   "retrieved_at": "2026-07-23",
-  "license": { "identifier": "MIT", "text_available": true, "additional_terms": false },
+  "license": {
+    "identifier": "MIT",
+    "text_available": true,
+    "additional_terms": false
+  },
   "rights": {
     "commercial_use": "allowed",
     "derivative_use": "allowed",
@@ -24,7 +37,9 @@
     "evidence": "Pinned package metadata and license were inspected; the package is declared rather than vendored."
   },
   "usage_status": "production",
-  "systems": ["ziwei"],
+  "systems": [
+    "ziwei"
+  ],
   "lineages": [
     "project-native-ziwei-structural-v0.4",
     "project-native-ziwei-structural-v0.5"
@@ -34,5 +49,10 @@
     "independence": "independent",
     "reliability": "medium",
     "notes": "Used only for Gregorian-to-lunar calendrical facts, not for Ziwei palace or star placement."
+  },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-ZIWEI-LUNARPY-001.md",
+    "sha256": "410b07be16b61959378faf18ebe4008c0df404c2e36fd7e4f373fc100591a4f7"
   }
 }

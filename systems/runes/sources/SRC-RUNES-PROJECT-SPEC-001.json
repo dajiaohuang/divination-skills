@@ -1,19 +1,60 @@
 {
   "source_id": "SRC-RUNES-PROJECT-SPEC-001",
   "title": "Project Elder Futhark modern reflection set v0.3",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.3.0",
-  "locators": [{ "kind": "local", "value": "systems/runes/data/deck.json", "stable": true }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/runes/data/deck.json",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/runes/data/deck.json" },
-  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
-  "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "allowed" },
-  "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Conventional rune identifiers with original project keyword wording; no copied rune-poem translation." },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-RUNES-PROJECT-SPEC-001.md",
+    "sha256": "95d5d008e825692f2041a983d8201c3b50cf333ee9bab50d803ddf068575ddee"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Conventional rune identifiers with original project keyword wording; no copied rune-poem translation."
+  },
   "usage_status": "production",
-  "systems": ["runes"],
-  "lineages": ["elder-futhark-project-v0.3", "elder-futhark-grapheme-v0.3", "elder-futhark-project-reflection-v0.2"],
-  "quality": { "authority": "unknown", "independence": "derived", "reliability": "low", "notes": "Modern reflective baseline, not a historical authority." }
+  "systems": [
+    "runes"
+  ],
+  "lineages": [
+    "elder-futhark-project-v0.3",
+    "elder-futhark-grapheme-v0.3",
+    "elder-futhark-project-reflection-v0.2"
+  ],
+  "quality": {
+    "authority": "unknown",
+    "independence": "derived",
+    "reliability": "low",
+    "notes": "Modern reflective baseline, not a historical authority."
+  }
 }

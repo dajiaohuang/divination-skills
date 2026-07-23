@@ -9,6 +9,7 @@ from divination_skills.validation import (
     validate_cross_references,
     validate_document_schemas,
     validate_skill_packages,
+    validate_source_snapshots,
     validate_system_completeness,
 )
 
@@ -39,6 +40,27 @@ def test_cross_reference_validator_reports_unknown_source() -> None:
     assert any("unknown source_id 'SRC-MISSING-001'" in issue.message for issue in issues)
 
 
+def test_cross_reference_validator_requires_source_system_coverage() -> None:
+    documents, loading_issues = discover_documents(ROOT)
+    assert loading_issues == []
+    changed = copy.deepcopy(documents)
+    path, rule = next(
+        entry for entry in changed["rules"] if "systems/liuyao/" in entry[0].as_posix()
+    )
+    source_id = rule["sources"][0]["source_id"]
+    source = next(
+        document
+        for _, document in changed["sources"]
+        if document["source_id"] == source_id
+    )
+    source["systems"] = ["unrelated"]
+    issues = validate_cross_references(ROOT, changed)
+    assert any(
+        f"source {source_id!r} does not declare system 'liuyao'" in issue.message
+        for issue in issues
+    )
+
+
 def test_production_rule_cannot_use_reference_only_source() -> None:
     documents, loading_issues = discover_documents(ROOT)
     assert loading_issues == []
@@ -52,6 +74,21 @@ def test_production_rule_cannot_use_reference_only_source() -> None:
     assert "without accepted rights 'SRC-VEDIC-REF-001'" in messages
 
 
+def test_computed_output_trace_ids_must_be_registered() -> None:
+    documents, loading_issues = discover_documents(ROOT)
+    assert loading_issues == []
+    changed = copy.deepcopy(documents)
+    _, case = changed["golden_cases"][0]
+    case.setdefault("expected_output", {})["synthetic_trace"] = {
+        "rule_ids": ["RULE-MISSING-001"],
+        "source_ids": ["SRC-MISSING-OUTPUT-001"],
+    }
+    issues = validate_cross_references(ROOT, changed)
+    messages = "\n".join(issue.message for issue in issues)
+    assert "computed output uses unknown rule_id 'RULE-MISSING-001'" in messages
+    assert "unknown source_id 'SRC-MISSING-OUTPUT-001'" in messages
+
+
 def test_malformed_json_is_reported_without_crashing(tmp_path: Path) -> None:
     root = tmp_path
     (root / "catalog/sources").mkdir(parents=True)
@@ -63,6 +100,12 @@ def test_malformed_json_is_reported_without_crashing(tmp_path: Path) -> None:
 
 def test_all_packaged_systems_are_complete() -> None:
     assert validate_system_completeness(ROOT) == []
+
+
+def test_all_registered_sources_have_verified_markdown_snapshots() -> None:
+    documents, loading_issues = discover_documents(ROOT)
+    assert loading_issues == []
+    assert validate_source_snapshots(ROOT, documents) == []
 
 
 def test_system_completeness_reports_missing_contract_and_corpora(tmp_path: Path) -> None:

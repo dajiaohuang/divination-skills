@@ -69,6 +69,8 @@ def draw(payload: dict[str, Any]) -> dict[str, Any]:
         items=items(),
         spreads=SPREADS,
         source_id=SOURCE,
+        draw_rule_id="LENORMAND-DRAW-UNIQUE-001",
+        identity_rule_id="LENORMAND-CARD-IDENTITY-001",
     )
     result["schema_version"] = "0.3.0"
     result["engine"]["version"] = "0.3.0"

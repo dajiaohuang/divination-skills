@@ -17,10 +17,12 @@
           29,
           11
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "heightened inspiration",
         "value": 11
       },
       "date_trace": {
@@ -36,6 +38,10 @@
         ],
         "fact_id": "numerology.date_trace",
         "raw_total": 15,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001",
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -48,10 +54,12 @@
           42,
           6
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "care and responsibility",
         "value": 6
       },
       "life_path": {
@@ -62,10 +70,12 @@
           15,
           6
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "care and responsibility",
         "value": 6
       },
       "maturity": {
@@ -76,10 +86,13 @@
           12,
           3
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001",
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "expression",
         "value": 3
       },
       "name_trace": {
@@ -147,6 +160,9 @@
           }
         ],
         "raw_total": 42,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -159,10 +175,12 @@
           12,
           3
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "expression",
         "value": 3
       },
       "soul_urge": {
@@ -173,13 +191,16 @@
           30,
           3
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "expression",
         "value": 3
       }
-    }
+    },
+    "computed_facts_sha256": "d8a984f2822e0752ecb2bb4cba86e4de5ff10fc2a5ecd47b273e3c0c3cd7f8d3"
   },
   "forbidden_conclusions": [
     "A fixed future or life event is guaranteed.",
@@ -193,6 +214,11 @@
   ],
   "normalized_input": {
     "birth_date": "2000-02-29",
+    "date_masters": [
+      11,
+      22,
+      33
+    ],
     "mapping": "pythagorean-a1-i9-repeat",
     "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
@@ -201,7 +227,15 @@
       33
     ],
     "name_letters": "ELODIETEST",
-    "transliteration_policy": "latin_nfkd-v0.1"
+    "name_masters": [
+      11,
+      22,
+      33
+    ],
+    "transliteration_policy": "latin_nfkd-v0.1",
+    "transliteration_rule_ids": [
+      "NUMEROLOGY-TRANSLITERATION-POLICY-001"
+    ]
   },
   "raw_input": {
     "birth_date": "2000-02-29",

@@ -68,7 +68,7 @@ def main() -> None:
         payload = {
             "case_id": case_id,
             "declared_alternative": policies[(number - 1) % len(policies)],
-            "project_lineage": "shijia-zhuanpan-chaibu-full-v0.2",
+            "project_lineage": "shijia-zhuanpan-chaibu-v0.3",
             "expected_decision": "lineage_mismatch_requires_separate_calculator",
         }
         (disputes / f"{case_id}.json").write_text(

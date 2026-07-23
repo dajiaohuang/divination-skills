@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -245,10 +246,41 @@ def _check_source_reference(
     relative: str,
     reference: Document,
     sources: dict[str, tuple[Path, Document]],
+    system: str | None = None,
 ) -> None:
     source_id = reference.get("source_id")
     if isinstance(source_id, str) and source_id not in sources:
         issues.append(ValidationIssue(relative, f"unknown source_id {source_id!r}"))
+    elif isinstance(source_id, str) and system is not None:
+        source = sources[source_id][1]
+        if system not in source.get("systems", []):
+            issues.append(
+                ValidationIssue(
+                    relative,
+                    f"source {source_id!r} does not declare system {system!r}",
+                )
+            )
+
+
+def _document_system(root: Path, path: Path) -> str | None:
+    relative = path.relative_to(root)
+    if len(relative.parts) >= 2 and relative.parts[0] == "systems":
+        return relative.parts[1].replace("_", "-")
+    return None
+
+
+def _iter_nested_ids(value: Any, field: str) -> Iterable[str]:
+    """Yield trace IDs embedded in computed outputs and report fragments."""
+
+    if isinstance(value, dict):
+        for key, nested in value.items():
+            if key == field and isinstance(nested, list):
+                yield from (item for item in nested if isinstance(item, str))
+            else:
+                yield from _iter_nested_ids(nested, field)
+    elif isinstance(value, list):
+        for nested in value:
+            yield from _iter_nested_ids(nested, field)
 
 
 def validate_cross_references(
@@ -264,9 +296,10 @@ def validate_cross_references(
 
     for path, rule in documents["rules"]:
         relative = str(path.relative_to(root))
+        system = _document_system(root, path)
         source_ids: list[str] = []
         for reference in rule.get("sources", []):
-            _check_source_reference(issues, relative, reference, sources)
+            _check_source_reference(issues, relative, reference, sources, system)
             source_id = reference.get("source_id")
             if isinstance(source_id, str):
                 source_ids.append(source_id)
@@ -307,18 +340,33 @@ def validate_cross_references(
 
     for path, case in documents["golden_cases"]:
         relative = str(path.relative_to(root))
+        system = _document_system(root, path)
         for rule_id in case.get("must_match_rules", []):
             if rule_id not in rules:
                 issues.append(ValidationIssue(relative, f"unknown rule_id {rule_id!r}"))
         for reference in case.get("sources", []):
-            _check_source_reference(issues, relative, reference, sources)
+            _check_source_reference(issues, relative, reference, sources, system)
         for disagreement in case.get("allowed_disagreements", []):
             dispute_id = disagreement.get("dispute_id")
             if isinstance(dispute_id, str) and dispute_id not in disputes:
                 issues.append(ValidationIssue(relative, f"unknown dispute_id {dispute_id!r}"))
+        for rule_id in sorted(set(_iter_nested_ids(case, "rule_ids"))):
+            if rule_id not in rules:
+                issues.append(
+                    ValidationIssue(relative, f"computed output uses unknown rule_id {rule_id!r}")
+                )
+        for source_id in sorted(set(_iter_nested_ids(case, "source_ids"))):
+            _check_source_reference(
+                issues,
+                relative,
+                {"source_id": source_id},
+                sources,
+                system,
+            )
 
     for path, dispute in documents["disputes"]:
         relative = str(path.relative_to(root))
+        system = _document_system(root, path)
         lineages: list[str] = []
         for position in dispute.get("positions", []):
             lineage = position.get("lineage")
@@ -328,7 +376,7 @@ def validate_cross_references(
                 if rule_id not in rules:
                     issues.append(ValidationIssue(relative, f"unknown rule_id {rule_id!r}"))
             for reference in position.get("sources", []):
-                _check_source_reference(issues, relative, reference, sources)
+                _check_source_reference(issues, relative, reference, sources, system)
         if len(lineages) != len(set(lineages)):
             issues.append(ValidationIssue(relative, "dispute position lineages must be unique"))
         selected = dispute.get("default_policy", {}).get("selected_lineage")
@@ -337,8 +385,68 @@ def validate_cross_references(
                 ValidationIssue(relative, f"selected_lineage {selected!r} has no dispute position")
             )
         for reference in dispute.get("sources", []):
-            _check_source_reference(issues, relative, reference, sources)
+            _check_source_reference(issues, relative, reference, sources, system)
 
+    return issues
+
+
+def validate_source_snapshots(
+    root: Path,
+    documents: dict[str, list[tuple[Path, Document]]],
+) -> list[ValidationIssue]:
+    """Require every registered non-example source to have a verified Markdown snapshot."""
+
+    issues: list[ValidationIssue] = []
+    root = root.resolve()
+    for manifest_path, source in documents["sources"]:
+        relative = manifest_path.relative_to(root)
+        if relative.parts[:2] == ("common", "examples"):
+            continue
+        snapshot = source.get("local_snapshot")
+        if not isinstance(snapshot, dict) or snapshot.get("retained") is not True:
+            issues.append(
+                ValidationIssue(
+                    str(relative),
+                    "source must retain a tracked Markdown audit snapshot",
+                )
+            )
+            continue
+        snapshot_path = snapshot.get("path")
+        expected_sha = snapshot.get("sha256")
+        if not isinstance(snapshot_path, str) or not isinstance(expected_sha, str):
+            issues.append(
+                ValidationIssue(
+                    str(relative),
+                    "retained source snapshot must declare path and sha256",
+                )
+            )
+            continue
+        candidate = (root / snapshot_path).resolve()
+        if candidate != root and root not in candidate.parents:
+            issues.append(
+                ValidationIssue(str(relative), "source snapshot path escapes repository")
+            )
+            continue
+        if not candidate.is_file():
+            issues.append(
+                ValidationIssue(
+                    str(relative),
+                    f"source snapshot does not exist: {snapshot_path}",
+                )
+            )
+            continue
+        if candidate.suffix.lower() != ".md":
+            issues.append(
+                ValidationIssue(str(relative), "source snapshot must be Markdown")
+            )
+        actual_sha = hashlib.sha256(candidate.read_bytes()).hexdigest()
+        if actual_sha != expected_sha:
+            issues.append(
+                ValidationIssue(
+                    str(relative),
+                    f"source snapshot sha256 mismatch for {snapshot_path}",
+                )
+            )
     return issues
 
 
@@ -507,6 +615,7 @@ def validate_repository(root: Path, include_examples: bool = True) -> list[Valid
     issues.extend(validate_contract_examples(root, contract_schemas))
     issues.extend(validate_document_schemas(root, schemas, documents))
     issues.extend(validate_cross_references(root, documents))
+    issues.extend(validate_source_snapshots(root, documents))
     issues.extend(validate_system_completeness(root))
     issues.extend(validate_skill_packages(root))
     return sorted(set(issues))

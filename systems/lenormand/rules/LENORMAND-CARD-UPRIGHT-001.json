@@ -7,7 +7,7 @@
   "status": "tested",
   "kind": "interpretation",
   "conditions": [{ "fact_path": "card.orientation", "operator": "eq", "value": "upright" }],
-  "conclusions": [{ "finding_type": "lenormand.card-theme", "output_path": "derived_findings.card", "value": "upright_keywords", "confidence": "low" }],
+  "conclusions": [{ "finding_type": "lenormand.card-theme", "output_path": "derived_findings", "value": "upright_keywords", "confidence": "low" }],
   "priority": 700,
   "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "Per-card keyword data", "support_type": "direct" }],
   "tests": ["CASE-LENORMAND-DRAW-001"]

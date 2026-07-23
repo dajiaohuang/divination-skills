@@ -19,6 +19,9 @@
           "orientation": "upright",
           "playing_card": "6-clubs",
           "position": "p1",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -34,6 +37,9 @@
           "orientation": "upright",
           "playing_card": "queen-clubs",
           "position": "p2",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -49,6 +55,9 @@
           "orientation": "upright",
           "playing_card": "8-spades",
           "position": "p3",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -64,6 +73,9 @@
           "orientation": "upright",
           "playing_card": "9-diamonds",
           "position": "p4",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -79,6 +91,9 @@
           "orientation": "upright",
           "playing_card": "king-hearts",
           "position": "p5",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -94,6 +109,9 @@
           "orientation": "upright",
           "playing_card": "king-clubs",
           "position": "p6",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -109,6 +127,9 @@
           "orientation": "upright",
           "playing_card": "6-diamonds",
           "position": "p7",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -124,6 +145,9 @@
           "orientation": "upright",
           "playing_card": "10-clubs",
           "position": "p8",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -139,6 +163,9 @@
           "orientation": "upright",
           "playing_card": "jack-spades",
           "position": "p9",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -147,7 +174,8 @@
           "symbol_index": 12
         }
       ]
-    }
+    },
+    "computed_facts_sha256": "7abbfa054877caef551283998074620055e70d03255adbdf4aea0986b925eacb"
   },
   "forbidden_conclusions": [
     "A fixed future or life event is guaranteed.",

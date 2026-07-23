@@ -14,5 +14,5 @@
     { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "normalization and calculation contract", "support_type": "corroborating" }
   ],
   "tests": ["CASE-NUMEROLOGY-PROFILE-001"],
-  "notes": "The historical mapping is source-backed but its interpretive claims are not scientific evidence; values are never blended with the Pythagorean project mapping."
+  "notes": "The historical name mapping is source-backed but its interpretive claims are not scientific evidence. It never changes the independent project date-reduction policy or blends letter values with the Pythagorean project mapping."
 }

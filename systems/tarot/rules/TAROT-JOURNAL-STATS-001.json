@@ -7,7 +7,7 @@
   "status": "tested",
   "kind": "safety",
   "conditions": [{ "fact_path": "entries", "operator": "exists" }],
-  "conclusions": [{ "finding_type": "tarot.journal_statistics", "output_path": "statistics", "value": "descriptive_counts_only", "confidence": "deterministic" }],
+  "conclusions": [{ "finding_type": "tarot.journal_statistics", "output_path": "spread_counts", "value": "descriptive_counts_only", "confidence": "deterministic" }],
   "priority": 990,
   "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "systems/tarot/journal.py descriptive_statistics", "support_type": "direct" }],
   "tests": ["CASE-TAROT-DRAW-001"]

@@ -1,0 +1,14 @@
+{
+  "rule_id": "VEDIC-BOUNDARY-001",
+  "title": "Use unrounded half-open astronomical boundaries",
+  "system": "vedic-astrology",
+  "lineage": "true-citra-common-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [{"fact_path": "computed_facts.sidereal_chart", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.boundary", "output_path": "trace", "value": "unrounded_half_open", "confidence": "deterministic"}],
+  "priority": 940,
+  "sources": [{"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Numerical boundary contract", "support_type": "direct"}],
+  "tests": ["CASE-VEDIC-KP-BOUNDARY-001", "CASE-VEDIC-EDGE-NAVAMSHA-001"]
+}

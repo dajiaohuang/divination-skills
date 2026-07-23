@@ -1,0 +1,96 @@
+{
+  "system": "vedic_astrology",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "evidence": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-VEDIC-DISPUTE-AYANAMSHA-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-DISPUTE-DASHA-YEAR-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-DISPUTE-HOUSE-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-DISPUTE-KARAKA-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-DISPUTE-NODE-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-EDGE-ARUDHA-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-EDGE-DST-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-EDGE-NAVAMSHA-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-JAIMINI-EIGHT-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-KP-BOUNDARY-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-LINEAGE-KP-ONLY-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-LINEAGE-PARASHARI-ONLY-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-NATAL-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-NATAL-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-NATAL-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-NATAL-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-VEDIC-NATAL-005",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed."
+}

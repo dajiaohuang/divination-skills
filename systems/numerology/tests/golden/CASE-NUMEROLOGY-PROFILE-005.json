@@ -15,10 +15,12 @@
           10,
           1
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "initiative",
         "value": 1
       },
       "date_trace": {
@@ -34,6 +36,10 @@
         ],
         "fact_id": "numerology.date_trace",
         "raw_total": 38,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001",
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -47,10 +53,12 @@
           10,
           1
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "initiative",
         "value": 1
       },
       "life_path": {
@@ -61,10 +69,12 @@
           38,
           11
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "heightened inspiration",
         "value": 11
       },
       "maturity": {
@@ -75,10 +85,13 @@
           12,
           3
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001",
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "expression",
         "value": 3
       },
       "name_trace": {
@@ -140,6 +153,9 @@
           }
         ],
         "raw_total": 37,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -152,10 +168,12 @@
           16,
           7
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "inquiry",
         "value": 7
       },
       "soul_urge": {
@@ -166,10 +184,12 @@
           21,
           3
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "expression",
         "value": 3
       }
     }
@@ -187,6 +207,11 @@
   ],
   "normalized_input": {
     "birth_date": "1969-12-28",
+    "date_masters": [
+      11,
+      22,
+      33
+    ],
     "mapping": "pythagorean-a1-i9-repeat",
     "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
@@ -195,7 +220,15 @@
       33
     ],
     "name_letters": "LINASTONE",
-    "transliteration_policy": "latin_nfkd-v0.1"
+    "name_masters": [
+      11,
+      22,
+      33
+    ],
+    "transliteration_policy": "latin_nfkd-v0.1",
+    "transliteration_rule_ids": [
+      "NUMEROLOGY-TRANSLITERATION-POLICY-001"
+    ]
   },
   "raw_input": {
     "birth_date": "1969-12-28",

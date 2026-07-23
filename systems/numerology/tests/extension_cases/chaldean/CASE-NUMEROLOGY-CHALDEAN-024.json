@@ -13,7 +13,16 @@
       "mapping": "chaldean-1-through-8-project",
       "mapping_lineage": "chaldean-name-cheiro-v0.3",
       "transliteration_policy": "user_supplied_latin_transliteration-v0.2",
-      "masters": []
+      "transliteration_rule_ids": [
+        "NUMEROLOGY-TRANSLITERATION-POLICY-001"
+      ],
+      "masters": [],
+      "date_masters": [
+        11,
+        22,
+        33
+      ],
+      "name_masters": []
     },
     "computed_facts": {
       "name_trace": {
@@ -81,6 +90,9 @@
           }
         ],
         "raw_total": 26,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -99,6 +111,10 @@
           5
         ],
         "raw_total": 14,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001",
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -112,7 +128,9 @@
         ],
         "value": 5,
         "master_number": false,
-        "theme": "change",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -126,7 +144,9 @@
         ],
         "value": 7,
         "master_number": false,
-        "theme": "inquiry",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -140,7 +160,9 @@
         ],
         "value": 8,
         "master_number": false,
-        "theme": "stewardship of power and resources",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -155,7 +177,9 @@
         ],
         "value": 2,
         "master_number": false,
-        "theme": "cooperation",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -170,7 +194,9 @@
         ],
         "value": 6,
         "master_number": false,
-        "theme": "care and responsibility",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -185,7 +211,10 @@
         ],
         "value": 4,
         "master_number": false,
-        "theme": "structure",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001",
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"

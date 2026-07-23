@@ -113,7 +113,7 @@
     }
   },
   "comparison_policy": {
-    "luck_cycle_prefix_count": 8,
+    "luck_cycle_prefix_count": 10,
     "transformation_claims": "not_inferred_from_a_branch_pair_alone",
     "true_solar_time": "the reported corrected time is tested as explicit input and independently reproduced from 19:05 civil time with the NOAA approximation"
   },

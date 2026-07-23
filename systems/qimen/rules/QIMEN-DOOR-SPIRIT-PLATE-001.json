@@ -2,14 +2,25 @@
   "rule_id": "QIMEN-DOOR-SPIRIT-PLATE-001",
   "title": "Rotate eight doors and eight spirits by declared dun direction",
   "system": "qimen",
-  "lineage": "shijia-zhuanpan-chaibu-full-v0.2",
-  "version": "0.2.0",
+  "lineage": "shijia-zhuanpan-chaibu-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "calculation",
   "conditions": [{ "fact_path": "foundation.computed_facts.hour_pillar", "operator": "exists" }],
   "conclusions": [{ "finding_type": "qimen.door_spirit_plate", "output_path": "palaces", "value": "dun_direction_rotation", "confidence": "deterministic" }],
   "priority": 890,
-  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "systems/qimen/full_chart.py door_targets", "support_type": "direct" }],
+  "sources": [
+    {
+      "source_id": "SRC-QIMEN-BAOJIAN-001",
+      "locator": "值使随时支 and 符从甲去寻时干，使索时支遁处止",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-QIMEN-PROJECT-SPEC-001",
+      "locator": "systems/qimen/full_chart.py nine-palace duty-door walk and eight-ring hosting policy",
+      "support_type": "corroborating"
+    }
+  ],
   "tests": ["CASE-QIMEN-FOUNDATION-001"],
-  "notes": "Project rotation policy pending practitioner review."
+  "notes": "The duty door walks all nine Lo Shu palace numbers. A logical center landing is disclosed and hosted in Kun palace 2 for the displayed eight-door ring."
 }

@@ -1,0 +1,17 @@
+{
+  "rule_id": "VEDIC-CAL-TIME-001",
+  "title": "Normalize an IANA civil time without guessing",
+  "system": "vedic-astrology",
+  "lineage": "true-citra-common-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [{"fact_path": "raw_input.local_datetime", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.time", "output_path": "normalized_input.utc_datetime", "value": "strict_iana_instant", "confidence": "deterministic"}],
+  "priority": 1000,
+  "sources": [
+    {"source_id": "SRC-TIME-PYTHON-ZONEINFO-001", "locator": "ZoneInfo and fold semantics", "support_type": "direct"},
+    {"source_id": "SRC-TIME-TZDATA-001", "locator": "Pinned IANA data", "support_type": "direct"}
+  ],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-EDGE-DST-001"]
+}

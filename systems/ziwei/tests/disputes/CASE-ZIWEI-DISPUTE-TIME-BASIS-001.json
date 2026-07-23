@@ -1,0 +1,3194 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "local_civil",
+        "true_solar_time"
+      ],
+      "dispute_id": "DSP-ZIWEI-TIME-BASIS-001",
+      "field_path": "calculation.time_basis"
+    }
+  ],
+  "case_id": "CASE-ZIWEI-DISPUTE-TIME-BASIS-001",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-ziwei-native",
+    "engine_version": "0.5.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "body_palace_branch": "午",
+      "body_ruler": "天同",
+      "bureau_number": 5,
+      "cause_palace": {
+        "heavenly_stem": "己",
+        "palace_fact_id": "ziwei.palace.003",
+        "palace_name": "兄弟"
+      },
+      "chinese_date": "己卯年 戊午时",
+      "five_elements_class": "土五局",
+      "lunar_date": "1999年冬月廿五",
+      "palaces": [
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.000.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "三台",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.000.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天福",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "木",
+              "fact_id": "ziwei.palace.000.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "天巫",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.000.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "病",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.000.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "将军",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.000.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "病符",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.000.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "亡神",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 54,
+            "start_age": 45
+          },
+          "earthlyBranch": "寅",
+          "fact_id": "ziwei.palace.000",
+          "heavenlyStem": "丙",
+          "index": 0,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "得",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "金",
+              "fact_id": "ziwei.palace.000.majorStars.001",
+              "mutagen": "禄",
+              "name": "武曲",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001",
+                "ZIWEI-TRANSFORMATION-BIRTH-001"
+              ],
+              "self_transformations": [
+                {
+                  "direction": "inward",
+                  "direction_zh": "向心自化",
+                  "fact_id": "ziwei.self_transformation.001",
+                  "origin_palace_fact_id": "ziwei.palace.006",
+                  "origin_stem": "壬",
+                  "rule_ids": [
+                    "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+                  ],
+                  "source_ids": [
+                    "SRC-ZIWEI-PROJECT-SPEC-001",
+                    "SRC-ZIWEI-QUANSHU-001"
+                  ],
+                  "symbol": "↑",
+                  "transformation": "忌"
+                }
+              ],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "水",
+              "fact_id": "ziwei.palace.000.majorStars.002",
+              "mutagen": null,
+              "name": "天相",
+              "polarity": "阳",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "minor",
+              "element": "土",
+              "fact_id": "ziwei.palace.000.minorStars.001",
+              "mutagen": null,
+              "name": "左辅",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "minor_limit_ages": [
+            2,
+            14,
+            26,
+            38,
+            50,
+            62,
+            74,
+            86,
+            98,
+            110
+          ],
+          "name": "财帛",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": "利",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "malefic",
+              "element": "火",
+              "fact_id": "ziwei.palace.001.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "火星",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.001.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "恩光",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "金",
+              "fact_id": "ziwei.palace.001.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "天哭",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.001.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "衰",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.001.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "小耗",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.001.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "岁建",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.001.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "将星",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 44,
+            "start_age": 35
+          },
+          "earthlyBranch": "卯",
+          "fact_id": "ziwei.palace.001",
+          "heavenlyStem": "丁",
+          "index": 1,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "火",
+              "fact_id": "ziwei.palace.001.majorStars.001",
+              "mutagen": null,
+              "name": "太阳",
+              "polarity": "阳",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "土",
+              "fact_id": "ziwei.palace.001.majorStars.002",
+              "mutagen": "科",
+              "name": "天梁",
+              "polarity": "阳",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001",
+                "ZIWEI-TRANSFORMATION-BIRTH-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "minor_limit_ages": [
+            3,
+            15,
+            27,
+            39,
+            51,
+            63,
+            75,
+            87,
+            99,
+            111
+          ],
+          "name": "子女",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": "陷",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "malefic",
+              "element": "火",
+              "fact_id": "ziwei.palace.002.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "铃星",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.002.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天空",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.002.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "帝旺",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.002.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "青龙",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.002.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "晦气",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.002.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "攀鞍",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 34,
+            "start_age": 25
+          },
+          "earthlyBranch": "辰",
+          "fact_id": "ziwei.palace.002",
+          "heavenlyStem": "戊",
+          "index": 2,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "金",
+              "fact_id": "ziwei.palace.002.majorStars.001",
+              "mutagen": null,
+              "name": "七杀",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [
+            {
+              "brightness": "得",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "minor",
+              "element": "金",
+              "fact_id": "ziwei.palace.002.minorStars.001",
+              "mutagen": null,
+              "name": "文昌",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "minor_limit_ages": [
+            4,
+            16,
+            28,
+            40,
+            52,
+            64,
+            76,
+            88,
+            100,
+            112
+          ],
+          "name": "夫妻",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": "陷",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "malefic",
+              "element": "金",
+              "fact_id": "ziwei.palace.003.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "陀罗",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.003.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天马",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "malefic",
+              "element": "火",
+              "fact_id": "ziwei.palace.003.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "地劫",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "malefic",
+              "element": "火",
+              "fact_id": "ziwei.palace.003.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "地空",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": null,
+              "fact_id": "ziwei.palace.003.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "孤辰",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.003.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "蜚廉",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.003.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "破碎",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.003.auxiliaryStars.008",
+              "mutagen": null,
+              "name": "临官",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.003.auxiliaryStars.009",
+              "mutagen": null,
+              "name": "力士",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.003.auxiliaryStars.010",
+              "mutagen": null,
+              "name": "丧门",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.003.auxiliaryStars.011",
+              "mutagen": null,
+              "name": "岁驿",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 24,
+            "start_age": 15
+          },
+          "earthlyBranch": "巳",
+          "fact_id": "ziwei.palace.003",
+          "heavenlyStem": "己",
+          "index": 3,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "平",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "木",
+              "fact_id": "ziwei.palace.003.majorStars.001",
+              "mutagen": null,
+              "name": "天机",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [
+                {
+                  "direction": "inward",
+                  "direction_zh": "向心自化",
+                  "fact_id": "ziwei.self_transformation.002",
+                  "origin_palace_fact_id": "ziwei.palace.009",
+                  "origin_stem": "乙",
+                  "rule_ids": [
+                    "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+                  ],
+                  "source_ids": [
+                    "SRC-ZIWEI-PROJECT-SPEC-001",
+                    "SRC-ZIWEI-QUANSHU-001"
+                  ],
+                  "symbol": "↑",
+                  "transformation": "禄"
+                }
+              ],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "minor_limit_ages": [
+            5,
+            17,
+            29,
+            41,
+            53,
+            65,
+            77,
+            89,
+            101,
+            113
+          ],
+          "name": "兄弟",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.004.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "禄存",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "romance",
+              "element": "水",
+              "fact_id": "ziwei.palace.004.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天喜",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "resolution",
+              "element": "木",
+              "fact_id": "ziwei.palace.004.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "解神",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": null,
+              "fact_id": "ziwei.palace.004.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "阴煞",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.004.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "冠带",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.004.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "博士",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.004.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "贯索",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.004.auxiliaryStars.008",
+              "mutagen": null,
+              "name": "息神",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 14,
+            "start_age": 5
+          },
+          "earthlyBranch": "午",
+          "fact_id": "ziwei.palace.004",
+          "heavenlyStem": "庚",
+          "index": 4,
+          "isBodyPalace": true,
+          "isOriginalPalace": true,
+          "majorStars": [
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "土",
+              "fact_id": "ziwei.palace.004.majorStars.001",
+              "mutagen": null,
+              "name": "紫微",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "minor_limit_ages": [
+            6,
+            18,
+            30,
+            42,
+            54,
+            66,
+            78,
+            90,
+            102,
+            114
+          ],
+          "name": "命宫",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "malefic",
+              "element": "金",
+              "fact_id": "ziwei.palace.005.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "擎羊",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.005.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天刑",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "水",
+              "fact_id": "ziwei.palace.005.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "龙池",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.005.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "凤阁",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "resolution",
+              "element": "木",
+              "fact_id": "ziwei.palace.005.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "年解",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.005.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "沐浴",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.005.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "官府",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.005.auxiliaryStars.008",
+              "mutagen": null,
+              "name": "官符",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.005.auxiliaryStars.009",
+              "mutagen": null,
+              "name": "华盖",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 124,
+            "start_age": 115
+          },
+          "earthlyBranch": "未",
+          "fact_id": "ziwei.palace.005",
+          "heavenlyStem": "辛",
+          "index": 5,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [],
+          "minorStars": [],
+          "minor_limit_ages": [
+            7,
+            19,
+            31,
+            43,
+            55,
+            67,
+            79,
+            91,
+            103,
+            115
+          ],
+          "name": "父母",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.006.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "天钺",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.006.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "封诰",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "resolution",
+              "element": "火",
+              "fact_id": "ziwei.palace.006.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "月德",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.006.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "天厨",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.006.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "大耗",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.006.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "长生",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.006.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "伏兵",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.006.auxiliaryStars.008",
+              "mutagen": null,
+              "name": "小耗",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.006.auxiliaryStars.009",
+              "mutagen": null,
+              "name": "劫煞",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 114,
+            "start_age": 105
+          },
+          "earthlyBranch": "申",
+          "fact_id": "ziwei.palace.006",
+          "heavenlyStem": "壬",
+          "index": 6,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "得",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "水",
+              "fact_id": "ziwei.palace.006.majorStars.001",
+              "mutagen": null,
+              "name": "破军",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "minor_limit_ages": [
+            8,
+            20,
+            32,
+            44,
+            56,
+            68,
+            80,
+            92,
+            104,
+            116
+          ],
+          "name": "福德",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.007.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "天贵",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.007.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天虚",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "木",
+              "fact_id": "ziwei.palace.007.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "天才",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.007.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "天寿",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.007.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "天官",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.007.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "截空",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.007.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "旬空",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.007.auxiliaryStars.008",
+              "mutagen": null,
+              "name": "养",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.007.auxiliaryStars.009",
+              "mutagen": null,
+              "name": "大耗",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.007.auxiliaryStars.010",
+              "mutagen": null,
+              "name": "大耗",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.007.auxiliaryStars.011",
+              "mutagen": null,
+              "name": "灾煞",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 104,
+            "start_age": 95
+          },
+          "earthlyBranch": "酉",
+          "fact_id": "ziwei.palace.007",
+          "heavenlyStem": "癸",
+          "index": 7,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [],
+          "minorStars": [],
+          "minor_limit_ages": [
+            9,
+            21,
+            33,
+            45,
+            57,
+            69,
+            81,
+            93,
+            105,
+            117
+          ],
+          "name": "田宅",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": null,
+              "fact_id": "ziwei.palace.008.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "天月",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.008.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "胎",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.008.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "病符",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.008.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "龙德",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.008.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "天煞",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 94,
+            "start_age": 85
+          },
+          "earthlyBranch": "戌",
+          "fact_id": "ziwei.palace.008",
+          "heavenlyStem": "甲",
+          "index": 8,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "利",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "火",
+              "fact_id": "ziwei.palace.008.majorStars.001",
+              "mutagen": null,
+              "name": "廉贞",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [
+                {
+                  "direction": "outward",
+                  "direction_zh": "离心自化",
+                  "fact_id": "ziwei.self_transformation.003",
+                  "origin_palace_fact_id": "ziwei.palace.008",
+                  "origin_stem": "甲",
+                  "rule_ids": [
+                    "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+                  ],
+                  "source_ids": [
+                    "SRC-ZIWEI-PROJECT-SPEC-001",
+                    "SRC-ZIWEI-QUANSHU-001"
+                  ],
+                  "symbol": "↓",
+                  "transformation": "禄"
+                }
+              ],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "土",
+              "fact_id": "ziwei.palace.008.majorStars.002",
+              "mutagen": null,
+              "name": "天府",
+              "polarity": "阳",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [
+            {
+              "brightness": "陷",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "minor",
+              "element": "水",
+              "fact_id": "ziwei.palace.008.minorStars.001",
+              "mutagen": "忌",
+              "name": "文曲",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001",
+                "ZIWEI-TRANSFORMATION-BIRTH-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "minor_limit_ages": [
+            10,
+            22,
+            34,
+            46,
+            58,
+            70,
+            82,
+            94,
+            106,
+            118
+          ],
+          "name": "官禄",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "水",
+              "fact_id": "ziwei.palace.009.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "天姚",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": null,
+              "fact_id": "ziwei.palace.009.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天伤",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.009.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "绝",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.009.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "喜神",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.009.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "白虎",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.009.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "指背",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 84,
+            "start_age": 75
+          },
+          "earthlyBranch": "亥",
+          "fact_id": "ziwei.palace.009",
+          "heavenlyStem": "乙",
+          "index": 9,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "庙",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "水",
+              "fact_id": "ziwei.palace.009.majorStars.001",
+              "mutagen": null,
+              "name": "太阴",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [
+                {
+                  "direction": "outward",
+                  "direction_zh": "离心自化",
+                  "fact_id": "ziwei.self_transformation.004",
+                  "origin_palace_fact_id": "ziwei.palace.009",
+                  "origin_stem": "乙",
+                  "rule_ids": [
+                    "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+                  ],
+                  "source_ids": [
+                    "SRC-ZIWEI-PROJECT-SPEC-001",
+                    "SRC-ZIWEI-QUANSHU-001"
+                  ],
+                  "symbol": "↓",
+                  "transformation": "忌"
+                }
+              ],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "minor_limit_ages": [
+            11,
+            23,
+            35,
+            47,
+            59,
+            71,
+            83,
+            95,
+            107,
+            119
+          ],
+          "name": "仆役",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "火",
+              "fact_id": "ziwei.palace.010.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "天魁",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.010.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "八座",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": "土",
+              "fact_id": "ziwei.palace.010.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "台辅",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "romance",
+              "element": "水",
+              "fact_id": "ziwei.palace.010.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "红鸾",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "resolution",
+              "element": "火",
+              "fact_id": "ziwei.palace.010.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "天德",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.010.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "墓",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.010.auxiliaryStars.007",
+              "mutagen": null,
+              "name": "飞廉",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "resolution",
+              "element": "火",
+              "fact_id": "ziwei.palace.010.auxiliaryStars.008",
+              "mutagen": null,
+              "name": "天德",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.010.auxiliaryStars.009",
+              "mutagen": null,
+              "name": "咸池",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 74,
+            "start_age": 65
+          },
+          "earthlyBranch": "子",
+          "fact_id": "ziwei.palace.010",
+          "heavenlyStem": "丙",
+          "index": 10,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "旺",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "水木",
+              "fact_id": "ziwei.palace.010.majorStars.001",
+              "mutagen": "权",
+              "name": "贪狼",
+              "polarity": "阳",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001",
+                "ZIWEI-TRANSFORMATION-BIRTH-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "minor",
+              "element": "水",
+              "fact_id": "ziwei.palace.010.minorStars.001",
+              "mutagen": null,
+              "name": "右弼",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "minor_limit_ages": [
+            12,
+            24,
+            36,
+            48,
+            60,
+            72,
+            84,
+            96,
+            108,
+            120
+          ],
+          "name": "迁移",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "auxiliaryStars": [
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": null,
+              "fact_id": "ziwei.palace.011.auxiliaryStars.001",
+              "mutagen": null,
+              "name": "寡宿",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "auxiliary",
+              "element": null,
+              "fact_id": "ziwei.palace.011.auxiliaryStars.002",
+              "mutagen": null,
+              "name": "天使",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.011.auxiliaryStars.003",
+              "mutagen": null,
+              "name": "死",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.011.auxiliaryStars.004",
+              "mutagen": null,
+              "name": "奏书",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.011.auxiliaryStars.005",
+              "mutagen": null,
+              "name": "吊客",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            },
+            {
+              "brightness": null,
+              "brightness_source_ids": [],
+              "brightness_status": "not_listed_in_classical_volume_two_matrix",
+              "category": "cycle",
+              "element": null,
+              "fact_id": "ziwei.palace.011.auxiliaryStars.006",
+              "mutagen": null,
+              "name": "月煞",
+              "polarity": null,
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-AUX-001"
+              ],
+              "self_transformations": [],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "auxiliary"
+            }
+          ],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 64,
+            "start_age": 55
+          },
+          "earthlyBranch": "丑",
+          "fact_id": "ziwei.palace.011",
+          "heavenlyStem": "丁",
+          "index": 11,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": "不",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "水",
+              "fact_id": "ziwei.palace.011.majorStars.001",
+              "mutagen": null,
+              "name": "天同",
+              "polarity": "阳",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [
+                {
+                  "direction": "outward",
+                  "direction_zh": "离心自化",
+                  "fact_id": "ziwei.self_transformation.005",
+                  "origin_palace_fact_id": "ziwei.palace.011",
+                  "origin_stem": "丁",
+                  "rule_ids": [
+                    "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+                  ],
+                  "source_ids": [
+                    "SRC-ZIWEI-PROJECT-SPEC-001",
+                    "SRC-ZIWEI-QUANSHU-001"
+                  ],
+                  "symbol": "↓",
+                  "transformation": "权"
+                }
+              ],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": "不",
+              "brightness_source_ids": [
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "brightness_status": "classical_volume_two_matrix",
+              "category": "major",
+              "element": "水",
+              "fact_id": "ziwei.palace.011.majorStars.002",
+              "mutagen": null,
+              "name": "巨门",
+              "polarity": "阴",
+              "rule_ids": [
+                "ZIWEI-NATIVE-NATAL-001",
+                "ZIWEI-STAR-BRIGHTNESS-001"
+              ],
+              "self_transformations": [
+                {
+                  "direction": "outward",
+                  "direction_zh": "离心自化",
+                  "fact_id": "ziwei.self_transformation.006",
+                  "origin_palace_fact_id": "ziwei.palace.011",
+                  "origin_stem": "丁",
+                  "rule_ids": [
+                    "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+                  ],
+                  "source_ids": [
+                    "SRC-ZIWEI-PROJECT-SPEC-001",
+                    "SRC-ZIWEI-QUANSHU-001"
+                  ],
+                  "symbol": "↓",
+                  "transformation": "忌"
+                },
+                {
+                  "direction": "inward",
+                  "direction_zh": "向心自化",
+                  "fact_id": "ziwei.self_transformation.007",
+                  "origin_palace_fact_id": "ziwei.palace.005",
+                  "origin_stem": "辛",
+                  "rule_ids": [
+                    "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+                  ],
+                  "source_ids": [
+                    "SRC-ZIWEI-PROJECT-SPEC-001",
+                    "SRC-ZIWEI-QUANSHU-001"
+                  ],
+                  "symbol": "↑",
+                  "transformation": "禄"
+                }
+              ],
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001",
+                "SRC-ZIWEI-QUANSHU-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "minor_limit_ages": [
+            1,
+            13,
+            25,
+            37,
+            49,
+            61,
+            73,
+            85,
+            97,
+            109
+          ],
+          "name": "疾厄",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ]
+        }
+      ],
+      "raw_dates": {
+        "calendar_year_branch": "卯",
+        "calendar_year_stem": "己",
+        "lunar_day": 25,
+        "lunar_month": 11,
+        "lunar_year": 1999,
+        "year_branch": "卯",
+        "year_stem": "己"
+      },
+      "self_transformations": [
+        {
+          "direction": "inward",
+          "direction_zh": "向心自化",
+          "fact_id": "ziwei.self_transformation.001",
+          "origin_palace_fact_id": "ziwei.palace.006",
+          "origin_stem": "壬",
+          "rule_ids": [
+            "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+          ],
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ],
+          "symbol": "↑",
+          "target_palace_fact_id": "ziwei.palace.000",
+          "target_star": "武曲",
+          "target_star_fact_id": "ziwei.palace.000.majorStars.001",
+          "transformation": "忌"
+        },
+        {
+          "direction": "inward",
+          "direction_zh": "向心自化",
+          "fact_id": "ziwei.self_transformation.002",
+          "origin_palace_fact_id": "ziwei.palace.009",
+          "origin_stem": "乙",
+          "rule_ids": [
+            "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+          ],
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ],
+          "symbol": "↑",
+          "target_palace_fact_id": "ziwei.palace.003",
+          "target_star": "天机",
+          "target_star_fact_id": "ziwei.palace.003.majorStars.001",
+          "transformation": "禄"
+        },
+        {
+          "direction": "outward",
+          "direction_zh": "离心自化",
+          "fact_id": "ziwei.self_transformation.003",
+          "origin_palace_fact_id": "ziwei.palace.008",
+          "origin_stem": "甲",
+          "rule_ids": [
+            "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+          ],
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ],
+          "symbol": "↓",
+          "target_palace_fact_id": "ziwei.palace.008",
+          "target_star": "廉贞",
+          "target_star_fact_id": "ziwei.palace.008.majorStars.001",
+          "transformation": "禄"
+        },
+        {
+          "direction": "outward",
+          "direction_zh": "离心自化",
+          "fact_id": "ziwei.self_transformation.004",
+          "origin_palace_fact_id": "ziwei.palace.009",
+          "origin_stem": "乙",
+          "rule_ids": [
+            "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+          ],
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ],
+          "symbol": "↓",
+          "target_palace_fact_id": "ziwei.palace.009",
+          "target_star": "太阴",
+          "target_star_fact_id": "ziwei.palace.009.majorStars.001",
+          "transformation": "忌"
+        },
+        {
+          "direction": "outward",
+          "direction_zh": "离心自化",
+          "fact_id": "ziwei.self_transformation.005",
+          "origin_palace_fact_id": "ziwei.palace.011",
+          "origin_stem": "丁",
+          "rule_ids": [
+            "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+          ],
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ],
+          "symbol": "↓",
+          "target_palace_fact_id": "ziwei.palace.011",
+          "target_star": "天同",
+          "target_star_fact_id": "ziwei.palace.011.majorStars.001",
+          "transformation": "权"
+        },
+        {
+          "direction": "outward",
+          "direction_zh": "离心自化",
+          "fact_id": "ziwei.self_transformation.006",
+          "origin_palace_fact_id": "ziwei.palace.011",
+          "origin_stem": "丁",
+          "rule_ids": [
+            "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+          ],
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ],
+          "symbol": "↓",
+          "target_palace_fact_id": "ziwei.palace.011",
+          "target_star": "巨门",
+          "target_star_fact_id": "ziwei.palace.011.majorStars.002",
+          "transformation": "忌"
+        },
+        {
+          "direction": "inward",
+          "direction_zh": "向心自化",
+          "fact_id": "ziwei.self_transformation.007",
+          "origin_palace_fact_id": "ziwei.palace.005",
+          "origin_stem": "辛",
+          "rule_ids": [
+            "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+          ],
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001",
+            "SRC-ZIWEI-QUANSHU-001"
+          ],
+          "symbol": "↑",
+          "target_palace_fact_id": "ziwei.palace.011",
+          "target_star": "巨门",
+          "target_star_fact_id": "ziwei.palace.011.majorStars.002",
+          "transformation": "禄"
+        }
+      ],
+      "solar_date": "2000-01-01",
+      "soul_palace_branch": "午",
+      "soul_ruler": "破军",
+      "time_label": "午",
+      "time_range": "11:00-12:59",
+      "western_sign": "摩羯",
+      "zodiac": "兔"
+    },
+    "computed_facts_sha256": "34e5c1be67c00bef33b3ed5ff49ed2dd7e28fd29a243c6a00f4032b9520b4262"
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "project-native-ziwei-foundation-v0.1",
+  "must_match_rules": [
+    "ZIWEI-NATIVE-NATAL-001",
+    "ZIWEI-TIME-INDEX-001",
+    "ZIWEI-STRUCTURAL-BOUNDARY-001"
+  ],
+  "normalized_input": {
+    "calculation_datetime": "2000-01-01T12:00:00+08:00",
+    "calculation_gender": "male",
+    "calendar_leap_month": false,
+    "calendar_type": "solar",
+    "effective_lunar_month": 11,
+    "fold": 0,
+    "late_zi_policy": "current_day",
+    "latitude": null,
+    "leap_month_policy": "preserve",
+    "lineage": "project-native-ziwei-structural-v0.5",
+    "local_datetime": "2000-01-01T12:00:00+08:00",
+    "longitude": null,
+    "solar_time_correction": null,
+    "time_basis": "civil",
+    "time_index": 6,
+    "timezone": "Asia/Shanghai",
+    "true_solar_time_applied": false,
+    "utc_datetime": "2000-01-01T04:00:00Z",
+    "year_boundary": "lunar_new_year"
+  },
+  "raw_input": {
+    "calculation_gender": "male",
+    "local_datetime": "2000-01-01T12:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "ziwei",
+  "title": "Local-civil Ziwei time basis"
+}

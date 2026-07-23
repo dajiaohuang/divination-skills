@@ -2,13 +2,16 @@
   "rule_id": "LIUYAO-PALACE-SHIYING-001",
   "title": "Derive eight-palace stage and Shi/Ying positions",
   "system": "liuyao",
-  "lineage": "wen-wang-najia-structural-v0.1",
-  "version": "0.1.0",
+  "lineage": "wen-wang-najia-structural-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "calculation",
-  "conditions": [{ "fact_path": "primary_hexagram.number", "operator": "exists" }],
+  "conditions": [{ "fact_path": "computed_facts.primary_hexagram.number", "operator": "exists" }],
   "conclusions": [{ "finding_type": "liuyao.palace", "output_path": "computed_facts.palace", "value": "eight_palace_stage", "confidence": "high" }],
   "priority": 990,
-  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "PALACE_SEQUENCES and SHI_YING", "support_type": "direct" }],
+  "sources": [
+    { "source_id": "SRC-LIUYAO-ZENGSHAN-001", "locator": "八宫卦序与安世应章", "support_type": "direct" },
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "Independently encoded PALACE_SEQUENCES and SHI_YING tables", "support_type": "corroborating" }
+  ],
   "tests": ["CASE-LIUYAO-CAST-001"]
 }

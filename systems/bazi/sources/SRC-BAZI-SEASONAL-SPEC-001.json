@@ -1,20 +1,28 @@
 {
   "source_id": "SRC-BAZI-SEASONAL-SPEC-001",
   "title": "Project seasonal-support path v0.1",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.1.0",
-  "locators": [{
-    "kind": "local",
-    "value": "systems/bazi/strength/SEASONAL_SUPPORT_SPEC.md",
-    "stable": true
-  }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/bazi/strength/SEASONAL_SUPPORT_SPEC.md",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
   "local_snapshot": {
     "retained": true,
-    "path": "systems/bazi/strength/SEASONAL_SUPPORT_SPEC.md"
+    "path": "references/library/SRC-BAZI-SEASONAL-SPEC-001.md",
+    "sha256": "610d5a8ef0f9aa4a64a41c4632660ce811dbef6b5ee30b58091a23624ef19e42"
   },
   "license": {
     "identifier": "LicenseRef-Project-Authored-Internal",
@@ -37,8 +45,12 @@
     "evidence": "The specification is newly authored in this repository and contains no copied third-party text."
   },
   "usage_status": "tested",
-  "systems": ["bazi"],
-  "lineages": ["project-seasonal-support-v0.1"],
+  "systems": [
+    "bazi"
+  ],
+  "lineages": [
+    "project-seasonal-support-v0.1"
+  ],
   "quality": {
     "authority": "unknown",
     "independence": "derived",

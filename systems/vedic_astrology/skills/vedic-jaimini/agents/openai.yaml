@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vedic Jaimini"
+  short_description: "Calculate isolated Jaimini karaka rashi and Arudha facts"
+  default_prompt: "Use $vedic-jaimini to calculate the selected Jaimini structural facts."

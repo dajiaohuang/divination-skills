@@ -12,6 +12,7 @@
       "duty_star_origin_palace": 4,
       "duty_star_target_palace": 9,
       "duty_door_origin_palace": 4,
+      "duty_door_logical_palace": 7,
       "duty_door_target_palace": 7,
       "rotation_direction": "yang",
       "hour_steps_from_xun_start": 3
@@ -60,13 +61,7 @@
         "is_void": false,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [
-          {
-            "door": "死门",
-            "palace": 1,
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "door_oppressions": [],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -115,21 +110,9 @@
           }
         ],
         "is_void": true,
-        "tomb_entries": [
-          {
-            "stem": "乙",
-            "layer": "earth",
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [
-          {
-            "door": "伤门",
-            "palace": 2,
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "door_oppressions": [],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -179,13 +162,7 @@
         "is_void": false,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [
-          {
-            "door": "开门",
-            "palace": 3,
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "door_oppressions": [],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -311,13 +288,7 @@
         "is_void": false,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [
-          {
-            "door": "景门",
-            "palace": 6,
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "door_oppressions": [],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -378,7 +349,13 @@
         "is_void": true,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [],
+        "door_oppressions": [
+          {
+            "door": "杜门",
+            "palace": 7,
+            "rule_id": "QIMEN-STATE-MARKERS-001"
+          }
+        ],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",

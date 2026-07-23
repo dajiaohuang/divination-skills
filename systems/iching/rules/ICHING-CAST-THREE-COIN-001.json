@@ -1,0 +1,37 @@
+{
+  "rule_id": "ICHING-CAST-THREE-COIN-001",
+  "title": "Generate six auditable three-coin line values",
+  "system": "iching",
+  "lineage": "three-coin-king-wen-structural-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "normalized_input.line_order",
+      "operator": "eq",
+      "value": "bottom-to-top"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "iching.cast_lines",
+      "output_path": "computed_facts.lines",
+      "value": "six_sha256_derived_three_coin_sums",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 1000,
+  "sources": [
+    {
+      "source_id": "SRC-ICHING-PROJECT-SPEC-001",
+      "locator": "systems/iching/engine.py sha256-three-coin-v1",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ICHING-CAST-001",
+    "CASE-ICHING-CAST-002"
+  ],
+  "notes": "The SHA-256 stream is a project replay mechanism. It reproduces the conventional three-coin 6/7/8/9 distribution but does not claim classical authority for the pseudorandom generator."
+}

@@ -2,13 +2,16 @@
   "rule_id": "LIUYAO-NAJIA-001",
   "title": "Assign inner and outer trigram Najia to six lines",
   "system": "liuyao",
-  "lineage": "wen-wang-najia-structural-v0.1",
-  "version": "0.1.0",
+  "lineage": "wen-wang-najia-structural-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "calculation",
-  "conditions": [{ "fact_path": "primary_hexagram", "operator": "exists" }],
+  "conditions": [{ "fact_path": "computed_facts.primary_hexagram", "operator": "exists" }],
   "conclusions": [{ "finding_type": "liuyao.najia", "output_path": "computed_facts.lines", "value": "inner_outer_najia", "confidence": "high" }],
   "priority": 1000,
-  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "NAJIA table", "support_type": "direct" }],
+  "sources": [
+    { "source_id": "SRC-LIUYAO-ZENGSHAN-001", "locator": "浑天甲子纳甲歌诀", "support_type": "direct" },
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "Independently encoded NAJIA table", "support_type": "corroborating" }
+  ],
   "tests": ["CASE-LIUYAO-CAST-001", "CASE-LIUYAO-CAST-002"]
 }

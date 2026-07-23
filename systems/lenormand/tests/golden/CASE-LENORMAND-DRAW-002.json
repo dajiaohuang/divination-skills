@@ -21,6 +21,9 @@
           "orientation": "upright",
           "playing_card": "9-hearts",
           "position": "context",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -36,6 +39,9 @@
           "orientation": "upright",
           "playing_card": "king-spades",
           "position": "development",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -51,6 +57,9 @@
           "orientation": "upright",
           "playing_card": "10-diamonds",
           "position": "focus",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -67,6 +76,7 @@
   ],
   "lineage": "lenormand-36-project-v0.3",
   "must_match_rules": [
+    "LENORMAND-DRAW-UNIQUE-001",
     "LENORMAND-CARD-UPRIGHT-001",
     "LENORMAND-POSITION-001",
     "LENORMAND-SEQUENCE-001",

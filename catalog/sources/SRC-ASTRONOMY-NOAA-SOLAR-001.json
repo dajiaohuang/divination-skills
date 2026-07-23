@@ -29,7 +29,9 @@
   ],
   "retrieved_at": "2026-07-23",
   "local_snapshot": {
-    "retained": false
+    "retained": true,
+    "path": "references/library/SRC-ASTRONOMY-NOAA-SOLAR-001.md",
+    "sha256": "42f00f3a039ba4931574086992e315369bd4276f4b0c8b90cda6a4f542d445a8"
   },
   "license": {
     "identifier": "US-Government-Public-Domain",
@@ -55,6 +57,8 @@
   "usage_status": "production",
   "systems": [
     "bazi",
+    "liuyao",
+    "qimen",
     "ziwei"
   ],
   "lineages": [

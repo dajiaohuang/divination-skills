@@ -2,7 +2,10 @@
   "source_id": "SRC-VEDIC-REF-001",
   "title": "vedic-astro-skills",
   "creators": [
-    { "name": "CNWU16", "role": "maintainer" }
+    {
+      "name": "CNWU16",
+      "role": "maintainer"
+    }
   ],
   "source_type": "software",
   "language": "zh",
@@ -18,7 +21,8 @@
   "retrieved_at": "2026-07-23",
   "local_snapshot": {
     "retained": true,
-    "path": "references/upstream/vedic-astro-skills"
+    "path": "references/library/SRC-VEDIC-REF-001.md",
+    "sha256": "6e628ecdea9ac5d0bdd1cfefdef868ddc11e875a5ba3e1e70d6ece1c22a16529"
   },
   "license": {
     "identifier": "AGPL-3.0-only for code; custom restrictions for instructions and resources",
@@ -42,8 +46,12 @@
     "evidence": "Repository LICENSE, COMMERCIAL_NOTICE, and README license section inspected at the recorded commit."
   },
   "usage_status": "reference_only",
-  "systems": ["vedic-astrology"],
-  "lineages": ["upstream-declared-kn-rao-parashari"],
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "upstream-declared-kn-rao-parashari"
+  ],
   "quality": {
     "authority": "practitioner",
     "independence": "derived",

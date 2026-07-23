@@ -3,6 +3,8 @@ from __future__ import annotations
 from copy import deepcopy
 from typing import Any
 
+from systems.numerology.calculator.engine import THEMES
+
 
 def build_report(profile: dict[str, Any]) -> dict[str, Any]:
     if profile.get("validation", {}).get("status") != "valid":
@@ -25,9 +27,10 @@ def build_report(profile: dict[str, Any]) -> dict[str, Any]:
                 "rule_ids": [calculation_rule, "NUMEROLOGY-INTERPRET-THEME-001"],
                 "statement": (
                     f"{name.replace('_', ' ').title()} reduces through {fact['reduction_steps']} "
-                    f"to {fact['value']}; the project theme '{fact['theme']}' is a reflective "
-                    "prompt, not an identity fact or prediction."
+                    f"to {fact['value']}; the project theme '{THEMES[fact['value']]}' "
+                    "is a reflective prompt, not an identity fact or prediction."
                 ),
+                "theme": THEMES[fact["value"]],
             }
         )
     report["derived_findings"] = [
@@ -37,6 +40,7 @@ def build_report(profile: dict[str, Any]) -> dict[str, Any]:
             "rule_ids": item["rule_ids"],
             "confidence": "low",
             "statement": item["statement"],
+            "theme": item["theme"],
             "source_ids": profile["computed_facts"][item["fact_ids"][0].split(".")[-1]][
                 "source_ids"
             ],

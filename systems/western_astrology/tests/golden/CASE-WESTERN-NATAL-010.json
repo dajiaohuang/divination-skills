@@ -11,6 +11,9 @@
           "degree_in_sign": 26.799136,
           "fact_id": "western.angle.ascendant",
           "longitude_degrees": 266.799136,
+          "rule_ids": [
+            "WESTERN-CAL-ANGLES-001"
+          ],
           "sign": "Sagittarius",
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001",
@@ -21,6 +24,9 @@
           "degree_in_sign": 14.41277146,
           "fact_id": "western.angle.midheaven",
           "longitude_degrees": 164.41277146,
+          "rule_ids": [
+            "WESTERN-CAL-ANGLES-001"
+          ],
           "sign": "Virgo",
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001",
@@ -37,6 +43,9 @@
           "exact_angle_degrees": 120.0,
           "fact_id": "western.aspect.001",
           "orb_degrees": 4.96592607,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 115.03407393,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -50,6 +59,9 @@
           "exact_angle_degrees": 180.0,
           "fact_id": "western.aspect.002",
           "orb_degrees": 5.10381128,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 174.89618872,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -63,6 +75,9 @@
           "exact_angle_degrees": 180.0,
           "fact_id": "western.aspect.003",
           "orb_degrees": 7.41271387,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 172.58728613,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -76,6 +91,9 @@
           "exact_angle_degrees": 90.0,
           "fact_id": "western.aspect.004",
           "orb_degrees": 2.89261874,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 87.10738126,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -89,6 +107,9 @@
           "exact_angle_degrees": 180.0,
           "fact_id": "western.aspect.005",
           "orb_degrees": 1.63585928,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 178.36414072,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -102,6 +123,9 @@
           "exact_angle_degrees": 0.0,
           "fact_id": "western.aspect.006",
           "orb_degrees": 7.39632865,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 7.39632865,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -115,6 +139,9 @@
           "exact_angle_degrees": 120.0,
           "fact_id": "western.aspect.007",
           "orb_degrees": 1.64301554,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 118.35698446,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -128,6 +155,9 @@
           "exact_angle_degrees": 180.0,
           "fact_id": "western.aspect.008",
           "orb_degrees": 7.75029531,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 172.24970469,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -141,6 +171,9 @@
           "exact_angle_degrees": 60.0,
           "fact_id": "western.aspect.009",
           "orb_degrees": 0.13788521,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 59.86211479,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -154,6 +187,9 @@
           "exact_angle_degrees": 60.0,
           "fact_id": "western.aspect.010",
           "orb_degrees": 2.4467878,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 57.5532122,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -167,6 +203,9 @@
           "exact_angle_degrees": 90.0,
           "fact_id": "western.aspect.011",
           "orb_degrees": 2.611503,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 92.611503,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -180,6 +219,9 @@
           "exact_angle_degrees": 0.0,
           "fact_id": "western.aspect.012",
           "orb_degrees": 2.30890259,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 2.30890259,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -193,6 +235,9 @@
           "exact_angle_degrees": 90.0,
           "fact_id": "western.aspect.013",
           "orb_degrees": 2.21119254,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 87.78880746,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -206,6 +251,9 @@
           "exact_angle_degrees": 90.0,
           "fact_id": "western.aspect.014",
           "orb_degrees": 4.52009513,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 85.47990487,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -219,6 +267,9 @@
           "exact_angle_degrees": 60.0,
           "fact_id": "western.aspect.015",
           "orb_degrees": 4.68481033,
+          "rule_ids": [
+            "WESTERN-ASPECT-MAJOR-001"
+          ],
           "separation_degrees": 64.68481033,
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -230,6 +281,9 @@
           "fact_id": "western.house_cusp.01",
           "house": 1,
           "longitude_degrees": 266.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Sagittarius",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -239,6 +293,9 @@
           "fact_id": "western.house_cusp.02",
           "house": 2,
           "longitude_degrees": 296.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Capricorn",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -248,6 +305,9 @@
           "fact_id": "western.house_cusp.03",
           "house": 3,
           "longitude_degrees": 326.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Aquarius",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -257,6 +317,9 @@
           "fact_id": "western.house_cusp.04",
           "house": 4,
           "longitude_degrees": 356.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Pisces",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -266,6 +329,9 @@
           "fact_id": "western.house_cusp.05",
           "house": 5,
           "longitude_degrees": 26.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Aries",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -275,6 +341,9 @@
           "fact_id": "western.house_cusp.06",
           "house": 6,
           "longitude_degrees": 56.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Taurus",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -284,6 +353,9 @@
           "fact_id": "western.house_cusp.07",
           "house": 7,
           "longitude_degrees": 86.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Gemini",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -293,6 +365,9 @@
           "fact_id": "western.house_cusp.08",
           "house": 8,
           "longitude_degrees": 116.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Cancer",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -302,6 +377,9 @@
           "fact_id": "western.house_cusp.09",
           "house": 9,
           "longitude_degrees": 146.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Leo",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -311,6 +389,9 @@
           "fact_id": "western.house_cusp.10",
           "house": 10,
           "longitude_degrees": 176.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Virgo",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -320,6 +401,9 @@
           "fact_id": "western.house_cusp.11",
           "house": 11,
           "longitude_degrees": 206.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Libra",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -329,6 +413,9 @@
           "fact_id": "western.house_cusp.12",
           "house": 12,
           "longitude_degrees": 236.799136,
+          "rule_ids": [
+            "WESTERN-HOUSE-EQUAL-001"
+          ],
           "sign": "Scorpio",
           "source_ids": [
             "SRC-WESTERN-PROJECT-SPEC-001"
@@ -345,6 +432,10 @@
           "latitude_degrees": 8.767e-05,
           "longitude_degrees": 299.25498525,
           "retrograde": false,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001",
+            "WESTERN-TRADITIONAL-CONDITION-001"
+          ],
           "sign": "Capricorn",
           "sign_index": 9,
           "source_ids": [
@@ -362,6 +453,9 @@
             "fact_id": "western.traditional_condition.sun",
             "fall_sign": "Libra",
             "lineage": "tropical-traditional-condition-v0.3",
+            "rule_ids": [
+              "WESTERN-TRADITIONAL-CONDITION-001"
+            ],
             "scoring_applied": false,
             "source_ids": [
               "SRC-WESTERN-PTOLEMY-001"
@@ -378,6 +472,10 @@
           "latitude_degrees": -1.33572648,
           "longitude_degrees": 95.05978814,
           "retrograde": false,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001",
+            "WESTERN-TRADITIONAL-CONDITION-001"
+          ],
           "sign": "Cancer",
           "sign_index": 3,
           "source_ids": [
@@ -395,6 +493,9 @@
             "fact_id": "western.traditional_condition.moon",
             "fall_sign": "Scorpio",
             "lineage": "tropical-traditional-condition-v0.3",
+            "rule_ids": [
+              "WESTERN-TRADITIONAL-CONDITION-001"
+            ],
             "scoring_applied": false,
             "source_ids": [
               "SRC-WESTERN-PTOLEMY-001"
@@ -413,6 +514,10 @@
           "latitude_degrees": -0.90712517,
           "longitude_degrees": 284.09197607,
           "retrograde": false,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001",
+            "WESTERN-TRADITIONAL-CONDITION-001"
+          ],
           "sign": "Capricorn",
           "sign_index": 9,
           "source_ids": [
@@ -432,6 +537,9 @@
             "fact_id": "western.traditional_condition.mercury",
             "fall_sign": "Pisces",
             "lineage": "tropical-traditional-condition-v0.3",
+            "rule_ids": [
+              "WESTERN-TRADITIONAL-CONDITION-001"
+            ],
             "scoring_applied": false,
             "source_ids": [
               "SRC-WESTERN-PTOLEMY-001"
@@ -448,6 +556,10 @@
           "latitude_degrees": 6.36831798,
           "longitude_degrees": 276.69564742,
           "retrograde": true,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001",
+            "WESTERN-TRADITIONAL-CONDITION-001"
+          ],
           "sign": "Capricorn",
           "sign_index": 9,
           "source_ids": [
@@ -467,6 +579,9 @@
             "fact_id": "western.traditional_condition.venus",
             "fall_sign": "Virgo",
             "lineage": "tropical-traditional-condition-v0.3",
+            "rule_ids": [
+              "WESTERN-TRADITIONAL-CONDITION-001"
+            ],
             "scoring_applied": false,
             "source_ids": [
               "SRC-WESTERN-PTOLEMY-001"
@@ -483,6 +598,10 @@
           "latitude_degrees": 2.09891652,
           "longitude_degrees": 54.28905918,
           "retrograde": false,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001",
+            "WESTERN-TRADITIONAL-CONDITION-001"
+          ],
           "sign": "Taurus",
           "sign_index": 1,
           "source_ids": [
@@ -502,6 +621,9 @@
             "fact_id": "western.traditional_condition.mars",
             "fall_sign": "Cancer",
             "lineage": "tropical-traditional-condition-v0.3",
+            "rule_ids": [
+              "WESTERN-TRADITIONAL-CONDITION-001"
+            ],
             "scoring_applied": false,
             "source_ids": [
               "SRC-WESTERN-PTOLEMY-001"
@@ -520,6 +642,10 @@
           "latitude_degrees": 0.3942536,
           "longitude_degrees": 114.15117397,
           "retrograde": true,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001",
+            "WESTERN-TRADITIONAL-CONDITION-001"
+          ],
           "sign": "Cancer",
           "sign_index": 3,
           "source_ids": [
@@ -539,6 +665,9 @@
             "fact_id": "western.traditional_condition.jupiter",
             "fall_sign": "Capricorn",
             "lineage": "tropical-traditional-condition-v0.3",
+            "rule_ids": [
+              "WESTERN-TRADITIONAL-CONDITION-001"
+            ],
             "scoring_applied": false,
             "source_ids": [
               "SRC-WESTERN-PTOLEMY-001"
@@ -557,6 +686,10 @@
           "latitude_degrees": 1.97944949,
           "longitude_degrees": 165.73499161,
           "retrograde": true,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001",
+            "WESTERN-TRADITIONAL-CONDITION-001"
+          ],
           "sign": "Virgo",
           "sign_index": 5,
           "source_ids": [
@@ -576,6 +709,9 @@
             "fact_id": "western.traditional_condition.saturn",
             "fall_sign": "Aries",
             "lineage": "tropical-traditional-condition-v0.3",
+            "rule_ids": [
+              "WESTERN-TRADITIONAL-CONDITION-001"
+            ],
             "scoring_applied": false,
             "source_ids": [
               "SRC-WESTERN-PTOLEMY-001"
@@ -592,6 +728,9 @@
           "latitude_degrees": 0.50713198,
           "longitude_degrees": 111.84227138,
           "retrograde": true,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001"
+          ],
           "sign": "Cancer",
           "sign_index": 3,
           "source_ids": [
@@ -608,6 +747,9 @@
           "latitude_degrees": -1.71120436,
           "longitude_degrees": 26.36236651,
           "retrograde": false,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001"
+          ],
           "sign": "Aries",
           "sign_index": 0,
           "source_ids": [
@@ -624,6 +766,9 @@
           "latitude_degrees": -8.92742002,
           "longitude_degrees": 321.67755618,
           "retrograde": false,
+          "rule_ids": [
+            "WESTERN-CAL-POSITION-001"
+          ],
           "sign": "Aquarius",
           "sign_index": 10,
           "source_ids": [

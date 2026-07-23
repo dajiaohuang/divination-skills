@@ -1,8 +1,8 @@
 # 实施状态
 
-日期：2026-07-23
+日期：2026-07-24
 
-技术状态：`IMPLEMENTATION_PLAN.md` 的 M0–M5 与 `EXTENSION_PLAN.md` 的 M6–M13 已全部实现并通过全仓自动化验收
+技术状态：`IMPLEMENTATION_PLAN.md` 的 M0–M5、`EXTENSION_PLAN.md` 的 M6–M13 与 Vedic M14 已全部实现并通过全仓自动化验收
 
 发布状态：未正式发布；真实领域、版权与部署隐私签署仍是 fail-closed 阻塞项
 
@@ -20,37 +20,39 @@
 - M11：八字、西方占星和紫微的共享 career/relationship/timing/QA 报告选择层及高影响问题降级。
 - M12：三体系双盘比较、八字/西占保留集校时，以及西方卜卦占星的独立体系可行性与来源评估。
 - M13：六爻显式问题规则包、奇门完整结构盘、周易来源/动爻策略层、Lenormand Grand Tableau、Tarot 手牌阵/组合/日记、卢恩历史/现代分层、独立 Chaldean 映射。
+- M14：独立 Vedic/Jyotiṣa 垂直切片，采用 true-Citra 恒星黄道基线，明确隔离 Parāśarī、Jaimini 与 KP Stellar 三条路径；参考仓库仅作被忽略的 clean-room 对照。
 
 ## 自动化验收快照
 
 | 项目 | 结果 |
 |---|---:|
-| 体系 | 10 |
-| Skill | 30 |
-| 结构化规则 | 117 |
-| 来源清单 | 37 |
-| 基线 Golden Cases | 255 |
-| 边界案例 | 68 |
-| 流派分歧案例 | 48 |
+| 体系 | 11 |
+| Skill | 34 |
+| 结构化规则 | 136 |
+| 来源清单 | 45 |
+| 基线 Golden Cases | 263 |
+| 边界案例 | 73 |
+| 流派分歧案例 | 54 |
 | 错误输入案例 | 20 |
 | 扩展功能回放案例 | 850 |
-| 待审扩展领域案例 | 221 |
+| 待审扩展领域案例 | 240 |
 | 八字专家候选 | 50 |
-| pytest | 1526 passed |
+| pytest | 1563 passed |
 | Schema/ID/许可交叉引用 | passed |
-| 技术完整性 | 10/10 passed |
-| 正式发布就绪 | 0/10（等待真实签核） |
+| 技术完整性 | 11/11 passed |
+| 正式发布就绪 | 0/11（等待真实签核） |
 | 项目许可证 | Apache-2.0（selected） |
 | 部署隐私配置 | undecided（禁止正式发布） |
 | Ruff | passed |
-| Skill 结构与包外入口验证 | 30 passed |
-| 确定性 ZIP 构建 | 30 passed |
+| Skill 结构与包外入口验证 | 34 passed |
+| 确定性 ZIP 构建 | 34 passed |
 
 ## 当前明确边界
 
 - 八字季节支持评分仍是默认关闭、低置信度的工程基线；时序与合盘只返回结构事实，校时不能证明唯一出生分钟。
 - 西方占星支持行运、太阳返照、合盘与区间校时，但不支持推运、方向法、组合盘或卜卦占星。卜卦占星已评估为未来独立体系。
 - 紫微运行时完全由本项目实现；`iztro` 2.5.8 只在被 Git 忽略的参考目录中用于人工差异比较。
+- Vedic 运行时完全由本项目实现；上游 `vedic-astro-skills` 仅作被 Git 忽略的角色边界参考。Parāśarī、Jaimini 和 KP 不共享判读规则，KP v0.1 仅实现 Stellar/Sub-lord 数学身份，不含宫位尖轴、significator 或事件断法。
 - 周易不捆绑经典译文，两个动爻策略都需独立审校；来源层只提供定位和版本元数据。
 - 六爻 v0.2 用神与强度输出是显式问题包下的候选/工程评分，不是专家认可的吉凶或应期结论。
 - 奇门 v0.2 提供完整的限定结构盘，但不做用神、断事、择方或事件应期。
@@ -63,15 +65,15 @@
 当前统一 readiness 返回：
 
 ```text
-technical_complete = 10 / 10
-release_ready = 0 / 10
+technical_complete = 11 / 11
+release_ready = 0 / 11
 project_license_status = selected
 deployment_privacy_status = undecided
 bazi expert_accepted = 0 / 50
-extension domain-review cases accepted = 0 / 221
+extension domain-review cases accepted = 0 / 240
 ```
 
-发布前需要真实审核人按[八字外部审核指南](../systems/bazi/reviews/REVIEW_GUIDE.md)完成八字 50 份候选，并按[统一发布复核协议](../common/evaluation/RELEASE_REVIEW.md)分别完成九个扩展体系的 221 条队列。所有者还必须记录实际部署的数据流、用途、保留期、处理商、安全控制、用户导出/删除和事件响应责任。
+发布前需要真实审核人按[八字外部审核指南](../systems/bazi/reviews/REVIEW_GUIDE.md)完成八字 50 份候选，并按[统一发布复核协议](../common/evaluation/RELEASE_REVIEW.md)分别完成十个扩展体系的 240 条队列。所有者还必须记录实际部署的数据流、用途、保留期、处理商、安全控制、用户导出/删除和事件响应责任。
 
 各体系必须独立完成领域、版权与隐私验收，不能继承参考项目或另一体系的结论。接受记录必须包含可验证的 SHA-256 证据对象；自动化不得虚构审核身份或签名。
 

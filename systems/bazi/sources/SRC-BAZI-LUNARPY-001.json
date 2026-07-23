@@ -1,17 +1,34 @@
 {
   "source_id": "SRC-BAZI-LUNARPY-001",
   "title": "lunar-python 1.4.8",
-  "creators": [{ "name": "6tail", "role": "maintainer" }],
+  "creators": [
+    {
+      "name": "6tail",
+      "role": "maintainer"
+    }
+  ],
   "source_type": "software",
   "language": "zh",
   "publication_date": "2025-11-05",
   "edition_or_version": "1.4.8",
   "locators": [
-    { "kind": "repository", "value": "https://github.com/6tail/lunar-python", "stable": true },
-    { "kind": "url", "value": "https://pypi.org/project/lunar-python/1.4.8/", "stable": true }
+    {
+      "kind": "repository",
+      "value": "https://github.com/6tail/lunar-python",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://pypi.org/project/lunar-python/1.4.8/",
+      "stable": true
+    }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-BAZI-LUNARPY-001.md",
+    "sha256": "9cef52dfdcab5227df50e7968c14b3bd3d63fd8c7c1daff64604de0c81c09b02"
+  },
   "license": {
     "identifier": "MIT",
     "url": "https://raw.githubusercontent.com/6tail/lunar-python/master/LICENSE",
@@ -33,8 +50,17 @@
     "evidence": "Repository LICENSE and package metadata both identify the MIT License."
   },
   "usage_status": "production",
-  "systems": ["bazi"],
-  "lineages": ["ziping-calculation-baseline", "lunar-python-sect-1", "lunar-python-sect-2"],
+  "systems": [
+    "bazi",
+    "liuyao",
+    "qimen"
+  ],
+  "lineages": [
+    "ziping-calculation-baseline",
+    "lunar-python-sect-1",
+    "lunar-python-sect-2",
+    "chaibu-rotating-plate-v0.3"
+  ],
   "quality": {
     "authority": "practitioner",
     "independence": "independent",

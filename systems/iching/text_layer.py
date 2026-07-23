@@ -23,7 +23,7 @@ SOURCE_EDITIONS = {
 }
 POLICIES = {
     "all-moving-lines-v0.2",
-    "zhu-xi-count-routing-v0.2",
+    "zhu-xi-count-routing-v0.3",
 }
 
 
@@ -88,19 +88,25 @@ def select_reading_units(cast: dict[str, Any], *, policy_id: str) -> dict[str, A
     else:
         selected = [_unit("changed_judgment", changed)]
 
+    rule_id = (
+        "ICHING-MOVING-POLICY-ALL-001"
+        if policy_id == "all-moving-lines-v0.2"
+        else "ICHING-MOVING-POLICY-COUNT-001"
+    )
+    source_ids = ["SRC-ICHING-PROJECT-SPEC-001"]
+    if policy_id == "zhu-xi-count-routing-v0.3":
+        source_ids.append("SRC-ICHING-QIMENG-TONGSHI-001")
     return {
         "policy_id": policy_id,
         "moving_line_count": count,
         "moving_line_positions": moving,
         "selected_units": selected,
-        "rule_ids": [
-            "ICHING-MOVING-POLICY-ALL-001"
-            if policy_id == "all-moving-lines-v0.2"
-            else "ICHING-MOVING-POLICY-COUNT-001"
-        ],
+        "rule_ids": [rule_id],
+        "source_ids": source_ids,
         "limitations": [
             "Selection identifies passages; it does not supply an interpretation or outcome.",
-            "The count-routing policy is isolated and pending independent textual review.",
+            "The count-routing policy is lineage-specific and is never silently merged "
+            "with alternatives.",
         ],
     }
 
@@ -143,9 +149,13 @@ def build_classical_layer(
     if cast["computed_facts"] != original:
         raise AssertionError("Classical source layer must not mutate cast facts.")
     return {
-        "schema_version": "0.2.0",
+        "schema_version": "0.3.0",
         "system": "iching",
-        "lineage": "king-wen-classical-source-layer-v0.2",
+        "lineage": "king-wen-classical-source-layer-v0.3",
+        "rule_ids": [
+            "ICHING-CLASSICAL-SOURCE-LAYER-001",
+            *reading["rule_ids"],
+        ],
         "selection": reading,
         "editions": editions,
         "version_comparison": {

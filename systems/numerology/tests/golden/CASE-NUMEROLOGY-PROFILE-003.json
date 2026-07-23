@@ -14,10 +14,12 @@
           23,
           5
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "change",
         "value": 5
       },
       "date_trace": {
@@ -33,6 +35,10 @@
         ],
         "fact_id": "numerology.date_trace",
         "raw_total": 24,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001",
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -45,10 +51,12 @@
           41,
           5
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "change",
         "value": 5
       },
       "life_path": {
@@ -59,10 +67,12 @@
           24,
           6
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "care and responsibility",
         "value": 6
       },
       "maturity": {
@@ -72,10 +82,13 @@
         "reduction_steps": [
           11
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001",
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "heightened inspiration",
         "value": 11
       },
       "name_trace": {
@@ -137,6 +150,9 @@
           }
         ],
         "raw_total": 41,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -150,10 +166,12 @@
           10,
           1
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "initiative",
         "value": 1
       },
       "soul_urge": {
@@ -164,10 +182,12 @@
           13,
           4
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "structure",
         "value": 4
       }
     }
@@ -185,6 +205,11 @@
   ],
   "normalized_input": {
     "birth_date": "1912-06-23",
+    "date_masters": [
+      11,
+      22,
+      33
+    ],
     "mapping": "pythagorean-a1-i9-repeat",
     "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
@@ -193,7 +218,15 @@
       33
     ],
     "name_letters": "ALEXROWAN",
-    "transliteration_policy": "latin_nfkd-v0.1"
+    "name_masters": [
+      11,
+      22,
+      33
+    ],
+    "transliteration_policy": "latin_nfkd-v0.1",
+    "transliteration_rule_ids": [
+      "NUMEROLOGY-TRANSLITERATION-POLICY-001"
+    ]
   },
   "raw_input": {
     "birth_date": "1912-06-23",

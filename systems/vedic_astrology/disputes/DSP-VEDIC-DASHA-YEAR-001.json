@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-VEDIC-DASHA-YEAR-001",
+  "title": "Choose the calendar duration of a Vimshottari year",
+  "system": "vedic-astrology",
+  "topic": "Vimshottari calendar conversion",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "tropical-computational-year-v0.1",
+      "summary": "Convert each dasha year to 365.2425 elapsed days for reproducible ISO timestamps.",
+      "rule_ids": ["VEDIC-PARASHARI-VIMSHOTTARI-001"],
+      "sources": [{"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Computational year policy"}]
+    },
+    {
+      "lineage": "alternate-year-length-unimplemented",
+      "summary": "Savana or other conventional year lengths produce different calendar dates and require an explicit future policy.",
+      "rule_ids": ["VEDIC-PARASHARI-VIMSHOTTARI-001"],
+      "sources": [{"source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001", "locator": "Classical Vimshottari duration structure"}]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "tropical-computational-year-v0.1",
+    "rationale": "The value is explicitly declared and stable across platforms.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Displayed Vimshottari timestamps use 365.2425 elapsed days per computational year; another convention may shift dates.",
+  "sources": [
+    {"source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001", "locator": "Classical Vimshottari structure"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Calendar conversion policy"}
+  ]
+}

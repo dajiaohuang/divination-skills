@@ -12,7 +12,16 @@
       "mapping": "chaldean-1-through-8-project",
       "mapping_lineage": "chaldean-name-cheiro-v0.3",
       "transliteration_policy": "latin_nfkd-v0.1",
-      "masters": []
+      "transliteration_rule_ids": [
+        "NUMEROLOGY-TRANSLITERATION-POLICY-001"
+      ],
+      "masters": [],
+      "date_masters": [
+        11,
+        22,
+        33
+      ],
+      "name_masters": []
     },
     "computed_facts": {
       "name_trace": {
@@ -86,6 +95,9 @@
           }
         ],
         "raw_total": 49,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -104,6 +116,10 @@
           7
         ],
         "raw_total": 29,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001",
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -113,12 +129,13 @@
         "raw_total": 29,
         "reduction_steps": [
           29,
-          11,
-          2
+          11
         ],
-        "value": 2,
-        "master_number": false,
-        "theme": "cooperation",
+        "value": 11,
+        "master_number": true,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -131,7 +148,9 @@
         ],
         "value": 7,
         "master_number": false,
-        "theme": "inquiry",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -146,7 +165,9 @@
         ],
         "value": 4,
         "master_number": false,
-        "theme": "structure",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -161,7 +182,9 @@
         ],
         "value": 9,
         "master_number": false,
-        "theme": "completion and broad concern",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -176,7 +199,9 @@
         ],
         "value": 4,
         "master_number": false,
-        "theme": "structure",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"
@@ -184,13 +209,17 @@
       },
       "maturity": {
         "fact_id": "numerology.maturity",
-        "raw_total": 6,
+        "raw_total": 15,
         "reduction_steps": [
+          15,
           6
         ],
         "value": 6,
         "master_number": false,
-        "theme": "care and responsibility",
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001",
+          "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001",
           "SRC-NUMEROLOGY-CHEIRO-001"

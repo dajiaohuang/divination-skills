@@ -3,7 +3,8 @@
 This release accepts explicit solar or lunar input, IANA local time, calculation-gender parameter,
 and versioned year-boundary, late-Zi, and leap-month policies. It calculates a bounded
 project-native structural foundation: 命宫/身宫, 命主/身主, 五行局, twelve palaces, fourteen major
-stars, four structural minor stars, an auxiliary/malefic/romance/resolution catalog, four
+stars, four structural minor stars, a catalogued daily/monthly/yearly
+auxiliary/malefic/romance/resolution layer, four
 twelve-stage cycles, 生年四化, decade ranges, minor-limit ages, and 来因宫 facts.
 For solar input, callers may explicitly select a NOAA apparent-solar calculation clock with
 longitude. The selected classical Volume Two matrix supplies bounded 庙旺得利平不陷 values, and

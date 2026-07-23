@@ -17,10 +17,14 @@
           "character": "ᛊ",
           "codepoint": "U+16CA",
           "fact_id": "runes.draw.symbol.001",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Sowilo",
           "orientation": "upright",
           "position": "focus",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -40,6 +44,7 @@
   ],
   "lineage": "elder-futhark-project-v0.3",
   "must_match_rules": [
+    "RUNES-DRAW-UNIQUE-001",
     "RUNES-SYMBOL-UPRIGHT-001",
     "RUNES-POSITION-001",
     "RUNES-SEQUENCE-001",

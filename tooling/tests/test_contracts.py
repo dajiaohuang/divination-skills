@@ -157,7 +157,7 @@ def test_every_existing_system_golden_chart_can_be_wrapped_without_migration() -
     systems = sorted(
         path for path in (ROOT / "systems").iterdir() if (path / "skills").is_dir()
     )
-    assert len(systems) == 10
+    assert len(systems) == 11
     for system in systems:
         case_path = next(iter(sorted((system / "tests" / "golden").glob("*.json"))))
         case = load(case_path)

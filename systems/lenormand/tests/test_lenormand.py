@@ -31,12 +31,15 @@ def test_historical_playing_card_correspondences_are_complete_and_traced() -> No
     for fact in result["computed_facts"]["symbols"]:
         assert fact["playing_card"] == PLAYING_CARDS[fact["card_number"] - 1]
         assert fact["identity_lineage"] == "game-of-hope-identity-v0.3"
+        assert fact["rule_ids"] == ["LENORMAND-CARD-IDENTITY-001"]
         assert "SRC-LENORMAND-BM-HOPE-001" in fact["source_ids"]
 
 
 @pytest.mark.parametrize("case", golden_cases(), ids=lambda case: case["case_id"])
 def test_golden_draw_replays_exactly(case: dict) -> None:
     result = draw(case["raw_input"])
+    assert result["audit"]["selection_policy"] == "without_replacement"
+    assert result["audit"]["rule_ids"] == ["LENORMAND-DRAW-UNIQUE-001"]
     assert result["audit"]["draw_id"] == case["expected_output"]["audit"]["draw_id"]
     assert result["computed_facts"] == case["expected_output"]["computed_facts"]
 

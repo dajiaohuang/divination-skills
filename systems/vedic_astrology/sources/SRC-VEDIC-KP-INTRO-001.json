@@ -1,0 +1,63 @@
+{
+  "source_id": "SRC-VEDIC-KP-INTRO-001",
+  "title": "Krishnamurti Paddhati system introduction",
+  "creators": [
+    {
+      "name": "AstroSage",
+      "role": "publisher"
+    }
+  ],
+  "source_type": "website",
+  "language": "en",
+  "edition_or_version": "website retrieved 2026-07-24",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://www.astrosage.com/kpsystemintro.asp",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://krishnamurtipaddhati.com/",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-VEDIC-KP-INTRO-001.md",
+    "sha256": "57070aa89499ec0dcc37ff38c3c671069eeb6fef26a29e96d6e720ca7ec76821"
+  },
+  "license": {
+    "identifier": "All rights reserved / no reuse license identified",
+    "text_available": false,
+    "additional_terms": true
+  },
+  "rights": {
+    "commercial_use": "permission_required",
+    "derivative_use": "permission_required",
+    "translation": "permission_required",
+    "images": "permission_required",
+    "dataset": "permission_required",
+    "notes": "Only metadata and the mathematical identity of nine unequal Vimshottari-proportional subdivisions are retained."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Reviewed pages describe KP structure but provide no compatible reuse license."
+  },
+  "usage_status": "reference_only",
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "kp-stellar-v0.1"
+  ],
+  "quality": {
+    "authority": "practitioner",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Used only to corroborate the bounded sub-lord calculation; no prediction or copyrighted exposition is copied."
+  }
+}

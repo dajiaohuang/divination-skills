@@ -1,0 +1,18 @@
+{
+  "rule_id": "VEDIC-JAIMINI-KARAKA-EIGHT-001",
+  "title": "Rank eight chara karakas with reversed Rahu arc",
+  "system": "vedic-astrology",
+  "lineage": "jaimini-eight-karaka-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "normalized_input.jaimini_karaka_policy", "operator": "eq", "value": "eight"}],
+  "conclusions": [{"finding_type": "vedic.jaimini.karaka", "output_path": "computed_facts.lineages.jaimini.chara_karakas", "value": "eight_bodies_rahu_reversed", "confidence": "deterministic"}],
+  "priority": 820,
+  "sources": [
+    {"source_id": "SRC-VEDIC-JAIMINI-READER-001", "locator": "Seven/eight-karaka variant summary", "support_type": "corroborating"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Eight-karaka and Rahu reversal policy", "support_type": "direct"}
+  ],
+  "disputes": ["DSP-VEDIC-JAIMINI-KARAKA-001"],
+  "tests": ["CASE-VEDIC-JAIMINI-EIGHT-001", "CASE-VEDIC-DISPUTE-KARAKA-001"]
+}

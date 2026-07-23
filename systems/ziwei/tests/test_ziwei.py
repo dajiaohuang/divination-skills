@@ -88,6 +88,20 @@ def test_report_is_structural_and_immutable() -> None:
     assert "does not assign life-event meanings" in report["narrative"]["structure"]["statement"]
 
 
+def test_leap_month_label_is_not_duplicated_and_policy_is_explicit() -> None:
+    result = calculate(
+        {
+            "local_datetime": "1982-06-17T11:00:00",
+            "timezone": "Asia/Shanghai",
+            "calculation_gender": "male",
+            "leap_month_policy": "split_after_15",
+        }
+    )
+    assert result["computed_facts"]["lunar_date"] == "1982年闰四月廿六"
+    assert result["normalized_input"]["calendar_leap_month"] is True
+    assert result["normalized_input"]["effective_lunar_month"] == 5
+
+
 @pytest.mark.parametrize(
     ("payload", "code"),
     [

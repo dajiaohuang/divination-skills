@@ -194,7 +194,8 @@
         "index": 0,
         "name": "upper"
       }
-    }
+    },
+    "computed_facts_sha256": "a23743ed70ba6217fecb5cc378ead9aab4484db35bd98c50c5662828c4e187bd"
   },
   "forbidden_conclusions": [
     "A fixed future or life event is guaranteed.",

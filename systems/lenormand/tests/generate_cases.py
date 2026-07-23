@@ -36,6 +36,7 @@ def main() -> None:
                 "computed_facts": result["computed_facts"],
             },
             "must_match_rules": [
+                "LENORMAND-DRAW-UNIQUE-001",
                 "LENORMAND-CARD-UPRIGHT-001",
                 "LENORMAND-POSITION-001",
                 "LENORMAND-SEQUENCE-001",

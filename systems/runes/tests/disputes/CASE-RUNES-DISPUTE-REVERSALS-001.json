@@ -24,10 +24,14 @@
           "character": "ᛜ",
           "codepoint": "U+16DC",
           "fact_id": "runes.draw.symbol.001",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Ingwaz",
           "orientation": "upright",
           "position": "context",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -42,10 +46,14 @@
           "character": "ᛗ",
           "codepoint": "U+16D7",
           "fact_id": "runes.draw.symbol.002",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Mannaz",
           "orientation": "upright",
           "position": "tension",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -60,10 +68,14 @@
           "character": "ᚹ",
           "codepoint": "U+16B9",
           "fact_id": "runes.draw.symbol.003",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Wunjo",
           "orientation": "upright",
           "position": "practice",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -75,7 +87,8 @@
           "unicode_name": "RUNIC LETTER WUNJO WYNN W"
         }
       ]
-    }
+    },
+    "computed_facts_sha256": "5d9c285ace6178a0004743797ee506c95c313e2d6c63775e876f504007488578"
   },
   "forbidden_conclusions": [
     "A fixed future or life event is guaranteed.",

@@ -25,7 +25,8 @@
   "retrieved_at": "2026-07-23",
   "local_snapshot": {
     "retained": true,
-    "path": "systems/bazi"
+    "path": "references/library/SRC-BAZI-PROJECT-SPEC-001.md",
+    "sha256": "219417d3e7b08fe6ec88c792e312a649de83c71576ee9130140a078f589e2c69"
   },
   "license": {
     "identifier": "Apache-2.0",

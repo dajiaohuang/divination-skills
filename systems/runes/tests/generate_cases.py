@@ -36,6 +36,7 @@ def main() -> None:
                 "computed_facts": result["computed_facts"],
             },
             "must_match_rules": [
+                "RUNES-DRAW-UNIQUE-001",
                 "RUNES-SYMBOL-UPRIGHT-001",
                 "RUNES-POSITION-001",
                 "RUNES-SEQUENCE-001",

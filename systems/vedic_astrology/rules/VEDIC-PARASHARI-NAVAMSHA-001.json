@@ -1,0 +1,17 @@
+{
+  "rule_id": "VEDIC-PARASHARI-NAVAMSHA-001",
+  "title": "Calculate D9 navamsha signs",
+  "system": "vedic-astrology",
+  "lineage": "parashari-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "computed_facts.lineages.parashari", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.navamsha", "output_path": "computed_facts.lineages.parashari.navamsha", "value": "movable_fixed_dual_start_rule", "confidence": "deterministic"}],
+  "priority": 870,
+  "sources": [
+    {"source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001", "locator": "Varga chapter", "support_type": "direct"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "D9 boundary implementation", "support_type": "direct"}
+  ],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-EDGE-NAVAMSHA-001"]
+}

@@ -1,7 +1,12 @@
 {
   "source_id": "SRC-WESTERN-LILLY-001",
   "title": "Christian Astrology, modestly treated of in three books",
-  "creators": [{ "name": "William Lilly", "role": "author" }],
+  "creators": [
+    {
+      "name": "William Lilly",
+      "role": "author"
+    }
+  ],
   "source_type": "book",
   "language": "en",
   "publication_date": "1647",
@@ -14,7 +19,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-WESTERN-LILLY-001.md",
+    "sha256": "140b5175c85857509e3eb1f7721833d69e174c7f1bdb2d3cc8f5742d8f13778a"
+  },
   "license": {
     "identifier": "Public Domain Mark 1.0",
     "url": "https://creativecommons.org/publicdomain/mark/1.0/",
@@ -36,8 +45,12 @@
     "evidence": "Wellcome Collection displays Public Domain Mark and identifies Book II as the questions section."
   },
   "usage_status": "reference_only",
-  "systems": ["western-astrology"],
-  "lineages": ["traditional-horary-feasibility-only"],
+  "systems": [
+    "western-astrology"
+  ],
+  "lineages": [
+    "traditional-horary-feasibility-only"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

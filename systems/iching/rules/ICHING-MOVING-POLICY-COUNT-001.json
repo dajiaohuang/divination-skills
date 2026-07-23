@@ -2,14 +2,25 @@
   "rule_id": "ICHING-MOVING-POLICY-COUNT-001",
   "title": "Route selected text units by an explicit count-based policy",
   "system": "iching",
-  "lineage": "king-wen-classical-source-layer-v0.2",
-  "version": "0.2.0",
+  "lineage": "zhu-xi-count-routing-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "routing",
   "conditions": [{ "fact_path": "computed_facts.moving_line_positions", "operator": "exists" }],
-  "conclusions": [{ "finding_type": "iching.selected_text_units", "output_path": "selection.selected_units", "value": "zhu_xi_count_routing", "confidence": "low" }],
+  "conclusions": [{ "finding_type": "iching.selected_text_units", "output_path": "selection.selected_units", "value": "zhu_xi_count_routing", "confidence": "high" }],
   "priority": 790,
-  "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "systems/iching/text_layer.py zhu-xi-count-routing-v0.2", "support_type": "direct" }],
+  "sources": [
+    {
+      "source_id": "SRC-ICHING-QIMENG-TONGSHI-001",
+      "locator": "卷下：六爻不變及一至六爻變的占法條目",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ICHING-PROJECT-SPEC-001",
+      "locator": "systems/iching/text_layer.py zhu-xi-count-routing-v0.3",
+      "support_type": "corroborating"
+    }
+  ],
   "tests": ["CASE-ICHING-CAST-001"],
-  "notes": "Isolated policy pending independent textual lineage review."
+  "notes": "Isolated lineage-specific policy; it selects passage locators and does not assert an outcome."
 }

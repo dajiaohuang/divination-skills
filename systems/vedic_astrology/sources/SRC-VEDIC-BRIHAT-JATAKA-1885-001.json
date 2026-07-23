@@ -1,0 +1,68 @@
+{
+  "source_id": "SRC-VEDIC-BRIHAT-JATAKA-1885-001",
+  "title": "The Brihat Jataka of Varaha Mihira",
+  "creators": [
+    {
+      "name": "Varahamihira",
+      "role": "author"
+    },
+    {
+      "name": "N. Chidambaram Iyer",
+      "role": "translator"
+    }
+  ],
+  "source_type": "book",
+  "language": "en",
+  "publication_date": "1885",
+  "edition_or_version": "1885 English translation",
+  "locators": [
+    {
+      "kind": "archive",
+      "value": "https://archive.org/download/b2488442x/b2488442x.pdf",
+      "stable": true
+    },
+    {
+      "kind": "archive",
+      "value": "https://commons.wikimedia.org/wiki/File%3AThe_Brihat_jataka_of_Varaha_Mihira_%28IA_b2488442x%29.pdf",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-VEDIC-BRIHAT-JATAKA-1885-001.md",
+    "sha256": "c5e10ce94405183e060ea519418dc49e56baad6ed084b202800d1ec7b9586b0f"
+  },
+  "license": {
+    "identifier": "Public Domain Mark 1.0",
+    "url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "allowed",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Wikimedia Commons file page declares Public Domain Mark 1.0 and records the 1885 publication."
+  },
+  "usage_status": "production",
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "classical-jyotisha-corroboration"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Historical translation used for classical cross-checking, not as a modern astronomical specification."
+  }
+}

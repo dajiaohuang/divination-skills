@@ -145,7 +145,7 @@ def test_luck_cycles_require_explicit_direction() -> None:
     forward = calculate_chart({**payload, "luck_cycle_direction": "forward"})
     reverse = calculate_chart({**payload, "luck_cycle_direction": "reverse"})
     assert without["computed_facts"]["luck_cycles"] is None
-    assert len(forward["computed_facts"]["luck_cycles"]["cycles"]) == 8
+    assert len(forward["computed_facts"]["luck_cycles"]["cycles"]) == 10
     assert (
         forward["computed_facts"]["luck_cycles"]["cycles"][0]["pillar"]["ganzhi"]
         != reverse["computed_facts"]["luck_cycles"]["cycles"][0]["pillar"]["ganzhi"]

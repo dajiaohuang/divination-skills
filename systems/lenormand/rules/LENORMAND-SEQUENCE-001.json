@@ -7,7 +7,7 @@
   "status": "tested",
   "kind": "interpretation",
   "conditions": [{ "fact_path": "computed_facts.symbols", "operator": "exists" }],
-  "conclusions": [{ "finding_type": "lenormand.sequence", "output_path": "derived_findings.sequence", "value": "bounded_order", "confidence": "low" }],
+  "conclusions": [{ "finding_type": "lenormand.sequence", "output_path": "derived_findings", "value": "bounded_order", "confidence": "low" }],
   "priority": 600,
   "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "Bounded sequence policy", "support_type": "direct" }],
   "tests": ["CASE-LENORMAND-DRAW-002"]

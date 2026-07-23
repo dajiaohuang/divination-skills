@@ -35,7 +35,7 @@
   "$defs": {
     "position": {
       "type": "object",
-      "required": ["fact_id", "body", "longitude_degrees", "latitude_degrees", "distance_au", "speed_degrees_per_day", "retrograde", "sign", "sign_index", "degree_in_sign", "source_ids", "house"],
+      "required": ["fact_id", "body", "longitude_degrees", "latitude_degrees", "distance_au", "speed_degrees_per_day", "retrograde", "sign", "sign_index", "degree_in_sign", "rule_ids", "source_ids", "house"],
       "properties": {
         "fact_id": { "type": "string" },
         "body": { "type": "string" },
@@ -48,6 +48,7 @@
         "sign_index": { "type": "integer", "minimum": 0, "maximum": 11 },
         "degree_in_sign": { "type": "number", "minimum": 0, "exclusiveMaximum": 30 },
         "source_ids": { "type": "array", "minItems": 1 },
+        "rule_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
         "house": { "type": "integer", "minimum": 1, "maximum": 12 },
         "traditional_condition": {
           "type": "object",
@@ -60,6 +61,7 @@
             "exaltation_sign",
             "fall_sign",
             "scoring_applied",
+            "rule_ids",
             "source_ids"
           ]
         }
@@ -67,13 +69,14 @@
     },
     "angle": {
       "type": "object",
-      "required": ["fact_id", "longitude_degrees", "sign", "degree_in_sign", "source_ids"],
+      "required": ["fact_id", "longitude_degrees", "sign", "degree_in_sign", "rule_ids", "source_ids"],
       "properties": {
         "fact_id": { "type": "string" },
         "longitude_degrees": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
         "sign": { "type": "string" },
         "degree_in_sign": { "type": "number", "minimum": 0, "exclusiveMaximum": 30 },
-        "source_ids": { "type": "array", "minItems": 1 }
+        "source_ids": { "type": "array", "minItems": 1 },
+        "rule_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } }
       }
     }
   }

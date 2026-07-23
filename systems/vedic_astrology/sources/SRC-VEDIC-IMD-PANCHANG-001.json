@@ -1,0 +1,59 @@
+{
+  "source_id": "SRC-VEDIC-IMD-PANCHANG-001",
+  "title": "Rashtriya Panchang publication description",
+  "creators": [
+    {
+      "name": "India Meteorological Department, Positional Astronomy Centre",
+      "role": "organization"
+    }
+  ],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "website retrieved 2026-07-24",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://mausam.imd.gov.in/responsive/rashtriyPanchang.php",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-VEDIC-IMD-PANCHANG-001.md",
+    "sha256": "5459955b7c16b495b8ec7a01671b11daa47eafd47510e9304f901b0c678e5dab"
+  },
+  "license": {
+    "identifier": "Government website terms not established for redistribution",
+    "text_available": false,
+    "additional_terms": true,
+    "notes": "Retain only bibliographic metadata and a factual summary until redistribution terms are reviewed."
+  },
+  "rights": {
+    "commercial_use": "unknown",
+    "derivative_use": "unknown",
+    "translation": "unknown",
+    "images": "unknown",
+    "dataset": "permission_required",
+    "notes": "Official status may be cited; published tables are not copied into the repository."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Official IMD page inspected; no compatible redistribution license was identified."
+  },
+  "usage_status": "reference_only",
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "modern-nirayana-astronomy-context"
+  ],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Official description confirms a modern scientific nirayana panchang function, but does not specify this project's true-Citra algorithm."
+  }
+}

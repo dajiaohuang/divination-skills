@@ -2,14 +2,25 @@
   "rule_id": "QIMEN-HEAVEN-STAR-PLATE-001",
   "title": "Rotate heaven stems and stars from duty origin to hour instrument",
   "system": "qimen",
-  "lineage": "shijia-zhuanpan-chaibu-full-v0.2",
-  "version": "0.2.0",
+  "lineage": "shijia-zhuanpan-chaibu-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "calculation",
   "conditions": [{ "fact_path": "foundation.computed_facts.duty_origin", "operator": "exists" }],
   "conclusions": [{ "finding_type": "qimen.heaven_star_plate", "output_path": "palaces", "value": "eight_ring_center_hosted", "confidence": "deterministic" }],
   "priority": 900,
-  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "systems/qimen/full_chart.py star_targets", "support_type": "direct" }],
+  "sources": [
+    {
+      "source_id": "SRC-QIMEN-BAOJIAN-001",
+      "locator": "值符加时干 and 符从甲去寻时干",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-QIMEN-PROJECT-SPEC-001",
+      "locator": "systems/qimen/full_chart.py eight-ring rotation and center-host policy",
+      "support_type": "corroborating"
+    }
+  ],
   "tests": ["CASE-QIMEN-FOUNDATION-001"],
-  "notes": "Project rotation policy pending practitioner review."
+  "notes": "Center-origin duty stars are hosted on the displayed eight-palace ring according to the declared lineage."
 }

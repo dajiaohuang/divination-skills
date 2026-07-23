@@ -43,6 +43,8 @@ def draw_symbols(
     items: list[dict[str, Any]],
     spreads: dict[str, tuple[str, ...]],
     source_id: str,
+    draw_rule_id: str,
+    identity_rule_id: str,
     allow_reversals: bool = False,
 ) -> dict[str, Any]:
     """Draw unique symbols and disclose everything required for replay."""
@@ -62,7 +64,8 @@ def draw_symbols(
         raise AuditableDrawError("invalid_reversal_policy", "allow_reversals must be boolean.")
     if requested_reversals and not allow_reversals:
         raise AuditableDrawError(
-            "reversals_unsupported", f"{system} v0.1 does not use reversed orientation."
+            "reversals_unsupported",
+            f"The selected {system} lineage does not support reversed orientation.",
         )
     raw_seed = payload.get("seed_hex")
     warnings = []
@@ -100,6 +103,7 @@ def draw_symbols(
                 "symbol_index": item_index,
                 "name": item["name"],
                 "orientation": orientation,
+                "rule_ids": [identity_rule_id],
                 "source_ids": [source_id],
             }
         )
@@ -121,6 +125,8 @@ def draw_symbols(
         "normalized_input": normalized,
         "audit": {
             "algorithm": "sha256-counter-rejection-v1",
+            "selection_policy": "without_replacement",
+            "rule_ids": [draw_rule_id],
             "seed_hex": seed_hex,
             "seed_commitment": hashlib.sha256(b"symbol-seed-v1\x00" + seed).hexdigest(),
             "deck_sha256": deck_hash,

@@ -2,8 +2,14 @@
   "source_id": "SRC-QIMEN-BAOJIAN-001",
   "title": "奇門寶鑑御定（維基文庫校錄本）",
   "creators": [
-    { "name": "traditional imperial compilation", "role": "author" },
-    { "name": "Wikisource contributors", "role": "editor" }
+    {
+      "name": "traditional imperial compilation",
+      "role": "author"
+    },
+    {
+      "name": "Wikisource contributors",
+      "role": "editor"
+    }
   ],
   "source_type": "book",
   "language": "zh-Hant",
@@ -16,7 +22,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-QIMEN-BAOJIAN-001.md",
+    "sha256": "91903121a77447a810c7a89e4d1887df2e303521c254ee4821eb542d80de20ae"
+  },
   "license": {
     "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -38,8 +48,12 @@
     "evidence": "Historical public-domain source and Wikisource license inspected; production contains independently expressed tables and locators only."
   },
   "usage_status": "production",
-  "systems": ["qimen"],
-  "lineages": ["shijia-zhuanpan-chaibu-v0.3"],
+  "systems": [
+    "qimen"
+  ],
+  "lineages": [
+    "shijia-zhuanpan-chaibu-v0.3"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

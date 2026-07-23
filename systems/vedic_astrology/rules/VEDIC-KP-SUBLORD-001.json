@@ -1,0 +1,18 @@
+{
+  "rule_id": "VEDIC-KP-SUBLORD-001",
+  "title": "Calculate KP stellar sign star and sub-lord identity",
+  "system": "vedic-astrology",
+  "lineage": "kp-stellar-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "computed_facts.lineages.kp", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.kp.stellar", "output_path": "computed_facts.lineages.kp.stellar_identities", "value": "nine_vimshottari_proportional_subs", "confidence": "deterministic"}],
+  "priority": 780,
+  "sources": [
+    {"source_id": "SRC-VEDIC-KP-INTRO-001", "locator": "Nine unequal Vimshottari-proportional subs", "support_type": "corroborating"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Rights-safe mathematical implementation", "support_type": "direct"}
+  ],
+  "disputes": ["DSP-VEDIC-HOUSE-SYSTEM-001"],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-KP-BOUNDARY-001"]
+}

@@ -22,6 +22,7 @@ SYSTEM_RUNTIME_DEPENDENCIES = {
     "qimen": ("qimen", "bazi"),
     "runes": ("runes",),
     "tarot": ("tarot",),
+    "vedic_astrology": ("vedic_astrology",),
     "western_astrology": ("western_astrology",),
     "ziwei": ("ziwei",),
 }
@@ -35,6 +36,7 @@ SYSTEM_SHARED_MODULES = {
     "qimen": ("__init__.py", "solar_time.py", "time.py"),
     "runes": ("__init__.py", "auditable_draw.py"),
     "tarot": ("__init__.py",),
+    "vedic_astrology": ("__init__.py", "time.py"),
     "western_astrology": ("__init__.py", "time.py"),
     "ziwei": ("__init__.py", "solar_time.py", "time.py"),
 }
@@ -54,6 +56,9 @@ SYSTEM_EXTERNAL_REQUIREMENTS = {
     "qimen": {"python_packages": ["lunar_python==1.4.8", "tzdata==2026.3"]},
     "runes": {"python_packages": []},
     "tarot": {"python_packages": []},
+    "vedic_astrology": {
+        "python_packages": ["astronomy-engine==2.1.19", "tzdata==2026.3"]
+    },
     "western_astrology": {"python_packages": ["astronomy-engine==2.1.19", "tzdata==2026.3"]},
     "ziwei": {"python_packages": ["lunar_python==1.4.8", "tzdata==2026.3"]},
 }
@@ -143,6 +148,20 @@ def _runtime_files(repo_root: Path, system: str) -> Iterator[tuple[Path, str]]:
             if _excluded_source_manifest(path):
                 continue
             yield path, f"systems/{dependency}/{relative.as_posix()}"
+
+    # Some shared production sources live with the system that introduced
+    # them. Include only their manifests when they explicitly declare the
+    # packaged system; do not pull another system's runtime into the package.
+    system_scope = system.replace("_", "-")
+    runtime_systems = set(SYSTEM_RUNTIME_DEPENDENCIES[system])
+    for path in sorted((repo_root / "systems").glob("*/sources/*.json")):
+        owner = path.parents[1].name
+        if owner in runtime_systems or _excluded_source_manifest(path):
+            continue
+        document = json.loads(path.read_text(encoding="utf-8"))
+        if system_scope in document.get("systems", []):
+            relative = path.relative_to(repo_root / "systems").as_posix()
+            yield path, f"systems/{relative}"
 
     tooling_package = repo_root / "tooling" / "src" / "divination_skills"
     for filename in SYSTEM_SHARED_MODULES[system]:

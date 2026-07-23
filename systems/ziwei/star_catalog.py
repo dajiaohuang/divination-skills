@@ -208,6 +208,23 @@ for _name, _category, _element in (
     ("解神", "resolution", "木"),
     ("天伤", "auxiliary", None),
     ("天使", "auxiliary", None),
+    ("恩光", "auxiliary", "火"),
+    ("天贵", "auxiliary", "土"),
+    ("孤辰", "auxiliary", None),
+    ("寡宿", "auxiliary", None),
+    ("天才", "auxiliary", "木"),
+    ("天寿", "auxiliary", "土"),
+    ("天厨", "auxiliary", "土"),
+    ("蜚廉", "auxiliary", "火"),
+    ("破碎", "auxiliary", "火"),
+    ("天官", "auxiliary", "土"),
+    ("天福", "auxiliary", "土"),
+    ("天空", "auxiliary", "火"),
+    ("截空", "auxiliary", "火"),
+    ("旬空", "auxiliary", "火"),
+    ("阴煞", "auxiliary", None),
+    ("天月", "auxiliary", None),
+    ("天巫", "auxiliary", "木"),
 ):
     STAR_METADATA[_name] = {
         "category": _category,
@@ -254,6 +271,22 @@ FIRE_BELL_STARTS = {
     frozenset("巳酉丑"): ("卯", "戌"),
     frozenset("亥卯未"): ("酉", "戌"),
 }
+
+TIAN_CHU_BY_STEM = dict(
+    zip(tuple("甲乙丙丁戊己庚辛壬癸"), tuple("巳午子巳午申寅午酉亥"), strict=True)
+)
+TIAN_GUAN_BY_STEM = dict(
+    zip(tuple("甲乙丙丁戊己庚辛壬癸"), tuple("未辰巳寅卯酉亥酉戌午"), strict=True)
+)
+TIAN_FU_AUX_BY_STEM = dict(
+    zip(tuple("甲乙丙丁戊己庚辛壬癸"), tuple("酉申子亥卯寅午巳午巳"), strict=True)
+)
+FEI_LIAN_BY_BRANCH = dict(
+    zip(tuple("子丑寅卯辰巳午未申酉戌亥"), tuple("申酉戌巳午未寅卯辰亥子丑"), strict=True)
+)
+ADJECTIVE_DAHAO_BY_BRANCH = dict(
+    zip(tuple("子丑寅卯辰巳午未申酉戌亥"), tuple("未午酉申亥戌丑子卯寅巳辰"), strict=True)
+)
 
 LIFE_CYCLE_START = {
     "水二局": "申",

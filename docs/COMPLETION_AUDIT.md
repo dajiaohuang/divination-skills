@@ -1,6 +1,6 @@
 # Implementation completion audit
 
-Date: 2026-07-23
+Date: 2026-07-24
 
 This audit maps both implementation plans to repository evidence. “Passed” means the authorized
 technical scope is present and automatically verified. It never substitutes for real domain,
@@ -17,9 +17,11 @@ rights, or deployment-privacy approval.
 | M4 Tarot and Western astrology | `systems/tarot/`, `systems/western_astrology/` | passed |
 | M5 seven further vertical slices | Ziwei, I Ching, Liuyao, Qimen, Lenormand, runes and numerology directories | passed |
 
-The ignored Vedic, iztro and kinqimen checkouts are reproducible research references only. There is
-no `.gitmodules`, no tracked `references/upstream/` file, and no production import, subprocess,
-vendored code, test fixture, or package dependency on those repositories.
+The ignored Vedic, iztro and kinqimen checkouts are reproducible research references only. The
+repository now has its own source-backed Vedic implementation; it does not import or copy the
+ignored checkout. There is no `.gitmodules`, no tracked `references/upstream/` file, and no
+production import, subprocess, vendored code, test fixture, or package dependency on those
+repositories.
 
 ## M6 — shared session, confidence and timeline contracts
 
@@ -92,9 +94,26 @@ No specialist view creates a hidden calculation path or an uncatalogued domain r
 These capabilities are deliberately bounded. They do not create expert-approved predictive
 judgments, copy modern guidebooks or deck art, or silently merge disputed methods.
 
+## M14 — independent multi-lineage Vedic astrology
+
+| Requirement | Evidence | Result |
+|---|---|---|
+| Source-traced sidereal base chart | `systems/vedic_astrology/calculator/`, registered public-domain/official astronomy and classical sources | passed |
+| Explicit astronomical and civil-time policy | true-Citra fixed-Spica anchor, mean lunar node, strict IANA time, stated apparent/mean choices | passed |
+| Parāśarī scope | whole-sign D1, D9 navamsha and Vimshottari Mahadasha with declared computational year | passed |
+| Jaimini scope | isolated seven/eight Chara Karaka modes, rashi drishti and Arudha Lagna | passed |
+| KP scope | bounded sign/star/sub-lord mathematical identity; no cusp, significator or prediction layer | passed |
+| School isolation and disputes | 16 structured rules, five explicit dispute records, lineage selectors and fail-closed boundaries | passed |
+| Independent replay evidence | 8 Golden, 4 edge and 5 dispute cases plus direct unit/property checks | passed |
+| Upstream independence | ignored `vedic-astro-skills` comparison only; no runtime/build/test dependency or copied prompt/resource | passed |
+| Expert acceptance | 17 pending domain-review records | pending |
+
+The implementation does not claim to cover all Jyotiṣa schools. Modern Jaimini and KP pages are
+reference-only corroboration and are excluded from installable packages.
+
 ## Installable Skill artifacts
 
-The builder packages 30 Skills with fixed ZIP timestamps, directly installable pinned
+The builder packages 34 Skills with fixed ZIP timestamps, directly installable pinned
 `requirements.txt` files, SHA-256 sidecars, a per-file `CONTENT_MANIFEST.json`, an extracted-package
 verifier, Apache-2.0 license materials and third-party notices.
 
@@ -106,17 +125,17 @@ Node.js or iztro runtime.
 ## Automated evidence snapshot
 
 ```text
-systems = 10
-skills = 30
-structured_rules = 117
-source_manifests = 37
-baseline_golden = 255
-edge_cases = 68
-dispute_cases = 48
+systems = 11
+skills = 34
+structured_rules = 136
+source_manifests = 45
+baseline_golden = 263
+edge_cases = 73
+dispute_cases = 54
 invalid_inputs = 20
 extension_replay_cases = 850
-pytest = 1526 passed
-technical_complete = 10 / 10
+pytest = 1563 passed
+technical_complete = 11 / 11
 ```
 
 ## Terminal release gate
@@ -124,11 +143,11 @@ technical_complete = 10 / 10
 Technical implementation is complete while formal release remains closed:
 
 ```text
-release_ready = 0 / 10
+release_ready = 0 / 11
 project_license_status = selected
 deployment_privacy_status = undecided
 bazi expert_accepted = 0 / 50
-extension domain-review cases accepted = 0 / 221
+extension domain-review cases accepted = 0 / 240
 ```
 
 `divination-build --release` enforces this gate before creating an output directory. Ordinary

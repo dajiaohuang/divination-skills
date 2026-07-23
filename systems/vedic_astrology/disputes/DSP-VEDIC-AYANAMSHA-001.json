@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-VEDIC-AYANAMSHA-001",
+  "title": "Select a sidereal ayanamsha",
+  "system": "vedic-astrology",
+  "topic": "sidereal zero point",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "true-citra-common-v0.1",
+      "summary": "Anchor Spica/Chitra to exactly 180 degrees sidereal using declared J2000 coordinates.",
+      "rule_ids": ["VEDIC-CAL-SIDEREAL-001"],
+      "sources": [{"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "True-Citra contract"}]
+    },
+    {
+      "lineage": "school-specific-ayanamsha-unimplemented",
+      "summary": "Lahiri, Raman, KP, Yukteshvara and other named policies require distinct constants or algorithms.",
+      "rule_ids": ["VEDIC-CAL-SIDEREAL-001"],
+      "sources": [{"source_id": "SRC-VEDIC-IMD-PANCHANG-001", "locator": "Official nirayana panchang context"}]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "true-citra-common-v0.1",
+    "rationale": "It is dynamically reproducible from a declared stellar anchor and is not mislabeled as another named ayanamsha.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "This result uses the project's fixed-Spica true-Citra origin; other ayanamshas can change signs and subdivisions near boundaries.",
+  "sources": [
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "True-Citra contract"},
+    {"source_id": "SRC-VEDIC-IMD-PANCHANG-001", "locator": "Official modern nirayana context"}
+  ]
+}

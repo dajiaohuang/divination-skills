@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent / "extension_cases"
 def main() -> None:
     standard = ROOT / "text_layer"
     standard.mkdir(parents=True, exist_ok=True)
-    policies = ("all-moving-lines-v0.2", "zhu-xi-count-routing-v0.2")
+    policies = ("all-moving-lines-v0.2", "zhu-xi-count-routing-v0.3")
     for number in range(1, 51):
         raw_input = {"seed_hex": f"{number:064x}"}
         policy_id = policies[number % 2]
@@ -40,7 +40,7 @@ def main() -> None:
             "case_id": case_id,
             "moving_line_count": (number - 1) % 7,
             "left_policy": "all-moving-lines-v0.2",
-            "right_policy": "zhu-xi-count-routing-v0.2",
+            "right_policy": "zhu-xi-count-routing-v0.3",
             "expected_handling": "return_separate_outputs_without_merging",
         }
         (disputes / f"{case_id}.json").write_text(

@@ -22,6 +22,9 @@
           "orientation": "upright",
           "position": "focus",
           "rank": "8",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"
@@ -30,7 +33,8 @@
         }
       ],
       "spread": "single"
-    }
+    },
+    "computed_facts_sha256": "4f23209f53ec13c7de3007a25a1cd36346924a51bec18a69975922f6e8bc2151"
   },
   "forbidden_conclusions": [
     "A fixed future or life event is guaranteed.",

@@ -21,6 +21,9 @@
           "orientation": "upright",
           "playing_card": "ace-hearts",
           "position": "focus",
+          "rule_ids": [
+            "LENORMAND-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-LENORMAND-PROJECT-SPEC-001",
             "SRC-LENORMAND-BM-HOPE-001"
@@ -37,6 +40,7 @@
   ],
   "lineage": "lenormand-36-project-v0.3",
   "must_match_rules": [
+    "LENORMAND-DRAW-UNIQUE-001",
     "LENORMAND-CARD-UPRIGHT-001",
     "LENORMAND-POSITION-001",
     "LENORMAND-SEQUENCE-001",

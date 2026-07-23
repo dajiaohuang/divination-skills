@@ -43,10 +43,22 @@ def test_chaldean_mapping_covers_alphabet_without_nine() -> None:
         }
     )
     assert profile["normalized_input"]["masters"] == []
-    number_facts = [
-        fact for name, fact in profile["computed_facts"].items() if not name.endswith("_trace")
-    ]
-    assert all(fact["master_number"] is False for fact in number_facts)
+    assert profile["normalized_input"]["date_masters"] == [11, 22, 33]
+    assert profile["normalized_input"]["name_masters"] == []
+    for name in ("expression", "soul_urge", "personality", "maturity"):
+        assert profile["computed_facts"][name]["master_number"] is False
+
+
+def test_chaldean_name_mapping_does_not_change_date_master_policy() -> None:
+    profile = calculate_profile(
+        {
+            "name": "Example Name",
+            "birth_date": "2009-09-18",
+            "mapping": "chaldean",
+        }
+    )
+    assert profile["computed_facts"]["life_path"]["value"] == 11
+    assert profile["computed_facts"]["life_path"]["master_number"] is True
 
 
 def test_non_latin_requires_explicit_complete_transliteration() -> None:

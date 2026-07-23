@@ -1,19 +1,33 @@
 {
   "source_id": "SRC-TIME-TZDATA-001",
   "title": "Python tzdata 2026.3",
-  "creators": [{ "name": "Python Software Foundation", "role": "organization" }],
+  "creators": [
+    {
+      "name": "Python Software Foundation",
+      "role": "organization"
+    }
+  ],
   "source_type": "dataset",
   "language": "en",
   "publication_date": "2026-07-10",
   "edition_or_version": "2026.3",
   "locators": [
-    { "kind": "url", "value": "https://pypi.org/project/tzdata/2026.3/", "stable": true },
-    { "kind": "repository", "value": "https://github.com/python/tzdata/tree/2026.3", "stable": true }
+    {
+      "kind": "url",
+      "value": "https://pypi.org/project/tzdata/2026.3/",
+      "stable": true
+    },
+    {
+      "kind": "repository",
+      "value": "https://github.com/python/tzdata/tree/2026.3",
+      "stable": true
+    }
   ],
   "retrieved_at": "2026-07-23",
   "local_snapshot": {
-    "retained": false,
-    "sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931"
+    "retained": true,
+    "path": "references/library/SRC-TIME-TZDATA-001.md",
+    "sha256": "435e0cb804110df7b7600cb2452901d1bd7bae6ae15f7214185f48b45d5937b1"
   },
   "license": {
     "identifier": "Apache-2.0",
@@ -35,8 +49,16 @@
     "evidence": "Verified PyPI metadata identifies Apache-2.0 and records a trusted-publishing source commit."
   },
   "usage_status": "production",
-  "systems": ["bazi", "western-astrology"],
-  "lineages": ["time-normalization", "tropical-geocentric-v0.1"],
+  "systems": [
+    "bazi",
+    "vedic-astrology",
+    "western-astrology"
+  ],
+  "lineages": [
+    "time-normalization",
+    "true-citra-common-v0.1",
+    "tropical-geocentric-v0.1"
+  ],
   "quality": {
     "authority": "official",
     "independence": "independent",

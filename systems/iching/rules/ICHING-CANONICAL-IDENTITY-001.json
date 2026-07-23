@@ -6,8 +6,8 @@
   "version": "0.3.0",
   "status": "tested",
   "kind": "validation",
-  "conditions": [{ "fact_path": "computed_facts.primary_hexagram.king_wen_number", "operator": "exists" }],
-  "conclusions": [{ "finding_type": "iching.canonical_identity", "output_path": "computed_facts.primary_hexagram.source_ids", "value": "edition_aware_locators", "confidence": "high" }],
+  "conditions": [{ "fact_path": "computed_facts.primary_hexagram.number", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "iching.canonical_identity", "output_path": "computed_facts.primary_hexagram", "value": "edition_aware_identity", "confidence": "high" }],
   "priority": 990,
   "sources": [
     { "source_id": "SRC-ICHING-LOC-17845", "locator": "Library of Congress item 2021666491", "support_type": "corroborating" },

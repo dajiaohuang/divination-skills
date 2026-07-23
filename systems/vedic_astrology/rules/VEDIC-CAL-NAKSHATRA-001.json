@@ -1,0 +1,17 @@
+{
+  "rule_id": "VEDIC-CAL-NAKSHATRA-001",
+  "title": "Assign 27 equal nakshatras and four padas",
+  "system": "vedic-astrology",
+  "lineage": "parashari-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "computed_facts.sidereal_chart", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.nakshatra", "output_path": "computed_facts.sidereal_chart.positions.nakshatra", "value": "27_by_4_equal_divisions", "confidence": "deterministic"}],
+  "priority": 900,
+  "sources": [
+    {"source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001", "locator": "Classical nakshatra and dasha chapters", "support_type": "direct"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Half-open boundary contract", "support_type": "direct"}
+  ],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-KP-BOUNDARY-001"]
+}

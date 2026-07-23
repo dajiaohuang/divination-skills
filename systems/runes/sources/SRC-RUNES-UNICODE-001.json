@@ -1,7 +1,12 @@
 {
   "source_id": "SRC-RUNES-UNICODE-001",
   "title": "The Unicode Standard — Runic block U+16A0–U+16FF",
-  "creators": [{ "name": "Unicode Consortium", "role": "author" }],
+  "creators": [
+    {
+      "name": "Unicode Consortium",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "edition_or_version": "Unicode 17.0 names list",
@@ -18,7 +23,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-RUNES-UNICODE-001.md",
+    "sha256": "7624440a153b4c2cb9ff7fd8caea25c65f307dcaef8ad267acdbc48117e6e8b3"
+  },
   "license": {
     "identifier": "Unicode-3.0",
     "url": "https://www.unicode.org/license.txt",
@@ -39,8 +48,12 @@
     "evidence": "Unicode character names, scalar values, and characters are used under the Unicode License; required attribution is retained in the source manifest."
   },
   "usage_status": "production",
-  "systems": ["runes"],
-  "lineages": ["elder-futhark-grapheme-v0.3"],
+  "systems": [
+    "runes"
+  ],
+  "lineages": [
+    "elder-futhark-grapheme-v0.3"
+  ],
   "quality": {
     "authority": "official",
     "independence": "independent",

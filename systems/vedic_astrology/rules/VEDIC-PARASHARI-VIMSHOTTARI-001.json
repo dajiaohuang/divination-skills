@@ -1,0 +1,18 @@
+{
+  "rule_id": "VEDIC-PARASHARI-VIMSHOTTARI-001",
+  "title": "Calculate a bounded Vimshottari mahadasha schedule",
+  "system": "vedic-astrology",
+  "lineage": "parashari-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "computed_facts.sidereal_chart.positions.moon", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.dasha", "output_path": "computed_facts.lineages.parashari.vimshottari", "value": "moon_nakshatra_120_year_cycle", "confidence": "deterministic"}],
+  "priority": 860,
+  "sources": [
+    {"source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001", "locator": "Vimshottari dasha chapter", "support_type": "direct"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "365.2425-day computational year policy", "support_type": "direct"}
+  ],
+  "disputes": ["DSP-VEDIC-DASHA-YEAR-001"],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-DISPUTE-DASHA-YEAR-001"]
+}

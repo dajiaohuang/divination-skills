@@ -1,0 +1,58 @@
+{
+  "source_id": "SRC-VEDIC-JAIMINI-READER-001",
+  "title": "Jaimini Sutras independent study reader",
+  "creators": [
+    {
+      "name": "Bharat Ephemeris",
+      "role": "publisher"
+    }
+  ],
+  "source_type": "website",
+  "language": "en",
+  "edition_or_version": "website retrieved 2026-07-24",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://bharatephemeris.com/library/jaimini-sutras",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-VEDIC-JAIMINI-READER-001.md",
+    "sha256": "e92dcdc521f267ffa5273a47acb1d85ae989329a12fe629aac2a876c363df5d4"
+  },
+  "license": {
+    "identifier": "All rights reserved / no reuse license identified",
+    "text_available": false,
+    "additional_terms": true
+  },
+  "rights": {
+    "commercial_use": "permission_required",
+    "derivative_use": "permission_required",
+    "translation": "permission_required",
+    "images": "permission_required",
+    "dataset": "permission_required",
+    "notes": "Metadata and a non-substitutive factual summary only."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-24",
+    "evidence": "No open-content license was displayed on the reviewed reader."
+  },
+  "usage_status": "reference_only",
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "jaimini-structural-v0.1"
+  ],
+  "quality": {
+    "authority": "practitioner",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Corroborates the existence of karaka, arudha, rashi-dasha and seven/eight-karaka variants; not an authority for silently resolving disputes."
+  }
+}

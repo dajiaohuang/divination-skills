@@ -12,6 +12,7 @@
       "duty_star_origin_palace": 2,
       "duty_star_target_palace": 2,
       "duty_door_origin_palace": 2,
+      "duty_door_logical_palace": 2,
       "duty_door_target_palace": 2,
       "rotation_direction": "yin",
       "hour_steps_from_xun_start": 0
@@ -306,11 +307,6 @@
           {
             "stem": "丙",
             "layer": "heaven",
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          },
-          {
-            "stem": "丙",
-            "layer": "earth",
             "rule_id": "QIMEN-STATE-MARKERS-001"
           }
         ],

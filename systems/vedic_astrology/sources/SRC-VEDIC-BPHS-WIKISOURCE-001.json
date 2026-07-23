@@ -1,0 +1,63 @@
+{
+  "source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001",
+  "title": "Brihat Parashara Hora Shastra Sanskrit transcription",
+  "creators": [
+    {
+      "name": "Parashara",
+      "role": "author"
+    },
+    {
+      "name": "Sanskrit Wikisource contributors",
+      "role": "editor"
+    }
+  ],
+  "source_type": "book",
+  "language": "sa",
+  "edition_or_version": "Wikisource transcription retrieved 2026-07-24",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%83%E0%A4%B9%E0%A4%A4%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%B6%E0%A4%B0%E0%A4%B9%E0%A5%8B%E0%A4%B0%E0%A4%BE%E0%A4%B6%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A5%8D",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-VEDIC-BPHS-WIKISOURCE-001.md",
+    "sha256": "13bca85be2b8ed7edd57ec7ab2d0fb131052d08ea532cfa06e411cf3382e87d7"
+  },
+  "license": {
+    "identifier": "CC-BY-SA-4.0 transcription; public-domain classical text",
+    "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "Attribution and share-alike apply to the Wikisource transcription snapshot."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Wikisource terms identify CC BY-SA for contributed text; the underlying Sanskrit work is classical."
+  },
+  "usage_status": "production",
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "parashari-structural-v0.1"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Primary classical source with known edition/transmission questions; software conventions remain separately declared."
+  }
+}

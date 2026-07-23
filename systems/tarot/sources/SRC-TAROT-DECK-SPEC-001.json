@@ -1,14 +1,29 @@
 {
   "source_id": "SRC-TAROT-DECK-SPEC-001",
   "title": "Project RWS-compatible text deck, layouts, and journal specification v0.3",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.3.0",
-  "locators": [{ "kind": "local", "value": "systems/tarot/data/rws-78.json", "stable": true }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/tarot/data/rws-78.json",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/tarot/data/rws-78.json" },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-TAROT-DECK-SPEC-001.md",
+    "sha256": "e3bd9a2557683402ad3e8ed220f9ee2d038723c23684e1d979a419a7b81ecda0"
+  },
   "license": {
     "identifier": "Apache-2.0",
     "text_available": true,
@@ -29,8 +44,14 @@
     "evidence": "New project-authored keyword data with no copied guidebook prose or visual assets."
   },
   "usage_status": "production",
-  "systems": ["tarot"],
-  "lineages": ["rws-identity-v0.3", "rws-text-baseline-v0.2", "rws-text-journal-v0.2"],
+  "systems": [
+    "tarot"
+  ],
+  "lineages": [
+    "rws-identity-v0.3",
+    "rws-text-baseline-v0.2",
+    "rws-text-journal-v0.2"
+  ],
   "quality": {
     "authority": "unknown",
     "independence": "derived",

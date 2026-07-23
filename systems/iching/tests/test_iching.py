@@ -29,6 +29,12 @@ def test_hexagram_identity_uses_independent_classical_locators() -> None:
     assert set(facts["primary_hexagram"]["source_ids"]) == expected
     assert set(facts["changed_hexagram"]["source_ids"]) == expected
     assert all(line["source_ids"] == ["SRC-ICHING-PROJECT-SPEC-001"] for line in facts["lines"])
+    assert result["audit"]["rule_ids"] == ["ICHING-CAST-THREE-COIN-001"]
+    assert all("ICHING-CAST-THREE-COIN-001" in line["rule_ids"] for line in facts["lines"])
+    assert all(
+        "ICHING-CANONICAL-IDENTITY-001" in hexagram["rule_ids"]
+        for hexagram in (facts["primary_hexagram"], facts["changed_hexagram"])
+    )
 
 
 @pytest.mark.parametrize(

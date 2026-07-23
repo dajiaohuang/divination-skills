@@ -35,6 +35,7 @@ def test_rws_identity_is_complete_and_source_traced() -> None:
     for fact in draw["computed_facts"]["cards"]:
         assert fact["deck_index"] == fact["card_index"]
         assert fact["identity_lineage"] == "rws-identity-v0.3"
+        assert fact["rule_ids"] == ["TAROT-CARD-IDENTITY-001"]
         assert "SRC-TAROT-WAITE-WIKISOURCE-001" in fact["source_ids"]
         if fact["arcana"] == "major":
             assert fact["suit"] is None and fact["element"] is None
@@ -60,6 +61,8 @@ def test_draw_is_without_replacement_and_reversals_can_be_disabled() -> None:
     cards = draw["computed_facts"]["cards"]
     assert len({card["card_id"] for card in cards}) == 3
     assert {card["orientation"] for card in cards} == {"upright"}
+    assert draw["audit"]["selection_policy"] == "without_replacement"
+    assert draw["audit"]["rule_ids"] == ["TAROT-DRAW-UNIQUE-001"]
 
 
 def test_generated_seed_is_disclosed_and_replays() -> None:

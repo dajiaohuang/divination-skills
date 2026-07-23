@@ -4,16 +4,18 @@
       "confidence": "deterministic",
       "finding_type": "bazi.calculation",
       "output_path": "computed_facts.pillars.hour",
-      "value": "civil_double_hour"
+      "value": "selected_calculation_clock_double_hour"
     }
   ],
   "conditions": [
     {
-      "fact_path": "normalized_input.local_datetime",
+      "fact_path": "normalized_input.calculation_datetime",
       "operator": "exists"
     }
   ],
-  "disputes": [],
+  "disputes": [
+    "DSP-BAZI-SOLAR-TIME-001"
+  ],
   "kind": "calculation",
   "lineage": "ziping-calculation-baseline",
   "priority": 800,
@@ -31,6 +33,6 @@
     "CASE-BAZI-STANDARD-001",
     "CASE-BAZI-EDGE-LATEZI-MIDNIGHT-001"
   ],
-  "title": "Derive the double-hour branch and stem from local civil time",
-  "version": "0.1.0"
+  "title": "Derive the double-hour branch and stem from the selected calculation clock",
+  "version": "0.3.0"
 }

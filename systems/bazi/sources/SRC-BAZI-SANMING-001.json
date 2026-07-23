@@ -28,7 +28,9 @@
   ],
   "retrieved_at": "2026-07-23",
   "local_snapshot": {
-    "retained": false
+    "retained": true,
+    "path": "references/library/SRC-BAZI-SANMING-001.md",
+    "sha256": "69381dc7f0dfc5e67ada88bae926d822a8248c5b6a97619d1903069557f6ca55"
   },
   "license": {
     "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",

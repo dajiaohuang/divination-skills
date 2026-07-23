@@ -1,7 +1,12 @@
 {
   "source_id": "SRC-RUNES-SHM-KYLVER-001",
   "title": "Kylverstenen — Swedish History Museum collection 267753",
-  "creators": [{ "name": "Swedish History Museum", "role": "organization" }],
+  "creators": [
+    {
+      "name": "Swedish History Museum",
+      "role": "organization"
+    }
+  ],
   "source_type": "other",
   "language": "sv",
   "publication_date": "0400",
@@ -19,7 +24,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-RUNES-SHM-KYLVER-001.md",
+    "sha256": "20c252d68b00a44e58ae54f3a7074c1e10da6b2df24fb861eea094d955e89844"
+  },
   "license": {
     "identifier": "metadata-facts-only",
     "text_available": true,
@@ -40,8 +49,12 @@
     "evidence": "Only uncopyrightable artifact facts and a source locator are retained."
   },
   "usage_status": "production",
-  "systems": ["runes"],
-  "lineages": ["elder-futhark-grapheme-v0.3"],
+  "systems": [
+    "runes"
+  ],
+  "lineages": [
+    "elder-futhark-grapheme-v0.3"
+  ],
   "quality": {
     "authority": "official",
     "independence": "independent",

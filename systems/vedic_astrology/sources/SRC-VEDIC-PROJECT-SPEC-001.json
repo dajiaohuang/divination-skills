@@ -1,0 +1,71 @@
+{
+  "source_id": "SRC-VEDIC-PROJECT-SPEC-001",
+  "title": "Project-authored Vedic multi-lineage calculation contract v0.1",
+  "creators": [
+    {
+      "name": "divination-skills contributors",
+      "role": "author"
+    }
+  ],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "0.1.0",
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/vedic_astrology/DATA_CONTRACT.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/vedic_astrology/LINEAGE.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/vedic_astrology/KNOWN_DISPUTES.md",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-VEDIC-PROJECT-SPEC-001.md",
+    "sha256": "a5b4e4736b8db452078308ff847b7253427e7ea16de4fe84ff0988bfec4b18ea"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "project-owner-license-decision",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Project-authored contracts are released under the repository Apache-2.0 license."
+  },
+  "usage_status": "production",
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "true-citra-common-v0.1",
+    "parashari-structural-v0.1",
+    "jaimini-structural-v0.1",
+    "kp-stellar-v0.1"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Defines software policies and limitations; independent domain acceptance remains pending."
+  }
+}

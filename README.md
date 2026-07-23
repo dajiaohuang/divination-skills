@@ -8,22 +8,22 @@
 
 [![CI](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![Systems](https://img.shields.io/badge/systems-10-6f42c1)](#体系能力)
-[![Skills](https://img.shields.io/badge/skills-30-8a2be2)](#30-个-skill)
-[![Rules](https://img.shields.io/badge/rules-117-0f766e)](#规则来源与可追溯性)
+[![Systems](https://img.shields.io/badge/systems-11-6f42c1)](#体系能力)
+[![Skills](https://img.shields.io/badge/skills-34-8a2be2)](#34-个-skill)
+[![Rules](https://img.shields.io/badge/rules-136-0f766e)](#规则来源与可追溯性)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 </div>
 
 ---
 
-`divination-skills` 不是一个把十种占卜术塞进同一段 Prompt 的项目。它把每个体系拆成独立的计算器、导入器、验证器、时间层、双盘比较、解释层和安全边界，再用统一契约把它们组合起来。
+`divination-skills` 不是一个把十一种占卜术塞进同一段 Prompt 的项目。它把每个体系拆成独立的计算器、导入器、验证器、时间层、双盘比较、解释层和安全边界，再用统一契约把它们组合起来。
 
-当前技术路线 M0–M13 已实现并通过自动化验收；正式生产发布仍保持关闭，等待真实领域、版权与部署隐私审核。
+当前技术路线 M0–M14 已实现并通过自动化验收；正式生产发布仍保持关闭，等待真实领域、版权与部署隐私审核。
 
 ```text
-technical_complete = 10 / 10
-release_ready = 0 / 10
+technical_complete = 11 / 11
+release_ready = 0 / 11
 ```
 
 ## 目录
@@ -33,7 +33,7 @@ release_ready = 0 / 10
 - [体系能力](#体系能力)
 - [安装](#安装)
 - [快速开始](#快速开始)
-- [30 个 Skill](#30-个-skill)
+- [34 个 Skill](#34-个-skill)
 - [规则、来源与可追溯性](#规则来源与可追溯性)
 - [测试与可复现构建](#测试与可复现构建)
 - [项目结构](#项目结构)
@@ -98,6 +98,7 @@ flowchart LR
 |---|---:|---|---:|
 | 八字 | 0.2 | 四柱、节气、真太阳时、藏干、十神、纳音、十二长生、旺相休囚死、支关系、大运、校验、时序与双盘事实 | 7 |
 | 西方占星 | 0.3 | 热带黄道、本命、整宫/等宫、主要相位、七传统星体无评分尊贵状态、行运、太阳返照、双盘与出生时间区间扫描 | 7 |
+| 印度占星 / Jyotiṣa | 0.1 | 真 Citra 恒星黄道、平均交点、D1 整宫、星宿/四足、D9、Vimśottarī 大运；Jaimini 七/八 kāraka、rāśi dṛṣṭi、ārūḍha；KP 星宿/Sub-lord 限定层 | 4 |
 | 紫微斗数 | 0.5 | 原生十二宫与星曜、古典庙旺表、四化与自化路径、可选真太阳时、六层运限、查询、校验、解读与双盘比较 | 6 |
 | Tarot | 0.3 | RWS 78 张身份事实、七种牌阵、正逆位、组合摘要、同意后本地日记与描述统计 | 3 |
 | 六爻 | 0.3 | 八宫、世应、纳甲、六亲、六神、旬空、古典来源、可选真太阳时、候选用神与显式强度因子 | 2 |
@@ -183,6 +184,10 @@ done
 
 用 ziwei-calculator 排盘，然后用 ziwei-validator 校验这份外部 JSON 的差异。
 
+用 vedic-calculator 生成真 Citra 多流派结构盘；再分别用
+vedic-parashari、vedic-jaimini 或 vedic-kp 查看对应模块，
+不要把 KP Stellar 当作完整 KP 宫位盘。
+
 用 tarot-draw 抽凯尔特十字，允许逆位；随后交给 tarot-core，
 只做反思性解释，不推断第三方隐私。
 
@@ -210,7 +215,7 @@ uv run python systems/iching/skills/iching-core/scripts/run.py `
 
 每个入口支持 `--help`；确定性测试应显式传入种子或完整时间策略。
 
-## 30 个 Skill
+## 34 个 Skill
 
 ### 八字
 
@@ -246,6 +251,15 @@ uv run python systems/iching/skills/iching-core/scripts/run.py `
 | `ziwei-core` | 实验性宫星、空宫、三方四正与生年四化结构解读 |
 | `ziwei-timing` | 大限、小限、流年、流月、流日、流时结构层 |
 | `ziwei-synastry` | 方向性年干四化目标与对称同宫主星事实 |
+
+### 印度占星 / Jyotiṣa
+
+| Skill | 职责 |
+|---|---|
+| `vedic-calculator` | 独立计算真 Citra、平均交点、九曜、上升点、星宿与显式流派模块 |
+| `vedic-parashari` | 限定 Parāśarī 的 D1 整宫、D9 与 Vimśottarī 大运事实 |
+| `vedic-jaimini` | 隔离七/八 chara kāraka、rāśi dṛṣṭi 与 ārūḍha lagna |
+| `vedic-kp` | 只计算星座主、星宿主和不等长 Sub-lord；不冒充完整 KP |
 
 ### Tarot
 
@@ -306,17 +320,17 @@ source_id → rule_id → fact path → derived finding → report sentence
 
 | 指标 | 数量 / 状态 |
 |---|---:|
-| 体系 | 10 |
-| Skill | 30 |
-| 结构化规则 | 117 |
-| 来源清单 | 37 |
-| 基线 Golden Cases | 255 |
-| 边界案例 | 68 |
-| 流派分歧案例 | 48 |
+| 体系 | 11 |
+| Skill | 34 |
+| 结构化规则 | 136 |
+| 来源清单 | 45 |
+| 基线 Golden Cases | 263 |
+| 边界案例 | 73 |
+| 流派分歧案例 | 54 |
 | 错误输入案例 | 20 |
 | 扩展功能回放案例 | 850 |
-| pytest | 1526 passed |
-| 技术完整性 | 10/10 |
+| pytest | 1563 passed |
+| 技术完整性 | 11/11 |
 
 完整验证：
 
@@ -331,7 +345,7 @@ uv run divination-build . --system all --output dist
 构建测试会：
 
 - 连续构建两次并比较 ZIP 哈希；
-- 在仓库外解压全部 30 个包；
+- 在仓库外解压全部 34 个包；
 - 以隔离 Python 路径执行每个 Skill 的入口工作流；
 - 校验包内逐文件大小和 SHA-256；
 - 断言没有 `.git`、submodule、上游源码、`reference_only` 资料或 iztro/Node 运行时。
@@ -350,6 +364,7 @@ divination-skills/
 │   ├── bazi/
 │   ├── western_astrology/
 │   ├── ziwei/
+│   ├── vedic_astrology/
 │   ├── tarot/
 │   ├── iching/
 │   ├── liuyao/
@@ -373,31 +388,35 @@ divination-skills/
 
 本项目研究了以下被忽略的本地参考：
 
-- `vedic-astro-skills`：只参考 Calculator / Reader / Core / Timing / Synastry / Rectifier / Horary 的职责拆分；
+- `vedic-astro-skills`：只参考 Calculator / Reader / Core / Timing / Synastry / Rectifier / Horary 的职责拆分，并对照真 Citra、D9、七/八 Jaimini kāraka 与 KP 模块边界；
 - `iztro` 2.5.8：只用于紫微字段覆盖、边界和人工差异分类；
 - `kinqimen`：只用于奇门字段覆盖和可行性研究。
 
 它们都不是 submodule、运行依赖、构建依赖或测试依赖。仓库不复制其代码、Prompt、规则资料、翻译或数据表。即使删除整个 `references/upstream/`，生产测试和构建仍应全部通过。
 
 固定版本、许可证风险和用途见[参考资料登记](references/README.md)。
+Vedic clean-room 对照与缺口见
+[Vedic 实现审计](docs/VEDIC_IMPLEMENTATION_AUDIT.md)和
+[参考能力矩阵](systems/vedic_astrology/REFERENCE_COMPARISON.md)。
 
 ## 发布状态与边界
 
 技术完整不等于领域认可或生产授权。当前：
 
 ```text
-technical_complete = 10 / 10
-release_ready = 0 / 10
+technical_complete = 11 / 11
+release_ready = 0 / 11
 project_license_status = selected
 deployment_privacy_status = undecided
 bazi expert_accepted = 0 / 50
-extension domain-review cases accepted = 0 / 221
+extension domain-review cases accepted = 0 / 240
 ```
 
 主要边界：
 
 - 八字强弱、用神、格局和确定事件预测没有被包装成专家共识；
 - 西方卜卦占星被评估为未来独立体系，没有混入本命模块；
+- Vedic 的 Parāśarī、Jaimini 与 KP 分开运行；KP v0.1 仅为 Stellar/Sub-lord 层；
 - 紫微解释与双盘规则仍是 experimental；
 - 周易不捆绑经典译文，六爻规则包和奇门结构盘仍需独立专家验收；
 - Tarot、Lenormand、卢恩和数字命理提供符号反思，不宣称预测有效性；

@@ -13,10 +13,12 @@
         "reduction_steps": [
           1
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "initiative",
         "value": 1
       },
       "date_trace": {
@@ -32,6 +34,10 @@
         ],
         "fact_id": "numerology.date_trace",
         "raw_total": 4,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001",
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -44,10 +50,12 @@
           43,
           7
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "inquiry",
         "value": 7
       },
       "life_path": {
@@ -57,10 +65,12 @@
         "reduction_steps": [
           4
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "structure",
         "value": 4
       },
       "maturity": {
@@ -70,10 +80,13 @@
         "reduction_steps": [
           11
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001",
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "heightened inspiration",
         "value": 11
       },
       "name_trace": {
@@ -141,6 +154,9 @@
           }
         ],
         "raw_total": 43,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -153,10 +169,12 @@
           27,
           9
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "completion and broad concern",
         "value": 9
       },
       "soul_urge": {
@@ -167,10 +185,12 @@
           16,
           7
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "inquiry",
         "value": 7
       }
     }
@@ -188,6 +208,11 @@
   ],
   "normalized_input": {
     "birth_date": "2000-01-01",
+    "date_masters": [
+      11,
+      22,
+      33
+    ],
     "mapping": "pythagorean-a1-i9-repeat",
     "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
@@ -196,7 +221,15 @@
       33
     ],
     "name_letters": "TESTPERSON",
-    "transliteration_policy": "latin_nfkd-v0.1"
+    "name_masters": [
+      11,
+      22,
+      33
+    ],
+    "transliteration_policy": "latin_nfkd-v0.1",
+    "transliteration_rule_ids": [
+      "NUMEROLOGY-TRANSLITERATION-POLICY-001"
+    ]
   },
   "raw_input": {
     "birth_date": "2000-01-01",

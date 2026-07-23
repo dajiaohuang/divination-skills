@@ -9,15 +9,22 @@
   "conditions": [{ "fact_path": "computed_facts.branch_relations", "operator": "exists" }],
   "conclusions": [{
     "finding_type": "bazi.fact-label",
-    "output_path": "derived_findings.branch_relations",
+    "output_path": "computed_facts.branch_relations",
     "value": "structural_relation_only",
     "confidence": "deterministic"
   }],
   "priority": 700,
-  "sources": [{
-    "source_id": "SRC-BAZI-LUNARPY-001",
-    "locator": "Pinned branch-relation tables independently encoded in calculator tests",
-    "support_type": "corroborating"
-  }],
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+      "locator": "systems/bazi/DATA_CONTRACT.md branch-relation fact contract",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-BAZI-LUNARPY-001",
+      "locator": "Pinned branch-relation tables independently encoded in calculator tests",
+      "support_type": "corroborating"
+    }
+  ],
   "tests": ["CASE-BAZI-STANDARD-008"]
 }

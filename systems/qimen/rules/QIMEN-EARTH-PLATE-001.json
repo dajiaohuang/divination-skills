@@ -6,7 +6,7 @@
   "version": "0.1.0",
   "status": "tested",
   "kind": "calculation",
-  "conditions": [{ "fact_path": "ju", "operator": "exists" }],
+  "conditions": [{ "fact_path": "computed_facts.ju", "operator": "exists" }],
   "conclusions": [{ "finding_type": "qimen.earth", "output_path": "computed_facts.earth_plate", "value": "dun_direction_layout", "confidence": "medium" }],
   "priority": 990,
   "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "EARTH_STEMS layout", "support_type": "direct" }],

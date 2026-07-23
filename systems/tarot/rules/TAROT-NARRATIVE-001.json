@@ -9,7 +9,7 @@
   "conditions": [{ "fact_path": "computed_facts.cards", "operator": "exists" }],
   "conclusions": [{
     "finding_type": "tarot.narrative",
-    "output_path": "derived_findings.sequence",
+    "output_path": "derived_findings",
     "value": "reflective_not_predictive",
     "confidence": "low"
   }],

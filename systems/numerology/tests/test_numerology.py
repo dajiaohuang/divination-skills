@@ -62,6 +62,10 @@ def test_report_is_traceable_and_immutable() -> None:
     assert report["computed_facts"] == original
     assert profile["computed_facts"] == original
     assert all(item["fact_ids"] and item["rule_ids"] for item in report["narrative"]["numbers"])
+    assert all(
+        "theme" not in fact for name, fact in original.items() if not name.endswith("_trace")
+    )
+    assert all(item["theme"] for item in report["derived_findings"])
 
 
 @pytest.mark.parametrize(

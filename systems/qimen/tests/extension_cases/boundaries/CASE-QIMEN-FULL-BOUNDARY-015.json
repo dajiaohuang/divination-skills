@@ -12,6 +12,7 @@
       "duty_star_origin_palace": 1,
       "duty_star_target_palace": 1,
       "duty_door_origin_palace": 1,
+      "duty_door_logical_palace": 1,
       "duty_door_target_palace": 1,
       "rotation_direction": "yang",
       "hour_steps_from_xun_start": 0

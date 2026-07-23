@@ -6,7 +6,7 @@
   "version": "0.3.0",
   "status": "tested",
   "kind": "validation",
-  "conditions": [{ "fact_path": "normalized_input.name", "operator": "exists" }],
+  "conditions": [{ "fact_path": "normalized_input.name_letters", "operator": "exists" }],
   "conclusions": [{ "finding_type": "numerology.calculation_trace", "output_path": "computed_facts.name_trace", "value": "per_character_values_and_raw_total", "confidence": "deterministic" }],
   "priority": 995,
   "sources": [

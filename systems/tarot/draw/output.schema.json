@@ -11,9 +11,15 @@
     "normalized_input": { "type": "object" },
     "audit": {
       "type": "object",
-      "required": ["algorithm", "seed_hex", "seed_commitment", "deck_sha256", "draw_id"],
+      "required": ["algorithm", "selection_policy", "rule_ids", "seed_hex", "seed_commitment", "deck_sha256", "draw_id"],
       "properties": {
         "algorithm": { "const": "sha256-counter-rejection-v1" },
+        "selection_policy": { "const": "without_replacement" },
+        "rule_ids": {
+          "type": "array",
+          "contains": { "const": "TAROT-DRAW-UNIQUE-001" },
+          "items": { "type": "string" }
+        },
         "seed_hex": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
         "seed_commitment": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
         "deck_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
@@ -31,7 +37,7 @@
           "maxItems": 10,
           "items": {
             "type": "object",
-            "required": ["fact_id", "position", "card_id", "card_index", "name", "arcana", "deck_index", "rank", "suit", "element", "orientation", "identity_lineage", "source_ids"],
+            "required": ["fact_id", "position", "card_id", "card_index", "name", "arcana", "deck_index", "rank", "suit", "element", "orientation", "identity_lineage", "rule_ids", "source_ids"],
             "properties": {
               "fact_id": { "type": "string" },
               "position": { "type": "string" },
@@ -45,6 +51,11 @@
               "element": { "type": ["string", "null"], "enum": ["fire", "water", "air", "earth", null] },
               "orientation": { "type": "string", "enum": ["upright", "reversed"] },
               "identity_lineage": { "const": "rws-identity-v0.3" },
+              "rule_ids": {
+                "type": "array",
+                "contains": { "const": "TAROT-CARD-IDENTITY-001" },
+                "items": { "type": "string" }
+              },
               "source_ids": {
                 "type": "array",
                 "minItems": 2,

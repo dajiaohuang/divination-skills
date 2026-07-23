@@ -7,7 +7,7 @@
   "status": "tested",
   "kind": "interpretation",
   "conditions": [{ "fact_path": "symbol.position", "operator": "exists" }],
-  "conclusions": [{ "finding_type": "runes.position", "output_path": "derived_findings.position", "value": "position_constrained", "confidence": "low" }],
+  "conclusions": [{ "finding_type": "runes.position", "output_path": "derived_findings", "value": "position_constrained", "confidence": "low" }],
   "priority": 800,
   "sources": [{ "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "Draw position contract", "support_type": "direct" }],
   "tests": ["CASE-RUNES-DRAW-001"]

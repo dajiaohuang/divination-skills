@@ -9,7 +9,7 @@
   "conditions": [{ "fact_path": "audit.algorithm", "operator": "eq", "value": "sha256-counter-rejection-v1" }],
   "conclusions": [{
     "finding_type": "tarot.draw-policy",
-    "output_path": "derived_findings.draw_policy",
+    "output_path": "audit.selection_policy",
     "value": "without_replacement",
     "confidence": "deterministic"
   }],

@@ -1,15 +1,34 @@
 {
   "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
   "title": "Project tropical Western astrology contracts v0.3",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.3.0",
-  "locators": [{ "kind": "local", "value": "systems/western_astrology/LINEAGE.md", "stable": true }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/western_astrology/LINEAGE.md",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/western_astrology/LINEAGE.md" },
-  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-WESTERN-PROJECT-SPEC-001.md",
+    "sha256": "ba15247c3ae2f4269ff5751043905de135a4c9b652b43cc98c997588e36c2785"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
   "rights": {
     "commercial_use": "allowed",
     "derivative_use": "allowed",
@@ -24,8 +43,15 @@
     "evidence": "The project owner selected Apache-2.0 for project-authored repository material."
   },
   "usage_status": "production",
-  "systems": ["western-astrology"],
-  "lineages": ["tropical-geocentric-v0.1", "tropical-geocentric-major-aspects-v0.2", "tropical-traditional-condition-v0.3", "western-event-retained-rectification-v0.2"],
+  "systems": [
+    "western-astrology"
+  ],
+  "lineages": [
+    "tropical-geocentric-v0.1",
+    "tropical-geocentric-major-aspects-v0.2",
+    "tropical-traditional-condition-v0.3",
+    "western-event-retained-rectification-v0.2"
+  ],
   "quality": {
     "authority": "unknown",
     "independence": "derived",

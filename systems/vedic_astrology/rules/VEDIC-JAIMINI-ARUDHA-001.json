@@ -1,0 +1,17 @@
+{
+  "rule_id": "VEDIC-JAIMINI-ARUDHA-001",
+  "title": "Calculate arudha lagna with declared exception",
+  "system": "vedic-astrology",
+  "lineage": "jaimini-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "computed_facts.sidereal_chart.lagna.sign_index", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.jaimini.arudha", "output_path": "computed_facts.lineages.jaimini.arudha_lagna", "value": "repeat_lord_distance_with_exception", "confidence": "deterministic"}],
+  "priority": 800,
+  "sources": [
+    {"source_id": "SRC-VEDIC-JAIMINI-RAO-1949-001", "locator": "Arudha Lagna bibliographic context", "support_type": "corroborating"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Tenth-from-lord exception policy", "support_type": "direct"}
+  ],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-EDGE-ARUDHA-001"]
+}

@@ -2,10 +2,13 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from collections.abc import Callable
 from pathlib import Path
 from typing import Any
+
+from divination_skills.contracts import canonical_json
 
 from systems.iching.engine import cast as cast_iching
 from systems.lenormand.engine import draw as draw_lenormand
@@ -61,7 +64,12 @@ def base_case(
             "engine": result["engine"]["name"],
             "engine_version": result["engine"]["version"],
         },
-        "expected_output": {"computed_facts": result["computed_facts"]},
+        "expected_output": {
+            "computed_facts": result["computed_facts"],
+            "computed_facts_sha256": hashlib.sha256(
+                canonical_json(result["computed_facts"])
+            ).hexdigest(),
+        },
         "must_match_rules": rules,
         "allowed_disagreements": allowed,
         "forbidden_conclusions": [

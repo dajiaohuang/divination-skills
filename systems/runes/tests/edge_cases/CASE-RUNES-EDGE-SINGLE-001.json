@@ -15,10 +15,14 @@
           "character": "ᚷ",
           "codepoint": "U+16B7",
           "fact_id": "runes.draw.symbol.001",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Gebo",
           "orientation": "upright",
           "position": "focus",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -30,7 +34,8 @@
           "unicode_name": "RUNIC LETTER GEBO GYFU G"
         }
       ]
-    }
+    },
+    "computed_facts_sha256": "5ccc83e80ee29354f9e7006951f01f4708bbf71a5a0af4f008267dcae52c25dc"
   },
   "forbidden_conclusions": [
     "A fixed future or life event is guaranteed.",

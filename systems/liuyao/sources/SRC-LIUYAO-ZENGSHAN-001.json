@@ -2,8 +2,14 @@
   "source_id": "SRC-LIUYAO-ZENGSHAN-001",
   "title": "增删卜易（维基文库校录本）",
   "creators": [
-    { "name": "野鹤老人", "role": "author" },
-    { "name": "Wikisource contributors", "role": "editor" }
+    {
+      "name": "野鹤老人",
+      "role": "author"
+    },
+    {
+      "name": "Wikisource contributors",
+      "role": "editor"
+    }
   ],
   "source_type": "book",
   "language": "zh-Hans",
@@ -16,7 +22,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-LIUYAO-ZENGSHAN-001.md",
+    "sha256": "bf105a1806086481686148b8f429e49c918dbbd9622a00183dd7062771a3ddae"
+  },
   "license": {
     "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -38,8 +48,12 @@
     "evidence": "Production stores project-authored Najia, eight-palace, six-relative, six-spirit, moving-line, and void calculations plus short locators only."
   },
   "usage_status": "production",
-  "systems": ["liuyao"],
-  "lineages": ["wen-wang-najia-structural-v0.3"],
+  "systems": [
+    "liuyao"
+  ],
+  "lineages": [
+    "wen-wang-najia-structural-v0.3"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

@@ -53,6 +53,8 @@ def draw(payload: dict[str, Any]) -> dict[str, Any]:
         items=items(),
         spreads=SPREADS,
         source_id=SOURCE,
+        draw_rule_id="RUNES-DRAW-UNIQUE-001",
+        identity_rule_id="RUNES-GRAPHEME-IDENTITY-001",
     )
     result["schema_version"] = "0.3.0"
     result["engine"]["version"] = "0.3.0"
@@ -64,6 +66,7 @@ def draw(payload: dict[str, Any]) -> dict[str, Any]:
         fact["unicode_name"] = unicode_name
         fact["transliteration"] = transliteration
         fact["identity_lineage"] = "elder-futhark-grapheme-v0.3"
+        fact["grapheme_policy"] = "project_canonical_unicode_scalar"
         fact["source_ids"] = [SOURCE, UNICODE_SOURCE, HISTORICAL_SOURCE]
     return result
 

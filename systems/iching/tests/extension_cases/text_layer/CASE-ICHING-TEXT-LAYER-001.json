@@ -3,10 +3,10 @@
   "raw_input": {
     "seed_hex": "0000000000000000000000000000000000000000000000000000000000000001"
   },
-  "policy_id": "zhu-xi-count-routing-v0.2",
+  "policy_id": "zhu-xi-count-routing-v0.3",
   "expected_output": {
     "selection": {
-      "policy_id": "zhu-xi-count-routing-v0.2",
+      "policy_id": "zhu-xi-count-routing-v0.3",
       "moving_line_count": 3,
       "moving_line_positions": [
         3,
@@ -30,9 +30,13 @@
       "rule_ids": [
         "ICHING-MOVING-POLICY-COUNT-001"
       ],
+      "source_ids": [
+        "SRC-ICHING-PROJECT-SPEC-001",
+        "SRC-ICHING-QIMENG-TONGSHI-001"
+      ],
       "limitations": [
         "Selection identifies passages; it does not supply an interpretation or outcome.",
-        "The count-routing policy is isolated and pending independent textual review."
+        "The count-routing policy is lineage-specific and is never silently merged with alternatives."
       ]
     },
     "editions": [

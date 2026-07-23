@@ -1,17 +1,38 @@
 {
   "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
   "title": "Project-native Zi Wei Dou Shu structural foundation v0.5",
-  "creators": [{ "name": "divination-skills contributors", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills contributors",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "edition_or_version": "0.5.0",
   "locators": [
-    { "kind": "local", "value": "systems/ziwei/LINEAGE.md", "stable": true },
-    { "kind": "local", "value": "systems/ziwei/DATA_CONTRACT.md", "stable": true }
+    {
+      "kind": "local",
+      "value": "systems/ziwei/LINEAGE.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/ziwei/DATA_CONTRACT.md",
+      "stable": true
+    }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/ziwei" },
-  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-ZIWEI-PROJECT-SPEC-001.md",
+    "sha256": "7fe2e113f1ee544cc05a80b6ec83e8b330b959f6acc7e742311dd1fdd2055bd1"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
   "rights": {
     "commercial_use": "allowed",
     "derivative_use": "allowed",
@@ -26,8 +47,12 @@
     "evidence": "The project owner selected Apache-2.0 for project-authored material."
   },
   "usage_status": "production",
-  "systems": ["ziwei"],
-  "lineages": ["project-native-ziwei-structural-v0.5"],
+  "systems": [
+    "ziwei"
+  ],
+  "lineages": [
+    "project-native-ziwei-structural-v0.5"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

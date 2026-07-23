@@ -2,16 +2,32 @@
   "source_id": "SRC-ICHING-LOC-17845",
   "title": "周易注疏 : 十三卷",
   "creators": [
-    { "name": "Wang Bi", "role": "author" },
-    { "name": "Kong Yingda", "role": "editor" }
+    {
+      "name": "Wang Bi",
+      "role": "author"
+    },
+    {
+      "name": "Kong Yingda",
+      "role": "editor"
+    }
   ],
   "source_type": "book",
   "language": "zh-Hant",
   "publication_date": "1127",
   "edition_or_version": "Early Southern Song print, Library of Congress item 2021666491",
-  "locators": [{ "kind": "url", "value": "https://www.loc.gov/item/2021666491/", "stable": true }],
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://www.loc.gov/item/2021666491/",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-ICHING-LOC-17845.md",
+    "sha256": "46a4438357402a510f9c4b1d3016d6caaa47d60b4babfcb88cc2a02e5fb395f0"
+  },
   "license": {
     "identifier": "NoKnownRestrictions",
     "url": "https://www.loc.gov/item/2021666491/",
@@ -33,8 +49,14 @@
     "evidence": "Library of Congress Rights & Access statement for item 2021666491."
   },
   "usage_status": "production",
-  "systems": ["iching"],
-  "lineages": ["king-wen-classical-source-layer-v0.2"],
+  "systems": [
+    "iching",
+    "liuyao"
+  ],
+  "lineages": [
+    "king-wen-classical-source-layer-v0.2",
+    "wen-wang-gua-structural-v0.3"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

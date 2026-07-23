@@ -7,7 +7,7 @@
   "status": "tested",
   "kind": "validation",
   "conditions": [{ "fact_path": "computed_facts.lines", "operator": "exists" }],
-  "conclusions": [{ "finding_type": "liuyao.structural_provenance", "output_path": "computed_facts.lines.source_ids", "value": "project_and_classical_sources", "confidence": "high" }],
+  "conclusions": [{ "finding_type": "liuyao.structural_provenance", "output_path": "computed_facts.lines", "value": "project_and_classical_sources", "confidence": "high" }],
   "priority": 995,
   "sources": [
     { "source_id": "SRC-LIUYAO-ZENGSHAN-001", "locator": "八宫、浑天甲子、六亲、世应、六神及动变 sections", "support_type": "direct" },

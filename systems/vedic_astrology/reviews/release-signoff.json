@@ -1,0 +1,38 @@
+{
+  "system": "vedic_astrology",
+  "release": "0.1.0",
+  "signoffs": [
+    {
+      "role": "domain",
+      "status": "pending",
+      "reviewer_id": null,
+      "signed_at": null,
+      "evidence": [
+        "systems/vedic_astrology/tests/golden",
+        "systems/vedic_astrology/tests/edge_cases",
+        "systems/vedic_astrology/tests/disputes"
+      ],
+      "notes": "Requires independent Parashari, Jaimini, and KP reviewers; the bounded KP scope must be reviewed as stellar-only."
+    },
+    {
+      "role": "rights",
+      "status": "pending",
+      "reviewer_id": null,
+      "signed_at": null,
+      "evidence": [
+        "systems/vedic_astrology/sources",
+        "references/library",
+        "docs/policies/SOURCE_ACCEPTANCE.md"
+      ],
+      "notes": "Requires confirmation of classical-text snapshots and metadata-only handling for modern Jaimini and KP material."
+    },
+    {
+      "role": "privacy",
+      "status": "pending",
+      "reviewer_id": null,
+      "signed_at": null,
+      "evidence": ["docs/policies/SENSITIVE_BIRTH_DATA.md"],
+      "notes": "Requires approval of deployed birth-data retention, deletion, access, and logging settings."
+    }
+  ]
+}

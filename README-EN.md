@@ -8,26 +8,26 @@
 
 [![CI](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![Systems](https://img.shields.io/badge/systems-10-6f42c1)](#system-coverage)
-[![Skills](https://img.shields.io/badge/skills-30-8a2be2)](#the-30-skills)
-[![Rules](https://img.shields.io/badge/rules-117-0f766e)](#rules-sources-and-traceability)
+[![Systems](https://img.shields.io/badge/systems-11-6f42c1)](#system-coverage)
+[![Skills](https://img.shields.io/badge/skills-34-8a2be2)](#the-34-skills)
+[![Rules](https://img.shields.io/badge/rules-136-0f766e)](#rules-sources-and-traceability)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 </div>
 
 ---
 
-`divination-skills` does not place ten divination systems inside one giant prompt. Each system has
+`divination-skills` does not place eleven divination systems inside one giant prompt. Each system has
 isolated calculation, import, validation, timing, comparison, interpretation, provenance, and
 safety boundaries. System-neutral contracts compose those parts without silently blending
 lineages.
 
-The M0–M13 technical roadmap is implemented and automatically verified. Formal production release
+The M0–M14 technical roadmap is implemented and automatically verified. Formal production release
 remains closed until real domain, rights, and deployment-privacy reviews are complete.
 
 ```text
-technical_complete = 10 / 10
-release_ready = 0 / 10
+technical_complete = 11 / 11
+release_ready = 0 / 11
 ```
 
 ## Contents
@@ -37,7 +37,7 @@ release_ready = 0 / 10
 - [System coverage](#system-coverage)
 - [Installation](#installation)
 - [Quick start](#quick-start)
-- [The 30 Skills](#the-30-skills)
+- [The 34 Skills](#the-34-skills)
 - [Rules, sources, and traceability](#rules-sources-and-traceability)
 - [Testing and reproducible packages](#testing-and-reproducible-packages)
 - [Repository layout](#repository-layout)
@@ -108,6 +108,7 @@ Six shared contracts compose the systems:
 | Bazi | 0.2 | Four Pillars, solar terms, apparent solar time, hidden stems, Ten Gods, Nayin, growth stages, seasonal states, relations, luck cycles, timing, and synastry | 7 |
 | Western astrology | 0.3 | Tropical natal charts, whole-sign/equal houses, major aspects, unscored conditions for the seven traditional planets, transits, solar returns, synastry, and time-interval scanning | 7 |
 | Ziwei Dou Shu | 0.5 | Native palaces/stars, classical brightness, transformation paths, optional apparent solar time, six timing scopes, queries, validation, core, and comparison | 6 |
+| Vedic astrology | 0.1 | True-Citra sidereal chart, grahas, lagna, nakshatra/pada, D1/D9, Vimshottari Mahadasha, isolated Jaimini karakas/rashi drishti/Arudha, and bounded KP stellar sub-lords | 4 |
 | Tarot | 0.3 | Source-traced RWS 78-card identity, seven spreads, reversals, combination summaries, and consent-gated local journal statistics | 3 |
 | Liuyao | 0.3 | Eight palaces, Shi/Ying, Najia, Six Relations, Six Spirits, void branches, classical provenance, optional apparent solar time, and bounded judgment factors | 2 |
 | I Ching | 0.3 | Replayable three-coin casts, 64 hexagrams, moving/changed lines, two explicit selection policies, and two classical edition locators | 1 |
@@ -194,6 +195,9 @@ the structural transits on 2027-06-01. Do not predict a guaranteed event.
 
 Calculate a Ziwei chart and use ziwei-validator to compare this external JSON.
 
+Calculate a Vedic chart with vedic-calculator, explicitly select the Parashari
+lineage, then use vedic-parashari for D1, D9, and Vimshottari structural facts.
+
 Draw a Celtic Cross with tarot-draw, allow reversals, then pass the validated
 draw to tarot-core for reflective interpretation only.
 
@@ -222,7 +226,7 @@ uv run python systems/iching/skills/iching-core/scripts/run.py `
 Every entry point supports `--help`. Deterministic test workflows should provide a seed or complete
 time-policy input explicitly.
 
-## The 30 Skills
+## The 34 Skills
 
 ### Bazi
 
@@ -258,6 +262,15 @@ time-policy input explicitly.
 | `ziwei-core` | Experimental palace/star/empty-palace/surrounded/transformation explanation |
 | `ziwei-timing` | Major, minor, annual, monthly, daily, and hourly structural layers |
 | `ziwei-synastry` | Directional year-stem transformation targets and symmetric shared-star facts |
+
+### Vedic astrology
+
+| Skill | Responsibility |
+|---|---|
+| `vedic-calculator` | Calculate one source-traced true-Citra sidereal base chart with explicit lineage selection |
+| `vedic-parashari` | D1 whole-sign, D9 navamsha, and Vimshottari Mahadasha structural facts |
+| `vedic-jaimini` | Isolated seven/eight Chara Karaka, rashi drishti, and Arudha Lagna facts |
+| `vedic-kp` | Bounded stellar sign/star/sub-lord identity only; no cusp or predictive KP claims |
 
 ### Tarot
 
@@ -321,17 +334,17 @@ Current automated snapshot:
 
 | Metric | Count / state |
 |---|---:|
-| Systems | 10 |
-| Skills | 30 |
-| Structured rules | 117 |
-| Source manifests | 37 |
-| Baseline Golden Cases | 255 |
-| Boundary cases | 68 |
-| Lineage-dispute cases | 48 |
+| Systems | 11 |
+| Skills | 34 |
+| Structured rules | 136 |
+| Source manifests | 45 |
+| Baseline Golden Cases | 263 |
+| Boundary cases | 73 |
+| Lineage-dispute cases | 54 |
 | Invalid-input cases | 20 |
 | Extension replay cases | 850 |
-| pytest | 1526 passed |
-| Technical completeness | 10/10 |
+| pytest | 1563 passed |
+| Technical completeness | 11/11 |
 
 Run the full verification suite:
 
@@ -346,7 +359,7 @@ uv run divination-build . --system all --output dist
 Package tests:
 
 - build every ZIP twice and compare hashes;
-- extract all 30 packages outside the repository;
+- extract all 34 packages outside the repository;
 - run every Skill entry workflow with isolated Python-path handling;
 - verify per-file sizes and SHA-256 values;
 - reject `.git`, submodules, upstream source, `reference_only` content, and iztro/Node runtime.
@@ -365,6 +378,7 @@ divination-skills/
 │   ├── bazi/
 │   ├── western_astrology/
 │   ├── ziwei/
+│   ├── vedic_astrology/
 │   ├── tarot/
 │   ├── iching/
 │   ├── liuyao/
@@ -392,24 +406,28 @@ The project studied these ignored local references:
 - `iztro` 2.5.8 for Ziwei field coverage, edge cases, and manual difference classification;
 - `kinqimen` for Qimen field coverage and implementation feasibility.
 
-None is a submodule, runtime dependency, build dependency, or test dependency. Their code, prompts,
+The Vedic reference guided role-boundary comparison only; the repository's Vedic implementation is
+an independent clean-room implementation backed by separately registered sources. None of the
+reference repositories is a submodule, runtime dependency, build dependency, or test dependency. Their code, prompts,
 rule resources, translations, and data tables are not copied into this repository. Deleting
 `references/upstream/` must not affect production tests or builds.
 
 Pinned revisions, license risks, and permitted uses are recorded in
-[references/README.md](references/README.md).
+[references/README.md](references/README.md). The Vedic scope and clean-room comparison are documented
+in [the Vedic implementation audit](docs/VEDIC_IMPLEMENTATION_AUDIT.md) and
+[the Vedic reference comparison](systems/vedic_astrology/REFERENCE_COMPARISON.md).
 
 ## Release state and boundaries
 
 Technical completeness is not domain acceptance or production authorization:
 
 ```text
-technical_complete = 10 / 10
-release_ready = 0 / 10
+technical_complete = 11 / 11
+release_ready = 0 / 11
 project_license_status = selected
 deployment_privacy_status = undecided
 bazi expert_accepted = 0 / 50
-extension domain-review cases accepted = 0 / 221
+extension domain-review cases accepted = 0 / 240
 ```
 
 Important boundaries:
@@ -417,6 +435,8 @@ Important boundaries:
 - Bazi strength/useful-god/structure and deterministic event claims are not presented as consensus;
 - Western horary was assessed as a future independent system, not merged into natal astrology;
 - Ziwei interpretation and synastry remain experimental;
+- Vedic Parashari, Jaimini, and KP calculations remain isolated; KP v0.1 stops at the stellar
+  sign/star/sub-lord layer and does not implement cusp, significator, or event judgment;
 - I Ching text policies, Liuyao judgment packs, and Qimen structural rules await independent review;
 - Tarot, Lenormand, runes, and numerology are symbolic reflection systems, not validated predictors;
 - OCR/PDF, feng shui, palmistry, physiognomy, and Human Design are outside the current scope.

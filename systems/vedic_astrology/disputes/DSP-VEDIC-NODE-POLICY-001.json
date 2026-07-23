@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-VEDIC-NODE-POLICY-001",
+  "title": "Use mean or true lunar nodes",
+  "system": "vedic-astrology",
+  "topic": "Rahu and Ketu astronomy",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "mean-node-v0.1",
+      "summary": "Use the mean ascending node polynomial and place Ketu exactly opposite.",
+      "rule_ids": ["VEDIC-CAL-MEAN-NODE-001"],
+      "sources": [{"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Mean-node formula"}]
+    },
+    {
+      "lineage": "true-node-unimplemented",
+      "summary": "Use the oscillating true node; this is not implemented in v0.1.",
+      "rule_ids": ["VEDIC-CAL-MEAN-NODE-001"],
+      "sources": [{"source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "General astronomical frame dependency"}]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "mean-node-v0.1",
+    "rationale": "The selected polynomial is deterministic, locally implemented, and explicitly disclosed.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Rahu and Ketu are mean nodes; a true-node chart may differ near sign, nakshatra, or sub-lord boundaries.",
+  "sources": [
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Mean-node formula"},
+    {"source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "Astronomical time and frame dependency"}
+  ]
+}

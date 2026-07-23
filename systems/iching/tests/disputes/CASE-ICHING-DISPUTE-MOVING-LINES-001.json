@@ -41,6 +41,10 @@
           "what can be observed before assuming an outcome",
           "a small reversible response to the present conditions"
         ],
+        "rule_ids": [
+          "ICHING-HEXAGRAM-MAP-001",
+          "ICHING-CANONICAL-IDENTITY-001"
+        ],
         "source_ids": [
           "SRC-ICHING-LOC-17845",
           "SRC-ICHING-GUTENBERG-25501"
@@ -63,6 +67,10 @@
           "moving": false,
           "polarity": "yin",
           "position_from_bottom": 1,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -79,6 +87,10 @@
           "moving": true,
           "polarity": "yang",
           "position_from_bottom": 2,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -95,6 +107,10 @@
           "moving": false,
           "polarity": "yin",
           "position_from_bottom": 3,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -111,6 +127,10 @@
           "moving": false,
           "polarity": "yang",
           "position_from_bottom": 4,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -127,6 +147,10 @@
           "moving": true,
           "polarity": "yin",
           "position_from_bottom": 5,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -143,6 +167,10 @@
           "moving": true,
           "polarity": "yang",
           "position_from_bottom": 6,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -177,6 +205,10 @@
           "what can be observed before assuming an outcome",
           "a small reversible response to the present conditions"
         ],
+        "rule_ids": [
+          "ICHING-HEXAGRAM-MAP-001",
+          "ICHING-CANONICAL-IDENTITY-001"
+        ],
         "source_ids": [
           "SRC-ICHING-LOC-17845",
           "SRC-ICHING-GUTENBERG-25501"
@@ -187,7 +219,8 @@
           "image": "fire"
         }
       }
-    }
+    },
+    "computed_facts_sha256": "17eee2489fe2d4bbc007243e1708442ae4fea774d00e2b61bd130628d0d3f06a"
   },
   "forbidden_conclusions": [
     "A fixed future or life event is guaranteed.",

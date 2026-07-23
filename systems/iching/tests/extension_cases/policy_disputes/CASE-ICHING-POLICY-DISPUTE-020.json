@@ -2,6 +2,6 @@
   "case_id": "CASE-ICHING-POLICY-DISPUTE-020",
   "moving_line_count": 5,
   "left_policy": "all-moving-lines-v0.2",
-  "right_policy": "zhu-xi-count-routing-v0.2",
+  "right_policy": "zhu-xi-count-routing-v0.3",
   "expected_handling": "return_separate_outputs_without_merging"
 }

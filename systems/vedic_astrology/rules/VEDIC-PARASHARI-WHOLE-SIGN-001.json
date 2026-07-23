@@ -1,0 +1,18 @@
+{
+  "rule_id": "VEDIC-PARASHARI-WHOLE-SIGN-001",
+  "title": "Assign whole-sign bhavas from sidereal lagna",
+  "system": "vedic-astrology",
+  "lineage": "parashari-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "computed_facts.sidereal_chart.lagna.sign_index", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.house", "output_path": "computed_facts.sidereal_chart.positions.house", "value": "whole_sign", "confidence": "deterministic"}],
+  "priority": 880,
+  "sources": [
+    {"source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001", "locator": "Rashi and bhava structural context", "support_type": "corroborating"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Whole-sign product policy", "support_type": "direct"}
+  ],
+  "disputes": ["DSP-VEDIC-HOUSE-SYSTEM-001"],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-DISPUTE-HOUSE-001"]
+}

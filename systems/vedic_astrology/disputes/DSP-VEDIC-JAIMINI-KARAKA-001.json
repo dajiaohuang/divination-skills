@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-VEDIC-JAIMINI-KARAKA-001",
+  "title": "Use seven or eight Jaimini chara karakas",
+  "system": "vedic-astrology",
+  "topic": "Jaimini chara-karaka count",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "jaimini-seven-karaka-v0.1",
+      "summary": "Rank the Sun through Saturn and exclude the nodes.",
+      "rule_ids": ["VEDIC-JAIMINI-KARAKA-SEVEN-001"],
+      "sources": [{"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Seven-karaka policy"}]
+    },
+    {
+      "lineage": "jaimini-eight-karaka-v0.1",
+      "summary": "Add Rahu and rank it by its reversed arc within the sign.",
+      "rule_ids": ["VEDIC-JAIMINI-KARAKA-EIGHT-001"],
+      "sources": [{"source_id": "SRC-VEDIC-JAIMINI-READER-001", "locator": "Seven/eight variant summary"}]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "jaimini-seven-karaka-v0.1",
+    "rationale": "Seven is the explicit default while eight remains a first-class input option.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Jaimini chara-karaka ranks depend on the selected seven- or eight-karaka policy.",
+  "sources": [
+    {"source_id": "SRC-VEDIC-JAIMINI-RAO-1949-001", "locator": "Jaimini commentary bibliographic record"},
+    {"source_id": "SRC-VEDIC-JAIMINI-READER-001", "locator": "Modern variant overview"}
+  ]
+}

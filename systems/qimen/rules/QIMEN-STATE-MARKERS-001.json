@@ -2,14 +2,25 @@
   "rule_id": "QIMEN-STATE-MARKERS-001",
   "title": "Expose void, tomb, instrument punishment, and door oppression markers",
   "system": "qimen",
-  "lineage": "shijia-zhuanpan-chaibu-full-v0.2",
-  "version": "0.2.0",
+  "lineage": "shijia-zhuanpan-chaibu-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "calculation",
   "conditions": [{ "fact_path": "palaces", "operator": "exists" }],
   "conclusions": [{ "finding_type": "qimen.state_markers", "output_path": "palaces", "value": "named_structural_markers", "confidence": "low" }],
   "priority": 780,
-  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "systems/qimen/full_chart.py marker tables", "support_type": "direct" }],
+  "sources": [
+    {
+      "source_id": "SRC-QIMEN-BAOJIAN-001",
+      "locator": "Classical passages for 六仪击刑, 三奇入墓, and 门迫",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-QIMEN-PROJECT-SPEC-001",
+      "locator": "systems/qimen/full_chart.py marker tables and bounded implementation policy",
+      "support_type": "corroborating"
+    }
+  ],
   "tests": ["CASE-QIMEN-FOUNDATION-001"],
-  "notes": "Markers are not interpreted as outcomes."
+  "notes": "Markers are not interpreted as outcomes. Tomb markers are limited to the explicitly sourced 乙入二 and 丙丁入六 mapping; 门迫 means palace element controls door element."
 }

@@ -6,7 +6,7 @@
   "version": "0.1.0",
   "status": "tested",
   "kind": "calculation",
-  "conditions": [{ "fact_path": "hour_pillar.index", "operator": "exists" }],
+  "conditions": [{ "fact_path": "computed_facts.hour_pillar.index", "operator": "exists" }],
   "conclusions": [{ "finding_type": "qimen.duty_origin", "output_path": "computed_facts.duty_origin", "value": "xun_hidden_jia_origin", "confidence": "medium" }],
   "priority": 980,
   "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "HIDDEN_JIA and original palace tables", "support_type": "direct" }],

@@ -1,0 +1,18 @@
+{
+  "rule_id": "VEDIC-CAL-SIDEREAL-001",
+  "title": "Anchor true-Citra sidereal longitude to Spica",
+  "system": "vedic-astrology",
+  "lineage": "true-citra-common-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "normalized_input.ayanamsha", "operator": "eq", "value": "true_citra"}],
+  "conclusions": [{"finding_type": "vedic.ayanamsha", "output_path": "computed_facts.astronomy.ayanamsha", "value": "spica_at_sidereal_180", "confidence": "deterministic"}],
+  "priority": 990,
+  "sources": [
+    {"source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "GeoVector and ecliptic-of-date rotation", "support_type": "direct"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Declared fixed-Spica origin", "support_type": "direct"}
+  ],
+  "disputes": ["DSP-VEDIC-AYANAMSHA-001"],
+  "tests": ["CASE-VEDIC-NATAL-001", "CASE-VEDIC-DISPUTE-AYANAMSHA-001"]
+}

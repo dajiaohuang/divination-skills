@@ -8,6 +8,9 @@
     "palace": {
       "element": "earth",
       "id": "kun",
+      "rule_ids": [
+        "LIUYAO-PALACE-SHIYING-001"
+      ],
       "shi_position": 2,
       "source_ids": [
         "SRC-LIUYAO-PROJECT-SPEC-001",
@@ -20,7 +23,7 @@
   },
   "expected_output": {
     "audit": {
-      "cast_id": "7c20cb9df4099332b64bb9ef00426011ec0cc0697f55d6975d61fdf700c3e648"
+      "cast_id": "71a0c0313bfcb9539132ad2e899d1a267e6a0388bf0a35b6ee07beff310263fd"
     },
     "computed_facts": {
       "calendar_context": {
@@ -53,6 +56,9 @@
           "index": 11,
           "name": "亥"
         },
+        "rule_ids": [
+          "LIUYAO-CALENDAR-CONTEXT-001"
+        ],
         "six_spirit_start": {
           "day_stem": "庚",
           "first_spirit": "白虎",
@@ -93,6 +99,10 @@
           "what can be observed before assuming an outcome",
           "a small reversible response to the present conditions"
         ],
+        "rule_ids": [
+          "ICHING-HEXAGRAM-MAP-001",
+          "ICHING-CANONICAL-IDENTITY-001"
+        ],
         "source_ids": [
           "SRC-ICHING-LOC-17845",
           "SRC-ICHING-GUTENBERG-25501"
@@ -123,6 +133,12 @@
           "polarity": "yang",
           "position_from_bottom": 1,
           "role": null,
+          "rule_ids": [
+            "LIUYAO-NAJIA-001",
+            "LIUYAO-PALACE-SHIYING-001",
+            "LIUYAO-CALENDAR-CONTEXT-001",
+            "LIUYAO-CLASSICAL-STRUCTURE-001"
+          ],
           "six_relative": "父母",
           "six_spirit": "白虎",
           "source_ids": [
@@ -150,6 +166,12 @@
           "polarity": "yang",
           "position_from_bottom": 2,
           "role": "shi",
+          "rule_ids": [
+            "LIUYAO-NAJIA-001",
+            "LIUYAO-PALACE-SHIYING-001",
+            "LIUYAO-CALENDAR-CONTEXT-001",
+            "LIUYAO-CLASSICAL-STRUCTURE-001"
+          ],
           "six_relative": "官鬼",
           "six_spirit": "玄武",
           "source_ids": [
@@ -177,6 +199,12 @@
           "polarity": "yin",
           "position_from_bottom": 3,
           "role": null,
+          "rule_ids": [
+            "LIUYAO-NAJIA-001",
+            "LIUYAO-PALACE-SHIYING-001",
+            "LIUYAO-CALENDAR-CONTEXT-001",
+            "LIUYAO-CLASSICAL-STRUCTURE-001"
+          ],
           "six_relative": "兄弟",
           "six_spirit": "青龙",
           "source_ids": [
@@ -204,6 +232,12 @@
           "polarity": "yin",
           "position_from_bottom": 4,
           "role": null,
+          "rule_ids": [
+            "LIUYAO-NAJIA-001",
+            "LIUYAO-PALACE-SHIYING-001",
+            "LIUYAO-CALENDAR-CONTEXT-001",
+            "LIUYAO-CLASSICAL-STRUCTURE-001"
+          ],
           "six_relative": "兄弟",
           "six_spirit": "朱雀",
           "source_ids": [
@@ -231,6 +265,12 @@
           "polarity": "yin",
           "position_from_bottom": 5,
           "role": "ying",
+          "rule_ids": [
+            "LIUYAO-NAJIA-001",
+            "LIUYAO-PALACE-SHIYING-001",
+            "LIUYAO-CALENDAR-CONTEXT-001",
+            "LIUYAO-CLASSICAL-STRUCTURE-001"
+          ],
           "six_relative": "妻财",
           "six_spirit": "勾陈",
           "source_ids": [
@@ -258,6 +298,12 @@
           "polarity": "yin",
           "position_from_bottom": 6,
           "role": null,
+          "rule_ids": [
+            "LIUYAO-NAJIA-001",
+            "LIUYAO-PALACE-SHIYING-001",
+            "LIUYAO-CALENDAR-CONTEXT-001",
+            "LIUYAO-CLASSICAL-STRUCTURE-001"
+          ],
           "six_relative": "子孙",
           "six_spirit": "螣蛇",
           "source_ids": [
@@ -275,6 +321,9 @@
       "palace": {
         "element": "earth",
         "id": "kun",
+        "rule_ids": [
+          "LIUYAO-PALACE-SHIYING-001"
+        ],
         "shi_position": 2,
         "source_ids": [
           "SRC-LIUYAO-PROJECT-SPEC-001",
@@ -306,6 +355,10 @@
           "current structure: approach",
           "what can be observed before assuming an outcome",
           "a small reversible response to the present conditions"
+        ],
+        "rule_ids": [
+          "ICHING-HEXAGRAM-MAP-001",
+          "ICHING-CANONICAL-IDENTITY-001"
         ],
         "source_ids": [
           "SRC-ICHING-LOC-17845",

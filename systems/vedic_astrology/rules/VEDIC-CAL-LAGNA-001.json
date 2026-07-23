@@ -1,0 +1,17 @@
+{
+  "rule_id": "VEDIC-CAL-LAGNA-001",
+  "title": "Calculate the eastern-horizon lagna",
+  "system": "vedic-astrology",
+  "lineage": "true-citra-common-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "normalized_input.latitude", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.lagna", "output_path": "computed_facts.sidereal_chart.lagna", "value": "eastern_ecliptic_intersection", "confidence": "deterministic"}],
+  "priority": 960,
+  "sources": [
+    {"source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "Sidereal time and frame rotations", "support_type": "direct"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Lagna vector contract", "support_type": "direct"}
+  ],
+  "tests": ["CASE-VEDIC-NATAL-001"]
+}

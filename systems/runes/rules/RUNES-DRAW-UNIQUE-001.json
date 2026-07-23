@@ -1,0 +1,33 @@
+{
+  "rule_id": "RUNES-DRAW-UNIQUE-001",
+  "title": "Draw Elder Futhark symbols without replacement",
+  "system": "runes",
+  "lineage": "elder-futhark-project-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "audit.algorithm",
+      "operator": "eq",
+      "value": "sha256-counter-rejection-v1"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "runes.draw_policy",
+      "output_path": "audit.selection_policy",
+      "value": "without_replacement",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 1000,
+  "sources": [
+    {
+      "source_id": "SRC-RUNES-PROJECT-SPEC-001",
+      "locator": "Auditable draw contract",
+      "support_type": "direct"
+    }
+  ],
+  "tests": ["CASE-RUNES-DRAW-001"]
+}

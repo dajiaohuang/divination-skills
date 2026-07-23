@@ -12,7 +12,8 @@
       "duty_star_origin_palace": 4,
       "duty_star_target_palace": 2,
       "duty_door_origin_palace": 4,
-      "duty_door_target_palace": 9,
+      "duty_door_logical_palace": 6,
+      "duty_door_target_palace": 6,
       "rotation_direction": "yin",
       "hour_steps_from_xun_start": 7
     },
@@ -46,8 +47,8 @@
         ],
         "doors": [
           {
-            "name": "开门",
-            "source_palace": 6,
+            "name": "景门",
+            "source_palace": 9,
             "duty": false
           }
         ],
@@ -60,7 +61,13 @@
         "is_void": false,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [],
+        "door_oppressions": [
+          {
+            "door": "景门",
+            "palace": 1,
+            "rule_id": "QIMEN-STATE-MARKERS-001"
+          }
+        ],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -97,8 +104,8 @@
         ],
         "doors": [
           {
-            "name": "景门",
-            "source_palace": 9,
+            "name": "生门",
+            "source_palace": 8,
             "duty": false
           }
         ],
@@ -147,8 +154,8 @@
         ],
         "doors": [
           {
-            "name": "生门",
-            "source_palace": 8,
+            "name": "惊门",
+            "source_palace": 7,
             "duty": false
           }
         ],
@@ -198,8 +205,8 @@
         ],
         "doors": [
           {
-            "name": "伤门",
-            "source_palace": 3,
+            "name": "开门",
+            "source_palace": 6,
             "duty": false
           }
         ],
@@ -210,13 +217,7 @@
           }
         ],
         "is_void": false,
-        "tomb_entries": [
-          {
-            "stem": "壬",
-            "layer": "earth",
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "tomb_entries": [],
         "instrument_punishments": [],
         "door_oppressions": [],
         "rule_ids": [
@@ -290,9 +291,9 @@
         ],
         "doors": [
           {
-            "name": "惊门",
-            "source_palace": 7,
-            "duty": false
+            "name": "杜门",
+            "source_palace": 4,
+            "duty": true
           }
         ],
         "spirits": [
@@ -310,7 +311,13 @@
           }
         ],
         "instrument_punishments": [],
-        "door_oppressions": [],
+        "door_oppressions": [
+          {
+            "door": "杜门",
+            "palace": 6,
+            "rule_id": "QIMEN-STATE-MARKERS-001"
+          }
+        ],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -346,8 +353,8 @@
         ],
         "doors": [
           {
-            "name": "死门",
-            "source_palace": 2,
+            "name": "伤门",
+            "source_palace": 3,
             "duty": false
           }
         ],
@@ -360,7 +367,13 @@
         "is_void": false,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [],
+        "door_oppressions": [
+          {
+            "door": "伤门",
+            "palace": 7,
+            "rule_id": "QIMEN-STATE-MARKERS-001"
+          }
+        ],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -397,8 +410,8 @@
         ],
         "doors": [
           {
-            "name": "休门",
-            "source_palace": 1,
+            "name": "死门",
+            "source_palace": 2,
             "duty": false
           }
         ],
@@ -409,13 +422,7 @@
           }
         ],
         "is_void": true,
-        "tomb_entries": [
-          {
-            "stem": "庚",
-            "layer": "heaven",
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "tomb_entries": [],
         "instrument_punishments": [
           {
             "stem": "庚",
@@ -459,9 +466,9 @@
         ],
         "doors": [
           {
-            "name": "杜门",
-            "source_palace": 4,
-            "duty": true
+            "name": "休门",
+            "source_palace": 1,
+            "duty": false
           }
         ],
         "spirits": [

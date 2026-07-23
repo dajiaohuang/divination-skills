@@ -2,13 +2,17 @@
   "rule_id": "ICHING-HEXAGRAM-MAP-001",
   "title": "Map six bottom-to-top lines to trigrams and King Wen number",
   "system": "iching",
-  "lineage": "three-coin-king-wen-structural-v0.1",
-  "version": "0.1.0",
+  "lineage": "three-coin-king-wen-structural-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "calculation",
-  "conditions": [{ "fact_path": "lines", "operator": "exists" }],
+  "conditions": [{ "fact_path": "computed_facts.lines", "operator": "exists" }],
   "conclusions": [{ "finding_type": "iching.hexagram", "output_path": "computed_facts.primary_hexagram", "value": "king_wen_mapping", "confidence": "high" }],
   "priority": 1000,
-  "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "LINEAGE.md and PAIR_TO_NUMBER", "support_type": "direct" }],
+  "sources": [
+    { "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "LINEAGE.md and PAIR_TO_NUMBER", "support_type": "direct" },
+    { "source_id": "SRC-ICHING-LOC-17845", "locator": "Library of Congress item 2021666491", "support_type": "corroborating" },
+    { "source_id": "SRC-ICHING-GUTENBERG-25501", "locator": "Project Gutenberg eBook 25501 catalog", "support_type": "corroborating" }
+  ],
   "tests": ["CASE-ICHING-CAST-001"]
 }

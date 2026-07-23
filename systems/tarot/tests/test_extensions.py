@@ -99,6 +99,8 @@ def test_journal_requires_consent_omits_raw_question_and_counts(tmp_path: Path) 
     entries = load_entries(journal)
     stats = descriptive_statistics(entries)
     assert stats["entry_count"] == 2
+    assert first["rule_ids"] == ["TAROT-JOURNAL-PRIVACY-001"]
+    assert stats["rule_ids"] == ["TAROT-JOURNAL-STATS-001"]
     assert stats["spread_counts"] == {"elemental-five": 2}
     assert stats["tag_counts"] == {"review": 1, "weekly": 2}
     assert "predictive accuracy" in stats["limitations"][0]

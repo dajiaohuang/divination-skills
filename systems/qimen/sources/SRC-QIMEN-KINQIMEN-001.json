@@ -1,19 +1,57 @@
 {
   "source_id": "SRC-QIMEN-KINQIMEN-001",
   "title": "kinqimen GitHub repository",
-  "creators": [{ "name": "kentang2017 and contributors", "role": "author" }],
+  "creators": [
+    {
+      "name": "kentang2017 and contributors",
+      "role": "author"
+    }
+  ],
   "source_type": "software",
   "language": "zh-Hant",
   "publication_date": "2026-06-10",
   "edition_or_version": "f4c6118665253f897889290d8630f9b4cb3a4404",
-  "locators": [{ "kind": "url", "value": "https://github.com/kentang2017/kinqimen", "stable": false }],
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://github.com/kentang2017/kinqimen",
+      "stable": false
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
-  "license": { "identifier": "NOASSERTION", "text_available": false, "additional_terms": false },
-  "rights": { "commercial_use": "unknown", "derivative_use": "unknown", "translation": "unknown", "images": "unknown", "dataset": "unknown" },
-  "rights_review": { "status": "pending", "reviewed_at": "2026-07-23", "evidence": "README states MIT but the retrieved shallow repository did not contain the linked LICENSE text; reference use only." },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-QIMEN-KINQIMEN-001.md",
+    "sha256": "0ecec22fd80eaefb7b30e4a70b67538b0be4801555b5944dc0ea9702efbba3b1"
+  },
+  "license": {
+    "identifier": "NOASSERTION",
+    "text_available": false,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "unknown",
+    "derivative_use": "unknown",
+    "translation": "unknown",
+    "images": "unknown",
+    "dataset": "unknown"
+  },
+  "rights_review": {
+    "status": "pending",
+    "reviewed_at": "2026-07-23",
+    "evidence": "README states MIT but the retrieved shallow repository did not contain the linked LICENSE text; reference use only."
+  },
   "usage_status": "reference_only",
-  "systems": ["qimen"],
-  "lineages": ["shijia-zhuanpan-chaibu-v0.1"],
-  "quality": { "authority": "community", "independence": "independent", "reliability": "unrated", "notes": "Not imported or distributed; local clone is ignored. Current sxtwl API incompatibility prevented comparator execution." }
+  "systems": [
+    "qimen"
+  ],
+  "lineages": [
+    "shijia-zhuanpan-chaibu-v0.1"
+  ],
+  "quality": {
+    "authority": "community",
+    "independence": "independent",
+    "reliability": "unrated",
+    "notes": "Not imported or distributed; local clone is ignored. Current sxtwl API incompatibility prevented comparator execution."
+  }
 }

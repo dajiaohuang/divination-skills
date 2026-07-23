@@ -6,7 +6,13 @@ from pathlib import Path
 
 import pytest
 
-from systems.qimen.full_chart import calculate_full
+from systems.qimen.full_chart import (
+    DOOR_ELEMENT,
+    ELEMENT_CONTROLS,
+    HEAVEN_TOMB_PALACE_BY_STEM,
+    PALACE_ELEMENT,
+    calculate_full,
+)
 
 ROOT = Path(__file__).resolve().parent / "extension_cases"
 
@@ -50,6 +56,40 @@ def test_foundation_is_retained_without_mutation() -> None:
     original = deepcopy(result["foundation"]["computed_facts"])
     assert result["foundation"]["computed_facts"] == original
     assert "infer direction" in result["conclusions"][0]["statement"]
+
+
+def test_state_markers_follow_declared_classical_direction() -> None:
+    for case in replay_cases():
+        result = calculate_full(case["raw_input"])
+        for palace in result["palaces"]:
+            for marker in palace["tomb_entries"]:
+                assert marker["layer"] == "heaven"
+                assert HEAVEN_TOMB_PALACE_BY_STEM[marker["stem"]] == palace["palace"]
+            for marker in palace["door_oppressions"]:
+                assert (
+                    ELEMENT_CONTROLS[PALACE_ELEMENT[palace["palace"]]]
+                    == DOOR_ELEMENT[marker["door"]]
+                )
+
+
+def test_duty_door_center_landing_is_disclosed_and_hosted_in_kun() -> None:
+    center_case = next(
+        result
+        for case in replay_cases()
+        if (result := calculate_full(case["raw_input"]))["rotation"][
+            "duty_door_logical_palace"
+        ]
+        == 5
+    )
+    assert center_case["rotation"]["duty_door_target_palace"] == 2
+    duty_doors = [
+        (palace["palace"], door)
+        for palace in center_case["palaces"]
+        for door in palace["doors"]
+        if door["duty"]
+    ]
+    assert len(duty_doors) == 1
+    assert duty_doors[0][0] == 2
 
 
 def test_case_gate_counts() -> None:

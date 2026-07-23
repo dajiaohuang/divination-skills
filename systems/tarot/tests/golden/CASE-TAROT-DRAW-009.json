@@ -24,6 +24,9 @@
           "orientation": "upright",
           "position": "option_a",
           "rank": "11",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"
@@ -42,6 +45,9 @@
           "orientation": "reversed",
           "position": "option_b",
           "rank": "seven",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"
@@ -60,6 +66,9 @@
           "orientation": "upright",
           "position": "decision_focus",
           "rank": "three",
+          "rule_ids": [
+            "TAROT-CARD-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-TAROT-DECK-SPEC-001",
             "SRC-TAROT-WAITE-WIKISOURCE-001"

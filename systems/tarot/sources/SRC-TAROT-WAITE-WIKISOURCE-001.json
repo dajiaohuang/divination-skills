@@ -2,9 +2,18 @@
   "source_id": "SRC-TAROT-WAITE-WIKISOURCE-001",
   "title": "The Pictorial Key to the Tarot",
   "creators": [
-    { "name": "Arthur Edward Waite", "role": "author" },
-    { "name": "Pamela Colman Smith", "role": "author" },
-    { "name": "Wikisource contributors", "role": "editor" }
+    {
+      "name": "Arthur Edward Waite",
+      "role": "author"
+    },
+    {
+      "name": "Pamela Colman Smith",
+      "role": "author"
+    },
+    {
+      "name": "Wikisource contributors",
+      "role": "editor"
+    }
   ],
   "source_type": "book",
   "language": "en",
@@ -18,7 +27,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-TAROT-WAITE-WIKISOURCE-001.md",
+    "sha256": "65958e67726612b6ad9c2d6c45739b62839525dc510939b395d3a0dc799c96af"
+  },
   "license": {
     "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -40,8 +53,13 @@
     "evidence": "Historical public-domain identity facts only; all shipped keywords are separately authored and labeled project interpretation."
   },
   "usage_status": "production",
-  "systems": ["tarot"],
-  "lineages": ["rws-identity-v0.3", "rws-text-baseline-v0.3"],
+  "systems": [
+    "tarot"
+  ],
+  "lineages": [
+    "rws-identity-v0.3",
+    "rws-text-baseline-v0.3"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

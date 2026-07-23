@@ -79,6 +79,7 @@ def append_entry(
         "cards": cards,
         "reflection": reflection,
         "tags": clean_tags,
+        "rule_ids": ["TAROT-JOURNAL-PRIVACY-001"],
         "privacy": {
             "raw_question_stored": False,
             "consent_to_store": True,
@@ -116,6 +117,7 @@ def descriptive_statistics(entries: list[dict[str, Any]]) -> dict[str, Any]:
     tag_counts = Counter(tag for entry in entries for tag in entry.get("tags", []))
     return {
         "schema_version": "0.2.0",
+        "rule_ids": ["TAROT-JOURNAL-STATS-001"],
         "entry_count": len(entries),
         "spread_counts": dict(sorted(spread_counts.items())),
         "card_counts": dict(sorted(card_counts.items())),

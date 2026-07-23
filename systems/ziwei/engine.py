@@ -11,14 +11,19 @@ from divination_skills.time import TimeNormalizationError, localize_strict
 from lunar_python import Lunar, Solar
 
 from systems.ziwei.star_catalog import (
+    ADJECTIVE_DAHAO_BY_BRANCH,
     CLASSICAL_SOURCE_ID,
     DOCTOR_CYCLE_NAMES,
+    FEI_LIAN_BY_BRANCH,
     FIRE_BELL_STARTS,
     GENERAL_FRONT_CYCLE_NAMES,
     KUI_YUE_BY_STEM,
     LIFE_CYCLE_NAMES,
     LIFE_CYCLE_START,
     LU_CUN_BY_STEM,
+    TIAN_CHU_BY_STEM,
+    TIAN_FU_AUX_BY_STEM,
+    TIAN_GUAN_BY_STEM,
     TIAN_MA_BY_GROUP,
     YEAR_FRONT_CYCLE_NAMES,
     branch_index,
@@ -166,6 +171,7 @@ def _star_positions(
     year_branch: str,
     forward: bool,
     soul_index: int,
+    body_index: int,
 ) -> tuple[dict[int, list[str]], dict[int, list[str]], dict[int, list[str]]]:
     ziwei = _ziwei_index(lunar_day, bureau_number)
     # PALACE_BRANCHES is indexed from 寅.  In that coordinate system 天府 is
@@ -209,7 +215,30 @@ def _star_positions(
     year_offset = BRANCHES.index(year_branch)
     left = next(index for index, names in minor.items() if "左辅" in names)
     right = next(index for index, names in minor.items() if "右弼" in names)
+    chang = next(index for index, names in minor.items() if "文昌" in names)
+    qu = next(index for index, names in minor.items() if "文曲" in names)
     role_index = {name: index for index, name in enumerate(PALACE_ROLES)}
+    year_stem_index = STEMS.index(year_stem)
+    month_index = lunar_month - 1
+
+    if year_branch in "寅卯辰":
+        lonely, solitary = "巳", "丑"
+    elif year_branch in "巳午未":
+        lonely, solitary = "申", "辰"
+    elif year_branch in "申酉戌":
+        lonely, solitary = "亥", "未"
+    else:
+        lonely, solitary = "寅", "戌"
+
+    jielu = ("申", "午", "辰", "寅", "子")[year_stem_index % 5]
+    kongwang = ("酉", "未", "巳", "卯", "丑")[year_stem_index % 5]
+    jiekong = jielu if year_offset % 2 == 0 else kongwang
+    xunkong_index = (
+        branch_index(year_branch) + STEMS.index("癸") - year_stem_index + 1
+    ) % 12
+    if year_offset % 2 != xunkong_index % 2:
+        xunkong_index = (xunkong_index + 1) % 12
+
     placements = (
         ("禄存", lu_cun),
         ("擎羊", (lu_cun + 1) % 12),
@@ -225,6 +254,8 @@ def _star_positions(
         ("天姚", (branch_index("丑") + lunar_month - 1) % 12),
         ("三台", (left + lunar_day - 1) % 12),
         ("八座", (right - lunar_day + 1) % 12),
+        ("恩光", (chang + lunar_day - 2) % 12),
+        ("天贵", (qu + lunar_day - 2) % 12),
         ("天哭", (branch_index("午") - year_offset) % 12),
         ("天虚", (branch_index("午") + year_offset) % 12),
         ("龙池", (branch_index("辰") + year_offset) % 12),
@@ -237,6 +268,32 @@ def _star_positions(
         ("月德", (branch_index("巳") + year_offset) % 12),
         ("年解", (branch_index("戌") - year_offset) % 12),
         ("解神", branch_index(("申", "戌", "子", "寅", "辰", "午")[(lunar_month - 1) // 2])),
+        ("孤辰", branch_index(lonely)),
+        ("寡宿", branch_index(solitary)),
+        ("天才", (soul_index + year_offset) % 12),
+        ("天寿", (body_index + year_offset) % 12),
+        ("天厨", branch_index(TIAN_CHU_BY_STEM[year_stem])),
+        ("蜚廉", branch_index(FEI_LIAN_BY_BRANCH[year_branch])),
+        ("破碎", branch_index(("巳", "丑", "酉")[year_offset % 3])),
+        ("天官", branch_index(TIAN_GUAN_BY_STEM[year_stem])),
+        ("天福", branch_index(TIAN_FU_AUX_BY_STEM[year_stem])),
+        ("天空", (branch_index(year_branch) + 1) % 12),
+        ("截空", branch_index(jiekong)),
+        ("旬空", xunkong_index),
+        (
+            "阴煞",
+            branch_index(("寅", "子", "戌", "申", "午", "辰")[month_index % 6]),
+        ),
+        (
+            "天月",
+            branch_index(
+                ("戌", "巳", "辰", "寅", "未", "卯", "亥", "未", "寅", "午", "戌", "寅")[
+                    month_index
+                ]
+            ),
+        ),
+        ("天巫", branch_index(("巳", "申", "寅", "亥")[month_index % 4])),
+        ("大耗", branch_index(ADJECTIVE_DAHAO_BY_BRANCH[year_branch])),
         ("天伤", (soul_index - role_index["仆役"]) % 12),
         ("天使", (soul_index - role_index["疾厄"]) % 12),
     )
@@ -287,6 +344,14 @@ def _star(
 ) -> dict[str, Any]:
     attributes = metadata(name)
     brightness_value = brightness(name, earthly_branch)
+    mutagen = transformations.get(name)
+    rule_ids = ["ZIWEI-NATIVE-NATAL-001"]
+    if kind == "auxiliary":
+        rule_ids.append("ZIWEI-STAR-AUX-001")
+    if brightness_value is not None:
+        rule_ids.append("ZIWEI-STAR-BRIGHTNESS-001")
+    if mutagen is not None:
+        rule_ids.append("ZIWEI-TRANSFORMATION-BIRTH-001")
     return {
         "name": name,
         "type": kind,
@@ -300,9 +365,10 @@ def _star(
             else "not_listed_in_classical_volume_two_matrix"
         ),
         "brightness_source_ids": ([CLASSICAL_SOURCE_ID] if brightness_value is not None else []),
-        "mutagen": transformations.get(name),
+        "mutagen": mutagen,
         "self_transformations": [],
         "fact_id": fact_id,
+        "rule_ids": rule_ids,
         "source_ids": [SOURCE_ID, CLASSICAL_SOURCE_ID],
     }
 
@@ -608,6 +674,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
         year_branch,
         forward,
         soul_index,
+        body_index,
     )
     transformations = dict(zip(TRANSFORMATIONS[year_stem], TRANSFORMATION_LABELS, strict=True))
 
@@ -684,7 +751,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
         )
 
     self_transformations = _attach_self_transformations(palaces)
-    lunar_month_label = ("闰" if lunar.getMonth() < 0 else "") + lunar.getMonthInChinese()
+    lunar_month_label = lunar.getMonthInChinese()
     cause_palace = next(
         (palace for palace in palaces if palace["heavenlyStem"] == year_stem),
         None,

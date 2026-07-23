@@ -2,8 +2,14 @@
   "source_id": "SRC-WESTERN-PTOLEMY-001",
   "title": "Ptolemy's Tetrabiblos, or Quadripartite",
   "creators": [
-    { "name": "Claudius Ptolemy", "role": "author" },
-    { "name": "J. M. Ashmand", "role": "translator" }
+    {
+      "name": "Claudius Ptolemy",
+      "role": "author"
+    },
+    {
+      "name": "J. M. Ashmand",
+      "role": "translator"
+    }
   ],
   "source_type": "book",
   "language": "en",
@@ -17,7 +23,11 @@
     }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-WESTERN-PTOLEMY-001.md",
+    "sha256": "78640658a5f957816c85fa9b20def2087e1faf664b23e174b34a1ab16cf4b64e"
+  },
   "license": {
     "identifier": "Public-Domain-USA/Project-Gutenberg-terms",
     "url": "https://www.gutenberg.org/policy/license.html",
@@ -39,8 +49,12 @@
     "evidence": "Public-domain underlying work; production stores project-authored dignity tables and chapter locators only."
   },
   "usage_status": "production",
-  "systems": ["western-astrology"],
-  "lineages": ["tropical-traditional-condition-v0.3"],
+  "systems": [
+    "western-astrology"
+  ],
+  "lineages": [
+    "tropical-traditional-condition-v0.3"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

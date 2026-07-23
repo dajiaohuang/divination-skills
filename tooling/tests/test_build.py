@@ -119,6 +119,7 @@ def test_all_system_skills_build_reproducibly(tmp_path: Path) -> None:
         "qimen",
         "runes",
         "tarot",
+        "vedic-astrology",
         "western-astrology",
         "ziwei",
     }
@@ -440,6 +441,29 @@ def test_all_built_skill_scripts_run_outside_the_repository(tmp_path: Path) -> N
     assert western_timing["validation"]["status"] == "valid"
     assert western_synastry["validation"]["status"] == "valid"
     assert western_rectifier["validation"]["status"] == "valid"
+
+    vedic_input = tmp_path / "vedic-input.json"
+    vedic_input.write_text(
+        json.dumps(
+            {
+                "local_datetime": "2000-01-01T12:00:00",
+                "timezone": "UTC",
+                "latitude": 51.4779,
+                "longitude": 0.0,
+            }
+        ),
+        encoding="utf-8",
+    )
+    vedic_chart = _run_installed(
+        install_root / "vedic-calculator/scripts/calculate.py", str(vedic_input)
+    )
+    assert len(vedic_chart["computed_facts"]["sidereal_chart"]["positions"]) == 9
+    assert set(vedic_chart["computed_facts"]["lineages"]) == {
+        "parashari",
+        "jaimini",
+        "kp",
+    }
+    assert vedic_chart["engine"]["repository_dependencies"] == []
 
     ziwei = _run_installed(
         install_root / "ziwei-calculator/scripts/run.py",

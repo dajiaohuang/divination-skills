@@ -1,19 +1,61 @@
 {
   "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001",
   "title": "Project Pythagorean and Chaldean numerology contracts v0.3",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.3.0",
-  "locators": [{ "kind": "local", "value": "systems/numerology/LINEAGE.md", "stable": true }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/numerology/LINEAGE.md",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/numerology/LINEAGE.md" },
-  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
-  "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "allowed" },
-  "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Original project-authored mapping contract and wording." },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-NUMEROLOGY-PROJECT-SPEC-001.md",
+    "sha256": "f229ea6602e0c56933eaeec5abfde0e99904141760eea0322e80fc5f62d35116"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Original project-authored mapping contract and wording."
+  },
   "usage_status": "production",
-  "systems": ["numerology"],
-  "lineages": ["pythagorean-project-v0.3", "chaldean-name-cheiro-v0.3", "numerology-audit-trace-v0.3", "cross-lineage-input-policy-v0.2"],
-  "quality": { "authority": "unknown", "independence": "derived", "reliability": "low", "notes": "Transparent symbolic convention pending practitioner review." }
+  "systems": [
+    "numerology"
+  ],
+  "lineages": [
+    "pythagorean-project-v0.3",
+    "chaldean-name-cheiro-v0.3",
+    "numerology-audit-trace-v0.3",
+    "cross-lineage-input-policy-v0.2"
+  ],
+  "quality": {
+    "authority": "unknown",
+    "independence": "derived",
+    "reliability": "low",
+    "notes": "Transparent symbolic convention pending practitioner review."
+  }
 }

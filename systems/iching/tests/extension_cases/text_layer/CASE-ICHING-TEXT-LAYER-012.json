@@ -53,9 +53,12 @@
       "rule_ids": [
         "ICHING-MOVING-POLICY-ALL-001"
       ],
+      "source_ids": [
+        "SRC-ICHING-PROJECT-SPEC-001"
+      ],
       "limitations": [
         "Selection identifies passages; it does not supply an interpretation or outcome.",
-        "The count-routing policy is isolated and pending independent textual review."
+        "The count-routing policy is lineage-specific and is never silently merged with alternatives."
       ]
     },
     "editions": [

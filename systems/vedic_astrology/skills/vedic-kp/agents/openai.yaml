@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vedic KP Stellar"
+  short_description: "Calculate bounded KP sign star and sub-lord identities"
+  default_prompt: "Use $vedic-kp to calculate the supported KP stellar identities."

@@ -159,6 +159,7 @@ def traditional_condition(body: str, sign: str) -> dict[str, Any] | None:
         statuses.append("fall")
     return {
         "fact_id": f"western.traditional_condition.{body}",
+        "rule_ids": ["WESTERN-TRADITIONAL-CONDITION-001"],
         "lineage": "tropical-traditional-condition-v0.3",
         "statuses": statuses,
         "domicile_signs": list(domiciles),
@@ -188,10 +189,12 @@ def _position(name: str, body: astronomy.Body, time: astronomy.Time) -> dict[str
         "sign_index": sign_index,
         "degree_in_sign": round(longitude % 30, 8),
         "source_ids": ["SRC-WESTERN-ASTRONOMY-ENGINE-001"],
+        "rule_ids": ["WESTERN-CAL-POSITION-001"],
     }
     condition = traditional_condition(name, position["sign"])
     if condition is not None:
         position["traditional_condition"] = condition
+        position["rule_ids"].append("WESTERN-TRADITIONAL-CONDITION-001")
     return position
 
 
@@ -245,6 +248,9 @@ def _angles(time: astronomy.Time, longitude: float, latitude: float) -> tuple[fl
 
 def _houses(ascendant: float, system: str) -> list[dict[str, Any]]:
     start = math.floor(ascendant / 30) * 30 if system == "whole_sign" else ascendant
+    rule_id = (
+        "WESTERN-HOUSE-WHOLE-001" if system == "whole_sign" else "WESTERN-HOUSE-EQUAL-001"
+    )
     return [
         {
             "fact_id": f"western.house_cusp.{number:02d}",
@@ -252,6 +258,7 @@ def _houses(ascendant: float, system: str) -> list[dict[str, Any]]:
             "longitude_degrees": round((start + (number - 1) * 30) % 360, 8),
             "sign": SIGNS[int(((start + (number - 1) * 30) % 360) // 30)],
             "source_ids": ["SRC-WESTERN-PROJECT-SPEC-001"],
+            "rule_ids": [rule_id],
         }
         for number in range(1, 13)
     ]
@@ -286,6 +293,7 @@ def _aspects(positions: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "orb_degrees": round(distance, 8),
                 "allowed_orb_degrees": allowed_orb,
                 "source_ids": ["SRC-WESTERN-PROJECT-SPEC-001"],
+                "rule_ids": ["WESTERN-ASPECT-MAJOR-001"],
             }
         )
     return aspects
@@ -328,6 +336,7 @@ def calculate_chart(payload: dict[str, Any]) -> dict[str, Any]:
                     "sign": SIGNS[int(ascendant // 30)],
                     "degree_in_sign": round(ascendant % 30, 8),
                     "source_ids": SOURCE_IDS[:2],
+                    "rule_ids": ["WESTERN-CAL-ANGLES-001"],
                 },
                 "midheaven": {
                     "fact_id": "western.angle.midheaven",
@@ -335,6 +344,7 @@ def calculate_chart(payload: dict[str, Any]) -> dict[str, Any]:
                     "sign": SIGNS[int(midheaven // 30)],
                     "degree_in_sign": round(midheaven % 30, 8),
                     "source_ids": SOURCE_IDS[:2],
+                    "rule_ids": ["WESTERN-CAL-ANGLES-001"],
                 },
             },
             "house_cusps": cusps,

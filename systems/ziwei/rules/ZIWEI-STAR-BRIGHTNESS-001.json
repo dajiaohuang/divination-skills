@@ -15,7 +15,7 @@
   "conclusions": [
     {
       "finding_type": "ziwei.star_brightness",
-      "output_path": "computed_facts.palaces.stars.brightness",
+        "output_path": "computed_facts.palaces",
       "value": "classical_volume_two_matrix_or_null",
       "confidence": "deterministic"
     }

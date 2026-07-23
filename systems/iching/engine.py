@@ -13,6 +13,9 @@ from typing import Any
 PROJECT_SOURCE_ID = "SRC-ICHING-PROJECT-SPEC-001"
 CLASSICAL_SOURCE_IDS = ["SRC-ICHING-LOC-17845", "SRC-ICHING-GUTENBERG-25501"]
 SOURCE_IDS = [PROJECT_SOURCE_ID, *CLASSICAL_SOURCE_IDS]
+CAST_RULE_ID = "ICHING-CAST-THREE-COIN-001"
+IDENTITY_RULE_IDS = ["ICHING-HEXAGRAM-MAP-001", "ICHING-CANONICAL-IDENTITY-001"]
+MOVING_RULE_ID = "ICHING-MOVING-LINES-001"
 TRIGRAM_BY_BITS = {
     (1, 1, 1): ("qian", "乾", "heaven"),
     (1, 1, 0): ("dui", "兑", "lake"),
@@ -122,6 +125,7 @@ def identify(bits: list[int]) -> dict[str, Any]:
         "upper_trigram": {"id": upper[0], "hanzi": upper[1], "image": upper[2]},
         "lines_bottom_to_top": bits,
         "source_ids": CLASSICAL_SOURCE_IDS,
+        "rule_ids": IDENTITY_RULE_IDS,
     }
 
 
@@ -171,6 +175,7 @@ def cast(payload: dict[str, Any]) -> dict[str, Any]:
                 "moving": moving,
                 "changed_polarity": "yang" if changed else "yin",
                 "source_ids": [PROJECT_SOURCE_ID],
+                "rule_ids": [CAST_RULE_ID, MOVING_RULE_ID],
             }
         )
     primary = identify(primary_bits)
@@ -194,6 +199,7 @@ def cast(payload: dict[str, Any]) -> dict[str, Any]:
             "seed_hex": seed.hex(),
             "seed_commitment": hashlib.sha256(b"iching-seed-v1\x00" + seed).hexdigest(),
             "cast_id": hashlib.sha256(_canonical(audit_basis)).hexdigest(),
+            "rule_ids": [CAST_RULE_ID],
         },
         "computed_facts": {
             "lines": lines,

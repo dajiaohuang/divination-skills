@@ -12,7 +12,8 @@
       "duty_star_origin_palace": 6,
       "duty_star_target_palace": 7,
       "duty_door_origin_palace": 6,
-      "duty_door_target_palace": 7,
+      "duty_door_logical_palace": 4,
+      "duty_door_target_palace": 4,
       "rotation_direction": "yang",
       "hour_steps_from_xun_start": 7
     },
@@ -46,8 +47,8 @@
         ],
         "doors": [
           {
-            "name": "生门",
-            "source_palace": 8,
+            "name": "景门",
+            "source_palace": 9,
             "duty": false
           }
         ],
@@ -62,7 +63,7 @@
         "instrument_punishments": [],
         "door_oppressions": [
           {
-            "door": "生门",
+            "door": "景门",
             "palace": 1,
             "rule_id": "QIMEN-STATE-MARKERS-001"
           }
@@ -103,8 +104,8 @@
         ],
         "doors": [
           {
-            "name": "惊门",
-            "source_palace": 7,
+            "name": "生门",
+            "source_palace": 8,
             "duty": false
           }
         ],
@@ -153,8 +154,8 @@
         ],
         "doors": [
           {
-            "name": "杜门",
-            "source_palace": 4,
+            "name": "惊门",
+            "source_palace": 7,
             "duty": false
           }
         ],
@@ -210,9 +211,9 @@
         ],
         "doors": [
           {
-            "name": "景门",
-            "source_palace": 9,
-            "duty": false
+            "name": "开门",
+            "source_palace": 6,
+            "duty": true
           }
         ],
         "spirits": [
@@ -222,13 +223,7 @@
           }
         ],
         "is_void": false,
-        "tomb_entries": [
-          {
-            "stem": "癸",
-            "layer": "heaven",
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "tomb_entries": [],
         "instrument_punishments": [
           {
             "stem": "癸",
@@ -297,8 +292,8 @@
         ],
         "doors": [
           {
-            "name": "休门",
-            "source_palace": 1,
+            "name": "杜门",
+            "source_palace": 4,
             "duty": false
           }
         ],
@@ -317,7 +312,13 @@
           }
         ],
         "instrument_punishments": [],
-        "door_oppressions": [],
+        "door_oppressions": [
+          {
+            "door": "杜门",
+            "palace": 6,
+            "rule_id": "QIMEN-STATE-MARKERS-001"
+          }
+        ],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -353,9 +354,9 @@
         ],
         "doors": [
           {
-            "name": "开门",
-            "source_palace": 6,
-            "duty": true
+            "name": "伤门",
+            "source_palace": 3,
+            "duty": false
           }
         ],
         "spirits": [
@@ -367,7 +368,13 @@
         "is_void": false,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [],
+        "door_oppressions": [
+          {
+            "door": "伤门",
+            "palace": 7,
+            "rule_id": "QIMEN-STATE-MARKERS-001"
+          }
+        ],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -404,8 +411,8 @@
         ],
         "doors": [
           {
-            "name": "伤门",
-            "source_palace": 3,
+            "name": "死门",
+            "source_palace": 2,
             "duty": false
           }
         ],
@@ -418,13 +425,7 @@
         "is_void": false,
         "tomb_entries": [],
         "instrument_punishments": [],
-        "door_oppressions": [
-          {
-            "door": "伤门",
-            "palace": 8,
-            "rule_id": "QIMEN-STATE-MARKERS-001"
-          }
-        ],
+        "door_oppressions": [],
         "rule_ids": [
           "QIMEN-HEAVEN-STAR-PLATE-001",
           "QIMEN-DOOR-SPIRIT-PLATE-001",
@@ -471,8 +472,8 @@
         ],
         "doors": [
           {
-            "name": "死门",
-            "source_palace": 2,
+            "name": "休门",
+            "source_palace": 1,
             "duty": false
           }
         ],

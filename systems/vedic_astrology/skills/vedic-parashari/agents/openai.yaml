@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vedic Parashari"
+  short_description: "Calculate bounded Parashari D1 D9 and Vimshottari facts"
+  default_prompt: "Use $vedic-parashari to calculate the supported Parashari facts in my chart."

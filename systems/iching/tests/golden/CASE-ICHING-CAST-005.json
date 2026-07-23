@@ -15,7 +15,7 @@
   },
   "expected_output": {
     "audit": {
-      "cast_id": "b8ceb893839cf5d52af002a7b571b908db3525a05a1830e63ee253a585d12084"
+      "cast_id": "9c8b919236bc0b1434dc0297dadbbf1fbfd74501122ce04310353583760ffc07"
     },
     "computed_facts": {
       "changed_hexagram": {
@@ -41,6 +41,10 @@
           "what can be observed before assuming an outcome",
           "a small reversible response to the present conditions"
         ],
+        "rule_ids": [
+          "ICHING-HEXAGRAM-MAP-001",
+          "ICHING-CANONICAL-IDENTITY-001"
+        ],
         "source_ids": [
           "SRC-ICHING-LOC-17845",
           "SRC-ICHING-GUTENBERG-25501"
@@ -63,6 +67,10 @@
           "moving": false,
           "polarity": "yang",
           "position_from_bottom": 1,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -79,6 +87,10 @@
           "moving": false,
           "polarity": "yin",
           "position_from_bottom": 2,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -95,6 +107,10 @@
           "moving": false,
           "polarity": "yin",
           "position_from_bottom": 3,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -111,6 +127,10 @@
           "moving": false,
           "polarity": "yang",
           "position_from_bottom": 4,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -127,6 +147,10 @@
           "moving": false,
           "polarity": "yang",
           "position_from_bottom": 5,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -143,6 +167,10 @@
           "moving": true,
           "polarity": "yin",
           "position_from_bottom": 6,
+          "rule_ids": [
+            "ICHING-CAST-THREE-COIN-001",
+            "ICHING-MOVING-LINES-001"
+          ],
           "source_ids": [
             "SRC-ICHING-PROJECT-SPEC-001"
           ],
@@ -175,6 +203,10 @@
           "what can be observed before assuming an outcome",
           "a small reversible response to the present conditions"
         ],
+        "rule_ids": [
+          "ICHING-HEXAGRAM-MAP-001",
+          "ICHING-CANONICAL-IDENTITY-001"
+        ],
         "source_ids": [
           "SRC-ICHING-LOC-17845",
           "SRC-ICHING-GUTENBERG-25501"
@@ -193,6 +225,7 @@
   ],
   "lineage": "three-coin-king-wen-structural-v0.3",
   "must_match_rules": [
+    "ICHING-CAST-THREE-COIN-001",
     "ICHING-HEXAGRAM-MAP-001",
     "ICHING-MOVING-LINES-001",
     "ICHING-STRUCTURAL-REFLECTION-001",

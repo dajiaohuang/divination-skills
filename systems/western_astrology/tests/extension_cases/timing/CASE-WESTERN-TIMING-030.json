@@ -2,7 +2,7 @@
   "case_id": "CASE-WESTERN-TIMING-030",
   "category": "standard",
   "data_classification": "synthetic",
-  "expected_sha256": "f0c8a7e8b5c7dfc772b75cf2e5229710e7cccc5f028646f18042468cb124d34d",
+  "expected_sha256": "f4854f809c03ac5e474209eb2120e5ad2d9e0be57a701ad55500dac26e2101d3",
   "input": {
     "natal": {
       "house_system": "whole_sign",

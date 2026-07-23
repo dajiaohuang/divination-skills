@@ -38,14 +38,16 @@ def test_count_policy_covers_every_moving_line_count(count: int) -> None:
     source_cast["computed_facts"]["moving_line_positions"] = list(range(1, count + 1))
     result = select_reading_units(
         source_cast,
-        policy_id="zhu-xi-count-routing-v0.2",
+        policy_id="zhu-xi-count-routing-v0.3",
     )
     assert result["moving_line_count"] == count
     assert result["selected_units"]
+    assert "SRC-ICHING-QIMENG-TONGSHI-001" in result["source_ids"]
 
 
 def test_classical_layer_never_bundles_text_or_invents_variants() -> None:
     result = build_classical_layer(cast({"seed_hex": "99" * 32}))
+    assert "ICHING-CLASSICAL-SOURCE-LAYER-001" in result["rule_ids"]
     assert result["version_comparison"]["status"] == "not_collated"
     assert result["version_comparison"]["differences"] == []
     assert all(

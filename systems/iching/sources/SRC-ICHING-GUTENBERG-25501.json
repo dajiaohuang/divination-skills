@@ -2,16 +2,32 @@
   "source_id": "SRC-ICHING-GUTENBERG-25501",
   "title": "易經",
   "creators": [
-    { "name": "Anonymous", "role": "author" },
-    { "name": "Winnie Zhou", "role": "editor" }
+    {
+      "name": "Anonymous",
+      "role": "author"
+    },
+    {
+      "name": "Winnie Zhou",
+      "role": "editor"
+    }
   ],
   "source_type": "book",
   "language": "zh-Hant",
   "publication_date": "2008-05-17",
   "edition_or_version": "Project Gutenberg eBook 25501, updated 2021-07-01",
-  "locators": [{ "kind": "url", "value": "https://www.gutenberg.org/ebooks/25501", "stable": true }],
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://www.gutenberg.org/ebooks/25501",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-ICHING-GUTENBERG-25501.md",
+    "sha256": "a93bc821b981f30144ec75f75006ee42f2c57288d1f6185dbef42dbd69e93388"
+  },
   "license": {
     "identifier": "PublicDomain-US",
     "url": "https://www.gutenberg.org/ebooks/25501",
@@ -33,8 +49,14 @@
     "evidence": "Project Gutenberg catalog identifies eBook 25501 as public domain in the USA; no transcription is copied into this repository."
   },
   "usage_status": "production",
-  "systems": ["iching"],
-  "lineages": ["king-wen-classical-source-layer-v0.2"],
+  "systems": [
+    "iching",
+    "liuyao"
+  ],
+  "lineages": [
+    "king-wen-classical-source-layer-v0.2",
+    "wen-wang-gua-structural-v0.3"
+  ],
   "quality": {
     "authority": "primary",
     "independence": "independent",

@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-VEDIC-HOUSE-SYSTEM-001",
+  "title": "Keep Parashari whole-sign bhavas separate from KP cusps",
+  "system": "vedic-astrology",
+  "topic": "house and cusp model",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "parashari-structural-v0.1",
+      "summary": "Assign twelve whole-sign bhavas beginning with the sidereal lagna sign.",
+      "rule_ids": ["VEDIC-PARASHARI-WHOLE-SIGN-001"],
+      "sources": [{"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Whole-sign policy"}]
+    },
+    {
+      "lineage": "lineage-isolated-v0.1",
+      "summary": "Do not manufacture KP cusps from whole-sign houses; publish stellar identities only.",
+      "rule_ids": ["VEDIC-KP-SUBLORD-001", "VEDIC-LINEAGE-ISOLATION-001"],
+      "sources": [{"source_id": "SRC-VEDIC-KP-INTRO-001", "locator": "KP system context"}]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "lineage-isolated-v0.1",
+    "rationale": "The Parashari module may use whole signs while the bounded KP module emits no cusp claims.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Whole-sign house numbers belong to the Parashari structural layer and are not represented as KP Placidus cusps.",
+  "sources": [
+    {"source_id": "SRC-VEDIC-BPHS-WIKISOURCE-001", "locator": "Classical rashi/bhava context"},
+    {"source_id": "SRC-VEDIC-KP-INTRO-001", "locator": "Modern KP system context"}
+  ]
+}

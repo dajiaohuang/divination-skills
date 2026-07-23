@@ -23,7 +23,9 @@
   ],
   "retrieved_at": "2026-07-23",
   "local_snapshot": {
-    "retained": false
+    "retained": true,
+    "path": "references/library/SRC-ZIWEI-QUANSHU-001.md",
+    "sha256": "24a0272af77210b3e2f5577de6a157364344a3c51883c6f0d607c50583b8d0ab"
   },
   "license": {
     "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",

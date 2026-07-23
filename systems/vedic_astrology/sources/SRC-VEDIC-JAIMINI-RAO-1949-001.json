@@ -1,0 +1,67 @@
+{
+  "source_id": "SRC-VEDIC-JAIMINI-RAO-1949-001",
+  "title": "Sri Jaiminisutras: bibliographic record",
+  "creators": [
+    {
+      "name": "Jaimini",
+      "role": "author"
+    },
+    {
+      "name": "B. Suryanarain Rao",
+      "role": "translator"
+    },
+    {
+      "name": "Google Books",
+      "role": "publisher"
+    }
+  ],
+  "source_type": "book",
+  "language": "en",
+  "publication_date": "1949",
+  "edition_or_version": "Third edition bibliographic record",
+  "locators": [
+    {
+      "kind": "library",
+      "value": "https://books.google.com/books/about/Sri_Jaiminisutras.html?id=z4v4gjJ_ay0C",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-VEDIC-JAIMINI-RAO-1949-001.md",
+    "sha256": "89821746deeea12e4f7923b4181774283f20916d67f2a9c71edb27d8dd3b3542"
+  },
+  "license": {
+    "identifier": "Copyright status unresolved; metadata only",
+    "text_available": false,
+    "additional_terms": true
+  },
+  "rights": {
+    "commercial_use": "unknown",
+    "derivative_use": "permission_required",
+    "translation": "permission_required",
+    "images": "permission_required",
+    "dataset": "unknown",
+    "notes": "No full text is redistributed; only bibliographic facts are retained."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Google Books record identifies the 1949 edition but does not supply a compatible reuse license."
+  },
+  "usage_status": "reference_only",
+  "systems": [
+    "vedic-astrology"
+  ],
+  "lineages": [
+    "jaimini-structural-v0.1"
+  ],
+  "quality": {
+    "authority": "scholarly",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Bibliographic anchor for a major commentary tradition; exact contested policies are declared by the project."
+  }
+}

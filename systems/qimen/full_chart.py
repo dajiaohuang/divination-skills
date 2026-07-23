@@ -68,12 +68,10 @@ ELEMENT_CONTROLS = {
     "fire": "metal",
     "metal": "wood",
 }
-TOMB_PALACE_BY_ELEMENT = {
-    "wood": 2,
-    "fire": 6,
-    "earth": 6,
-    "metal": 8,
-    "water": 4,
+HEAVEN_TOMB_PALACE_BY_STEM = {
+    "乙": 2,
+    "丙": 6,
+    "丁": 6,
 }
 INSTRUMENT_PUNISHMENT_PALACE = {
     "戊": 3,
@@ -93,6 +91,12 @@ def _effective_palace(palace: int) -> int:
 def _ring_shift(palace: int, steps: int) -> int:
     effective = _effective_palace(palace)
     return RING[(RING.index(effective) + steps) % len(RING)]
+
+
+def _nine_palace_shift(palace: int, steps: int) -> int:
+    """Move the duty door through all nine Lo Shu palace numbers."""
+
+    return ((palace - 1 + steps) % 9) + 1
 
 
 def _void_branches(hour_index: int) -> list[str]:
@@ -129,7 +133,11 @@ def calculate_full(payload: dict[str, Any]) -> dict[str, Any]:
     xun_start_index = (hour["index"] // 10) * 10
     hour_step = hour["index"] - xun_start_index
     rotation_direction = 1 if facts["dun"] == "yang" else -1
-    duty_door_target = _ring_shift(duty_origin, rotation_direction * hour_step)
+    duty_door_logical_target = _nine_palace_shift(
+        duty_origin,
+        rotation_direction * hour_step,
+    )
+    duty_door_target = _effective_palace(duty_door_logical_target)
     door_shift = (
         RING.index(duty_door_target) - RING.index(_effective_palace(duty_origin))
     )
@@ -209,7 +217,7 @@ def calculate_full(payload: dict[str, Any]) -> dict[str, Any]:
 
     for palace, item in plate.items():
         for stem in item["heaven_stems"]:
-            if TOMB_PALACE_BY_ELEMENT[STEM_ELEMENT[stem["stem"]]] == palace:
+            if HEAVEN_TOMB_PALACE_BY_STEM.get(stem["stem"]) == palace:
                 item["tomb_entries"].append(
                     {
                         "stem": stem["stem"],
@@ -225,17 +233,8 @@ def calculate_full(payload: dict[str, Any]) -> dict[str, Any]:
                         "rule_id": "QIMEN-STATE-MARKERS-001",
                     }
                 )
-        earth_stem = item["earth_stem"]
-        if TOMB_PALACE_BY_ELEMENT[STEM_ELEMENT[earth_stem]] == palace:
-            item["tomb_entries"].append(
-                {
-                    "stem": earth_stem,
-                    "layer": "earth",
-                    "rule_id": "QIMEN-STATE-MARKERS-001",
-                }
-            )
         for door in item["doors"]:
-            if ELEMENT_CONTROLS[DOOR_ELEMENT[door["name"]]] == PALACE_ELEMENT[palace]:
+            if ELEMENT_CONTROLS[PALACE_ELEMENT[palace]] == DOOR_ELEMENT[door["name"]]:
                 item["door_oppressions"].append(
                     {
                         "door": door["name"],
@@ -257,6 +256,7 @@ def calculate_full(payload: dict[str, Any]) -> dict[str, Any]:
             "duty_star_origin_palace": duty_origin,
             "duty_star_target_palace": duty_star_target,
             "duty_door_origin_palace": duty_origin,
+            "duty_door_logical_palace": duty_door_logical_target,
             "duty_door_target_palace": duty_door_target,
             "rotation_direction": facts["dun"],
             "hour_steps_from_xun_start": hour_step,

@@ -7,7 +7,7 @@
   "status": "tested",
   "kind": "calculation",
   "conditions": [{ "fact_path": "computed_facts.positions", "operator": "exists" }],
-  "conclusions": [{ "finding_type": "western.traditional_condition", "output_path": "computed_facts.positions.traditional_condition", "value": "domicile_detriment_exaltation_fall_statuses", "confidence": "high" }],
+  "conclusions": [{ "finding_type": "western.traditional_condition", "output_path": "computed_facts.positions", "value": "domicile_detriment_exaltation_fall_statuses", "confidence": "high" }],
   "priority": 890,
   "sources": [{ "source_id": "SRC-WESTERN-PTOLEMY-001", "locator": "Book I, chapters on planetary houses and exaltations", "support_type": "direct" }],
   "disputes": ["DSP-WESTERN-RULERSHIP-LAYER-001"],

@@ -1,0 +1,14 @@
+{
+  "rule_id": "VEDIC-LINEAGE-ISOLATION-001",
+  "title": "Run only explicitly selected Vedic lineage modules",
+  "system": "vedic-astrology",
+  "lineage": "multi-lineage-router-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [{"fact_path": "normalized_input.lineages", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.routing", "output_path": "computed_facts.lineages", "value": "selected_modules_only", "confidence": "deterministic"}],
+  "priority": 950,
+  "sources": [{"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Lineage isolation contract", "support_type": "direct"}],
+  "tests": ["CASE-VEDIC-LINEAGE-PARASHARI-ONLY-001", "CASE-VEDIC-LINEAGE-KP-ONLY-001"]
+}

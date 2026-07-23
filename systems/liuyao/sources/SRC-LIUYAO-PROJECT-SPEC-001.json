@@ -1,19 +1,59 @@
 {
   "source_id": "SRC-LIUYAO-PROJECT-SPEC-001",
   "title": "Project Wen Wang Najia structural and judgment specification v0.3",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "zh-Hans",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.3.0",
-  "locators": [{ "kind": "local", "value": "systems/liuyao/LINEAGE.md", "stable": true }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/liuyao/LINEAGE.md",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/liuyao/LINEAGE.md" },
-  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
-  "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "allowed" },
-  "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Project-authored table transcription and structural wording; no copied modern commentary." },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-LIUYAO-PROJECT-SPEC-001.md",
+    "sha256": "ca19d57c94e4e8554a90abfdacc378c8dc2d0db004596dd9783ce012c596930a"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Project-authored table transcription and structural wording; no copied modern commentary."
+  },
   "usage_status": "production",
-  "systems": ["liuyao"],
-  "lineages": ["wen-wang-najia-structural-v0.3", "wen-wang-najia-project-judgment-v0.2"],
-  "quality": { "authority": "unknown", "independence": "derived", "reliability": "medium", "notes": "Engineering baseline pending independent Liuyao practitioner acceptance." }
+  "systems": [
+    "liuyao"
+  ],
+  "lineages": [
+    "wen-wang-najia-structural-v0.3",
+    "wen-wang-najia-project-judgment-v0.2"
+  ],
+  "quality": {
+    "authority": "unknown",
+    "independence": "derived",
+    "reliability": "medium",
+    "notes": "Engineering baseline pending independent Liuyao practitioner acceptance."
+  }
 }

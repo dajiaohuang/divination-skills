@@ -1,13 +1,26 @@
 {
   "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001",
   "title": "The 24 Solar Terms",
-  "creators": [{ "name": "Hong Kong Observatory", "role": "organization" }],
+  "creators": [
+    {
+      "name": "Hong Kong Observatory",
+      "role": "organization"
+    }
+  ],
   "source_type": "website",
   "language": "en",
   "edition_or_version": "retrieved-2026-07-23",
   "locators": [
-    { "kind": "url", "value": "https://www.hko.gov.hk/en/gts/time/24solarterms.htm", "stable": true },
-    { "kind": "url", "value": "https://www.hko.gov.hk/en/gts/time/calendar/pdf/files/2024e.pdf", "stable": true }
+    {
+      "kind": "url",
+      "value": "https://www.hko.gov.hk/en/gts/time/24solarterms.htm",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://www.hko.gov.hk/en/gts/time/calendar/pdf/files/2024e.pdf",
+      "stable": true
+    }
   ],
   "retrieved_at": "2026-07-23",
   "license": {
@@ -30,12 +43,21 @@
     "evidence": "Official pages inspected; no production reuse decision made."
   },
   "usage_status": "reference_only",
-  "systems": ["bazi"],
-  "lineages": ["astronomical-solar-terms"],
+  "systems": [
+    "bazi"
+  ],
+  "lineages": [
+    "astronomical-solar-terms"
+  ],
   "quality": {
     "authority": "official",
     "independence": "independent",
     "reliability": "high",
     "notes": "Official definition and calendar-date comparator; not a source for interpretive rules."
+  },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-ASTRONOMY-HKO-SOLAR-TERMS-001.md",
+    "sha256": "05676f8aaefd4eac363cafdf1a65dee753569293d36004cdd780be33f2e45e0c"
   }
 }

@@ -198,6 +198,12 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 "six_spirit": SIX_SPIRITS[(spirit_start + index - 1) % 6],
                 "role": "shi" if index == shi else "ying" if index == ying else None,
                 "is_void": branch in void_branches(day["index"]),
+                "rule_ids": [
+                    "LIUYAO-NAJIA-001",
+                    "LIUYAO-PALACE-SHIYING-001",
+                    "LIUYAO-CALENDAR-CONTEXT-001",
+                    "LIUYAO-CLASSICAL-STRUCTURE-001",
+                ],
                 "source_ids": STRUCTURAL_SOURCE_IDS,
             }
         )
@@ -234,6 +240,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 "stage_index": stage_index,
                 "shi_position": shi,
                 "ying_position": ying,
+                "rule_ids": ["LIUYAO-PALACE-SHIYING-001"],
                 "source_ids": STRUCTURAL_SOURCE_IDS,
             },
             "calendar_context": {
@@ -245,6 +252,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                     "first_spirit": SIX_SPIRITS[spirit_start],
                     "source_ids": STRUCTURAL_SOURCE_IDS,
                 },
+                "rule_ids": ["LIUYAO-CALENDAR-CONTEXT-001"],
                 "source_ids": STRUCTURAL_SOURCE_IDS,
             },
             "lines": lines,
@@ -258,7 +266,10 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 *calendar["validation"]["warnings"],
                 {
                     "code": "structural_only",
-                    "message": "No 用神, 旺衰, outcome, or timing judgment is produced in v0.1.",
+                    "message": (
+                        "No 用神, 旺衰, outcome, or timing judgment is produced by the "
+                        "v0.3 structural layer."
+                    ),
                 },
             ],
         },
@@ -278,14 +289,14 @@ def explain(result: dict[str, Any]) -> dict[str, Any]:
             "fact_ids": fact_ids,
             "rule_ids": ["LIUYAO-NAJIA-001", "LIUYAO-PALACE-SHIYING-001"],
             "confidence": "high",
-            "source_ids": [SOURCE_ID],
+            "source_ids": STRUCTURAL_SOURCE_IDS,
         },
         {
             "finding_id": "liuyao.finding.context.001",
             "fact_ids": [facts["calendar_context"]["day_pillar"]["fact_id"]],
             "rule_ids": ["LIUYAO-CALENDAR-CONTEXT-001"],
             "confidence": "high",
-            "source_ids": [SOURCE_ID],
+            "source_ids": STRUCTURAL_SOURCE_IDS,
         },
     ]
     report["narrative"] = {

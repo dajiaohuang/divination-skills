@@ -34,6 +34,8 @@ def test_grapheme_table_is_complete_unicode_and_source_traced() -> None:
     result = draw({"spread": "three-rune", "seed_hex": "00" * 32})
     for fact in result["computed_facts"]["symbols"]:
         assert fact["identity_lineage"] == "elder-futhark-grapheme-v0.3"
+        assert fact["grapheme_policy"] == "project_canonical_unicode_scalar"
+        assert fact["rule_ids"] == ["RUNES-GRAPHEME-IDENTITY-001"]
         assert {"SRC-RUNES-UNICODE-001", "SRC-RUNES-SHM-KYLVER-001"} <= set(
             fact["source_ids"]
         )
@@ -42,6 +44,8 @@ def test_grapheme_table_is_complete_unicode_and_source_traced() -> None:
 @pytest.mark.parametrize("case", golden_cases(), ids=lambda case: case["case_id"])
 def test_golden_draw_replays_exactly(case: dict) -> None:
     result = draw(case["raw_input"])
+    assert result["audit"]["selection_policy"] == "without_replacement"
+    assert result["audit"]["rule_ids"] == ["RUNES-DRAW-UNIQUE-001"]
     assert result["audit"]["draw_id"] == case["expected_output"]["audit"]["draw_id"]
     assert result["computed_facts"] == case["expected_output"]["computed_facts"]
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vedic Chart Calculator"
+  short_description: "Calculate traceable multi-lineage Jyotisha chart facts"
+  default_prompt: "Use $vedic-calculator to calculate my traceable Vedic astrology chart."

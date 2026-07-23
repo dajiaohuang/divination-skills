@@ -180,6 +180,23 @@ def test_every_catalogued_star_has_a_direct_known_position_assertion() -> None:
         "解神": 6,
         "天伤": 5,
         "天使": 7,
+        "恩光": 11,
+        "天贵": 5,
+        "孤辰": 0,
+        "寡宿": 8,
+        "天才": 0,
+        "天寿": 0,
+        "天厨": 0,
+        "蜚廉": 6,
+        "破碎": 3,
+        "天官": 9,
+        "天福": 4,
+        "天空": 11,
+        "截空": 4,
+        "旬空": 2,
+        "阴煞": 0,
+        "天月": 8,
+        "天巫": 3,
     }
     actual = {}
     for item in chart["computed_facts"]["palaces"]:

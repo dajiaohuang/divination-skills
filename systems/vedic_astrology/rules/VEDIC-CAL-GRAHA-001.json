@@ -1,0 +1,17 @@
+{
+  "rule_id": "VEDIC-CAL-GRAHA-001",
+  "title": "Calculate seven geocentric graha positions",
+  "system": "vedic-astrology",
+  "lineage": "true-citra-common-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{"fact_path": "normalized_input.utc_datetime", "operator": "exists"}],
+  "conclusions": [{"finding_type": "vedic.graha", "output_path": "computed_facts.sidereal_chart.positions", "value": "seven_planets_plus_mean_nodes", "confidence": "deterministic"}],
+  "priority": 980,
+  "sources": [
+    {"source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "GeoVector apparent geocentric vectors", "support_type": "direct"},
+    {"source_id": "SRC-VEDIC-PROJECT-SPEC-001", "locator": "Coordinate and rounding contract", "support_type": "direct"}
+  ],
+  "tests": ["CASE-VEDIC-NATAL-001"]
+}

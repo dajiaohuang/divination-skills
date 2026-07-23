@@ -124,6 +124,10 @@ def test_report_preserves_facts_and_marks_structural_boundary() -> None:
     original = deepcopy(result["computed_facts"])
     report = explain(result)
     assert result["computed_facts"] == original == report["computed_facts"]
+    assert all(
+        "SRC-LIUYAO-ZENGSHAN-001" in finding["source_ids"]
+        for finding in report["derived_findings"]
+    )
     assert "does not select 用神" in report["narrative"]["limitations"][0]
 
 

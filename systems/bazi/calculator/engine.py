@@ -655,7 +655,10 @@ def _branch_relations(pillars: dict[str, dict[str, Any]]) -> list[dict[str, Any]
                 "type": kind,
                 "positions": members,
                 "branches": branches,
-                "source_ids": ["SRC-BAZI-LUNARPY-001"],
+                "source_ids": [
+                    "SRC-BAZI-PROJECT-SPEC-001",
+                    "SRC-BAZI-LUNARPY-001",
+                ],
             }
         )
         relation_number += 1
@@ -718,7 +721,7 @@ def _luck_cycles(
         boundary_term = previous_term
     start_age = interval_seconds / (3 * 86_400)
     cycles = []
-    for number in range(1, 9):
+    for number in range(1, 11):
         cycle_start = start_age + (number - 1) * 10
         cycles.append(
             {

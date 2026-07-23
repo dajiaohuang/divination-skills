@@ -13,10 +13,12 @@
         "reduction_steps": [
           9
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "completion and broad concern",
         "value": 9
       },
       "date_trace": {
@@ -32,6 +34,10 @@
         ],
         "fact_id": "numerology.date_trace",
         "raw_total": 28,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001",
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -44,10 +50,12 @@
           61,
           7
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "inquiry",
         "value": 7
       },
       "life_path": {
@@ -59,10 +67,12 @@
           10,
           1
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "initiative",
         "value": 1
       },
       "maturity": {
@@ -72,10 +82,13 @@
         "reduction_steps": [
           8
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-DATE-001",
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "stewardship of power and resources",
         "value": 8
       },
       "name_trace": {
@@ -143,6 +156,9 @@
           }
         ],
         "raw_total": 61,
+        "rule_ids": [
+          "NUMEROLOGY-CAL-TRACE-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ]
@@ -155,10 +171,12 @@
           41,
           5
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "change",
         "value": 5
       },
       "soul_urge": {
@@ -169,10 +187,12 @@
           20,
           2
         ],
+        "rule_ids": [
+          "NUMEROLOGY-CAL-NAME-001"
+        ],
         "source_ids": [
           "SRC-NUMEROLOGY-PROJECT-SPEC-001"
         ],
-        "theme": "cooperation",
         "value": 2
       }
     }
@@ -190,6 +210,11 @@
   ],
   "normalized_input": {
     "birth_date": "1906-12-09",
+    "date_masters": [
+      11,
+      22,
+      33
+    ],
     "mapping": "pythagorean-a1-i9-repeat",
     "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
@@ -198,7 +223,15 @@
       33
     ],
     "name_letters": "GRACERIVER",
-    "transliteration_policy": "latin_nfkd-v0.1"
+    "name_masters": [
+      11,
+      22,
+      33
+    ],
+    "transliteration_policy": "latin_nfkd-v0.1",
+    "transliteration_rule_ids": [
+      "NUMEROLOGY-TRANSLITERATION-POLICY-001"
+    ]
   },
   "raw_input": {
     "birth_date": "1906-12-09",

@@ -124,6 +124,7 @@ def _fact(
     *,
     preserve_masters: bool,
     source_ids: list[str],
+    rule_ids: list[str],
 ) -> dict[str, Any]:
     value, steps = reduce_number(raw_total, preserve_masters=preserve_masters)
     return {
@@ -132,7 +133,7 @@ def _fact(
         "reduction_steps": steps,
         "value": value,
         "master_number": preserve_masters and value in MASTERS,
-        "theme": THEMES[value],
+        "rule_ids": rule_ids,
         "source_ids": source_ids,
     }
 
@@ -173,45 +174,77 @@ def calculate_profile(payload: dict[str, Any]) -> dict[str, Any]:
             "insufficient_name_parts", "The normalized name must contain a vowel and a consonant."
         )
     date_total = sum(int(digit) for digit in born.isoformat() if digit.isdigit())
-    preserve_masters = mapping == "pythagorean"
+    preserve_name_masters = mapping == "pythagorean"
+    preserve_date_masters = True
     mapping_source_ids = (
         [PROJECT_SOURCE] if mapping == "pythagorean" else [PROJECT_SOURCE, CHEIRO_SOURCE]
     )
     life_path = _fact(
         "numerology.life_path",
         date_total,
-        preserve_masters=preserve_masters,
+        preserve_masters=preserve_date_masters,
         source_ids=[PROJECT_SOURCE],
+        rule_ids=["NUMEROLOGY-CAL-DATE-001"],
     )
     expression = _fact(
         "numerology.expression",
         sum(all_values),
-        preserve_masters=preserve_masters,
+        preserve_masters=preserve_name_masters,
         source_ids=mapping_source_ids,
+        rule_ids=[
+            (
+                "NUMEROLOGY-CAL-NAME-001"
+                if mapping == "pythagorean"
+                else "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+            )
+        ],
     )
     soul = _fact(
         "numerology.soul_urge",
         sum(vowel_values),
-        preserve_masters=preserve_masters,
+        preserve_masters=preserve_name_masters,
         source_ids=mapping_source_ids,
+        rule_ids=[
+            (
+                "NUMEROLOGY-CAL-NAME-001"
+                if mapping == "pythagorean"
+                else "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+            )
+        ],
     )
     personality = _fact(
         "numerology.personality",
         sum(consonant_values),
-        preserve_masters=preserve_masters,
+        preserve_masters=preserve_name_masters,
         source_ids=mapping_source_ids,
+        rule_ids=[
+            (
+                "NUMEROLOGY-CAL-NAME-001"
+                if mapping == "pythagorean"
+                else "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+            )
+        ],
     )
     birthday = _fact(
         "numerology.birthday",
         born.day,
-        preserve_masters=preserve_masters,
+        preserve_masters=preserve_date_masters,
         source_ids=[PROJECT_SOURCE],
+        rule_ids=["NUMEROLOGY-CAL-DATE-001"],
     )
     maturity = _fact(
         "numerology.maturity",
         life_path["value"] + expression["value"],
-        preserve_masters=preserve_masters,
+        preserve_masters=preserve_name_masters,
         source_ids=mapping_source_ids,
+        rule_ids=[
+            "NUMEROLOGY-CAL-DATE-001",
+            (
+                "NUMEROLOGY-CAL-NAME-001"
+                if mapping == "pythagorean"
+                else "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+            ),
+        ],
     )
     return {
         "schema_version": "0.3.0",
@@ -235,7 +268,10 @@ def calculate_profile(payload: dict[str, Any]) -> dict[str, Any]:
                 else "chaldean-name-cheiro-v0.3"
             ),
             "transliteration_policy": transliteration_policy,
-            "masters": sorted(MASTERS) if preserve_masters else [],
+            "transliteration_rule_ids": ["NUMEROLOGY-TRANSLITERATION-POLICY-001"],
+            "masters": sorted(MASTERS) if preserve_name_masters else [],
+            "date_masters": sorted(MASTERS),
+            "name_masters": sorted(MASTERS) if preserve_name_masters else [],
         },
         "computed_facts": {
             "name_trace": {
@@ -252,12 +288,14 @@ def calculate_profile(payload: dict[str, Any]) -> dict[str, Any]:
                     )
                 ],
                 "raw_total": sum(all_values),
+                "rule_ids": ["NUMEROLOGY-CAL-TRACE-001"],
                 "source_ids": mapping_source_ids,
             },
             "date_trace": {
                 "fact_id": "numerology.date_trace",
                 "digits": [int(digit) for digit in born.isoformat() if digit.isdigit()],
                 "raw_total": date_total,
+                "rule_ids": ["NUMEROLOGY-CAL-TRACE-001", "NUMEROLOGY-CAL-DATE-001"],
                 "source_ids": [PROJECT_SOURCE],
             },
             "life_path": life_path,

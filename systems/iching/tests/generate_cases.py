@@ -35,6 +35,7 @@ def main() -> None:
                 "computed_facts": result["computed_facts"],
             },
             "must_match_rules": [
+                "ICHING-CAST-THREE-COIN-001",
                 "ICHING-HEXAGRAM-MAP-001",
                 "ICHING-MOVING-LINES-001",
                 "ICHING-STRUCTURAL-REFLECTION-001",

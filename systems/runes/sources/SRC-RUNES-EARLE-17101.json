@@ -1,14 +1,29 @@
 {
   "source_id": "SRC-RUNES-EARLE-17101",
   "title": "Anglo-Saxon Literature",
-  "creators": [{ "name": "John Earle", "role": "author" }],
+  "creators": [
+    {
+      "name": "John Earle",
+      "role": "author"
+    }
+  ],
   "source_type": "book",
   "language": "en",
   "publication_date": "1884",
   "edition_or_version": "Project Gutenberg eBook 17101",
-  "locators": [{ "kind": "url", "value": "https://www.gutenberg.org/ebooks/17101", "stable": true }],
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://www.gutenberg.org/ebooks/17101",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-RUNES-EARLE-17101.md",
+    "sha256": "8f463a2835da36257a55c1eb4766ec49c2951758c51617338cea4556dfabab3b"
+  },
   "license": {
     "identifier": "PublicDomain-US",
     "url": "https://www.gutenberg.org/ebooks/17101",
@@ -30,8 +45,12 @@
     "evidence": "Project Gutenberg catalog and the pre-1929 publication date identify the work as public domain in the USA."
   },
   "usage_status": "production",
-  "systems": ["runes"],
-  "lineages": ["anglo-saxon-rune-name-evidence-v0.2"],
+  "systems": [
+    "runes"
+  ],
+  "lineages": [
+    "anglo-saxon-rune-name-evidence-v0.2"
+  ],
   "quality": {
     "authority": "scholarly",
     "independence": "independent",

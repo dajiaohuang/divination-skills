@@ -1,17 +1,34 @@
 {
   "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001",
   "title": "Astronomy Engine 2.1.19",
-  "creators": [{ "name": "Don Cross / CosineKitty", "role": "maintainer" }],
+  "creators": [
+    {
+      "name": "Don Cross / CosineKitty",
+      "role": "maintainer"
+    }
+  ],
   "source_type": "software",
   "language": "en",
   "publication_date": "2023-12-14",
   "edition_or_version": "2.1.19",
   "locators": [
-    { "kind": "repository", "value": "https://github.com/cosinekitty/astronomy", "stable": true },
-    { "kind": "url", "value": "https://pypi.org/project/astronomy-engine/2.1.19/", "stable": true }
+    {
+      "kind": "repository",
+      "value": "https://github.com/cosinekitty/astronomy",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://pypi.org/project/astronomy-engine/2.1.19/",
+      "stable": true
+    }
   ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": false },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-WESTERN-ASTRONOMY-ENGINE-001.md",
+    "sha256": "07d4f23a7f7f1a8e659e0405f2f2a98bf7b8ed956a0d852e1e8295d8feb80854"
+  },
   "license": {
     "identifier": "MIT",
     "url": "https://github.com/cosinekitty/astronomy/blob/master/LICENSE",
@@ -33,8 +50,14 @@
     "evidence": "Repository LICENSE and PyPI metadata identify the MIT License."
   },
   "usage_status": "production",
-  "systems": ["western-astrology"],
-  "lineages": ["tropical-geocentric-v0.1"],
+  "systems": [
+    "vedic-astrology",
+    "western-astrology"
+  ],
+  "lineages": [
+    "true-citra-common-v0.1",
+    "tropical-geocentric-v0.1"
+  ],
   "quality": {
     "authority": "scholarly",
     "independence": "independent",

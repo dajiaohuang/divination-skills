@@ -6,6 +6,11 @@ cycle, limit, query, and dynamic-layer algorithms. The primary formula reference
 public-domain historical 《紫微斗數全書》; project-authored tables record formula facts, not copied
 interpretive prose.
 
+v0.5 also includes the catalogued daily, monthly, and yearly auxiliary placements needed to
+reproduce the supplied 文墨天机 chart: 恩光、天贵、孤辰、寡宿、天才、天寿、天厨、蜚廉、
+破碎、天官、天福、天空、截空、旬空、阴煞、天月、天巫 and the adjective 大耗. The
+formulas are independently encoded; iztro remains a comparison reference only.
+
 The selected calculation clock maps to 13 indices: early 子 at hour 0, eleven two-hour blocks, and
 late 子 at hour 23. Civil time is the default; explicit `apparent_solar` plus longitude uses NOAA's
 fractional-year equation-of-time approximation while retaining the civil UTC instant.

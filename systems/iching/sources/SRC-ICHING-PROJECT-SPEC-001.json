@@ -1,19 +1,59 @@
 {
   "source_id": "SRC-ICHING-PROJECT-SPEC-001",
   "title": "Project three-coin, King Wen, and moving-policy specification v0.3",
-  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "creators": [
+    {
+      "name": "divination-skills project",
+      "role": "author"
+    }
+  ],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
   "edition_or_version": "0.3.0",
-  "locators": [{ "kind": "local", "value": "systems/iching/LINEAGE.md", "stable": true }],
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/iching/LINEAGE.md",
+      "stable": true
+    }
+  ],
   "retrieved_at": "2026-07-23",
-  "local_snapshot": { "retained": true, "path": "systems/iching/LINEAGE.md" },
-  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
-  "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "allowed" },
-  "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Conventional identifiers and calculation structure only; project-authored prompts; no copied translation or commentary." },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-ICHING-PROJECT-SPEC-001.md",
+    "sha256": "da4ee134e26c5badf9bd50ea778996e17dc9a584abb7eb4e37f5e1b710d3e5f6"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Conventional identifiers and calculation structure only; project-authored prompts; no copied translation or commentary."
+  },
   "usage_status": "production",
-  "systems": ["iching"],
-  "lineages": ["three-coin-king-wen-structural-v0.3", "king-wen-classical-source-layer-v0.2"],
-  "quality": { "authority": "unknown", "independence": "derived", "reliability": "medium", "notes": "Calculation baseline pending independent practitioner acceptance." }
+  "systems": [
+    "iching"
+  ],
+  "lineages": [
+    "three-coin-king-wen-structural-v0.3",
+    "king-wen-classical-source-layer-v0.2"
+  ],
+  "quality": {
+    "authority": "unknown",
+    "independence": "derived",
+    "reliability": "medium",
+    "notes": "Calculation baseline pending independent practitioner acceptance."
+  }
 }

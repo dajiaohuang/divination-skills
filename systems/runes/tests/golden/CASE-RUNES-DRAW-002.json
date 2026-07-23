@@ -17,10 +17,14 @@
           "character": "ᛉ",
           "codepoint": "U+16C9",
           "fact_id": "runes.draw.symbol.001",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Algiz",
           "orientation": "upright",
           "position": "context",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -35,10 +39,14 @@
           "character": "ᛈ",
           "codepoint": "U+16C8",
           "fact_id": "runes.draw.symbol.002",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Perthro",
           "orientation": "upright",
           "position": "tension",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -53,10 +61,14 @@
           "character": "ᚺ",
           "codepoint": "U+16BA",
           "fact_id": "runes.draw.symbol.003",
+          "grapheme_policy": "project_canonical_unicode_scalar",
           "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Hagalaz",
           "orientation": "upright",
           "position": "practice",
+          "rule_ids": [
+            "RUNES-GRAPHEME-IDENTITY-001"
+          ],
           "source_ids": [
             "SRC-RUNES-PROJECT-SPEC-001",
             "SRC-RUNES-UNICODE-001",
@@ -76,6 +88,7 @@
   ],
   "lineage": "elder-futhark-project-v0.3",
   "must_match_rules": [
+    "RUNES-DRAW-UNIQUE-001",
     "RUNES-SYMBOL-UPRIGHT-001",
     "RUNES-POSITION-001",
     "RUNES-SEQUENCE-001",

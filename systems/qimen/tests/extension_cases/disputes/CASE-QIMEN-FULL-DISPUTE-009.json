@@ -1,6 +1,6 @@
 {
   "case_id": "CASE-QIMEN-FULL-DISPUTE-009",
   "declared_alternative": "flying_plate",
-  "project_lineage": "shijia-zhuanpan-chaibu-full-v0.2",
+  "project_lineage": "shijia-zhuanpan-chaibu-v0.3",
   "expected_decision": "lineage_mismatch_requires_separate_calculator"
 }
