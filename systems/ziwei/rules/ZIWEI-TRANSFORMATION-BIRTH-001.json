@@ -1,0 +1,39 @@
+{
+  "rule_id": "ZIWEI-TRANSFORMATION-BIRTH-001",
+  "title": "Trace birth-year transformations to target stars and palaces",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.raw_dates.year_stem",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.birth_transformation_path",
+      "output_path": "query.transformation_paths",
+      "value": "target_star_and_palace_trace",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 940,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "ten-stem four-transformation formula section",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/analyzer.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-006"
+  ]
+}

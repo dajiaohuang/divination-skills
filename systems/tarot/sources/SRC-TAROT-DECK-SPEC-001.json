@@ -1,16 +1,16 @@
 {
   "source_id": "SRC-TAROT-DECK-SPEC-001",
-  "title": "Project RWS-compatible text deck specification v0.1",
+  "title": "Project RWS-compatible text deck, layouts, and journal specification v0.2",
   "creators": [{ "name": "divination-skills project", "role": "author" }],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
-  "edition_or_version": "0.1.0",
+  "edition_or_version": "0.2.0",
   "locators": [{ "kind": "local", "value": "systems/tarot/data/rws-78.json", "stable": true }],
   "retrieved_at": "2026-07-23",
   "local_snapshot": { "retained": true, "path": "systems/tarot/data/rws-78.json" },
   "license": {
-    "identifier": "LicenseRef-Project-Authored-Internal",
+    "identifier": "Apache-2.0",
     "text_available": true,
     "additional_terms": false
   },
@@ -30,7 +30,7 @@
   },
   "usage_status": "production",
   "systems": ["tarot"],
-  "lineages": ["rws-text-baseline-v0.1"],
+  "lineages": ["rws-text-baseline-v0.1", "rws-text-baseline-v0.2", "rws-text-journal-v0.2"],
   "quality": {
     "authority": "unknown",
     "independence": "derived",

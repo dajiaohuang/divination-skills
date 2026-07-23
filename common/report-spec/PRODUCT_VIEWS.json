@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "views": {
+    "core": {
+      "purpose": "Summarize validated structure with citations.",
+      "required_evidence": ["fact_ids", "rule_ids", "source_ids", "limitations"]
+    },
+    "career": {
+      "purpose": "Surface work-environment and resource structures for reflection only.",
+      "required_evidence": ["fact_ids", "rule_ids", "support", "counterevidence", "limitations"]
+    },
+    "relationship": {
+      "purpose": "Surface directional and symmetric relationship structures without inferring third-party intent.",
+      "required_evidence": ["fact_ids", "rule_ids", "support", "counterevidence", "limitations"]
+    },
+    "timing": {
+      "purpose": "Surface calculated intervals, supporting facts, and boundary limits without promising events.",
+      "required_evidence": ["fact_ids", "rule_ids", "support", "counterevidence", "limitations"]
+    },
+    "qa": {
+      "purpose": "Return only facts and reviewed rules explicitly present in the supplied chart.",
+      "required_evidence": ["requested_fact_ids", "matched_fact_ids", "limitations"]
+    }
+  },
+  "systems": {
+    "bazi": {
+      "career_selectors": ["month", "day", "luck_cycles"],
+      "relationship_selectors": ["pillars", "branch_relations"],
+      "rule_ids": ["BAZI-FACT-BRANCH-REL-001", "BAZI-FACT-TENGOD-001"]
+    },
+    "western-astrology": {
+      "career_selectors": ["midheaven", "positions", "aspects"],
+      "relationship_selectors": ["positions", "aspects"],
+      "rule_ids": ["WESTERN-CAL-POSITION-001", "WESTERN-ASPECT-MAJOR-001"]
+    },
+    "ziwei": {
+      "career_selectors": ["官禄", "three_directions_four_alignments"],
+      "relationship_selectors": ["夫妻", "three_directions_four_alignments"],
+      "rule_ids": ["ZIWEI-CORE-STRUCTURE-001", "ZIWEI-PALACE-SURROUNDED-001"]
+    }
+  },
+  "high_impact_domains": ["medical", "legal", "financial", "employment_selection", "safety"],
+  "high_impact_policy": "reflective_information_only"
+}

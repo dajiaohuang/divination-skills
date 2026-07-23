@@ -1,0 +1,182 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-014",
+  "raw_input": {
+    "spread": "relationship-six",
+    "seed_hex": "000000000000000000000000000000000000000000000000000000000000000e",
+    "allow_reversals": true
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "relationship-six",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "self_position",
+          "card_id": "tarot.rws.major-11-justice",
+          "card_index": 11,
+          "name": "Justice",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "other_position",
+          "card_id": "tarot.rws.cups-two",
+          "card_index": 37,
+          "name": "Two of Cups",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "connection",
+          "card_id": "tarot.rws.major-05-hierophant",
+          "card_index": 5,
+          "name": "The Hierophant",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "communication",
+          "card_id": "tarot.rws.swords-two",
+          "card_index": 51,
+          "name": "Two of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "boundary",
+          "card_id": "tarot.rws.major-10-wheel-of-fortune",
+          "card_index": 10,
+          "name": "Wheel of Fortune",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "shared_focus",
+          "card_id": "tarot.rws.wands-queen",
+          "card_index": 34,
+          "name": "Queen of Wands",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.major-11-justice",
+        "right_card_id": "tarot.rws.cups-two",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.cups-two",
+        "right_card_id": "tarot.rws.major-05-hierophant",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.major-05-hierophant",
+        "right_card_id": "tarot.rws.swords-two",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.swords-two",
+        "right_card_id": "tarot.rws.major-10-wheel-of-fortune",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.major-10-wheel-of-fortune",
+        "right_card_id": "tarot.rws.wands-queen",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 3,
+        "minor": 3
+      },
+      "suit_counts": {
+        "wands": 1,
+        "cups": 1,
+        "swords": 1,
+        "pentacles": 0
+      },
+      "element_counts": {
+        "fire": 1,
+        "water": 1,
+        "air": 1,
+        "earth": 0
+      },
+      "repeated_ranks": {
+        "two": [
+          "tarot.rws.cups-two",
+          "tarot.rws.swords-two"
+        ]
+      }
+    }
+  }
+}

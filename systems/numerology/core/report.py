@@ -11,11 +11,12 @@ def build_report(profile: dict[str, Any]) -> dict[str, Any]:
     original = deepcopy(profile["computed_facts"])
     explanations = []
     for name, fact in profile["computed_facts"].items():
-        calculation_rule = (
-            "NUMEROLOGY-CAL-DATE-001"
-            if name in {"life_path", "birthday"}
-            else "NUMEROLOGY-CAL-NAME-001"
-        )
+        if name in {"life_path", "birthday"}:
+            calculation_rule = "NUMEROLOGY-CAL-DATE-001"
+        elif profile["normalized_input"]["mapping_lineage"] == "chaldean-name-project-v0.2":
+            calculation_rule = "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
+        else:
+            calculation_rule = "NUMEROLOGY-CAL-NAME-001"
         explanations.append(
             {
                 "fact_ids": [fact["fact_id"]],
@@ -42,7 +43,10 @@ def build_report(profile: dict[str, Any]) -> dict[str, Any]:
         "numbers": explanations,
         "limitations": [
             "Numerology is symbolic and does not measure personality, ability, or future outcomes.",
-            "No transliteration, Chaldean mapping, compatibility, or forecast was applied.",
+            (
+                "The declared mapping and transliteration policy apply only to this profile; "
+                "no compatibility or forecast was calculated."
+            ),
         ],
     }
     if report["computed_facts"] != original:

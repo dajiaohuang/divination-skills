@@ -1,0 +1,4 @@
+interface:
+  display_name: "Western Synastry"
+  short_description: "Compare symmetric aspects and directional house overlays"
+  default_prompt: "Use $western-synastry to compare these validated charts with explicit overlay direction."

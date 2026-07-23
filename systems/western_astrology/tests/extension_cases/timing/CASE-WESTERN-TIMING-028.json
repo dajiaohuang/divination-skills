@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-WESTERN-TIMING-028",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_sha256": "99b7d4170467359a8347f5668cd1673641a64dacd56468a5b840f010be04ac95",
+  "input": {
+    "natal": {
+      "house_system": "whole_sign",
+      "latitude": 51.4779,
+      "local_datetime": "1977-03-03T03:15:00",
+      "longitude": 0.0,
+      "timezone": "UTC"
+    },
+    "target_local_datetime": "2027-07-23T12:00:00",
+    "timezone": "UTC"
+  },
+  "module": "timing",
+  "status": "tested",
+  "system": "western-astrology"
+}

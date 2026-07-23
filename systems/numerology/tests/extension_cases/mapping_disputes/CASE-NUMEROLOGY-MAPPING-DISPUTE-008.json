@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-NUMEROLOGY-MAPPING-DISPUTE-008",
+  "alternative_policy": "treat-y-as-vowel",
+  "expected_handling": "separate_lineage_or_fail_closed"
+}

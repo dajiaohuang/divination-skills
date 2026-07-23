@@ -1,0 +1,286 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-004",
+  "raw_input": {
+    "spread": "celtic-cross",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000004",
+    "allow_reversals": true
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "celtic-cross",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "present",
+          "card_id": "tarot.rws.major-13-death",
+          "card_index": 13,
+          "name": "Death",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "crossing",
+          "card_id": "tarot.rws.pentacles-seven",
+          "card_index": 70,
+          "name": "Seven of Pentacles",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "foundation",
+          "card_id": "tarot.rws.wands-seven",
+          "card_index": 28,
+          "name": "Seven of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "recent_past",
+          "card_id": "tarot.rws.cups-knight",
+          "card_index": 47,
+          "name": "Knight of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "possible_direction",
+          "card_id": "tarot.rws.swords-ace",
+          "card_index": 50,
+          "name": "Ace of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "near_context",
+          "card_id": "tarot.rws.pentacles-five",
+          "card_index": 68,
+          "name": "Five of Pentacles",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.007",
+          "position": "self_view",
+          "card_id": "tarot.rws.pentacles-queen",
+          "card_index": 76,
+          "name": "Queen of Pentacles",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.008",
+          "position": "environment",
+          "card_id": "tarot.rws.major-07-chariot",
+          "card_index": 7,
+          "name": "The Chariot",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.009",
+          "position": "hopes_concerns",
+          "card_id": "tarot.rws.major-10-wheel-of-fortune",
+          "card_index": 10,
+          "name": "Wheel of Fortune",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.010",
+          "position": "outcome_reflection",
+          "card_id": "tarot.rws.pentacles-king",
+          "card_index": 77,
+          "name": "King of Pentacles",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.major-13-death",
+        "right_card_id": "tarot.rws.pentacles-seven",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.pentacles-seven",
+        "right_card_id": "tarot.rws.wands-seven",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": true,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.wands-seven",
+        "right_card_id": "tarot.rws.cups-knight",
+        "arcana_relation": "same_arcana",
+        "element_relation": "contrasting",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.cups-knight",
+        "right_card_id": "tarot.rws.swords-ace",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.swords-ace",
+        "right_card_id": "tarot.rws.pentacles-five",
+        "arcana_relation": "same_arcana",
+        "element_relation": "contrasting",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.006",
+        "left_card_id": "tarot.rws.pentacles-five",
+        "right_card_id": "tarot.rws.pentacles-queen",
+        "arcana_relation": "same_arcana",
+        "element_relation": "same_element",
+        "same_suit": true,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.007",
+        "left_card_id": "tarot.rws.pentacles-queen",
+        "right_card_id": "tarot.rws.major-07-chariot",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.008",
+        "left_card_id": "tarot.rws.major-07-chariot",
+        "right_card_id": "tarot.rws.major-10-wheel-of-fortune",
+        "arcana_relation": "same_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.009",
+        "left_card_id": "tarot.rws.major-10-wheel-of-fortune",
+        "right_card_id": "tarot.rws.pentacles-king",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 3,
+        "minor": 7
+      },
+      "suit_counts": {
+        "wands": 1,
+        "cups": 1,
+        "swords": 1,
+        "pentacles": 4
+      },
+      "element_counts": {
+        "fire": 1,
+        "water": 1,
+        "air": 1,
+        "earth": 4
+      },
+      "repeated_ranks": {
+        "seven": [
+          "tarot.rws.pentacles-seven",
+          "tarot.rws.wands-seven"
+        ]
+      }
+    }
+  }
+}

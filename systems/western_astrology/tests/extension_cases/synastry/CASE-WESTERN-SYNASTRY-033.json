@@ -1,0 +1,25 @@
+{
+  "case_id": "CASE-WESTERN-SYNASTRY-033",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_sha256": "fefa6fba2a90e2022e8eab2a0717ff277f1fbecf8694aad00edf77b10940f0e0",
+  "input": {
+    "chart_a": {
+      "house_system": "whole_sign",
+      "latitude": 51.4779,
+      "local_datetime": "1982-03-12T08:15:00",
+      "longitude": 0.0,
+      "timezone": "UTC"
+    },
+    "chart_b": {
+      "house_system": "whole_sign",
+      "latitude": 51.4779,
+      "local_datetime": "1983-05-18T15:15:00",
+      "longitude": 0.0,
+      "timezone": "UTC"
+    }
+  },
+  "module": "synastry",
+  "status": "tested",
+  "system": "western-astrology"
+}

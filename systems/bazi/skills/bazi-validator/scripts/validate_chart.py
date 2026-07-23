@@ -17,6 +17,8 @@ if str(REPOSITORY_ROOT) not in sys.path:
     sys.path.insert(0, str(REPOSITORY_ROOT))
 SCHEMA_PATH = REPOSITORY_ROOT / "systems" / "bazi" / "calculator" / "output.schema.json"
 
+from systems.bazi.validator import compare_chart  # noqa: E402
+
 
 def known_source_ids() -> set[str]:
     paths = [
@@ -48,12 +50,23 @@ def validate_chart(path: Path) -> list[str]:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("chart", type=Path)
+    parser.add_argument("--imported", type=Path)
     args = parser.parse_args(argv)
+    comparison = None
     try:
         errors = validate_chart(args.chart)
+        if not errors and args.imported:
+            native = json.loads(args.chart.read_text(encoding="utf-8"))
+            imported = json.loads(args.imported.read_text(encoding="utf-8"))
+            comparison = compare_chart(native, imported)
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         errors = [str(exc)]
-    result = {"status": "valid" if not errors else "invalid", "errors": errors}
+    result = {
+        "status": "valid" if not errors else "invalid",
+        "errors": errors,
+    }
+    if args.imported:
+        result["comparison"] = comparison
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0 if not errors else 1
 

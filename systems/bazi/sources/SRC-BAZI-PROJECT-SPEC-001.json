@@ -1,0 +1,61 @@
+{
+  "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+  "title": "Project-authored Bazi extension contracts v0.2",
+  "creators": [
+    {
+      "name": "divination-skills contributors",
+      "role": "author"
+    }
+  ],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "0.2.0",
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/bazi/DATA_CONTRACT.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/bazi/LINEAGE.md",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": {
+    "retained": true,
+    "path": "systems/bazi"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "project-owner-license-decision",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Project-authored contracts are released under the repository Apache-2.0 license."
+  },
+  "usage_status": "production",
+  "systems": [
+    "bazi"
+  ],
+  "lineages": [
+    "ziping-calculation-baseline"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Defines import, comparison, timing, synastry, and rectification data behavior. Domain interpretation acceptance remains pending."
+  }
+}

@@ -1,0 +1,1659 @@
+{
+  "case_id": "CASE-LENORMAND-LAYOUT-045",
+  "raw_input": {
+    "spread": "grand-tableau",
+    "seed_hex": "000000000000000000000000000000000000000000000000000000000000002d"
+  },
+  "significator": "man",
+  "expected_output": {
+    "spread": "grand-tableau",
+    "pairs": [
+      {
+        "fact_id": "lenormand.pair.001",
+        "left_fact_id": "lenormand.draw.symbol.001",
+        "right_fact_id": "lenormand.draw.symbol.002",
+        "left_symbol_id": "lenormand.29.woman",
+        "right_symbol_id": "lenormand.13.child",
+        "ordered_keywords": [
+          [
+            "person marker",
+            "social role",
+            "human agency"
+          ],
+          [
+            "small beginning",
+            "novelty",
+            "simplicity"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.002",
+        "left_fact_id": "lenormand.draw.symbol.002",
+        "right_fact_id": "lenormand.draw.symbol.003",
+        "left_symbol_id": "lenormand.13.child",
+        "right_symbol_id": "lenormand.08.coffin",
+        "ordered_keywords": [
+          [
+            "small beginning",
+            "novelty",
+            "simplicity"
+          ],
+          [
+            "closure",
+            "pause",
+            "ending"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.003",
+        "left_fact_id": "lenormand.draw.symbol.003",
+        "right_fact_id": "lenormand.draw.symbol.004",
+        "left_symbol_id": "lenormand.08.coffin",
+        "right_symbol_id": "lenormand.24.heart",
+        "ordered_keywords": [
+          [
+            "closure",
+            "pause",
+            "ending"
+          ],
+          [
+            "affection",
+            "desire",
+            "valued connection"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.004",
+        "left_fact_id": "lenormand.draw.symbol.004",
+        "right_fact_id": "lenormand.draw.symbol.005",
+        "left_symbol_id": "lenormand.24.heart",
+        "right_symbol_id": "lenormand.02.clover",
+        "ordered_keywords": [
+          [
+            "affection",
+            "desire",
+            "valued connection"
+          ],
+          [
+            "small chance",
+            "brief ease",
+            "lightness"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.005",
+        "left_fact_id": "lenormand.draw.symbol.005",
+        "right_fact_id": "lenormand.draw.symbol.006",
+        "left_symbol_id": "lenormand.02.clover",
+        "right_symbol_id": "lenormand.19.tower",
+        "ordered_keywords": [
+          [
+            "small chance",
+            "brief ease",
+            "lightness"
+          ],
+          [
+            "institution",
+            "distance",
+            "formal boundary"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.006",
+        "left_fact_id": "lenormand.draw.symbol.006",
+        "right_fact_id": "lenormand.draw.symbol.007",
+        "left_symbol_id": "lenormand.19.tower",
+        "right_symbol_id": "lenormand.32.moon",
+        "ordered_keywords": [
+          [
+            "institution",
+            "distance",
+            "formal boundary"
+          ],
+          [
+            "recognition",
+            "sensitivity",
+            "rhythm"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.007",
+        "left_fact_id": "lenormand.draw.symbol.007",
+        "right_fact_id": "lenormand.draw.symbol.008",
+        "left_symbol_id": "lenormand.32.moon",
+        "right_symbol_id": "lenormand.07.snake",
+        "ordered_keywords": [
+          [
+            "recognition",
+            "sensitivity",
+            "rhythm"
+          ],
+          [
+            "complexity",
+            "indirect route",
+            "careful strategy"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.008",
+        "left_fact_id": "lenormand.draw.symbol.008",
+        "right_fact_id": "lenormand.draw.symbol.009",
+        "left_symbol_id": "lenormand.07.snake",
+        "right_symbol_id": "lenormand.27.letter",
+        "ordered_keywords": [
+          [
+            "complexity",
+            "indirect route",
+            "careful strategy"
+          ],
+          [
+            "message",
+            "document",
+            "record"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.009",
+        "left_fact_id": "lenormand.draw.symbol.009",
+        "right_fact_id": "lenormand.draw.symbol.010",
+        "left_symbol_id": "lenormand.27.letter",
+        "right_symbol_id": "lenormand.15.bear",
+        "ordered_keywords": [
+          [
+            "message",
+            "document",
+            "record"
+          ],
+          [
+            "power",
+            "protection",
+            "resource control"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.010",
+        "left_fact_id": "lenormand.draw.symbol.010",
+        "right_fact_id": "lenormand.draw.symbol.011",
+        "left_symbol_id": "lenormand.15.bear",
+        "right_symbol_id": "lenormand.26.book",
+        "ordered_keywords": [
+          [
+            "power",
+            "protection",
+            "resource control"
+          ],
+          [
+            "unknown information",
+            "study",
+            "privacy"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.011",
+        "left_fact_id": "lenormand.draw.symbol.011",
+        "right_fact_id": "lenormand.draw.symbol.012",
+        "left_symbol_id": "lenormand.26.book",
+        "right_symbol_id": "lenormand.31.sun",
+        "ordered_keywords": [
+          [
+            "unknown information",
+            "study",
+            "privacy"
+          ],
+          [
+            "clarity",
+            "energy",
+            "visible success"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.012",
+        "left_fact_id": "lenormand.draw.symbol.012",
+        "right_fact_id": "lenormand.draw.symbol.013",
+        "left_symbol_id": "lenormand.31.sun",
+        "right_symbol_id": "lenormand.11.whip",
+        "ordered_keywords": [
+          [
+            "clarity",
+            "energy",
+            "visible success"
+          ],
+          [
+            "repetition",
+            "debate",
+            "friction"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.013",
+        "left_fact_id": "lenormand.draw.symbol.013",
+        "right_fact_id": "lenormand.draw.symbol.014",
+        "left_symbol_id": "lenormand.11.whip",
+        "right_symbol_id": "lenormand.35.anchor",
+        "ordered_keywords": [
+          [
+            "repetition",
+            "debate",
+            "friction"
+          ],
+          [
+            "stability",
+            "work",
+            "long duration"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.014",
+        "left_fact_id": "lenormand.draw.symbol.014",
+        "right_fact_id": "lenormand.draw.symbol.015",
+        "left_symbol_id": "lenormand.35.anchor",
+        "right_symbol_id": "lenormand.14.fox",
+        "ordered_keywords": [
+          [
+            "stability",
+            "work",
+            "long duration"
+          ],
+          [
+            "self-interest",
+            "work tactic",
+            "verification"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.015",
+        "left_fact_id": "lenormand.draw.symbol.015",
+        "right_fact_id": "lenormand.draw.symbol.016",
+        "left_symbol_id": "lenormand.14.fox",
+        "right_symbol_id": "lenormand.36.cross",
+        "ordered_keywords": [
+          [
+            "self-interest",
+            "work tactic",
+            "verification"
+          ],
+          [
+            "burden",
+            "meaningful difficulty",
+            "duty"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.016",
+        "left_fact_id": "lenormand.draw.symbol.016",
+        "right_fact_id": "lenormand.draw.symbol.017",
+        "left_symbol_id": "lenormand.36.cross",
+        "right_symbol_id": "lenormand.09.bouquet",
+        "ordered_keywords": [
+          [
+            "burden",
+            "meaningful difficulty",
+            "duty"
+          ],
+          [
+            "appreciation",
+            "gift",
+            "pleasant invitation"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.017",
+        "left_fact_id": "lenormand.draw.symbol.017",
+        "right_fact_id": "lenormand.draw.symbol.018",
+        "left_symbol_id": "lenormand.09.bouquet",
+        "right_symbol_id": "lenormand.28.man",
+        "ordered_keywords": [
+          [
+            "appreciation",
+            "gift",
+            "pleasant invitation"
+          ],
+          [
+            "person marker",
+            "social role",
+            "human agency"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.018",
+        "left_fact_id": "lenormand.draw.symbol.018",
+        "right_fact_id": "lenormand.draw.symbol.019",
+        "left_symbol_id": "lenormand.28.man",
+        "right_symbol_id": "lenormand.01.rider",
+        "ordered_keywords": [
+          [
+            "person marker",
+            "social role",
+            "human agency"
+          ],
+          [
+            "news",
+            "arrival",
+            "movement"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.019",
+        "left_fact_id": "lenormand.draw.symbol.019",
+        "right_fact_id": "lenormand.draw.symbol.020",
+        "left_symbol_id": "lenormand.01.rider",
+        "right_symbol_id": "lenormand.22.crossroads",
+        "ordered_keywords": [
+          [
+            "news",
+            "arrival",
+            "movement"
+          ],
+          [
+            "options",
+            "choice",
+            "diverging path"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.020",
+        "left_fact_id": "lenormand.draw.symbol.020",
+        "right_fact_id": "lenormand.draw.symbol.021",
+        "left_symbol_id": "lenormand.22.crossroads",
+        "right_symbol_id": "lenormand.04.house",
+        "ordered_keywords": [
+          [
+            "options",
+            "choice",
+            "diverging path"
+          ],
+          [
+            "home",
+            "stability",
+            "private structure"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.021",
+        "left_fact_id": "lenormand.draw.symbol.021",
+        "right_fact_id": "lenormand.draw.symbol.022",
+        "left_symbol_id": "lenormand.04.house",
+        "right_symbol_id": "lenormand.12.birds",
+        "ordered_keywords": [
+          [
+            "home",
+            "stability",
+            "private structure"
+          ],
+          [
+            "conversation",
+            "nervous activity",
+            "paired exchange"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.022",
+        "left_fact_id": "lenormand.draw.symbol.022",
+        "right_fact_id": "lenormand.draw.symbol.023",
+        "left_symbol_id": "lenormand.12.birds",
+        "right_symbol_id": "lenormand.23.mice",
+        "ordered_keywords": [
+          [
+            "conversation",
+            "nervous activity",
+            "paired exchange"
+          ],
+          [
+            "erosion",
+            "worry",
+            "small losses"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.023",
+        "left_fact_id": "lenormand.draw.symbol.023",
+        "right_fact_id": "lenormand.draw.symbol.024",
+        "left_symbol_id": "lenormand.23.mice",
+        "right_symbol_id": "lenormand.30.lily",
+        "ordered_keywords": [
+          [
+            "erosion",
+            "worry",
+            "small losses"
+          ],
+          [
+            "maturity",
+            "peace",
+            "long practice"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.024",
+        "left_fact_id": "lenormand.draw.symbol.024",
+        "right_fact_id": "lenormand.draw.symbol.025",
+        "left_symbol_id": "lenormand.30.lily",
+        "right_symbol_id": "lenormand.18.dog",
+        "ordered_keywords": [
+          [
+            "maturity",
+            "peace",
+            "long practice"
+          ],
+          [
+            "loyalty",
+            "support",
+            "trusted connection"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.025",
+        "left_fact_id": "lenormand.draw.symbol.025",
+        "right_fact_id": "lenormand.draw.symbol.026",
+        "left_symbol_id": "lenormand.18.dog",
+        "right_symbol_id": "lenormand.33.key",
+        "ordered_keywords": [
+          [
+            "loyalty",
+            "support",
+            "trusted connection"
+          ],
+          [
+            "solution",
+            "access",
+            "importance"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.026",
+        "left_fact_id": "lenormand.draw.symbol.026",
+        "right_fact_id": "lenormand.draw.symbol.027",
+        "left_symbol_id": "lenormand.33.key",
+        "right_symbol_id": "lenormand.10.scythe",
+        "ordered_keywords": [
+          [
+            "solution",
+            "access",
+            "importance"
+          ],
+          [
+            "quick cut",
+            "sudden choice",
+            "sharp boundary"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.027",
+        "left_fact_id": "lenormand.draw.symbol.027",
+        "right_fact_id": "lenormand.draw.symbol.028",
+        "left_symbol_id": "lenormand.10.scythe",
+        "right_symbol_id": "lenormand.20.garden",
+        "ordered_keywords": [
+          [
+            "quick cut",
+            "sudden choice",
+            "sharp boundary"
+          ],
+          [
+            "public space",
+            "network",
+            "gathering"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.028",
+        "left_fact_id": "lenormand.draw.symbol.028",
+        "right_fact_id": "lenormand.draw.symbol.029",
+        "left_symbol_id": "lenormand.20.garden",
+        "right_symbol_id": "lenormand.06.clouds",
+        "ordered_keywords": [
+          [
+            "public space",
+            "network",
+            "gathering"
+          ],
+          [
+            "confusion",
+            "mixed visibility",
+            "temporary uncertainty"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.029",
+        "left_fact_id": "lenormand.draw.symbol.029",
+        "right_fact_id": "lenormand.draw.symbol.030",
+        "left_symbol_id": "lenormand.06.clouds",
+        "right_symbol_id": "lenormand.03.ship",
+        "ordered_keywords": [
+          [
+            "confusion",
+            "mixed visibility",
+            "temporary uncertainty"
+          ],
+          [
+            "distance",
+            "journey",
+            "expansion"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.030",
+        "left_fact_id": "lenormand.draw.symbol.030",
+        "right_fact_id": "lenormand.draw.symbol.031",
+        "left_symbol_id": "lenormand.03.ship",
+        "right_symbol_id": "lenormand.16.stars",
+        "ordered_keywords": [
+          [
+            "distance",
+            "journey",
+            "expansion"
+          ],
+          [
+            "orientation",
+            "pattern",
+            "hopeful direction"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.031",
+        "left_fact_id": "lenormand.draw.symbol.031",
+        "right_fact_id": "lenormand.draw.symbol.032",
+        "left_symbol_id": "lenormand.16.stars",
+        "right_symbol_id": "lenormand.21.mountain",
+        "ordered_keywords": [
+          [
+            "orientation",
+            "pattern",
+            "hopeful direction"
+          ],
+          [
+            "obstacle",
+            "delay",
+            "large constraint"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.032",
+        "left_fact_id": "lenormand.draw.symbol.032",
+        "right_fact_id": "lenormand.draw.symbol.033",
+        "left_symbol_id": "lenormand.21.mountain",
+        "right_symbol_id": "lenormand.34.fish",
+        "ordered_keywords": [
+          [
+            "obstacle",
+            "delay",
+            "large constraint"
+          ],
+          [
+            "flow",
+            "trade",
+            "resources"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.033",
+        "left_fact_id": "lenormand.draw.symbol.033",
+        "right_fact_id": "lenormand.draw.symbol.034",
+        "left_symbol_id": "lenormand.34.fish",
+        "right_symbol_id": "lenormand.05.tree",
+        "ordered_keywords": [
+          [
+            "flow",
+            "trade",
+            "resources"
+          ],
+          [
+            "slow growth",
+            "roots",
+            "wellbeing context"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.034",
+        "left_fact_id": "lenormand.draw.symbol.034",
+        "right_fact_id": "lenormand.draw.symbol.035",
+        "left_symbol_id": "lenormand.05.tree",
+        "right_symbol_id": "lenormand.17.stork",
+        "ordered_keywords": [
+          [
+            "slow growth",
+            "roots",
+            "wellbeing context"
+          ],
+          [
+            "change",
+            "relocation",
+            "improvement effort"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.035",
+        "left_fact_id": "lenormand.draw.symbol.035",
+        "right_fact_id": "lenormand.draw.symbol.036",
+        "left_symbol_id": "lenormand.17.stork",
+        "right_symbol_id": "lenormand.25.ring",
+        "ordered_keywords": [
+          [
+            "change",
+            "relocation",
+            "improvement effort"
+          ],
+          [
+            "agreement",
+            "cycle",
+            "commitment"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "nine_card": null,
+    "grand_tableau": {
+      "layout": "four-rows-by-nine-columns",
+      "houses": [
+        {
+          "fact_id": "lenormand.grand.house.001",
+          "house_number": 1,
+          "house_symbol_id": "lenormand.01.rider",
+          "occupying_card_fact_id": "lenormand.draw.symbol.001",
+          "occupying_symbol_id": "lenormand.29.woman",
+          "row": 1,
+          "column": 1,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.002",
+          "house_number": 2,
+          "house_symbol_id": "lenormand.02.clover",
+          "occupying_card_fact_id": "lenormand.draw.symbol.002",
+          "occupying_symbol_id": "lenormand.13.child",
+          "row": 1,
+          "column": 2,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.003",
+          "house_number": 3,
+          "house_symbol_id": "lenormand.03.ship",
+          "occupying_card_fact_id": "lenormand.draw.symbol.003",
+          "occupying_symbol_id": "lenormand.08.coffin",
+          "row": 1,
+          "column": 3,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.004",
+          "house_number": 4,
+          "house_symbol_id": "lenormand.04.house",
+          "occupying_card_fact_id": "lenormand.draw.symbol.004",
+          "occupying_symbol_id": "lenormand.24.heart",
+          "row": 1,
+          "column": 4,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.005",
+          "house_number": 5,
+          "house_symbol_id": "lenormand.05.tree",
+          "occupying_card_fact_id": "lenormand.draw.symbol.005",
+          "occupying_symbol_id": "lenormand.02.clover",
+          "row": 1,
+          "column": 5,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.006",
+          "house_number": 6,
+          "house_symbol_id": "lenormand.06.clouds",
+          "occupying_card_fact_id": "lenormand.draw.symbol.006",
+          "occupying_symbol_id": "lenormand.19.tower",
+          "row": 1,
+          "column": 6,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.007",
+          "house_number": 7,
+          "house_symbol_id": "lenormand.07.snake",
+          "occupying_card_fact_id": "lenormand.draw.symbol.007",
+          "occupying_symbol_id": "lenormand.32.moon",
+          "row": 1,
+          "column": 7,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.008",
+          "house_number": 8,
+          "house_symbol_id": "lenormand.08.coffin",
+          "occupying_card_fact_id": "lenormand.draw.symbol.008",
+          "occupying_symbol_id": "lenormand.07.snake",
+          "row": 1,
+          "column": 8,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.009",
+          "house_number": 9,
+          "house_symbol_id": "lenormand.09.bouquet",
+          "occupying_card_fact_id": "lenormand.draw.symbol.009",
+          "occupying_symbol_id": "lenormand.27.letter",
+          "row": 1,
+          "column": 9,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.010",
+          "house_number": 10,
+          "house_symbol_id": "lenormand.10.scythe",
+          "occupying_card_fact_id": "lenormand.draw.symbol.010",
+          "occupying_symbol_id": "lenormand.15.bear",
+          "row": 2,
+          "column": 1,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.011",
+          "house_number": 11,
+          "house_symbol_id": "lenormand.11.whip",
+          "occupying_card_fact_id": "lenormand.draw.symbol.011",
+          "occupying_symbol_id": "lenormand.26.book",
+          "row": 2,
+          "column": 2,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.012",
+          "house_number": 12,
+          "house_symbol_id": "lenormand.12.birds",
+          "occupying_card_fact_id": "lenormand.draw.symbol.012",
+          "occupying_symbol_id": "lenormand.31.sun",
+          "row": 2,
+          "column": 3,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.013",
+          "house_number": 13,
+          "house_symbol_id": "lenormand.13.child",
+          "occupying_card_fact_id": "lenormand.draw.symbol.013",
+          "occupying_symbol_id": "lenormand.11.whip",
+          "row": 2,
+          "column": 4,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.014",
+          "house_number": 14,
+          "house_symbol_id": "lenormand.14.fox",
+          "occupying_card_fact_id": "lenormand.draw.symbol.014",
+          "occupying_symbol_id": "lenormand.35.anchor",
+          "row": 2,
+          "column": 5,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.015",
+          "house_number": 15,
+          "house_symbol_id": "lenormand.15.bear",
+          "occupying_card_fact_id": "lenormand.draw.symbol.015",
+          "occupying_symbol_id": "lenormand.14.fox",
+          "row": 2,
+          "column": 6,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.016",
+          "house_number": 16,
+          "house_symbol_id": "lenormand.16.stars",
+          "occupying_card_fact_id": "lenormand.draw.symbol.016",
+          "occupying_symbol_id": "lenormand.36.cross",
+          "row": 2,
+          "column": 7,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.017",
+          "house_number": 17,
+          "house_symbol_id": "lenormand.17.stork",
+          "occupying_card_fact_id": "lenormand.draw.symbol.017",
+          "occupying_symbol_id": "lenormand.09.bouquet",
+          "row": 2,
+          "column": 8,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.018",
+          "house_number": 18,
+          "house_symbol_id": "lenormand.18.dog",
+          "occupying_card_fact_id": "lenormand.draw.symbol.018",
+          "occupying_symbol_id": "lenormand.28.man",
+          "row": 2,
+          "column": 9,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.019",
+          "house_number": 19,
+          "house_symbol_id": "lenormand.19.tower",
+          "occupying_card_fact_id": "lenormand.draw.symbol.019",
+          "occupying_symbol_id": "lenormand.01.rider",
+          "row": 3,
+          "column": 1,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.020",
+          "house_number": 20,
+          "house_symbol_id": "lenormand.20.garden",
+          "occupying_card_fact_id": "lenormand.draw.symbol.020",
+          "occupying_symbol_id": "lenormand.22.crossroads",
+          "row": 3,
+          "column": 2,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.021",
+          "house_number": 21,
+          "house_symbol_id": "lenormand.21.mountain",
+          "occupying_card_fact_id": "lenormand.draw.symbol.021",
+          "occupying_symbol_id": "lenormand.04.house",
+          "row": 3,
+          "column": 3,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.022",
+          "house_number": 22,
+          "house_symbol_id": "lenormand.22.crossroads",
+          "occupying_card_fact_id": "lenormand.draw.symbol.022",
+          "occupying_symbol_id": "lenormand.12.birds",
+          "row": 3,
+          "column": 4,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.023",
+          "house_number": 23,
+          "house_symbol_id": "lenormand.23.mice",
+          "occupying_card_fact_id": "lenormand.draw.symbol.023",
+          "occupying_symbol_id": "lenormand.23.mice",
+          "row": 3,
+          "column": 5,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.024",
+          "house_number": 24,
+          "house_symbol_id": "lenormand.24.heart",
+          "occupying_card_fact_id": "lenormand.draw.symbol.024",
+          "occupying_symbol_id": "lenormand.30.lily",
+          "row": 3,
+          "column": 6,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.025",
+          "house_number": 25,
+          "house_symbol_id": "lenormand.25.ring",
+          "occupying_card_fact_id": "lenormand.draw.symbol.025",
+          "occupying_symbol_id": "lenormand.18.dog",
+          "row": 3,
+          "column": 7,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.026",
+          "house_number": 26,
+          "house_symbol_id": "lenormand.26.book",
+          "occupying_card_fact_id": "lenormand.draw.symbol.026",
+          "occupying_symbol_id": "lenormand.33.key",
+          "row": 3,
+          "column": 8,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.027",
+          "house_number": 27,
+          "house_symbol_id": "lenormand.27.letter",
+          "occupying_card_fact_id": "lenormand.draw.symbol.027",
+          "occupying_symbol_id": "lenormand.10.scythe",
+          "row": 3,
+          "column": 9,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.028",
+          "house_number": 28,
+          "house_symbol_id": "lenormand.28.man",
+          "occupying_card_fact_id": "lenormand.draw.symbol.028",
+          "occupying_symbol_id": "lenormand.20.garden",
+          "row": 4,
+          "column": 1,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.029",
+          "house_number": 29,
+          "house_symbol_id": "lenormand.29.woman",
+          "occupying_card_fact_id": "lenormand.draw.symbol.029",
+          "occupying_symbol_id": "lenormand.06.clouds",
+          "row": 4,
+          "column": 2,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.030",
+          "house_number": 30,
+          "house_symbol_id": "lenormand.30.lily",
+          "occupying_card_fact_id": "lenormand.draw.symbol.030",
+          "occupying_symbol_id": "lenormand.03.ship",
+          "row": 4,
+          "column": 3,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.031",
+          "house_number": 31,
+          "house_symbol_id": "lenormand.31.sun",
+          "occupying_card_fact_id": "lenormand.draw.symbol.031",
+          "occupying_symbol_id": "lenormand.16.stars",
+          "row": 4,
+          "column": 4,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.032",
+          "house_number": 32,
+          "house_symbol_id": "lenormand.32.moon",
+          "occupying_card_fact_id": "lenormand.draw.symbol.032",
+          "occupying_symbol_id": "lenormand.21.mountain",
+          "row": 4,
+          "column": 5,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.033",
+          "house_number": 33,
+          "house_symbol_id": "lenormand.33.key",
+          "occupying_card_fact_id": "lenormand.draw.symbol.033",
+          "occupying_symbol_id": "lenormand.34.fish",
+          "row": 4,
+          "column": 6,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.034",
+          "house_number": 34,
+          "house_symbol_id": "lenormand.34.fish",
+          "occupying_card_fact_id": "lenormand.draw.symbol.034",
+          "occupying_symbol_id": "lenormand.05.tree",
+          "row": 4,
+          "column": 7,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.035",
+          "house_number": 35,
+          "house_symbol_id": "lenormand.35.anchor",
+          "occupying_card_fact_id": "lenormand.draw.symbol.035",
+          "occupying_symbol_id": "lenormand.17.stork",
+          "row": 4,
+          "column": 8,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "lenormand.grand.house.036",
+          "house_number": 36,
+          "house_symbol_id": "lenormand.36.cross",
+          "occupying_card_fact_id": "lenormand.draw.symbol.036",
+          "occupying_symbol_id": "lenormand.25.ring",
+          "row": 4,
+          "column": 9,
+          "rule_ids": [
+            "LENORMAND-GRAND-TABLEAU-001"
+          ],
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ]
+        }
+      ],
+      "significator": {
+        "requested": "man",
+        "status": "located",
+        "card_fact_id": "lenormand.draw.symbol.018",
+        "row": 2,
+        "column": 9,
+        "relative_cards": [
+          {
+            "card_fact_id": "lenormand.draw.symbol.001",
+            "row_delta": -1,
+            "column_delta": -8,
+            "manhattan_distance": 9
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.002",
+            "row_delta": -1,
+            "column_delta": -7,
+            "manhattan_distance": 8
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.003",
+            "row_delta": -1,
+            "column_delta": -6,
+            "manhattan_distance": 7
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.004",
+            "row_delta": -1,
+            "column_delta": -5,
+            "manhattan_distance": 6
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.005",
+            "row_delta": -1,
+            "column_delta": -4,
+            "manhattan_distance": 5
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.006",
+            "row_delta": -1,
+            "column_delta": -3,
+            "manhattan_distance": 4
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.007",
+            "row_delta": -1,
+            "column_delta": -2,
+            "manhattan_distance": 3
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.008",
+            "row_delta": -1,
+            "column_delta": -1,
+            "manhattan_distance": 2
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.009",
+            "row_delta": -1,
+            "column_delta": 0,
+            "manhattan_distance": 1
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.010",
+            "row_delta": 0,
+            "column_delta": -8,
+            "manhattan_distance": 8
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.011",
+            "row_delta": 0,
+            "column_delta": -7,
+            "manhattan_distance": 7
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.012",
+            "row_delta": 0,
+            "column_delta": -6,
+            "manhattan_distance": 6
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.013",
+            "row_delta": 0,
+            "column_delta": -5,
+            "manhattan_distance": 5
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.014",
+            "row_delta": 0,
+            "column_delta": -4,
+            "manhattan_distance": 4
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.015",
+            "row_delta": 0,
+            "column_delta": -3,
+            "manhattan_distance": 3
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.016",
+            "row_delta": 0,
+            "column_delta": -2,
+            "manhattan_distance": 2
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.017",
+            "row_delta": 0,
+            "column_delta": -1,
+            "manhattan_distance": 1
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.019",
+            "row_delta": 1,
+            "column_delta": -8,
+            "manhattan_distance": 9
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.020",
+            "row_delta": 1,
+            "column_delta": -7,
+            "manhattan_distance": 8
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.021",
+            "row_delta": 1,
+            "column_delta": -6,
+            "manhattan_distance": 7
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.022",
+            "row_delta": 1,
+            "column_delta": -5,
+            "manhattan_distance": 6
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.023",
+            "row_delta": 1,
+            "column_delta": -4,
+            "manhattan_distance": 5
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.024",
+            "row_delta": 1,
+            "column_delta": -3,
+            "manhattan_distance": 4
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.025",
+            "row_delta": 1,
+            "column_delta": -2,
+            "manhattan_distance": 3
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.026",
+            "row_delta": 1,
+            "column_delta": -1,
+            "manhattan_distance": 2
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.027",
+            "row_delta": 1,
+            "column_delta": 0,
+            "manhattan_distance": 1
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.028",
+            "row_delta": 2,
+            "column_delta": -8,
+            "manhattan_distance": 10
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.029",
+            "row_delta": 2,
+            "column_delta": -7,
+            "manhattan_distance": 9
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.030",
+            "row_delta": 2,
+            "column_delta": -6,
+            "manhattan_distance": 8
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.031",
+            "row_delta": 2,
+            "column_delta": -5,
+            "manhattan_distance": 7
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.032",
+            "row_delta": 2,
+            "column_delta": -4,
+            "manhattan_distance": 6
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.033",
+            "row_delta": 2,
+            "column_delta": -3,
+            "manhattan_distance": 5
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.034",
+            "row_delta": 2,
+            "column_delta": -2,
+            "manhattan_distance": 4
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.035",
+            "row_delta": 2,
+            "column_delta": -1,
+            "manhattan_distance": 3
+          },
+          {
+            "card_fact_id": "lenormand.draw.symbol.036",
+            "row_delta": 2,
+            "column_delta": 0,
+            "manhattan_distance": 2
+          }
+        ]
+      },
+      "corners": [
+        "lenormand.draw.symbol.001",
+        "lenormand.draw.symbol.009",
+        "lenormand.draw.symbol.028",
+        "lenormand.draw.symbol.036"
+      ]
+    }
+  }
+}

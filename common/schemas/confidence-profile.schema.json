@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/confidence-profile.schema.json",
+  "title": "Calculation and interpretation confidence profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "confidence_id",
+    "input_precision",
+    "module_access",
+    "disabled_modules",
+    "reasons"
+  ],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "confidence_id": { "type": "string", "pattern": "^CONFIDENCE-[A-F0-9]{16}$" },
+    "input_precision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "source"],
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["exact_minute", "minute_range", "hour_range", "date_only", "unknown"]
+        },
+        "source": {
+          "type": "string",
+          "enum": ["recorded", "reported", "estimated", "synthetic"]
+        },
+        "uncertainty_minutes": { "type": "integer", "minimum": 0, "maximum": 10080 }
+      }
+    },
+    "module_access": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": ["allowed", "degraded", "blocked"]
+      }
+    },
+    "disabled_modules": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9_.-]*$" }
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[a-z][a-z0-9_.-]*$" },
+          "message": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

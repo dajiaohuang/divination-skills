@@ -1,0 +1,34 @@
+{
+  "rule_id": "WESTERN-SYNASTRY-ASPECT-001",
+  "title": "Calculate symmetric cross-chart major aspects",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-major-aspects-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "chart_refs",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "western.cross_chart_aspect",
+      "output_path": "symmetric",
+      "value": "major_aspects",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 930,
+  "sources": [
+    {
+      "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
+      "locator": "systems/western_astrology/synastry.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-WESTERN-NATAL-005"
+  ]
+}

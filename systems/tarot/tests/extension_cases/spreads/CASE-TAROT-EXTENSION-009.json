@@ -1,0 +1,151 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-009",
+  "raw_input": {
+    "spread": "elemental-five",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000009",
+    "allow_reversals": false
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "elemental-five",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "center",
+          "card_id": "tarot.rws.major-11-justice",
+          "card_index": 11,
+          "name": "Justice",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "fire",
+          "card_id": "tarot.rws.swords-seven",
+          "card_index": 56,
+          "name": "Seven of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "water",
+          "card_id": "tarot.rws.swords-three",
+          "card_index": 52,
+          "name": "Three of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "air",
+          "card_id": "tarot.rws.wands-six",
+          "card_index": 27,
+          "name": "Six of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "earth",
+          "card_id": "tarot.rws.swords-eight",
+          "card_index": 57,
+          "name": "Eight of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.major-11-justice",
+        "right_card_id": "tarot.rws.swords-seven",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.swords-seven",
+        "right_card_id": "tarot.rws.swords-three",
+        "arcana_relation": "same_arcana",
+        "element_relation": "same_element",
+        "same_suit": true,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.swords-three",
+        "right_card_id": "tarot.rws.wands-six",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.wands-six",
+        "right_card_id": "tarot.rws.swords-eight",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 1,
+        "minor": 4
+      },
+      "suit_counts": {
+        "wands": 1,
+        "cups": 0,
+        "swords": 3,
+        "pentacles": 0
+      },
+      "element_counts": {
+        "fire": 1,
+        "water": 0,
+        "air": 3,
+        "earth": 0
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

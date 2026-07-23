@@ -1,0 +1,105 @@
+{
+  "case_id": "CASE-NUMEROLOGY-CHALDEAN-049",
+  "raw_input": {
+    "name": "Example Name",
+    "birth_date": "1999-02-23",
+    "mapping": "chaldean"
+  },
+  "expected_output": {
+    "normalized_input": {
+      "name_letters": "EXAMPLENAME",
+      "birth_date": "1999-02-23",
+      "mapping": "chaldean-1-through-8-project",
+      "mapping_lineage": "chaldean-name-project-v0.2",
+      "transliteration_policy": "latin_nfkd-v0.1",
+      "masters": []
+    },
+    "computed_facts": {
+      "life_path": {
+        "fact_id": "numerology.life_path",
+        "raw_total": 35,
+        "reduction_steps": [
+          35,
+          8
+        ],
+        "value": 8,
+        "master_number": false,
+        "theme": "stewardship of power and resources",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "birthday": {
+        "fact_id": "numerology.birthday",
+        "raw_total": 23,
+        "reduction_steps": [
+          23,
+          5
+        ],
+        "value": 5,
+        "master_number": false,
+        "theme": "change",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "expression": {
+        "fact_id": "numerology.expression",
+        "raw_total": 46,
+        "reduction_steps": [
+          46,
+          10,
+          1
+        ],
+        "value": 1,
+        "master_number": false,
+        "theme": "initiative",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "soul_urge": {
+        "fact_id": "numerology.soul_urge",
+        "raw_total": 17,
+        "reduction_steps": [
+          17,
+          8
+        ],
+        "value": 8,
+        "master_number": false,
+        "theme": "stewardship of power and resources",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "personality": {
+        "fact_id": "numerology.personality",
+        "raw_total": 29,
+        "reduction_steps": [
+          29,
+          11,
+          2
+        ],
+        "value": 2,
+        "master_number": false,
+        "theme": "cooperation",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "maturity": {
+        "fact_id": "numerology.maturity",
+        "raw_total": 9,
+        "reduction_steps": [
+          9
+        ],
+        "value": 9,
+        "master_number": false,
+        "theme": "completion and broad concern",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      }
+    }
+  }
+}

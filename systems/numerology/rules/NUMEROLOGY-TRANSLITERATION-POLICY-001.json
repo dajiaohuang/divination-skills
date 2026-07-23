@@ -1,0 +1,14 @@
+{
+  "rule_id": "NUMEROLOGY-TRANSLITERATION-POLICY-001",
+  "title": "Require explicit user-supplied Latin transliteration for non-Latin names",
+  "system": "numerology",
+  "lineage": "cross-lineage-input-policy-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [{ "fact_path": "raw_input.name", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "numerology.transliteration_policy", "output_path": "normalized_input.transliteration_policy", "value": "never_infer", "confidence": "deterministic" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "systems/numerology/calculator/engine.py _normalize_name_with_policy", "support_type": "direct" }],
+  "tests": ["CASE-NUMEROLOGY-PROFILE-001"]
+}

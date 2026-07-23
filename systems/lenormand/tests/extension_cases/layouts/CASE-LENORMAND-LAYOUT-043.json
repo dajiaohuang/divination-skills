@@ -1,0 +1,65 @@
+{
+  "case_id": "CASE-LENORMAND-LAYOUT-043",
+  "raw_input": {
+    "spread": "three-card",
+    "seed_hex": "000000000000000000000000000000000000000000000000000000000000002b"
+  },
+  "significator": null,
+  "expected_output": {
+    "spread": "three-card",
+    "pairs": [
+      {
+        "fact_id": "lenormand.pair.001",
+        "left_fact_id": "lenormand.draw.symbol.001",
+        "right_fact_id": "lenormand.draw.symbol.002",
+        "left_symbol_id": "lenormand.31.sun",
+        "right_symbol_id": "lenormand.10.scythe",
+        "ordered_keywords": [
+          [
+            "clarity",
+            "energy",
+            "visible success"
+          ],
+          [
+            "quick cut",
+            "sudden choice",
+            "sharp boundary"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.002",
+        "left_fact_id": "lenormand.draw.symbol.002",
+        "right_fact_id": "lenormand.draw.symbol.003",
+        "left_symbol_id": "lenormand.10.scythe",
+        "right_symbol_id": "lenormand.15.bear",
+        "ordered_keywords": [
+          [
+            "quick cut",
+            "sudden choice",
+            "sharp boundary"
+          ],
+          [
+            "power",
+            "protection",
+            "resource control"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "nine_card": null,
+    "grand_tableau": null
+  }
+}

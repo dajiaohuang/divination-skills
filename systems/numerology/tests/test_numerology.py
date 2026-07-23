@@ -32,7 +32,7 @@ def test_accents_normalize_without_guessing_transliteration() -> None:
     assert profile["normalized_input"]["name_letters"] == "RENEEELISE"
     with pytest.raises(NumerologyError) as captured:
         calculate_profile({"name": "测试名字", "birth_date": "1988-11-11"})
-    assert captured.value.code == "unsupported_name_script"
+    assert captured.value.code == "transliteration_required"
 
 
 def test_master_number_is_not_reduced_further() -> None:

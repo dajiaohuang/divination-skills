@@ -1,0 +1,23 @@
+{
+  "case_id": "CASE-BAZI-SYNASTRY-018",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_sha256": "902e5f67ea24e867f0bb40a05e7c73b0293b29bcc3cd6ed9df74f2bb946d74ea",
+  "input": {
+    "chart_a": {
+      "day_boundary": "midnight",
+      "local_datetime": "1967-02-14T10:30:00",
+      "luck_cycle_direction": "reverse",
+      "timezone": "Asia/Shanghai"
+    },
+    "chart_b": {
+      "day_boundary": "midnight",
+      "local_datetime": "1968-04-06T03:15:00",
+      "luck_cycle_direction": "forward",
+      "timezone": "Asia/Shanghai"
+    }
+  },
+  "module": "synastry",
+  "status": "tested",
+  "system": "bazi"
+}

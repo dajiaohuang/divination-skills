@@ -1,0 +1,21 @@
+{
+  "case_id": "CASE-ZIWEI-SYNASTRY-006",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_sha256": "00595af38095e8774a01e230c467af65cd2b0ccd0022ed723820b6e17650d4e8",
+  "input": {
+    "chart_a": {
+      "calculation_gender": "female",
+      "local_datetime": "1955-01-24T05:15:00",
+      "timezone": "Asia/Shanghai"
+    },
+    "chart_b": {
+      "calculation_gender": "male",
+      "local_datetime": "1956-03-04T12:45:00",
+      "timezone": "Asia/Shanghai"
+    }
+  },
+  "module": "synastry",
+  "status": "tested",
+  "system": "ziwei"
+}

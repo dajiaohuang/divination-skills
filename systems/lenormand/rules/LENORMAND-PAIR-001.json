@@ -1,0 +1,14 @@
+{
+  "rule_id": "LENORMAND-PAIR-001",
+  "title": "Preserve every adjacent card pair in order",
+  "system": "lenormand",
+  "lineage": "lenormand-36-project-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.symbols", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "lenormand.ordered_pair", "output_path": "pairs", "value": "adjacent_ordered_cards", "confidence": "deterministic" }],
+  "priority": 800,
+  "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "systems/lenormand/layouts.py _pair", "support_type": "direct" }],
+  "tests": ["CASE-LENORMAND-DRAW-001"]
+}

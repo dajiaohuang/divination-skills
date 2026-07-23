@@ -1,0 +1,14 @@
+{
+  "rule_id": "LENORMAND-NINE-GRID-001",
+  "title": "Expose a row-major three-by-three nine-card geometry",
+  "system": "lenormand",
+  "lineage": "lenormand-36-project-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.spread", "operator": "eq", "value": "nine-card" }],
+  "conclusions": [{ "finding_type": "lenormand.nine_grid", "output_path": "nine_card", "value": "rows_columns_diagonals_mirrors", "confidence": "deterministic" }],
+  "priority": 790,
+  "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "systems/lenormand/layouts.py nine_card", "support_type": "direct" }],
+  "tests": ["CASE-LENORMAND-DRAW-001"]
+}

@@ -1,0 +1,151 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-021",
+  "raw_input": {
+    "spread": "elemental-five",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000015",
+    "allow_reversals": false
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "elemental-five",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "center",
+          "card_id": "tarot.rws.wands-king",
+          "card_index": 35,
+          "name": "King of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "fire",
+          "card_id": "tarot.rws.wands-seven",
+          "card_index": 28,
+          "name": "Seven of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "water",
+          "card_id": "tarot.rws.cups-nine",
+          "card_index": 44,
+          "name": "Nine of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "air",
+          "card_id": "tarot.rws.major-16-tower",
+          "card_index": 16,
+          "name": "The Tower",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "earth",
+          "card_id": "tarot.rws.cups-knight",
+          "card_index": 47,
+          "name": "Knight of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.wands-king",
+        "right_card_id": "tarot.rws.wands-seven",
+        "arcana_relation": "same_arcana",
+        "element_relation": "same_element",
+        "same_suit": true,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.wands-seven",
+        "right_card_id": "tarot.rws.cups-nine",
+        "arcana_relation": "same_arcana",
+        "element_relation": "contrasting",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.cups-nine",
+        "right_card_id": "tarot.rws.major-16-tower",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.major-16-tower",
+        "right_card_id": "tarot.rws.cups-knight",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 1,
+        "minor": 4
+      },
+      "suit_counts": {
+        "wands": 2,
+        "cups": 2,
+        "swords": 0,
+        "pentacles": 0
+      },
+      "element_counts": {
+        "fire": 2,
+        "water": 2,
+        "air": 0,
+        "earth": 0
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

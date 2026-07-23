@@ -1,6 +1,6 @@
 {
   "system": "tarot",
-  "release": "0.1.0",
+  "release": "0.2.0",
   "signoffs": [
     {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/tarot/tests/golden", "systems/tarot/tests/edge_cases", "systems/tarot/tests/disputes"], "notes": "Requires an independent RWS practitioner to review reversals, spread positions, and narrative constraints."},
     {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/tarot/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve text and any separately shipped card artwork."},

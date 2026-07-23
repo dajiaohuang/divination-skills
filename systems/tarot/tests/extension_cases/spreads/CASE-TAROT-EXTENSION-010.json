@@ -1,0 +1,177 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-010",
+  "raw_input": {
+    "spread": "relationship-six",
+    "seed_hex": "000000000000000000000000000000000000000000000000000000000000000a",
+    "allow_reversals": true
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "relationship-six",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "self_position",
+          "card_id": "tarot.rws.major-08-strength",
+          "card_index": 8,
+          "name": "Strength",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "other_position",
+          "card_id": "tarot.rws.major-07-chariot",
+          "card_index": 7,
+          "name": "The Chariot",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "connection",
+          "card_id": "tarot.rws.cups-six",
+          "card_index": 41,
+          "name": "Six of Cups",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "communication",
+          "card_id": "tarot.rws.cups-king",
+          "card_index": 49,
+          "name": "King of Cups",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "boundary",
+          "card_id": "tarot.rws.pentacles-four",
+          "card_index": 67,
+          "name": "Four of Pentacles",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "shared_focus",
+          "card_id": "tarot.rws.swords-two",
+          "card_index": 51,
+          "name": "Two of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.major-08-strength",
+        "right_card_id": "tarot.rws.major-07-chariot",
+        "arcana_relation": "same_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.major-07-chariot",
+        "right_card_id": "tarot.rws.cups-six",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.cups-six",
+        "right_card_id": "tarot.rws.cups-king",
+        "arcana_relation": "same_arcana",
+        "element_relation": "same_element",
+        "same_suit": true,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.cups-king",
+        "right_card_id": "tarot.rws.pentacles-four",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.pentacles-four",
+        "right_card_id": "tarot.rws.swords-two",
+        "arcana_relation": "same_arcana",
+        "element_relation": "contrasting",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 2,
+        "minor": 4
+      },
+      "suit_counts": {
+        "wands": 0,
+        "cups": 2,
+        "swords": 1,
+        "pentacles": 1
+      },
+      "element_counts": {
+        "fire": 0,
+        "water": 2,
+        "air": 1,
+        "earth": 1
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

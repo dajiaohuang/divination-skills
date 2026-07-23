@@ -1,0 +1,15 @@
+{
+  "rule_id": "RUNES-HISTORICAL-LAYER-001",
+  "title": "Record historical name evidence without divinatory meaning claims",
+  "system": "runes",
+  "lineage": "anglo-saxon-rune-name-evidence-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [{ "fact_path": "computed_facts.symbols", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "runes.historical_name_evidence", "output_path": "historical_evidence", "value": "old_english_cognate_locator", "confidence": "medium" }],
+  "priority": 900,
+  "sources": [{ "source_id": "SRC-RUNES-EARLE-17101", "locator": "Runic Poem discussion, pp. 239-240", "support_type": "direct" }],
+  "tests": ["CASE-RUNES-DRAW-001"],
+  "notes": "Does not support modern divinatory keywords."
+}

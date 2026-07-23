@@ -1,0 +1,41 @@
+{
+  "source_id": "SRC-RUNES-EARLE-17101",
+  "title": "Anglo-Saxon Literature",
+  "creators": [{ "name": "John Earle", "role": "author" }],
+  "source_type": "book",
+  "language": "en",
+  "publication_date": "1884",
+  "edition_or_version": "Project Gutenberg eBook 17101",
+  "locators": [{ "kind": "url", "value": "https://www.gutenberg.org/ebooks/17101", "stable": true }],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "PublicDomain-US",
+    "url": "https://www.gutenberg.org/ebooks/17101",
+    "text_available": true,
+    "additional_terms": true
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "The underlying 1884 work is public domain in the USA. This repository stores bibliographic facts and a logical locator, not Gutenberg text."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Project Gutenberg catalog and the pre-1929 publication date identify the work as public domain in the USA."
+  },
+  "usage_status": "production",
+  "systems": ["runes"],
+  "lineages": ["anglo-saxon-rune-name-evidence-v0.2"],
+  "quality": {
+    "authority": "scholarly",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Historical discussion and name evidence only; not a source for modern divination."
+  }
+}

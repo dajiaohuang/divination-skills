@@ -1,0 +1,50 @@
+{
+  "case_id": "CASE-RUNES-LAYERS-045",
+  "raw_input": {
+    "spread": "single",
+    "seed_hex": "000000000000000000000000000000000000000000000000000000000000002d"
+  },
+  "expected_output": {
+    "historical_evidence": [
+      {
+        "fact_id": "runes.historical.001",
+        "draw_fact_id": "runes.draw.symbol.001",
+        "elder_futhark_name": "Tiwaz",
+        "old_english_cognate": "Tir",
+        "evidence_type": "name_and_rune_poem_attestation_locator",
+        "source_locator": "Anglo-Saxon Literature, Runic Poem discussion, pp. 239-240",
+        "historical_divinatory_meaning_claimed": false,
+        "rule_ids": [
+          "RUNES-HISTORICAL-LAYER-001"
+        ],
+        "source_ids": [
+          "SRC-RUNES-EARLE-17101"
+        ]
+      }
+    ],
+    "modern_reflection": [
+      {
+        "fact_id": "runes.modern.001",
+        "draw_fact_id": "runes.draw.symbol.001",
+        "symbol_id": "runes.17.tiwaz",
+        "keywords": [
+          "principle",
+          "courage",
+          "fair sacrifice"
+        ],
+        "status": "project_authored_modern_reflection",
+        "rule_ids": [
+          "RUNES-MODERN-REFLECTION-LAYER-001"
+        ],
+        "source_ids": [
+          "SRC-RUNES-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "cross_layer_policy": {
+      "status": "strictly_separated",
+      "historical_source_supports_modern_divination": false,
+      "message": "Historical rune-name evidence is not cited as support for modern divinatory keywords or predictions."
+    }
+  }
+}

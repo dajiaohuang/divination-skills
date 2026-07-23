@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "session_id": "SESSION-6A9F8C20D4E1B357",
+  "data_classification": "synthetic",
+  "question": {
+    "category": "natal",
+    "text": "Explain the validated structural chart."
+  },
+  "chart_refs": [
+    {
+      "chart_id": "CHART-EXAMPLE-001",
+      "system": "bazi",
+      "role": "primary",
+      "validation_status": "valid"
+    }
+  ],
+  "confidence_profile_ref": "CONFIDENCE-A1B2C3D4E5F60718",
+  "consent": {
+    "purpose": "ephemeral_reading",
+    "persistence": false,
+    "third_party_data": "none"
+  },
+  "privacy": {
+    "log_policy": "redacted",
+    "retention_days": 0
+  },
+  "status": "ready"
+}

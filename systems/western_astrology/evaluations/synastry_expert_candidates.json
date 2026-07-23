@@ -1,0 +1,908 @@
+{
+  "candidate_count": 50,
+  "candidates": [
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-001",
+      "expected_output_sha256": "dc112a5125a97f5207ec350a2591f9dca8a0c50590edbaa07b5cbdc668bca578",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-001",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-002",
+      "expected_output_sha256": "69febde434f0811565575c6746863fc2891f56d34b4f09ba611fa7ae4e259d69",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-002",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-003",
+      "expected_output_sha256": "cfb7ff7cf3a09b7879215f45561f1aac18dce037552a505d647747bdd0c0aa72",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-003",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-004",
+      "expected_output_sha256": "d5cf79904297f30347ac212787e7577e0b8e2679201ac6e2e118f94821ebc1ab",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-004",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-005",
+      "expected_output_sha256": "4bfcdf814352cf492180054adff2ea66bf80fdf20ff98526849e2944653ca6bb",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-005",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-006",
+      "expected_output_sha256": "ca61c0db4a934ec9c0e0256d57062d6bbb44afdcad9ebda95e98e4fcfdc6b9bd",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-006",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-007",
+      "expected_output_sha256": "abc7594ac0bdf92f8b6549d7bfcc1aced31c141e407e4da2932607ac815da8b8",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-007",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-008",
+      "expected_output_sha256": "1fb7f942cb404ef7066dc51d23530d62fb6b633c4c1aed704a521423ae746543",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-008",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-009",
+      "expected_output_sha256": "d4d0595d3009c0ee1765d93e396b25e177194098a9a08d57290ad4e4723a262f",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-009",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-010",
+      "expected_output_sha256": "94e2cc334cf22b1c195d57160b45957fc4ec73c1bf0d0eb089a91062d581000a",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-010",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-011",
+      "expected_output_sha256": "7ae0da209d50aea61ca9da42d3e4a880173837b0b8f52bff1beda46d7f16587c",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-011",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-012",
+      "expected_output_sha256": "355c6014923c1a21b5abf23eea16e9650bc25c9ad3292bd8c1c0f5026eba80d1",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-012",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-013",
+      "expected_output_sha256": "3c2440d09b742354ffbd0fece1c471ff125331cfd9ed9667df91464a821c7201",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-013",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-014",
+      "expected_output_sha256": "3d19d8b0942f9260553d79eb71a2b049f3cd86476c8055adcd73fcd4cdf45c0b",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-014",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-015",
+      "expected_output_sha256": "746d0cb7ee279abd2ff5c6a15cdd80dbd4b5ee7e62e018a42eb24910e4e14905",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-015",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-016",
+      "expected_output_sha256": "62e86cc3fb3974f3df1b5bd340df04a9c4b26066854913652f4b4fc9b5d20c57",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-016",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-017",
+      "expected_output_sha256": "1719329cba91625cd30b43d1617a667ee5501d5e317f4c090f2539715ea2d192",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-017",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-018",
+      "expected_output_sha256": "f57ad6299048a677185c520566d9bc3861f12d85fe0225be825601cd9beedc3c",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-018",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-019",
+      "expected_output_sha256": "695816da12b692c469e2e244069e96ec1fd11cc1ede0865d55eae672bb1b36b1",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-019",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-020",
+      "expected_output_sha256": "0dbb75b2f7d4fd14ec837522704e310a6d7fa13eff28122fc8648b7e576da62b",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-020",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-021",
+      "expected_output_sha256": "1f160400ed89f12c450c98a9e00049357033f5ebab210c160ceaf95776b5daff",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-021",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-022",
+      "expected_output_sha256": "1da7ea9b5a45edd7ecaa4b1f5859dade350481f15115bcf312303d930c5f048c",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-022",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-023",
+      "expected_output_sha256": "20e058c0ae82972385a342ec4528e58318d258a44591cb2ddbea4b47d65a3a84",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-023",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-024",
+      "expected_output_sha256": "19cbb8bb54a12bacd8a25b80c8147c237ac5d36ab249e3a54499a246626231c5",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-024",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-025",
+      "expected_output_sha256": "0bd73e400c2dd94b5b2e63df7694b7a961525754ac071ad0cb0b5fd865e55097",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-025",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-026",
+      "expected_output_sha256": "9708cd6fefa2ea4da07d73e70f7fe725bd925743335c7dadf6c755c8c26ac4f8",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-026",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-027",
+      "expected_output_sha256": "df497dc22e2cef2511c3b70af77fd3b8775483bb12e6287a5dec5fe3e2d429c1",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-027",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-028",
+      "expected_output_sha256": "6f4f26bf2acf39f33f490841cdb30d1fecc63201fd142b4cf5488e922785020c",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-028",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-029",
+      "expected_output_sha256": "53f263995f71503a1f2a51de3e4349a85b8eecb0f6098d1d2d461fa69b72713e",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-029",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-030",
+      "expected_output_sha256": "858d2f356f2bae47f9eb0c1b1296253f2924163376ce15bd716d0e2bb7cf4beb",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-030",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-031",
+      "expected_output_sha256": "9b067401dee48f837a57185c1a218c5612045c72416726533507012a67c49f6b",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-031",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-032",
+      "expected_output_sha256": "ef8e40ff94c40973daf77bb5f566acb98472553cc00ce00a2b5f595044e1ee4c",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-032",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-033",
+      "expected_output_sha256": "fefa6fba2a90e2022e8eab2a0717ff277f1fbecf8694aad00edf77b10940f0e0",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-033",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-034",
+      "expected_output_sha256": "71094ef94b53961fd7c4f99a908b6c191ca051f8bee942a9f36dc63ed732651d",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-034",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-035",
+      "expected_output_sha256": "a05067af91edce10b9855881808aae3624657d0d39a24a2387e731176aa5630e",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-035",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-036",
+      "expected_output_sha256": "49a698cf194571c9840add84ea4ee3558cd322780abd81fa83fa219a1e6b860e",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-036",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-037",
+      "expected_output_sha256": "b6cb123ffd95f1784c0a99512f249c9eaf28c7ef93f2190fac5cab989e8704bc",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-037",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-038",
+      "expected_output_sha256": "8bac40db1b6e8a319eaf26e2a941671c290732645db9900e261b4577e8c27131",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-038",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-039",
+      "expected_output_sha256": "635abb35e1a860180b22b29546a5ad41dff5b9f0c7983b659d697876f68e4a71",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-039",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-040",
+      "expected_output_sha256": "8ca0449ffd57fd2fca8b7283e9600dda203a40b392e580dbd3bc4aa440ca013b",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-040",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-041",
+      "expected_output_sha256": "785176aa3cd1974a0a3c52787217c69626f85498ec322833ff05cab8b7bcf801",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-041",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-042",
+      "expected_output_sha256": "1209f4a0ffa40617525f9ba4e67097b739e4162cc777570477c7e83437ec9a51",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-042",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-043",
+      "expected_output_sha256": "eda4642fa40d93cefb905760bcf7b7c5ee38e9a014d2655cbefe07d2e8249d90",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-043",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-044",
+      "expected_output_sha256": "5e4b7709f528185e86542949775b69abf78cab7fd3642efee09f6a5162ae110d",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-044",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-045",
+      "expected_output_sha256": "e5b4da0c46c97940ecab5c89fb3e0228a3b40dd3e0450ee4c93d522afa9f8363",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-045",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-046",
+      "expected_output_sha256": "d5bdaacdf799cae68d0cc52e25a0c92ffa16b8eace777c86774790aa05f75a67",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-046",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-047",
+      "expected_output_sha256": "97bcadd8d8a2fcc790179f316575742d35a609ec545e1a274c5acf1d765403f8",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-047",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-048",
+      "expected_output_sha256": "c93634622c184674885b5b80e0ed87063cd5a1d65df0b62fb93cd4175e8a0cce",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-048",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-049",
+      "expected_output_sha256": "f317f7eb8110400d09a861440af357e6edf928fe1c63bc24d5ed956106adb7ef",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-049",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "WESTERN-SYNASTRY-EXPERT-050",
+      "expected_output_sha256": "fdbc0f15a726de5bcd8af959d2da5da32c8c70b9d35f2393062a247299a57d7d",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional A-to-B and B-to-A overlay separation",
+        "symmetric cross-chart aspect accuracy",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-WESTERN-SYNASTRY-050",
+      "status": "pending_expert_review"
+    }
+  ],
+  "module": "synastry",
+  "status": "pending_expert_review",
+  "system": "western-astrology"
+}

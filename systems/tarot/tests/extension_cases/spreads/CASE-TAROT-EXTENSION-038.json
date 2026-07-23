@@ -1,0 +1,177 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-038",
+  "raw_input": {
+    "spread": "relationship-six",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000026",
+    "allow_reversals": true
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "relationship-six",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "self_position",
+          "card_id": "tarot.rws.swords-seven",
+          "card_index": 56,
+          "name": "Seven of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "other_position",
+          "card_id": "tarot.rws.cups-six",
+          "card_index": 41,
+          "name": "Six of Cups",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "connection",
+          "card_id": "tarot.rws.major-11-justice",
+          "card_index": 11,
+          "name": "Justice",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "communication",
+          "card_id": "tarot.rws.major-16-tower",
+          "card_index": 16,
+          "name": "The Tower",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "boundary",
+          "card_id": "tarot.rws.major-05-hierophant",
+          "card_index": 5,
+          "name": "The Hierophant",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "shared_focus",
+          "card_id": "tarot.rws.pentacles-four",
+          "card_index": 67,
+          "name": "Four of Pentacles",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.swords-seven",
+        "right_card_id": "tarot.rws.cups-six",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.cups-six",
+        "right_card_id": "tarot.rws.major-11-justice",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.major-11-justice",
+        "right_card_id": "tarot.rws.major-16-tower",
+        "arcana_relation": "same_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.major-16-tower",
+        "right_card_id": "tarot.rws.major-05-hierophant",
+        "arcana_relation": "same_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.major-05-hierophant",
+        "right_card_id": "tarot.rws.pentacles-four",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 3,
+        "minor": 3
+      },
+      "suit_counts": {
+        "wands": 0,
+        "cups": 1,
+        "swords": 1,
+        "pentacles": 1
+      },
+      "element_counts": {
+        "fire": 0,
+        "water": 1,
+        "air": 1,
+        "earth": 1
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

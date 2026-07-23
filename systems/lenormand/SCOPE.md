@@ -1,3 +1,5 @@
-# Lenormand v0.1 scope
+# Lenormand v0.2 scope
 
-Text-only 36-card baseline with single, three-card line, and nine-card tableau draws. Cards are always upright. Combination language follows position order and adjacent modification only. No Grand Tableau houses, significator inference, timing, guaranteed events, modern deck art, or copied guidebook prose.
+Text-only 36-card baseline with single, three-card line, nine-card tableau, and 4×9 Grand Tableau draws. Cards are always upright. The layout layer reports ordered adjacent pairs, nine-card coordinates, Grand Tableau houses, and an explicitly selected Man or Woman card coordinate.
+
+It does not infer a significator, use mirroring/knighting/distance grammar, convert cards to timing, predict guaranteed events, include modern deck art, or copy guidebook prose.

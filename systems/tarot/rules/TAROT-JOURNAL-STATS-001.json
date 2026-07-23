@@ -1,0 +1,14 @@
+{
+  "rule_id": "TAROT-JOURNAL-STATS-001",
+  "title": "Limit journal statistics to descriptive counts",
+  "system": "tarot",
+  "lineage": "rws-text-journal-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "safety",
+  "conditions": [{ "fact_path": "entries", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "tarot.journal_statistics", "output_path": "statistics", "value": "descriptive_counts_only", "confidence": "deterministic" }],
+  "priority": 990,
+  "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "systems/tarot/journal.py descriptive_statistics", "support_type": "direct" }],
+  "tests": ["CASE-TAROT-DRAW-001"]
+}

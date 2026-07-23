@@ -1,0 +1,104 @@
+{
+  "case_id": "CASE-NUMEROLOGY-CHALDEAN-042",
+  "raw_input": {
+    "name": "王芳",
+    "transliteration": "Wang Fang",
+    "birth_date": "1992-07-16",
+    "mapping": "chaldean"
+  },
+  "expected_output": {
+    "normalized_input": {
+      "name_letters": "WANGFANG",
+      "birth_date": "1992-07-16",
+      "mapping": "chaldean-1-through-8-project",
+      "mapping_lineage": "chaldean-name-project-v0.2",
+      "transliteration_policy": "user_supplied_latin_transliteration-v0.2",
+      "masters": []
+    },
+    "computed_facts": {
+      "life_path": {
+        "fact_id": "numerology.life_path",
+        "raw_total": 35,
+        "reduction_steps": [
+          35,
+          8
+        ],
+        "value": 8,
+        "master_number": false,
+        "theme": "stewardship of power and resources",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "birthday": {
+        "fact_id": "numerology.birthday",
+        "raw_total": 16,
+        "reduction_steps": [
+          16,
+          7
+        ],
+        "value": 7,
+        "master_number": false,
+        "theme": "inquiry",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "expression": {
+        "fact_id": "numerology.expression",
+        "raw_total": 32,
+        "reduction_steps": [
+          32,
+          5
+        ],
+        "value": 5,
+        "master_number": false,
+        "theme": "change",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "soul_urge": {
+        "fact_id": "numerology.soul_urge",
+        "raw_total": 2,
+        "reduction_steps": [
+          2
+        ],
+        "value": 2,
+        "master_number": false,
+        "theme": "cooperation",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "personality": {
+        "fact_id": "numerology.personality",
+        "raw_total": 30,
+        "reduction_steps": [
+          30,
+          3
+        ],
+        "value": 3,
+        "master_number": false,
+        "theme": "expression",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "maturity": {
+        "fact_id": "numerology.maturity",
+        "raw_total": 13,
+        "reduction_steps": [
+          13,
+          4
+        ],
+        "value": 4,
+        "master_number": false,
+        "theme": "structure",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      }
+    }
+  }
+}

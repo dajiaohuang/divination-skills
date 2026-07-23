@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ziwei Reader"
+  short_description: "Import structured Ziwei JSON as untrusted isolated facts"
+  default_prompt: "Use $ziwei-reader to inspect this structured Ziwei JSON without overwriting native facts."

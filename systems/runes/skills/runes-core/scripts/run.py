@@ -13,6 +13,7 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from systems.runes.engine import draw, explain  # noqa: E402
+from systems.runes.layers import build_layers  # noqa: E402
 
 
 def main() -> int:
@@ -24,7 +25,14 @@ def main() -> int:
     payload = {"spread": args.spread, "question": args.question}
     if args.seed_hex:
         payload["seed_hex"] = args.seed_hex
-    print(json.dumps(explain(draw(payload)), ensure_ascii=False, indent=2))
+    draw_result = draw(payload)
+    print(
+        json.dumps(
+            {"report": explain(draw_result), "layers": build_layers(draw_result)},
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
     return 0
 
 

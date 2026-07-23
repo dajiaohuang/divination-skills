@@ -1,0 +1,15 @@
+{
+  "rule_id": "QIMEN-DOOR-SPIRIT-PLATE-001",
+  "title": "Rotate eight doors and eight spirits by declared dun direction",
+  "system": "qimen",
+  "lineage": "shijia-zhuanpan-chaibu-full-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "foundation.computed_facts.hour_pillar", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "qimen.door_spirit_plate", "output_path": "palaces", "value": "dun_direction_rotation", "confidence": "deterministic" }],
+  "priority": 890,
+  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "systems/qimen/full_chart.py door_targets", "support_type": "direct" }],
+  "tests": ["CASE-QIMEN-FOUNDATION-001"],
+  "notes": "Project rotation policy pending practitioner review."
+}

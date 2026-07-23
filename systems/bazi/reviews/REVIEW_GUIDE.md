@@ -1,4 +1,4 @@
-# Bazi v0.1 external review guide
+# Bazi v0.2 external review guide
 
 This workflow is for real, accountable reviewers. Do not use automation or an AI-generated identity to mark a review accepted.
 

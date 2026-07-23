@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ziwei Synastry"
+  short_description: "Compare directional and symmetric Ziwei chart structure"
+  default_prompt: "Use $ziwei-synastry to compare these validated charts without compatibility scoring."

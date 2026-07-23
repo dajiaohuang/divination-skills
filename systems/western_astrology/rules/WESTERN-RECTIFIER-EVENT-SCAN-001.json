@@ -1,0 +1,35 @@
+{
+  "rule_id": "WESTERN-RECTIFIER-EVENT-SCAN-001",
+  "title": "Rank birth-time intervals using separated hard-event training and holdout sets",
+  "system": "western-astrology",
+  "lineage": "western-event-retained-rectification-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "events",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "western.rectification_candidates",
+      "output_path": "candidates",
+      "value": "retained_event_interval_ranking",
+      "confidence": "low"
+    }
+  ],
+  "priority": 850,
+  "sources": [
+    {
+      "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
+      "locator": "systems/western_astrology/rectifier.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-WESTERN-NATAL-007"
+  ],
+  "notes": "Personality descriptions are forbidden as tie-breakers; insufficient separation returns underdetermined."
+}

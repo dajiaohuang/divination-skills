@@ -1,6 +1,6 @@
 ---
 name: tarot-core
-description: Explain a validated project Tarot draw using its exact card facts, orientation keywords, and named spread positions. Use for 塔罗解读、三牌叙事、正逆位说明 or reflective follow-up questions after `$tarot-draw`. Do not invent cards, redraw, claim hidden third-party facts, guarantee future events, or provide high-impact professional decisions.
+description: Explain a validated project Tarot draw using exact card facts, orientations, named positions, and optional adjacent arcana/element/suit/rank relations. Use for 塔罗解读、多牌阵、组合关系、正逆位说明 or reflective follow-up after `$tarot-draw`. Do not invent cards, redraw, claim third-party facts, or guarantee events.
 ---
 
 # Tarot core
@@ -13,7 +13,8 @@ Explain the existing draw without changing it.
 2. For each card, retain its `fact_id`, position, card ID, and orientation exactly.
 3. Use the corresponding project-authored orientation keywords and constrain language by the named position.
 4. Cite `TAROT-POSITION-001` plus the applicable orientation rule for every card statement.
-5. Read multiple cards only in their given position order and cite `TAROT-NARRATIVE-001`.
+5. Read multiple cards in position order; when combinations are requested, expose only
+   `TAROT-COMBINATION-RELATION-001` metadata facts.
 6. Frame the output as reflection, questions, tradeoffs, or small reversible actions—not facts or fixed predictions.
 7. End with limitations and professional-advice routing for high-impact decisions.
 

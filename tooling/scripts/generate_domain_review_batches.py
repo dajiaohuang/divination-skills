@@ -38,6 +38,13 @@ def update_batch(system: Path) -> tuple[Path, int]:
         }
 
     batch.setdefault("evidence", None)
+    if batch.get("release") != version:
+        if batch.get("status") == "accepted":
+            raise RuntimeError(
+                f"{system.name}: accepted review cannot be carried to release {version}"
+            )
+        batch["release"] = version
+        batch.update(status="pending", reviewer_id=None, reviewed_at=None, evidence=None)
     existing = {item["case_id"] for item in batch["case_reviews"]}
     additions = [case_id for case_id in _case_ids(system) if case_id not in existing]
     batch["case_reviews"].extend(

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Liuyao Judgment"
+  short_description: "Analyze explicit Liuyao judgment rule packs."
+  default_prompt: "Use $liuyao-judgment to analyze an existing Liuyao chart with an explicit question category and optional timing pack."

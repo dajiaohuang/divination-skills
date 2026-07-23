@@ -1,0 +1,146 @@
+{
+  "case_id": "CASE-LIUYAO-JUDGMENT-005",
+  "case_type": "standard",
+  "raw_input": {
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000005",
+    "local_datetime": "2026-05-05T12:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "arguments": {
+    "question_category": "documents",
+    "include_timing": false
+  },
+  "expected_output": {
+    "status": "structural_candidates",
+    "candidate_line_fact_ids": [
+      "iching.cast.line.003",
+      "iching.cast.line.006"
+    ],
+    "line_strength": [
+      {
+        "fact_id": "liuyao.judgment.strength.line-001",
+        "line_fact_id": "iching.cast.line.001",
+        "month_relation": "line_generates_context",
+        "day_relation": "context_generates_line",
+        "adjustments": [],
+        "structural_score": 0,
+        "band": "mixed",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-002",
+        "line_fact_id": "iching.cast.line.002",
+        "month_relation": "line_controls_context",
+        "day_relation": "same_element",
+        "adjustments": [],
+        "structural_score": 2,
+        "band": "supported",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-003",
+        "line_fact_id": "iching.cast.line.003",
+        "month_relation": "same_element",
+        "day_relation": "context_controls_line",
+        "adjustments": [],
+        "structural_score": 0,
+        "band": "mixed",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-004",
+        "line_fact_id": "iching.cast.line.004",
+        "month_relation": "context_controls_line",
+        "day_relation": "line_generates_context",
+        "adjustments": [],
+        "structural_score": -3,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-005",
+        "line_fact_id": "iching.cast.line.005",
+        "month_relation": "context_generates_line",
+        "day_relation": "line_controls_context",
+        "adjustments": [
+          {
+            "reason": "void",
+            "delta": -2
+          },
+          {
+            "reason": "moving",
+            "delta": 1
+          }
+        ],
+        "structural_score": 0,
+        "band": "mixed",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-006",
+        "line_fact_id": "iching.cast.line.006",
+        "month_relation": "same_element",
+        "day_relation": "context_controls_line",
+        "adjustments": [],
+        "structural_score": 0,
+        "band": "mixed",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "moving_changes": [
+      {
+        "fact_id": "liuyao.judgment.change.line-005",
+        "line_fact_id": "iching.cast.line.005",
+        "position_from_bottom": 5,
+        "original_branch": "酉",
+        "original_element": "metal",
+        "changed_najia": "庚申",
+        "changed_branch": "申",
+        "changed_element": "metal",
+        "changed_six_relative": "兄弟",
+        "element_relation": "same",
+        "rule_ids": [
+          "LIUYAO-MOVING-CHANGE-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "timing_pack": {
+      "enabled": false,
+      "candidates": [],
+      "precision": null
+    }
+  }
+}

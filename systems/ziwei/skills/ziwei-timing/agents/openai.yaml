@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ziwei Timing"
+  short_description: "Calculate cited Ziwei limits and dynamic time layers"
+  default_prompt: "Use $ziwei-timing to calculate structural Ziwei time layers for this target date."

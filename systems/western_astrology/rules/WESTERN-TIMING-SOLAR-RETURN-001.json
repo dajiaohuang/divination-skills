@@ -1,0 +1,39 @@
+{
+  "rule_id": "WESTERN-TIMING-SOLAR-RETURN-001",
+  "title": "Solve the annual geocentric tropical solar return",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-major-aspects-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.positions",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "western.solar_return",
+      "output_path": "solar_return",
+      "value": "sun_longitude_recurrence",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 945,
+  "sources": [
+    {
+      "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+      "locator": "geocentric solar longitude calculation",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
+      "locator": "systems/western_astrology/timing.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-WESTERN-NATAL-004"
+  ]
+}

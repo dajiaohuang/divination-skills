@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ziwei Core"
+  short_description: "Explain cited Ziwei structure with experimental gating"
+  default_prompt: "Use $ziwei-core to explain this validated Ziwei structure with complete citations."

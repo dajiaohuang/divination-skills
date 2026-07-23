@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
 import pytest
+from divination_skills.contracts import canonical_json
 
 from systems.iching.engine import cast as cast_iching
 from systems.lenormand.engine import draw as draw_lenormand
@@ -45,4 +47,13 @@ def cases() -> list[dict[str, Any]]:
 @pytest.mark.parametrize("case", cases(), ids=lambda case: case["case_id"])
 def test_extension_edge_and_dispute_cases_replay(case: dict[str, Any]) -> None:
     result = CALCULATORS[case["system"]](case["raw_input"])
-    assert result["computed_facts"] == case["expected_output"]["computed_facts"]
+    expected = case["expected_output"]
+    if "computed_facts" in expected:
+        assert result["computed_facts"] == expected["computed_facts"]
+        return
+
+    assert hashlib.sha256(
+        canonical_json(result["computed_facts"])
+    ).hexdigest() == expected["computed_facts_sha256"]
+    if "palace_count" in expected:
+        assert len(result["computed_facts"]["palaces"]) == expected["palace_count"]

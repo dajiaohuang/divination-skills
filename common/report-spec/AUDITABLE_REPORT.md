@@ -15,3 +15,16 @@ The result also includes:
 - audit data required to replay randomized results.
 
 Writers must deep-copy or otherwise protect `computed_facts` before rule evaluation. A report is invalid if narrative references an unknown fact or rule, if a cross-system rule appears without an explicit bridge contract, or if missing calculation facts are reconstructed from model memory.
+
+Composition uses the common contracts in `common/schemas/`:
+
+- `reading-session` links one or more validated charts to an explicit question and consent scope;
+- `confidence-profile` records which modules are allowed, degraded, or blocked;
+- `timeline` carries calculated periods without narrative claims;
+- `comparison` records directional two-chart facts;
+- `report-profile` selects report sections but does not define new rules;
+- `chart-import` records external-field mappings and preserves native calculations as canonical.
+
+Raw question text, chart IDs, consent records, and birth inputs must be removed before operational
+logging. Existing v0.1 chart documents can be wrapped without rewriting them, as recorded in
+ADR-0004.

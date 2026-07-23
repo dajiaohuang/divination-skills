@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-NUMEROLOGY-MAPPING-DISPUTE-002",
+  "alternative_policy": "infer-non-latin-transliteration",
+  "expected_handling": "separate_lineage_or_fail_closed"
+}

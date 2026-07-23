@@ -1,0 +1,44 @@
+{
+  "source_id": "SRC-ICHING-GUTENBERG-25501",
+  "title": "易經",
+  "creators": [
+    { "name": "Anonymous", "role": "author" },
+    { "name": "Winnie Zhou", "role": "editor" }
+  ],
+  "source_type": "book",
+  "language": "zh-Hant",
+  "publication_date": "2008-05-17",
+  "edition_or_version": "Project Gutenberg eBook 25501, updated 2021-07-01",
+  "locators": [{ "kind": "url", "value": "https://www.gutenberg.org/ebooks/25501", "stable": true }],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "PublicDomain-US",
+    "url": "https://www.gutenberg.org/ebooks/25501",
+    "text_available": true,
+    "additional_terms": true
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "The catalog marks the work public domain in the USA. The repository stores only bibliographic and logical passage locators, not Gutenberg text or branding."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Project Gutenberg catalog identifies eBook 25501 as public domain in the USA; no transcription is copied into this repository."
+  },
+  "usage_status": "production",
+  "systems": ["iching"],
+  "lineages": ["king-wen-classical-source-layer-v0.2"],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Useful public-domain transcription locator; textual collation remains pending."
+  }
+}

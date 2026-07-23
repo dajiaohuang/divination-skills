@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bazi Synastry"
+  short_description: "Compare directional and symmetric Bazi chart facts"
+  default_prompt: "Use $bazi-synastry to compare these validated charts with explicit A-to-B and B-to-A facts."

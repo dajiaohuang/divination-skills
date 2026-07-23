@@ -1,4 +1,4 @@
-# Bazi data contract v0.1
+# Bazi data contract v0.2
 
 ## Input
 

@@ -1,0 +1,35 @@
+{
+  "rule_id": "BAZI-RECTIFIER-HOUR-SCAN-001",
+  "title": "Rank Bazi double-hour candidates with separated training and holdout events",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "events",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "bazi.rectification_candidates",
+      "output_path": "candidates",
+      "value": "ranked_double_hour_ranges",
+      "confidence": "low"
+    }
+  ],
+  "priority": 850,
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+      "locator": "systems/bazi/rectifier.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-BAZI-STANDARD-007"
+  ],
+  "notes": "Returns underdetermined when training or holdout evidence cannot separate candidates; never claims a unique minute."
+}

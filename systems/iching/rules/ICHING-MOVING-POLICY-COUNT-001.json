@@ -1,0 +1,15 @@
+{
+  "rule_id": "ICHING-MOVING-POLICY-COUNT-001",
+  "title": "Route selected text units by an explicit count-based policy",
+  "system": "iching",
+  "lineage": "king-wen-classical-source-layer-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [{ "fact_path": "computed_facts.moving_line_positions", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "iching.selected_text_units", "output_path": "selection.selected_units", "value": "zhu_xi_count_routing", "confidence": "low" }],
+  "priority": 790,
+  "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "systems/iching/text_layer.py zhu-xi-count-routing-v0.2", "support_type": "direct" }],
+  "tests": ["CASE-ICHING-CAST-001"],
+  "notes": "Isolated policy pending independent textual lineage review."
+}

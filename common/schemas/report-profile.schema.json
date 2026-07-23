@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/report-profile.schema.json",
+  "title": "Auditable report section profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "profile_id",
+    "system",
+    "mode",
+    "sections",
+    "forbidden_topics",
+    "high_risk_policy"
+  ],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "profile_id": { "type": "string", "pattern": "^PROFILE-[A-Z0-9-]+$" },
+    "system": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "mode": {
+      "type": "string",
+      "enum": ["core", "career", "relationship", "timing", "synastry", "qa"]
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "section_id",
+          "title",
+          "required_fact_prefixes",
+          "required_rule_prefixes",
+          "optional"
+        ],
+        "properties": {
+          "section_id": { "type": "string", "pattern": "^[a-z][a-z0-9_.-]*$" },
+          "title": { "type": "string", "minLength": 1 },
+          "required_fact_prefixes": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "required_rule_prefixes": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "optional": { "type": "boolean" }
+        }
+      }
+    },
+    "forbidden_topics": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "high_risk_policy": { "const": "common/safety/HIGH_RISK_POLICY.md" },
+    "experimental": { "type": "boolean", "default": true }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Western Reader"
+  short_description: "Import Western chart JSON or position CSV safely"
+  default_prompt: "Use $western-reader to import this chart data without replacing native facts."

@@ -1,0 +1,43 @@
+{
+  "rule_id": "ZIWEI-INPUT-POLICY-001",
+  "title": "Record calendar and boundary policies as replayable input facts",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [
+    {
+      "fact_path": "normalized_input.calendar_type",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.input_policy",
+      "output_path": "normalized_input.year_boundary",
+      "value": "explicit_versioned_policy",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 1000,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/DATA_CONTRACT.md",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "historical leap-month rule context",
+      "support_type": "corroborating"
+    }
+  ],
+  "disputes": [
+    "DSP-ZIWEI-BOUNDARY-POLICY-001"
+  ],
+  "tests": [
+    "CASE-ZIWEI-EDGE-BOUNDARY-001",
+    "CASE-ZIWEI-DISPUTE-POLICY-001"
+  ]
+}

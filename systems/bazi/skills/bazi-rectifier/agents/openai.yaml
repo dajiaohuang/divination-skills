@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bazi Rectifier"
+  short_description: "Rank Bazi hour ranges with retained dated events"
+  default_prompt: "Use $bazi-rectifier to rank double-hour candidates and return underdetermined when evidence is insufficient."

@@ -1,0 +1,15 @@
+{
+  "rule_id": "LENORMAND-GRAND-TABLEAU-001",
+  "title": "Map a four-by-nine Grand Tableau to fixed card houses",
+  "system": "lenormand",
+  "lineage": "lenormand-36-project-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.spread", "operator": "eq", "value": "grand-tableau" }],
+  "conclusions": [{ "finding_type": "lenormand.grand_tableau", "output_path": "grand_tableau", "value": "four_by_nine_houses", "confidence": "deterministic" }],
+  "priority": 780,
+  "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "systems/lenormand/layouts.py grand_tableau", "support_type": "direct" }],
+  "tests": ["CASE-LENORMAND-DRAW-001"],
+  "notes": "Coordinates and houses are not hidden-fact or outcome claims."
+}

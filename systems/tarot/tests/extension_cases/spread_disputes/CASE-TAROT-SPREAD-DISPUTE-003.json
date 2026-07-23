@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-TAROT-SPREAD-DISPUTE-003",
+  "alternative": "reversal-disabled",
+  "expected_handling": "require_registered_spread_or_separate_lineage"
+}

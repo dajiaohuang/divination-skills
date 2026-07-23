@@ -1,0 +1,17 @@
+{
+  "rule_id": "ICHING-CLASSICAL-SOURCE-LAYER-001",
+  "title": "Attach edition-aware passage locators without copying text",
+  "system": "iching",
+  "lineage": "king-wen-classical-source-layer-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [{ "fact_path": "selection.selected_units", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "iching.classical_source_locators", "output_path": "editions", "value": "metadata_only", "confidence": "high" }],
+  "priority": 780,
+  "sources": [
+    { "source_id": "SRC-ICHING-GUTENBERG-25501", "locator": "eBook 25501 catalog", "support_type": "direct" },
+    { "source_id": "SRC-ICHING-LOC-17845", "locator": "Library of Congress item 2021666491", "support_type": "direct" }
+  ],
+  "tests": ["CASE-ICHING-CAST-001"]
+}

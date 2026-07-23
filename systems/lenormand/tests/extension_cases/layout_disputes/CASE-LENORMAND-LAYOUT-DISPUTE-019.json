@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-LENORMAND-LAYOUT-DISPUTE-019",
+  "alternative": "knighting",
+  "expected_handling": "separate_lineage_not_silent_merge"
+}

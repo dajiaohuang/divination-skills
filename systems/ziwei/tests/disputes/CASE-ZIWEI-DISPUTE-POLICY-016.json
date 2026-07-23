@@ -1,0 +1,165 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "local_civil",
+        "true_solar_time"
+      ],
+      "dispute_id": "DSP-ZIWEI-TIME-BASIS-001",
+      "field_path": "calculation.time_basis"
+    }
+  ],
+  "case_id": "CASE-ZIWEI-DISPUTE-POLICY-016",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "five_elements_class": "水二局",
+    "star_placements": {
+      "auxiliaryStars:三台": 3,
+      "auxiliaryStars:丧门": 6,
+      "auxiliaryStars:临官": 3,
+      "auxiliaryStars:亡神": 3,
+      "auxiliaryStars:伏兵": 2,
+      "auxiliaryStars:八座": 7,
+      "auxiliaryStars:养": 7,
+      "auxiliaryStars:冠带": 4,
+      "auxiliaryStars:凤阁": 2,
+      "auxiliaryStars:力士": 11,
+      "auxiliaryStars:劫煞": 9,
+      "auxiliaryStars:华盖": 8,
+      "auxiliaryStars:博士": 0,
+      "auxiliaryStars:台辅": 4,
+      "auxiliaryStars:吊客": 2,
+      "auxiliaryStars:咸池": 1,
+      "auxiliaryStars:喜神": 5,
+      "auxiliaryStars:地劫": 9,
+      "auxiliaryStars:地空": 9,
+      "auxiliaryStars:墓": 10,
+      "auxiliaryStars:大耗": 10,
+      "auxiliaryStars:天伤": 4,
+      "auxiliaryStars:天使": 6,
+      "auxiliaryStars:天刑": 6,
+      "auxiliaryStars:天哭": 10,
+      "auxiliaryStars:天喜": 1,
+      "auxiliaryStars:天姚": 10,
+      "auxiliaryStars:天德": 1,
+      "auxiliaryStars:天煞": 11,
+      "auxiliaryStars:天虚": 10,
+      "auxiliaryStars:天钺": 5,
+      "auxiliaryStars:天马": 6,
+      "auxiliaryStars:天魁": 11,
+      "auxiliaryStars:奏书": 7,
+      "auxiliaryStars:官府": 1,
+      "auxiliaryStars:官符": 8,
+      "auxiliaryStars:封诰": 0,
+      "auxiliaryStars:将军": 8,
+      "auxiliaryStars:将星": 4,
+      "auxiliaryStars:小耗": 9,
+      "auxiliaryStars:岁建": 4,
+      "auxiliaryStars:岁驿": 6,
+      "auxiliaryStars:帝旺": 2,
+      "auxiliaryStars:息神": 7,
+      "auxiliaryStars:指背": 0,
+      "auxiliaryStars:擎羊": 1,
+      "auxiliaryStars:攀鞍": 5,
+      "auxiliaryStars:晦气": 5,
+      "auxiliaryStars:月德": 4,
+      "auxiliaryStars:月煞": 2,
+      "auxiliaryStars:死": 11,
+      "auxiliaryStars:沐浴": 5,
+      "auxiliaryStars:火星": 11,
+      "auxiliaryStars:灾煞": 10,
+      "auxiliaryStars:病": 0,
+      "auxiliaryStars:病符": 4,
+      "auxiliaryStars:白虎": 0,
+      "auxiliaryStars:禄存": 0,
+      "auxiliaryStars:红鸾": 7,
+      "auxiliaryStars:绝": 9,
+      "auxiliaryStars:胎": 8,
+      "auxiliaryStars:衰": 1,
+      "auxiliaryStars:解神": 2,
+      "auxiliaryStars:贯索": 7,
+      "auxiliaryStars:铃星": 1,
+      "auxiliaryStars:长生": 6,
+      "auxiliaryStars:陀罗": 11,
+      "auxiliaryStars:青龙": 10,
+      "auxiliaryStars:飞廉": 6,
+      "auxiliaryStars:龙德": 11,
+      "auxiliaryStars:龙池": 8,
+      "majorStars:七杀": 4,
+      "majorStars:天同": 1,
+      "majorStars:天府": 10,
+      "majorStars:天机": 5,
+      "majorStars:天梁": 3,
+      "majorStars:天相": 2,
+      "majorStars:太阳": 3,
+      "majorStars:太阴": 11,
+      "majorStars:巨门": 1,
+      "majorStars:廉贞": 10,
+      "majorStars:武曲": 2,
+      "majorStars:破军": 8,
+      "majorStars:紫微": 6,
+      "majorStars:贪狼": 0,
+      "minorStars:右弼": 9,
+      "minorStars:左辅": 1,
+      "minorStars:文昌": 8,
+      "minorStars:文曲": 2
+    },
+    "time_index": 12
+  },
+  "expected_output": {
+    "computed_facts_sha256": "b1093861fd2381c55bb5219c4e543d0788928999853516c08a3cdbbfc4b9515a",
+    "palace_count": 12
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "The calculation-gender parameter was inferred as identity.",
+    "A brightness value was invented."
+  ],
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "must_match_rules": [
+    "ZIWEI-INPUT-POLICY-001",
+    "ZIWEI-STRUCTURAL-BOUNDARY-001"
+  ],
+  "normalized_input": {
+    "calculation_gender": "female",
+    "calendar_leap_month": false,
+    "calendar_type": "solar",
+    "effective_lunar_month": 12,
+    "fold": 0,
+    "late_zi_policy": "current_day",
+    "leap_month_policy": "preserve",
+    "lineage": "project-native-ziwei-structural-v0.4",
+    "local_datetime": "2015-02-03T23:30:00+08:00",
+    "time_index": 12,
+    "timezone": "Asia/Shanghai",
+    "utc_datetime": "2015-02-03T15:30:00Z",
+    "year_boundary": "lunar_new_year"
+  },
+  "raw_input": {
+    "calculation_gender": "female",
+    "local_datetime": "2015-02-03T23:30:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic deterministic regression review; independent Ziwei expert acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "project-native-regression-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "project-native structural calculation v0.4",
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "formula sections for palaces, stars, cycles, and limits",
+      "source_id": "SRC-ZIWEI-QUANSHU-001"
+    }
+  ],
+  "system": "ziwei",
+  "title": "Ziwei explicit policy dispute 016"
+}

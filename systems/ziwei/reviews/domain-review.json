@@ -1,17 +1,257 @@
 {
   "system": "ziwei",
-  "release": "0.1.0",
+  "release": "0.4.0",
   "status": "pending",
   "reviewer_id": null,
   "reviewed_at": null,
   "case_reviews": [
     {
-      "case_id": "CASE-ZIWEI-DISPUTE-TIME-BASIS-001",
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-001",
       "decision": "pending",
       "notes": ""
     },
     {
-      "case_id": "CASE-ZIWEI-EDGE-LATE-ZI-001",
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-006",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-007",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-008",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-009",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-010",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-011",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-012",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-013",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-014",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-015",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-016",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-017",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-018",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-019",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-POLICY-020",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-006",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-007",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-008",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-009",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-010",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-011",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-012",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-013",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-014",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-015",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-016",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-017",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-018",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-019",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-020",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-021",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-022",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-023",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-024",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-025",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-026",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-027",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-028",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-029",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-BOUNDARY-030",
       "decision": "pending",
       "notes": ""
     },
@@ -39,8 +279,483 @@
       "case_id": "CASE-ZIWEI-NATAL-005",
       "decision": "pending",
       "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-006",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-007",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-008",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-009",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-010",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-011",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-012",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-013",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-014",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-015",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-016",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-017",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-018",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-019",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-020",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-021",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-022",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-023",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-024",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-025",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-026",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-027",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-028",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-029",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-030",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-031",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-032",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-033",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-034",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-035",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-036",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-037",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-038",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-039",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-040",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-041",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-042",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-043",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-044",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-045",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-046",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-047",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-048",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-049",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-050",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-051",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-052",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-053",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-054",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-055",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-056",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-057",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-058",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-059",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-060",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-061",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-062",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-063",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-064",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-065",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-066",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-067",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-068",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-069",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-070",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-071",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-072",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-073",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-074",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-075",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-076",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-077",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-078",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-079",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-080",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-081",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-082",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-083",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-084",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-085",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-086",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-087",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-088",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-089",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-090",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-091",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-092",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-093",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-094",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-095",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-096",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-097",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-098",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-099",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-100",
+      "decision": "pending",
+      "notes": ""
     }
   ],
-  "notes": "Independent domain review has not yet been performed.",
+  "notes": "Independent domain review has not yet been performed. Fifty experimental explanation candidates are queued under systems/ziwei/cases/expert_candidates.",
   "evidence": null
 }

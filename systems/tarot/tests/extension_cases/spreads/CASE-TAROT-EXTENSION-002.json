@@ -1,0 +1,177 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-002",
+  "raw_input": {
+    "spread": "relationship-six",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000002",
+    "allow_reversals": true
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "relationship-six",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "self_position",
+          "card_id": "tarot.rws.swords-nine",
+          "card_index": 58,
+          "name": "Nine of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "other_position",
+          "card_id": "tarot.rws.major-03-empress",
+          "card_index": 3,
+          "name": "The Empress",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "connection",
+          "card_id": "tarot.rws.major-07-chariot",
+          "card_index": 7,
+          "name": "The Chariot",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "communication",
+          "card_id": "tarot.rws.swords-knight",
+          "card_index": 61,
+          "name": "Knight of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "boundary",
+          "card_id": "tarot.rws.major-02-high-priestess",
+          "card_index": 2,
+          "name": "The High Priestess",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "shared_focus",
+          "card_id": "tarot.rws.cups-three",
+          "card_index": 38,
+          "name": "Three of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.swords-nine",
+        "right_card_id": "tarot.rws.major-03-empress",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.major-03-empress",
+        "right_card_id": "tarot.rws.major-07-chariot",
+        "arcana_relation": "same_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.major-07-chariot",
+        "right_card_id": "tarot.rws.swords-knight",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.swords-knight",
+        "right_card_id": "tarot.rws.major-02-high-priestess",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.major-02-high-priestess",
+        "right_card_id": "tarot.rws.cups-three",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 3,
+        "minor": 3
+      },
+      "suit_counts": {
+        "wands": 0,
+        "cups": 1,
+        "swords": 2,
+        "pentacles": 0
+      },
+      "element_counts": {
+        "fire": 0,
+        "water": 1,
+        "air": 2,
+        "earth": 0
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

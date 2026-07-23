@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "confidence_id": "CONFIDENCE-A1B2C3D4E5F60718",
+  "input_precision": {
+    "level": "hour_range",
+    "source": "reported",
+    "uncertainty_minutes": 60
+  },
+  "module_access": {
+    "natal.date": "allowed",
+    "natal.hour": "degraded",
+    "minute_sensitive": "blocked"
+  },
+  "disabled_modules": [
+    "minute_sensitive"
+  ],
+  "reasons": [
+    {
+      "code": "input.hour_range",
+      "message": "The reported time is only known within an hour."
+    }
+  ]
+}

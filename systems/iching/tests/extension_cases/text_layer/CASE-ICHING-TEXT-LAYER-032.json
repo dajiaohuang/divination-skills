@@ -1,0 +1,155 @@
+{
+  "case_id": "CASE-ICHING-TEXT-LAYER-032",
+  "raw_input": {
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000020"
+  },
+  "policy_id": "all-moving-lines-v0.2",
+  "expected_output": {
+    "selection": {
+      "policy_id": "all-moving-lines-v0.2",
+      "moving_line_count": 2,
+      "moving_line_positions": [
+        1,
+        2
+      ],
+      "selected_units": [
+        {
+          "unit_type": "primary_judgment",
+          "hexagram_number": 27,
+          "logical_locator": "King Wen hexagram 27"
+        },
+        {
+          "unit_type": "primary_line",
+          "hexagram_number": 27,
+          "logical_locator": "King Wen hexagram 27, line 1",
+          "line_position_from_bottom": 1
+        },
+        {
+          "unit_type": "primary_line",
+          "hexagram_number": 27,
+          "logical_locator": "King Wen hexagram 27, line 2",
+          "line_position_from_bottom": 2
+        },
+        {
+          "unit_type": "changed_judgment",
+          "hexagram_number": 4,
+          "logical_locator": "King Wen hexagram 4"
+        }
+      ],
+      "rule_ids": [
+        "ICHING-MOVING-POLICY-ALL-001"
+      ],
+      "limitations": [
+        "Selection identifies passages; it does not supply an interpretation or outcome.",
+        "The count-routing policy is isolated and pending independent textual review."
+      ]
+    },
+    "editions": [
+      {
+        "edition_id": "gutenberg-chinese-25501",
+        "source_id": "SRC-ICHING-GUTENBERG-25501",
+        "title": "易經",
+        "edition_type": "public-domain Chinese transcription",
+        "document_url": "https://www.gutenberg.org/ebooks/25501",
+        "passage_status": "semantic_locator_available",
+        "selected_passage_locators": [
+          {
+            "unit_type": "primary_judgment",
+            "hexagram_number": 27,
+            "logical_locator": "King Wen hexagram 27",
+            "source_id": "SRC-ICHING-GUTENBERG-25501",
+            "document_url": "https://www.gutenberg.org/ebooks/25501",
+            "passage_status": "semantic_locator_available",
+            "text_included": false
+          },
+          {
+            "unit_type": "primary_line",
+            "hexagram_number": 27,
+            "logical_locator": "King Wen hexagram 27, line 1",
+            "line_position_from_bottom": 1,
+            "source_id": "SRC-ICHING-GUTENBERG-25501",
+            "document_url": "https://www.gutenberg.org/ebooks/25501",
+            "passage_status": "semantic_locator_available",
+            "text_included": false
+          },
+          {
+            "unit_type": "primary_line",
+            "hexagram_number": 27,
+            "logical_locator": "King Wen hexagram 27, line 2",
+            "line_position_from_bottom": 2,
+            "source_id": "SRC-ICHING-GUTENBERG-25501",
+            "document_url": "https://www.gutenberg.org/ebooks/25501",
+            "passage_status": "semantic_locator_available",
+            "text_included": false
+          },
+          {
+            "unit_type": "changed_judgment",
+            "hexagram_number": 4,
+            "logical_locator": "King Wen hexagram 4",
+            "source_id": "SRC-ICHING-GUTENBERG-25501",
+            "document_url": "https://www.gutenberg.org/ebooks/25501",
+            "passage_status": "semantic_locator_available",
+            "text_included": false
+          }
+        ]
+      },
+      {
+        "edition_id": "song-wangbi-kongyingda-loc-17845",
+        "source_id": "SRC-ICHING-LOC-17845",
+        "title": "周易注疏 : 十三卷",
+        "edition_type": "Southern Song print with Wang Bi and Kong Yingda commentary",
+        "document_url": "https://www.loc.gov/item/2021666491/",
+        "passage_status": "image_collation_pending",
+        "selected_passage_locators": [
+          {
+            "unit_type": "primary_judgment",
+            "hexagram_number": 27,
+            "logical_locator": "King Wen hexagram 27",
+            "source_id": "SRC-ICHING-LOC-17845",
+            "document_url": "https://www.loc.gov/item/2021666491/",
+            "passage_status": "image_collation_pending",
+            "text_included": false
+          },
+          {
+            "unit_type": "primary_line",
+            "hexagram_number": 27,
+            "logical_locator": "King Wen hexagram 27, line 1",
+            "line_position_from_bottom": 1,
+            "source_id": "SRC-ICHING-LOC-17845",
+            "document_url": "https://www.loc.gov/item/2021666491/",
+            "passage_status": "image_collation_pending",
+            "text_included": false
+          },
+          {
+            "unit_type": "primary_line",
+            "hexagram_number": 27,
+            "logical_locator": "King Wen hexagram 27, line 2",
+            "line_position_from_bottom": 2,
+            "source_id": "SRC-ICHING-LOC-17845",
+            "document_url": "https://www.loc.gov/item/2021666491/",
+            "passage_status": "image_collation_pending",
+            "text_included": false
+          },
+          {
+            "unit_type": "changed_judgment",
+            "hexagram_number": 4,
+            "logical_locator": "King Wen hexagram 4",
+            "source_id": "SRC-ICHING-LOC-17845",
+            "document_url": "https://www.loc.gov/item/2021666491/",
+            "passage_status": "image_collation_pending",
+            "text_included": false
+          }
+        ]
+      }
+    ],
+    "version_comparison": {
+      "status": "not_collated",
+      "compared_edition_ids": [
+        "gutenberg-chinese-25501",
+        "song-wangbi-kongyingda-loc-17845"
+      ],
+      "differences": [],
+      "message": "Edition metadata is registered, but textual variants have not been collated. No difference is inferred from an absent comparison."
+    }
+  }
+}

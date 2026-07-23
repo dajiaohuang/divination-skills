@@ -1,0 +1,35 @@
+{
+  "rule_id": "ZIWEI-SYNASTRY-SYMMETRIC-001",
+  "title": "Record same-role shared major stars as symmetric cross-chart facts",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "proposed",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "chart_refs",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.symmetric_shared_star",
+      "output_path": "symmetric",
+      "value": "same_role_shared_major_stars",
+      "confidence": "medium"
+    }
+  ],
+  "priority": 815,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/synastry.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-013"
+  ],
+  "notes": "Experimental structural comparison pending independent practitioner acceptance."
+}

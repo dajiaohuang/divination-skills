@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-RUNES-LAYER-DISPUTE-016",
+  "unsupported_claim": "unbroken-divination-continuity",
+  "expected_handling": "reject_cross_layer_inference"
+}

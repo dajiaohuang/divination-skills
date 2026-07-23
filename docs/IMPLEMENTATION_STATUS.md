@@ -1,77 +1,87 @@
 # 实施状态
 
 日期：2026-07-23
-技术状态：M0–M5 既定范围已实现并通过全仓自动化验收
-发布状态：未发布；真实领域、版权与隐私签署仍是 fail-closed 阻塞项
 
-## 已完成
+技术状态：`IMPLEMENTATION_PLAN.md` 的 M0–M5 与 `EXTENSION_PLAN.md` 的 M6–M13 已全部实现并通过全仓自动化验收
 
-- M0：仓库治理、clean-room、来源接纳、贡献、安全、ADR 与 issue 模板。
-- M1：四个核心 JSON Schema、可审计报告/评估/签核契约、正反示例、交叉引用与逐体系完整性验证器、CI、确定性 Skill 构建器。
-- M2：八字端到端计算、验证和证据报告切片。
-- M3：100 标准盘、30 边界案例、20 流派分歧、20 错误输入、50 专家候选、属性测试、隐私政策、Model Card、迁移策略和发布审计。
-- M4：Tarot 与西方占星独立垂直切片。
-- M5：紫微、周易、六爻、奇门基础盘、Lenormand、卢恩和数字命理垂直切片。
-- 发布治理：10 份独立签核记录、九个扩展体系共 78 条领域复核队列、统一 fail-closed readiness 审计。
-- Skill 交付：14 个 ZIP 携带最小项目运行时与依赖声明，并通过脱离源码仓库的逐脚本执行测试；紫微传递依赖均带许可通知。
-- 审核证据：接受状态必须携带 SHA-256 证据对象；仓库内证据由 readiness 重新哈希，敏感材料可保留在受控外部存储。
-- 项目许可：所有者已选择 Apache-2.0；所有产物携带许可证决策与逐文件内容清单。
-- 部署数据政策：`DEPLOYMENT_PRIVACY.json` 保持 `undecided`；发布前必须记录实际存储、用途、保留、处理商、安全控制、导出和删除行为。
+发布状态：未正式发布；真实领域、版权与部署隐私签署仍是 fail-closed 阻塞项
+
+## 已完成路线
+
+- M0–M1：仓库治理、clean-room、来源接纳、Apache-2.0、核心 Schema、交叉引用验证、CI 和可复现 Skill 构建器。
+- M2–M3：八字端到端计算、验证、证据报告、100/30/20/20 基线案例、独立比较、评估与 50 份专家候选。
+- M4–M5：Tarot、西方占星、紫微、周易、六爻、奇门、Lenormand、卢恩和数字命理的独立垂直切片。
+- M6：六个跨体系会话/导入/置信度/时间线/比较/报告契约，旧盘兼容包装与隐私安全默认值。
+- M7：紫微 v0.2 原生本命深度、扩展星曜/十二神目录、版本化历法边界和独立差异分类。
+- M8：紫微 v0.3 大限、小限、流年、流月、流日、流时，宫星/三方四正/四化查询与统一时间线。
+- M9：紫微 v0.4 结构解读、结构化 Reader/Validator、双盘结构比较、50 份合盘回放案例和 150 条待审领域案例。
+- M10：八字与西方占星的 Reader、Validator、Timing、Synastry 和 Rectifier，共 300 个扩展回放案例。
+- M11：八字、西方占星和紫微的共享 career/relationship/timing/QA 报告选择层及高影响问题降级。
+- M12：三体系双盘比较、八字/西占保留集校时，以及西方卜卦占星的独立体系可行性与来源评估。
+- M13：六爻显式问题规则包、奇门完整结构盘、周易来源/动爻策略层、Lenormand Grand Tableau、Tarot 手牌阵/组合/日记、卢恩历史/现代分层、独立 Chaldean 映射。
 
 ## 自动化验收快照
 
 | 项目 | 结果 |
 |---|---:|
 | 体系 | 10 |
-| Skill | 14 |
-| 结构化规则 | 54 |
-| 来源清单 | 20 |
-| 标准 Golden Cases | 160 |
-| 边界案例 | 39 |
-| 流派分歧案例 | 29 |
-| pytest | 477 passed |
+| Skill | 30 |
+| 结构化规则 | 101 |
+| 来源清单 | 27 |
+| 基线 Golden Cases | 255 |
+| 边界案例 | 68 |
+| 流派分歧案例 | 48 |
+| 错误输入案例 | 20 |
+| 扩展功能回放案例 | 850 |
+| 待审扩展领域案例 | 221 |
+| 八字专家候选 | 50 |
+| pytest | 1497 passed |
 | Schema/ID/许可交叉引用 | passed |
 | 技术完整性 | 10/10 passed |
 | 正式发布就绪 | 0/10（等待真实签核） |
 | 项目许可证 | Apache-2.0（selected） |
-| 部署隐私配置 | undecided（禁止发布） |
+| 部署隐私配置 | undecided（禁止正式发布） |
 | Ruff | passed |
-| Skill 结构验证 | 14 passed |
-| 确定性 ZIP 构建 | 14 passed |
+| Skill 结构与包外入口验证 | 30 passed |
+| 确定性 ZIP 构建 | 30 passed |
 
-## 已知范围边界
+## 当前明确边界
 
-- 八字的季节支持评分是低置信度、默认关闭的工程基线，不是专家共识。
-- 西方占星 v0.1 只支持本命基础事实，不含行运、推运、合盘或卜卦占星。
-- 紫微使用项目自有基础排盘；`iztro` 2.5.8 只保留在被 Git 忽略的参考目录，不进入运行时或产物。
-- 六爻不选用神，不做旺衰、吉凶和应期。
-- 奇门只实现节气、阴阳遁、三元局、地盘和值符值使原始宫；天盘、转动九星八门、八神和断事均未实现。
-- Lenormand 与卢恩使用项目原创关键词；卢恩不是历史占卜实践复原。
-- 数字命理只处理拉丁字母，不做非拉丁姓名自动转写。
-- 风水、手相、面相和 Human Design 不在本轮获授权实现范围内。
+- 八字季节支持评分仍是默认关闭、低置信度的工程基线；时序与合盘只返回结构事实，校时不能证明唯一出生分钟。
+- 西方占星支持行运、太阳返照、合盘与区间校时，但不支持推运、方向法、组合盘或卜卦占星。卜卦占星已评估为未来独立体系。
+- 紫微运行时完全由本项目实现；`iztro` 2.5.8 只在被 Git 忽略的参考目录中用于人工差异比较。
+- 周易不捆绑经典译文，两个动爻策略都需独立审校；来源层只提供定位和版本元数据。
+- 六爻 v0.2 用神与强度输出是显式问题包下的候选/工程评分，不是专家认可的吉凶或应期结论。
+- 奇门 v0.2 提供完整的限定结构盘，但不做用神、断事、择方或事件应期。
+- Lenormand Grand Tableau 限于 4×9 宫位与坐标；Tarot 日记默认本地且必须明确同意，统计不衡量预测准确率。
+- 卢恩严格分隔历史来源元数据与现代反思关键词；数字命理绝不自动猜测非拉丁姓名转写。
+- 风水、手相、面相和 Human Design 不在本轮授权范围内。
 
 ## 仍需真实人员完成
 
-八字发布审计当前预期返回：
+当前统一 readiness 返回：
 
 ```text
-expert_accepted = 0 / 50
-domain signoff = false
-rights signoff = false
-privacy signoff = false
-ready = false
+technical_complete = 10 / 10
+release_ready = 0 / 10
+project_license_status = selected
+deployment_privacy_status = undecided
+bazi expert_accepted = 0 / 50
+extension domain-review cases accepted = 0 / 221
 ```
 
-需要用户指定真实审核人，按[外部审核指南](../systems/bazi/reviews/REVIEW_GUIDE.md)完成八字 50 份候选案例，并按[统一发布复核协议](../common/evaluation/RELEASE_REVIEW.md)完成九个扩展体系的 78 条复核队列；随后在各体系 `reviews/release-signoff.json` 留下可验证签署。各体系必须分别完成领域验收，不能继承八字或参考项目的审核结论。
+发布前需要真实审核人按[八字外部审核指南](../systems/bazi/reviews/REVIEW_GUIDE.md)完成八字 50 份候选，并按[统一发布复核协议](../common/evaluation/RELEASE_REVIEW.md)分别完成九个扩展体系的 221 条队列。所有者还必须记录实际部署的数据流、用途、保留期、处理商、安全控制、用户导出/删除和事件响应责任。
+
+各体系必须独立完成领域、版权与隐私验收，不能继承参考项目或另一体系的结论。接受记录必须包含可验证的 SHA-256 证据对象；自动化不得虚构审核身份或签名。
 
 ## 验收命令
 
 ```powershell
-.\.venv\Scripts\pytest.exe -q
-.\.venv\Scripts\ruff.exe check .
-.\.venv\Scripts\divination-validate.exe .
-.\.venv\Scripts\divination-readiness.exe . --require-technical
-.\.venv\Scripts\python.exe -m divination_skills.build . --system all --output dist
-.\.venv\Scripts\python.exe -m systems.bazi.evaluations.run_evaluation
-.\.venv\Scripts\python.exe -m systems.bazi.reviews.release --report-only
+uv run pytest -q
+uv run ruff check .
+uv run divination-validate .
+uv run divination-readiness . --require-technical
+uv run python -m divination_skills.build . --system all --output dist
+uv run python -m systems.bazi.evaluations.run_evaluation
+uv run python -m systems.bazi.reviews.release --report-only
 ```

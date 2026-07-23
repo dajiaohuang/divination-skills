@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bazi Timing"
+  short_description: "Calculate cited Bazi luck-cycle and period structures"
+  default_prompt: "Use $bazi-timing to calculate structural Bazi timing facts for this target date."

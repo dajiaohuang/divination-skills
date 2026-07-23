@@ -1,0 +1,58 @@
+{
+  "case_id": "CASE-WESTERN-RECTIFIER-016",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_sha256": "62992840a4458d9811f5c2614a26befebae0feade0c816b5e76635ea97ad779f",
+  "input": {
+    "birth_date": "1995-01-15",
+    "events": [
+      {
+        "end_date": "2010-06-30",
+        "event_id": "event-15-0",
+        "event_type": "dated_event",
+        "evidence_quality": "documented",
+        "split": "training",
+        "start_date": "2010-06-01"
+      },
+      {
+        "end_date": "2011-06-30",
+        "event_id": "event-15-1",
+        "event_type": "dated_event",
+        "evidence_quality": "reported",
+        "split": "training",
+        "start_date": "2011-06-01"
+      },
+      {
+        "end_date": "2012-06-30",
+        "event_id": "event-15-2",
+        "event_type": "dated_event",
+        "evidence_quality": "documented",
+        "split": "training",
+        "start_date": "2012-06-01"
+      },
+      {
+        "end_date": "2013-06-30",
+        "event_id": "event-15-3",
+        "event_type": "dated_event",
+        "evidence_quality": "reported",
+        "split": "training",
+        "start_date": "2013-06-01"
+      },
+      {
+        "end_date": "2014-06-30",
+        "event_id": "event-15-4",
+        "event_type": "dated_event",
+        "evidence_quality": "documented",
+        "split": "holdout",
+        "start_date": "2014-06-01"
+      }
+    ],
+    "interval_minutes": 60,
+    "latitude": 51.4779,
+    "longitude": 0.0,
+    "timezone": "UTC"
+  },
+  "module": "rectifier",
+  "status": "tested",
+  "system": "western-astrology"
+}

@@ -1,0 +1,47 @@
+{
+  "source_id": "SRC-WESTERN-LILLY-001",
+  "title": "Christian Astrology, modestly treated of in three books",
+  "creators": [{ "name": "William Lilly", "role": "author" }],
+  "source_type": "book",
+  "language": "en",
+  "publication_date": "1647",
+  "edition_or_version": "1647 first edition",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://wellcomecollection.org/works/s7z7c46y",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "Public Domain Mark 1.0",
+    "url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "allowed",
+    "dataset": "allowed",
+    "notes": "Wellcome Collection marks the digitized work as public domain and permits use for any purpose."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Wellcome Collection displays Public Domain Mark and identifies Book II as the questions section."
+  },
+  "usage_status": "reference_only",
+  "systems": ["western-astrology"],
+  "lineages": ["traditional-horary-feasibility-only"],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Primary historical source for feasibility analysis; no rules or text are shipped in production packages."
+  }
+}

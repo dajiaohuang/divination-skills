@@ -1,0 +1,4 @@
+interface:
+  display_name: "Western Validator"
+  short_description: "Compare Western chart positions with explicit tolerance"
+  default_prompt: "Use $western-validator to compare these charts without overwriting either source."

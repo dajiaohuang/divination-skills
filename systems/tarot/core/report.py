@@ -35,6 +35,10 @@ def build_report(draw: dict[str, Any]) -> dict[str, Any]:
             else "TAROT-ORIENTATION-UPRIGHT-001"
         )
         keywords = card[fact["orientation"]]
+        position_prompt = POSITION_PROMPTS.get(
+            fact["position"],
+            "Use this position as a bounded reflective prompt.",
+        )
         finding_id = f"tarot.finding.card.{number:03d}"
         findings.append(
             {
@@ -55,7 +59,8 @@ def build_report(draw: dict[str, Any]) -> dict[str, Any]:
                 "rule_ids": [orientation_rule, "TAROT-POSITION-001"],
                 "statement": (
                     f"{fact['position']}: {fact['name']} {fact['orientation']} highlights "
-                    f"{', '.join(keywords)}. {POSITION_PROMPTS[fact['position']]}"
+                    f"{', '.join(keywords)}. "
+                    f"{position_prompt}"
                 ),
             }
         )
