@@ -1,0 +1,15 @@
+{
+  "rule_id": "LIUYAO-STRENGTH-PROJECT-001",
+  "title": "Expose month, day, void, and moving strength components",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-project-judgment-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.lines", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "liuyao.structural_strength", "output_path": "line_strength", "value": "transparent_component_score", "confidence": "low" }],
+  "priority": 840,
+  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "systems/liuyao/judgment.py _context_score", "support_type": "direct" }],
+  "tests": ["CASE-LIUYAO-CAST-001"],
+  "notes": "A project heuristic, not an empirical probability or completed traditional judgment."
+}

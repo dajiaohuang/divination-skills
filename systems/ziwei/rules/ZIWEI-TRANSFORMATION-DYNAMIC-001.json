@@ -1,0 +1,39 @@
+{
+  "rule_id": "ZIWEI-TRANSFORMATION-DYNAMIC-001",
+  "title": "Trace dynamic-scope transformations from origin palace to target star and palace",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "timing.layers",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.dynamic_transformation_path",
+      "output_path": "timing.layers.transformations",
+      "value": "origin_target_trace",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 930,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "ten-stem four-transformation formula section",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/timing.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-007"
+  ]
+}

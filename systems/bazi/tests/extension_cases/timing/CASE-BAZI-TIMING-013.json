@@ -1,0 +1,19 @@
+{
+  "case_id": "CASE-BAZI-TIMING-013",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_sha256": "12d0f771d3d1398290a877a60b8c6218270aa15bdcea6790f71937195e89af8f",
+  "input": {
+    "natal": {
+      "day_boundary": "midnight",
+      "local_datetime": "1962-02-05T00:30:00",
+      "luck_cycle_direction": "forward",
+      "timezone": "Asia/Shanghai"
+    },
+    "target_local_datetime": "1992-07-23T12:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "module": "timing",
+  "status": "tested",
+  "system": "bazi"
+}

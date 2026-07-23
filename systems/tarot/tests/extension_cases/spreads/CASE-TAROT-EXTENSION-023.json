@@ -1,0 +1,203 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-023",
+  "raw_input": {
+    "spread": "horseshoe-seven",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000017",
+    "allow_reversals": false
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "horseshoe-seven",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "past_context",
+          "card_id": "tarot.rws.cups-eight",
+          "card_index": 43,
+          "name": "Eight of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "present_context",
+          "card_id": "tarot.rws.swords-five",
+          "card_index": 54,
+          "name": "Five of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "hidden_factor",
+          "card_id": "tarot.rws.cups-ten",
+          "card_index": 45,
+          "name": "Ten of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "obstacle",
+          "card_id": "tarot.rws.wands-nine",
+          "card_index": 30,
+          "name": "Nine of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "external_context",
+          "card_id": "tarot.rws.swords-ace",
+          "card_index": 50,
+          "name": "Ace of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "suggested_focus",
+          "card_id": "tarot.rws.cups-six",
+          "card_index": 41,
+          "name": "Six of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.007",
+          "position": "possible_direction",
+          "card_id": "tarot.rws.wands-three",
+          "card_index": 24,
+          "name": "Three of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.cups-eight",
+        "right_card_id": "tarot.rws.swords-five",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.swords-five",
+        "right_card_id": "tarot.rws.cups-ten",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.cups-ten",
+        "right_card_id": "tarot.rws.wands-nine",
+        "arcana_relation": "same_arcana",
+        "element_relation": "contrasting",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.wands-nine",
+        "right_card_id": "tarot.rws.swords-ace",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.swords-ace",
+        "right_card_id": "tarot.rws.cups-six",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.006",
+        "left_card_id": "tarot.rws.cups-six",
+        "right_card_id": "tarot.rws.wands-three",
+        "arcana_relation": "same_arcana",
+        "element_relation": "contrasting",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 0,
+        "minor": 7
+      },
+      "suit_counts": {
+        "wands": 2,
+        "cups": 3,
+        "swords": 2,
+        "pentacles": 0
+      },
+      "element_counts": {
+        "fire": 2,
+        "water": 3,
+        "air": 2,
+        "earth": 0
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

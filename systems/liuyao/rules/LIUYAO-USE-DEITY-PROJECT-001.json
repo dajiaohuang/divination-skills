@@ -1,0 +1,15 @@
+{
+  "rule_id": "LIUYAO-USE-DEITY-PROJECT-001",
+  "title": "Select candidate use lines from an explicit project question-category pack",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-project-judgment-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [{ "fact_path": "question_category", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "liuyao.use_deity_candidates", "output_path": "use_deity.candidate_line_fact_ids", "value": "explicit_category_selector", "confidence": "low" }],
+  "priority": 850,
+  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "systems/liuyao/judgment.py QUESTION_PACKS", "support_type": "direct" }],
+  "tests": ["CASE-LIUYAO-CAST-001"],
+  "notes": "Project routing policy pending practitioner review; no universal lineage claim."
+}

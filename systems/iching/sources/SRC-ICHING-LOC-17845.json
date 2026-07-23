@@ -1,0 +1,44 @@
+{
+  "source_id": "SRC-ICHING-LOC-17845",
+  "title": "周易注疏 : 十三卷",
+  "creators": [
+    { "name": "Wang Bi", "role": "author" },
+    { "name": "Kong Yingda", "role": "editor" }
+  ],
+  "source_type": "book",
+  "language": "zh-Hant",
+  "publication_date": "1127",
+  "edition_or_version": "Early Southern Song print, Library of Congress item 2021666491",
+  "locators": [{ "kind": "url", "value": "https://www.loc.gov/item/2021666491/", "stable": true }],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "NoKnownRestrictions",
+    "url": "https://www.loc.gov/item/2021666491/",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "allowed",
+    "dataset": "allowed",
+    "notes": "Library of Congress states it is unaware of copyright or other restrictions and the material is free to use and reuse."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Library of Congress Rights & Access statement for item 2021666491."
+  },
+  "usage_status": "production",
+  "systems": ["iching"],
+  "lineages": ["king-wen-classical-source-layer-v0.2"],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Historical scan with commentary layers; passage-image collation is pending."
+  }
+}

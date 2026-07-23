@@ -1,0 +1,462 @@
+{
+  "case_id": "CASE-QIMEN-FULL-BOUNDARY-017",
+  "raw_input": {
+    "local_datetime": "2026-05-05T00:55:00",
+    "timezone": "Asia/Shanghai",
+    "day_boundary": "zi_initial"
+  },
+  "expected_output": {
+    "rotation": {
+      "hour_instrument": "戊",
+      "hour_instrument_earth_palace": 4,
+      "duty_star_origin_palace": 4,
+      "duty_star_target_palace": 4,
+      "duty_door_origin_palace": 4,
+      "duty_door_target_palace": 4,
+      "rotation_direction": "yang",
+      "hour_steps_from_xun_start": 0
+    },
+    "void_branches": [
+      "戌",
+      "亥"
+    ],
+    "palaces": [
+      {
+        "fact_id": "qimen.full.palace.001",
+        "palace": 1,
+        "gua": "坎",
+        "branches": [
+          "子"
+        ],
+        "earth_stem": "丁",
+        "heaven_stems": [
+          {
+            "stem": "丁",
+            "source_palace": 1,
+            "center_hosted": false
+          }
+        ],
+        "stars": [
+          {
+            "name": "天蓬",
+            "source_palace": 1,
+            "duty": false,
+            "center_hosted": false
+          }
+        ],
+        "doors": [
+          {
+            "name": "休门",
+            "source_palace": 1,
+            "duty": false
+          }
+        ],
+        "spirits": [
+          {
+            "name": "玄武",
+            "duty": false
+          }
+        ],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.002",
+        "palace": 2,
+        "gua": "坤",
+        "branches": [
+          "未",
+          "申"
+        ],
+        "earth_stem": "丙",
+        "heaven_stems": [
+          {
+            "stem": "丙",
+            "source_palace": 2,
+            "center_hosted": false
+          },
+          {
+            "stem": "己",
+            "source_palace": 5,
+            "center_hosted": true
+          }
+        ],
+        "stars": [
+          {
+            "name": "天芮",
+            "source_palace": 2,
+            "duty": false,
+            "center_hosted": false
+          },
+          {
+            "name": "天禽",
+            "source_palace": 5,
+            "duty": false,
+            "center_hosted": true
+          }
+        ],
+        "doors": [
+          {
+            "name": "死门",
+            "source_palace": 2,
+            "duty": false
+          }
+        ],
+        "spirits": [
+          {
+            "name": "太阴",
+            "duty": false
+          }
+        ],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [
+          {
+            "stem": "己",
+            "layer": "heaven",
+            "rule_id": "QIMEN-STATE-MARKERS-001"
+          }
+        ],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.003",
+        "palace": 3,
+        "gua": "震",
+        "branches": [
+          "卯"
+        ],
+        "earth_stem": "乙",
+        "heaven_stems": [
+          {
+            "stem": "乙",
+            "source_palace": 3,
+            "center_hosted": false
+          }
+        ],
+        "stars": [
+          {
+            "name": "天冲",
+            "source_palace": 3,
+            "duty": false,
+            "center_hosted": false
+          }
+        ],
+        "doors": [
+          {
+            "name": "伤门",
+            "source_palace": 3,
+            "duty": false
+          }
+        ],
+        "spirits": [
+          {
+            "name": "九天",
+            "duty": false
+          }
+        ],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.004",
+        "palace": 4,
+        "gua": "巽",
+        "branches": [
+          "辰",
+          "巳"
+        ],
+        "earth_stem": "戊",
+        "heaven_stems": [
+          {
+            "stem": "戊",
+            "source_palace": 4,
+            "center_hosted": false
+          }
+        ],
+        "stars": [
+          {
+            "name": "天辅",
+            "source_palace": 4,
+            "duty": true,
+            "center_hosted": false
+          }
+        ],
+        "doors": [
+          {
+            "name": "杜门",
+            "source_palace": 4,
+            "duty": true
+          }
+        ],
+        "spirits": [
+          {
+            "name": "值符",
+            "duty": true
+          }
+        ],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.005",
+        "palace": 5,
+        "gua": "中",
+        "branches": [],
+        "earth_stem": "己",
+        "heaven_stems": [],
+        "stars": [],
+        "doors": [],
+        "spirits": [],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.006",
+        "palace": 6,
+        "gua": "乾",
+        "branches": [
+          "戌",
+          "亥"
+        ],
+        "earth_stem": "庚",
+        "heaven_stems": [
+          {
+            "stem": "庚",
+            "source_palace": 6,
+            "center_hosted": false
+          }
+        ],
+        "stars": [
+          {
+            "name": "天心",
+            "source_palace": 6,
+            "duty": false,
+            "center_hosted": false
+          }
+        ],
+        "doors": [
+          {
+            "name": "开门",
+            "source_palace": 6,
+            "duty": false
+          }
+        ],
+        "spirits": [
+          {
+            "name": "白虎",
+            "duty": false
+          }
+        ],
+        "is_void": true,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.007",
+        "palace": 7,
+        "gua": "兑",
+        "branches": [
+          "酉"
+        ],
+        "earth_stem": "辛",
+        "heaven_stems": [
+          {
+            "stem": "辛",
+            "source_palace": 7,
+            "center_hosted": false
+          }
+        ],
+        "stars": [
+          {
+            "name": "天柱",
+            "source_palace": 7,
+            "duty": false,
+            "center_hosted": false
+          }
+        ],
+        "doors": [
+          {
+            "name": "惊门",
+            "source_palace": 7,
+            "duty": false
+          }
+        ],
+        "spirits": [
+          {
+            "name": "六合",
+            "duty": false
+          }
+        ],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.008",
+        "palace": 8,
+        "gua": "艮",
+        "branches": [
+          "丑",
+          "寅"
+        ],
+        "earth_stem": "壬",
+        "heaven_stems": [
+          {
+            "stem": "壬",
+            "source_palace": 8,
+            "center_hosted": false
+          }
+        ],
+        "stars": [
+          {
+            "name": "天任",
+            "source_palace": 8,
+            "duty": false,
+            "center_hosted": false
+          }
+        ],
+        "doors": [
+          {
+            "name": "生门",
+            "source_palace": 8,
+            "duty": false
+          }
+        ],
+        "spirits": [
+          {
+            "name": "九地",
+            "duty": false
+          }
+        ],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "qimen.full.palace.009",
+        "palace": 9,
+        "gua": "离",
+        "branches": [
+          "午"
+        ],
+        "earth_stem": "癸",
+        "heaven_stems": [
+          {
+            "stem": "癸",
+            "source_palace": 9,
+            "center_hosted": false
+          }
+        ],
+        "stars": [
+          {
+            "name": "天英",
+            "source_palace": 9,
+            "duty": false,
+            "center_hosted": false
+          }
+        ],
+        "doors": [
+          {
+            "name": "景门",
+            "source_palace": 9,
+            "duty": false
+          }
+        ],
+        "spirits": [
+          {
+            "name": "螣蛇",
+            "duty": false
+          }
+        ],
+        "is_void": false,
+        "tomb_entries": [],
+        "instrument_punishments": [],
+        "door_oppressions": [],
+        "rule_ids": [
+          "QIMEN-HEAVEN-STAR-PLATE-001",
+          "QIMEN-DOOR-SPIRIT-PLATE-001",
+          "QIMEN-STATE-MARKERS-001"
+        ],
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ]
+      }
+    ]
+  }
+}

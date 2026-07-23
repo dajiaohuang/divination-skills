@@ -1,3 +1,3 @@
-from .engine import NumerologyError, calculate_profile
+from .engine import CHALDEAN_VALUES, NumerologyError, calculate_profile
 
-__all__ = ["NumerologyError", "calculate_profile"]
+__all__ = ["CHALDEAN_VALUES", "NumerologyError", "calculate_profile"]

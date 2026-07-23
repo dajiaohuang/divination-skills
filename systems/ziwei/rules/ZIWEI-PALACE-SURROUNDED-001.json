@@ -1,0 +1,34 @@
+{
+  "rule_id": "ZIWEI-PALACE-SURROUNDED-001",
+  "title": "Query a palace with its two trines and opposition",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.palaces",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.three_directions_four_alignments",
+      "output_path": "query.palaces",
+      "value": "target_plus_4_6_8",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 900,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/analyzer.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-005"
+  ]
+}

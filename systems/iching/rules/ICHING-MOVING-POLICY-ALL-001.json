@@ -1,0 +1,14 @@
+{
+  "rule_id": "ICHING-MOVING-POLICY-ALL-001",
+  "title": "Select all moving lines with primary and changed structure",
+  "system": "iching",
+  "lineage": "king-wen-classical-source-layer-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [{ "fact_path": "computed_facts.moving_line_positions", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "iching.selected_text_units", "output_path": "selection.selected_units", "value": "all_moving_lines", "confidence": "deterministic" }],
+  "priority": 800,
+  "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "systems/iching/text_layer.py all-moving-lines-v0.2", "support_type": "direct" }],
+  "tests": ["CASE-ICHING-CAST-001"]
+}

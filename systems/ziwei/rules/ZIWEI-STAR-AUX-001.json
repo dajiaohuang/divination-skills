@@ -1,0 +1,44 @@
+{
+  "rule_id": "ZIWEI-STAR-AUX-001",
+  "title": "Place the project-native auxiliary, malefic, romance, and resolution stars",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.raw_dates.year_stem",
+      "operator": "exists"
+    },
+    {
+      "fact_path": "normalized_input.time_index",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.auxiliary_stars",
+      "output_path": "computed_facts.palaces",
+      "value": "catalogued_structural_placements",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 980,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "minor, auxiliary, malefic, romance, and resolution star formula sections",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/star_catalog.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-001",
+    "CASE-ZIWEI-NATAL-002"
+  ]
+}

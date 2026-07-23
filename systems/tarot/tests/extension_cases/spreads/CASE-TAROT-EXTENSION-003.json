@@ -1,0 +1,203 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-003",
+  "raw_input": {
+    "spread": "horseshoe-seven",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000003",
+    "allow_reversals": false
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "horseshoe-seven",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "past_context",
+          "card_id": "tarot.rws.major-02-high-priestess",
+          "card_index": 2,
+          "name": "The High Priestess",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "present_context",
+          "card_id": "tarot.rws.cups-king",
+          "card_index": 49,
+          "name": "King of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "hidden_factor",
+          "card_id": "tarot.rws.swords-three",
+          "card_index": 52,
+          "name": "Three of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "obstacle",
+          "card_id": "tarot.rws.major-05-hierophant",
+          "card_index": 5,
+          "name": "The Hierophant",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "external_context",
+          "card_id": "tarot.rws.wands-six",
+          "card_index": 27,
+          "name": "Six of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "suggested_focus",
+          "card_id": "tarot.rws.pentacles-ten",
+          "card_index": 73,
+          "name": "Ten of Pentacles",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.007",
+          "position": "possible_direction",
+          "card_id": "tarot.rws.major-13-death",
+          "card_index": 13,
+          "name": "Death",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.major-02-high-priestess",
+        "right_card_id": "tarot.rws.cups-king",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.cups-king",
+        "right_card_id": "tarot.rws.swords-three",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.swords-three",
+        "right_card_id": "tarot.rws.major-05-hierophant",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.major-05-hierophant",
+        "right_card_id": "tarot.rws.wands-six",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.wands-six",
+        "right_card_id": "tarot.rws.pentacles-ten",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.006",
+        "left_card_id": "tarot.rws.pentacles-ten",
+        "right_card_id": "tarot.rws.major-13-death",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 3,
+        "minor": 4
+      },
+      "suit_counts": {
+        "wands": 1,
+        "cups": 1,
+        "swords": 1,
+        "pentacles": 1
+      },
+      "element_counts": {
+        "fire": 1,
+        "water": 1,
+        "air": 1,
+        "earth": 1
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

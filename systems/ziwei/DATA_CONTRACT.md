@@ -1,13 +1,21 @@
-# Ziwei data contract v0.1
+# Ziwei data contract v0.4
 
-Input requires offset-free `local_datetime`, IANA `timezone`, and explicit `calculation_gender`
-(`male` or `female`); optional DST `fold` resolves ambiguous civil times. Supported years are
-1900–2099. `calculation_gender` is an algorithm parameter and is never inferred as identity.
+Solar input requires offset-free `local_datetime`; lunar input requires `lunar_date`, boolean
+`is_leap_month`, and a 0–12 `time_index`. Both require IANA `timezone` and explicit
+`calculation_gender`; optional DST `fold` resolves ambiguous civil times. Supported years are
+1900–2099. Input records `year_boundary`, `late_zi_policy`, and `leap_month_policy`.
+`calculation_gender` is an algorithm parameter and is never inferred as identity.
 
-Output records local/UTC time, fold, time index, lunar and sexagenary date facts, zodiac/sign labels,
-命宫/身宫 branches, 命主/身主, 五行局, and twelve palaces. Every palace and star carries a stable fact
-ID and production source ID. Major and minor star placement, 四化 labels, and decade ranges are
-project-native deterministic calculations.
+Output records local/UTC time, calculation date, fold, policy values, time index, lunar and
+sexagenary facts, 命宫/身宫, 命主/身主, 五行局, 来因宫, and twelve palaces. Every palace and star carries
+a stable fact ID and production source IDs. Stars expose category, element, polarity, transformation,
+and an explicit unavailable brightness status. Palaces include decade ranges and minor-limit ages.
 
-The report is structural only. It must not interpret stars, decades, traits, relationships, or
-events. iztro output may be compared during review but must never enter the runtime result.
+Timing output keeps natal facts immutable and places major, minor, annual, monthly, daily, and hourly
+layers in a separate object. Each transformation path records origin palace/stem and target
+star/palace. The shared timeline uses inclusive starts and exclusive ends.
+
+The calculator and timing outputs are structural only. `ziwei-core` is experimental and may explain
+only cited structure; it must not assign fixed events, deterministic fortune, identity, diagnosis,
+or invented brightness. iztro output may be inspected in a developer-only ignored reference but
+must never enter runtime results or Golden Cases.

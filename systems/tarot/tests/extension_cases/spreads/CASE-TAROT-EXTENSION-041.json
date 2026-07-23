@@ -1,0 +1,151 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-041",
+  "raw_input": {
+    "spread": "elemental-five",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000029",
+    "allow_reversals": false
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "elemental-five",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "center",
+          "card_id": "tarot.rws.major-05-hierophant",
+          "card_index": 5,
+          "name": "The Hierophant",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "fire",
+          "card_id": "tarot.rws.wands-two",
+          "card_index": 23,
+          "name": "Two of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "water",
+          "card_id": "tarot.rws.major-11-justice",
+          "card_index": 11,
+          "name": "Justice",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "air",
+          "card_id": "tarot.rws.wands-queen",
+          "card_index": 34,
+          "name": "Queen of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "earth",
+          "card_id": "tarot.rws.pentacles-king",
+          "card_index": 77,
+          "name": "King of Pentacles",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.major-05-hierophant",
+        "right_card_id": "tarot.rws.wands-two",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.wands-two",
+        "right_card_id": "tarot.rws.major-11-justice",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.major-11-justice",
+        "right_card_id": "tarot.rws.wands-queen",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.wands-queen",
+        "right_card_id": "tarot.rws.pentacles-king",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 2,
+        "minor": 3
+      },
+      "suit_counts": {
+        "wands": 2,
+        "cups": 0,
+        "swords": 0,
+        "pentacles": 1
+      },
+      "element_counts": {
+        "fire": 2,
+        "water": 0,
+        "air": 0,
+        "earth": 1
+      },
+      "repeated_ranks": {}
+    }
+  }
+}

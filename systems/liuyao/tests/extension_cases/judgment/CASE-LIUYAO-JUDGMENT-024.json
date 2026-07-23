@@ -1,0 +1,227 @@
+{
+  "case_id": "CASE-LIUYAO-JUDGMENT-024",
+  "case_type": "standard",
+  "raw_input": {
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000018",
+    "local_datetime": "2026-12-24T12:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "arguments": {
+    "question_category": "career",
+    "include_timing": true
+  },
+  "expected_output": {
+    "status": "structural_candidates",
+    "candidate_line_fact_ids": [
+      "iching.cast.line.004"
+    ],
+    "line_strength": [
+      {
+        "fact_id": "liuyao.judgment.strength.line-001",
+        "line_fact_id": "iching.cast.line.001",
+        "month_relation": "same_element",
+        "day_relation": "context_generates_line",
+        "adjustments": [],
+        "structural_score": 3,
+        "band": "supported",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-002",
+        "line_fact_id": "iching.cast.line.002",
+        "month_relation": "context_generates_line",
+        "day_relation": "context_controls_line",
+        "adjustments": [],
+        "structural_score": -1,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-003",
+        "line_fact_id": "iching.cast.line.003",
+        "month_relation": "line_controls_context",
+        "day_relation": "line_generates_context",
+        "adjustments": [],
+        "structural_score": -1,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-004",
+        "line_fact_id": "iching.cast.line.004",
+        "month_relation": "line_generates_context",
+        "day_relation": "same_element",
+        "adjustments": [
+          {
+            "reason": "moving",
+            "delta": 1
+          }
+        ],
+        "structural_score": 2,
+        "band": "supported",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-005",
+        "line_fact_id": "iching.cast.line.005",
+        "month_relation": "line_controls_context",
+        "day_relation": "line_generates_context",
+        "adjustments": [
+          {
+            "reason": "moving",
+            "delta": 1
+          }
+        ],
+        "structural_score": 0,
+        "band": "mixed",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-006",
+        "line_fact_id": "iching.cast.line.006",
+        "month_relation": "context_controls_line",
+        "day_relation": "line_controls_context",
+        "adjustments": [
+          {
+            "reason": "moving",
+            "delta": 1
+          }
+        ],
+        "structural_score": -1,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "moving_changes": [
+      {
+        "fact_id": "liuyao.judgment.change.line-004",
+        "line_fact_id": "iching.cast.line.004",
+        "position_from_bottom": 4,
+        "original_branch": "酉",
+        "original_element": "metal",
+        "changed_najia": "戊申",
+        "changed_branch": "申",
+        "changed_element": "metal",
+        "changed_six_relative": "官鬼",
+        "element_relation": "same",
+        "rule_ids": [
+          "LIUYAO-MOVING-CHANGE-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.change.line-005",
+        "line_fact_id": "iching.cast.line.005",
+        "position_from_bottom": 5,
+        "original_branch": "未",
+        "original_element": "earth",
+        "changed_najia": "戊戌",
+        "changed_branch": "戌",
+        "changed_element": "earth",
+        "changed_six_relative": "妻财",
+        "element_relation": "same",
+        "rule_ids": [
+          "LIUYAO-MOVING-CHANGE-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.change.line-006",
+        "line_fact_id": "iching.cast.line.006",
+        "position_from_bottom": 6,
+        "original_branch": "巳",
+        "original_element": "fire",
+        "changed_najia": "戊子",
+        "changed_branch": "子",
+        "changed_element": "water",
+        "changed_six_relative": "父母",
+        "element_relation": "target_controls_origin",
+        "rule_ids": [
+          "LIUYAO-MOVING-CHANGE-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "timing_pack": {
+      "enabled": true,
+      "candidates": [
+        {
+          "fact_id": "liuyao.judgment.timing.001",
+          "use_line_fact_id": "iching.cast.line.004",
+          "branch": "酉",
+          "trigger": "same_as_use_line",
+          "precision": "branch_only",
+          "rule_ids": [
+            "LIUYAO-TIMING-CANDIDATE-001"
+          ],
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "liuyao.judgment.timing.002",
+          "use_line_fact_id": "iching.cast.line.004",
+          "branch": "卯",
+          "trigger": "clashes_use_line",
+          "precision": "branch_only",
+          "rule_ids": [
+            "LIUYAO-TIMING-CANDIDATE-001"
+          ],
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "liuyao.judgment.timing.003",
+          "use_line_fact_id": "iching.cast.line.004",
+          "branch": "申",
+          "trigger": "same_as_changed_line",
+          "precision": "branch_only",
+          "rule_ids": [
+            "LIUYAO-TIMING-CANDIDATE-001"
+          ],
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ]
+        }
+      ],
+      "precision": "branch_only"
+    }
+  }
+}

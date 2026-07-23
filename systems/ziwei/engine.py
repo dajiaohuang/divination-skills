@@ -3,14 +3,34 @@
 from __future__ import annotations
 
 from copy import deepcopy
-from datetime import UTC
+from datetime import UTC, date, timedelta
 from typing import Any
 
 from divination_skills.time import TimeNormalizationError, localize_strict
-from lunar_python import Solar
+from lunar_python import Lunar, Solar
+
+from systems.ziwei.star_catalog import (
+    CLASSICAL_SOURCE_ID,
+    DOCTOR_CYCLE_NAMES,
+    FIRE_BELL_STARTS,
+    GENERAL_FRONT_CYCLE_NAMES,
+    KUI_YUE_BY_STEM,
+    LIFE_CYCLE_NAMES,
+    LIFE_CYCLE_START,
+    LU_CUN_BY_STEM,
+    TIAN_MA_BY_GROUP,
+    YEAR_FRONT_CYCLE_NAMES,
+    branch_index,
+    group_value,
+    metadata,
+    place_cycle,
+)
 
 SOURCE_ID = "SRC-ZIWEI-PROJECT-SPEC-001"
 CALENDAR_SOURCE_ID = "SRC-ZIWEI-LUNARPY-001"
+LINEAGE = "project-native-ziwei-structural-v0.4"
+SCHEMA_VERSION = "0.4.0"
+ENGINE_VERSION = "0.4.0"
 MIN_YEAR = 1900
 MAX_YEAR = 2099
 
@@ -142,11 +162,16 @@ def _star_positions(
     lunar_day: int,
     time_index: int,
     bureau_number: int,
-) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
+    year_stem: str,
+    year_branch: str,
+    forward: bool,
+    soul_index: int,
+) -> tuple[dict[int, list[str]], dict[int, list[str]], dict[int, list[str]]]:
     ziwei = _ziwei_index(lunar_day, bureau_number)
     tianfu = (4 - ziwei) % 12
     major: dict[int, list[str]] = {index: [] for index in range(12)}
     minor: dict[int, list[str]] = {index: [] for index in range(12)}
+    auxiliary: dict[int, list[str]] = {index: [] for index in range(12)}
     for name, offset in (
         ("紫微", 0),
         ("天机", -1),
@@ -168,13 +193,86 @@ def _star_positions(
     ):
         major[(tianfu + offset) % 12].append(name)
     for name, index in (
-        ("文昌", (10 - time_index) % 12),
-        ("文曲", (4 + time_index) % 12),
-        ("左辅", (3 + lunar_month - 1) % 12),
-        ("右弼", (9 - (lunar_month - 1)) % 12),
+        ("文昌", (8 - time_index) % 12),
+        ("文曲", (2 + time_index) % 12),
+        ("左辅", (2 + lunar_month - 1) % 12),
+        ("右弼", (8 - (lunar_month - 1)) % 12),
     ):
         minor[index].append(name)
-    return major, minor
+
+    lu_cun = branch_index(LU_CUN_BY_STEM[year_stem])
+    kui, yue = KUI_YUE_BY_STEM[year_stem]
+    tian_ma = branch_index(group_value(year_branch, TIAN_MA_BY_GROUP))
+    fire_start, bell_start = group_value(year_branch, FIRE_BELL_STARTS)
+    year_offset = BRANCHES.index(year_branch)
+    left = next(index for index, names in minor.items() if "左辅" in names)
+    right = next(index for index, names in minor.items() if "右弼" in names)
+    role_index = {name: index for index, name in enumerate(PALACE_ROLES)}
+    placements = (
+        ("禄存", lu_cun),
+        ("擎羊", (lu_cun + 1) % 12),
+        ("陀罗", (lu_cun - 1) % 12),
+        ("天魁", branch_index(kui)),
+        ("天钺", branch_index(yue)),
+        ("天马", tian_ma),
+        ("火星", (branch_index(fire_start) + time_index % 12) % 12),
+        ("铃星", (branch_index(bell_start) + time_index % 12) % 12),
+        ("地劫", (branch_index("亥") + time_index % 12) % 12),
+        ("地空", (branch_index("亥") - time_index % 12) % 12),
+        ("天刑", (branch_index("酉") + lunar_month - 1) % 12),
+        ("天姚", (branch_index("丑") + lunar_month - 1) % 12),
+        ("三台", (left + lunar_day - 1) % 12),
+        ("八座", (right - lunar_day + 1) % 12),
+        ("天哭", (branch_index("午") - year_offset) % 12),
+        ("天虚", (branch_index("午") + year_offset) % 12),
+        ("龙池", (branch_index("辰") + year_offset) % 12),
+        ("凤阁", (branch_index("戌") - year_offset) % 12),
+        ("台辅", (branch_index("午") + time_index % 12) % 12),
+        ("封诰", (branch_index("寅") + time_index % 12) % 12),
+        ("红鸾", (branch_index("卯") - year_offset) % 12),
+        ("天喜", (branch_index("卯") - year_offset + 6) % 12),
+        ("天德", (branch_index("酉") + year_offset) % 12),
+        ("月德", (branch_index("子") + year_offset) % 12),
+        ("解神", (branch_index("戌") - year_offset) % 12),
+        ("天伤", (soul_index - role_index["仆役"]) % 12),
+        ("天使", (soul_index - role_index["疾厄"]) % 12),
+    )
+    for name, index in placements:
+        auxiliary[index].append(name)
+
+    life_cycle = place_cycle(
+        LIFE_CYCLE_NAMES,
+        branch_index(
+            LIFE_CYCLE_START[
+                next(
+                    name
+                    for name, number in FIVE_ELEMENT_BUREAUS.values()
+                    if number == bureau_number
+                )
+            ]
+        ),
+        forward,
+    )
+    doctor_cycle = place_cycle(DOCTOR_CYCLE_NAMES, lu_cun, forward)
+    year_front = place_cycle(YEAR_FRONT_CYCLE_NAMES, branch_index(year_branch), True)
+    general_start = branch_index(
+        group_value(
+            year_branch,
+            {
+                frozenset("寅午戌"): "午",
+                frozenset("申子辰"): "子",
+                frozenset("巳酉丑"): "酉",
+                frozenset("亥卯未"): "卯",
+            },
+        )
+    )
+    general_front = place_cycle(GENERAL_FRONT_CYCLE_NAMES, general_start, True)
+    for index in range(12):
+        auxiliary[index].extend(life_cycle[index])
+        auxiliary[index].extend(doctor_cycle[index])
+        auxiliary[index].extend(year_front[index])
+        auxiliary[index].extend(general_front[index])
+    return major, minor, auxiliary
 
 
 def _star(
@@ -183,50 +281,179 @@ def _star(
     kind: str,
     transformations: dict[str, str],
 ) -> dict[str, Any]:
+    attributes = metadata(name)
     return {
         "name": name,
         "type": kind,
+        "category": attributes["category"],
+        "element": attributes["element"],
+        "polarity": attributes["polarity"],
         "brightness": None,
+        "brightness_status": "not_available_in_selected_lineage",
         "mutagen": transformations.get(name),
         "fact_id": fact_id,
-        "source_ids": [SOURCE_ID],
+        "source_ids": [SOURCE_ID, CLASSICAL_SOURCE_ID],
     }
 
 
-def calculate(payload: dict[str, Any]) -> dict[str, Any]:
-    allowed = {"local_datetime", "timezone", "fold", "calculation_gender"}
-    unknown = sorted(set(payload) - allowed)
-    if unknown:
-        raise ZiweiError("unknown_fields", f"Unknown field(s): {', '.join(unknown)}")
-    missing = sorted({"local_datetime", "timezone", "calculation_gender"} - set(payload))
-    if missing:
-        raise ZiweiError("missing_fields", f"Missing field(s): {', '.join(missing)}")
-    gender = payload["calculation_gender"]
-    if gender not in {"male", "female"}:
-        raise ZiweiError("invalid_calculation_gender", "calculation_gender must be male or female.")
-    try:
-        local, fold = localize_strict(
-            payload["local_datetime"], payload["timezone"], payload.get("fold")
+def _representative_hour(time_index: int) -> int:
+    if time_index == 0:
+        return 0
+    if time_index == 12:
+        return 23
+    return time_index * 2 - 1
+
+
+def _normalize_input(
+    payload: dict[str, Any],
+) -> tuple[Any, int, Any, Any, int, dict[str, str]]:
+    calendar_type = payload.get("calendar_type", "solar")
+    if calendar_type not in {"solar", "lunar"}:
+        raise ZiweiError("invalid_calendar_type", "calendar_type must be solar or lunar.")
+    timezone = payload.get("timezone")
+    if not isinstance(timezone, str) or not timezone:
+        raise ZiweiError("missing_fields", "Missing field(s): timezone")
+
+    if calendar_type == "solar":
+        if "local_datetime" not in payload:
+            raise ZiweiError("missing_fields", "Missing field(s): local_datetime")
+        if any(field in payload for field in ("lunar_date", "is_leap_month", "time_index")):
+            raise ZiweiError(
+                "conflicting_calendar_fields",
+                "Solar input cannot include lunar_date, is_leap_month, or time_index.",
+            )
+        local_datetime = payload["local_datetime"]
+    else:
+        missing = sorted({"lunar_date", "is_leap_month", "time_index"} - set(payload))
+        if missing:
+            raise ZiweiError("missing_fields", f"Missing field(s): {', '.join(missing)}")
+        if "local_datetime" in payload:
+            raise ZiweiError(
+                "conflicting_calendar_fields",
+                "Lunar input cannot include local_datetime.",
+            )
+        if not isinstance(payload["is_leap_month"], bool):
+            raise ZiweiError("invalid_leap_month_flag", "is_leap_month must be boolean.")
+        time_index = payload["time_index"]
+        if (
+            not isinstance(time_index, int)
+            or isinstance(time_index, bool)
+            or time_index not in range(13)
+        ):
+            raise ZiweiError("invalid_time_index", "time_index must be an integer from 0 to 12.")
+        try:
+            lunar_date = date.fromisoformat(payload["lunar_date"])
+            lunar_month = -lunar_date.month if payload["is_leap_month"] else lunar_date.month
+            source_lunar = Lunar.fromYmd(lunar_date.year, lunar_month, lunar_date.day)
+            source_solar = source_lunar.getSolar()
+        except (TypeError, ValueError, IndexError) as exc:
+            raise ZiweiError("invalid_lunar_date", "lunar_date is not valid.") from exc
+        if source_lunar.getMonth() != lunar_month:
+            raise ZiweiError(
+                "invalid_leap_month",
+                "The requested leap-month flag does not exist for this lunar date.",
+            )
+        hour = _representative_hour(time_index)
+        local_datetime = (
+            f"{source_solar.getYear():04d}-{source_solar.getMonth():02d}-"
+            f"{source_solar.getDay():02d}T{hour:02d}:00:00"
         )
+
+    try:
+        local, fold = localize_strict(local_datetime, timezone, payload.get("fold"))
     except TimeNormalizationError as exc:
         raise ZiweiError(exc.code, exc.message) from exc
     if not MIN_YEAR <= local.year <= MAX_YEAR:
         raise ZiweiError("unsupported_year", f"year must be between {MIN_YEAR} and {MAX_YEAR}.")
 
+    late_zi_policy = payload.get("late_zi_policy", "current_day")
+    year_boundary = payload.get("year_boundary", "lunar_new_year")
+    leap_month_policy = payload.get("leap_month_policy", "preserve")
+    if late_zi_policy not in {"current_day", "next_day"}:
+        raise ZiweiError(
+            "invalid_late_zi_policy",
+            "late_zi_policy must be current_day or next_day.",
+        )
+    if year_boundary not in {"lunar_new_year", "spring_commences"}:
+        raise ZiweiError(
+            "invalid_year_boundary",
+            "year_boundary must be lunar_new_year or spring_commences.",
+        )
+    if leap_month_policy not in {"preserve", "split_after_15"}:
+        raise ZiweiError(
+            "invalid_leap_month_policy",
+            "leap_month_policy must be preserve or split_after_15.",
+        )
+
     time_index = _time_index(local.hour)
+    basis_local = (
+        local + timedelta(days=1)
+        if time_index == 12 and late_zi_policy == "next_day"
+        else local
+    )
     solar = Solar.fromYmdHms(
-        local.year,
-        local.month,
-        local.day,
-        local.hour,
-        local.minute,
-        local.second,
+        basis_local.year,
+        basis_local.month,
+        basis_local.day,
+        basis_local.hour,
+        basis_local.minute,
+        basis_local.second,
     )
     lunar = solar.getLunar()
-    lunar_month = abs(lunar.getMonth())
+    return (
+        local,
+        fold,
+        solar,
+        lunar,
+        time_index,
+        {
+            "calendar_type": calendar_type,
+            "year_boundary": year_boundary,
+            "late_zi_policy": late_zi_policy,
+            "leap_month_policy": leap_month_policy,
+        },
+    )
+
+
+def calculate(payload: dict[str, Any]) -> dict[str, Any]:
+    allowed = {
+        "calendar_type",
+        "local_datetime",
+        "lunar_date",
+        "is_leap_month",
+        "time_index",
+        "timezone",
+        "fold",
+        "calculation_gender",
+        "year_boundary",
+        "late_zi_policy",
+        "leap_month_policy",
+    }
+    unknown = sorted(set(payload) - allowed)
+    if unknown:
+        raise ZiweiError("unknown_fields", f"Unknown field(s): {', '.join(unknown)}")
+    missing = sorted({"timezone", "calculation_gender"} - set(payload))
+    if missing:
+        raise ZiweiError("missing_fields", f"Missing field(s): {', '.join(missing)}")
+    gender = payload["calculation_gender"]
+    if gender not in {"male", "female"}:
+        raise ZiweiError("invalid_calculation_gender", "calculation_gender must be male or female.")
+    local, fold, solar, lunar, time_index, policies = _normalize_input(payload)
+    calendar_lunar_month = abs(lunar.getMonth())
     lunar_day = lunar.getDay()
-    year_stem = lunar.getYearGan()
-    year_branch = lunar.getYearZhi()
+    lunar_month = (
+        calendar_lunar_month % 12 + 1
+        if lunar.getMonth() < 0
+        and policies["leap_month_policy"] == "split_after_15"
+        and lunar_day > 15
+        else calendar_lunar_month
+    )
+    if policies["year_boundary"] == "spring_commences":
+        year_stem = lunar.getYearGanByLiChun()
+        year_branch = lunar.getYearZhiByLiChun()
+    else:
+        year_stem = lunar.getYearGan()
+        year_branch = lunar.getYearZhi()
     year_stem_index = STEMS.index(year_stem)
     soul_index = (lunar_month - 1 - time_index) % 12
     body_index = (lunar_month - 1 + time_index) % 12
@@ -234,10 +461,36 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
     five_elements_class, bureau_number = _five_elements_class(
         stems[soul_index], PALACE_BRANCHES[soul_index]
     )
-    major, minor = _star_positions(lunar_month, lunar_day, time_index, bureau_number)
-    transformations = dict(zip(TRANSFORMATIONS[year_stem], TRANSFORMATION_LABELS, strict=True))
     yang_year = year_stem_index % 2 == 0
     forward = (yang_year and gender == "male") or (not yang_year and gender == "female")
+    major, minor, auxiliary = _star_positions(
+        lunar_month,
+        lunar_day,
+        time_index,
+        bureau_number,
+        year_stem,
+        year_branch,
+        forward,
+        soul_index,
+    )
+    transformations = dict(zip(TRANSFORMATIONS[year_stem], TRANSFORMATION_LABELS, strict=True))
+
+    minor_limit_start = branch_index(
+        group_value(
+            year_branch,
+            {
+                frozenset("寅午戌"): "辰",
+                frozenset("申子辰"): "戌",
+                frozenset("巳酉丑"): "未",
+                frozenset("亥卯未"): "丑",
+            },
+        )
+    )
+    minor_limit_forward = gender == "male"
+    minor_limit_by_palace = {index: [] for index in range(12)}
+    for age in range(1, 121):
+        step = age - 1 if minor_limit_forward else -(age - 1)
+        minor_limit_by_palace[(minor_limit_start + step) % 12].append(age)
 
     palaces = []
     for index, branch in enumerate(PALACE_BRANCHES):
@@ -271,25 +524,40 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                     for number, name in enumerate(minor[index], start=1)
                 ],
                 "adjectiveStars": [],
+                "auxiliaryStars": [
+                    _star(
+                        name,
+                        f"{fact_id}.auxiliaryStars.{number:03d}",
+                        "auxiliary",
+                        transformations,
+                    )
+                    for number, name in enumerate(auxiliary[index], start=1)
+                ],
                 "decadal": {
                     "start_age": bureau_number + decade_slot * 10,
                     "end_age": bureau_number + decade_slot * 10 + 9,
                     "direction": "forward" if forward else "reverse",
                 },
+                "minor_limit_ages": minor_limit_by_palace[index],
                 "fact_id": fact_id,
-                "source_ids": [SOURCE_ID],
+                "source_ids": [SOURCE_ID, CLASSICAL_SOURCE_ID],
             }
         )
 
     lunar_month_label = ("闰" if lunar.getMonth() < 0 else "") + lunar.getMonthInChinese()
+    cause_palace = next(
+        (palace for palace in palaces if palace["heavenlyStem"] == year_stem),
+        None,
+    )
     return {
-        "schema_version": "0.1.0",
+        "schema_version": SCHEMA_VERSION,
         "engine": {
             "name": "divination-skills-ziwei-native",
-            "version": "0.1.0",
+            "version": ENGINE_VERSION,
             "dependencies": {"lunar_python": "1.4.8"},
             "source_ids": [
                 SOURCE_ID,
+                CLASSICAL_SOURCE_ID,
                 CALENDAR_SOURCE_ID,
                 "SRC-TIME-PYTHON-ZONEINFO-001",
                 "SRC-TIME-TZDATA-001",
@@ -303,10 +571,17 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
             "calculation_gender": gender,
             "time_index": time_index,
             "calendar_leap_month": lunar.getMonth() < 0,
-            "lineage": "project-native-ziwei-foundation-v0.1",
+            "effective_lunar_month": lunar_month,
+            "calendar_type": policies["calendar_type"],
+            "year_boundary": policies["year_boundary"],
+            "late_zi_policy": policies["late_zi_policy"],
+            "leap_month_policy": policies["leap_month_policy"],
+            "lineage": LINEAGE,
         },
         "computed_facts": {
-            "solar_date": f"{local.year}-{local.month:02d}-{local.day:02d}",
+            "solar_date": (
+                f"{solar.getYear():04d}-{solar.getMonth():02d}-{solar.getDay():02d}"
+            ),
             "lunar_date": f"{lunar.getYear()}年{lunar_month_label}月{lunar.getDayInChinese()}",
             "chinese_date": f"{lunar.getYearInGanZhi()}年 {lunar.getTimeInGanZhi()}时",
             "raw_dates": {
@@ -315,6 +590,8 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 "lunar_day": lunar_day,
                 "year_stem": year_stem,
                 "year_branch": year_branch,
+                "calendar_year_stem": lunar.getYearGan(),
+                "calendar_year_branch": lunar.getYearZhi(),
             },
             "time_label": TIME_BRANCHES[time_index],
             "time_range": TIME_RANGES[time_index],
@@ -326,6 +603,15 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
             "body_ruler": BODY_RULERS[year_branch],
             "five_elements_class": five_elements_class,
             "bureau_number": bureau_number,
+            "cause_palace": (
+                {
+                    "palace_fact_id": cause_palace["fact_id"],
+                    "palace_name": cause_palace["name"],
+                    "heavenly_stem": cause_palace["heavenlyStem"],
+                }
+                if cause_palace
+                else None
+            ),
             "palaces": palaces,
         },
         "derived_findings": [],
@@ -348,9 +634,16 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                     ),
                 },
                 {
+                    "code": "brightness_unavailable",
+                    "message": (
+                        "Brightness is explicitly unavailable in this lineage version; "
+                        "no brightness values are inferred."
+                    ),
+                },
+                {
                     "code": "foundation_only",
                     "message": (
-                        "This project-native v0.1 calculates a bounded structural foundation "
+                        "This project-native v0.4 calculates a bounded structural foundation "
                         "and requires independent practitioner comparison."
                     ),
                 },

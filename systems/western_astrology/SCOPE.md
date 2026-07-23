@@ -1,5 +1,5 @@
-# Western astrology v0.1 scope
+# Western astrology v0.2 scope
 
-Supported: tropical geocentric true-ecliptic-of-date longitudes for Sun, Moon, Mercury through Pluto; IANA time zones; Ascendant and Midheaven from coordinates; whole-sign or equal houses; fixed-orb major aspects; retrograde speed; structured natal facts and bounded symbolic explanation.
+Supported: tropical geocentric true-ecliptic-of-date longitudes for Sun, Moon, Mercury through Pluto; IANA time zones; Ascendant and Midheaven from coordinates; whole-sign or equal houses; fixed-orb major aspects; retrograde speed; structured natal facts and bounded symbolic explanation; JSON/CSV import; tolerance-aware validation; transit-to-natal aspects; solved annual solar returns; directional synastry house overlays; symmetric cross-chart aspects; and retained-event birth-time interval scanning.
 
-Not supported: Placidus or other quadrant houses, lunar nodes, Chiron, asteroids, fixed stars, dignities, lots, progressions, directions, solar returns, transits, synastry, composite charts, horary, mundane astrology, predictive events, or high-impact decisions. Those require separate lineage, calculation, licensing, and Golden Set gates.
+Not supported: Placidus or other quadrant houses, lunar nodes, Chiron, asteroids, fixed stars, dignities, lots, progressions, directions, composite charts, horary, mundane astrology, predictive events, compatibility scoring, OCR/PDF import, unique-minute rectification, or high-impact decisions. Progressions, directions, and horary require separate lineage, calculation, licensing, and Golden Set gates.

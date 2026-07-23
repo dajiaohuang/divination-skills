@@ -1,0 +1,15 @@
+{
+  "rule_id": "RUNES-MODERN-REFLECTION-LAYER-001",
+  "title": "Keep project-authored modern prompts in a separate lineage",
+  "system": "runes",
+  "lineage": "elder-futhark-project-reflection-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "computed_facts.symbols", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "runes.modern_reflection", "output_path": "modern_reflection", "value": "project_authored_keywords", "confidence": "low" }],
+  "priority": 700,
+  "sources": [{ "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "systems/runes/data/deck.json", "support_type": "direct" }],
+  "tests": ["CASE-RUNES-DRAW-001"],
+  "notes": "Modern symbolic prompts, not historical reconstruction."
+}

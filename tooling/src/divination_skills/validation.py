@@ -24,6 +24,15 @@ SCHEMA_FILES = {
     "disputes": "dispute.schema.json",
 }
 
+CONTRACT_SCHEMA_FILES = {
+    "reading-session": "reading-session.schema.json",
+    "chart-import": "chart-import.schema.json",
+    "confidence-profile": "confidence-profile.schema.json",
+    "timeline": "timeline.schema.json",
+    "comparison": "comparison.schema.json",
+    "report-profile": "report-profile.schema.json",
+}
+
 ID_FIELDS = {
     "sources": "source_id",
     "rules": "rule_id",
@@ -85,6 +94,41 @@ def load_schemas(root: Path) -> dict[str, Document]:
         Draft202012Validator.check_schema(schema)
         schemas[kind] = schema
     return schemas
+
+
+def load_contract_schemas(root: Path) -> dict[str, Document]:
+    """Load and self-check the cross-system contract schemas."""
+
+    schema_dir = root / "common" / "schemas"
+    schemas: dict[str, Document] = {}
+    for kind, filename in CONTRACT_SCHEMA_FILES.items():
+        schema = load_json(schema_dir / filename)
+        Draft202012Validator.check_schema(schema)
+        schemas[kind] = schema
+    return schemas
+
+
+def validate_contract_examples(
+    root: Path, schemas: dict[str, Document]
+) -> list[ValidationIssue]:
+    """Require one valid canonical example for every cross-system contract."""
+
+    issues: list[ValidationIssue] = []
+    example_dir = root / "common" / "examples" / "contracts"
+    checker = FormatChecker()
+    for kind, schema in schemas.items():
+        path = example_dir / f"{kind}.json"
+        relative = str(path.relative_to(root))
+        try:
+            document = load_json(path)
+        except (OSError, ValueError, json.JSONDecodeError) as exc:
+            issues.append(ValidationIssue(relative, str(exc)))
+            continue
+        validator = Draft202012Validator(schema, format_checker=checker)
+        for error in sorted(validator.iter_errors(document), key=lambda item: list(item.path)):
+            location = _format_json_path(error.path)
+            issues.append(ValidationIssue(f"{relative}:{location}", error.message))
+    return issues
 
 
 def _document_directories(root: Path, include_examples: bool) -> dict[str, list[Path]]:
@@ -455,10 +499,12 @@ def validate_repository(root: Path, include_examples: bool = True) -> list[Valid
     root = root.resolve()
     try:
         schemas = load_schemas(root)
+        contract_schemas = load_contract_schemas(root)
     except (OSError, ValueError, SchemaError) as exc:
         return [ValidationIssue("common/schemas", f"schema loading failed: {exc}")]
 
     documents, issues = discover_documents(root, include_examples=include_examples)
+    issues.extend(validate_contract_examples(root, contract_schemas))
     issues.extend(validate_document_schemas(root, schemas, documents))
     issues.extend(validate_cross_references(root, documents))
     issues.extend(validate_system_completeness(root))

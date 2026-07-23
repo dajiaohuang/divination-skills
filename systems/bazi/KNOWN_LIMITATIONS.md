@@ -7,3 +7,8 @@
 - Luck-cycle start age is a method-specific decimal, not a universally accepted calendar timestamp.
 - The optional project seasonal-support score is an engineering baseline, not an expert-approved canonical strength judgment. It is off by default and cannot support structure, useful-god, climate, or event-timing claims.
 - Synthetic development cases are not evidence of predictive validity.
+- Timing relations are structural activations and do not predict events.
+- Synastry facts do not score compatibility or infer intent, fidelity, or outcome.
+- Rectification scans double-hour ranges only and returns `underdetermined` when retained events
+  cannot separate candidates; it cannot establish a unique minute.
+- Reader and validator accept structured JSON or explicit four-pillar text only, not OCR/PDF.

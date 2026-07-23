@@ -1,4 +1,4 @@
-# Western astrology data contract v0.1
+# Western astrology data contract v0.2
 
 Input requires offset-free `local_datetime`, IANA `timezone`, longitude, latitude, and optional DST `fold`. `house_system` is `whole_sign` by default or explicit `equal`. The supported civil-year range is 1900–2100.
 

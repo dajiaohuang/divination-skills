@@ -1,0 +1,34 @@
+{
+  "rule_id": "BAZI-SYNASTRY-SYMMETRIC-001",
+  "title": "Keep cross-chart branch relations symmetric",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "chart_refs",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "bazi.symmetric_cross_chart",
+      "output_path": "symmetric",
+      "value": "cross_chart_branch_relations",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 925,
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+      "locator": "systems/bazi/synastry.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-BAZI-STANDARD-006"
+  ]
+}

@@ -1,0 +1,1667 @@
+{
+  "accepted": false,
+  "candidate_id": "ZIWEI-EXPERT-CANDIDATE-002",
+  "candidate_report": {
+    "findings": [
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.000.auxiliaryStars.001",
+          "ziwei.palace.000.auxiliaryStars.002",
+          "ziwei.palace.000.auxiliaryStars.003",
+          "ziwei.palace.000.auxiliaryStars.004",
+          "ziwei.palace.000.auxiliaryStars.005",
+          "ziwei.palace.000.auxiliaryStars.006",
+          "ziwei.palace.000.majorStars.001",
+          "ziwei.palace.004",
+          "ziwei.palace.006",
+          "ziwei.palace.008"
+        ],
+        "finding_id": "ziwei.finding.core.palace-000",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.wellbeing"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.001.auxiliaryStars.001",
+          "ziwei.palace.001.auxiliaryStars.002",
+          "ziwei.palace.001.auxiliaryStars.003",
+          "ziwei.palace.001.auxiliaryStars.004",
+          "ziwei.palace.001.auxiliaryStars.005",
+          "ziwei.palace.001.majorStars.001",
+          "ziwei.palace.001.minorStars.001",
+          "ziwei.palace.005",
+          "ziwei.palace.007",
+          "ziwei.palace.009"
+        ],
+        "finding_id": "ziwei.finding.core.palace-001",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.property"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.002",
+          "ziwei.palace.002.auxiliaryStars.001",
+          "ziwei.palace.002.auxiliaryStars.002",
+          "ziwei.palace.002.auxiliaryStars.003",
+          "ziwei.palace.002.auxiliaryStars.004",
+          "ziwei.palace.002.auxiliaryStars.005",
+          "ziwei.palace.002.majorStars.001",
+          "ziwei.palace.002.majorStars.002",
+          "ziwei.palace.006",
+          "ziwei.palace.008",
+          "ziwei.palace.010"
+        ],
+        "finding_id": "ziwei.finding.core.palace-002",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.career"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.003",
+          "ziwei.palace.003.auxiliaryStars.001",
+          "ziwei.palace.003.auxiliaryStars.002",
+          "ziwei.palace.003.auxiliaryStars.003",
+          "ziwei.palace.003.auxiliaryStars.004",
+          "ziwei.palace.003.auxiliaryStars.005",
+          "ziwei.palace.003.auxiliaryStars.006",
+          "ziwei.palace.003.auxiliaryStars.007",
+          "ziwei.palace.003.majorStars.001",
+          "ziwei.palace.003.majorStars.002",
+          "ziwei.palace.003.minorStars.001",
+          "ziwei.palace.007",
+          "ziwei.palace.009",
+          "ziwei.palace.011"
+        ],
+        "finding_id": "ziwei.finding.core.palace-003",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.associates"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.004",
+          "ziwei.palace.004.auxiliaryStars.001",
+          "ziwei.palace.004.auxiliaryStars.002",
+          "ziwei.palace.004.auxiliaryStars.003",
+          "ziwei.palace.004.auxiliaryStars.004",
+          "ziwei.palace.004.auxiliaryStars.005",
+          "ziwei.palace.004.auxiliaryStars.006",
+          "ziwei.palace.004.majorStars.001",
+          "ziwei.palace.008",
+          "ziwei.palace.010"
+        ],
+        "finding_id": "ziwei.finding.core.palace-004",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.travel"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.005",
+          "ziwei.palace.005.auxiliaryStars.001",
+          "ziwei.palace.005.auxiliaryStars.002",
+          "ziwei.palace.005.auxiliaryStars.003",
+          "ziwei.palace.005.auxiliaryStars.004",
+          "ziwei.palace.005.auxiliaryStars.005",
+          "ziwei.palace.005.auxiliaryStars.006",
+          "ziwei.palace.005.auxiliaryStars.007",
+          "ziwei.palace.009",
+          "ziwei.palace.011"
+        ],
+        "finding_id": "ziwei.finding.core.palace-005",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.health"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.002",
+          "ziwei.palace.006",
+          "ziwei.palace.006.auxiliaryStars.001",
+          "ziwei.palace.006.auxiliaryStars.002",
+          "ziwei.palace.006.auxiliaryStars.003",
+          "ziwei.palace.006.auxiliaryStars.004",
+          "ziwei.palace.006.auxiliaryStars.005",
+          "ziwei.palace.006.auxiliaryStars.006",
+          "ziwei.palace.006.auxiliaryStars.007",
+          "ziwei.palace.006.auxiliaryStars.008",
+          "ziwei.palace.006.majorStars.001",
+          "ziwei.palace.010"
+        ],
+        "finding_id": "ziwei.finding.core.palace-006",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.wealth"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.003",
+          "ziwei.palace.007",
+          "ziwei.palace.007.auxiliaryStars.001",
+          "ziwei.palace.007.auxiliaryStars.002",
+          "ziwei.palace.007.auxiliaryStars.003",
+          "ziwei.palace.007.auxiliaryStars.004",
+          "ziwei.palace.007.auxiliaryStars.005",
+          "ziwei.palace.007.auxiliaryStars.006",
+          "ziwei.palace.007.auxiliaryStars.007",
+          "ziwei.palace.007.majorStars.001",
+          "ziwei.palace.007.majorStars.002",
+          "ziwei.palace.007.minorStars.001",
+          "ziwei.palace.011"
+        ],
+        "finding_id": "ziwei.finding.core.palace-007",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.children"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.002",
+          "ziwei.palace.004",
+          "ziwei.palace.008",
+          "ziwei.palace.008.auxiliaryStars.001",
+          "ziwei.palace.008.auxiliaryStars.002",
+          "ziwei.palace.008.auxiliaryStars.003",
+          "ziwei.palace.008.auxiliaryStars.004",
+          "ziwei.palace.008.auxiliaryStars.005",
+          "ziwei.palace.008.auxiliaryStars.006",
+          "ziwei.palace.008.auxiliaryStars.007"
+        ],
+        "finding_id": "ziwei.finding.core.palace-008",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.spouse"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.003",
+          "ziwei.palace.005",
+          "ziwei.palace.009",
+          "ziwei.palace.009.auxiliaryStars.001",
+          "ziwei.palace.009.auxiliaryStars.002",
+          "ziwei.palace.009.auxiliaryStars.003",
+          "ziwei.palace.009.auxiliaryStars.004",
+          "ziwei.palace.009.auxiliaryStars.005",
+          "ziwei.palace.009.auxiliaryStars.006",
+          "ziwei.palace.009.majorStars.001",
+          "ziwei.palace.009.minorStars.001"
+        ],
+        "finding_id": "ziwei.finding.core.palace-009",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.siblings"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.002",
+          "ziwei.palace.004",
+          "ziwei.palace.006",
+          "ziwei.palace.010",
+          "ziwei.palace.010.auxiliaryStars.001",
+          "ziwei.palace.010.auxiliaryStars.002",
+          "ziwei.palace.010.auxiliaryStars.003",
+          "ziwei.palace.010.auxiliaryStars.004",
+          "ziwei.palace.010.auxiliaryStars.005",
+          "ziwei.palace.010.auxiliaryStars.006",
+          "ziwei.palace.010.majorStars.001"
+        ],
+        "finding_id": "ziwei.finding.core.palace-010",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.life"
+      },
+      {
+        "confidence": "medium",
+        "fact_ids": [
+          "ziwei.palace.003",
+          "ziwei.palace.005",
+          "ziwei.palace.007",
+          "ziwei.palace.011",
+          "ziwei.palace.011.auxiliaryStars.001",
+          "ziwei.palace.011.auxiliaryStars.002",
+          "ziwei.palace.011.auxiliaryStars.003",
+          "ziwei.palace.011.auxiliaryStars.004",
+          "ziwei.palace.011.auxiliaryStars.005",
+          "ziwei.palace.011.majorStars.001",
+          "ziwei.palace.011.majorStars.002"
+        ],
+        "finding_id": "ziwei.finding.core.palace-011",
+        "finding_type": "ziwei.structural_palace_summary",
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "status": "experimental",
+        "term_id": "ziwei.palace.parents"
+      }
+    ],
+    "lineage": "project-native-ziwei-structural-v0.4",
+    "locale": "zh-Hans",
+    "palace_stem_transformation_paths": [
+      {
+        "origin_palace_fact_id": "ziwei.palace.000",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.004",
+        "target_star": "太阳",
+        "target_star_fact_id": "ziwei.palace.004.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.000",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "武曲",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.000",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.010",
+        "target_star": "太阴",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.000",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.002",
+        "target_star": "天同",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.001",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.000",
+        "target_star": "巨门",
+        "target_star_fact_id": "ziwei.palace.000.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.001",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.004",
+        "target_star": "太阳",
+        "target_star_fact_id": "ziwei.palace.004.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.001",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "文曲",
+        "target_star_fact_id": "ziwei.palace.003.minorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.001",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "文昌",
+        "target_star_fact_id": "ziwei.palace.007.minorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.002",
+        "origin_stem": "壬",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": true,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.002",
+        "target_star": "天梁",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.002",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.002",
+        "origin_stem": "壬",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "紫微",
+        "target_star_fact_id": "ziwei.palace.007.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.002",
+        "origin_stem": "壬",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.001",
+        "target_star": "左辅",
+        "target_star_fact_id": "ziwei.palace.001.minorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.002",
+        "origin_stem": "壬",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "武曲",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.003",
+        "origin_stem": "癸",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "破军",
+        "target_star_fact_id": "ziwei.palace.007.majorStars.002",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.003",
+        "origin_stem": "癸",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.000",
+        "target_star": "巨门",
+        "target_star_fact_id": "ziwei.palace.000.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.003",
+        "origin_stem": "癸",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.010",
+        "target_star": "太阴",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.003",
+        "origin_stem": "癸",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.011",
+        "target_star": "贪狼",
+        "target_star_fact_id": "ziwei.palace.011.majorStars.002",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.004",
+        "origin_stem": "甲",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.011",
+        "target_star": "廉贞",
+        "target_star_fact_id": "ziwei.palace.011.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.004",
+        "origin_stem": "甲",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "破军",
+        "target_star_fact_id": "ziwei.palace.007.majorStars.002",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.004",
+        "origin_stem": "甲",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "武曲",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.004",
+        "origin_stem": "甲",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": true,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.004",
+        "target_star": "太阳",
+        "target_star_fact_id": "ziwei.palace.004.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.005",
+        "origin_stem": "乙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.006",
+        "target_star": "天机",
+        "target_star_fact_id": "ziwei.palace.006.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.005",
+        "origin_stem": "乙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.002",
+        "target_star": "天梁",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.002",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.005",
+        "origin_stem": "乙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "紫微",
+        "target_star_fact_id": "ziwei.palace.007.majorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.005",
+        "origin_stem": "乙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.010",
+        "target_star": "太阴",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.006",
+        "origin_stem": "丙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.002",
+        "target_star": "天同",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.006",
+        "origin_stem": "丙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": true,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.006",
+        "target_star": "天机",
+        "target_star_fact_id": "ziwei.palace.006.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.006",
+        "origin_stem": "丙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "文昌",
+        "target_star_fact_id": "ziwei.palace.007.minorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.006",
+        "origin_stem": "丙",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.011",
+        "target_star": "廉贞",
+        "target_star_fact_id": "ziwei.palace.011.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.007",
+        "origin_stem": "丁",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.010",
+        "target_star": "太阴",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.007",
+        "origin_stem": "丁",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.002",
+        "target_star": "天同",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.007",
+        "origin_stem": "丁",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.006",
+        "target_star": "天机",
+        "target_star_fact_id": "ziwei.palace.006.majorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.007",
+        "origin_stem": "丁",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.000",
+        "target_star": "巨门",
+        "target_star_fact_id": "ziwei.palace.000.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.008",
+        "origin_stem": "戊",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.011",
+        "target_star": "贪狼",
+        "target_star_fact_id": "ziwei.palace.011.majorStars.002",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.008",
+        "origin_stem": "戊",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.010",
+        "target_star": "太阴",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.008",
+        "origin_stem": "戊",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.009",
+        "target_star": "右弼",
+        "target_star_fact_id": "ziwei.palace.009.minorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.008",
+        "origin_stem": "戊",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.006",
+        "target_star": "天机",
+        "target_star_fact_id": "ziwei.palace.006.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.009",
+        "origin_stem": "己",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "武曲",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.009",
+        "origin_stem": "己",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.011",
+        "target_star": "贪狼",
+        "target_star_fact_id": "ziwei.palace.011.majorStars.002",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.009",
+        "origin_stem": "己",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.002",
+        "target_star": "天梁",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.002",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.009",
+        "origin_stem": "己",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "文曲",
+        "target_star_fact_id": "ziwei.palace.003.minorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.010",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.004",
+        "target_star": "太阳",
+        "target_star_fact_id": "ziwei.palace.004.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.010",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "武曲",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.010",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": true,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.010",
+        "target_star": "太阴",
+        "target_star_fact_id": "ziwei.palace.010.majorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.010",
+        "origin_stem": "庚",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.002",
+        "target_star": "天同",
+        "target_star_fact_id": "ziwei.palace.002.majorStars.001",
+        "transformation": "忌"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.011",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.000",
+        "target_star": "巨门",
+        "target_star_fact_id": "ziwei.palace.000.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.011",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.004",
+        "target_star": "太阳",
+        "target_star_fact_id": "ziwei.palace.004.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.011",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "文曲",
+        "target_star_fact_id": "ziwei.palace.003.minorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": "ziwei.palace.011",
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+        ],
+        "scope": "palace_stem",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "文昌",
+        "target_star_fact_id": "ziwei.palace.007.minorStars.001",
+        "transformation": "忌"
+      }
+    ],
+    "schema_version": "0.4.0",
+    "sections": [
+      {
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.000.auxiliaryStars.001",
+          "ziwei.palace.000.auxiliaryStars.002",
+          "ziwei.palace.000.auxiliaryStars.003",
+          "ziwei.palace.000.auxiliaryStars.004",
+          "ziwei.palace.000.auxiliaryStars.005",
+          "ziwei.palace.000.auxiliaryStars.006",
+          "ziwei.palace.000.majorStars.001",
+          "ziwei.palace.004",
+          "ziwei.palace.006",
+          "ziwei.palace.008"
+        ],
+        "is_empty_major_palace": false,
+        "label": "福德",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-000",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "福德位于寅宫；主星为巨门。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.wellbeing"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.001.auxiliaryStars.001",
+          "ziwei.palace.001.auxiliaryStars.002",
+          "ziwei.palace.001.auxiliaryStars.003",
+          "ziwei.palace.001.auxiliaryStars.004",
+          "ziwei.palace.001.auxiliaryStars.005",
+          "ziwei.palace.001.majorStars.001",
+          "ziwei.palace.001.minorStars.001",
+          "ziwei.palace.005",
+          "ziwei.palace.007",
+          "ziwei.palace.009"
+        ],
+        "is_empty_major_palace": false,
+        "label": "田宅",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-001",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "田宅位于卯宫；主星为天相。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.property"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.002",
+          "ziwei.palace.002.auxiliaryStars.001",
+          "ziwei.palace.002.auxiliaryStars.002",
+          "ziwei.palace.002.auxiliaryStars.003",
+          "ziwei.palace.002.auxiliaryStars.004",
+          "ziwei.palace.002.auxiliaryStars.005",
+          "ziwei.palace.002.majorStars.001",
+          "ziwei.palace.002.majorStars.002",
+          "ziwei.palace.006",
+          "ziwei.palace.008",
+          "ziwei.palace.010"
+        ],
+        "is_empty_major_palace": false,
+        "label": "官禄",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-002",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "官禄位于辰宫；主星为天同、天梁。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.career"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.003",
+          "ziwei.palace.003.auxiliaryStars.001",
+          "ziwei.palace.003.auxiliaryStars.002",
+          "ziwei.palace.003.auxiliaryStars.003",
+          "ziwei.palace.003.auxiliaryStars.004",
+          "ziwei.palace.003.auxiliaryStars.005",
+          "ziwei.palace.003.auxiliaryStars.006",
+          "ziwei.palace.003.auxiliaryStars.007",
+          "ziwei.palace.003.majorStars.001",
+          "ziwei.palace.003.majorStars.002",
+          "ziwei.palace.003.minorStars.001",
+          "ziwei.palace.007",
+          "ziwei.palace.009",
+          "ziwei.palace.011"
+        ],
+        "is_empty_major_palace": false,
+        "label": "仆役",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-003",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "仆役位于巳宫；主星为武曲、七杀。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.associates"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.004",
+          "ziwei.palace.004.auxiliaryStars.001",
+          "ziwei.palace.004.auxiliaryStars.002",
+          "ziwei.palace.004.auxiliaryStars.003",
+          "ziwei.palace.004.auxiliaryStars.004",
+          "ziwei.palace.004.auxiliaryStars.005",
+          "ziwei.palace.004.auxiliaryStars.006",
+          "ziwei.palace.004.majorStars.001",
+          "ziwei.palace.008",
+          "ziwei.palace.010"
+        ],
+        "is_empty_major_palace": false,
+        "label": "迁移",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-004",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "迁移位于午宫；主星为太阳。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.travel"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.005",
+          "ziwei.palace.005.auxiliaryStars.001",
+          "ziwei.palace.005.auxiliaryStars.002",
+          "ziwei.palace.005.auxiliaryStars.003",
+          "ziwei.palace.005.auxiliaryStars.004",
+          "ziwei.palace.005.auxiliaryStars.005",
+          "ziwei.palace.005.auxiliaryStars.006",
+          "ziwei.palace.005.auxiliaryStars.007",
+          "ziwei.palace.009",
+          "ziwei.palace.011"
+        ],
+        "is_empty_major_palace": true,
+        "label": "疾厄",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-005",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "疾厄位于未宫；主星为空宫。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.health"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.002",
+          "ziwei.palace.006",
+          "ziwei.palace.006.auxiliaryStars.001",
+          "ziwei.palace.006.auxiliaryStars.002",
+          "ziwei.palace.006.auxiliaryStars.003",
+          "ziwei.palace.006.auxiliaryStars.004",
+          "ziwei.palace.006.auxiliaryStars.005",
+          "ziwei.palace.006.auxiliaryStars.006",
+          "ziwei.palace.006.auxiliaryStars.007",
+          "ziwei.palace.006.auxiliaryStars.008",
+          "ziwei.palace.006.majorStars.001",
+          "ziwei.palace.010"
+        ],
+        "is_empty_major_palace": false,
+        "label": "财帛",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-006",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "财帛位于申宫；主星为天机。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.wealth"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.003",
+          "ziwei.palace.007",
+          "ziwei.palace.007.auxiliaryStars.001",
+          "ziwei.palace.007.auxiliaryStars.002",
+          "ziwei.palace.007.auxiliaryStars.003",
+          "ziwei.palace.007.auxiliaryStars.004",
+          "ziwei.palace.007.auxiliaryStars.005",
+          "ziwei.palace.007.auxiliaryStars.006",
+          "ziwei.palace.007.auxiliaryStars.007",
+          "ziwei.palace.007.majorStars.001",
+          "ziwei.palace.007.majorStars.002",
+          "ziwei.palace.007.minorStars.001",
+          "ziwei.palace.011"
+        ],
+        "is_empty_major_palace": false,
+        "label": "子女",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-007",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "子女位于酉宫；主星为紫微、破军。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.children"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.000",
+          "ziwei.palace.002",
+          "ziwei.palace.004",
+          "ziwei.palace.008",
+          "ziwei.palace.008.auxiliaryStars.001",
+          "ziwei.palace.008.auxiliaryStars.002",
+          "ziwei.palace.008.auxiliaryStars.003",
+          "ziwei.palace.008.auxiliaryStars.004",
+          "ziwei.palace.008.auxiliaryStars.005",
+          "ziwei.palace.008.auxiliaryStars.006",
+          "ziwei.palace.008.auxiliaryStars.007"
+        ],
+        "is_empty_major_palace": true,
+        "label": "夫妻",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-008",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "夫妻位于戌宫；主星为空宫。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.spouse"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.001",
+          "ziwei.palace.003",
+          "ziwei.palace.005",
+          "ziwei.palace.009",
+          "ziwei.palace.009.auxiliaryStars.001",
+          "ziwei.palace.009.auxiliaryStars.002",
+          "ziwei.palace.009.auxiliaryStars.003",
+          "ziwei.palace.009.auxiliaryStars.004",
+          "ziwei.palace.009.auxiliaryStars.005",
+          "ziwei.palace.009.auxiliaryStars.006",
+          "ziwei.palace.009.majorStars.001",
+          "ziwei.palace.009.minorStars.001"
+        ],
+        "is_empty_major_palace": false,
+        "label": "兄弟",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-009",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "兄弟位于亥宫；主星为天府。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.siblings"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.002",
+          "ziwei.palace.004",
+          "ziwei.palace.006",
+          "ziwei.palace.010",
+          "ziwei.palace.010.auxiliaryStars.001",
+          "ziwei.palace.010.auxiliaryStars.002",
+          "ziwei.palace.010.auxiliaryStars.003",
+          "ziwei.palace.010.auxiliaryStars.004",
+          "ziwei.palace.010.auxiliaryStars.005",
+          "ziwei.palace.010.auxiliaryStars.006",
+          "ziwei.palace.010.majorStars.001"
+        ],
+        "is_empty_major_palace": false,
+        "label": "命宫",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-010",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "命宫位于子宫；主星为太阴。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.life"
+      },
+      {
+        "fact_ids": [
+          "ziwei.palace.003",
+          "ziwei.palace.005",
+          "ziwei.palace.007",
+          "ziwei.palace.011",
+          "ziwei.palace.011.auxiliaryStars.001",
+          "ziwei.palace.011.auxiliaryStars.002",
+          "ziwei.palace.011.auxiliaryStars.003",
+          "ziwei.palace.011.auxiliaryStars.004",
+          "ziwei.palace.011.auxiliaryStars.005",
+          "ziwei.palace.011.majorStars.001",
+          "ziwei.palace.011.majorStars.002"
+        ],
+        "is_empty_major_palace": false,
+        "label": "父母",
+        "limitations": [
+          "No fixed event is inferred from this structure.",
+          "Brightness is not interpreted because the selected lineage does not provide it."
+        ],
+        "rule_ids": [
+          "ZIWEI-CORE-STRUCTURE-001",
+          "ZIWEI-PALACE-SURROUNDED-001"
+        ],
+        "section_id": "ziwei.core.palace-011",
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "statement": "父母位于丑宫；主星为廉贞、贪狼。三方四正与星曜位置仅作为结构证据，不代表固定事件或吉凶。",
+        "term_id": "ziwei.palace.parents"
+      }
+    ],
+    "status": "experimental",
+    "system": "ziwei",
+    "transformation_paths": [
+      {
+        "origin_palace_fact_id": null,
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-BIRTH-001"
+        ],
+        "scope": "birth_year",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.000",
+        "target_star": "巨门",
+        "target_star_fact_id": "ziwei.palace.000.majorStars.001",
+        "transformation": "禄"
+      },
+      {
+        "origin_palace_fact_id": null,
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-BIRTH-001"
+        ],
+        "scope": "birth_year",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.003",
+        "target_star": "文曲",
+        "target_star_fact_id": "ziwei.palace.003.minorStars.001",
+        "transformation": "科"
+      },
+      {
+        "origin_palace_fact_id": null,
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-BIRTH-001"
+        ],
+        "scope": "birth_year",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.004",
+        "target_star": "太阳",
+        "target_star_fact_id": "ziwei.palace.004.majorStars.001",
+        "transformation": "权"
+      },
+      {
+        "origin_palace_fact_id": null,
+        "origin_stem": "辛",
+        "rule_ids": [
+          "ZIWEI-TRANSFORMATION-BIRTH-001"
+        ],
+        "scope": "birth_year",
+        "self_transformation": false,
+        "source_ids": [
+          "SRC-ZIWEI-PROJECT-SPEC-001",
+          "SRC-ZIWEI-QUANSHU-001"
+        ],
+        "target_palace_fact_id": "ziwei.palace.007",
+        "target_star": "文昌",
+        "target_star_fact_id": "ziwei.palace.007.minorStars.001",
+        "transformation": "忌"
+      }
+    ],
+    "validation": {
+      "citation_completeness": 1.0,
+      "fact_reference_validity": 1.0,
+      "status": "valid",
+      "warnings": [
+        {
+          "code": "expert_acceptance_pending",
+          "message": "The explanation layer remains experimental until independent practitioner acceptance and domain sign-off are recorded."
+        }
+      ]
+    }
+  },
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "review": {
+    "decision": "pending",
+    "notes": "",
+    "reviewed_at": null,
+    "reviewer_id": null
+  },
+  "review_requirements": [
+    "Verify each cited fact exists in the source chart.",
+    "Reject deterministic event, identity, diagnosis, or fortune claims.",
+    "Record rule-level acceptance, changes requested, or rejection."
+  ],
+  "source_case_id": "CASE-ZIWEI-NATAL-002",
+  "status": "pending_expert_review",
+  "system": "ziwei"
+}

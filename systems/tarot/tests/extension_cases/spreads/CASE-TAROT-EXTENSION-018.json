@@ -1,0 +1,182 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-018",
+  "raw_input": {
+    "spread": "relationship-six",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000012",
+    "allow_reversals": true
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "relationship-six",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "self_position",
+          "card_id": "tarot.rws.swords-eight",
+          "card_index": 57,
+          "name": "Eight of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "other_position",
+          "card_id": "tarot.rws.wands-ace",
+          "card_index": 22,
+          "name": "Ace of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "connection",
+          "card_id": "tarot.rws.swords-five",
+          "card_index": 54,
+          "name": "Five of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "communication",
+          "card_id": "tarot.rws.cups-eight",
+          "card_index": 43,
+          "name": "Eight of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "boundary",
+          "card_id": "tarot.rws.wands-two",
+          "card_index": 23,
+          "name": "Two of Wands",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "shared_focus",
+          "card_id": "tarot.rws.pentacles-ten",
+          "card_index": 73,
+          "name": "Ten of Pentacles",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.swords-eight",
+        "right_card_id": "tarot.rws.wands-ace",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.wands-ace",
+        "right_card_id": "tarot.rws.swords-five",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.swords-five",
+        "right_card_id": "tarot.rws.cups-eight",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.cups-eight",
+        "right_card_id": "tarot.rws.wands-two",
+        "arcana_relation": "same_arcana",
+        "element_relation": "contrasting",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.wands-two",
+        "right_card_id": "tarot.rws.pentacles-ten",
+        "arcana_relation": "same_arcana",
+        "element_relation": "mixed",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 0,
+        "minor": 6
+      },
+      "suit_counts": {
+        "wands": 2,
+        "cups": 1,
+        "swords": 2,
+        "pentacles": 1
+      },
+      "element_counts": {
+        "fire": 2,
+        "water": 1,
+        "air": 2,
+        "earth": 1
+      },
+      "repeated_ranks": {
+        "eight": [
+          "tarot.rws.swords-eight",
+          "tarot.rws.cups-eight"
+        ]
+      }
+    }
+  }
+}

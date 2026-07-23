@@ -1,6 +1,6 @@
 {
   "system": "western_astrology",
-  "release": "0.1.0",
+  "release": "0.2.0",
   "status": "pending",
   "reviewer_id": null,
   "reviewed_at": null,
@@ -66,6 +66,6 @@
       "notes": ""
     }
   ],
-  "notes": "Independent domain review has not yet been performed.",
+  "notes": "Independent domain review has not yet been performed. The v0.2 queue also covers timing, synastry, and retained-event rectification.",
   "evidence": null
 }

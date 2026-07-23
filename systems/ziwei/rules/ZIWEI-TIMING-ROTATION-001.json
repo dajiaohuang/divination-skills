@@ -1,0 +1,39 @@
+{
+  "rule_id": "ZIWEI-TIMING-ROTATION-001",
+  "title": "Generate deterministic annual, monthly, daily, and hourly structural rotations",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "target.local_datetime",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.dynamic_layers",
+      "output_path": "timing.layers",
+      "value": "major_minor_year_month_day_hour",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 920,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/timing.py",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "major and minor limit formula sections",
+      "support_type": "corroborating"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-008"
+  ]
+}

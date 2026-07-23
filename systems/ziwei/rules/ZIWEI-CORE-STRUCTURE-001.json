@@ -1,0 +1,53 @@
+{
+  "rule_id": "ZIWEI-CORE-STRUCTURE-001",
+  "title": "Explain only cited Ziwei structural relationships",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "proposed",
+  "kind": "interpretation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.palaces",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.structural_palace_summary",
+      "output_path": "sections",
+      "value": "cited_structure_without_event_claim",
+      "confidence": "medium"
+    }
+  ],
+  "exceptions": [
+    {
+      "when": [
+        {
+          "fact_path": "validation.status",
+          "operator": "neq",
+          "value": "valid"
+        }
+      ],
+      "effect": "skip",
+      "rationale": "Interpretation requires a validated structural chart."
+    }
+  ],
+  "priority": 800,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/core.py",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "structural formula sections only",
+      "support_type": "corroborating"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-009"
+  ],
+  "notes": "Experimental until independent practitioner acceptance and domain sign-off are recorded."
+}

@@ -1,0 +1,39 @@
+{
+  "rule_id": "ZIWEI-TRANSFORMATION-PALACE-STEM-001",
+  "title": "Trace palace-stem flying transformations and self-transformations",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.palaces",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.palace_stem_transformation_path",
+      "output_path": "query.palace_stem_transformation_paths",
+      "value": "origin_target_and_self_trace",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 935,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "ten-stem four-transformation formula section",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/analyzer.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-010"
+  ]
+}

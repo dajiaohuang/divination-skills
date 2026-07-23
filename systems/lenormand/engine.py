@@ -11,6 +11,7 @@ SPREADS = {
     "single": ("focus",),
     "three-card": ("context", "development", "focus"),
     "nine-card": tuple(f"p{number}" for number in range(1, 10)),
+    "grand-tableau": tuple(f"p{number}" for number in range(1, 37)),
 }
 SOURCE = "SRC-LENORMAND-PROJECT-SPEC-001"
 
@@ -25,7 +26,11 @@ def draw(payload: dict[str, Any]) -> dict[str, Any]:
     return draw_symbols(
         payload,
         system="lenormand",
-        lineage="lenormand-36-project-v0.1",
+        lineage=(
+            "lenormand-36-project-v0.2"
+            if payload.get("spread") == "grand-tableau"
+            else "lenormand-36-project-v0.1"
+        ),
         items=items(),
         spreads=SPREADS,
         source_id=SOURCE,

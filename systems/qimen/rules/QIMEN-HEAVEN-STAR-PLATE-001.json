@@ -1,0 +1,15 @@
+{
+  "rule_id": "QIMEN-HEAVEN-STAR-PLATE-001",
+  "title": "Rotate heaven stems and stars from duty origin to hour instrument",
+  "system": "qimen",
+  "lineage": "shijia-zhuanpan-chaibu-full-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "foundation.computed_facts.duty_origin", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "qimen.heaven_star_plate", "output_path": "palaces", "value": "eight_ring_center_hosted", "confidence": "deterministic" }],
+  "priority": 900,
+  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "systems/qimen/full_chart.py star_targets", "support_type": "direct" }],
+  "tests": ["CASE-QIMEN-FOUNDATION-001"],
+  "notes": "Project rotation policy pending practitioner review."
+}

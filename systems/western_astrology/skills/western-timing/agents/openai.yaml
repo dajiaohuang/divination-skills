@@ -1,0 +1,4 @@
+interface:
+  display_name: "Western Timing"
+  short_description: "Calculate cited transits and annual solar returns"
+  default_prompt: "Use $western-timing to calculate structural transits and the solar return for this target date."

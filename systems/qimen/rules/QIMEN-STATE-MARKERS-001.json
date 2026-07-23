@@ -1,0 +1,15 @@
+{
+  "rule_id": "QIMEN-STATE-MARKERS-001",
+  "title": "Expose void, tomb, instrument punishment, and door oppression markers",
+  "system": "qimen",
+  "lineage": "shijia-zhuanpan-chaibu-full-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "palaces", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "qimen.state_markers", "output_path": "palaces", "value": "named_structural_markers", "confidence": "low" }],
+  "priority": 780,
+  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "systems/qimen/full_chart.py marker tables", "support_type": "direct" }],
+  "tests": ["CASE-QIMEN-FOUNDATION-001"],
+  "notes": "Markers are not interpreted as outcomes."
+}

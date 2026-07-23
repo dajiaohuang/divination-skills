@@ -1,0 +1,51 @@
+{
+  "dispute_id": "DSP-ZIWEI-BOUNDARY-POLICY-001",
+  "title": "Ziwei year, late-Zi, and leap-month boundary policies",
+  "system": "ziwei",
+  "topic": "calendar boundary policy",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "project-native-ziwei-structural-v0.4",
+      "summary": "Require explicit versioned policies and default to lunar-new-year, current-day late-Zi, and preserved leap-month numbering.",
+      "rule_ids": [
+        "ZIWEI-INPUT-POLICY-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+          "locator": "systems/ziwei/DATA_CONTRACT.md"
+        }
+      ]
+    },
+    {
+      "lineage": "alternate-boundary-policy",
+      "summary": "Use spring-commences, next-day late-Zi, or split-after-fifteenth leap-month policies when explicitly selected.",
+      "rule_ids": [
+        "ZIWEI-INPUT-POLICY-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-ZIWEI-QUANSHU-001",
+          "locator": "historical leap-month rule and boundary formula context"
+        }
+      ]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "project-native-ziwei-structural-v0.4",
+    "rationale": "Explicit defaults make replay deterministic while retaining alternate policies as opt-in parameters.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "The chart records its year-boundary, late-Zi, and leap-month policies; changing them may change structural facts.",
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/DATA_CONTRACT.md"
+    },
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "historical formula sections"
+    }
+  ]
+}

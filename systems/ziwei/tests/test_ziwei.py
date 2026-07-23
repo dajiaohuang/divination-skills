@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from copy import deepcopy
 from pathlib import Path
 
 import pytest
+from divination_skills.contracts import canonical_json
 
 from systems.ziwei.engine import ZiweiError, _time_index, calculate, structural_report
 
@@ -27,7 +29,9 @@ def test_time_index_boundaries(hour: int, expected: int) -> None:
 @pytest.mark.parametrize("case", golden_cases(), ids=lambda case: case["case_id"])
 def test_golden_chart_replays(case: dict) -> None:
     result = calculate(case["raw_input"])
-    assert result["computed_facts"] == case["expected_output"]["computed_facts"]
+    digest = hashlib.sha256(canonical_json(result["computed_facts"])).hexdigest()
+    assert digest == case["expected_output"]["computed_facts_sha256"]
+    assert len(result["computed_facts"]["palaces"]) == case["expected_output"]["palace_count"]
 
 
 def test_chart_has_twelve_unique_palaces_and_star_facts() -> None:

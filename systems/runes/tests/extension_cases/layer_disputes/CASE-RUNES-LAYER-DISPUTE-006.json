@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-RUNES-LAYER-DISPUTE-006",
+  "unsupported_claim": "elder-futhark-equals-futhorc",
+  "expected_handling": "reject_cross_layer_inference"
+}

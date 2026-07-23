@@ -1,0 +1,15 @@
+{
+  "rule_id": "NUMEROLOGY-CAL-CHALDEAN-NAME-001",
+  "title": "Calculate name totals with the isolated project Chaldean mapping",
+  "system": "numerology",
+  "lineage": "chaldean-name-project-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.mapping_lineage", "operator": "eq", "value": "chaldean-name-project-v0.2" }],
+  "conclusions": [{ "finding_type": "numerology.chaldean_name_total", "output_path": "computed_facts", "value": "chaldean_1_through_8", "confidence": "deterministic" }],
+  "priority": 900,
+  "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "systems/numerology/calculator/engine.py CHALDEAN_VALUES", "support_type": "direct" }],
+  "tests": ["CASE-NUMEROLOGY-PROFILE-001"],
+  "notes": "Project mapping pending practitioner review; never blended with Pythagorean values."
+}

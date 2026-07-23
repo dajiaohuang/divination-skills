@@ -1,0 +1,14 @@
+{
+  "rule_id": "TAROT-JOURNAL-PRIVACY-001",
+  "title": "Require explicit storage consent and omit raw questions",
+  "system": "tarot",
+  "lineage": "rws-text-journal-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "safety",
+  "conditions": [{ "fact_path": "consent_to_store", "operator": "eq", "value": true }],
+  "conclusions": [{ "finding_type": "tarot.journal_entry", "output_path": "privacy", "value": "question_hash_only", "confidence": "deterministic" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "systems/tarot/journal.py", "support_type": "direct" }],
+  "tests": ["CASE-TAROT-DRAW-001"]
+}

@@ -1,0 +1,65 @@
+{
+  "case_id": "CASE-LENORMAND-LAYOUT-013",
+  "raw_input": {
+    "spread": "three-card",
+    "seed_hex": "000000000000000000000000000000000000000000000000000000000000000d"
+  },
+  "significator": null,
+  "expected_output": {
+    "spread": "three-card",
+    "pairs": [
+      {
+        "fact_id": "lenormand.pair.001",
+        "left_fact_id": "lenormand.draw.symbol.001",
+        "right_fact_id": "lenormand.draw.symbol.002",
+        "left_symbol_id": "lenormand.14.fox",
+        "right_symbol_id": "lenormand.35.anchor",
+        "ordered_keywords": [
+          [
+            "self-interest",
+            "work tactic",
+            "verification"
+          ],
+          [
+            "stability",
+            "work",
+            "long duration"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.002",
+        "left_fact_id": "lenormand.draw.symbol.002",
+        "right_fact_id": "lenormand.draw.symbol.003",
+        "left_symbol_id": "lenormand.35.anchor",
+        "right_symbol_id": "lenormand.05.tree",
+        "ordered_keywords": [
+          [
+            "stability",
+            "work",
+            "long duration"
+          ],
+          [
+            "slow growth",
+            "roots",
+            "wellbeing context"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "nine_card": null,
+    "grand_tableau": null
+  }
+}

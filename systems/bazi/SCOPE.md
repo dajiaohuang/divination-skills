@@ -1,4 +1,4 @@
-# Bazi v0.1 scope
+# Bazi v0.2 scope
 
 ## Supported
 
@@ -11,16 +11,22 @@
 - optional forward or reverse ten-year luck-cycle sequence using the documented three-days-per-year start-age method;
 - structured JSON facts, validation warnings, source IDs, rule IDs, and engine version;
 - extraction/validation and conservative core explanation Skills.
+- structured JSON and four-pillar text reading that never overwrites native facts;
+- path-level imported/native pillar and day-boundary comparison;
+- active luck-cycle, target year/month pillars, structural activation facts, and shared timeline;
+- directional A-to-B/B-to-A visible Ten-God comparison plus symmetric branch relations;
+- double-hour candidate rectification with at least five dated events and training/holdout separation;
 - an explicitly selected `project-seasonal-support-v0.1` feature path that emits a low-confidence, fully disclosed support label; it is disabled by default and not release-eligible until external expert review.
 
-## Not supported in v0.1
+## Not supported in v0.2
 
 - lunar-calendar birth input;
 - dates outside 1900–2100;
 - automatic geocoding;
 - automatic true-solar-time correction;
 - inferred luck-cycle direction from sex or gender;
-- canonical school-specific strength adjudication, special structures, transformation structures, useful-god selection, climate adjustment, blind-school imagery, marriage matching, date selection, or deterministic event prediction;
+- canonical school-specific strength adjudication, special structures, transformation structures, useful-god selection, climate adjustment, blind-school imagery, compatibility scoring, date selection, or deterministic event prediction;
+- OCR/PDF reading, minute-level rectification, personality tie-breakers, and unique birth-time claims;
 - medical, legal, financial, fertility, mortality, or other high-risk conclusions.
 
 Unsupported fields must produce a validation error or explicit warning. They must never be approximated silently.

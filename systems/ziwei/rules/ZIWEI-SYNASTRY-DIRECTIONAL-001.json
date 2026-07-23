@@ -1,0 +1,40 @@
+{
+  "rule_id": "ZIWEI-SYNASTRY-DIRECTIONAL-001",
+  "title": "Keep A-to-B and B-to-A cross-chart transformation facts directional",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "proposed",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "chart_refs",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.directional_cross_chart_transformation",
+      "output_path": "directional",
+      "value": "a_to_b_and_b_to_a",
+      "confidence": "medium"
+    }
+  ],
+  "priority": 820,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/synastry.py",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "ten-stem four-transformation formula section",
+      "support_type": "corroborating"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-012"
+  ],
+  "notes": "Experimental structural comparison pending independent practitioner acceptance."
+}

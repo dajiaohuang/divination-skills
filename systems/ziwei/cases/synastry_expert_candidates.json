@@ -1,0 +1,908 @@
+{
+  "candidate_count": 50,
+  "candidates": [
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-001",
+      "expected_output_sha256": "44d3efd29c6872b7dd6efba1c8ac8a324664cc86de547bf66145604b68faecba",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-001",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-002",
+      "expected_output_sha256": "1e7f4d14a5b0726cb29e09e7fbf8a497fcbb154dbcd01f41efbdfebda8c12ae1",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-002",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-003",
+      "expected_output_sha256": "88e5d4662b2ba7c88ba45358925a49dc7b0bd4512836db294243feb76bb595af",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-003",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-004",
+      "expected_output_sha256": "11b8f1ce6f5109cdc4d7be87870f0c1e217f0f484ced82bc7233b82372827328",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-004",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-005",
+      "expected_output_sha256": "3aac4c03e0188b8cfe713c27cd73823063362c85a04547d45e588cc5b4780314",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-005",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-006",
+      "expected_output_sha256": "00595af38095e8774a01e230c467af65cd2b0ccd0022ed723820b6e17650d4e8",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-006",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-007",
+      "expected_output_sha256": "de3158c7dd09806649855fe2902b50e30abce6f6df88020b7dec055d7e89bd92",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-007",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-008",
+      "expected_output_sha256": "9343fe4df3fb358c48f58a3a2ab704190199053b5c383bcefff06b59cca3edf3",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-008",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-009",
+      "expected_output_sha256": "73546231a137ff46fcd38e68f4d7a9fc84d0b0818d23f76542e087d7408ab4da",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-009",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-010",
+      "expected_output_sha256": "17e2bd544094d5aecc7f97690e4ddba3fe9a0f46bd1ce2d01ddcf2c7739ecb55",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-010",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-011",
+      "expected_output_sha256": "b145d38ea9ff576689d958d46ea3c2243ff2e83ba5817f381c15e6e5d0afd7aa",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-011",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-012",
+      "expected_output_sha256": "6aa4236dcad433341ab3ec8ba2ca9035e674c21c92ea0c9078219b0d29dfe29b",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-012",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-013",
+      "expected_output_sha256": "9003f15e3408e136598546844485ec2a1a94964de4a686a9c834a8868e7782d6",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-013",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-014",
+      "expected_output_sha256": "80cb7729826d7aa082817c208789d071ef2ec0449f0b94b0e7d6d45c48cd82b5",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-014",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-015",
+      "expected_output_sha256": "fea2c6b7f089bae521cfe83de3d2dd4a510f40c0b5fe55f6c8601d379a317590",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-015",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-016",
+      "expected_output_sha256": "0087bd3ac5254b71e67fc6c0d4801e6b337ff4913fa2c75e5d670858582c4770",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-016",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-017",
+      "expected_output_sha256": "0d19c870a5615fbac367f163f7b3a2baa1dbabba517d8b50bef9d1ebefa57d53",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-017",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-018",
+      "expected_output_sha256": "4b39a539b85222cfb88274d1c416676afe5168f7767165077084b54d8c013f81",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-018",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-019",
+      "expected_output_sha256": "f5a39d3f06e0bed96ac155ca085f88025e888d11767a1870d6b167e2ab6cd9f4",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-019",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-020",
+      "expected_output_sha256": "09dccfd82f024cc0c7338808c6b93c89d7593d5b78331a7efb3ce0c65b4cbb51",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-020",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-021",
+      "expected_output_sha256": "1ce8741c0bb04574062c7b4bf10d58862a6b3a5336b8eeec7b721781b5e7cf3a",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-021",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-022",
+      "expected_output_sha256": "fe955a1f7a9ebcabbaf3d5a305fecfc198ed0f2fdcedd18f47309d0c530fedf3",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-022",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-023",
+      "expected_output_sha256": "49191e121ca3e2ac5992132010ffe317ae224bde38f3523799c42a40d7578a2a",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-023",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-024",
+      "expected_output_sha256": "535a3c8b4563c5959239321cf21639c44d7e18acef2a1f334d8a4f4c1c73a883",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-024",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-025",
+      "expected_output_sha256": "85d3717861157b28f49da1f9512e44f7607b0552b8aed9884fba7e5588cbab02",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-025",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-026",
+      "expected_output_sha256": "c3fbb5f55b9b43651ef03374405bcf105c7027478b9f8f1fa532cfbaab8b089d",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-026",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-027",
+      "expected_output_sha256": "001e6eab99497add24a85820bf86f6012c90342088d5b715efb8b9ff58fc7a61",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-027",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-028",
+      "expected_output_sha256": "c40f33e119b188b1e391cf7635acd6143e78effc1e36a352c15e735a76289b7f",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-028",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-029",
+      "expected_output_sha256": "10ee8f8630e7f9e994d53bf0e2b16a2489f8c0896acf649b6ef618f8ab00e967",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-029",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-030",
+      "expected_output_sha256": "a51ba79d6a0a20dcd0505ff57c2105ca4d6b3a6e534491dadbf95396f90e974b",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-030",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-031",
+      "expected_output_sha256": "a97fe9b42b3db4791ace7f3a3bd0701d5a2dcbf8166c98f04acffd6a293934f3",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-031",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-032",
+      "expected_output_sha256": "69700317a90c8f72ac13a1d773a88f236773386632a2d3c8fc2581ed3b0973f8",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-032",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-033",
+      "expected_output_sha256": "599fed3770aeb536ec65e240803a8bd50e6a67482af9c098fc94a75826e99a2e",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-033",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-034",
+      "expected_output_sha256": "a842fb89f4045a896d319293a4e93dbde9ddf8f812449c2a5152523701405ead",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-034",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-035",
+      "expected_output_sha256": "70ac9ed5928b7e388ffbcd9c2e08bf07d43841a2e3dd57e013f4c1f1572868c8",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-035",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-036",
+      "expected_output_sha256": "c20aabf869f8e53eddaf40b6eac1689de6f3b22c33df6c3b229cf548410befe2",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-036",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-037",
+      "expected_output_sha256": "da01f24c094797ff147fe22f2d8f326f27a814e62f2f3fd48ec80abf9fc0a0f2",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-037",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-038",
+      "expected_output_sha256": "ed6537bf100223ef54a9dfe9a6cfb03528948bf7982a9415201a5949d50d9a56",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-038",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-039",
+      "expected_output_sha256": "f336c8ac3fed4abff38b43043f0a9462849e5e71eeac255d022a7c31f0a97669",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-039",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-040",
+      "expected_output_sha256": "55ab01eb38676116d1708582120475ca7d34c48251786a21f83210caca672174",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-040",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-041",
+      "expected_output_sha256": "0314595ee2d56c68054b02d363960af38e2b1183d63f862ae7d16e80a70eb061",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-041",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-042",
+      "expected_output_sha256": "92c993a61376c5d41b162b627dfc7e5242813789ea3dcefd7c20017d6c94c72b",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-042",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-043",
+      "expected_output_sha256": "682b55a1824286aae0e07790ea28177d11b01e30902caf44eadfb3fd68c28304",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-043",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-044",
+      "expected_output_sha256": "8ad1dd51e94ad77e7fda175f695db79e33efb6b0599d48ac4d8bda43b5ae0b24",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-044",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-045",
+      "expected_output_sha256": "d1221e5171f55e66f479d47de3897f1a2f113e8538d9090041ce4fda26e5b199",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-045",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-046",
+      "expected_output_sha256": "5dc3475aceb4d8af9827e8bf2913aa5bcfa02d2041f6b7ebf665f05421642708",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-046",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-047",
+      "expected_output_sha256": "98bfab21913d39e33efb9dc07211df30be78b535e954c97a826c282b10cd09dd",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-047",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-048",
+      "expected_output_sha256": "73b9d318b733d876a9be3d03dc6edf9c8c76e01d76246e211f066c19e779b993",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-048",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-049",
+      "expected_output_sha256": "f20dba20ffee59de7c6671fc74335266da89f2a33b395f1deaa8ebd58fd50dfe",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-049",
+      "status": "pending_expert_review"
+    },
+    {
+      "accepted": false,
+      "candidate_id": "ZIWEI-SYNASTRY-EXPERT-050",
+      "expected_output_sha256": "036e9a47624cf73364b7d1263d4f5638ab9832a64782bc1241836ef726211ea9",
+      "review": {
+        "decision": "pending",
+        "notes": "",
+        "reviewed_at": null,
+        "reviewer_id": null
+      },
+      "review_focus": [
+        "directional transformation provenance",
+        "same-role shared-major-star symmetry",
+        "absence of compatibility, intent, fidelity, and outcome claims"
+      ],
+      "source_case_id": "CASE-ZIWEI-SYNASTRY-050",
+      "status": "pending_expert_review"
+    }
+  ],
+  "module": "synastry",
+  "status": "pending_expert_review",
+  "system": "ziwei"
+}

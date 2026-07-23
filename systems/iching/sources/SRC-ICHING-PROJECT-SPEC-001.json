@@ -1,19 +1,19 @@
 {
   "source_id": "SRC-ICHING-PROJECT-SPEC-001",
-  "title": "Project three-coin and King Wen structural specification v0.1",
+  "title": "Project three-coin, King Wen, and moving-policy specification v0.2",
   "creators": [{ "name": "divination-skills project", "role": "author" }],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
-  "edition_or_version": "0.1.0",
+  "edition_or_version": "0.2.0",
   "locators": [{ "kind": "local", "value": "systems/iching/LINEAGE.md", "stable": true }],
   "retrieved_at": "2026-07-23",
   "local_snapshot": { "retained": true, "path": "systems/iching/LINEAGE.md" },
-  "license": { "identifier": "LicenseRef-Project-Authored-Internal", "text_available": true, "additional_terms": false },
+  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
   "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "allowed" },
   "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Conventional identifiers and calculation structure only; project-authored prompts; no copied translation or commentary." },
   "usage_status": "production",
   "systems": ["iching"],
-  "lineages": ["three-coin-king-wen-structural-v0.1"],
+  "lineages": ["three-coin-king-wen-structural-v0.1", "king-wen-classical-source-layer-v0.2"],
   "quality": { "authority": "unknown", "independence": "derived", "reliability": "medium", "notes": "Calculation baseline pending independent practitioner acceptance." }
 }

@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "import_id": "IMPORT-12AB34CD56EF7890",
+  "system": "bazi",
+  "source": {
+    "kind": "structured_json",
+    "label": "Synthetic external chart fixture",
+    "schema_version": "1.0"
+  },
+  "canonical_authority": "native_calculator",
+  "field_mappings": [
+    {
+      "external_path": "$.pillars.year",
+      "canonical_path": "$.computed_facts.pillars.year.ganzhi",
+      "status": "matched"
+    },
+    {
+      "external_path": "$.pillars.day",
+      "canonical_path": "$.computed_facts.pillars.day.ganzhi",
+      "status": "different"
+    }
+  ],
+  "conflicts": [
+    {
+      "canonical_path": "$.computed_facts.pillars.day.ganzhi",
+      "external_value": "甲子",
+      "native_value": "乙丑",
+      "resolution": "native_retained",
+      "notes": "The imported value remains comparison evidence only."
+    }
+  ],
+  "status": "partial"
+}

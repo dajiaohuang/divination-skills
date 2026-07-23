@@ -1,0 +1,286 @@
+{
+  "case_id": "CASE-TAROT-EXTENSION-040",
+  "raw_input": {
+    "spread": "celtic-cross",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000028",
+    "allow_reversals": true
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "celtic-cross",
+      "cards": [
+        {
+          "fact_id": "tarot.draw.card.001",
+          "position": "present",
+          "card_id": "tarot.rws.swords-four",
+          "card_index": 53,
+          "name": "Four of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.002",
+          "position": "crossing",
+          "card_id": "tarot.rws.swords-nine",
+          "card_index": 58,
+          "name": "Nine of Swords",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.003",
+          "position": "foundation",
+          "card_id": "tarot.rws.swords-eight",
+          "card_index": 57,
+          "name": "Eight of Swords",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.004",
+          "position": "recent_past",
+          "card_id": "tarot.rws.major-10-wheel-of-fortune",
+          "card_index": 10,
+          "name": "Wheel of Fortune",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.005",
+          "position": "possible_direction",
+          "card_id": "tarot.rws.cups-queen",
+          "card_index": 48,
+          "name": "Queen of Cups",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.006",
+          "position": "near_context",
+          "card_id": "tarot.rws.major-02-high-priestess",
+          "card_index": 2,
+          "name": "The High Priestess",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.007",
+          "position": "self_view",
+          "card_id": "tarot.rws.cups-two",
+          "card_index": 37,
+          "name": "Two of Cups",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.008",
+          "position": "environment",
+          "card_id": "tarot.rws.cups-four",
+          "card_index": 39,
+          "name": "Four of Cups",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.009",
+          "position": "hopes_concerns",
+          "card_id": "tarot.rws.pentacles-seven",
+          "card_index": 70,
+          "name": "Seven of Pentacles",
+          "orientation": "upright",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "tarot.draw.card.010",
+          "position": "outcome_reflection",
+          "card_id": "tarot.rws.cups-page",
+          "card_index": 46,
+          "name": "Page of Cups",
+          "orientation": "reversed",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "fact_id": "tarot.combination.pair.001",
+        "left_card_id": "tarot.rws.swords-four",
+        "right_card_id": "tarot.rws.swords-nine",
+        "arcana_relation": "same_arcana",
+        "element_relation": "same_element",
+        "same_suit": true,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.002",
+        "left_card_id": "tarot.rws.swords-nine",
+        "right_card_id": "tarot.rws.swords-eight",
+        "arcana_relation": "same_arcana",
+        "element_relation": "same_element",
+        "same_suit": true,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.003",
+        "left_card_id": "tarot.rws.swords-eight",
+        "right_card_id": "tarot.rws.major-10-wheel-of-fortune",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.004",
+        "left_card_id": "tarot.rws.major-10-wheel-of-fortune",
+        "right_card_id": "tarot.rws.cups-queen",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.005",
+        "left_card_id": "tarot.rws.cups-queen",
+        "right_card_id": "tarot.rws.major-02-high-priestess",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.006",
+        "left_card_id": "tarot.rws.major-02-high-priestess",
+        "right_card_id": "tarot.rws.cups-two",
+        "arcana_relation": "mixed_arcana",
+        "element_relation": "unclassified",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.007",
+        "left_card_id": "tarot.rws.cups-two",
+        "right_card_id": "tarot.rws.cups-four",
+        "arcana_relation": "same_arcana",
+        "element_relation": "same_element",
+        "same_suit": true,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.008",
+        "left_card_id": "tarot.rws.cups-four",
+        "right_card_id": "tarot.rws.pentacles-seven",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "tarot.combination.pair.009",
+        "left_card_id": "tarot.rws.pentacles-seven",
+        "right_card_id": "tarot.rws.cups-page",
+        "arcana_relation": "same_arcana",
+        "element_relation": "complementary",
+        "same_suit": false,
+        "same_rank": false,
+        "rule_ids": [
+          "TAROT-COMBINATION-RELATION-001"
+        ],
+        "source_ids": [
+          "SRC-TAROT-DECK-SPEC-001"
+        ]
+      }
+    ],
+    "distribution": {
+      "arcana_counts": {
+        "major": 2,
+        "minor": 8
+      },
+      "suit_counts": {
+        "wands": 0,
+        "cups": 4,
+        "swords": 3,
+        "pentacles": 1
+      },
+      "element_counts": {
+        "fire": 0,
+        "water": 4,
+        "air": 3,
+        "earth": 1
+      },
+      "repeated_ranks": {
+        "four": [
+          "tarot.rws.swords-four",
+          "tarot.rws.cups-four"
+        ]
+      }
+    }
+  }
+}

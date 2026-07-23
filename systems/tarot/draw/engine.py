@@ -13,6 +13,36 @@ POSITIONS = {
     "single": ("focus",),
     "situation-challenge-guidance": ("situation", "challenge", "guidance"),
     "option-a-option-b-focus": ("option_a", "option_b", "decision_focus"),
+    "elemental-five": ("center", "fire", "water", "air", "earth"),
+    "relationship-six": (
+        "self_position",
+        "other_position",
+        "connection",
+        "communication",
+        "boundary",
+        "shared_focus",
+    ),
+    "horseshoe-seven": (
+        "past_context",
+        "present_context",
+        "hidden_factor",
+        "obstacle",
+        "external_context",
+        "suggested_focus",
+        "possible_direction",
+    ),
+    "celtic-cross": (
+        "present",
+        "crossing",
+        "foundation",
+        "recent_past",
+        "possible_direction",
+        "near_context",
+        "self_view",
+        "environment",
+        "hopes_concerns",
+        "outcome_reflection",
+    ),
 }
 ALGORITHM = "sha256-counter-rejection-v1"
 DECK_PATH = Path(__file__).resolve().parents[1] / "data" / "rws-78.json"

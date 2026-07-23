@@ -12,23 +12,23 @@ REPO_ROOT = (
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from systems.qimen.engine import calculate, explain  # noqa: E402
+from systems.qimen.full_chart import calculate_full  # noqa: E402
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Calculate a bounded Chaibu Qimen foundation.")
+    parser = argparse.ArgumentParser(description="Calculate a bounded Chaibu Qimen full plate.")
     parser.add_argument("--local-datetime", required=True)
     parser.add_argument("--timezone", required=True)
     parser.add_argument("--day-boundary", choices=("midnight", "zi_initial"), default="midnight")
     args = parser.parse_args()
-    result = calculate(
+    result = calculate_full(
         {
             "local_datetime": args.local_datetime,
             "timezone": args.timezone,
             "day_boundary": args.day_boundary,
         }
     )
-    print(json.dumps(explain(result), ensure_ascii=False, indent=2))
+    print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0
 
 

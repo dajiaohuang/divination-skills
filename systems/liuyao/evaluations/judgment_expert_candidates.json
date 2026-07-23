@@ -1,0 +1,907 @@
+{
+  "queue_id": "LIUYAO-JUDGMENT-EXPERT-QUEUE-001",
+  "status": "pending_expert_review",
+  "candidate_count": 50,
+  "candidates": [
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-001",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-001",
+      "expected_output_sha256": "2341efe4fea62a051d6c2f7b5c97240d6c27182953b5db69570e07a4748c75cc",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-002",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-002",
+      "expected_output_sha256": "828b3688f2ce3deaf449828af8365e2d7bbacdb4d5e7d0640639d82528b3bf57",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-003",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-003",
+      "expected_output_sha256": "1022a3ecaa2edf3ac85bb285ed2c31c5e3c21ec9b04459474a2ec1793ee3a9e8",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-004",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-004",
+      "expected_output_sha256": "5f1473a2c73ada2f5a1b68026d590b4d3480ca1846a13092871be98ba7333b83",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-005",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-005",
+      "expected_output_sha256": "7db71aee7d7fefaa66d1000012de4ee8b839f90acc9bbaa30b221471406c970d",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-006",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-006",
+      "expected_output_sha256": "b9dd8ba1bfb3d0f09eba04d2d6f871ee4f218963d131f7a65775c93e64836eb8",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-007",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-007",
+      "expected_output_sha256": "57363e0549dd39d7cd73759a9a13b222df712dce7ebebbdabe148c8cecd1d046",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-008",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-008",
+      "expected_output_sha256": "777acd535f03a484fc4da024493d872eeabc2c4917cac6908819f7bebba660d8",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-009",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-009",
+      "expected_output_sha256": "3fe091cab51056535621ed827be41c7e6a61c3f049f09daa76cbb920f56dfa5e",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-010",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-010",
+      "expected_output_sha256": "62539835841242ed7c9ef6dc6b538a7d15a09f3f190feac8e94cabc3a8ab3c0a",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-011",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-011",
+      "expected_output_sha256": "859c32fdb77a42adb7dcfce814a6283c6c1cab9de9708d79284d3a9179859af6",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-012",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-012",
+      "expected_output_sha256": "30dda6579f666fcaae7be291451b05c4d17492cf869380eaf2b1fb1071495c8f",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-013",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-013",
+      "expected_output_sha256": "c2dec963cba6fce3bcdcb0ad1a7569c28b0e1f8971ed4be2609481019b76f744",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-014",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-014",
+      "expected_output_sha256": "5d4d4c0ec8a74798c11d39a1288d85b7a6454276a1944822673965b9d459f66a",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-015",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-015",
+      "expected_output_sha256": "08235b8ada6997af1630e12c2524f3a555781a7b1645bce1c7ab4086263fb149",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-016",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-016",
+      "expected_output_sha256": "79c0e1472f92b6e5e26abd127b863922cab6728d34d77fdf10ca258ddad374cb",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-017",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-017",
+      "expected_output_sha256": "0420d242fe0b332d671212ba68f3ceeed3b4c195c7dc7e57adc1720fd82ef876",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-018",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-018",
+      "expected_output_sha256": "d50e135c59e98618f95a1d360446d6cfc8c3f99aa529a8524074ef4c1092a1d6",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-019",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-019",
+      "expected_output_sha256": "eafb8c98cd40176ef7d96ebaa774e5b1ff1dcbd1a6d360d0e27640dc42f33e61",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-020",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-020",
+      "expected_output_sha256": "105412ad9ce98be4a74f83d51f605c22815354dba6800aca4e9e36ca9cb4a9d4",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-021",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-021",
+      "expected_output_sha256": "c6bb8ae0b81922d9fad4d86cb003c6a7af1d95d0fcbb244c930cd588eaa7b196",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-022",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-022",
+      "expected_output_sha256": "6f8832671a3bd1a1cb3938113e013046e6c61b02eb2aad779648619c0e79bed5",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-023",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-023",
+      "expected_output_sha256": "fb370673f18781fc5eb17c90138bf2a36772b337a0a7c0c35e61abcb75b07986",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-024",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-024",
+      "expected_output_sha256": "794b2e9ac7ffc2227a5d60c69aaac7ed4af2c0a1fc0911810b735c9a584f4aa4",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-025",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-025",
+      "expected_output_sha256": "c936fd05b779547276d28e240c081632d63fdfec1bde1c958fb34007dac35113",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-026",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-026",
+      "expected_output_sha256": "14ff3662245a2a9325b093db59be9a0cd23ed3f659a4426f04b77dfbf07e3888",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-027",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-027",
+      "expected_output_sha256": "b577bf2d4ae39e08a5e2ea3268c831d600689cce8e78b44fa56fd988fb124b80",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-028",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-028",
+      "expected_output_sha256": "c0cc367c9c1b98be0741f7ca09c2d1deece3440700108e61e5df79cf798ea136",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-029",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-029",
+      "expected_output_sha256": "de12a2f6e1e3f24b5108f209b7103a76d88a560af08d3f476e7daf1ab258e7ac",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-030",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-030",
+      "expected_output_sha256": "69a29395f032a787dd4160827d3bc29b0d9a96a69ba2e46f5719255565b8775a",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-031",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-031",
+      "expected_output_sha256": "bbebc22708984971df7ba22d5cd3faf5fabb26e3b41700e8402f7a8b49487caa",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-032",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-032",
+      "expected_output_sha256": "79b48b42127a15188efe24bd3fca75417a79f9c7c7a15184b4beac18248a61c0",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-033",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-033",
+      "expected_output_sha256": "0105a3ab34d211de7789b044cd45352a300aae52b12a5496588aeec136732ce1",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-034",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-034",
+      "expected_output_sha256": "7f4e5f58ea87ae07aac8067ca1a2c05957bb64e8f2436059cb6a3c2364293257",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-035",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-035",
+      "expected_output_sha256": "15b4a2f204cf8f4953f7a45a7dd792327cd03b0084fdd89c412973d5e91d0948",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-036",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-036",
+      "expected_output_sha256": "624cd2596885ef11ccab381774a31eaa68cd6e57c8d968ace022c39ad4494771",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-037",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-037",
+      "expected_output_sha256": "9772c4015de0e69f2f78ec490f5c26c9dc7ef2cae0d4e239c3abd1c5731cc92e",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-038",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-038",
+      "expected_output_sha256": "e05046fab44a041d8631f1531118fbde08a4d3c437ae66026ef1a907ddbac64b",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-039",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-039",
+      "expected_output_sha256": "53199738cd9989fcfe70673c13ef13b2691b3a80e60565fab1759f3bd656b91e",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-040",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-040",
+      "expected_output_sha256": "cb52daf37b9e1bec6c71a616857e40e22ef3a3850a9ccd6c050f3fa4283931fe",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-041",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-041",
+      "expected_output_sha256": "b4486879a89b72869663241d8b2e900cff395670ba1209d2ce0ef659d162ea5f",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-042",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-042",
+      "expected_output_sha256": "d725035d566e731398589deaeaff1565cca78f17209fe331fda9ba4a3bab8278",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-043",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-043",
+      "expected_output_sha256": "9a359beb7c64889fc8828b00986da3fcd26e79c958585869a6ac64605e1d2dd2",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-044",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-044",
+      "expected_output_sha256": "0bddee401645e34ce76a6a604deffd37cfdbf8bb5cb690880b6999f82beae80d",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-045",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-045",
+      "expected_output_sha256": "c2e6882068fe6ff7e9c4bfe6789a3e97e3a157c31e8b76cda1a18eb011342b4e",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-046",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-046",
+      "expected_output_sha256": "8ffc0aa83d92be838f1877ac5ccca0b701f7a5e7b901863d5873aae80d375273",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-047",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-047",
+      "expected_output_sha256": "5d45795fd5f81061ec4830ba24e30c53a6a0c4bbe4eeb3f7beed6d55904d448a",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-048",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-048",
+      "expected_output_sha256": "02e2180aac3a5b1dd9472b86052b020f6fd33ef54b39668d6a1aac8256b92332",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-049",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-049",
+      "expected_output_sha256": "e625747a6f178e973689473bec89b75a9c78cad50b3965c8f9729cfce896d51a",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    },
+    {
+      "candidate_id": "LIUYAO-JUDGMENT-EXPERT-050",
+      "source_case_id": "CASE-LIUYAO-JUDGMENT-050",
+      "expected_output_sha256": "27b16054a2dfb097b8503711dbf87e9f97cb3b2a16f205ac9a70d80abe5e68b2",
+      "review_focus": [
+        "explicit question-category routing",
+        "transparent strength components and moving/change relation",
+        "absence of guaranteed outcome or event-date claims"
+      ],
+      "accepted": false,
+      "status": "pending_expert_review",
+      "review": {
+        "decision": "pending",
+        "reviewer_id": null,
+        "reviewed_at": null,
+        "notes": ""
+      }
+    }
+  ]
+}

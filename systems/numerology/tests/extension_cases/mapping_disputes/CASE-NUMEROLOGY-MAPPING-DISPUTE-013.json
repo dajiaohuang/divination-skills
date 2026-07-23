@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-NUMEROLOGY-MAPPING-DISPUTE-013",
+  "alternative_policy": "preserve-master-numbers-in-chaldean",
+  "expected_handling": "separate_lineage_or_fail_closed"
+}

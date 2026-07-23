@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "comparison_id": "COMPARE-1020304050607080",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-v0.1",
+  "subjects": {
+    "a": {
+      "chart_id": "CHART-EXAMPLE-A",
+      "validation_status": "valid"
+    },
+    "b": {
+      "chart_id": "CHART-EXAMPLE-B",
+      "validation_status": "valid"
+    }
+  },
+  "directional_facts": [
+    {
+      "fact_id": "western.comparison.a_to_b.aspect.0",
+      "direction": "a_to_b",
+      "statement_key": "western.synastry.major_aspect",
+      "source_fact_ids": [
+        "western.a.sun.longitude",
+        "western.b.moon.longitude"
+      ],
+      "rule_ids": [
+        "WESTERN-ASPECT-MAJOR-001"
+      ]
+    }
+  ],
+  "shared_timeline_refs": [],
+  "validation": {
+    "status": "valid",
+    "warnings": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "case_id": "CASE-LENORMAND-LAYOUT-019",
+  "raw_input": {
+    "spread": "three-card",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000013"
+  },
+  "significator": null,
+  "expected_output": {
+    "spread": "three-card",
+    "pairs": [
+      {
+        "fact_id": "lenormand.pair.001",
+        "left_fact_id": "lenormand.draw.symbol.001",
+        "right_fact_id": "lenormand.draw.symbol.002",
+        "left_symbol_id": "lenormand.02.clover",
+        "right_symbol_id": "lenormand.05.tree",
+        "ordered_keywords": [
+          [
+            "small chance",
+            "brief ease",
+            "lightness"
+          ],
+          [
+            "slow growth",
+            "roots",
+            "wellbeing context"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.002",
+        "left_fact_id": "lenormand.draw.symbol.002",
+        "right_fact_id": "lenormand.draw.symbol.003",
+        "left_symbol_id": "lenormand.05.tree",
+        "right_symbol_id": "lenormand.25.ring",
+        "ordered_keywords": [
+          [
+            "slow growth",
+            "roots",
+            "wellbeing context"
+          ],
+          [
+            "agreement",
+            "cycle",
+            "commitment"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "nine_card": null,
+    "grand_tableau": null
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bazi Reader"
+  short_description: "Import Bazi JSON or four-pillar text as untrusted facts"
+  default_prompt: "Use $bazi-reader to import this Bazi data without overwriting native calculations."

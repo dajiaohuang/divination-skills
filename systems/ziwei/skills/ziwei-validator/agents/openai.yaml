@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ziwei Validator"
+  short_description: "Compare structured Ziwei charts without overwriting facts"
+  default_prompt: "Use $ziwei-validator to compare these structured Ziwei charts and report auditable differences."

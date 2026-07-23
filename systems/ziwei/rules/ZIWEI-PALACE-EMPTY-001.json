@@ -1,0 +1,34 @@
+{
+  "rule_id": "ZIWEI-PALACE-EMPTY-001",
+  "title": "Classify a palace as empty only when it has no major star",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.palaces",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.empty_palace",
+      "output_path": "query.is_empty_major_palace",
+      "value": "major_star_count_zero",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 890,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/analyzer.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-005"
+  ]
+}

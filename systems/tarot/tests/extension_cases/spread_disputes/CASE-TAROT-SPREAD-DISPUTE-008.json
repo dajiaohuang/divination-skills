@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-TAROT-SPREAD-DISPUTE-008",
+  "alternative": "freeform-spread",
+  "expected_handling": "require_registered_spread_or_separate_lineage"
+}

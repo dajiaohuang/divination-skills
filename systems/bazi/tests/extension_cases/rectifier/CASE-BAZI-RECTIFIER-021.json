@@ -1,0 +1,46 @@
+{
+  "case_id": "CASE-BAZI-RECTIFIER-021",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_sha256": "f3b3e019ccf78547c30225517038eebd247ea36e592c73341e37b02faec4c764",
+  "input": {
+    "birth_date": "1980-01-15",
+    "day_boundary": "midnight",
+    "events": [
+      {
+        "end_date": "2010-06-30",
+        "event_id": "event-20-0",
+        "split": "training",
+        "start_date": "2010-06-01"
+      },
+      {
+        "end_date": "2011-06-30",
+        "event_id": "event-20-1",
+        "split": "training",
+        "start_date": "2011-06-01"
+      },
+      {
+        "end_date": "2012-06-30",
+        "event_id": "event-20-2",
+        "split": "training",
+        "start_date": "2012-06-01"
+      },
+      {
+        "end_date": "2013-06-30",
+        "event_id": "event-20-3",
+        "split": "training",
+        "start_date": "2013-06-01"
+      },
+      {
+        "end_date": "2014-06-30",
+        "event_id": "event-20-4",
+        "split": "holdout",
+        "start_date": "2014-06-01"
+      }
+    ],
+    "timezone": "Asia/Shanghai"
+  },
+  "module": "rectifier",
+  "status": "tested",
+  "system": "bazi"
+}

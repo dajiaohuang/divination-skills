@@ -1,0 +1,14 @@
+{
+  "rule_id": "LIUYAO-MOVING-CHANGE-001",
+  "title": "Calculate moving-line changed Najia and elemental relations",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-project-judgment-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.moving_line_positions", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "liuyao.moving_change_relation", "output_path": "moving_changes", "value": "changed_najia_relation", "confidence": "deterministic" }],
+  "priority": 830,
+  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "systems/liuyao/judgment.py _changed_assignments", "support_type": "direct" }],
+  "tests": ["CASE-LIUYAO-CAST-001"]
+}

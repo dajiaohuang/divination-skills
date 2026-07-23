@@ -1,6 +1,6 @@
 {
   "system": "lenormand",
-  "release": "0.1.0",
+  "release": "0.2.0",
   "signoffs": [
     {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/lenormand/tests/golden", "systems/lenormand/tests/edge_cases", "systems/lenormand/tests/disputes"], "notes": "Requires an independent Lenormand practitioner to review card order, pairs, layouts, and reversal exclusion."},
     {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/lenormand/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve keywords and any separately shipped card artwork."},

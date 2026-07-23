@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/comparison.schema.json",
+  "title": "Directional two-chart comparison",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "comparison_id",
+    "system",
+    "lineage",
+    "subjects",
+    "directional_facts",
+    "shared_timeline_refs",
+    "validation"
+  ],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "comparison_id": { "type": "string", "pattern": "^COMPARE-[A-F0-9]{16}$" },
+    "system": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "lineage": { "type": "string", "minLength": 1 },
+    "subjects": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["a", "b"],
+      "properties": {
+        "a": { "$ref": "#/$defs/subject" },
+        "b": { "$ref": "#/$defs/subject" }
+      }
+    },
+    "directional_facts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["fact_id", "direction", "statement_key", "source_fact_ids", "rule_ids"],
+        "properties": {
+          "fact_id": { "type": "string", "minLength": 1 },
+          "direction": { "type": "string", "enum": ["a_to_b", "b_to_a", "symmetric"] },
+          "statement_key": { "type": "string", "pattern": "^[a-z][a-z0-9_.-]*$" },
+          "source_fact_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "rule_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z][A-Z0-9]+(?:-[A-Z0-9]+){2,}$"
+            }
+          }
+        }
+      }
+    },
+    "shared_timeline_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^TIMELINE-[A-F0-9]{16}$" }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "warnings"],
+      "properties": {
+        "status": { "type": "string", "enum": ["valid", "partial", "invalid"] },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "$defs": {
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["chart_id", "validation_status"],
+      "properties": {
+        "chart_id": { "type": "string", "pattern": "^CHART-[A-Z0-9-]+$" },
+        "validation_status": { "type": "string", "enum": ["valid", "partial", "invalid"] }
+      }
+    }
+  }
+}

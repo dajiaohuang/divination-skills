@@ -86,7 +86,7 @@ def test_report_keeps_draw_facts_and_links_every_statement() -> None:
     ("payload", "code"),
     [
         ({}, "invalid_spread"),
-        ({"spread": "celtic-cross"}, "invalid_spread"),
+        ({"spread": "unregistered-spread"}, "invalid_spread"),
         ({"spread": "single", "seed_hex": "zz" * 32}, "invalid_seed"),
         ({"spread": "single", "allow_reversals": "yes"}, "invalid_reversal_policy"),
     ],

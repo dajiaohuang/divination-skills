@@ -1,7 +1,8 @@
 # Known limitations
 
-- v0.1 is intentionally not a complete Qimen pan; heaven, rotating star/door, and spirit plates are absent.
+- The v0.2 full plate uses a declared project rotation and center-hosting policy that awaits
+  independent practitioner acceptance.
 - The current solar-term instant is calculated with `lunar_python`; an independent ephemeris comparator is still required.
 - Chaibu yuan selection, ju table, earth plate, and duty-origin mappings await practitioner signoff.
-- Center-palace hosting is disclosed but not used to synthesize missing advanced plates.
+- Advanced combinations and category-specific 用神 rules remain absent.
 - No 用神, auspicious-direction, event, outcome, or timing conclusion is supported.

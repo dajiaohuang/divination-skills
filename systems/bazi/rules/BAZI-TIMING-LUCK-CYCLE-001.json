@@ -1,0 +1,43 @@
+{
+  "rule_id": "BAZI-TIMING-LUCK-CYCLE-001",
+  "title": "Select the active explicitly directed luck cycle",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.luck_cycles",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "bazi.active_luck_cycle",
+      "output_path": "active_luck_cycle",
+      "value": "age_bounded_cycle",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 950,
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-LUNARPY-001",
+      "locator": "luck-cycle boundary calculation",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+      "locator": "systems/bazi/timing.py",
+      "support_type": "direct"
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-LUCK-DIRECTION-001",
+    "DSP-BAZI-LUCK-START-001"
+  ],
+  "tests": [
+    "CASE-BAZI-STANDARD-003"
+  ]
+}

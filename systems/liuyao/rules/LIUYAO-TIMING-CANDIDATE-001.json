@@ -1,0 +1,15 @@
+{
+  "rule_id": "LIUYAO-TIMING-CANDIDATE-001",
+  "title": "Keep branch timing candidates in a separate opt-in rule pack",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-project-judgment-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "timing_pack.enabled", "operator": "eq", "value": true }],
+  "conclusions": [{ "finding_type": "liuyao.branch_timing_candidates", "output_path": "timing_pack.candidates", "value": "branch_only", "confidence": "low" }],
+  "priority": 700,
+  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "systems/liuyao/judgment.py timing_candidates", "support_type": "direct" }],
+  "tests": ["CASE-LIUYAO-CAST-001"],
+  "notes": "The rule does not convert a branch into a promised date."
+}

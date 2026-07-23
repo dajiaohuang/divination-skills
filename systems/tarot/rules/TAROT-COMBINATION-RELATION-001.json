@@ -1,0 +1,14 @@
+{
+  "rule_id": "TAROT-COMBINATION-RELATION-001",
+  "title": "Describe adjacent arcana, suit, rank, and element relations",
+  "system": "tarot",
+  "lineage": "rws-text-baseline-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.cards", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "tarot.card_relations", "output_path": "pairs", "value": "adjacent_metadata_relations", "confidence": "deterministic" }],
+  "priority": 800,
+  "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "systems/tarot/combinations.py", "support_type": "direct" }],
+  "tests": ["CASE-TAROT-DRAW-001"]
+}

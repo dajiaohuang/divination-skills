@@ -1,0 +1,65 @@
+{
+  "case_id": "CASE-LENORMAND-LAYOUT-016",
+  "raw_input": {
+    "spread": "three-card",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000010"
+  },
+  "significator": null,
+  "expected_output": {
+    "spread": "three-card",
+    "pairs": [
+      {
+        "fact_id": "lenormand.pair.001",
+        "left_fact_id": "lenormand.draw.symbol.001",
+        "right_fact_id": "lenormand.draw.symbol.002",
+        "left_symbol_id": "lenormand.35.anchor",
+        "right_symbol_id": "lenormand.33.key",
+        "ordered_keywords": [
+          [
+            "stability",
+            "work",
+            "long duration"
+          ],
+          [
+            "solution",
+            "access",
+            "importance"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "lenormand.pair.002",
+        "left_fact_id": "lenormand.draw.symbol.002",
+        "right_fact_id": "lenormand.draw.symbol.003",
+        "left_symbol_id": "lenormand.33.key",
+        "right_symbol_id": "lenormand.18.dog",
+        "ordered_keywords": [
+          [
+            "solution",
+            "access",
+            "importance"
+          ],
+          [
+            "loyalty",
+            "support",
+            "trusted connection"
+          ]
+        ],
+        "rule_ids": [
+          "LENORMAND-PAIR-001"
+        ],
+        "source_ids": [
+          "SRC-LENORMAND-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "nine_card": null,
+    "grand_tableau": null
+  }
+}

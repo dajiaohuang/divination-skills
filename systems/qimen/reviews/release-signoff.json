@@ -1,6 +1,6 @@
 {
   "system": "qimen",
-  "release": "0.1.0",
+  "release": "0.2.0",
   "signoffs": [
     {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/qimen/tests/golden", "systems/qimen/tests/edge_cases", "systems/qimen/tests/disputes"], "notes": "Requires an independent rotating-plate Qimen practitioner to review the bounded Chaibu foundation and explicit omissions."},
     {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/qimen/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve all production sources; kinqimen remains isolated reference material."},

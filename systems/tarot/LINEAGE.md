@@ -5,3 +5,8 @@
 Reversals are an explicit input policy. A reversed card narrows, delays, internalizes, or complicates its upright theme; it is not automatically “bad.” Position semantics have priority over a free-floating card meaning. Multi-card narrative is descriptive and reflective, never a fixed-future prediction.
 
 The historical source is recorded for provenance. The production data contract depends on the project-authored deck specification, keeping modern commercial deck text and images outside the clean-room boundary.
+
+`rws-text-baseline-v0.2` adds four project-authored spreads and computes only adjacent metadata
+relations and aggregate deck counts. `rws-text-journal-v0.2` is a local, consent-gated journal
+contract that stores the question hash rather than the raw question. Its statistics are descriptive
+counts; “accuracy,” correlation, and outcome scoring are prohibited.

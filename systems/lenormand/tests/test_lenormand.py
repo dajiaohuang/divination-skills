@@ -52,7 +52,7 @@ def test_report_preserves_facts_and_links_evidence() -> None:
     ("payload", "code"),
     [
         ({}, "invalid_spread"),
-        ({"spread": "grand-tableau"}, "invalid_spread"),
+        ({"spread": "four-card"}, "invalid_spread"),
         ({"spread": "single", "seed_hex": "zz" * 32}, "invalid_seed"),
         ({"spread": "single", "allow_reversals": True}, "reversals_unsupported"),
         ({"spread": "single", "extra": 1}, "unknown_fields"),

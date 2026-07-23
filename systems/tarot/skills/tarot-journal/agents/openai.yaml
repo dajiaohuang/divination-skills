@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tarot Journal"
+  short_description: "Store consented Tarot reflections and descriptive stats."
+  default_prompt: "Use $tarot-journal to append a consented Tarot reflection or compute descriptive journal statistics without scoring predictive accuracy."

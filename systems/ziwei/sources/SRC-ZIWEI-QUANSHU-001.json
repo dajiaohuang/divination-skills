@@ -1,0 +1,63 @@
+{
+  "source_id": "SRC-ZIWEI-QUANSHU-001",
+  "title": "紫微斗數全書（維基文庫校錄本）",
+  "creators": [
+    {
+      "name": "traditional compilation; author uncertain",
+      "role": "unknown"
+    },
+    {
+      "name": "Wikisource contributors",
+      "role": "editor"
+    }
+  ],
+  "source_type": "book",
+  "language": "zh-Hant",
+  "edition_or_version": "Wikisource full-text transcription",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://zh.wikisource.org/zh-hant/%E7%B4%AB%E5%BE%AE%E6%96%97%E6%95%B8%E5%85%A8%E6%9B%B8/%E5%85%A8%E8%A6%BD",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": {
+    "retained": false
+  },
+  "license": {
+    "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "text_available": true,
+    "additional_terms": false,
+    "notes": "The historical original is public domain. The Wikisource transcription is used only to verify uncopyrightable facts and formula structure; no transcription text is redistributed."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "Project-authored tables encode calculation facts and do not reproduce the Wikisource text."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Historical public-domain source and Wikisource license inspected; production stores formulas and short locators only."
+  },
+  "usage_status": "production",
+  "systems": [
+    "ziwei"
+  ],
+  "lineages": [
+    "project-native-ziwei-structural-v0.4"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Primary historical formula source. Variant readings and modern school differences remain explicit disputes."
+  },
+  "notes": "Used for palace, star, cycle, four-transformation, minor-limit, and ruler calculation facts. It is not used as an interpretation corpus."
+}

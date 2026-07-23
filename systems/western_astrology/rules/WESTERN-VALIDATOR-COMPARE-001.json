@@ -1,0 +1,34 @@
+{
+  "rule_id": "WESTERN-VALIDATOR-COMPARE-001",
+  "title": "Compare imported positions, houses, and angles using an explicit tolerance",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-major-aspects-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.positions",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "western.chart_difference",
+      "output_path": "differences",
+      "value": "tolerance_aware_differences",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 990,
+  "sources": [
+    {
+      "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
+      "locator": "systems/western_astrology/validator.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-WESTERN-NATAL-002"
+  ]
+}

@@ -71,6 +71,15 @@ RUNTIME_EXCLUDED_DIRECTORIES = {
 
 RUNTIME_FILE_SUFFIXES = {".json", ".py"}
 
+COMMON_CONTRACT_FILES = (
+    "reading-session.schema.json",
+    "chart-import.schema.json",
+    "confidence-profile.schema.json",
+    "timeline.schema.json",
+    "comparison.schema.json",
+    "report-profile.schema.json",
+)
+
 
 def _write_entry(archive: zipfile.ZipFile, name: str, payload: bytes) -> None:
     info = zipfile.ZipInfo(name, FIXED_TIME)
@@ -138,11 +147,19 @@ def _runtime_files(repo_root: Path, system: str) -> Iterator[tuple[Path, str]]:
     tooling_package = repo_root / "tooling" / "src" / "divination_skills"
     for filename in SYSTEM_SHARED_MODULES[system]:
         yield tooling_package / filename, f"divination_skills/{filename}"
+    yield tooling_package / "contracts.py", "divination_skills/contracts.py"
 
     for path in sorted((repo_root / "catalog" / "sources").glob("*.json")):
         if _excluded_source_manifest(path):
             continue
         yield path, f"catalog/sources/{path.name}"
+
+    for filename in COMMON_CONTRACT_FILES:
+        path = repo_root / "common" / "schemas" / filename
+        yield path, f"common/schemas/{filename}"
+    high_risk_policy = repo_root / "common" / "safety" / "HIGH_RISK_POLICY.md"
+    yield high_risk_policy, "common/safety/HIGH_RISK_POLICY.md"
+
 
 def build_skill_packages(
     repo_root: Path, output_dir: Path, system: str = "bazi"

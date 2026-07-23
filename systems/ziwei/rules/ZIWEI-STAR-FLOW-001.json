@@ -1,0 +1,39 @@
+{
+  "rule_id": "ZIWEI-STAR-FLOW-001",
+  "title": "Place scope-specific flowing Lu, Yang, Tuo, and Horse facts",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.4",
+  "version": "0.4.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "timing.layers.heavenly_stem",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.flow_stars",
+      "output_path": "timing.layers.flow_stars",
+      "value": "scope_specific_placements",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 925,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "flowing Lu-Yang-Tuo and Horse formula context",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/timing.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-011"
+  ]
+}

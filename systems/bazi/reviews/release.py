@@ -1,4 +1,4 @@
-"""Audit Bazi v0.1 release evidence without inventing missing approvals."""
+"""Audit Bazi v0.2 release evidence without inventing missing approvals."""
 
 from __future__ import annotations
 

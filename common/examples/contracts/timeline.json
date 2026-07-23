@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "timeline_id": "TIMELINE-0102030405060708",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "chart_id": "CHART-EXAMPLE-001",
+  "entries": [
+    {
+      "entry_id": "TIME-EXAMPLE-MAJOR-001",
+      "scope": "major_period",
+      "start": "2030-01-01T00:00:00Z",
+      "end": "2039-12-31T23:59:59Z",
+      "start_inclusive": true,
+      "end_inclusive": true,
+      "fact_ids": [
+        "bazi.luck_cycles.0"
+      ],
+      "rule_ids": [
+        "BAZI-LUCK-SEQUENCE-001"
+      ],
+      "confidence": "deterministic"
+    }
+  ]
+}

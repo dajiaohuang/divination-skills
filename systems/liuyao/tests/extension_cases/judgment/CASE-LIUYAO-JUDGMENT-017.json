@@ -1,0 +1,122 @@
+{
+  "case_id": "CASE-LIUYAO-JUDGMENT-017",
+  "case_type": "standard",
+  "raw_input": {
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000011",
+    "local_datetime": "2026-05-17T12:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "arguments": {
+    "question_category": "career",
+    "include_timing": false
+  },
+  "expected_output": {
+    "status": "structural_candidates",
+    "candidate_line_fact_ids": [
+      "iching.cast.line.002"
+    ],
+    "line_strength": [
+      {
+        "fact_id": "liuyao.judgment.strength.line-001",
+        "line_fact_id": "iching.cast.line.001",
+        "month_relation": "context_generates_line",
+        "day_relation": "context_controls_line",
+        "adjustments": [],
+        "structural_score": -1,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-002",
+        "line_fact_id": "iching.cast.line.002",
+        "month_relation": "same_element",
+        "day_relation": "context_generates_line",
+        "adjustments": [
+          {
+            "reason": "void",
+            "delta": -2
+          }
+        ],
+        "structural_score": 1,
+        "band": "mixed",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-003",
+        "line_fact_id": "iching.cast.line.003",
+        "month_relation": "context_controls_line",
+        "day_relation": "line_controls_context",
+        "adjustments": [],
+        "structural_score": -2,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-004",
+        "line_fact_id": "iching.cast.line.004",
+        "month_relation": "context_generates_line",
+        "day_relation": "context_controls_line",
+        "adjustments": [],
+        "structural_score": -1,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-005",
+        "line_fact_id": "iching.cast.line.005",
+        "month_relation": "line_controls_context",
+        "day_relation": "line_generates_context",
+        "adjustments": [],
+        "structural_score": -1,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-006",
+        "line_fact_id": "iching.cast.line.006",
+        "month_relation": "context_controls_line",
+        "day_relation": "line_controls_context",
+        "adjustments": [],
+        "structural_score": -2,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "moving_changes": [],
+    "timing_pack": {
+      "enabled": false,
+      "candidates": [],
+      "precision": null
+    }
+  }
+}

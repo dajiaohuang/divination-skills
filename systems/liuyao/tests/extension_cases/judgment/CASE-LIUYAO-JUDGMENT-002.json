@@ -1,0 +1,149 @@
+{
+  "case_id": "CASE-LIUYAO-JUDGMENT-002",
+  "case_type": "standard",
+  "raw_input": {
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000002",
+    "local_datetime": "2026-02-02T12:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "arguments": {
+    "question_category": "counterpart",
+    "include_timing": true
+  },
+  "expected_output": {
+    "status": "structural_candidates",
+    "candidate_line_fact_ids": [
+      "iching.cast.line.006"
+    ],
+    "line_strength": [
+      {
+        "fact_id": "liuyao.judgment.strength.line-001",
+        "line_fact_id": "iching.cast.line.001",
+        "month_relation": "context_controls_line",
+        "day_relation": "context_controls_line",
+        "adjustments": [],
+        "structural_score": -4,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-002",
+        "line_fact_id": "iching.cast.line.002",
+        "month_relation": "line_controls_context",
+        "day_relation": "line_controls_context",
+        "adjustments": [
+          {
+            "reason": "void",
+            "delta": -2
+          }
+        ],
+        "structural_score": -2,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-003",
+        "line_fact_id": "iching.cast.line.003",
+        "month_relation": "same_element",
+        "day_relation": "same_element",
+        "adjustments": [],
+        "structural_score": 4,
+        "band": "supported",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-004",
+        "line_fact_id": "iching.cast.line.004",
+        "month_relation": "same_element",
+        "day_relation": "same_element",
+        "adjustments": [],
+        "structural_score": 4,
+        "band": "supported",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-005",
+        "line_fact_id": "iching.cast.line.005",
+        "month_relation": "context_controls_line",
+        "day_relation": "context_controls_line",
+        "adjustments": [],
+        "structural_score": -4,
+        "band": "strained",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      },
+      {
+        "fact_id": "liuyao.judgment.strength.line-006",
+        "line_fact_id": "iching.cast.line.006",
+        "month_relation": "context_generates_line",
+        "day_relation": "context_generates_line",
+        "adjustments": [],
+        "structural_score": 2,
+        "band": "supported",
+        "rule_ids": [
+          "LIUYAO-STRENGTH-PROJECT-001"
+        ],
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ]
+      }
+    ],
+    "moving_changes": [],
+    "timing_pack": {
+      "enabled": true,
+      "candidates": [
+        {
+          "fact_id": "liuyao.judgment.timing.001",
+          "use_line_fact_id": "iching.cast.line.006",
+          "branch": "酉",
+          "trigger": "same_as_use_line",
+          "precision": "branch_only",
+          "rule_ids": [
+            "LIUYAO-TIMING-CANDIDATE-001"
+          ],
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "liuyao.judgment.timing.002",
+          "use_line_fact_id": "iching.cast.line.006",
+          "branch": "卯",
+          "trigger": "clashes_use_line",
+          "precision": "branch_only",
+          "rule_ids": [
+            "LIUYAO-TIMING-CANDIDATE-001"
+          ],
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ]
+        }
+      ],
+      "precision": "branch_only"
+    }
+  }
+}

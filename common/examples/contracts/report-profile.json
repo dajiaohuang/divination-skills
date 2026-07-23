@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "PROFILE-BAZI-CORE-V1",
+  "system": "bazi",
+  "mode": "core",
+  "sections": [
+    {
+      "section_id": "structural_summary",
+      "title": "Structural summary",
+      "required_fact_prefixes": [
+        "bazi.pillars",
+        "bazi.day_master"
+      ],
+      "required_rule_prefixes": [
+        "BAZI-FACT-"
+      ],
+      "optional": false
+    }
+  ],
+  "forbidden_topics": [
+    "guaranteed_event",
+    "medical_diagnosis",
+    "third_party_hidden_fact"
+  ],
+  "high_risk_policy": "common/safety/HIGH_RISK_POLICY.md",
+  "experimental": false
+}

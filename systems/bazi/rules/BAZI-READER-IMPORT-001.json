@@ -1,0 +1,34 @@
+{
+  "rule_id": "BAZI-READER-IMPORT-001",
+  "title": "Keep imported Bazi facts isolated from native calculation",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [
+    {
+      "fact_path": "imported_chart.computed_facts.pillars",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "bazi.import",
+      "output_path": "native_facts_overwritten",
+      "value": false,
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 1000,
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+      "locator": "systems/bazi/reader.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-BAZI-STANDARD-001"
+  ]
+}

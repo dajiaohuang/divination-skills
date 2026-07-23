@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/reading-session.schema.json",
+  "title": "Cross-system reading session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "session_id",
+    "data_classification",
+    "question",
+    "chart_refs",
+    "consent",
+    "privacy",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "session_id": { "type": "string", "pattern": "^SESSION-[A-F0-9]{16}$" },
+    "data_classification": {
+      "type": "string",
+      "enum": ["synthetic", "public", "consented_private"]
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "text"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "natal",
+            "timing",
+            "relationship",
+            "career",
+            "horary",
+            "validation",
+            "general"
+          ]
+        },
+        "text": { "type": "string", "minLength": 1, "maxLength": 2000 }
+      }
+    },
+    "chart_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["chart_id", "system", "role", "validation_status"],
+        "properties": {
+          "chart_id": { "type": "string", "pattern": "^CHART-[A-Z0-9-]+$" },
+          "system": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "role": {
+            "type": "string",
+            "enum": ["primary", "subject_a", "subject_b", "comparison", "horary"]
+          },
+          "validation_status": {
+            "type": "string",
+            "enum": ["valid", "partial", "invalid", "unvalidated"]
+          }
+        }
+      }
+    },
+    "confidence_profile_ref": {
+      "type": "string",
+      "pattern": "^CONFIDENCE-[A-F0-9]{16}$"
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purpose", "persistence", "third_party_data"],
+      "properties": {
+        "purpose": {
+          "type": "string",
+          "enum": ["ephemeral_reading", "saved_reading", "expert_review"]
+        },
+        "persistence": { "type": "boolean" },
+        "third_party_data": {
+          "type": "string",
+          "enum": ["none", "subject_consented", "user_asserted_authority"]
+        },
+        "consent_record": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "purpose": { "enum": ["saved_reading", "expert_review"] } }
+          },
+          "then": { "required": ["consent_record"] }
+        }
+      ]
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["log_policy", "retention_days"],
+      "properties": {
+        "log_policy": { "const": "redacted" },
+        "retention_days": { "type": "integer", "minimum": 0, "maximum": 30 }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "ready", "blocked", "completed"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "consent": {
+            "properties": { "purpose": { "const": "ephemeral_reading" } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "consent": {
+            "properties": { "persistence": { "const": false } }
+          },
+          "privacy": {
+            "properties": { "retention_days": { "const": 0 } }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "consent": {
+            "properties": { "persistence": { "const": true } }
+          },
+          "privacy": {
+            "properties": { "retention_days": { "minimum": 1 } }
+          }
+        }
+      }
+    }
+  ]
+}

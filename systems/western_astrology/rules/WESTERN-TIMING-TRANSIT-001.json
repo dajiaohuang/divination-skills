@@ -1,0 +1,39 @@
+{
+  "rule_id": "WESTERN-TIMING-TRANSIT-001",
+  "title": "Calculate directional transit-to-natal major aspects",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-major-aspects-v0.2",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "transit_chart.computed_facts.positions",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "western.transit_aspect",
+      "output_path": "transit_to_natal_aspects",
+      "value": "directional_major_aspects",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 950,
+  "sources": [
+    {
+      "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+      "locator": "geocentric position calculation",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
+      "locator": "systems/western_astrology/timing.py",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-WESTERN-NATAL-003"
+  ]
+}

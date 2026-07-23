@@ -1,0 +1,102 @@
+{
+  "case_id": "CASE-NUMEROLOGY-CHALDEAN-035",
+  "raw_input": {
+    "name": "Alan Turing",
+    "birth_date": "1985-12-09",
+    "mapping": "chaldean"
+  },
+  "expected_output": {
+    "normalized_input": {
+      "name_letters": "ALANTURING",
+      "birth_date": "1985-12-09",
+      "mapping": "chaldean-1-through-8-project",
+      "mapping_lineage": "chaldean-name-project-v0.2",
+      "transliteration_policy": "latin_nfkd-v0.1",
+      "masters": []
+    },
+    "computed_facts": {
+      "life_path": {
+        "fact_id": "numerology.life_path",
+        "raw_total": 35,
+        "reduction_steps": [
+          35,
+          8
+        ],
+        "value": 8,
+        "master_number": false,
+        "theme": "stewardship of power and resources",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "birthday": {
+        "fact_id": "numerology.birthday",
+        "raw_total": 9,
+        "reduction_steps": [
+          9
+        ],
+        "value": 9,
+        "master_number": false,
+        "theme": "completion and broad concern",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "expression": {
+        "fact_id": "numerology.expression",
+        "raw_total": 31,
+        "reduction_steps": [
+          31,
+          4
+        ],
+        "value": 4,
+        "master_number": false,
+        "theme": "structure",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "soul_urge": {
+        "fact_id": "numerology.soul_urge",
+        "raw_total": 9,
+        "reduction_steps": [
+          9
+        ],
+        "value": 9,
+        "master_number": false,
+        "theme": "completion and broad concern",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "personality": {
+        "fact_id": "numerology.personality",
+        "raw_total": 22,
+        "reduction_steps": [
+          22,
+          4
+        ],
+        "value": 4,
+        "master_number": false,
+        "theme": "structure",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
+      "maturity": {
+        "fact_id": "numerology.maturity",
+        "raw_total": 12,
+        "reduction_steps": [
+          12,
+          3
+        ],
+        "value": 3,
+        "master_number": false,
+        "theme": "expression",
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      }
+    }
+  }
+}

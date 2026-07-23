@@ -1,0 +1,4 @@
+interface:
+  display_name: "Western Rectifier"
+  short_description: "Rank birth-time intervals with retained dated events"
+  default_prompt: "Use $western-rectifier to rank birth-time intervals and report underdetermination honestly."
