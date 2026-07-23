@@ -1,0 +1,11 @@
+{
+  "status": "selected",
+  "license_model": "open_source",
+  "license_identifier": "Apache-2.0",
+  "license_document": "LICENSE",
+  "distribution_allowed": true,
+  "commercial_use_allowed": true,
+  "decided_by": "project-owner",
+  "decided_at": "2026-07-23T02:48:47Z",
+  "notes": "The project owner explicitly selected Apache License 2.0 for project-authored material. Third-party sources and ignored references remain governed by their own terms."
+}

@@ -1,0 +1,14 @@
+{
+  "rule_id": "RUNES-SEQUENCE-001",
+  "title": "Read runes as an ordered modern reflective sequence",
+  "system": "runes",
+  "lineage": "elder-futhark-project-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "computed_facts.symbols", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "runes.sequence", "output_path": "derived_findings.sequence", "value": "modern_reflective_order", "confidence": "low" }],
+  "priority": 600,
+  "sources": [{ "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "Bounded sequence policy", "support_type": "direct" }],
+  "tests": ["CASE-RUNES-DRAW-002"]
+}

@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-ICHING-MOVING-LINE-PRIORITY-001",
+  "title": "Report all moving lines or select a priority line",
+  "system": "iching",
+  "topic": "moving-line interpretation priority",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "three-coin-king-wen-structural-v0.1",
+      "summary": "Report all moving lines and the changed hexagram without choosing a priority text.",
+      "rule_ids": ["ICHING-MOVING-LINES-001", "ICHING-STRUCTURAL-REFLECTION-001"],
+      "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "moving-line structural contract" }]
+    },
+    {
+      "lineage": "school-specific-priority-alternative",
+      "summary": "Choose one or more line texts according to an additional school-specific priority method.",
+      "rule_ids": ["ICHING-STRUCTURAL-REFLECTION-001"],
+      "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "explicitly unsupported alternatives" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "three-coin-king-wen-structural-v0.1",
+    "rationale": "No reviewed priority-line source is bundled, so v0.1 reports structure only.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "All moving lines are shown; no school-specific priority line is selected.",
+  "sources": [
+    { "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "moving-line structural contract" },
+    { "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "scope exclusions" }
+  ]
+}

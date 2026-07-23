@@ -1,0 +1,38 @@
+{
+  "source_id": "SRC-EXAMPLE-TEXT-001",
+  "title": "Example interpretation text",
+  "creators": [{ "name": "Divination Skills Project", "role": "author" }],
+  "source_type": "book",
+  "language": "en",
+  "publication_date": "2026",
+  "edition_or_version": "fixture-edition",
+  "locators": [{ "kind": "local", "value": "common/examples/sources/SRC-EXAMPLE-TEXT-001.json", "stable": true }],
+  "retrieved_at": "2026-07-23",
+  "license": {
+    "identifier": "project-authored-example",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "example-fixture",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Synthetic project-authored fixture."
+  },
+  "usage_status": "tested",
+  "systems": ["example"],
+  "lineages": ["baseline", "alternative"],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Synthetic schema fixture only."
+  }
+}

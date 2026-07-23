@@ -1,0 +1,4 @@
+interface:
+  display_name: "Western Core"
+  short_description: "Explain validated natal placements and aspects with evidence"
+  default_prompt: "Use $western-core to explain a validated Western natal chart structurally."

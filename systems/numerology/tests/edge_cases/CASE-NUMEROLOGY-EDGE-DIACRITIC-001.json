@@ -1,0 +1,139 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-NUMEROLOGY-EDGE-DIACRITIC-001",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-numerology",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "birthday": {
+        "fact_id": "numerology.birthday",
+        "master_number": true,
+        "raw_total": 29,
+        "reduction_steps": [
+          29,
+          11
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "heightened inspiration",
+        "value": 11
+      },
+      "expression": {
+        "fact_id": "numerology.expression",
+        "master_number": false,
+        "raw_total": 42,
+        "reduction_steps": [
+          42,
+          6
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "care and responsibility",
+        "value": 6
+      },
+      "life_path": {
+        "fact_id": "numerology.life_path",
+        "master_number": false,
+        "raw_total": 15,
+        "reduction_steps": [
+          15,
+          6
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "care and responsibility",
+        "value": 6
+      },
+      "maturity": {
+        "fact_id": "numerology.maturity",
+        "master_number": false,
+        "raw_total": 12,
+        "reduction_steps": [
+          12,
+          3
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "expression",
+        "value": 3
+      },
+      "personality": {
+        "fact_id": "numerology.personality",
+        "master_number": false,
+        "raw_total": 12,
+        "reduction_steps": [
+          12,
+          3
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "expression",
+        "value": 3
+      },
+      "soul_urge": {
+        "fact_id": "numerology.soul_urge",
+        "master_number": false,
+        "raw_total": 30,
+        "reduction_steps": [
+          30,
+          3
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "expression",
+        "value": 3
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "pythagorean-latin-project-v0.1",
+  "must_match_rules": [
+    "NUMEROLOGY-CAL-DATE-001",
+    "NUMEROLOGY-CAL-NAME-001",
+    "NUMEROLOGY-INTERPRET-THEME-001"
+  ],
+  "normalized_input": {
+    "birth_date": "2000-02-29",
+    "mapping": "pythagorean-a1-i9-repeat",
+    "masters": [
+      11,
+      22,
+      33
+    ],
+    "name_letters": "ELODIETEST"
+  },
+  "raw_input": {
+    "birth_date": "2000-02-29",
+    "name": "Élodie Test"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "numerology",
+  "title": "Latin name with removable diacritics on leap day"
+}

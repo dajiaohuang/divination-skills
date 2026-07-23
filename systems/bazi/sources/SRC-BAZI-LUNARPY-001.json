@@ -1,0 +1,44 @@
+{
+  "source_id": "SRC-BAZI-LUNARPY-001",
+  "title": "lunar-python 1.4.8",
+  "creators": [{ "name": "6tail", "role": "maintainer" }],
+  "source_type": "software",
+  "language": "zh",
+  "publication_date": "2025-11-05",
+  "edition_or_version": "1.4.8",
+  "locators": [
+    { "kind": "repository", "value": "https://github.com/6tail/lunar-python", "stable": true },
+    { "kind": "url", "value": "https://pypi.org/project/lunar-python/1.4.8/", "stable": true }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "MIT",
+    "url": "https://raw.githubusercontent.com/6tail/lunar-python/master/LICENSE",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "MIT copyright and permission notice must be retained in copies or substantial portions."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Repository LICENSE and package metadata both identify the MIT License."
+  },
+  "usage_status": "production",
+  "systems": ["bazi"],
+  "lineages": ["ziping-calculation-baseline", "lunar-python-sect-1", "lunar-python-sect-2"],
+  "quality": {
+    "authority": "practitioner",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Pinned implementation source and comparator, not sole proof of astronomical or lineage correctness."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/systems/bazi/calculator/input.schema.json",
+  "title": "Bazi calculator input v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["local_datetime", "timezone"],
+  "properties": {
+    "local_datetime": { "type": "string", "minLength": 16 },
+    "timezone": { "type": "string", "minLength": 1 },
+    "fold": { "type": "integer", "enum": [0, 1] },
+    "day_boundary": { "type": "string", "enum": ["midnight", "zi_initial"], "default": "midnight" },
+    "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+    "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+    "luck_cycle_direction": { "type": "string", "enum": ["forward", "reverse"] },
+    "true_solar_time": { "const": false, "default": false }
+  }
+}

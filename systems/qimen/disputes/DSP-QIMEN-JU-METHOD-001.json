@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-QIMEN-JU-METHOD-001",
+  "title": "Select Qimen ju by Chaibu or Zhirun",
+  "system": "qimen",
+  "topic": "ju selection method",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "shijia-zhuanpan-chaibu-v0.1",
+      "summary": "Use the frozen solar-term and three-yuan Chaibu table.",
+      "rule_ids": ["QIMEN-CHAIBU-JU-001"],
+      "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "Chaibu JU_TABLE" }]
+    },
+    {
+      "lineage": "zhirun-not-implemented",
+      "summary": "Apply an intercalation method with additional term-distance and correction rules.",
+      "rule_ids": ["QIMEN-FOUNDATION-BOUNDARY-001"],
+      "sources": [{ "source_id": "SRC-QIMEN-KINQIMEN-001", "locator": "reference-only Zhirun implementation" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "shijia-zhuanpan-chaibu-v0.1",
+    "rationale": "Only Chaibu is implemented and tested; Zhirun remains reference-only.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "This foundation uses Chaibu; Zhirun and other ju methods are not calculated.",
+  "sources": [
+    { "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "Chaibu JU_TABLE" },
+    { "source_id": "SRC-QIMEN-KINQIMEN-001", "locator": "reference-only alternative" }
+  ]
+}

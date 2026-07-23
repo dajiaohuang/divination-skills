@@ -1,0 +1,44 @@
+{
+  "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+  "title": "Astronomy Engine 2.1.19",
+  "creators": [{ "name": "Don Cross / CosineKitty", "role": "maintainer" }],
+  "source_type": "software",
+  "language": "en",
+  "publication_date": "2023-12-14",
+  "edition_or_version": "2.1.19",
+  "locators": [
+    { "kind": "repository", "value": "https://github.com/cosinekitty/astronomy", "stable": true },
+    { "kind": "url", "value": "https://pypi.org/project/astronomy-engine/2.1.19/", "stable": true }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "MIT",
+    "url": "https://github.com/cosinekitty/astronomy/blob/master/LICENSE",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "Retain the MIT copyright and permission notice in copies or substantial portions."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Repository LICENSE and PyPI metadata identify the MIT License."
+  },
+  "usage_status": "production",
+  "systems": ["western-astrology"],
+  "lineages": ["tropical-geocentric-v0.1"],
+  "quality": {
+    "authority": "scholarly",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Engine documentation reports validation against NOVAS and JPL Horizons; local product comparisons remain required."
+  }
+}

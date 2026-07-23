@@ -1,0 +1,59 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "丙寅",
+        "丁卯"
+      ],
+      "dispute_id": "DSP-BAZI-MONTH-BOUNDARY-001",
+      "field_path": "computed_facts.month_pillar"
+    }
+  ],
+  "case_id": "CASE-BAZI-DISPUTE-MONTH-BOUNDARY-001",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "month_pillar": "丙寅"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-CAL-MONTH-001",
+    "BAZI-CAL-MONTH-002"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Asia/Shanghai"
+  },
+  "raw_input": {
+    "local_datetime": "2024-03-05T08:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    },
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Exact instant versus whole-day month boundary"
+}

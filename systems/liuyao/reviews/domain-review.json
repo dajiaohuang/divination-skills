@@ -1,0 +1,46 @@
+{
+  "system": "liuyao",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-LIUYAO-CAST-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LIUYAO-CAST-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LIUYAO-CAST-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LIUYAO-CAST-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LIUYAO-CAST-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LIUYAO-DISPUTE-DAY-BOUNDARY-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LIUYAO-EDGE-LATE-ZI-001",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

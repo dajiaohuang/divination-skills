@@ -1,0 +1,40 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.validation",
+      "output_path": "validation.status",
+      "value": "valid"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.fold",
+      "operator": "in",
+      "value": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disputes": [],
+  "kind": "validation",
+  "lineage": "ziping-calculation-baseline",
+  "priority": 1000,
+  "rule_id": "BAZI-VAL-DST-001",
+  "sources": [
+    {
+      "locator": "ZoneInfo fold and transition behavior",
+      "source_id": "SRC-TIME-PYTHON-ZONEINFO-001",
+      "support_type": "direct"
+    }
+  ],
+  "status": "tested",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-EDGE-DST-FOLD0-001",
+    "CASE-BAZI-EDGE-DST-FOLD1-001"
+  ],
+  "title": "Require fold for an ambiguous local time",
+  "version": "0.1.0"
+}

@@ -1,0 +1,58 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-BAZI-STANDARD-061",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "pillars": {
+        "day": "辛巳",
+        "hour": "丙申",
+        "month": "辛巳",
+        "year": "乙巳"
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-CAL-YEAR-001",
+    "BAZI-CAL-MONTH-001",
+    "BAZI-CAL-DAY-001",
+    "BAZI-CAL-HOUR-001",
+    "BAZI-TIME-CIVIL-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Asia/Shanghai"
+  },
+  "raw_input": {
+    "local_datetime": "2025-05-12T16:40:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Engine output matched pinned lunar-python and independent sxtwl-modern APIs; this is calculation review, not interpretive expert sign-off.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "two-source-calculation-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    },
+    {
+      "locator": "Independent sxtwl-modern 1.1.2 day-level API",
+      "source_id": "SRC-BAZI-SXTWL-MODERN-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Two-source four-pillar comparison 061"
+}

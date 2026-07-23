@@ -1,0 +1,14 @@
+{
+  "rule_id": "LIUYAO-STRUCTURAL-BOUNDARY-001",
+  "title": "Do not infer outcome without an explicit reviewed Yongshen method",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "safety",
+  "conditions": [{ "fact_path": "computed_facts.lines", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "liuyao.boundary", "output_path": "narrative.limitations", "value": "structural_only", "confidence": "high" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "SCOPE.md", "support_type": "direct" }],
+  "tests": ["CASE-LIUYAO-CAST-001"]
+}

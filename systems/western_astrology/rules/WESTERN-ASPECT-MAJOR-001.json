@@ -1,0 +1,14 @@
+{
+  "rule_id": "WESTERN-ASPECT-MAJOR-001",
+  "title": "Detect the closest qualifying fixed-orb major aspect",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.positions", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "western.aspect-policy", "output_path": "computed_facts.aspects", "value": "fixed_major_orbs", "confidence": "deterministic" }],
+  "priority": 800,
+  "sources": [{ "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "Major-aspect orb contract", "support_type": "direct" }],
+  "tests": ["CASE-WESTERN-NATAL-001"]
+}

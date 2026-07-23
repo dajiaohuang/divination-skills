@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-TAROT-REVERSALS-001",
+  "title": "Use reversed card meanings or an upright-only deck",
+  "system": "tarot",
+  "topic": "reversal policy",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "rws-text-baseline-v0.1",
+      "summary": "Allow auditable upright and reversed orientations when the caller enables reversals.",
+      "rule_ids": ["TAROT-ORIENTATION-UPRIGHT-001", "TAROT-ORIENTATION-REVERSED-001"],
+      "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "orientation contract" }]
+    },
+    {
+      "lineage": "upright-only-alternative",
+      "summary": "Draw and read every card upright.",
+      "rule_ids": ["TAROT-ORIENTATION-UPRIGHT-001"],
+      "sources": [{ "source_id": "SRC-TAROT-GUTENBERG-001", "locator": "historical reference context" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "rws-text-baseline-v0.1",
+    "rationale": "The draw engine defaults to reversals but records and supports an explicit false override.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "This draw records whether reversals were enabled; upright-only draws remain reproducible.",
+  "sources": [
+    { "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "orientation contract" },
+    { "source_id": "SRC-TAROT-GUTENBERG-001", "locator": "historical reference context" }
+  ]
+}

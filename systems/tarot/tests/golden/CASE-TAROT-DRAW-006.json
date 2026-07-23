@@ -1,0 +1,91 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-TAROT-DRAW-006",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "5e2d1b53933bb3c3faadd77ea255c1779c30e8d13da7839fffb02d74d98821a2"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "7b4a72002108b2d5648b3136362a1dc27f414e0cd094c9b5937a4b5eb01e3b8b"
+    },
+    "computed_facts": {
+      "cards": [
+        {
+          "card_id": "tarot.rws.major-00-fool",
+          "card_index": 0,
+          "fact_id": "tarot.draw.card.001",
+          "name": "The Fool",
+          "orientation": "reversed",
+          "position": "option_a",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "card_id": "tarot.rws.major-04-emperor",
+          "card_index": 4,
+          "fact_id": "tarot.draw.card.002",
+          "name": "The Emperor",
+          "orientation": "reversed",
+          "position": "option_b",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "card_id": "tarot.rws.cups-queen",
+          "card_index": 48,
+          "fact_id": "tarot.draw.card.003",
+          "name": "Queen of Cups",
+          "orientation": "reversed",
+          "position": "decision_focus",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ],
+      "spread": "option-a-option-b-focus"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The cards establish a hidden fact about a third party."
+  ],
+  "lineage": "rws-text-baseline-v0.1",
+  "must_match_rules": [
+    "TAROT-DRAW-UNIQUE-001",
+    "TAROT-POSITION-001",
+    "TAROT-NARRATIVE-001",
+    "TAROT-ORIENTATION-REVERSED-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": true,
+    "question_sha256": "7cef572afdfe14900ebf338f11be6d659af1c577ac8b7db67580c0ceba472127",
+    "spread": "option-a-option-b-focus"
+  },
+  "raw_input": {
+    "allow_reversals": true,
+    "question": "Synthetic reflection prompt 6",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000006",
+    "spread": "option-a-option-b-focus"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic deterministic regression case; not proof of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "rws-78.json and auditable draw contract",
+      "source_id": "SRC-TAROT-DECK-SPEC-001"
+    }
+  ],
+  "system": "tarot",
+  "title": "Auditable Tarot draw 006"
+}

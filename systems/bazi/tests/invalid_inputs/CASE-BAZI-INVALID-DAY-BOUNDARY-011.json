@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-BAZI-INVALID-DAY-BOUNDARY-011",
+  "data_classification": "synthetic",
+  "expected_error_code": "invalid_day_boundary",
+  "expected_message_contains": "midnight",
+  "input": {
+    "day_boundary": "noon",
+    "local_datetime": "2024-01-01T00:00:00",
+    "timezone": "UTC"
+  },
+  "title": "Day Boundary"
+}

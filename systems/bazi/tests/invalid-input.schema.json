@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/systems/bazi/tests/invalid-input.schema.json",
+  "title": "Bazi invalid-input regression case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["case_id", "title", "input", "expected_error_code", "expected_message_contains", "data_classification"],
+  "properties": {
+    "case_id": { "type": "string", "pattern": "^CASE-BAZI-INVALID-[A-Z0-9-]+-[0-9]{3}$" },
+    "title": { "type": "string", "minLength": 1 },
+    "input": { "type": "object" },
+    "expected_error_code": { "type": "string", "pattern": "^[a-z][a-z0-9_]+$" },
+    "expected_message_contains": { "type": "string", "minLength": 1 },
+    "data_classification": { "const": "synthetic" }
+  }
+}

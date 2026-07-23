@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-EXAMPLE-WEIGHT-001",
+  "title": "Interpret or reject a mixed signal",
+  "system": "example",
+  "topic": "mixed evidence",
+  "status": "documented",
+  "positions": [
+    {
+      "lineage": "baseline",
+      "summary": "Request clarification when ambiguity affects deterministic output.",
+      "rule_ids": ["EXAMPLE-VAL-001"],
+      "sources": [{ "source_id": "SRC-EXAMPLE-STANDARD-001", "locator": "Fixture clause 2" }]
+    },
+    {
+      "lineage": "alternative",
+      "summary": "Allow a conditional low-confidence interpretation.",
+      "rule_ids": ["EXAMPLE-INT-001"],
+      "sources": [{ "source_id": "SRC-EXAMPLE-TEXT-001", "locator": "Fixture section: uncertainty" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "alternative",
+    "rationale": "Narrative ambiguity can be disclosed without altering computed facts.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "The example uses a conditional interpretation for mixed narrative signals.",
+  "sources": [
+    { "source_id": "SRC-EXAMPLE-STANDARD-001", "locator": "Fixture clause 2" },
+    { "source_id": "SRC-EXAMPLE-TEXT-001", "locator": "Fixture section: uncertainty" }
+  ]
+}

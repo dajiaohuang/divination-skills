@@ -1,0 +1,46 @@
+{
+  "system": "iching",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-ICHING-CAST-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ICHING-CAST-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ICHING-CAST-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ICHING-CAST-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ICHING-CAST-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ICHING-DISPUTE-MOVING-LINES-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ICHING-EDGE-NO-MOVING-001",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

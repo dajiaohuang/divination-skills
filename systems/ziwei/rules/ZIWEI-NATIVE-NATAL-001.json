@@ -1,0 +1,14 @@
+{
+  "rule_id": "ZIWEI-NATIVE-NATAL-001",
+  "title": "Calculate the project-native Ziwei structural foundation",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-foundation-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.time_index", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "ziwei.natal", "output_path": "computed_facts.palaces", "value": "project_native_foundation", "confidence": "medium" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/LINEAGE.md", "support_type": "direct" }],
+  "tests": ["CASE-ZIWEI-NATAL-001", "CASE-ZIWEI-NATAL-002"]
+}

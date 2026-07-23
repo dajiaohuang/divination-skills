@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/common/licensing/project-license.schema.json",
+  "title": "Project-authored material license decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "license_model", "license_identifier", "license_document", "distribution_allowed", "commercial_use_allowed", "decided_by", "decided_at", "notes"],
+  "properties": {
+    "status": { "type": "string", "enum": ["undecided", "selected"] },
+    "license_model": { "type": ["string", "null"], "enum": ["proprietary", "open_source", "open_core", "dual", null] },
+    "license_identifier": { "type": ["string", "null"] },
+    "license_document": { "type": ["string", "null"] },
+    "distribution_allowed": { "type": "boolean" },
+    "commercial_use_allowed": { "type": "boolean" },
+    "decided_by": { "type": ["string", "null"] },
+    "decided_at": { "type": ["string", "null"], "format": "date-time" },
+    "notes": { "type": "string", "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "undecided" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "license_model": { "type": "null" },
+          "license_identifier": { "type": "null" },
+          "license_document": { "type": "null" },
+          "distribution_allowed": { "const": false },
+          "commercial_use_allowed": { "const": false },
+          "decided_by": { "type": "null" },
+          "decided_at": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "selected" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "license_model": { "type": "string" },
+          "license_identifier": { "type": "string", "minLength": 1 },
+          "license_document": { "type": "string", "minLength": 1 },
+          "distribution_allowed": { "const": true },
+          "decided_by": { "type": "string", "minLength": 1 },
+          "decided_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  ]
+}

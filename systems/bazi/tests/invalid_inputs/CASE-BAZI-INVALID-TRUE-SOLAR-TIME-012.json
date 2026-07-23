@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-BAZI-INVALID-TRUE-SOLAR-TIME-012",
+  "data_classification": "synthetic",
+  "expected_error_code": "true_solar_time_unsupported",
+  "expected_message_contains": "not implemented",
+  "input": {
+    "local_datetime": "2024-01-01T00:00:00",
+    "timezone": "UTC",
+    "true_solar_time": true
+  },
+  "title": "True Solar Time"
+}

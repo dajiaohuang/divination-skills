@@ -1,0 +1,23 @@
+{
+  "source_id": "SRC-ZIWEI-IZTRO-001",
+  "title": "iztro 2.5.8",
+  "creators": [{ "name": "SylarLong and contributors", "role": "author" }],
+  "source_type": "software",
+  "language": "zh-Hans",
+  "edition_or_version": "2.5.8",
+  "locators": [
+    { "kind": "repository", "value": "https://github.com/SylarLong/iztro", "stable": true },
+    { "kind": "url", "value": "https://www.npmjs.com/package/iztro/v/2.5.8", "stable": true },
+    { "kind": "url", "value": "https://docs.iztro.com/quick-start", "stable": false }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": true, "path": "references/upstream/iztro" },
+  "license": { "identifier": "MIT", "text_available": true, "additional_terms": false },
+  "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "not_applicable" },
+  "rights_review": { "status": "reference_only", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "The ignored local clone is pinned to tag 2.5.8 at commit 9d39f1743bf31c2b3c635c9b9556215d9c90ee2c. It is excluded from production code and artifacts." },
+  "usage_status": "reference_only",
+  "systems": ["ziwei"],
+  "lineages": ["iztro-default-natal-v2.5.8"],
+  "quality": { "authority": "community", "independence": "independent", "reliability": "medium", "notes": "Comparison reference only; the production runtime never imports, invokes, vendors, or packages iztro." },
+  "notes": "The ignored clone is an implementation comparison reference, not a repository dependency or production rule source."
+}

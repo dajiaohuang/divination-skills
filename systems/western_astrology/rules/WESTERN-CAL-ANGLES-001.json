@@ -1,0 +1,14 @@
+{
+  "rule_id": "WESTERN-CAL-ANGLES-001",
+  "title": "Calculate Ascendant and Midheaven from place and sidereal time",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.longitude", "operator": "exists" }, { "fact_path": "normalized_input.latitude", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "western.calculation", "output_path": "computed_facts.angles", "value": "horizon_and_meridian_intersections", "confidence": "deterministic" }],
+  "priority": 900,
+  "sources": [{ "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "SiderealTime and coordinate rotation APIs", "support_type": "direct" }, { "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "Angle contract", "support_type": "direct" }],
+  "tests": ["CASE-WESTERN-NATAL-001"]
+}

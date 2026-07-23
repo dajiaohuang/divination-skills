@@ -1,0 +1,4 @@
+interface:
+  display_name: "八字数据校验器"
+  short_description: "检查八字输入、四柱事实、时间边界、计算版本以及资料来源是否可靠"
+  default_prompt: "Use $bazi-validator to validate this Bazi chart and report input, boundary, and provenance problems."

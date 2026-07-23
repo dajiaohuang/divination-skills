@@ -1,0 +1,96 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "upright_only",
+        "modern_reversals"
+      ],
+      "dispute_id": "DSP-LENORMAND-REVERSALS-001",
+      "field_path": "normalized_input.reversal_policy"
+    }
+  ],
+  "case_id": "CASE-LENORMAND-DISPUTE-REVERSALS-001",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-lenormand-draw",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "three-card",
+      "symbols": [
+        {
+          "fact_id": "lenormand.draw.symbol.001",
+          "name": "Book",
+          "orientation": "upright",
+          "position": "context",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.26.book",
+          "symbol_index": 25
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.002",
+          "name": "Woman",
+          "orientation": "upright",
+          "position": "development",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.29.woman",
+          "symbol_index": 28
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.003",
+          "name": "House",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.04.house",
+          "symbol_index": 3
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "lenormand-36-project-v0.1",
+  "must_match_rules": [
+    "LENORMAND-CARD-UPRIGHT-001",
+    "LENORMAND-POSITION-001",
+    "LENORMAND-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "lenormand-36-project-v0.1",
+    "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spread": "three-card"
+  },
+  "raw_input": {
+    "seed_hex": "4545454545454545454545454545454545454545454545454545454545454545",
+    "spread": "three-card"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "lenormand",
+  "title": "Upright-only Lenormand policy"
+}

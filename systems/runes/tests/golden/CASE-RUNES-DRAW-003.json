@@ -1,0 +1,69 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-RUNES-DRAW-003",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "ed73b18306915b677afd1f6501230ed8a1918fe15a00cc9d84484e04fcff9497"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "6338da00805029e5ddf28c6fa4740af5ebbddfb447749d95999ec482e5f9fa4b"
+    },
+    "computed_facts": {
+      "spread": "single",
+      "symbols": [
+        {
+          "fact_id": "runes.draw.symbol.001",
+          "name": "Jera",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-RUNES-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "runes.12.jera",
+          "symbol_index": 11
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The symbols establish a hidden fact about a third party."
+  ],
+  "lineage": "elder-futhark-project-v0.1",
+  "must_match_rules": [
+    "RUNES-SYMBOL-UPRIGHT-001",
+    "RUNES-POSITION-001",
+    "RUNES-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "elder-futhark-project-v0.1",
+    "question_sha256": "e4cdb58d34fcd464f94d9b949a12ee72df0120b404404e2bdfcc68063a7c7229",
+    "spread": "single"
+  },
+  "raw_input": {
+    "allow_reversals": false,
+    "question": "Synthetic rune reflection prompt 3",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000067",
+    "spread": "single"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; not evidence of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "text-only 24-symbol project deck and draw contract",
+      "source_id": "SRC-RUNES-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "runes",
+  "title": "Auditable Elder Futhark draw 003"
+}

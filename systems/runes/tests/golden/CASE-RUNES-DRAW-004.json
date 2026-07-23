@@ -1,0 +1,91 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-RUNES-DRAW-004",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "ed73b18306915b677afd1f6501230ed8a1918fe15a00cc9d84484e04fcff9497"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "09fdaa5c8b079e31496a291063aaa766060f5e896a5346a9639ff7afe13c8acf"
+    },
+    "computed_facts": {
+      "spread": "three-rune",
+      "symbols": [
+        {
+          "fact_id": "runes.draw.symbol.001",
+          "name": "Sowilo",
+          "orientation": "upright",
+          "position": "context",
+          "source_ids": [
+            "SRC-RUNES-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "runes.16.sowilo",
+          "symbol_index": 15
+        },
+        {
+          "fact_id": "runes.draw.symbol.002",
+          "name": "Mannaz",
+          "orientation": "upright",
+          "position": "tension",
+          "source_ids": [
+            "SRC-RUNES-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "runes.20.mannaz",
+          "symbol_index": 19
+        },
+        {
+          "fact_id": "runes.draw.symbol.003",
+          "name": "Thurisaz",
+          "orientation": "upright",
+          "position": "practice",
+          "source_ids": [
+            "SRC-RUNES-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "runes.03.thurisaz",
+          "symbol_index": 2
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The symbols establish a hidden fact about a third party."
+  ],
+  "lineage": "elder-futhark-project-v0.1",
+  "must_match_rules": [
+    "RUNES-SYMBOL-UPRIGHT-001",
+    "RUNES-POSITION-001",
+    "RUNES-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "elder-futhark-project-v0.1",
+    "question_sha256": "341380da2a4f6fd65e0cae0df95eb055ae46167e91a49cf7d51f0c8bcae640a6",
+    "spread": "three-rune"
+  },
+  "raw_input": {
+    "allow_reversals": false,
+    "question": "Synthetic rune reflection prompt 4",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000068",
+    "spread": "three-rune"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; not evidence of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "text-only 24-symbol project deck and draw contract",
+      "source_id": "SRC-RUNES-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "runes",
+  "title": "Auditable Elder Futhark draw 004"
+}

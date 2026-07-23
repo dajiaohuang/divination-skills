@@ -1,0 +1,336 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "midnight",
+        "zi_initial"
+      ],
+      "dispute_id": "DSP-LIUYAO-DAY-BOUNDARY-001",
+      "field_path": "normalized_input.day_boundary"
+    }
+  ],
+  "case_id": "CASE-LIUYAO-DISPUTE-DAY-BOUNDARY-001",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-liuyao",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "calendar_context": {
+        "day_pillar": {
+          "branch": {
+            "hidden_stems": [
+              "丙",
+              "戊",
+              "庚"
+            ],
+            "index": 5,
+            "name": "巳"
+          },
+          "fact_id": "bazi.pillar.day",
+          "ganzhi": "癸巳",
+          "index": 29,
+          "source_ids": [
+            "SRC-BAZI-LUNARPY-001"
+          ],
+          "stem": {
+            "element": "water",
+            "index": 9,
+            "name": "癸",
+            "polarity": "yin"
+          }
+        },
+        "month_commander": {
+          "hidden_stems": [
+            "乙"
+          ],
+          "index": 3,
+          "name": "卯"
+        },
+        "void_branches": [
+          "午",
+          "未"
+        ]
+      },
+      "changed_hexagram": {
+        "english": "Wanderer",
+        "hanzi": "旅",
+        "lines_bottom_to_top": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "lower_trigram": {
+          "hanzi": "艮",
+          "id": "gen",
+          "image": "mountain"
+        },
+        "number": 56,
+        "pinyin": "Lu",
+        "project_themes": [
+          "current structure: wanderer",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "离",
+          "id": "li",
+          "image": "fire"
+        }
+      },
+      "lines": [
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            2,
+            3,
+            3
+          ],
+          "fact_id": "iching.cast.line.001",
+          "is_void": false,
+          "moving": false,
+          "najia": {
+            "branch": "丑",
+            "element": "earth",
+            "ganzhi": "辛丑",
+            "stem": "辛"
+          },
+          "polarity": "yin",
+          "position_from_bottom": 1,
+          "role": null,
+          "six_relative": "子孙",
+          "six_spirit": "玄武",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            3
+          ],
+          "fact_id": "iching.cast.line.002",
+          "is_void": false,
+          "moving": true,
+          "najia": {
+            "branch": "亥",
+            "element": "water",
+            "ganzhi": "辛亥",
+            "stem": "辛"
+          },
+          "polarity": "yang",
+          "position_from_bottom": 2,
+          "role": "shi",
+          "six_relative": "官鬼",
+          "six_spirit": "青龙",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 9
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            3,
+            2,
+            2
+          ],
+          "fact_id": "iching.cast.line.003",
+          "is_void": false,
+          "moving": false,
+          "najia": {
+            "branch": "酉",
+            "element": "metal",
+            "ganzhi": "辛酉",
+            "stem": "辛"
+          },
+          "polarity": "yang",
+          "position_from_bottom": 3,
+          "role": null,
+          "six_relative": "妻财",
+          "six_spirit": "朱雀",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            3,
+            2,
+            2
+          ],
+          "fact_id": "iching.cast.line.004",
+          "is_void": false,
+          "moving": false,
+          "najia": {
+            "branch": "酉",
+            "element": "metal",
+            "ganzhi": "己酉",
+            "stem": "己"
+          },
+          "polarity": "yang",
+          "position_from_bottom": 4,
+          "role": null,
+          "six_relative": "妻财",
+          "six_spirit": "勾陈",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.005",
+          "is_void": true,
+          "moving": false,
+          "najia": {
+            "branch": "未",
+            "element": "earth",
+            "ganzhi": "己未",
+            "stem": "己"
+          },
+          "polarity": "yin",
+          "position_from_bottom": 5,
+          "role": "ying",
+          "six_relative": "子孙",
+          "six_spirit": "螣蛇",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.006",
+          "is_void": false,
+          "moving": false,
+          "najia": {
+            "branch": "巳",
+            "element": "fire",
+            "ganzhi": "己巳",
+            "stem": "己"
+          },
+          "polarity": "yang",
+          "position_from_bottom": 6,
+          "role": null,
+          "six_relative": "兄弟",
+          "six_spirit": "白虎",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        }
+      ],
+      "moving_line_positions": [
+        2
+      ],
+      "palace": {
+        "element": "fire",
+        "id": "li",
+        "shi_position": 2,
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ],
+        "stage": "second-change",
+        "stage_index": 2,
+        "ying_position": 5
+      },
+      "primary_hexagram": {
+        "english": "Cauldron",
+        "hanzi": "鼎",
+        "lines_bottom_to_top": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "lower_trigram": {
+          "hanzi": "巽",
+          "id": "xun",
+          "image": "wind"
+        },
+        "number": 50,
+        "pinyin": "Ding",
+        "project_themes": [
+          "current structure: cauldron",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "离",
+          "id": "li",
+          "image": "fire"
+        }
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "wen-wang-najia-structural-v0.1",
+  "must_match_rules": [
+    "LIUYAO-NAJIA-001",
+    "LIUYAO-PALACE-SHIYING-001",
+    "LIUYAO-CALENDAR-CONTEXT-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "lineage": "wen-wang-najia-structural-v0.1",
+    "local_datetime": "2026-03-20T23:30:00+08:00",
+    "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timezone": "Asia/Shanghai",
+    "utc_datetime": "2026-03-20T15:30:00Z"
+  },
+  "raw_input": {
+    "day_boundary": "midnight",
+    "local_datetime": "2026-03-20T23:30:00",
+    "seed_hex": "3333333333333333333333333333333333333333333333333333333333333333",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-LIUYAO-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "liuyao",
+  "title": "Explicit Liuyao day-boundary choice"
+}

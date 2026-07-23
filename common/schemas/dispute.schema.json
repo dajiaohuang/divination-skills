@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/dispute.schema.json",
+  "title": "Divination lineage dispute",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "dispute_id",
+    "title",
+    "system",
+    "topic",
+    "status",
+    "positions",
+    "default_policy",
+    "user_disclosure",
+    "sources"
+  ],
+  "properties": {
+    "dispute_id": { "type": "string", "pattern": "^DSP-[A-Z0-9]+(?:-[A-Z0-9]+)+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "system": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "topic": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["open", "documented", "resolved_for_product", "deprecated"] },
+    "positions": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lineage", "summary", "rule_ids", "sources"],
+        "properties": {
+          "lineage": { "type": "string", "minLength": 1 },
+          "summary": { "type": "string", "minLength": 1 },
+          "rule_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[A-Z][A-Z0-9]+(?:-[A-Z0-9]+){2,}$" }
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/sourceRef" }
+          }
+        }
+      }
+    },
+    "default_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selected_lineage", "rationale", "user_disclosure_required"],
+      "properties": {
+        "selected_lineage": { "type": "string", "minLength": 1 },
+        "rationale": { "type": "string", "minLength": 1 },
+        "user_disclosure_required": { "type": "boolean" }
+      }
+    },
+    "user_disclosure": { "type": "string", "minLength": 1 },
+    "sources": {
+      "type": "array",
+      "minItems": 2,
+      "items": { "$ref": "#/$defs/sourceRef" }
+    },
+    "notes": { "type": "string" }
+  },
+  "$defs": {
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "locator"],
+      "properties": {
+        "source_id": { "type": "string", "pattern": "^SRC-[A-Z0-9]+(?:-[A-Z0-9]+)+$" },
+        "locator": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "source_id": "SRC-VEDIC-REF-001",
+  "title": "vedic-astro-skills",
+  "creators": [
+    { "name": "CNWU16", "role": "maintainer" }
+  ],
+  "source_type": "software",
+  "language": "zh",
+  "publication_date": "2026",
+  "edition_or_version": "e6d3d39073baca87f8e540b9b92fa758a1f5085a",
+  "locators": [
+    {
+      "kind": "repository",
+      "value": "https://github.com/CNWU16/vedic-astro-skills",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/upstream/vedic-astro-skills"
+  },
+  "license": {
+    "identifier": "AGPL-3.0-only for code; custom restrictions for instructions and resources",
+    "url": "https://github.com/CNWU16/vedic-astro-skills",
+    "text_available": true,
+    "additional_terms": true,
+    "notes": "COMMERCIAL_NOTICE restricts commercial use of SKILL.md, prompt templates, resources, and references without written permission."
+  },
+  "rights": {
+    "commercial_use": "permission_required",
+    "derivative_use": "permission_required",
+    "translation": "permission_required",
+    "images": "permission_required",
+    "dataset": "permission_required",
+    "notes": "Composite repository with different statements for code and instruction/resource content; reference-only pending any component-level legal review."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Repository LICENSE, COMMERCIAL_NOTICE, and README license section inspected at the recorded commit."
+  },
+  "usage_status": "reference_only",
+  "systems": ["vedic-astrology"],
+  "lineages": ["upstream-declared-kn-rao-parashari"],
+  "quality": {
+    "authority": "practitioner",
+    "independence": "derived",
+    "reliability": "unrated",
+    "notes": "Useful as an engineering reference; not accepted as an authoritative production source."
+  },
+  "notes": "The local clone is ignored by the main repository and pinned administratively in references/README.md."
+}

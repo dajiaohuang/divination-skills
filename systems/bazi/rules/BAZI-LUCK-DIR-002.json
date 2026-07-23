@@ -1,0 +1,37 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.calculation",
+      "output_path": "computed_facts.luck_cycles.direction",
+      "value": "traditional_inference"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.sex_for_traditional_direction",
+      "operator": "exists"
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-LUCK-DIRECTION-001"
+  ],
+  "kind": "calculation",
+  "lineage": "traditional-gender-polarity",
+  "priority": 100,
+  "rule_id": "BAZI-LUCK-DIR-002",
+  "sources": [
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001",
+      "support_type": "direct"
+    }
+  ],
+  "status": "proposed",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-DISPUTE-LUCK-DIRECTION-001"
+  ],
+  "title": "Infer luck-cycle direction from sex and year-stem polarity",
+  "version": "0.1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "rule_id": "ZIWEI-STRUCTURAL-BOUNDARY-001",
+  "title": "Keep Ziwei output structural until interpretation rules are reviewed",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-foundation-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "safety",
+  "conditions": [{ "fact_path": "computed_facts.palaces", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "ziwei.boundary", "output_path": "narrative.limitations", "value": "structural_only", "confidence": "high" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/SCOPE.md", "support_type": "direct" }],
+  "tests": ["CASE-ZIWEI-NATAL-001"]
+}

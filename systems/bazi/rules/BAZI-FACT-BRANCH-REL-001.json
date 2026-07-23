@@ -1,0 +1,23 @@
+{
+  "rule_id": "BAZI-FACT-BRANCH-REL-001",
+  "title": "Expose detected branch relations without outcome claims",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.branch_relations", "operator": "exists" }],
+  "conclusions": [{
+    "finding_type": "bazi.fact-label",
+    "output_path": "derived_findings.branch_relations",
+    "value": "structural_relation_only",
+    "confidence": "deterministic"
+  }],
+  "priority": 700,
+  "sources": [{
+    "source_id": "SRC-BAZI-LUNARPY-001",
+    "locator": "Pinned branch-relation tables independently encoded in calculator tests",
+    "support_type": "corroborating"
+  }],
+  "tests": ["CASE-BAZI-STANDARD-008"]
+}

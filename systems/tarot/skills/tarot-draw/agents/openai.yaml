@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tarot Draw"
+  short_description: "Create auditable reproducible text-only Tarot card draws"
+  default_prompt: "Use $tarot-draw to produce an auditable Tarot draw without interpretation."

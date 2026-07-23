@@ -1,0 +1,38 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.calculation",
+      "output_path": "normalized_input.local_datetime",
+      "value": "apparent_solar_time"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.true_solar_time_applied",
+      "operator": "eq",
+      "value": true
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-SOLAR-TIME-001"
+  ],
+  "kind": "calculation",
+  "lineage": "apparent-solar-time",
+  "priority": 0,
+  "rule_id": "BAZI-TIME-SOLAR-001",
+  "sources": [
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001",
+      "support_type": "corroborating"
+    }
+  ],
+  "status": "rejected",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-DISPUTE-SOLAR-TIME-001"
+  ],
+  "title": "Apply apparent solar time before selecting day and hour pillars",
+  "version": "0.1.0"
+}

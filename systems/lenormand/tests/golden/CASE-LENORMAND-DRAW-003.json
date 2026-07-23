@@ -1,0 +1,157 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-LENORMAND-DRAW-003",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "0d7f96786467179104354297c0c5b2b6caf019d170f7dc50b0bc2a47ee94cdb1"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "7f6d7ad06eb2cf17374dd0c7ac90e89829cd6fe3ebf987ffa7c5f04b9f8077e1"
+    },
+    "computed_facts": {
+      "spread": "nine-card",
+      "symbols": [
+        {
+          "fact_id": "lenormand.draw.symbol.001",
+          "name": "Sun",
+          "orientation": "upright",
+          "position": "p1",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.31.sun",
+          "symbol_index": 30
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.002",
+          "name": "Stars",
+          "orientation": "upright",
+          "position": "p2",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.16.stars",
+          "symbol_index": 15
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.003",
+          "name": "Scythe",
+          "orientation": "upright",
+          "position": "p3",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.10.scythe",
+          "symbol_index": 9
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.004",
+          "name": "Dog",
+          "orientation": "upright",
+          "position": "p4",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.18.dog",
+          "symbol_index": 17
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.005",
+          "name": "Tree",
+          "orientation": "upright",
+          "position": "p5",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.05.tree",
+          "symbol_index": 4
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.006",
+          "name": "Child",
+          "orientation": "upright",
+          "position": "p6",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.13.child",
+          "symbol_index": 12
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.007",
+          "name": "Birds",
+          "orientation": "upright",
+          "position": "p7",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.12.birds",
+          "symbol_index": 11
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.008",
+          "name": "Book",
+          "orientation": "upright",
+          "position": "p8",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.26.book",
+          "symbol_index": 25
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.009",
+          "name": "Ship",
+          "orientation": "upright",
+          "position": "p9",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.03.ship",
+          "symbol_index": 2
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The symbols establish a hidden fact about a third party."
+  ],
+  "lineage": "lenormand-36-project-v0.1",
+  "must_match_rules": [
+    "LENORMAND-CARD-UPRIGHT-001",
+    "LENORMAND-POSITION-001",
+    "LENORMAND-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "lenormand-36-project-v0.1",
+    "question_sha256": "c1c9c8a10f8b07230b48d5de7b3fb8f87a0effd4c822c4bc203f097ea60c2b7f",
+    "spread": "nine-card"
+  },
+  "raw_input": {
+    "allow_reversals": false,
+    "question": "Synthetic Lenormand reflection prompt 3",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000003",
+    "spread": "nine-card"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; not evidence of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "text-only 36-symbol project deck and draw contract",
+      "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "lenormand",
+  "title": "Auditable Lenormand draw 003"
+}

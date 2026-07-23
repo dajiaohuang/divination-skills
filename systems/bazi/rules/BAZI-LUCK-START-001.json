@@ -1,0 +1,41 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.calculation",
+      "output_path": "computed_facts.luck_cycles.start_age_years",
+      "value": "three_days_per_year"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.luck_cycle_direction",
+      "operator": "in",
+      "value": [
+        "forward",
+        "reverse"
+      ]
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-LUCK-START-001"
+  ],
+  "kind": "calculation",
+  "lineage": "ziping-calculation-baseline",
+  "priority": 800,
+  "rule_id": "BAZI-LUCK-START-001",
+  "sources": [
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001",
+      "support_type": "direct"
+    }
+  ],
+  "status": "tested",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-DISPUTE-LUCK-START-001"
+  ],
+  "title": "Convert adjacent-term interval at three days per year",
+  "version": "0.1.0"
+}

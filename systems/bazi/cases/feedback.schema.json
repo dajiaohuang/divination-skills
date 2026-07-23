@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/systems/bazi/cases/feedback.schema.json",
+  "title": "Anonymized Bazi outcome feedback",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["feedback_id", "data_classification", "consent", "anonymization", "analysis", "outcome", "review"],
+  "properties": {
+    "feedback_id": { "type": "string", "pattern": "^FEEDBACK-BAZI-[A-Z0-9-]+$" },
+    "data_classification": { "const": "anonymized_case" },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recorded", "purpose", "recorded_at", "withdrawal_supported"],
+      "properties": {
+        "recorded": { "const": true },
+        "purpose": { "type": "string", "minLength": 1 },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "withdrawal_supported": { "const": true }
+      }
+    },
+    "anonymization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["direct_identifiers_removed", "free_text_reviewed", "risk"],
+      "properties": {
+        "direct_identifiers_removed": { "const": true },
+        "free_text_reviewed": { "const": true },
+        "risk": { "type": "string", "enum": ["low", "medium", "high"] }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["analysis_id", "recorded_at", "timing", "claims_hash"],
+      "properties": {
+        "analysis_id": { "type": "string", "minLength": 1 },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "timing": { "const": "pre_outcome" },
+        "claims_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recorded_at", "status", "claim_results"],
+      "properties": {
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["observed", "partially_observed", "not_observed", "unknown"] },
+        "claim_results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["claim_id", "result", "evidence_quality"],
+            "properties": {
+              "claim_id": { "type": "string", "minLength": 1 },
+              "result": { "type": "string", "enum": ["supported", "not_supported", "ambiguous", "not_testable"] },
+              "evidence_quality": { "type": "string", "enum": ["high", "medium", "low", "none"] },
+              "notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hindsight_checked", "selection_bias_checked", "reviewer_id"],
+      "properties": {
+        "hindsight_checked": { "type": "boolean" },
+        "selection_bias_checked": { "type": "boolean" },
+        "reviewer_id": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

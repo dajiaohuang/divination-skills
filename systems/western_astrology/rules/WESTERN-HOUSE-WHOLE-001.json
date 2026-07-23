@@ -1,0 +1,14 @@
+{
+  "rule_id": "WESTERN-HOUSE-WHOLE-001",
+  "title": "Start whole-sign houses at the Ascendant sign boundary",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.house_system", "operator": "eq", "value": "whole_sign" }],
+  "conclusions": [{ "finding_type": "western.house-system", "output_path": "computed_facts.house_cusps", "value": "whole_sign", "confidence": "deterministic" }],
+  "priority": 850,
+  "sources": [{ "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "Whole-sign house contract", "support_type": "direct" }],
+  "tests": ["CASE-WESTERN-NATAL-001"]
+}

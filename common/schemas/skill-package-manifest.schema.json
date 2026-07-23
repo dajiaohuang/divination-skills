@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/skill-package-manifest.schema.json",
+  "title": "Divination Skill package manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["artifact_format", "system", "skill", "package_version", "chart_schema_version", "runtime", "third_party_notices", "python_requirements", "project_license_status", "project_license_document", "project_license_notice", "content_manifest"],
+  "properties": {
+    "artifact_format": { "const": "divination-skill-zip-v1" },
+    "system": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "skill": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "package_version": { "type": "string", "pattern": "^(0|[1-9][0-9]*)[.](0|[1-9][0-9]*)[.](0|[1-9][0-9]*)$" },
+    "chart_schema_version": { "type": "string", "pattern": "^(0|[1-9][0-9]*)[.](0|[1-9][0-9]*)[.](0|[1-9][0-9]*)$" },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["python_version", "project_systems", "python_packages"],
+      "properties": {
+        "python_version": { "type": "string", "minLength": 1 },
+        "project_systems": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" } },
+        "python_packages": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "executables": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "bundled_packages": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "third_party_notices": { "const": "THIRD_PARTY_NOTICES.json" },
+    "python_requirements": { "const": "requirements.txt" },
+    "project_license_status": { "type": "string", "enum": ["undecided", "selected"] },
+    "project_license_document": { "const": "LICENSE" },
+    "project_license_notice": { "const": "LICENSE_STATUS.md" },
+    "content_manifest": { "const": "CONTENT_MANIFEST.json" }
+  }
+}

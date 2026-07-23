@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-BAZI-INVALID-UNKNOWN-TIMEZONE-014",
+  "data_classification": "synthetic",
+  "expected_error_code": "unknown_timezone",
+  "expected_message_contains": "Unknown IANA",
+  "input": {
+    "local_datetime": "2024-01-01T00:00:00",
+    "timezone": "Mars/Olympus"
+  },
+  "title": "Unknown Timezone"
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "SRC-RUNES-PROJECT-SPEC-001",
+  "title": "Project Elder Futhark text set v0.1",
+  "creators": [{ "name": "divination-skills project", "role": "author" }],
+  "source_type": "standard",
+  "language": "en",
+  "publication_date": "2026-07-23",
+  "edition_or_version": "0.1.0",
+  "locators": [{ "kind": "local", "value": "systems/runes/data/deck.json", "stable": true }],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": true, "path": "systems/runes/data/deck.json" },
+  "license": { "identifier": "LicenseRef-Project-Authored-Internal", "text_available": true, "additional_terms": false },
+  "rights": { "commercial_use": "allowed", "derivative_use": "allowed", "translation": "allowed", "images": "not_applicable", "dataset": "allowed" },
+  "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Conventional rune identifiers with original project keyword wording; no copied rune-poem translation." },
+  "usage_status": "production",
+  "systems": ["runes"],
+  "lineages": ["elder-futhark-project-v0.1"],
+  "quality": { "authority": "unknown", "independence": "derived", "reliability": "low", "notes": "Modern reflective baseline, not a historical authority." }
+}

@@ -1,0 +1,71 @@
+{
+  "system": "western_astrology",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-WESTERN-DISPUTE-HOUSE-SYSTEM-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-EDGE-DST-FOLD-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-006",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-007",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-008",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-009",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-WESTERN-NATAL-010",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

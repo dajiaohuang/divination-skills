@@ -1,0 +1,56 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "丙戌",
+        "丁亥"
+      ],
+      "dispute_id": "DSP-BAZI-DAY-BOUNDARY-001",
+      "field_path": "computed_facts.day_pillar"
+    }
+  ],
+  "case_id": "CASE-BAZI-DISPUTE-DAY-BOUNDARY-005",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "day_pillar": "丙戌"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-CAL-DAY-001",
+    "BAZI-CAL-DAY-002"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Asia/Shanghai"
+  },
+  "raw_input": {
+    "day_boundary": "midnight",
+    "local_datetime": "2099-12-15T23:30:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Late-Zi day-boundary alternatives"
+}

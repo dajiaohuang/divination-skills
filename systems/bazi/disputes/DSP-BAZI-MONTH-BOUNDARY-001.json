@@ -1,0 +1,59 @@
+{
+  "default_policy": {
+    "rationale": "The exact astronomical instant is reproducible and avoids a full day of boundary drift.",
+    "selected_lineage": "ziping-calculation-baseline",
+    "user_disclosure_required": true
+  },
+  "dispute_id": "DSP-BAZI-MONTH-BOUNDARY-001",
+  "positions": [
+    {
+      "lineage": "ziping-calculation-baseline",
+      "rule_ids": [
+        "BAZI-CAL-MONTH-001"
+      ],
+      "sources": [
+        {
+          "locator": "Pinned v1.4.8 public API and implementation",
+          "source_id": "SRC-BAZI-LUNARPY-001"
+        },
+        {
+          "locator": "24 solar terms longitude table and 2024 calendar",
+          "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+        }
+      ],
+      "summary": "Change the month pillar at the exact minor solar-term instant."
+    },
+    {
+      "lineage": "whole-day-boundary",
+      "rule_ids": [
+        "BAZI-CAL-MONTH-002"
+      ],
+      "sources": [
+        {
+          "locator": "24 solar terms longitude table and 2024 calendar",
+          "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+        }
+      ],
+      "summary": "Change the month pillar at the start of the term's civil date."
+    }
+  ],
+  "sources": [
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    },
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+    },
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+    }
+  ],
+  "status": "resolved_for_product",
+  "system": "bazi",
+  "title": "Exact solar-term instant or whole civil date",
+  "topic": "month boundary",
+  "user_disclosure": "Month pillars change at the exact solar-term instant in v0.1."
+}

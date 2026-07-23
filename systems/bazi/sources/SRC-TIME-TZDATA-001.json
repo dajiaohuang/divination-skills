@@ -1,0 +1,46 @@
+{
+  "source_id": "SRC-TIME-TZDATA-001",
+  "title": "Python tzdata 2026.3",
+  "creators": [{ "name": "Python Software Foundation", "role": "organization" }],
+  "source_type": "dataset",
+  "language": "en",
+  "publication_date": "2026-07-10",
+  "edition_or_version": "2026.3",
+  "locators": [
+    { "kind": "url", "value": "https://pypi.org/project/tzdata/2026.3/", "stable": true },
+    { "kind": "repository", "value": "https://github.com/python/tzdata/tree/2026.3", "stable": true }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": {
+    "retained": false,
+    "sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931"
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "url": "https://github.com/python/tzdata/blob/2026.3/LICENSE",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Verified PyPI metadata identifies Apache-2.0 and records a trusted-publishing source commit."
+  },
+  "usage_status": "production",
+  "systems": ["bazi", "western-astrology"],
+  "lineages": ["time-normalization", "tropical-geocentric-v0.1"],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Pinned cross-platform IANA time-zone data fallback."
+  }
+}

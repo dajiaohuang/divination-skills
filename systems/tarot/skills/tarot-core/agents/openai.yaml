@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tarot Core"
+  short_description: "Explain validated Tarot draws with traceable symbolic rules"
+  default_prompt: "Use $tarot-core to explain a validated Tarot draw with traceable symbolic rules."

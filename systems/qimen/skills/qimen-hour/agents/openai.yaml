@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qimen Hour"
+  short_description: "Calculate bounded Shijia Zhuanpan Qimen hour structures"
+  default_prompt: "Use $qimen-hour to calculate a traceable Shijia Zhuanpan Qimen hour structure."

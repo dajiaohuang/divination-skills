@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-BAZI-INVALID-YEAR-BELOW-RANGE-005",
+  "data_classification": "synthetic",
+  "expected_error_code": "date_out_of_range",
+  "expected_message_contains": "1900 through 2100",
+  "input": {
+    "local_datetime": "1899-12-31T23:59:59",
+    "timezone": "UTC"
+  },
+  "title": "Year Below Range"
+}

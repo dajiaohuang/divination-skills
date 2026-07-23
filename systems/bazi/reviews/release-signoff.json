@@ -1,0 +1,30 @@
+{
+  "system": "bazi",
+  "release": "0.1.0",
+  "signoffs": [
+    {
+      "role": "domain",
+      "status": "pending",
+      "reviewer_id": null,
+      "signed_at": null,
+      "evidence": ["systems/bazi/evaluations/expert_candidates"],
+      "notes": "Requires a named independent Bazi practitioner to accept 50 reasoning chains and the selected lineage decisions."
+    },
+    {
+      "role": "rights",
+      "status": "pending",
+      "reviewer_id": null,
+      "signed_at": null,
+      "evidence": ["systems/bazi/sources", "docs/policies/SOURCE_ACCEPTANCE.md"],
+      "notes": "Requires an authorized rights reviewer; sxtwl remains development-reference-only."
+    },
+    {
+      "role": "privacy",
+      "status": "pending",
+      "reviewer_id": null,
+      "signed_at": null,
+      "evidence": ["docs/policies/SENSITIVE_BIRTH_DATA.md", "systems/bazi/cases/feedback.schema.json"],
+      "notes": "Requires the product owner or privacy reviewer to approve actual deployment storage settings."
+    }
+  ]
+}

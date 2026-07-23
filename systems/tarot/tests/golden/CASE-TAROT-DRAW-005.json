@@ -1,0 +1,91 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-TAROT-DRAW-005",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "5e2d1b53933bb3c3faadd77ea255c1779c30e8d13da7839fffb02d74d98821a2"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "1d9eb0da22ff937b90b0e1bb196152a26582477e159becb563d36133e4474b53"
+    },
+    "computed_facts": {
+      "cards": [
+        {
+          "card_id": "tarot.rws.pentacles-queen",
+          "card_index": 76,
+          "fact_id": "tarot.draw.card.001",
+          "name": "Queen of Pentacles",
+          "orientation": "reversed",
+          "position": "situation",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "card_id": "tarot.rws.major-07-chariot",
+          "card_index": 7,
+          "fact_id": "tarot.draw.card.002",
+          "name": "The Chariot",
+          "orientation": "reversed",
+          "position": "challenge",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "card_id": "tarot.rws.pentacles-four",
+          "card_index": 67,
+          "fact_id": "tarot.draw.card.003",
+          "name": "Four of Pentacles",
+          "orientation": "reversed",
+          "position": "guidance",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ],
+      "spread": "situation-challenge-guidance"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The cards establish a hidden fact about a third party."
+  ],
+  "lineage": "rws-text-baseline-v0.1",
+  "must_match_rules": [
+    "TAROT-DRAW-UNIQUE-001",
+    "TAROT-POSITION-001",
+    "TAROT-NARRATIVE-001",
+    "TAROT-ORIENTATION-REVERSED-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": true,
+    "question_sha256": "a2ea084da1373f0ba7aa37dba39ff7543a5421eae992568373d1a048e96f42b4",
+    "spread": "situation-challenge-guidance"
+  },
+  "raw_input": {
+    "allow_reversals": true,
+    "question": "Synthetic reflection prompt 5",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000005",
+    "spread": "situation-challenge-guidance"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic deterministic regression case; not proof of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "rws-78.json and auditable draw contract",
+      "source_id": "SRC-TAROT-DECK-SPEC-001"
+    }
+  ],
+  "system": "tarot",
+  "title": "Auditable Tarot draw 005"
+}

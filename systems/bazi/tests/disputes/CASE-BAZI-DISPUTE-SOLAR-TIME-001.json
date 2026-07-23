@@ -1,0 +1,60 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        false,
+        true
+      ],
+      "dispute_id": "DSP-BAZI-SOLAR-TIME-001",
+      "field_path": "normalized_input.true_solar_time_applied"
+    }
+  ],
+  "case_id": "CASE-BAZI-DISPUTE-SOLAR-TIME-001",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "normalized_input": {
+      "true_solar_time_applied": false
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-TIME-CIVIL-001",
+    "BAZI-TIME-SOLAR-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Asia/Shanghai"
+  },
+  "raw_input": {
+    "local_datetime": "2024-01-01T12:00:00",
+    "longitude": 87.62,
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    },
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Civil versus apparent solar time"
+}

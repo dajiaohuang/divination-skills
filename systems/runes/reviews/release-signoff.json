@@ -1,0 +1,9 @@
+{
+  "system": "runes",
+  "release": "0.1.0",
+  "signoffs": [
+    {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/runes/tests/golden", "systems/runes/tests/edge_cases", "systems/runes/tests/disputes"], "notes": "Requires an independent runic-studies reviewer to check historical claims, modern symbolic scope, and reversal exclusion."},
+    {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/runes/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve all production sources and original keyword expressions."},
+    {"role": "privacy", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["docs/policies/PRIVACY.md"], "notes": "Requires approval of deployed question and reading-history retention settings."}
+  ]
+}

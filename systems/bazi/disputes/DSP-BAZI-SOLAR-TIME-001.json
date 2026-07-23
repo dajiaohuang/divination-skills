@@ -1,0 +1,59 @@
+{
+  "default_policy": {
+    "rationale": "No validated apparent-solar-time implementation exists in v0.1.",
+    "selected_lineage": "ziping-calculation-baseline",
+    "user_disclosure_required": true
+  },
+  "dispute_id": "DSP-BAZI-SOLAR-TIME-001",
+  "positions": [
+    {
+      "lineage": "ziping-calculation-baseline",
+      "rule_ids": [
+        "BAZI-TIME-CIVIL-001"
+      ],
+      "sources": [
+        {
+          "locator": "ZoneInfo fold and transition behavior",
+          "source_id": "SRC-TIME-PYTHON-ZONEINFO-001"
+        },
+        {
+          "locator": "Pinned v1.4.8 public API and implementation",
+          "source_id": "SRC-BAZI-LUNARPY-001"
+        }
+      ],
+      "summary": "Use historical local civil time from an IANA time zone."
+    },
+    {
+      "lineage": "apparent-solar-time",
+      "rule_ids": [
+        "BAZI-TIME-SOLAR-001"
+      ],
+      "sources": [
+        {
+          "locator": "24 solar terms longitude table and 2024 calendar",
+          "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+        }
+      ],
+      "summary": "Correct civil time using longitude and equation of time."
+    }
+  ],
+  "sources": [
+    {
+      "locator": "ZoneInfo fold and transition behavior",
+      "source_id": "SRC-TIME-PYTHON-ZONEINFO-001"
+    },
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    },
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+    }
+  ],
+  "status": "resolved_for_product",
+  "system": "bazi",
+  "title": "Civil time or apparent solar time",
+  "topic": "time basis",
+  "user_disclosure": "Coordinates are recorded but do not change the v0.1 civil-time chart."
+}

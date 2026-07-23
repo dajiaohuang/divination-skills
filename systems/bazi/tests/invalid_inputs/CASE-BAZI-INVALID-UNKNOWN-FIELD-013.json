@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-BAZI-INVALID-UNKNOWN-FIELD-013",
+  "data_classification": "synthetic",
+  "expected_error_code": "unknown_fields",
+  "expected_message_contains": "gender",
+  "input": {
+    "gender": "x",
+    "local_datetime": "2024-01-01T00:00:00",
+    "timezone": "UTC"
+  },
+  "title": "Unknown Field"
+}

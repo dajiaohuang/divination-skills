@@ -1,0 +1,43 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.calculation",
+      "output_path": "computed_facts.pillars.month",
+      "value": "exact_jie_boundary"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.utc_datetime",
+      "operator": "exists"
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-MONTH-BOUNDARY-001"
+  ],
+  "kind": "calculation",
+  "lineage": "ziping-calculation-baseline",
+  "priority": 800,
+  "rule_id": "BAZI-CAL-MONTH-001",
+  "sources": [
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001",
+      "support_type": "direct"
+    },
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001",
+      "support_type": "corroborating"
+    }
+  ],
+  "status": "tested",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-EDGE-JINGZHE-BEFORE-001",
+    "CASE-BAZI-EDGE-JINGZHE-AT-001"
+  ],
+  "title": "Change the month pillar at the exact minor solar-term instant",
+  "version": "0.1.0"
+}

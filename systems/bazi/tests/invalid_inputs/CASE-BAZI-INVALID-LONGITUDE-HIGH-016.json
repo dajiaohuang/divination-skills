@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-BAZI-INVALID-LONGITUDE-HIGH-016",
+  "data_classification": "synthetic",
+  "expected_error_code": "invalid_longitude",
+  "expected_message_contains": "-180 and 180",
+  "input": {
+    "local_datetime": "2024-01-01T00:00:00",
+    "longitude": 181,
+    "timezone": "UTC"
+  },
+  "title": "Longitude High"
+}

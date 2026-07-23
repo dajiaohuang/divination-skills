@@ -1,0 +1,41 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.validation",
+      "output_path": "computed_facts.luck_cycles.direction",
+      "value": "explicit_input"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.luck_cycle_direction",
+      "operator": "in",
+      "value": [
+        "forward",
+        "reverse"
+      ]
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-LUCK-DIRECTION-001"
+  ],
+  "kind": "validation",
+  "lineage": "ziping-calculation-baseline",
+  "priority": 800,
+  "rule_id": "BAZI-LUCK-DIR-001",
+  "sources": [
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001",
+      "support_type": "direct"
+    }
+  ],
+  "status": "tested",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-DISPUTE-LUCK-DIRECTION-001"
+  ],
+  "title": "Require explicit luck-cycle direction",
+  "version": "0.1.0"
+}

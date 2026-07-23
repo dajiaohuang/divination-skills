@@ -1,0 +1,4 @@
+interface:
+  display_name: "八字排盘计算器"
+  short_description: "从出生日期时间生成可追溯、可校验且标注流派边界的四柱结构化数据"
+  default_prompt: "Use $bazi-calculator to calculate a traceable Bazi chart from my local birth time and IANA time zone."

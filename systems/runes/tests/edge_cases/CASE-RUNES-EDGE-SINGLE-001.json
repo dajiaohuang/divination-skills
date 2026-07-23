@@ -1,0 +1,65 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-RUNES-EDGE-SINGLE-001",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-runes-draw",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "single",
+      "symbols": [
+        {
+          "fact_id": "runes.draw.symbol.001",
+          "name": "Gebo",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-RUNES-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "runes.07.gebo",
+          "symbol_index": 6
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "elder-futhark-project-v0.1",
+  "must_match_rules": [
+    "RUNES-SYMBOL-UPRIGHT-001",
+    "RUNES-POSITION-001",
+    "RUNES-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "elder-futhark-project-v0.1",
+    "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spread": "single"
+  },
+  "raw_input": {
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+    "spread": "single"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-RUNES-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "runes",
+  "title": "Single-rune all-zero-seed draw"
+}

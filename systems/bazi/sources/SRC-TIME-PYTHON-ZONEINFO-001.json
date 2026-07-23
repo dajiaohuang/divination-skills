@@ -1,0 +1,42 @@
+{
+  "source_id": "SRC-TIME-PYTHON-ZONEINFO-001",
+  "title": "Python 3.12 zoneinfo documentation",
+  "creators": [{ "name": "Python Software Foundation", "role": "organization" }],
+  "source_type": "standard",
+  "language": "en",
+  "publication_date": "2026",
+  "edition_or_version": "Python 3.12.13",
+  "locators": [
+    { "kind": "url", "value": "https://docs.python.org/3.12/library/zoneinfo.html", "stable": true },
+    { "kind": "url", "value": "https://docs.python.org/3.12/license.html", "stable": true }
+  ],
+  "retrieved_at": "2026-07-23",
+  "license": {
+    "identifier": "PSF-2.0; documentation code examples also 0BSD",
+    "url": "https://docs.python.org/3.12/license.html",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "not_applicable"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Python documentation license permits use and derivative works subject to retained notices."
+  },
+  "usage_status": "production",
+  "systems": ["bazi", "western-astrology"],
+  "lineages": ["time-normalization", "tropical-geocentric-v0.1"],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Primary documentation for ZoneInfo and fold semantics."
+  }
+}

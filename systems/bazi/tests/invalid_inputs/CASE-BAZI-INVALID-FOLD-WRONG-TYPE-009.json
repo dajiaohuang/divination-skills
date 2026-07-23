@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-BAZI-INVALID-FOLD-WRONG-TYPE-009",
+  "data_classification": "synthetic",
+  "expected_error_code": "invalid_fold",
+  "expected_message_contains": "0 or 1",
+  "input": {
+    "fold": "0",
+    "local_datetime": "2024-01-01T00:00:00",
+    "timezone": "UTC"
+  },
+  "title": "Fold Wrong Type"
+}

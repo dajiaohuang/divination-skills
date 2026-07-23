@@ -1,0 +1,9 @@
+{
+  "system": "liuyao",
+  "release": "0.1.0",
+  "signoffs": [
+    {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/liuyao/tests/golden", "systems/liuyao/tests/edge_cases", "systems/liuyao/tests/disputes"], "notes": "Requires an independent Wen Wang Gua practitioner to review Najia facts and day-boundary policy."},
+    {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/liuyao/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve all production sources and derived rule expressions."},
+    {"role": "privacy", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["docs/policies/PRIVACY.md"], "notes": "Requires approval of deployed question, timestamp, and consultation-history retention settings."}
+  ]
+}

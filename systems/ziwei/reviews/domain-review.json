@@ -1,0 +1,46 @@
+{
+  "system": "ziwei",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-ZIWEI-DISPUTE-TIME-BASIS-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-EDGE-LATE-ZI-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-ZIWEI-NATAL-005",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

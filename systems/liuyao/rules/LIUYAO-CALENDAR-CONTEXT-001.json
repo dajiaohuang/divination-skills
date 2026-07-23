@@ -1,0 +1,17 @@
+{
+  "rule_id": "LIUYAO-CALENDAR-CONTEXT-001",
+  "title": "Attach normalized month, day, spirits, and void branches",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.local_datetime", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "liuyao.calendar", "output_path": "computed_facts.calendar_context", "value": "timestamped_context", "confidence": "high" }],
+  "priority": 980,
+  "sources": [
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "Spirit and void tables", "support_type": "direct" },
+    { "source_id": "SRC-BAZI-LUNARPY-001", "locator": "Normalized month/day pillars", "support_type": "direct" }
+  ],
+  "tests": ["CASE-LIUYAO-CAST-001"]
+}

@@ -1,0 +1,145 @@
+{
+  "corpus": {
+    "case_count": 100,
+    "exclusions": [
+      {
+        "case_id": "CASE-BAZI-STANDARD-001",
+        "reason": "sxtwl-modern comparator exposes day-level year/month boundaries; the case falls on a Jie calendar date."
+      },
+      {
+        "case_id": "CASE-BAZI-STANDARD-005",
+        "reason": "sxtwl-modern comparator exposes day-level year/month boundaries; the case falls on a Jie calendar date."
+      },
+      {
+        "case_id": "CASE-BAZI-STANDARD-018",
+        "reason": "sxtwl-modern comparator exposes day-level year/month boundaries; the case falls on a Jie calendar date."
+      }
+    ],
+    "locators": [
+      "systems/bazi/tests/golden"
+    ],
+    "sha256": "cd456e77b7f9d2bc368132395e3737f61c76eb4f578ea4ef0bfb23564c7101b5"
+  },
+  "generated_by": "systems.bazi.evaluations.run_evaluation:v0.1.0",
+  "layers": {
+    "calculation": {
+      "golden_case_exact_consistency": {
+        "comparison": "minimum",
+        "denominator": 100,
+        "evidence": [
+          "systems/bazi/tests/golden",
+          "systems/bazi/tests/test_golden_replay.py"
+        ],
+        "numerator": 100,
+        "passed": true,
+        "threshold": 1.0,
+        "value": 1.0
+      },
+      "independent_comparator_consistency": {
+        "comparison": "minimum",
+        "denominator": 97,
+        "evidence": [
+          "systems/bazi/calculator/comparator.py:sxtwl_modern_reference",
+          "systems/bazi/tests/test_golden_replay.py"
+        ],
+        "numerator": 97,
+        "passed": true,
+        "threshold": 1.0,
+        "value": 1.0
+      }
+    },
+    "human_review": {
+      "expert_acceptance": {
+        "comparison": "minimum",
+        "denominator": 50,
+        "evidence": [
+          "systems/bazi/evaluations/expert_candidates",
+          "systems/bazi/reviews/REVIEW_GUIDE.md"
+        ],
+        "numerator": 0,
+        "passed": false,
+        "threshold": 1.0,
+        "value": 0.0
+      }
+    },
+    "lineage": {
+      "cross_system_contamination_rate": {
+        "comparison": "maximum",
+        "denominator": 882,
+        "evidence": [
+          "systems/bazi/rules",
+          "systems/bazi/LINEAGE.md"
+        ],
+        "numerator": 0,
+        "passed": true,
+        "threshold": 0.0,
+        "value": 0.0
+      }
+    },
+    "narrative": {
+      "citation_completeness": {
+        "comparison": "minimum",
+        "denominator": 882,
+        "evidence": [
+          "systems/bazi/core/report.py",
+          "systems/bazi/core/tests/test_report.py"
+        ],
+        "numerator": 882,
+        "passed": true,
+        "threshold": 1.0,
+        "value": 1.0
+      },
+      "fact_reference_validity": {
+        "comparison": "minimum",
+        "denominator": 882,
+        "evidence": [
+          "systems/bazi/core/report.py",
+          "systems/bazi/core/tests/test_report.py"
+        ],
+        "numerator": 882,
+        "passed": true,
+        "threshold": 1.0,
+        "value": 1.0
+      }
+    },
+    "rules": {
+      "required_rule_recall": {
+        "comparison": "minimum",
+        "denominator": 500,
+        "evidence": [
+          "systems/bazi/tests/golden",
+          "systems/bazi/core/report.py"
+        ],
+        "numerator": 500,
+        "passed": true,
+        "threshold": 1.0,
+        "value": 1.0
+      },
+      "unknown_rule_misuse_rate": {
+        "comparison": "maximum",
+        "denominator": 882,
+        "evidence": [
+          "systems/bazi/rules",
+          "systems/bazi/core/report.py"
+        ],
+        "numerator": 0,
+        "passed": true,
+        "threshold": 0.0,
+        "value": 0.0
+      }
+    }
+  },
+  "overall": {
+    "blocking_reasons": [
+      "human_review:expert_acceptance",
+      "signoff:domain",
+      "signoff:rights",
+      "signoff:privacy"
+    ],
+    "release_ready": false,
+    "technical_pass": true
+  },
+  "release": "0.1.0",
+  "schema_version": "0.1.0",
+  "system": "bazi"
+}

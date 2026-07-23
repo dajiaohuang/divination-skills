@@ -1,0 +1,14 @@
+{
+  "rule_id": "QIMEN-FOUNDATION-BOUNDARY-001",
+  "title": "Label incomplete Qimen foundations and prohibit advanced judgment",
+  "system": "qimen",
+  "lineage": "shijia-zhuanpan-chaibu-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "safety",
+  "conditions": [{ "fact_path": "earth_plate", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "qimen.boundary", "output_path": "narrative.limitations", "value": "foundation_only", "confidence": "high" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "SCOPE.md", "support_type": "direct" }],
+  "tests": ["CASE-QIMEN-FOUNDATION-001"]
+}

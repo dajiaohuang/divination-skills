@@ -1,0 +1,4 @@
+interface:
+  display_name: "Liuyao Core"
+  short_description: "Cast and calculate auditable Wen Wang Liuyao structures"
+  default_prompt: "Use $liuyao-core to calculate or explain a traceable Wen Wang Liuyao cast."

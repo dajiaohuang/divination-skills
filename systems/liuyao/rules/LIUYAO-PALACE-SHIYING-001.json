@@ -1,0 +1,14 @@
+{
+  "rule_id": "LIUYAO-PALACE-SHIYING-001",
+  "title": "Derive eight-palace stage and Shi/Ying positions",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "primary_hexagram.number", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "liuyao.palace", "output_path": "computed_facts.palace", "value": "eight_palace_stage", "confidence": "high" }],
+  "priority": 990,
+  "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "PALACE_SEQUENCES and SHI_YING", "support_type": "direct" }],
+  "tests": ["CASE-LIUYAO-CAST-001"]
+}

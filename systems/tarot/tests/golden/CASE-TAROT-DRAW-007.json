@@ -1,0 +1,69 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-TAROT-DRAW-007",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "5e2d1b53933bb3c3faadd77ea255c1779c30e8d13da7839fffb02d74d98821a2"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "c81e7bd84662e804c4f9ccbf1f46b29440a7e7c48dcc3f91b16bf1b56b5a94b4"
+    },
+    "computed_facts": {
+      "cards": [
+        {
+          "card_id": "tarot.rws.cups-seven",
+          "card_index": 42,
+          "fact_id": "tarot.draw.card.001",
+          "name": "Seven of Cups",
+          "orientation": "reversed",
+          "position": "focus",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ],
+      "spread": "single"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The cards establish a hidden fact about a third party."
+  ],
+  "lineage": "rws-text-baseline-v0.1",
+  "must_match_rules": [
+    "TAROT-DRAW-UNIQUE-001",
+    "TAROT-POSITION-001",
+    "TAROT-NARRATIVE-001",
+    "TAROT-ORIENTATION-REVERSED-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": true,
+    "question_sha256": "de24cb9993f9da89840870ac173a7e18086cea135d030c26136c46cd11ba7f55",
+    "spread": "single"
+  },
+  "raw_input": {
+    "allow_reversals": true,
+    "question": "Synthetic reflection prompt 7",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000007",
+    "spread": "single"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic deterministic regression case; not proof of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "rws-78.json and auditable draw contract",
+      "source_id": "SRC-TAROT-DECK-SPEC-001"
+    }
+  ],
+  "system": "tarot",
+  "title": "Auditable Tarot draw 007"
+}

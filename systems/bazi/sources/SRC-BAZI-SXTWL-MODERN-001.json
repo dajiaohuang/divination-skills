@@ -1,0 +1,44 @@
+{
+  "source_id": "SRC-BAZI-SXTWL-MODERN-001",
+  "title": "sxtwl-modern 1.1.2",
+  "creators": [{ "name": "SIC98 and sxtwl contributors", "role": "maintainer" }],
+  "source_type": "software",
+  "language": "zh",
+  "publication_date": "2025-11-15",
+  "edition_or_version": "1.1.2",
+  "locators": [
+    { "kind": "repository", "value": "https://github.com/SIC98/sxtwl", "stable": true },
+    { "kind": "url", "value": "https://pypi.org/project/sxtwl-modern/1.1.2/", "stable": true }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "LicenseRef-PyPI-BSD-Metadata",
+    "url": "https://pypi.org/project/sxtwl-modern/1.1.2/",
+    "text_available": false,
+    "additional_terms": true
+  },
+  "rights": {
+    "commercial_use": "unknown",
+    "derivative_use": "unknown",
+    "translation": "unknown",
+    "images": "not_applicable",
+    "dataset": "unknown",
+    "notes": "PyPI declares BSD, but the reviewed repository snapshot does not expose a complete license text. Use only as a development comparator until legal review is complete."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "PyPI metadata identifies BSD; repository page and source distribution require a separate complete-license review."
+  },
+  "usage_status": "reference_only",
+  "systems": ["bazi"],
+  "lineages": ["sxtwl-day-level-comparator"],
+  "quality": {
+    "authority": "practitioner",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Independent C++ astronomy/calendar implementation. Its exposed day API changes year/month pillars by calendar date, so exact solar-term instants are excluded from strict comparison."
+  }
+}

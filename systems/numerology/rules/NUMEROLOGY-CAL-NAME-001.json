@@ -1,0 +1,14 @@
+{
+  "rule_id": "NUMEROLOGY-CAL-NAME-001",
+  "title": "Map normalized Latin name letters with repeating one-through-nine values",
+  "system": "numerology",
+  "lineage": "pythagorean-project-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.name_letters", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "numerology.calculation", "output_path": "computed_facts.expression", "value": "pythagorean_name_mapping", "confidence": "deterministic" }],
+  "priority": 800,
+  "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "Name mapping contract", "support_type": "direct" }],
+  "tests": ["CASE-NUMEROLOGY-PROFILE-001"]
+}

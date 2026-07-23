@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/systems/tarot/data/deck.schema.json",
+  "title": "Tarot text deck",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["deck_id", "version", "lineage", "source_ids", "cards"],
+  "properties": {
+    "deck_id": { "const": "rws-text-78" },
+    "version": { "const": "0.1.0" },
+    "lineage": { "const": "rws-text-baseline-v0.1" },
+    "source_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "cards": {
+      "type": "array",
+      "minItems": 78,
+      "maxItems": 78,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["card_id", "index", "name", "arcana", "suit", "rank", "element", "upright", "reversed"],
+        "properties": {
+          "card_id": { "type": "string", "pattern": "^tarot[.]rws[.][a-z0-9-]+$" },
+          "index": { "type": "integer", "minimum": 0, "maximum": 77 },
+          "name": { "type": "string", "minLength": 1 },
+          "arcana": { "type": "string", "enum": ["major", "minor"] },
+          "suit": { "type": ["string", "null"], "enum": ["wands", "cups", "swords", "pentacles", null] },
+          "rank": { "type": ["string", "null"] },
+          "element": { "type": ["string", "null"], "enum": ["fire", "water", "air", "earth", null] },
+          "upright": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "string" } },
+          "reversed": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

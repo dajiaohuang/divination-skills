@@ -1,0 +1,29 @@
+name: Source intake
+description: Propose an external source for rights and quality review
+title: "source: "
+labels: ["source", "rights-review"]
+body:
+  - type: input
+    id: locator
+    attributes:
+      label: Stable source locator
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Intended use
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: License and permission evidence
+    validations:
+      required: true
+  - type: textarea
+    id: lineage
+    attributes:
+      label: Relevant system and lineage
+    validations:
+      required: true

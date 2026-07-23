@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ziwei Calculator"
+  short_description: "Calculate project-native Zi Wei Dou Shu structural charts"
+  default_prompt: "Use $ziwei-calculator to calculate or validate a normalized Zi Wei Dou Shu natal chart."

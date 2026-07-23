@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/rule.schema.json",
+  "title": "Divination rule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rule_id",
+    "title",
+    "system",
+    "lineage",
+    "version",
+    "status",
+    "kind",
+    "conditions",
+    "conclusions",
+    "priority",
+    "sources",
+    "tests"
+  ],
+  "properties": {
+    "rule_id": { "type": "string", "pattern": "^[A-Z][A-Z0-9]+(?:-[A-Z0-9]+){2,}$" },
+    "title": { "type": "string", "minLength": 1 },
+    "system": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "lineage": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "pattern": "^[0-9]+[.][0-9]+[.][0-9]+$" },
+    "status": { "type": "string", "enum": ["proposed", "reviewed", "tested", "production", "deprecated", "rejected"] },
+    "kind": { "type": "string", "enum": ["calculation", "validation", "interpretation", "safety", "routing"] },
+    "conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/predicate" }
+    },
+    "conclusions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["finding_type", "output_path", "value", "confidence"],
+        "properties": {
+          "finding_type": { "type": "string", "pattern": "^[a-z][a-z0-9_.-]*$" },
+          "output_path": { "type": "string", "pattern": "^[a-z][a-z0-9_.-]*$" },
+          "value": {},
+          "confidence": { "type": "string", "enum": ["deterministic", "high", "medium", "low"] },
+          "explanation_template": { "type": "string" }
+        }
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["when", "effect", "rationale"],
+        "properties": {
+          "when": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/predicate" } },
+          "effect": { "type": "string", "enum": ["skip", "downgrade", "override", "require_review"] },
+          "rationale": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "priority": { "type": "integer", "minimum": 0, "maximum": 1000 },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "locator", "support_type"],
+        "properties": {
+          "source_id": { "type": "string", "pattern": "^SRC-[A-Z0-9]+(?:-[A-Z0-9]+)+$" },
+          "locator": { "type": "string", "minLength": 1 },
+          "support_type": { "type": "string", "enum": ["direct", "interpretive", "corroborating"] }
+        }
+      }
+    },
+    "disputes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^DSP-[A-Z0-9]+(?:-[A-Z0-9]+)+$" }
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^CASE-[A-Z0-9]+(?:-[A-Z0-9]+)+$" }
+    },
+    "notes": { "type": "string" }
+  },
+  "$defs": {
+    "predicate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_path", "operator"],
+      "properties": {
+        "fact_path": { "type": "string", "pattern": "^[a-z][a-z0-9_.-]*$" },
+        "operator": {
+          "type": "string",
+          "enum": ["eq", "neq", "gt", "gte", "lt", "lte", "in", "not_in", "exists", "absent", "contains", "intersects"]
+        },
+        "value": {}
+      }
+    }
+  }
+}

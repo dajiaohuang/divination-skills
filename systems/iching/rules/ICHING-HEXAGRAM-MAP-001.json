@@ -1,0 +1,14 @@
+{
+  "rule_id": "ICHING-HEXAGRAM-MAP-001",
+  "title": "Map six bottom-to-top lines to trigrams and King Wen number",
+  "system": "iching",
+  "lineage": "three-coin-king-wen-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "lines", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "iching.hexagram", "output_path": "computed_facts.primary_hexagram", "value": "king_wen_mapping", "confidence": "high" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "LINEAGE.md and PAIR_TO_NUMBER", "support_type": "direct" }],
+  "tests": ["CASE-ICHING-CAST-001"]
+}

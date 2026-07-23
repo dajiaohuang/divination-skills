@@ -1,0 +1,58 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "three_days_per_year",
+        "calendar_component_conversion"
+      ],
+      "dispute_id": "DSP-BAZI-LUCK-START-001",
+      "field_path": "computed_facts.luck_cycles.start_method"
+    }
+  ],
+  "case_id": "CASE-BAZI-DISPUTE-LUCK-START-002",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "luck_cycles": {
+        "start_method": "three_days_per_year"
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-LUCK-START-001",
+    "BAZI-LUCK-START-002"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Asia/Shanghai"
+  },
+  "raw_input": {
+    "local_datetime": "1955-04-15T12:00:00",
+    "luck_cycle_direction": "forward",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Luck-cycle start-age conversion alternatives"
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-BAZI-INVALID-NONEXISTENT-DST-007",
+  "data_classification": "synthetic",
+  "expected_error_code": "nonexistent_local_time",
+  "expected_message_contains": "does not exist",
+  "input": {
+    "local_datetime": "2024-03-10T02:30:00",
+    "timezone": "America/New_York"
+  },
+  "title": "Nonexistent Dst"
+}

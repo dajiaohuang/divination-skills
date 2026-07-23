@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/common/deployment/deployment-privacy.schema.json",
+  "title": "Deployment privacy decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "deployment_id", "stores", "purposes", "retention_days", "controls", "user_rights", "providers", "minors_policy", "incident_contact", "decided_by", "decided_at", "notes"],
+  "properties": {
+    "status": { "type": "string", "enum": ["undecided", "configured"] },
+    "deployment_id": { "type": ["string", "null"] },
+    "stores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accounts", "birth_data", "questions", "readings"],
+      "properties": {
+        "accounts": { "type": ["boolean", "null"] },
+        "birth_data": { "type": ["boolean", "null"] },
+        "questions": { "type": ["boolean", "null"] },
+        "readings": { "type": ["boolean", "null"] }
+      }
+    },
+    "purposes": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "retention_days": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary", "backups", "logs"],
+      "properties": {
+        "primary": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 },
+        "backups": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 },
+        "logs": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 }
+      }
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["encryption_at_rest", "encryption_in_transit", "role_based_access", "log_redaction"],
+      "properties": {
+        "encryption_at_rest": { "type": ["boolean", "null"] },
+        "encryption_in_transit": { "type": ["boolean", "null"] },
+        "role_based_access": { "type": ["boolean", "null"] },
+        "log_redaction": { "type": ["boolean", "null"] }
+      }
+    },
+    "user_rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["export_supported", "deletion_supported", "deletion_sla_days"],
+      "properties": {
+        "export_supported": { "type": ["boolean", "null"] },
+        "deletion_supported": { "type": ["boolean", "null"] },
+        "deletion_sla_days": { "type": ["integer", "null"], "minimum": 0, "maximum": 365 }
+      }
+    },
+    "providers": { "type": "array", "items": { "$ref": "#/$defs/provider" } },
+    "minors_policy": { "type": ["string", "null"] },
+    "incident_contact": { "type": ["string", "null"] },
+    "decided_by": { "type": ["string", "null"] },
+    "decided_at": { "type": ["string", "null"], "format": "date-time" },
+    "notes": { "type": "string", "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "undecided" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "deployment_id": { "type": "null" },
+          "stores": { "properties": { "accounts": { "type": "null" }, "birth_data": { "type": "null" }, "questions": { "type": "null" }, "readings": { "type": "null" } } },
+          "purposes": { "maxItems": 0 },
+          "retention_days": { "properties": { "primary": { "type": "null" }, "backups": { "type": "null" }, "logs": { "type": "null" } } },
+          "controls": { "properties": { "encryption_at_rest": { "type": "null" }, "encryption_in_transit": { "type": "null" }, "role_based_access": { "type": "null" }, "log_redaction": { "type": "null" } } },
+          "user_rights": { "properties": { "export_supported": { "type": "null" }, "deletion_supported": { "type": "null" }, "deletion_sla_days": { "type": "null" } } },
+          "providers": { "maxItems": 0 },
+          "minors_policy": { "type": "null" },
+          "incident_contact": { "type": "null" },
+          "decided_by": { "type": "null" },
+          "decided_at": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "configured" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "deployment_id": { "type": "string", "minLength": 1 },
+          "stores": { "properties": { "accounts": { "type": "boolean" }, "birth_data": { "type": "boolean" }, "questions": { "type": "boolean" }, "readings": { "type": "boolean" } } },
+          "purposes": { "minItems": 1 },
+          "retention_days": { "properties": { "primary": { "type": "integer" }, "backups": { "type": "integer" }, "logs": { "type": "integer" } } },
+          "controls": { "properties": { "encryption_at_rest": { "type": "boolean" }, "encryption_in_transit": { "type": "boolean" }, "role_based_access": { "type": "boolean" }, "log_redaction": { "type": "boolean" } } },
+          "user_rights": { "properties": { "export_supported": { "type": "boolean" }, "deletion_supported": { "type": "boolean" }, "deletion_sla_days": { "type": "integer" } } },
+          "providers": { "items": { "$ref": "#/$defs/configuredProvider" } },
+          "minors_policy": { "type": "string", "minLength": 1 },
+          "incident_contact": { "type": "string", "minLength": 1 },
+          "decided_by": { "type": "string", "minLength": 1 },
+          "decided_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "fields", "training_use", "retention_days"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "fields": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "training_use": { "type": "string", "enum": ["prohibited", "opt_in", "unknown"] },
+        "retention_days": { "type": "integer", "minimum": 0, "maximum": 3650 }
+      }
+    },
+    "configuredProvider": {
+      "allOf": [
+        { "$ref": "#/$defs/provider" },
+        { "properties": { "training_use": { "enum": ["prohibited", "opt_in"] } } }
+      ]
+    }
+  }
+}

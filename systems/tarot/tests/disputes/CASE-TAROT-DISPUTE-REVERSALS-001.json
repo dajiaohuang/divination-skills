@@ -1,0 +1,74 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        true,
+        false
+      ],
+      "dispute_id": "DSP-TAROT-REVERSALS-001",
+      "field_path": "normalized_input.allow_reversals"
+    }
+  ],
+  "case_id": "CASE-TAROT-DISPUTE-REVERSALS-001",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-tarot-draw",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "cards": [
+        {
+          "card_id": "tarot.rws.major-17-star",
+          "card_index": 17,
+          "fact_id": "tarot.draw.card.001",
+          "name": "The Star",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ],
+      "spread": "single"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "rws-text-baseline-v0.1",
+  "must_match_rules": [
+    "TAROT-DRAW-UNIQUE-001",
+    "TAROT-ORIENTATION-UPRIGHT-001",
+    "TAROT-POSITION-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": true,
+    "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spread": "single"
+  },
+  "raw_input": {
+    "allow_reversals": true,
+    "seed_hex": "1111111111111111111111111111111111111111111111111111111111111111",
+    "spread": "single"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-TAROT-DECK-SPEC-001"
+    }
+  ],
+  "system": "tarot",
+  "title": "Explicit Tarot reversal policy"
+}

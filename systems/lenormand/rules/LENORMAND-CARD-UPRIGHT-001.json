@@ -1,0 +1,14 @@
+{
+  "rule_id": "LENORMAND-CARD-UPRIGHT-001",
+  "title": "Use upright project keywords for every Lenormand card",
+  "system": "lenormand",
+  "lineage": "lenormand-36-project-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "card.orientation", "operator": "eq", "value": "upright" }],
+  "conclusions": [{ "finding_type": "lenormand.card-theme", "output_path": "derived_findings.card", "value": "upright_keywords", "confidence": "low" }],
+  "priority": 700,
+  "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "Per-card keyword data", "support_type": "direct" }],
+  "tests": ["CASE-LENORMAND-DRAW-001"]
+}

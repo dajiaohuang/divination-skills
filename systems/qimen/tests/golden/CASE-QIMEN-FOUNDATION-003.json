@@ -1,0 +1,239 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-QIMEN-FOUNDATION-003",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "solar_term": {
+      "beijing_datetime": "2026-06-21T16:24:30+08:00",
+      "name": "夏至"
+    },
+    "yuan": {
+      "days_from_fu_head": 3,
+      "fu_head": "甲子",
+      "fu_head_day_index": 0,
+      "index": 0,
+      "name": "upper"
+    }
+  },
+  "expected_output": {
+    "computed_facts": {
+      "day_pillar": {
+        "branch": {
+          "hidden_stems": [
+            "乙"
+          ],
+          "index": 3,
+          "name": "卯"
+        },
+        "fact_id": "bazi.pillar.day",
+        "ganzhi": "丁卯",
+        "index": 3,
+        "source_ids": [
+          "SRC-BAZI-LUNARPY-001"
+        ],
+        "stem": {
+          "element": "fire",
+          "index": 3,
+          "name": "丁",
+          "polarity": "yin"
+        }
+      },
+      "dun": "yin",
+      "duty_origin": {
+        "center_host_palace": 2,
+        "door": "中门",
+        "gua": "中",
+        "palace": 5,
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ],
+        "star": "天禽"
+      },
+      "earth_plate": [
+        {
+          "earth_stem": "乙",
+          "fact_id": "qimen.earth.palace.001",
+          "gua": "坎",
+          "original_door": "休门",
+          "original_star": "天蓬",
+          "palace": 1,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "丙",
+          "fact_id": "qimen.earth.palace.002",
+          "gua": "坤",
+          "original_door": "死门",
+          "original_star": "天芮",
+          "palace": 2,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "丁",
+          "fact_id": "qimen.earth.palace.003",
+          "gua": "震",
+          "original_door": "伤门",
+          "original_star": "天冲",
+          "palace": 3,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "癸",
+          "fact_id": "qimen.earth.palace.004",
+          "gua": "巽",
+          "original_door": "杜门",
+          "original_star": "天辅",
+          "palace": 4,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "壬",
+          "fact_id": "qimen.earth.palace.005",
+          "gua": "中",
+          "original_door": "中门",
+          "original_star": "天禽",
+          "palace": 5,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "辛",
+          "fact_id": "qimen.earth.palace.006",
+          "gua": "乾",
+          "original_door": "开门",
+          "original_star": "天心",
+          "palace": 6,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "庚",
+          "fact_id": "qimen.earth.palace.007",
+          "gua": "兑",
+          "original_door": "惊门",
+          "original_star": "天柱",
+          "palace": 7,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "己",
+          "fact_id": "qimen.earth.palace.008",
+          "gua": "艮",
+          "original_door": "生门",
+          "original_star": "天任",
+          "palace": 8,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "earth_stem": "戊",
+          "fact_id": "qimen.earth.palace.009",
+          "gua": "离",
+          "original_door": "景门",
+          "original_star": "天英",
+          "palace": 9,
+          "source_ids": [
+            "SRC-QIMEN-PROJECT-SPEC-001"
+          ]
+        }
+      ],
+      "hour_pillar": {
+        "branch": {
+          "hidden_stems": [
+            "丁",
+            "己"
+          ],
+          "index": 6,
+          "name": "午"
+        },
+        "fact_id": "bazi.pillar.hour",
+        "ganzhi": "丙午",
+        "index": 42,
+        "source_ids": [
+          "SRC-BAZI-LUNARPY-001"
+        ],
+        "stem": {
+          "element": "fire",
+          "index": 2,
+          "name": "丙",
+          "polarity": "yang"
+        }
+      },
+      "hour_xun": {
+        "hidden_jia_stem": "壬",
+        "source_ids": [
+          "SRC-QIMEN-PROJECT-SPEC-001"
+        ],
+        "start": "甲辰"
+      },
+      "ju": 9,
+      "ju_label": "yin-9",
+      "solar_term": {
+        "beijing_datetime": "2026-06-21T16:24:30+08:00",
+        "name": "夏至"
+      },
+      "yuan": {
+        "days_from_fu_head": 3,
+        "fu_head": "甲子",
+        "fu_head_day_index": 0,
+        "index": 0,
+        "name": "upper"
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "This foundation is a complete Qimen chart.",
+    "An auspicious direction or event outcome was inferred."
+  ],
+  "lineage": "shijia-zhuanpan-chaibu-v0.1",
+  "must_match_rules": [
+    "QIMEN-CHAIBU-JU-001",
+    "QIMEN-EARTH-PLATE-001",
+    "QIMEN-DUTY-ORIGIN-001",
+    "QIMEN-FOUNDATION-BOUNDARY-001"
+  ],
+  "normalized_input": {
+    "beijing_datetime": "2026-06-22T12:00:00+08:00",
+    "day_boundary": "midnight",
+    "lineage": "shijia-zhuanpan-chaibu-v0.1",
+    "local_datetime": "2026-06-22T12:00:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "utc_datetime": "2026-06-22T04:00:00Z"
+  },
+  "raw_input": {
+    "day_boundary": "midnight",
+    "local_datetime": "2026-06-22T12:00:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; practitioner acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-foundation-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "Chaibu foundation tables",
+      "source_id": "SRC-QIMEN-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "qimen",
+  "title": "Chaibu Qimen foundation 003"
+}

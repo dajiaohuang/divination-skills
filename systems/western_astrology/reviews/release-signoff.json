@@ -1,0 +1,9 @@
+{
+  "system": "western_astrology",
+  "release": "0.1.0",
+  "signoffs": [
+    {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/western_astrology/tests/golden", "systems/western_astrology/tests/edge_cases", "systems/western_astrology/tests/disputes"], "notes": "Requires an independent Western astrologer to review tropical, house-system, orb, and boundary decisions."},
+    {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/western_astrology/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve the astronomy engine and interpretive sources for the deployment model."},
+    {"role": "privacy", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["docs/policies/SENSITIVE_BIRTH_DATA.md"], "notes": "Requires approval of deployed birth-data retention, deletion, access, and logging settings."}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-ZIWEI-TIME-BASIS-001",
+  "title": "Use local civil double-hour or true solar time",
+  "system": "ziwei",
+  "topic": "birth-time basis",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "project-native-ziwei-foundation-v0.1",
+      "summary": "Validate the IANA local civil time and map its hour to the project's 13 double-hour indices.",
+      "rule_ids": ["ZIWEI-TIME-INDEX-001", "ZIWEI-NATIVE-NATAL-001"],
+      "sources": [{ "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/DATA_CONTRACT.md" }]
+    },
+    {
+      "lineage": "true-solar-time-not-implemented",
+      "summary": "Correct civil time using longitude and apparent-solar-time policy before selecting a double hour.",
+      "rule_ids": ["ZIWEI-STRUCTURAL-BOUNDARY-001"],
+      "sources": [{ "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/SCOPE.md" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "project-native-ziwei-foundation-v0.1",
+    "rationale": "The project-native foundation accepts a validated local civil date and explicit time index; no solar correction is implemented.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "The chart uses validated local civil time; true solar time is not applied.",
+  "sources": [
+    { "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/DATA_CONTRACT.md" },
+    { "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/SCOPE.md" }
+  ]
+}

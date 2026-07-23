@@ -1,0 +1,14 @@
+{
+  "rule_id": "NUMEROLOGY-INTERPRET-THEME-001",
+  "title": "Present project number themes as reflective labels only",
+  "system": "numerology",
+  "lineage": "pythagorean-project-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "computed_facts.life_path.value", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "numerology.symbolic-theme", "output_path": "derived_findings.themes", "value": "reflective_not_predictive", "confidence": "low" }],
+  "priority": 600,
+  "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "Project theme vocabulary", "support_type": "direct" }],
+  "tests": ["CASE-NUMEROLOGY-PROFILE-001"]
+}

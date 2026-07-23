@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-EXAMPLE-BOUNDARY-001",
+  "title": "Assign an exact boundary to the earlier or later interval",
+  "system": "example",
+  "topic": "boundary assignment",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "baseline",
+      "summary": "Assign an exact boundary to the later interval.",
+      "rule_ids": ["EXAMPLE-CAL-001"],
+      "sources": [{ "source_id": "SRC-EXAMPLE-STANDARD-001", "locator": "Fixture clause 1" }]
+    },
+    {
+      "lineage": "alternative",
+      "summary": "Treat an exact boundary as ambiguous pending context.",
+      "rule_ids": ["EXAMPLE-VAL-001"],
+      "sources": [{ "source_id": "SRC-EXAMPLE-TEXT-001", "locator": "Fixture boundary note" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "baseline",
+    "rationale": "The example product requires deterministic half-open intervals.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "This example uses the baseline half-open interval convention.",
+  "sources": [
+    { "source_id": "SRC-EXAMPLE-STANDARD-001", "locator": "Fixture clause 1" },
+    { "source_id": "SRC-EXAMPLE-TEXT-001", "locator": "Fixture boundary note" }
+  ]
+}

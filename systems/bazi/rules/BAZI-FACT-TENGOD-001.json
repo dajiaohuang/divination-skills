@@ -1,0 +1,23 @@
+{
+  "rule_id": "BAZI-FACT-TENGOD-001",
+  "title": "Expose Ten Gods as day-master-relative labels",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.ten_gods.visible", "operator": "exists" }],
+  "conclusions": [{
+    "finding_type": "bazi.fact-label",
+    "output_path": "derived_findings.ten_gods",
+    "value": "day_master_relative_relations",
+    "confidence": "deterministic"
+  }],
+  "priority": 700,
+  "sources": [{
+    "source_id": "SRC-BAZI-LUNARPY-001",
+    "locator": "Pinned EightChar ShiShen API and independently tested relation table",
+    "support_type": "corroborating"
+  }],
+  "tests": ["CASE-BAZI-STANDARD-001"]
+}

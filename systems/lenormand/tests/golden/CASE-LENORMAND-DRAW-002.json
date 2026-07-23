@@ -1,0 +1,91 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-LENORMAND-DRAW-002",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "0d7f96786467179104354297c0c5b2b6caf019d170f7dc50b0bc2a47ee94cdb1"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "a3e23351a9512f587a0f6781c921714af0460a251345d9007c868584c80bb633"
+    },
+    "computed_facts": {
+      "spread": "three-card",
+      "symbols": [
+        {
+          "fact_id": "lenormand.draw.symbol.001",
+          "name": "Rider",
+          "orientation": "upright",
+          "position": "context",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.01.rider",
+          "symbol_index": 0
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.002",
+          "name": "Lily",
+          "orientation": "upright",
+          "position": "development",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.30.lily",
+          "symbol_index": 29
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.003",
+          "name": "Book",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.26.book",
+          "symbol_index": 25
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The symbols establish a hidden fact about a third party."
+  ],
+  "lineage": "lenormand-36-project-v0.1",
+  "must_match_rules": [
+    "LENORMAND-CARD-UPRIGHT-001",
+    "LENORMAND-POSITION-001",
+    "LENORMAND-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "lenormand-36-project-v0.1",
+    "question_sha256": "a06b14d9e06e36a0678192c7f699eaf821b3ba646f0c504590030293888b6285",
+    "spread": "three-card"
+  },
+  "raw_input": {
+    "allow_reversals": false,
+    "question": "Synthetic Lenormand reflection prompt 2",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000002",
+    "spread": "three-card"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; not evidence of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "text-only 36-symbol project deck and draw contract",
+      "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "lenormand",
+  "title": "Auditable Lenormand draw 002"
+}

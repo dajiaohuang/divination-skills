@@ -1,0 +1,14 @@
+{
+  "rule_id": "ICHING-MOVING-LINES-001",
+  "title": "Flip old yin and old yang to form the changed hexagram",
+  "system": "iching",
+  "lineage": "three-coin-king-wen-structural-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "line.value", "operator": "in", "value": [6, 9] }],
+  "conclusions": [{ "finding_type": "iching.change", "output_path": "computed_facts.changed_hexagram", "value": "flip_moving_lines", "confidence": "high" }],
+  "priority": 990,
+  "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "Three-coin moving-line contract", "support_type": "direct" }],
+  "tests": ["CASE-ICHING-CAST-001", "CASE-ICHING-CAST-002"]
+}

@@ -1,0 +1,14 @@
+{
+  "rule_id": "WESTERN-INTERPRET-STRUCTURE-001",
+  "title": "Explain placements and aspects as reflective symbolic structure",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "computed_facts.positions", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "western.symbolic-structure", "output_path": "derived_findings.structure", "value": "reflective_not_predictive", "confidence": "low" }],
+  "priority": 600,
+  "sources": [{ "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "Bounded interpretation policy", "support_type": "direct" }],
+  "tests": ["CASE-WESTERN-NATAL-001"]
+}

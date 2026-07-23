@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE-EXAMPLE-DISPUTE-001",
+  "title": "Mixed signal with documented lineage difference",
+  "system": "example",
+  "lineage": "alternative",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "raw_input": { "signal": "mixed" },
+  "normalized_input": { "signal": "mixed", "ambiguous": false },
+  "expected_intermediate": { "signal_count": { "positive": 1, "negative": 1 } },
+  "expected_output": { "derived_findings": { "signal": "conditional" } },
+  "must_match_rules": ["EXAMPLE-INT-001"],
+  "allowed_disagreements": [
+    {
+      "dispute_id": "DSP-EXAMPLE-WEIGHT-001",
+      "field_path": "derived_findings.signal",
+      "allowed_values": ["conditional", "needs_clarification"]
+    }
+  ],
+  "forbidden_conclusions": ["A fixed event will occur.", "Hide the lineage difference."],
+  "sources": [
+    { "source_id": "SRC-EXAMPLE-TEXT-001", "locator": "Fixture section: uncertainty" },
+    { "source_id": "SRC-EXAMPLE-INDEPENDENT-001", "locator": "Fixture row 3" }
+  ],
+  "reviewers": [
+    {
+      "reviewer_id": "fixture-reviewer",
+      "role": "domain",
+      "reviewed_at": "2026-07-23",
+      "decision": "accepted"
+    }
+  ]
+}

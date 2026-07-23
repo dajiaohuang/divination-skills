@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-BAZI-INVALID-LUCK-DIRECTION-015",
+  "data_classification": "synthetic",
+  "expected_error_code": "invalid_luck_cycle_direction",
+  "expected_message_contains": "forward",
+  "input": {
+    "local_datetime": "2024-01-01T00:00:00",
+    "luck_cycle_direction": "auto",
+    "timezone": "UTC"
+  },
+  "title": "Luck Direction"
+}

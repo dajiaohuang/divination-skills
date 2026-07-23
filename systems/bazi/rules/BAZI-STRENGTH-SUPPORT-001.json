@@ -1,0 +1,26 @@
+{
+  "rule_id": "BAZI-STRENGTH-SUPPORT-001",
+  "title": "Label a high project seasonal-support score",
+  "system": "bazi",
+  "lineage": "project-seasonal-support-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [
+    { "fact_path": "analysis_features.lineage", "operator": "eq", "value": "project-seasonal-support-v0.1" },
+    { "fact_path": "analysis_features.total_score", "operator": "gte", "value": 5 }
+  ],
+  "conclusions": [{
+    "finding_type": "bazi.seasonal-support",
+    "output_path": "derived_findings.seasonal_support",
+    "value": "support_dominant",
+    "confidence": "low"
+  }],
+  "priority": 500,
+  "sources": [{
+    "source_id": "SRC-BAZI-SEASONAL-SPEC-001",
+    "locator": "Feature contract, steps 1-5",
+    "support_type": "direct"
+  }],
+  "tests": ["CASE-BAZI-STANDARD-008"]
+}

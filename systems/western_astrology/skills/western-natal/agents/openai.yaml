@@ -1,0 +1,4 @@
+interface:
+  display_name: "Western Natal"
+  short_description: "Calculate traceable tropical Western natal chart facts"
+  default_prompt: "Use $western-natal to calculate a traceable tropical natal chart."

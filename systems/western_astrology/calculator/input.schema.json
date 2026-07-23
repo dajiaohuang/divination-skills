@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/systems/western-astrology/calculator/input.schema.json",
+  "title": "Western natal calculator input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["local_datetime", "timezone", "longitude", "latitude"],
+  "properties": {
+    "local_datetime": { "type": "string" },
+    "timezone": { "type": "string", "minLength": 1 },
+    "fold": { "type": "integer", "enum": [0, 1] },
+    "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+    "latitude": { "type": "number", "minimum": -89, "maximum": 89 },
+    "house_system": { "type": "string", "enum": ["whole_sign", "equal"] }
+  }
+}

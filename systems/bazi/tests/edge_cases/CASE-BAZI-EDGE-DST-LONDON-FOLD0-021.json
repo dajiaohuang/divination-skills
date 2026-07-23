@@ -1,0 +1,47 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-BAZI-EDGE-DST-LONDON-FOLD0-021",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "normalized_input": {
+      "fold": 0,
+      "utc_datetime": "2024-10-27T00:30:00Z"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-VAL-DST-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Europe/London"
+  },
+  "raw_input": {
+    "fold": 0,
+    "local_datetime": "2024-10-27T01:30:00",
+    "timezone": "Europe/London"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "ZoneInfo fold and transition behavior",
+      "source_id": "SRC-TIME-PYTHON-ZONEINFO-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Ambiguous Europe/London time with fold 0"
+}

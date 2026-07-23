@@ -1,0 +1,30 @@
+{
+  "case_id": "CASE-EXAMPLE-EDGE-001",
+  "title": "Unknown boundary requires clarification",
+  "system": "example",
+  "lineage": "baseline",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "raw_input": { "value": "approximately boundary" },
+  "normalized_input": {
+    "boundary_policy": "later_interval",
+    "boundary_known": false,
+    "ambiguous": true
+  },
+  "expected_intermediate": { "boundary_comparison": null },
+  "expected_output": { "validation": { "status": "needs_clarification" } },
+  "must_match_rules": ["EXAMPLE-VAL-001", "EXAMPLE-CAL-001"],
+  "allowed_disagreements": [],
+  "forbidden_conclusions": ["The later interval is certain.", "Silently choose a boundary."],
+  "sources": [
+    { "source_id": "SRC-EXAMPLE-STANDARD-001", "locator": "Fixture clause 2" }
+  ],
+  "reviewers": [
+    {
+      "reviewer_id": "fixture-reviewer",
+      "role": "quality",
+      "reviewed_at": "2026-07-23",
+      "decision": "accepted"
+    }
+  ]
+}

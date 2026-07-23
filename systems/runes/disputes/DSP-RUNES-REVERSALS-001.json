@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-RUNES-REVERSALS-001",
+  "title": "Use upright-only runes or modern reversed meanings",
+  "system": "runes",
+  "topic": "reversal policy",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "elder-futhark-project-v0.1",
+      "summary": "Use the fixed 24 symbols upright with original project prompts.",
+      "rule_ids": ["RUNES-SYMBOL-UPRIGHT-001", "RUNES-SEQUENCE-001"],
+      "sources": [{ "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "upright-only symbol contract" }]
+    },
+    {
+      "lineage": "modern-merkstave-alternative",
+      "summary": "Add reversed or merkstave meanings to selected symbols.",
+      "rule_ids": ["RUNES-SYMBOL-UPRIGHT-001"],
+      "sources": [{ "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "unsupported reversal boundary" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "elder-futhark-project-v0.1",
+    "rationale": "The project does not claim a reviewed historical or modern reversal method.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Rune v0.1 is upright-only and is modern symbolic reflection, not historical reconstruction.",
+  "sources": [
+    { "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "upright-only symbol contract" },
+    { "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "scope exclusions" }
+  ]
+}

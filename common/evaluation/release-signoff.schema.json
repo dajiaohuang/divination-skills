@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/common/evaluation/release-signoff.schema.json",
+  "title": "Per-system release sign-off",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["system", "release", "signoffs"],
+  "properties": {
+    "system": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "release": { "type": "string", "pattern": "^(0|[1-9][0-9]*)[.](0|[1-9][0-9]*)[.](0|[1-9][0-9]*)$" },
+    "signoffs": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "status", "reviewer_id", "signed_at", "evidence", "notes"],
+        "properties": {
+          "role": { "type": "string", "enum": ["domain", "rights", "privacy"] },
+          "status": { "type": "string", "enum": ["pending", "accepted", "rejected"] },
+          "reviewer_id": { "type": ["string", "null"] },
+          "signed_at": { "type": ["string", "null"], "format": "date-time" },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                { "type": "string", "minLength": 1 },
+                { "$ref": "#/$defs/evidence" }
+              ]
+            }
+          },
+          "notes": { "type": "string", "minLength": 1 }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "status": { "const": "accepted" } }, "required": ["status"] },
+            "then": {
+              "properties": {
+                "reviewer_id": { "type": "string", "minLength": 1 },
+                "signed_at": { "type": "string", "format": "date-time" },
+                "evidence": {
+                  "minItems": 1,
+                  "items": { "$ref": "#/$defs/evidence" }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["locator", "sha256", "retained_in_repository"],
+      "properties": {
+        "locator": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "retained_in_repository": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "rule_id": "LENORMAND-SEQUENCE-001",
+  "title": "Read Lenormand cards only in recorded position order",
+  "system": "lenormand",
+  "lineage": "lenormand-36-project-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "computed_facts.symbols", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "lenormand.sequence", "output_path": "derived_findings.sequence", "value": "bounded_order", "confidence": "low" }],
+  "priority": 600,
+  "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "Bounded sequence policy", "support_type": "direct" }],
+  "tests": ["CASE-LENORMAND-DRAW-002"]
+}

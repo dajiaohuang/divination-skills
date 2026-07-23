@@ -1,0 +1,14 @@
+{
+  "rule_id": "WESTERN-CAL-POSITION-001",
+  "title": "Calculate tropical geocentric body positions",
+  "system": "western-astrology",
+  "lineage": "tropical-geocentric-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.utc_datetime", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "western.calculation", "output_path": "computed_facts.positions", "value": "true_ecliptic_of_date", "confidence": "deterministic" }],
+  "priority": 900,
+  "sources": [{ "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "GeoVector and EQJ-to-ECT rotation APIs", "support_type": "direct" }],
+  "tests": ["CASE-WESTERN-NATAL-001"]
+}

@@ -1,0 +1,56 @@
+name: Project license decision
+description: Record the owner decision required before any external distribution.
+title: "[license] Select project distribution model"
+labels: ["licensing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not use this form to infer approval. The owner and authorized rights reviewer must make the decision explicitly.
+  - type: dropdown
+    id: model
+    attributes:
+      label: Proposed model
+      options:
+        - Proprietary
+        - Open source
+        - Open core
+        - Dual license
+        - Keep undecided
+    validations:
+      required: true
+  - type: textarea
+    id: holders
+    attributes:
+      label: Copyright holders and authority
+      description: Identify every holder whose authorization is required and the evidence of authority.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Licensed scope and exclusions
+      description: Identify code, Skills, rules, datasets, documents, generated packages, and any separately licensed directories.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Dependency and source compatibility
+      description: Explain compatibility with production dependencies, source manifests, notices, and intended deployment.
+    validations:
+      required: true
+  - type: textarea
+    id: inbound
+    attributes:
+      label: Inbound contribution policy
+      description: State whether a DCO, CLA, copyright assignment, or no-external-contribution policy applies.
+    validations:
+      required: true
+  - type: textarea
+    id: documents
+    attributes:
+      label: Required documents and approvers
+      description: Name the license/terms files, owner decision record, rights reviewer, and effective date.
+    validations:
+      required: true

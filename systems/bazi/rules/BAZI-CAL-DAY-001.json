@@ -1,0 +1,39 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.calculation",
+      "output_path": "computed_facts.pillars.day",
+      "value": "midnight_boundary"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.day_boundary",
+      "operator": "eq",
+      "value": "midnight"
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-DAY-BOUNDARY-001"
+  ],
+  "kind": "calculation",
+  "lineage": "ziping-calculation-baseline",
+  "priority": 800,
+  "rule_id": "BAZI-CAL-DAY-001",
+  "sources": [
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001",
+      "support_type": "direct"
+    }
+  ],
+  "status": "tested",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-STANDARD-001",
+    "CASE-BAZI-EDGE-LATEZI-MIDNIGHT-001"
+  ],
+  "title": "Use midnight as the default day-pillar boundary",
+  "version": "0.1.0"
+}

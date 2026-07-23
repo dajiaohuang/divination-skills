@@ -1,0 +1,55 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-BAZI-STANDARD-015",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "pillars": {
+        "day": "癸丑",
+        "hour": "庚申",
+        "month": "庚子",
+        "year": "辛丑"
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-CAL-YEAR-001",
+    "BAZI-CAL-MONTH-001",
+    "BAZI-CAL-DAY-001",
+    "BAZI-CAL-HOUR-001",
+    "BAZI-TIME-CIVIL-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Asia/Shanghai"
+  },
+  "raw_input": {
+    "day_boundary": "midnight",
+    "local_datetime": "2021-12-31T16:45:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Pinned four-pillar comparison 015"
+}

@@ -1,0 +1,36 @@
+{
+  "rule_id": "EXAMPLE-INT-001",
+  "title": "Express a low-confidence interpretation conditionally",
+  "system": "example",
+  "lineage": "alternative",
+  "version": "1.0.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [
+    { "fact_path": "computed_facts.signal", "operator": "eq", "value": "mixed" }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "interpretation.uncertain",
+      "output_path": "derived_findings.signal",
+      "value": "conditional",
+      "confidence": "low",
+      "explanation_template": "The evidence is mixed; present alternatives rather than a fixed prediction."
+    }
+  ],
+  "priority": 200,
+  "sources": [
+    {
+      "source_id": "SRC-EXAMPLE-TEXT-001",
+      "locator": "Fixture section: uncertainty",
+      "support_type": "interpretive"
+    },
+    {
+      "source_id": "SRC-EXAMPLE-INDEPENDENT-001",
+      "locator": "Fixture row 3",
+      "support_type": "corroborating"
+    }
+  ],
+  "disputes": ["DSP-EXAMPLE-WEIGHT-001"],
+  "tests": ["CASE-EXAMPLE-DISPUTE-001"]
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-BAZI-INVALID-AMBIGUOUS-DST-008",
+  "data_classification": "synthetic",
+  "expected_error_code": "ambiguous_local_time",
+  "expected_message_contains": "occurs twice",
+  "input": {
+    "local_datetime": "2024-11-03T01:30:00",
+    "timezone": "America/New_York"
+  },
+  "title": "Ambiguous Dst"
+}

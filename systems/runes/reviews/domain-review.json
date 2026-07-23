@@ -1,0 +1,46 @@
+{
+  "system": "runes",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-RUNES-DISPUTE-REVERSALS-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-RUNES-DRAW-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-RUNES-DRAW-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-RUNES-DRAW-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-RUNES-DRAW-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-RUNES-DRAW-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-RUNES-EDGE-SINGLE-001",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

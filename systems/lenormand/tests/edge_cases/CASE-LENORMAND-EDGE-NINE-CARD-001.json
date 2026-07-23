@@ -1,0 +1,153 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-LENORMAND-EDGE-NINE-CARD-001",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-lenormand-draw",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "spread": "nine-card",
+      "symbols": [
+        {
+          "fact_id": "lenormand.draw.symbol.001",
+          "name": "Cross",
+          "orientation": "upright",
+          "position": "p1",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.36.cross",
+          "symbol_index": 35
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.002",
+          "name": "Snake",
+          "orientation": "upright",
+          "position": "p2",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.07.snake",
+          "symbol_index": 6
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.003",
+          "name": "Garden",
+          "orientation": "upright",
+          "position": "p3",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.20.garden",
+          "symbol_index": 19
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.004",
+          "name": "Coffin",
+          "orientation": "upright",
+          "position": "p4",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.08.coffin",
+          "symbol_index": 7
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.005",
+          "name": "House",
+          "orientation": "upright",
+          "position": "p5",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.04.house",
+          "symbol_index": 3
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.006",
+          "name": "Clouds",
+          "orientation": "upright",
+          "position": "p6",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.06.clouds",
+          "symbol_index": 5
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.007",
+          "name": "Clover",
+          "orientation": "upright",
+          "position": "p7",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.02.clover",
+          "symbol_index": 1
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.008",
+          "name": "Bear",
+          "orientation": "upright",
+          "position": "p8",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.15.bear",
+          "symbol_index": 14
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.009",
+          "name": "Child",
+          "orientation": "upright",
+          "position": "p9",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.13.child",
+          "symbol_index": 12
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "lenormand-36-project-v0.1",
+  "must_match_rules": [
+    "LENORMAND-CARD-UPRIGHT-001",
+    "LENORMAND-POSITION-001",
+    "LENORMAND-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "lenormand-36-project-v0.1",
+    "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spread": "nine-card"
+  },
+  "raw_input": {
+    "seed_hex": "4444444444444444444444444444444444444444444444444444444444444444",
+    "spread": "nine-card"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "lenormand",
+  "title": "Maximum supported nine-card Lenormand spread"
+}

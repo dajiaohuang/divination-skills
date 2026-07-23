@@ -1,0 +1,19 @@
+{
+  "rule_id": "TAROT-ORIENTATION-REVERSED-001",
+  "title": "Use reversed project keywords for a reversed card",
+  "system": "tarot",
+  "lineage": "rws-text-baseline-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "card.orientation", "operator": "eq", "value": "reversed" }],
+  "conclusions": [{
+    "finding_type": "tarot.orientation",
+    "output_path": "derived_findings.card_keywords",
+    "value": "reversed_keywords",
+    "confidence": "low"
+  }],
+  "priority": 700,
+  "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "Per-card reversed keywords", "support_type": "direct" }],
+  "tests": ["CASE-TAROT-DRAW-002"]
+}

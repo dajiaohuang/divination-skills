@@ -1,0 +1,4 @@
+interface:
+  display_name: "八字基础解读"
+  short_description: "依据已验证四柱事实和审核规则进行克制、可追溯且不做宿命论的说明"
+  default_prompt: "Use $bazi-core to explain this validated Bazi chart without inventing facts or fixed predictions."

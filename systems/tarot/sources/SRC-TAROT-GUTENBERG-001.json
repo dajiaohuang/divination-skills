@@ -1,0 +1,45 @@
+{
+  "source_id": "SRC-TAROT-GUTENBERG-001",
+  "title": "The Illustrated Key to the Tarot: The Veil of Divination",
+  "creators": [
+    { "name": "L. W. de Laurence", "role": "author" },
+    { "name": "Pamela Colman Smith", "role": "unknown" }
+  ],
+  "source_type": "book",
+  "language": "en",
+  "publication_date": "1918",
+  "edition_or_version": "Project Gutenberg eBook 43548, update 2024-10-23",
+  "locators": [{ "kind": "url", "value": "https://www.gutenberg.org/ebooks/43548", "stable": true }],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "Public-Domain-US",
+    "url": "https://www.gutenberg.org/ebooks/43548",
+    "text_available": true,
+    "additional_terms": true,
+    "notes": "Project Gutenberg identifies the work as public domain in the USA and requires users elsewhere to check local law."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "unknown",
+    "dataset": "allowed",
+    "notes": "No images or verbatim book text are stored. Global image status requires jurisdiction review before any visual release."
+  },
+  "rights_review": {
+    "status": "reference_only",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Project Gutenberg catalog marks the work public domain in the USA; global art rights were deliberately left out of scope."
+  },
+  "usage_status": "reference_only",
+  "systems": ["tarot"],
+  "lineages": ["rws-historical-reference"],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Historical source used for provenance only; the project does not copy its prose or art."
+  }
+}

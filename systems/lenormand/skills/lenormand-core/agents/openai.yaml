@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lenormand Core"
+  short_description: "Draw and explain auditable Lenormand text cards structurally"
+  default_prompt: "Use $lenormand-core for an auditable Lenormand draw and bounded explanation."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Numerology Core"
+  short_description: "Calculate traceable Pythagorean name and birth-date numbers"
+  default_prompt: "Use $numerology-core to calculate a traceable project numerology profile."

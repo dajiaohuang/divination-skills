@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runes Core"
+  short_description: "Draw and explain auditable Elder Futhark rune symbols"
+  default_prompt: "Use $runes-core for an auditable Elder Futhark draw and bounded explanation."

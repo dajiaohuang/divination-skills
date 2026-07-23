@@ -1,0 +1,136 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-NUMEROLOGY-PROFILE-008",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "birthday": {
+        "fact_id": "numerology.birthday",
+        "master_number": true,
+        "raw_total": 29,
+        "reduction_steps": [
+          29,
+          11
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "heightened inspiration",
+        "value": 11
+      },
+      "expression": {
+        "fact_id": "numerology.expression",
+        "master_number": false,
+        "raw_total": 46,
+        "reduction_steps": [
+          46,
+          10,
+          1
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "initiative",
+        "value": 1
+      },
+      "life_path": {
+        "fact_id": "numerology.life_path",
+        "master_number": false,
+        "raw_total": 21,
+        "reduction_steps": [
+          21,
+          3
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "expression",
+        "value": 3
+      },
+      "maturity": {
+        "fact_id": "numerology.maturity",
+        "master_number": false,
+        "raw_total": 4,
+        "reduction_steps": [
+          4
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "structure",
+        "value": 4
+      },
+      "personality": {
+        "fact_id": "numerology.personality",
+        "master_number": true,
+        "raw_total": 29,
+        "reduction_steps": [
+          29,
+          11
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "heightened inspiration",
+        "value": 11
+      },
+      "soul_urge": {
+        "fact_id": "numerology.soul_urge",
+        "master_number": false,
+        "raw_total": 17,
+        "reduction_steps": [
+          17,
+          8
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "stewardship of power and resources",
+        "value": 8
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "The number proves a personality trait.",
+    "A future event is guaranteed."
+  ],
+  "lineage": "pythagorean-project-v0.1",
+  "must_match_rules": [
+    "NUMEROLOGY-CAL-DATE-001",
+    "NUMEROLOGY-CAL-NAME-001",
+    "NUMEROLOGY-INTERPRET-THEME-001"
+  ],
+  "normalized_input": {
+    "birth_date": "2024-02-29",
+    "mapping": "pythagorean-a1-i9-repeat",
+    "masters": [
+      11,
+      22,
+      33
+    ],
+    "name_letters": "EXAMPLENAME"
+  },
+  "raw_input": {
+    "birth_date": "2024-02-29",
+    "name": "Example Name"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression case; symbolic validity is not asserted.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-profile-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 mapping contract",
+      "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "numerology",
+  "title": "Pythagorean project profile 008"
+}

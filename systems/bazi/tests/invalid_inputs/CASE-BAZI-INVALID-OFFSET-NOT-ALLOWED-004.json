@@ -1,0 +1,11 @@
+{
+  "case_id": "CASE-BAZI-INVALID-OFFSET-NOT-ALLOWED-004",
+  "data_classification": "synthetic",
+  "expected_error_code": "offset_not_allowed",
+  "expected_message_contains": "UTC offset",
+  "input": {
+    "local_datetime": "2024-01-01T00:00:00+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "title": "Offset Not Allowed"
+}

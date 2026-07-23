@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/golden-case.schema.json",
+  "title": "Divination golden case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "title",
+    "system",
+    "lineage",
+    "category",
+    "data_classification",
+    "raw_input",
+    "normalized_input",
+    "expected_intermediate",
+    "expected_output",
+    "must_match_rules",
+    "allowed_disagreements",
+    "forbidden_conclusions",
+    "sources",
+    "reviewers"
+  ],
+  "properties": {
+    "case_id": { "type": "string", "pattern": "^CASE-[A-Z0-9]+(?:-[A-Z0-9]+)+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "system": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "lineage": { "type": "string", "minLength": 1 },
+    "category": { "type": "string", "enum": ["standard", "edge_case", "dispute", "negative", "regression"] },
+    "data_classification": { "type": "string", "enum": ["synthetic", "public", "consented_private"] },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pseudonymized"],
+      "properties": {
+        "pseudonymized": { "type": "boolean" },
+        "consent_record": { "type": "string", "minLength": 1 },
+        "reliability_grade": { "type": "string", "enum": ["A", "B", "C", "D", "unknown"] }
+      }
+    },
+    "raw_input": { "type": "object" },
+    "normalized_input": { "type": "object" },
+    "expected_intermediate": { "type": "object" },
+    "expected_output": { "type": "object" },
+    "must_match_rules": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[A-Z][A-Z0-9]+(?:-[A-Z0-9]+){2,}$" }
+    },
+    "allowed_disagreements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["dispute_id", "field_path", "allowed_values"],
+        "properties": {
+          "dispute_id": { "type": "string", "pattern": "^DSP-[A-Z0-9]+(?:-[A-Z0-9]+)+$" },
+          "field_path": { "type": "string", "minLength": 1 },
+          "allowed_values": { "type": "array", "minItems": 2, "items": {} }
+        }
+      }
+    },
+    "forbidden_conclusions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "locator"],
+        "properties": {
+          "source_id": { "type": "string", "pattern": "^SRC-[A-Z0-9]+(?:-[A-Z0-9]+)+$" },
+          "locator": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "reviewers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reviewer_id", "role", "reviewed_at", "decision"],
+        "properties": {
+          "reviewer_id": { "type": "string", "minLength": 1 },
+          "role": { "type": "string", "enum": ["domain", "calculation", "rights", "quality"] },
+          "reviewed_at": { "type": "string", "format": "date" },
+          "decision": { "type": "string", "enum": ["accepted", "changes_requested", "rejected"] },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

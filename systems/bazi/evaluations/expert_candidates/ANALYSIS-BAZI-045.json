@@ -1,0 +1,104 @@
+{
+  "analysis_id": "ANALYSIS-BAZI-045",
+  "case_id": "CASE-BAZI-STANDARD-045",
+  "computed_facts_sha256": "bcbcc48419229c73759a714a4553e0098fb61d9149716a8bd16ce91348c568c3",
+  "data_classification": "synthetic",
+  "reasoning_chain": [
+    {
+      "claim_id": "CLAIM-001",
+      "fact_ids": [
+        "bazi.pillar.hour"
+      ],
+      "rule_ids": [
+        "BAZI-TIME-CIVIL-001"
+      ],
+      "section": "calculation_basis",
+      "statement": "Calculation uses the supplied IANA civil time; true solar time is not applied."
+    },
+    {
+      "claim_id": "CLAIM-002",
+      "fact_ids": [
+        "bazi.pillar.year"
+      ],
+      "rule_ids": [
+        "BAZI-CAL-YEAR-001"
+      ],
+      "section": "verified_facts",
+      "statement": "year pillar is 甲戌 under the selected policy."
+    },
+    {
+      "claim_id": "CLAIM-003",
+      "fact_ids": [
+        "bazi.pillar.month"
+      ],
+      "rule_ids": [
+        "BAZI-CAL-MONTH-001"
+      ],
+      "section": "verified_facts",
+      "statement": "month pillar is 丁丑 under the selected policy."
+    },
+    {
+      "claim_id": "CLAIM-004",
+      "fact_ids": [
+        "bazi.pillar.day"
+      ],
+      "rule_ids": [
+        "BAZI-CAL-DAY-001"
+      ],
+      "section": "verified_facts",
+      "statement": "day pillar is 丙寅 under the selected policy."
+    },
+    {
+      "claim_id": "CLAIM-005",
+      "fact_ids": [
+        "bazi.pillar.hour"
+      ],
+      "rule_ids": [
+        "BAZI-CAL-HOUR-001"
+      ],
+      "section": "verified_facts",
+      "statement": "hour pillar is 辛卯 under the selected policy."
+    },
+    {
+      "claim_id": "CLAIM-006",
+      "fact_ids": [
+        "bazi.day_master"
+      ],
+      "rule_ids": [
+        "BAZI-FACT-DAYMASTER-001"
+      ],
+      "section": "verified_facts",
+      "statement": "Day master is 丙 (yang fire)."
+    },
+    {
+      "claim_id": "CLAIM-007",
+      "fact_ids": [
+        "bazi.ten_gods"
+      ],
+      "rule_ids": [
+        "BAZI-FACT-TENGOD-001"
+      ],
+      "section": "symbolic_relationships",
+      "statement": "Ten Gods are relational labels calculated from the day stem; no event claim is added."
+    },
+    {
+      "claim_id": "CLAIM-008",
+      "fact_ids": [
+        "bazi.branch_relation.001"
+      ],
+      "rule_ids": [
+        "BAZI-FACT-BRANCH-REL-001"
+      ],
+      "section": "symbolic_relationships",
+      "statement": "Recorded branch relation combine connects year, hour."
+    }
+  ],
+  "review": {
+    "decision": null,
+    "notes": "Machine-generated traceability candidate only. An independent named domain expert must verify or revise every claim before release.",
+    "reviewed_at": null,
+    "reviewer_id": null,
+    "status": "pending_expert"
+  },
+  "strength_lineage": null
+}

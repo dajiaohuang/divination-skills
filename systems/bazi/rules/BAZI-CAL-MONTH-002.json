@@ -1,0 +1,38 @@
+{
+  "conclusions": [
+    {
+      "confidence": "deterministic",
+      "finding_type": "bazi.calculation",
+      "output_path": "computed_facts.pillars.month",
+      "value": "whole_day_boundary"
+    }
+  ],
+  "conditions": [
+    {
+      "fact_path": "normalized_input.month_boundary_policy",
+      "operator": "eq",
+      "value": "whole_day"
+    }
+  ],
+  "disputes": [
+    "DSP-BAZI-MONTH-BOUNDARY-001"
+  ],
+  "kind": "calculation",
+  "lineage": "whole-day-boundary",
+  "priority": 100,
+  "rule_id": "BAZI-CAL-MONTH-002",
+  "sources": [
+    {
+      "locator": "24 solar terms longitude table and 2024 calendar",
+      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001",
+      "support_type": "corroborating"
+    }
+  ],
+  "status": "proposed",
+  "system": "bazi",
+  "tests": [
+    "CASE-BAZI-DISPUTE-MONTH-BOUNDARY-001"
+  ],
+  "title": "Change the month pillar at the beginning of the term's civil date",
+  "version": "0.1.0"
+}

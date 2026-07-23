@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-BAZI-INVALID-LATITUDE-LOW-019",
+  "data_classification": "synthetic",
+  "expected_error_code": "invalid_latitude",
+  "expected_message_contains": "-90 and 90",
+  "input": {
+    "latitude": -91,
+    "local_datetime": "2024-01-01T00:00:00",
+    "timezone": "UTC"
+  },
+  "title": "Latitude Low"
+}

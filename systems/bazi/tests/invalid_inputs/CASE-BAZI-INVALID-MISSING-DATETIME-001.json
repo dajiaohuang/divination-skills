@@ -1,0 +1,8 @@
+{
+  "case_id": "CASE-BAZI-INVALID-MISSING-DATETIME-001",
+  "data_classification": "synthetic",
+  "expected_error_code": "missing_local_datetime",
+  "expected_message_contains": "local_datetime",
+  "input": {},
+  "title": "Missing Datetime"
+}

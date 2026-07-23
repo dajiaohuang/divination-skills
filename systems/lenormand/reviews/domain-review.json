@@ -1,0 +1,46 @@
+{
+  "system": "lenormand",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-LENORMAND-DISPUTE-REVERSALS-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LENORMAND-DRAW-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LENORMAND-DRAW-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LENORMAND-DRAW-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LENORMAND-DRAW-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LENORMAND-DRAW-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-LENORMAND-EDGE-NINE-CARD-001",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

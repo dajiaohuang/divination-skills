@@ -1,0 +1,37 @@
+{
+  "rule_id": "EXAMPLE-CAL-001",
+  "title": "Normalize a boundary value to the later interval",
+  "system": "example",
+  "lineage": "baseline",
+  "version": "1.0.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    { "fact_path": "normalized_input.boundary_policy", "operator": "eq", "value": "later_interval" }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "calculation.interval",
+      "output_path": "computed_facts.interval",
+      "value": "later",
+      "confidence": "deterministic"
+    }
+  ],
+  "exceptions": [
+    {
+      "when": [{ "fact_path": "normalized_input.boundary_known", "operator": "eq", "value": false }],
+      "effect": "require_review",
+      "rationale": "An unknown boundary cannot be assigned deterministically."
+    }
+  ],
+  "priority": 900,
+  "sources": [
+    {
+      "source_id": "SRC-EXAMPLE-STANDARD-001",
+      "locator": "Fixture clause 1",
+      "support_type": "direct"
+    }
+  ],
+  "disputes": ["DSP-EXAMPLE-BOUNDARY-001", "DSP-EXAMPLE-TIME-001"],
+  "tests": ["CASE-EXAMPLE-STANDARD-001", "CASE-EXAMPLE-EDGE-001"]
+}

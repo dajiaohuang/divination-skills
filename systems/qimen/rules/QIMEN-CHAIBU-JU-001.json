@@ -1,0 +1,14 @@
+{
+  "rule_id": "QIMEN-CHAIBU-JU-001",
+  "title": "Select Chaibu yin/yang dun, yuan, and ju",
+  "system": "qimen",
+  "lineage": "shijia-zhuanpan-chaibu-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "solar_term.name", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "qimen.ju", "output_path": "computed_facts.ju", "value": "chaibu_three_yuan_table", "confidence": "medium" }],
+  "priority": 1000,
+  "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "JU_TABLE and yuan_from_day_index", "support_type": "direct" }],
+  "tests": ["CASE-QIMEN-FOUNDATION-001", "CASE-QIMEN-FOUNDATION-002"]
+}

@@ -1,0 +1,14 @@
+{
+  "rule_id": "LENORMAND-POSITION-001",
+  "title": "Constrain Lenormand cards by explicit spread position",
+  "system": "lenormand",
+  "lineage": "lenormand-36-project-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "card.position", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "lenormand.position", "output_path": "derived_findings.position", "value": "position_constrained", "confidence": "low" }],
+  "priority": 800,
+  "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "Spread position contract", "support_type": "direct" }],
+  "tests": ["CASE-LENORMAND-DRAW-001"]
+}

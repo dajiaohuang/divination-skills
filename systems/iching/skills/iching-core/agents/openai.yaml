@@ -1,0 +1,4 @@
+interface:
+  display_name: "I Ching Core"
+  short_description: "Cast and explain auditable three-coin I Ching hexagrams"
+  default_prompt: "Use $iching-core to cast or explain an auditable I Ching hexagram."

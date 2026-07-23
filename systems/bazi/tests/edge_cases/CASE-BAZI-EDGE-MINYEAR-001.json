@@ -1,0 +1,51 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-BAZI-EDGE-MINYEAR-001",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "pillars": {
+        "day": "戊申",
+        "hour": "己未",
+        "month": "丁丑",
+        "year": "己亥"
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-CAL-YEAR-001",
+    "BAZI-CAL-DAY-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Asia/Shanghai"
+  },
+  "raw_input": {
+    "local_datetime": "1900-02-04T13:30:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Supported date-window boundary"
+}

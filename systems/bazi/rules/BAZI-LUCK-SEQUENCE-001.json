@@ -1,0 +1,23 @@
+{
+  "rule_id": "BAZI-LUCK-SEQUENCE-001",
+  "title": "Describe computed luck cycles as sequence data only",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "computed_facts.luck_cycles.cycles", "operator": "exists" }],
+  "conclusions": [{
+    "finding_type": "bazi.timing-sequence",
+    "output_path": "derived_findings.luck_cycles",
+    "value": "method_specific_sequence_not_prediction",
+    "confidence": "deterministic"
+  }],
+  "priority": 650,
+  "sources": [{
+    "source_id": "SRC-BAZI-LUNARPY-001",
+    "locator": "Pinned Yun/DaYun API and project calculation contract",
+    "support_type": "corroborating"
+  }],
+  "tests": ["CASE-BAZI-DISPUTE-LUCK-START-001"]
+}

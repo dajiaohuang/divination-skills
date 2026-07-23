@@ -1,0 +1,343 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-LIUYAO-CAST-005",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "day_pillar": "庚子",
+    "palace": {
+      "element": "earth",
+      "id": "kun",
+      "shi_position": 2,
+      "source_ids": [
+        "SRC-LIUYAO-PROJECT-SPEC-001"
+      ],
+      "stage": "second-change",
+      "stage_index": 2,
+      "ying_position": 5
+    }
+  },
+  "expected_output": {
+    "audit": {
+      "cast_id": "21e046a66fe2060cc0eeec5f458245eef48573857316f69182639f9aa4bc1847"
+    },
+    "computed_facts": {
+      "calendar_context": {
+        "day_pillar": {
+          "branch": {
+            "hidden_stems": [
+              "癸"
+            ],
+            "index": 0,
+            "name": "子"
+          },
+          "fact_id": "bazi.pillar.day",
+          "ganzhi": "庚子",
+          "index": 36,
+          "source_ids": [
+            "SRC-BAZI-LUNARPY-001"
+          ],
+          "stem": {
+            "element": "metal",
+            "index": 6,
+            "name": "庚",
+            "polarity": "yang"
+          }
+        },
+        "month_commander": {
+          "hidden_stems": [
+            "壬",
+            "甲"
+          ],
+          "index": 11,
+          "name": "亥"
+        },
+        "void_branches": [
+          "辰",
+          "巳"
+        ]
+      },
+      "changed_hexagram": {
+        "english": "Breakthrough",
+        "hanzi": "夬",
+        "lines_bottom_to_top": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "lower_trigram": {
+          "hanzi": "乾",
+          "id": "qian",
+          "image": "heaven"
+        },
+        "number": 43,
+        "pinyin": "Guai",
+        "project_themes": [
+          "current structure: breakthrough",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "兑",
+          "id": "dui",
+          "image": "lake"
+        }
+      },
+      "lines": [
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.001",
+          "is_void": true,
+          "moving": false,
+          "najia": {
+            "branch": "巳",
+            "element": "fire",
+            "ganzhi": "丁巳",
+            "stem": "丁"
+          },
+          "polarity": "yang",
+          "position_from_bottom": 1,
+          "role": null,
+          "six_relative": "父母",
+          "six_spirit": "白虎",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.002",
+          "is_void": false,
+          "moving": false,
+          "najia": {
+            "branch": "卯",
+            "element": "wood",
+            "ganzhi": "丁卯",
+            "stem": "丁"
+          },
+          "polarity": "yang",
+          "position_from_bottom": 2,
+          "role": "shi",
+          "six_relative": "官鬼",
+          "six_spirit": "玄武",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            2,
+            2
+          ],
+          "fact_id": "iching.cast.line.003",
+          "is_void": false,
+          "moving": true,
+          "najia": {
+            "branch": "丑",
+            "element": "earth",
+            "ganzhi": "丁丑",
+            "stem": "丁"
+          },
+          "polarity": "yin",
+          "position_from_bottom": 3,
+          "role": null,
+          "six_relative": "兄弟",
+          "six_spirit": "青龙",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 6
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            2,
+            2
+          ],
+          "fact_id": "iching.cast.line.004",
+          "is_void": false,
+          "moving": true,
+          "najia": {
+            "branch": "丑",
+            "element": "earth",
+            "ganzhi": "癸丑",
+            "stem": "癸"
+          },
+          "polarity": "yin",
+          "position_from_bottom": 4,
+          "role": null,
+          "six_relative": "兄弟",
+          "six_spirit": "朱雀",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 6
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            2,
+            2
+          ],
+          "fact_id": "iching.cast.line.005",
+          "is_void": false,
+          "moving": true,
+          "najia": {
+            "branch": "亥",
+            "element": "water",
+            "ganzhi": "癸亥",
+            "stem": "癸"
+          },
+          "polarity": "yin",
+          "position_from_bottom": 5,
+          "role": "ying",
+          "six_relative": "妻财",
+          "six_spirit": "勾陈",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 6
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.006",
+          "is_void": false,
+          "moving": false,
+          "najia": {
+            "branch": "酉",
+            "element": "metal",
+            "ganzhi": "癸酉",
+            "stem": "癸"
+          },
+          "polarity": "yin",
+          "position_from_bottom": 6,
+          "role": null,
+          "six_relative": "子孙",
+          "six_spirit": "螣蛇",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        }
+      ],
+      "moving_line_positions": [
+        3,
+        4,
+        5
+      ],
+      "palace": {
+        "element": "earth",
+        "id": "kun",
+        "shi_position": 2,
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001"
+        ],
+        "stage": "second-change",
+        "stage_index": 2,
+        "ying_position": 5
+      },
+      "primary_hexagram": {
+        "english": "Approach",
+        "hanzi": "临",
+        "lines_bottom_to_top": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lower_trigram": {
+          "hanzi": "兑",
+          "id": "dui",
+          "image": "lake"
+        },
+        "number": 19,
+        "pinyin": "Lin",
+        "project_themes": [
+          "current structure: approach",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "坤",
+          "id": "kun",
+          "image": "earth"
+        }
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "An event outcome is certain.",
+    "A response date was inferred without a reviewed timing method."
+  ],
+  "lineage": "wen-wang-najia-structural-v0.1",
+  "must_match_rules": [
+    "LIUYAO-NAJIA-001",
+    "LIUYAO-PALACE-SHIYING-001",
+    "LIUYAO-CALENDAR-CONTEXT-001",
+    "LIUYAO-STRUCTURAL-BOUNDARY-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "lineage": "wen-wang-najia-structural-v0.1",
+    "local_datetime": "2026-11-22T19:20:00+08:00",
+    "question_sha256": "9b24b65608678a00b510b3f92941c72d1702927296fbc900b004c56a0fda809a",
+    "timezone": "Asia/Shanghai",
+    "utc_datetime": "2026-11-22T11:20:00Z"
+  },
+  "raw_input": {
+    "day_boundary": "midnight",
+    "local_datetime": "2026-11-22T19:20:00",
+    "question": "Synthetic Liuyao structural case 5",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000131",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; practitioner acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-structure-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "Wen Wang Najia structural tables",
+      "source_id": "SRC-LIUYAO-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "liuyao",
+  "title": "Auditable Wen Wang structural cast 005"
+}

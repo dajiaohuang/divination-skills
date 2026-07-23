@@ -1,0 +1,71 @@
+{
+  "system": "numerology",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-NUMEROLOGY-DISPUTE-MAPPING-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-EDGE-DIACRITIC-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-006",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-007",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-008",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-009",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-NUMEROLOGY-PROFILE-010",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

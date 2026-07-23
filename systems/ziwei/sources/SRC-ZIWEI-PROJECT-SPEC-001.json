@@ -1,0 +1,37 @@
+{
+  "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+  "title": "Project-native Zi Wei Dou Shu structural foundation v0.1",
+  "creators": [{ "name": "divination-skills contributors", "role": "author" }],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "0.1.0",
+  "locators": [
+    { "kind": "local", "value": "systems/ziwei/LINEAGE.md", "stable": true },
+    { "kind": "local", "value": "systems/ziwei/DATA_CONTRACT.md", "stable": true }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": true, "path": "systems/ziwei" },
+  "license": { "identifier": "Apache-2.0", "text_available": true, "additional_terms": false },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "project-owner-license-decision",
+    "reviewed_at": "2026-07-23",
+    "evidence": "The project owner selected Apache-2.0 for project-authored material."
+  },
+  "usage_status": "production",
+  "systems": ["ziwei"],
+  "lineages": ["project-native-ziwei-foundation-v0.1"],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Deterministic project-authored calculation contract; practitioner acceptance remains pending."
+  }
+}

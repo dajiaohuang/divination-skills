@@ -1,0 +1,36 @@
+{
+  "feedback_id": "FEEDBACK-BAZI-SYNTHETIC-001",
+  "data_classification": "anonymized_case",
+  "consent": {
+    "recorded": true,
+    "purpose": "Schema validation only; this example contains no real person data.",
+    "recorded_at": "2026-07-23T00:00:00Z",
+    "withdrawal_supported": true
+  },
+  "anonymization": {
+    "direct_identifiers_removed": true,
+    "free_text_reviewed": true,
+    "risk": "low"
+  },
+  "analysis": {
+    "analysis_id": "ANALYSIS-BAZI-001",
+    "recorded_at": "2026-07-23T00:00:00Z",
+    "timing": "pre_outcome",
+    "claims_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "outcome": {
+    "recorded_at": "2026-07-24T00:00:00Z",
+    "status": "unknown",
+    "claim_results": [{
+      "claim_id": "CLAIM-001",
+      "result": "not_testable",
+      "evidence_quality": "none",
+      "notes": "Synthetic placeholder; no real outcome is asserted."
+    }]
+  },
+  "review": {
+    "hindsight_checked": true,
+    "selection_bias_checked": true,
+    "reviewer_id": "synthetic-schema-review"
+  }
+}

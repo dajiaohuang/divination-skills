@@ -1,0 +1,65 @@
+name: Deployment data policy decision
+description: Record the owner decision required before a deployment can be released.
+title: "[privacy] Configure deployment data policy"
+labels: ["privacy"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a deployment-specific owner decision, not an automated approval. Do not include real birth data, credentials, private contacts, or incident details in the issue.
+  - type: input
+    id: deployment
+    attributes:
+      label: Deployment identifier
+      description: Name the environment whose actual behavior is being approved.
+    validations:
+      required: true
+  - type: checkboxes
+    id: stored_fields
+    attributes:
+      label: Stored data classes
+      options:
+        - label: Accounts
+        - label: Birth data, including date, time, or location
+        - label: User questions
+        - label: Readings or reports
+        - label: None of the above
+  - type: textarea
+    id: purposes
+    attributes:
+      label: Purposes and data flows
+      description: Map each collected field to its purpose and every processor or model provider that receives it.
+    validations:
+      required: true
+  - type: textarea
+    id: retention
+    attributes:
+      label: Retention
+      description: State exact day limits for primary storage, backups, logs, and each provider.
+    validations:
+      required: true
+  - type: textarea
+    id: providers
+    attributes:
+      label: Provider training and deletion terms
+      description: State fields sent, training-use setting, retention, deletion behavior, and reviewed evidence for each provider.
+    validations:
+      required: true
+  - type: checkboxes
+    id: controls
+    attributes:
+      label: Verified controls
+      options:
+        - label: Encryption at rest
+        - label: Encryption in transit
+        - label: Role-based access
+        - label: Log redaction
+        - label: User export
+        - label: User deletion with a documented SLA
+  - type: textarea
+    id: governance
+    attributes:
+      label: Minors, incidents, approver, and evidence
+      description: Record the minors policy, incident-contact role, authorized decision maker, effective date, and non-sensitive evidence locators.
+    validations:
+      required: true

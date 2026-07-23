@@ -1,0 +1,706 @@
+[
+  {
+    "number": 1,
+    "hanzi": "乾",
+    "pinyin": "Qian",
+    "english": "Creative",
+    "project_themes": [
+      "current structure: creative",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 2,
+    "hanzi": "坤",
+    "pinyin": "Kun",
+    "english": "Receptive",
+    "project_themes": [
+      "current structure: receptive",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 3,
+    "hanzi": "屯",
+    "pinyin": "Zhun",
+    "english": "Difficulty at the Beginning",
+    "project_themes": [
+      "current structure: difficulty at the beginning",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 4,
+    "hanzi": "蒙",
+    "pinyin": "Meng",
+    "english": "Youthful Folly",
+    "project_themes": [
+      "current structure: youthful folly",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 5,
+    "hanzi": "需",
+    "pinyin": "Xu",
+    "english": "Waiting",
+    "project_themes": [
+      "current structure: waiting",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 6,
+    "hanzi": "讼",
+    "pinyin": "Song",
+    "english": "Conflict",
+    "project_themes": [
+      "current structure: conflict",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 7,
+    "hanzi": "师",
+    "pinyin": "Shi",
+    "english": "Army",
+    "project_themes": [
+      "current structure: army",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 8,
+    "hanzi": "比",
+    "pinyin": "Bi",
+    "english": "Holding Together",
+    "project_themes": [
+      "current structure: holding together",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 9,
+    "hanzi": "小畜",
+    "pinyin": "Xiao Chu",
+    "english": "Small Taming",
+    "project_themes": [
+      "current structure: small taming",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 10,
+    "hanzi": "履",
+    "pinyin": "Lu",
+    "english": "Treading",
+    "project_themes": [
+      "current structure: treading",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 11,
+    "hanzi": "泰",
+    "pinyin": "Tai",
+    "english": "Peace",
+    "project_themes": [
+      "current structure: peace",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 12,
+    "hanzi": "否",
+    "pinyin": "Pi",
+    "english": "Standstill",
+    "project_themes": [
+      "current structure: standstill",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 13,
+    "hanzi": "同人",
+    "pinyin": "Tong Ren",
+    "english": "Fellowship",
+    "project_themes": [
+      "current structure: fellowship",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 14,
+    "hanzi": "大有",
+    "pinyin": "Da You",
+    "english": "Great Possession",
+    "project_themes": [
+      "current structure: great possession",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 15,
+    "hanzi": "谦",
+    "pinyin": "Qian",
+    "english": "Modesty",
+    "project_themes": [
+      "current structure: modesty",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 16,
+    "hanzi": "豫",
+    "pinyin": "Yu",
+    "english": "Enthusiasm",
+    "project_themes": [
+      "current structure: enthusiasm",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 17,
+    "hanzi": "随",
+    "pinyin": "Sui",
+    "english": "Following",
+    "project_themes": [
+      "current structure: following",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 18,
+    "hanzi": "蛊",
+    "pinyin": "Gu",
+    "english": "Repairing What Was Spoiled",
+    "project_themes": [
+      "current structure: repairing what was spoiled",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 19,
+    "hanzi": "临",
+    "pinyin": "Lin",
+    "english": "Approach",
+    "project_themes": [
+      "current structure: approach",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 20,
+    "hanzi": "观",
+    "pinyin": "Guan",
+    "english": "Contemplation",
+    "project_themes": [
+      "current structure: contemplation",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 21,
+    "hanzi": "噬嗑",
+    "pinyin": "Shi He",
+    "english": "Biting Through",
+    "project_themes": [
+      "current structure: biting through",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 22,
+    "hanzi": "贲",
+    "pinyin": "Bi",
+    "english": "Grace",
+    "project_themes": [
+      "current structure: grace",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 23,
+    "hanzi": "剥",
+    "pinyin": "Bo",
+    "english": "Splitting Apart",
+    "project_themes": [
+      "current structure: splitting apart",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 24,
+    "hanzi": "复",
+    "pinyin": "Fu",
+    "english": "Return",
+    "project_themes": [
+      "current structure: return",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 25,
+    "hanzi": "无妄",
+    "pinyin": "Wu Wang",
+    "english": "Innocence",
+    "project_themes": [
+      "current structure: innocence",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 26,
+    "hanzi": "大畜",
+    "pinyin": "Da Chu",
+    "english": "Great Taming",
+    "project_themes": [
+      "current structure: great taming",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 27,
+    "hanzi": "颐",
+    "pinyin": "Yi",
+    "english": "Nourishment",
+    "project_themes": [
+      "current structure: nourishment",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 28,
+    "hanzi": "大过",
+    "pinyin": "Da Guo",
+    "english": "Great Exceeding",
+    "project_themes": [
+      "current structure: great exceeding",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 29,
+    "hanzi": "坎",
+    "pinyin": "Kan",
+    "english": "Abysmal Water",
+    "project_themes": [
+      "current structure: abysmal water",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 30,
+    "hanzi": "离",
+    "pinyin": "Li",
+    "english": "Clinging Fire",
+    "project_themes": [
+      "current structure: clinging fire",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 31,
+    "hanzi": "咸",
+    "pinyin": "Xian",
+    "english": "Influence",
+    "project_themes": [
+      "current structure: influence",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 32,
+    "hanzi": "恒",
+    "pinyin": "Heng",
+    "english": "Duration",
+    "project_themes": [
+      "current structure: duration",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 33,
+    "hanzi": "遁",
+    "pinyin": "Dun",
+    "english": "Retreat",
+    "project_themes": [
+      "current structure: retreat",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 34,
+    "hanzi": "大壮",
+    "pinyin": "Da Zhuang",
+    "english": "Great Power",
+    "project_themes": [
+      "current structure: great power",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 35,
+    "hanzi": "晋",
+    "pinyin": "Jin",
+    "english": "Progress",
+    "project_themes": [
+      "current structure: progress",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 36,
+    "hanzi": "明夷",
+    "pinyin": "Ming Yi",
+    "english": "Darkening of Light",
+    "project_themes": [
+      "current structure: darkening of light",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 37,
+    "hanzi": "家人",
+    "pinyin": "Jia Ren",
+    "english": "Family",
+    "project_themes": [
+      "current structure: family",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 38,
+    "hanzi": "睽",
+    "pinyin": "Kui",
+    "english": "Opposition",
+    "project_themes": [
+      "current structure: opposition",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 39,
+    "hanzi": "蹇",
+    "pinyin": "Jian",
+    "english": "Obstruction",
+    "project_themes": [
+      "current structure: obstruction",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 40,
+    "hanzi": "解",
+    "pinyin": "Xie",
+    "english": "Deliverance",
+    "project_themes": [
+      "current structure: deliverance",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 41,
+    "hanzi": "损",
+    "pinyin": "Sun",
+    "english": "Decrease",
+    "project_themes": [
+      "current structure: decrease",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 42,
+    "hanzi": "益",
+    "pinyin": "Yi",
+    "english": "Increase",
+    "project_themes": [
+      "current structure: increase",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 43,
+    "hanzi": "夬",
+    "pinyin": "Guai",
+    "english": "Breakthrough",
+    "project_themes": [
+      "current structure: breakthrough",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 44,
+    "hanzi": "姤",
+    "pinyin": "Gou",
+    "english": "Coming to Meet",
+    "project_themes": [
+      "current structure: coming to meet",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 45,
+    "hanzi": "萃",
+    "pinyin": "Cui",
+    "english": "Gathering Together",
+    "project_themes": [
+      "current structure: gathering together",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 46,
+    "hanzi": "升",
+    "pinyin": "Sheng",
+    "english": "Pushing Upward",
+    "project_themes": [
+      "current structure: pushing upward",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 47,
+    "hanzi": "困",
+    "pinyin": "Kun",
+    "english": "Oppression",
+    "project_themes": [
+      "current structure: oppression",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 48,
+    "hanzi": "井",
+    "pinyin": "Jing",
+    "english": "Well",
+    "project_themes": [
+      "current structure: well",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 49,
+    "hanzi": "革",
+    "pinyin": "Ge",
+    "english": "Revolution",
+    "project_themes": [
+      "current structure: revolution",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 50,
+    "hanzi": "鼎",
+    "pinyin": "Ding",
+    "english": "Cauldron",
+    "project_themes": [
+      "current structure: cauldron",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 51,
+    "hanzi": "震",
+    "pinyin": "Zhen",
+    "english": "Arousing Thunder",
+    "project_themes": [
+      "current structure: arousing thunder",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 52,
+    "hanzi": "艮",
+    "pinyin": "Gen",
+    "english": "Keeping Still",
+    "project_themes": [
+      "current structure: keeping still",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 53,
+    "hanzi": "渐",
+    "pinyin": "Jian",
+    "english": "Development",
+    "project_themes": [
+      "current structure: development",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 54,
+    "hanzi": "归妹",
+    "pinyin": "Gui Mei",
+    "english": "Marrying Maiden",
+    "project_themes": [
+      "current structure: marrying maiden",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 55,
+    "hanzi": "丰",
+    "pinyin": "Feng",
+    "english": "Abundance",
+    "project_themes": [
+      "current structure: abundance",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 56,
+    "hanzi": "旅",
+    "pinyin": "Lu",
+    "english": "Wanderer",
+    "project_themes": [
+      "current structure: wanderer",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 57,
+    "hanzi": "巽",
+    "pinyin": "Xun",
+    "english": "Gentle Wind",
+    "project_themes": [
+      "current structure: gentle wind",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 58,
+    "hanzi": "兑",
+    "pinyin": "Dui",
+    "english": "Joyous Lake",
+    "project_themes": [
+      "current structure: joyous lake",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 59,
+    "hanzi": "涣",
+    "pinyin": "Huan",
+    "english": "Dispersion",
+    "project_themes": [
+      "current structure: dispersion",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 60,
+    "hanzi": "节",
+    "pinyin": "Jie",
+    "english": "Limitation",
+    "project_themes": [
+      "current structure: limitation",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 61,
+    "hanzi": "中孚",
+    "pinyin": "Zhong Fu",
+    "english": "Inner Truth",
+    "project_themes": [
+      "current structure: inner truth",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 62,
+    "hanzi": "小过",
+    "pinyin": "Xiao Guo",
+    "english": "Small Exceeding",
+    "project_themes": [
+      "current structure: small exceeding",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 63,
+    "hanzi": "既济",
+    "pinyin": "Ji Ji",
+    "english": "After Completion",
+    "project_themes": [
+      "current structure: after completion",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  },
+  {
+    "number": 64,
+    "hanzi": "未济",
+    "pinyin": "Wei Ji",
+    "english": "Before Completion",
+    "project_themes": [
+      "current structure: before completion",
+      "what can be observed before assuming an outcome",
+      "a small reversible response to the present conditions"
+    ]
+  }
+]

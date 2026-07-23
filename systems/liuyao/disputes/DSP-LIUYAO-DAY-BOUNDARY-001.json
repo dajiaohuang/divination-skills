@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-LIUYAO-DAY-BOUNDARY-001",
+  "title": "Change the Liuyao calendar day at midnight or late Zi",
+  "system": "liuyao",
+  "topic": "day boundary",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "wen-wang-najia-structural-v0.1",
+      "summary": "Use the civil date through 23:59 by default.",
+      "rule_ids": ["LIUYAO-CALENDAR-CONTEXT-001"],
+      "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "midnight default" }]
+    },
+    {
+      "lineage": "late-zi-explicit-alternative",
+      "summary": "Advance the day pillar at 23:00 when zi_initial is explicitly selected.",
+      "rule_ids": ["LIUYAO-CALENDAR-CONTEXT-001", "LIUYAO-STRUCTURAL-BOUNDARY-001"],
+      "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "zi_initial input option" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "wen-wang-najia-structural-v0.1",
+    "rationale": "Midnight is deterministic and matches the shared default; late Zi remains explicit.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "The recorded day-boundary setting can change day-derived spirits and void branches.",
+  "sources": [
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "midnight default" },
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "zi_initial input option" }
+  ]
+}

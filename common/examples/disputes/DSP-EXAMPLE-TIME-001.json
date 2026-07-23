@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-EXAMPLE-TIME-001",
+  "title": "Use normalized or reported time",
+  "system": "example",
+  "topic": "time normalization",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "baseline",
+      "summary": "Use the normalized instant for deterministic calculations.",
+      "rule_ids": ["EXAMPLE-CAL-001"],
+      "sources": [{ "source_id": "SRC-EXAMPLE-STANDARD-001", "locator": "Fixture time clause" }]
+    },
+    {
+      "lineage": "alternative",
+      "summary": "Reject the input when the reported time cannot be normalized uniquely.",
+      "rule_ids": ["EXAMPLE-VAL-001"],
+      "sources": [{ "source_id": "SRC-EXAMPLE-INDEPENDENT-001", "locator": "Fixture row 2" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "baseline",
+    "rationale": "Use a normalized instant only when normalization is unambiguous; otherwise validation takes priority.",
+    "user_disclosure_required": false
+  },
+  "user_disclosure": "The calculation uses the normalized instant and stops if it is ambiguous.",
+  "sources": [
+    { "source_id": "SRC-EXAMPLE-STANDARD-001", "locator": "Fixture time clause" },
+    { "source_id": "SRC-EXAMPLE-INDEPENDENT-001", "locator": "Fixture row 2" }
+  ]
+}

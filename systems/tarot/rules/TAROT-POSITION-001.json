@@ -1,0 +1,19 @@
+{
+  "rule_id": "TAROT-POSITION-001",
+  "title": "Constrain card language by its named spread position",
+  "system": "tarot",
+  "lineage": "rws-text-baseline-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "card.position", "operator": "exists" }],
+  "conclusions": [{
+    "finding_type": "tarot.position-context",
+    "output_path": "derived_findings.position",
+    "value": "position_constrained",
+    "confidence": "low"
+  }],
+  "priority": 800,
+  "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "Named spread-position contract", "support_type": "direct" }],
+  "tests": ["CASE-TAROT-DRAW-001"]
+}

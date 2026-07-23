@@ -1,0 +1,30 @@
+{
+  "rule_id": "EXAMPLE-VAL-001",
+  "title": "Reject an input with unresolved ambiguity",
+  "system": "example",
+  "lineage": "baseline",
+  "version": "1.0.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [
+    { "fact_path": "normalized_input.ambiguous", "operator": "eq", "value": true }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "validation.failure",
+      "output_path": "validation.status",
+      "value": "needs_clarification",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 1000,
+  "sources": [
+    {
+      "source_id": "SRC-EXAMPLE-STANDARD-001",
+      "locator": "Fixture clause 2",
+      "support_type": "direct"
+    }
+  ],
+  "disputes": ["DSP-EXAMPLE-BOUNDARY-001", "DSP-EXAMPLE-WEIGHT-001", "DSP-EXAMPLE-TIME-001"],
+  "tests": ["CASE-EXAMPLE-EDGE-001"]
+}

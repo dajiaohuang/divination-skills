@@ -1,0 +1,91 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-TAROT-DRAW-008",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "5e2d1b53933bb3c3faadd77ea255c1779c30e8d13da7839fffb02d74d98821a2"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "0b561873de4f791ea296221cbb951ba498d2f09601f52b5143ba567833dea0a9"
+    },
+    "computed_facts": {
+      "cards": [
+        {
+          "card_id": "tarot.rws.swords-king",
+          "card_index": 63,
+          "fact_id": "tarot.draw.card.001",
+          "name": "King of Swords",
+          "orientation": "upright",
+          "position": "situation",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "card_id": "tarot.rws.swords-three",
+          "card_index": 52,
+          "fact_id": "tarot.draw.card.002",
+          "name": "Three of Swords",
+          "orientation": "upright",
+          "position": "challenge",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        },
+        {
+          "card_id": "tarot.rws.swords-two",
+          "card_index": 51,
+          "fact_id": "tarot.draw.card.003",
+          "name": "Two of Swords",
+          "orientation": "upright",
+          "position": "guidance",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ],
+      "spread": "situation-challenge-guidance"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The cards establish a hidden fact about a third party."
+  ],
+  "lineage": "rws-text-baseline-v0.1",
+  "must_match_rules": [
+    "TAROT-DRAW-UNIQUE-001",
+    "TAROT-POSITION-001",
+    "TAROT-NARRATIVE-001",
+    "TAROT-ORIENTATION-UPRIGHT-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "question_sha256": "e96a6755f8d61750f189b76236d67205f9888437bdf9e0f427e966c12f11f3a4",
+    "spread": "situation-challenge-guidance"
+  },
+  "raw_input": {
+    "allow_reversals": false,
+    "question": "Synthetic reflection prompt 8",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000008",
+    "spread": "situation-challenge-guidance"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic deterministic regression case; not proof of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "rws-78.json and auditable draw contract",
+      "source_id": "SRC-TAROT-DECK-SPEC-001"
+    }
+  ],
+  "system": "tarot",
+  "title": "Auditable Tarot draw 008"
+}

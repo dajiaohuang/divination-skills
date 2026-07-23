@@ -1,0 +1,9 @@
+{
+  "system": "numerology",
+  "release": "0.1.0",
+  "signoffs": [
+    {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/numerology/tests/golden", "systems/numerology/tests/edge_cases", "systems/numerology/tests/disputes"], "notes": "Requires an independent Pythagorean numerology practitioner to review mapping, master numbers, and normalization boundaries."},
+    {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/numerology/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve all production sources and rule expressions."},
+    {"role": "privacy", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["docs/policies/PRIVACY.md"], "notes": "Requires approval of deployed legal-name, birth-date, retention, deletion, and logging settings."}
+  ]
+}

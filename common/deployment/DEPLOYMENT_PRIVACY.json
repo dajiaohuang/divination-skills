@@ -1,0 +1,33 @@
+{
+  "status": "undecided",
+  "deployment_id": null,
+  "stores": {
+    "accounts": null,
+    "birth_data": null,
+    "questions": null,
+    "readings": null
+  },
+  "purposes": [],
+  "retention_days": {
+    "primary": null,
+    "backups": null,
+    "logs": null
+  },
+  "controls": {
+    "encryption_at_rest": null,
+    "encryption_in_transit": null,
+    "role_based_access": null,
+    "log_redaction": null
+  },
+  "user_rights": {
+    "export_supported": null,
+    "deletion_supported": null,
+    "deletion_sla_days": null
+  },
+  "providers": [],
+  "minors_policy": null,
+  "incident_contact": null,
+  "decided_by": null,
+  "decided_at": null,
+  "notes": "The implementation plan requires the owner to decide actual birth-data storage, retention, export, and deletion behavior before deployment."
+}

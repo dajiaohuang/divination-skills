@@ -1,0 +1,212 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-ICHING-EDGE-NO-MOVING-001",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-iching-cast",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "changed_hexagram": {
+        "english": "Peace",
+        "hanzi": "泰",
+        "lines_bottom_to_top": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "lower_trigram": {
+          "hanzi": "乾",
+          "id": "qian",
+          "image": "heaven"
+        },
+        "number": 11,
+        "pinyin": "Tai",
+        "project_themes": [
+          "current structure: peace",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "坤",
+          "id": "kun",
+          "image": "earth"
+        }
+      },
+      "lines": [
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            2,
+            3
+          ],
+          "fact_id": "iching.cast.line.001",
+          "moving": false,
+          "polarity": "yang",
+          "position_from_bottom": 1,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.002",
+          "moving": false,
+          "polarity": "yang",
+          "position_from_bottom": 2,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            3,
+            2,
+            2
+          ],
+          "fact_id": "iching.cast.line.003",
+          "moving": false,
+          "polarity": "yang",
+          "position_from_bottom": 3,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.004",
+          "moving": false,
+          "polarity": "yin",
+          "position_from_bottom": 4,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            2,
+            3,
+            3
+          ],
+          "fact_id": "iching.cast.line.005",
+          "moving": false,
+          "polarity": "yin",
+          "position_from_bottom": 5,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            2,
+            3
+          ],
+          "fact_id": "iching.cast.line.006",
+          "moving": false,
+          "polarity": "yin",
+          "position_from_bottom": 6,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        }
+      ],
+      "moving_line_positions": [],
+      "primary_hexagram": {
+        "english": "Peace",
+        "hanzi": "泰",
+        "lines_bottom_to_top": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "lower_trigram": {
+          "hanzi": "乾",
+          "id": "qian",
+          "image": "heaven"
+        },
+        "number": 11,
+        "pinyin": "Tai",
+        "project_themes": [
+          "current structure: peace",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "坤",
+          "id": "kun",
+          "image": "earth"
+        }
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "three-coin-king-wen-structural-v0.1",
+  "must_match_rules": [
+    "ICHING-HEXAGRAM-MAP-001",
+    "ICHING-MOVING-LINES-001",
+    "ICHING-STRUCTURAL-REFLECTION-001"
+  ],
+  "normalized_input": {
+    "line_order": "bottom-to-top",
+    "lineage": "three-coin-king-wen-structural-v0.1",
+    "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "raw_input": {
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000002"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-ICHING-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "iching",
+  "title": "Three-coin cast with no moving lines"
+}

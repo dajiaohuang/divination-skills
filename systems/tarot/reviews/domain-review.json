@@ -1,0 +1,71 @@
+{
+  "system": "tarot",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-TAROT-DISPUTE-REVERSALS-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-002",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-003",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-004",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-005",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-006",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-007",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-008",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-009",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-DRAW-010",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-TAROT-EDGE-SEED-ZERO-001",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed.",
+  "evidence": null
+}

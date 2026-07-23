@@ -1,0 +1,1492 @@
+{
+  "cards": [
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-00-fool",
+      "element": null,
+      "index": 0,
+      "name": "The Fool",
+      "rank": "0",
+      "reversed": [
+        "hesitation",
+        "heedlessness",
+        "unfocused risk"
+      ],
+      "suit": null,
+      "upright": [
+        "openness",
+        "first step",
+        "curiosity"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-01-magician",
+      "element": null,
+      "index": 1,
+      "name": "The Magician",
+      "rank": "1",
+      "reversed": [
+        "misapplied skill",
+        "scattered intent",
+        "appearance over substance"
+      ],
+      "suit": null,
+      "upright": [
+        "initiative",
+        "skillful action",
+        "focused resources"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-02-high-priestess",
+      "element": null,
+      "index": 2,
+      "name": "The High Priestess",
+      "rank": "2",
+      "reversed": [
+        "ignored intuition",
+        "withheld context",
+        "inner noise"
+      ],
+      "suit": null,
+      "upright": [
+        "quiet knowing",
+        "receptivity",
+        "unspoken context"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-03-empress",
+      "element": null,
+      "index": 3,
+      "name": "The Empress",
+      "rank": "3",
+      "reversed": [
+        "overgiving",
+        "stalled growth",
+        "neglected needs"
+      ],
+      "suit": null,
+      "upright": [
+        "nurturing growth",
+        "abundance",
+        "embodied creativity"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-04-emperor",
+      "element": null,
+      "index": 4,
+      "name": "The Emperor",
+      "rank": "4",
+      "reversed": [
+        "rigidity",
+        "control struggle",
+        "weak boundaries"
+      ],
+      "suit": null,
+      "upright": [
+        "structure",
+        "responsibility",
+        "clear authority"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-05-hierophant",
+      "element": null,
+      "index": 5,
+      "name": "The Hierophant",
+      "rank": "5",
+      "reversed": [
+        "questioned convention",
+        "empty conformity",
+        "independent learning"
+      ],
+      "suit": null,
+      "upright": [
+        "shared tradition",
+        "teaching",
+        "established method"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-06-lovers",
+      "element": null,
+      "index": 6,
+      "name": "The Lovers",
+      "rank": "6",
+      "reversed": [
+        "misalignment",
+        "avoidance of choice",
+        "conflicting values"
+      ],
+      "suit": null,
+      "upright": [
+        "chosen alignment",
+        "relationship",
+        "values in action"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-07-chariot",
+      "element": null,
+      "index": 7,
+      "name": "The Chariot",
+      "rank": "7",
+      "reversed": [
+        "loss of direction",
+        "forced progress",
+        "divided will"
+      ],
+      "suit": null,
+      "upright": [
+        "directed movement",
+        "self-command",
+        "commitment"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-08-strength",
+      "element": null,
+      "index": 8,
+      "name": "Strength",
+      "rank": "8",
+      "reversed": [
+        "self-doubt",
+        "suppressed force",
+        "fragile composure"
+      ],
+      "suit": null,
+      "upright": [
+        "patient courage",
+        "gentle influence",
+        "self-trust"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-09-hermit",
+      "element": null,
+      "index": 9,
+      "name": "The Hermit",
+      "rank": "9",
+      "reversed": [
+        "isolation",
+        "avoidance",
+        "refusal of counsel"
+      ],
+      "suit": null,
+      "upright": [
+        "solitude",
+        "careful inquiry",
+        "inner guidance"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-10-wheel-of-fortune",
+      "element": null,
+      "index": 10,
+      "name": "Wheel of Fortune",
+      "rank": "10",
+      "reversed": [
+        "resisted change",
+        "repeating pattern",
+        "poor timing"
+      ],
+      "suit": null,
+      "upright": [
+        "changing conditions",
+        "cycle",
+        "turning point"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-11-justice",
+      "element": null,
+      "index": 11,
+      "name": "Justice",
+      "rank": "11",
+      "reversed": [
+        "bias",
+        "avoided responsibility",
+        "unequal terms"
+      ],
+      "suit": null,
+      "upright": [
+        "accountability",
+        "balanced judgment",
+        "consequence"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-12-hanged-man",
+      "element": null,
+      "index": 12,
+      "name": "The Hanged Man",
+      "rank": "12",
+      "reversed": [
+        "stagnation",
+        "needless sacrifice",
+        "refusal to reframe"
+      ],
+      "suit": null,
+      "upright": [
+        "pause",
+        "changed perspective",
+        "willing release"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-13-death",
+      "element": null,
+      "index": 13,
+      "name": "Death",
+      "rank": "13",
+      "reversed": [
+        "clinging",
+        "unfinished ending",
+        "delayed transition"
+      ],
+      "suit": null,
+      "upright": [
+        "ending",
+        "transition",
+        "necessary clearing"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-14-temperance",
+      "element": null,
+      "index": 14,
+      "name": "Temperance",
+      "rank": "14",
+      "reversed": [
+        "excess",
+        "poor mixture",
+        "unstable pace"
+      ],
+      "suit": null,
+      "upright": [
+        "integration",
+        "measured adjustment",
+        "sustainable rhythm"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-15-devil",
+      "element": null,
+      "index": 15,
+      "name": "The Devil",
+      "rank": "15",
+      "reversed": [
+        "recognizing a bind",
+        "loosening attachment",
+        "denied dependency"
+      ],
+      "suit": null,
+      "upright": [
+        "binding pattern",
+        "compulsion",
+        "material attachment"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-16-tower",
+      "element": null,
+      "index": 16,
+      "name": "The Tower",
+      "rank": "16",
+      "reversed": [
+        "avoided reckoning",
+        "contained disruption",
+        "fear of change"
+      ],
+      "suit": null,
+      "upright": [
+        "disruption",
+        "revealed instability",
+        "rapid restructuring"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-17-star",
+      "element": null,
+      "index": 17,
+      "name": "The Star",
+      "rank": "17",
+      "reversed": [
+        "discouragement",
+        "guarded hope",
+        "lost orientation"
+      ],
+      "suit": null,
+      "upright": [
+        "renewal",
+        "hopeful direction",
+        "openness"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-18-moon",
+      "element": null,
+      "index": 18,
+      "name": "The Moon",
+      "rank": "18",
+      "reversed": [
+        "clearing confusion",
+        "denial of uncertainty",
+        "distorted fear"
+      ],
+      "suit": null,
+      "upright": [
+        "ambiguity",
+        "imagination",
+        "uncertain signals"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-19-sun",
+      "element": null,
+      "index": 19,
+      "name": "The Sun",
+      "rank": "19",
+      "reversed": [
+        "muted joy",
+        "overexposure",
+        "delayed clarity"
+      ],
+      "suit": null,
+      "upright": [
+        "clarity",
+        "vitality",
+        "shared confidence"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-20-judgement",
+      "element": null,
+      "index": 20,
+      "name": "Judgement",
+      "rank": "20",
+      "reversed": [
+        "self-condemnation",
+        "ignored call",
+        "unfinished review"
+      ],
+      "suit": null,
+      "upright": [
+        "reckoning",
+        "renewed call",
+        "integrated review"
+      ]
+    },
+    {
+      "arcana": "major",
+      "card_id": "tarot.rws.major-21-world",
+      "element": null,
+      "index": 21,
+      "name": "The World",
+      "rank": "21",
+      "reversed": [
+        "loose ends",
+        "narrow horizon",
+        "delayed completion"
+      ],
+      "suit": null,
+      "upright": [
+        "completion",
+        "integration",
+        "wider context"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-ace",
+      "element": "fire",
+      "index": 22,
+      "name": "Ace of Wands",
+      "rank": "ace",
+      "reversed": [
+        "blocked start in initiative",
+        "diffuse potential around energy",
+        "missed opening in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "opening in initiative",
+        "seed through energy",
+        "unused potential around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-two",
+      "element": "fire",
+      "index": 23,
+      "name": "Two of Wands",
+      "rank": "two",
+      "reversed": [
+        "indecision in initiative",
+        "imbalance around energy",
+        "split attention in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "choice in initiative",
+        "pairing through energy",
+        "balance around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-three",
+      "element": "fire",
+      "index": 24,
+      "name": "Three of Wands",
+      "rank": "three",
+      "reversed": [
+        "poor coordination in initiative",
+        "delayed growth around energy",
+        "third-factor tension in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "development in initiative",
+        "collaboration through energy",
+        "first results around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-four",
+      "element": "fire",
+      "index": 25,
+      "name": "Four of Wands",
+      "rank": "four",
+      "reversed": [
+        "stagnation in initiative",
+        "weak foundation around energy",
+        "overprotection in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "stability in initiative",
+        "boundary through energy",
+        "consolidation around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-five",
+      "element": "fire",
+      "index": 26,
+      "name": "Five of Wands",
+      "rank": "five",
+      "reversed": [
+        "avoided conflict in initiative",
+        "lingering strain around energy",
+        "unproductive contest in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "friction in initiative",
+        "adjustment through energy",
+        "challenge around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-six",
+      "element": "fire",
+      "index": 27,
+      "name": "Six of Wands",
+      "rank": "six",
+      "reversed": [
+        "unequal exchange in initiative",
+        "unfinished transition around energy",
+        "conditional support in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "exchange in initiative",
+        "transition through energy",
+        "restored movement around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-seven",
+      "element": "fire",
+      "index": 28,
+      "name": "Seven of Wands",
+      "rank": "seven",
+      "reversed": [
+        "poor strategy in initiative",
+        "defensiveness around energy",
+        "scattered effort in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "assessment in initiative",
+        "strategy through energy",
+        "testing resolve around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-eight",
+      "element": "fire",
+      "index": 29,
+      "name": "Eight of Wands",
+      "rank": "eight",
+      "reversed": [
+        "delay in initiative",
+        "repetition without learning around energy",
+        "misdirected speed in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "motion in initiative",
+        "practice through energy",
+        "growing momentum around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-nine",
+      "element": "fire",
+      "index": 30,
+      "name": "Nine of Wands",
+      "rank": "nine",
+      "reversed": [
+        "fatigue in initiative",
+        "guardedness around energy",
+        "fragile gains in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "culmination in initiative",
+        "resilience through energy",
+        "near completion around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-ten",
+      "element": "fire",
+      "index": 31,
+      "name": "Ten of Wands",
+      "rank": "ten",
+      "reversed": [
+        "overload in initiative",
+        "incomplete closure around energy",
+        "burdened outcome in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "completion in initiative",
+        "full consequence through energy",
+        "handoff around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-page",
+      "element": "fire",
+      "index": 32,
+      "name": "Page of Wands",
+      "rank": "page",
+      "reversed": [
+        "immaturity in initiative",
+        "unclear message around energy",
+        "shallow curiosity in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "learning in initiative",
+        "message through energy",
+        "fresh approach around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-knight",
+      "element": "fire",
+      "index": 33,
+      "name": "Knight of Wands",
+      "rank": "knight",
+      "reversed": [
+        "rash pursuit in initiative",
+        "stalled action around energy",
+        "one-track focus in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "pursuit in initiative",
+        "movement through energy",
+        "committed approach around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-queen",
+      "element": "fire",
+      "index": 34,
+      "name": "Queen of Wands",
+      "rank": "queen",
+      "reversed": [
+        "overidentification in initiative",
+        "withheld care around energy",
+        "insecure command in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "mature receptivity in initiative",
+        "stewardship through energy",
+        "inner command around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.wands-king",
+      "element": "fire",
+      "index": 35,
+      "name": "King of Wands",
+      "rank": "king",
+      "reversed": [
+        "domination in initiative",
+        "misused authority around energy",
+        "rigid direction in purpose"
+      ],
+      "suit": "wands",
+      "upright": [
+        "mature direction in initiative",
+        "responsibility through energy",
+        "outer command around purpose"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-ace",
+      "element": "water",
+      "index": 36,
+      "name": "Ace of Cups",
+      "rank": "ace",
+      "reversed": [
+        "blocked start in feeling",
+        "diffuse potential around relationship",
+        "missed opening in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "opening in feeling",
+        "seed through relationship",
+        "unused potential around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-two",
+      "element": "water",
+      "index": 37,
+      "name": "Two of Cups",
+      "rank": "two",
+      "reversed": [
+        "indecision in feeling",
+        "imbalance around relationship",
+        "split attention in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "choice in feeling",
+        "pairing through relationship",
+        "balance around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-three",
+      "element": "water",
+      "index": 38,
+      "name": "Three of Cups",
+      "rank": "three",
+      "reversed": [
+        "poor coordination in feeling",
+        "delayed growth around relationship",
+        "third-factor tension in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "development in feeling",
+        "collaboration through relationship",
+        "first results around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-four",
+      "element": "water",
+      "index": 39,
+      "name": "Four of Cups",
+      "rank": "four",
+      "reversed": [
+        "stagnation in feeling",
+        "weak foundation around relationship",
+        "overprotection in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "stability in feeling",
+        "boundary through relationship",
+        "consolidation around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-five",
+      "element": "water",
+      "index": 40,
+      "name": "Five of Cups",
+      "rank": "five",
+      "reversed": [
+        "avoided conflict in feeling",
+        "lingering strain around relationship",
+        "unproductive contest in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "friction in feeling",
+        "adjustment through relationship",
+        "challenge around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-six",
+      "element": "water",
+      "index": 41,
+      "name": "Six of Cups",
+      "rank": "six",
+      "reversed": [
+        "unequal exchange in feeling",
+        "unfinished transition around relationship",
+        "conditional support in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "exchange in feeling",
+        "transition through relationship",
+        "restored movement around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-seven",
+      "element": "water",
+      "index": 42,
+      "name": "Seven of Cups",
+      "rank": "seven",
+      "reversed": [
+        "poor strategy in feeling",
+        "defensiveness around relationship",
+        "scattered effort in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "assessment in feeling",
+        "strategy through relationship",
+        "testing resolve around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-eight",
+      "element": "water",
+      "index": 43,
+      "name": "Eight of Cups",
+      "rank": "eight",
+      "reversed": [
+        "delay in feeling",
+        "repetition without learning around relationship",
+        "misdirected speed in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "motion in feeling",
+        "practice through relationship",
+        "growing momentum around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-nine",
+      "element": "water",
+      "index": 44,
+      "name": "Nine of Cups",
+      "rank": "nine",
+      "reversed": [
+        "fatigue in feeling",
+        "guardedness around relationship",
+        "fragile gains in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "culmination in feeling",
+        "resilience through relationship",
+        "near completion around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-ten",
+      "element": "water",
+      "index": 45,
+      "name": "Ten of Cups",
+      "rank": "ten",
+      "reversed": [
+        "overload in feeling",
+        "incomplete closure around relationship",
+        "burdened outcome in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "completion in feeling",
+        "full consequence through relationship",
+        "handoff around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-page",
+      "element": "water",
+      "index": 46,
+      "name": "Page of Cups",
+      "rank": "page",
+      "reversed": [
+        "immaturity in feeling",
+        "unclear message around relationship",
+        "shallow curiosity in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "learning in feeling",
+        "message through relationship",
+        "fresh approach around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-knight",
+      "element": "water",
+      "index": 47,
+      "name": "Knight of Cups",
+      "rank": "knight",
+      "reversed": [
+        "rash pursuit in feeling",
+        "stalled action around relationship",
+        "one-track focus in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "pursuit in feeling",
+        "movement through relationship",
+        "committed approach around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-queen",
+      "element": "water",
+      "index": 48,
+      "name": "Queen of Cups",
+      "rank": "queen",
+      "reversed": [
+        "overidentification in feeling",
+        "withheld care around relationship",
+        "insecure command in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "mature receptivity in feeling",
+        "stewardship through relationship",
+        "inner command around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.cups-king",
+      "element": "water",
+      "index": 49,
+      "name": "King of Cups",
+      "rank": "king",
+      "reversed": [
+        "domination in feeling",
+        "misused authority around relationship",
+        "rigid direction in receptivity"
+      ],
+      "suit": "cups",
+      "upright": [
+        "mature direction in feeling",
+        "responsibility through relationship",
+        "outer command around receptivity"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-ace",
+      "element": "air",
+      "index": 50,
+      "name": "Ace of Swords",
+      "rank": "ace",
+      "reversed": [
+        "blocked start in thought",
+        "diffuse potential around conflict",
+        "missed opening in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "opening in thought",
+        "seed through conflict",
+        "unused potential around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-two",
+      "element": "air",
+      "index": 51,
+      "name": "Two of Swords",
+      "rank": "two",
+      "reversed": [
+        "indecision in thought",
+        "imbalance around conflict",
+        "split attention in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "choice in thought",
+        "pairing through conflict",
+        "balance around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-three",
+      "element": "air",
+      "index": 52,
+      "name": "Three of Swords",
+      "rank": "three",
+      "reversed": [
+        "poor coordination in thought",
+        "delayed growth around conflict",
+        "third-factor tension in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "development in thought",
+        "collaboration through conflict",
+        "first results around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-four",
+      "element": "air",
+      "index": 53,
+      "name": "Four of Swords",
+      "rank": "four",
+      "reversed": [
+        "stagnation in thought",
+        "weak foundation around conflict",
+        "overprotection in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "stability in thought",
+        "boundary through conflict",
+        "consolidation around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-five",
+      "element": "air",
+      "index": 54,
+      "name": "Five of Swords",
+      "rank": "five",
+      "reversed": [
+        "avoided conflict in thought",
+        "lingering strain around conflict",
+        "unproductive contest in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "friction in thought",
+        "adjustment through conflict",
+        "challenge around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-six",
+      "element": "air",
+      "index": 55,
+      "name": "Six of Swords",
+      "rank": "six",
+      "reversed": [
+        "unequal exchange in thought",
+        "unfinished transition around conflict",
+        "conditional support in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "exchange in thought",
+        "transition through conflict",
+        "restored movement around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-seven",
+      "element": "air",
+      "index": 56,
+      "name": "Seven of Swords",
+      "rank": "seven",
+      "reversed": [
+        "poor strategy in thought",
+        "defensiveness around conflict",
+        "scattered effort in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "assessment in thought",
+        "strategy through conflict",
+        "testing resolve around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-eight",
+      "element": "air",
+      "index": 57,
+      "name": "Eight of Swords",
+      "rank": "eight",
+      "reversed": [
+        "delay in thought",
+        "repetition without learning around conflict",
+        "misdirected speed in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "motion in thought",
+        "practice through conflict",
+        "growing momentum around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-nine",
+      "element": "air",
+      "index": 58,
+      "name": "Nine of Swords",
+      "rank": "nine",
+      "reversed": [
+        "fatigue in thought",
+        "guardedness around conflict",
+        "fragile gains in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "culmination in thought",
+        "resilience through conflict",
+        "near completion around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-ten",
+      "element": "air",
+      "index": 59,
+      "name": "Ten of Swords",
+      "rank": "ten",
+      "reversed": [
+        "overload in thought",
+        "incomplete closure around conflict",
+        "burdened outcome in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "completion in thought",
+        "full consequence through conflict",
+        "handoff around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-page",
+      "element": "air",
+      "index": 60,
+      "name": "Page of Swords",
+      "rank": "page",
+      "reversed": [
+        "immaturity in thought",
+        "unclear message around conflict",
+        "shallow curiosity in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "learning in thought",
+        "message through conflict",
+        "fresh approach around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-knight",
+      "element": "air",
+      "index": 61,
+      "name": "Knight of Swords",
+      "rank": "knight",
+      "reversed": [
+        "rash pursuit in thought",
+        "stalled action around conflict",
+        "one-track focus in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "pursuit in thought",
+        "movement through conflict",
+        "committed approach around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-queen",
+      "element": "air",
+      "index": 62,
+      "name": "Queen of Swords",
+      "rank": "queen",
+      "reversed": [
+        "overidentification in thought",
+        "withheld care around conflict",
+        "insecure command in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "mature receptivity in thought",
+        "stewardship through conflict",
+        "inner command around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.swords-king",
+      "element": "air",
+      "index": 63,
+      "name": "King of Swords",
+      "rank": "king",
+      "reversed": [
+        "domination in thought",
+        "misused authority around conflict",
+        "rigid direction in communication"
+      ],
+      "suit": "swords",
+      "upright": [
+        "mature direction in thought",
+        "responsibility through conflict",
+        "outer command around communication"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-ace",
+      "element": "earth",
+      "index": 64,
+      "name": "Ace of Pentacles",
+      "rank": "ace",
+      "reversed": [
+        "blocked start in resources",
+        "diffuse potential around craft",
+        "missed opening in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "opening in resources",
+        "seed through craft",
+        "unused potential around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-two",
+      "element": "earth",
+      "index": 65,
+      "name": "Two of Pentacles",
+      "rank": "two",
+      "reversed": [
+        "indecision in resources",
+        "imbalance around craft",
+        "split attention in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "choice in resources",
+        "pairing through craft",
+        "balance around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-three",
+      "element": "earth",
+      "index": 66,
+      "name": "Three of Pentacles",
+      "rank": "three",
+      "reversed": [
+        "poor coordination in resources",
+        "delayed growth around craft",
+        "third-factor tension in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "development in resources",
+        "collaboration through craft",
+        "first results around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-four",
+      "element": "earth",
+      "index": 67,
+      "name": "Four of Pentacles",
+      "rank": "four",
+      "reversed": [
+        "stagnation in resources",
+        "weak foundation around craft",
+        "overprotection in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "stability in resources",
+        "boundary through craft",
+        "consolidation around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-five",
+      "element": "earth",
+      "index": 68,
+      "name": "Five of Pentacles",
+      "rank": "five",
+      "reversed": [
+        "avoided conflict in resources",
+        "lingering strain around craft",
+        "unproductive contest in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "friction in resources",
+        "adjustment through craft",
+        "challenge around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-six",
+      "element": "earth",
+      "index": 69,
+      "name": "Six of Pentacles",
+      "rank": "six",
+      "reversed": [
+        "unequal exchange in resources",
+        "unfinished transition around craft",
+        "conditional support in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "exchange in resources",
+        "transition through craft",
+        "restored movement around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-seven",
+      "element": "earth",
+      "index": 70,
+      "name": "Seven of Pentacles",
+      "rank": "seven",
+      "reversed": [
+        "poor strategy in resources",
+        "defensiveness around craft",
+        "scattered effort in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "assessment in resources",
+        "strategy through craft",
+        "testing resolve around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-eight",
+      "element": "earth",
+      "index": 71,
+      "name": "Eight of Pentacles",
+      "rank": "eight",
+      "reversed": [
+        "delay in resources",
+        "repetition without learning around craft",
+        "misdirected speed in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "motion in resources",
+        "practice through craft",
+        "growing momentum around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-nine",
+      "element": "earth",
+      "index": 72,
+      "name": "Nine of Pentacles",
+      "rank": "nine",
+      "reversed": [
+        "fatigue in resources",
+        "guardedness around craft",
+        "fragile gains in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "culmination in resources",
+        "resilience through craft",
+        "near completion around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-ten",
+      "element": "earth",
+      "index": 73,
+      "name": "Ten of Pentacles",
+      "rank": "ten",
+      "reversed": [
+        "overload in resources",
+        "incomplete closure around craft",
+        "burdened outcome in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "completion in resources",
+        "full consequence through craft",
+        "handoff around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-page",
+      "element": "earth",
+      "index": 74,
+      "name": "Page of Pentacles",
+      "rank": "page",
+      "reversed": [
+        "immaturity in resources",
+        "unclear message around craft",
+        "shallow curiosity in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "learning in resources",
+        "message through craft",
+        "fresh approach around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-knight",
+      "element": "earth",
+      "index": 75,
+      "name": "Knight of Pentacles",
+      "rank": "knight",
+      "reversed": [
+        "rash pursuit in resources",
+        "stalled action around craft",
+        "one-track focus in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "pursuit in resources",
+        "movement through craft",
+        "committed approach around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-queen",
+      "element": "earth",
+      "index": 76,
+      "name": "Queen of Pentacles",
+      "rank": "queen",
+      "reversed": [
+        "overidentification in resources",
+        "withheld care around craft",
+        "insecure command in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "mature receptivity in resources",
+        "stewardship through craft",
+        "inner command around material conditions"
+      ]
+    },
+    {
+      "arcana": "minor",
+      "card_id": "tarot.rws.pentacles-king",
+      "element": "earth",
+      "index": 77,
+      "name": "King of Pentacles",
+      "rank": "king",
+      "reversed": [
+        "domination in resources",
+        "misused authority around craft",
+        "rigid direction in material conditions"
+      ],
+      "suit": "pentacles",
+      "upright": [
+        "mature direction in resources",
+        "responsibility through craft",
+        "outer command around material conditions"
+      ]
+    }
+  ],
+  "deck_id": "rws-text-78",
+  "lineage": "rws-text-baseline-v0.1",
+  "source_ids": [
+    "SRC-TAROT-DECK-SPEC-001"
+  ],
+  "version": "0.1.0"
+}

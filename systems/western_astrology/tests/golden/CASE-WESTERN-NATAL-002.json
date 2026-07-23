@@ -1,0 +1,488 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-WESTERN-NATAL-002",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "angles": {
+        "ascendant": {
+          "degree_in_sign": 4.17092959,
+          "fact_id": "western.angle.ascendant",
+          "longitude_degrees": 244.17092959,
+          "sign": "Sagittarius",
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        "midheaven": {
+          "degree_in_sign": 14.39916248,
+          "fact_id": "western.angle.midheaven",
+          "longitude_degrees": 164.39916248,
+          "sign": "Virgo",
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001",
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        }
+      },
+      "aspects": [
+        {
+          "allowed_orb_degrees": 8.0,
+          "aspect": "conjunction",
+          "body_a": "sun",
+          "body_b": "mercury",
+          "exact_angle_degrees": 0.0,
+          "fact_id": "western.aspect.001",
+          "orb_degrees": 7.77029212,
+          "separation_degrees": 7.77029212,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 8.0,
+          "aspect": "opposition",
+          "body_a": "sun",
+          "body_b": "saturn",
+          "exact_angle_degrees": 180.0,
+          "fact_id": "western.aspect.002",
+          "orb_degrees": 1.45420725,
+          "separation_degrees": 178.54579275,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 5.0,
+          "aspect": "sextile",
+          "body_a": "moon",
+          "body_b": "uranus",
+          "exact_angle_degrees": 60.0,
+          "fact_id": "western.aspect.003",
+          "orb_degrees": 3.24892842,
+          "separation_degrees": 63.24892842,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 7.0,
+          "aspect": "square",
+          "body_a": "mercury",
+          "body_b": "jupiter",
+          "exact_angle_degrees": 90.0,
+          "fact_id": "western.aspect.004",
+          "orb_degrees": 4.32449382,
+          "separation_degrees": 85.67550618,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 8.0,
+          "aspect": "opposition",
+          "body_a": "mercury",
+          "body_b": "uranus",
+          "exact_angle_degrees": 180.0,
+          "fact_id": "western.aspect.005",
+          "orb_degrees": 5.3782568,
+          "separation_degrees": 174.6217432,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 8.0,
+          "aspect": "opposition",
+          "body_a": "venus",
+          "body_b": "neptune",
+          "exact_angle_degrees": 180.0,
+          "fact_id": "western.aspect.006",
+          "orb_degrees": 4.274664,
+          "separation_degrees": 175.725336,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 7.0,
+          "aspect": "trine",
+          "body_a": "venus",
+          "body_b": "pluto",
+          "exact_angle_degrees": 120.0,
+          "fact_id": "western.aspect.007",
+          "orb_degrees": 4.31347666,
+          "separation_degrees": 115.68652334,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 5.0,
+          "aspect": "sextile",
+          "body_a": "mars",
+          "body_b": "jupiter",
+          "exact_angle_degrees": 60.0,
+          "fact_id": "western.aspect.008",
+          "orb_degrees": 2.5746664,
+          "separation_degrees": 57.4253336,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 7.0,
+          "aspect": "square",
+          "body_a": "jupiter",
+          "body_b": "uranus",
+          "exact_angle_degrees": 90.0,
+          "fact_id": "western.aspect.009",
+          "orb_degrees": 1.05376298,
+          "separation_degrees": 88.94623702,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "allowed_orb_degrees": 5.0,
+          "aspect": "sextile",
+          "body_a": "neptune",
+          "body_b": "pluto",
+          "exact_angle_degrees": 60.0,
+          "fact_id": "western.aspect.010",
+          "orb_degrees": 0.03881266,
+          "separation_degrees": 60.03881266,
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        }
+      ],
+      "house_cusps": [
+        {
+          "fact_id": "western.house_cusp.01",
+          "house": 1,
+          "longitude_degrees": 244.17092959,
+          "sign": "Sagittarius",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.02",
+          "house": 2,
+          "longitude_degrees": 274.17092959,
+          "sign": "Capricorn",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.03",
+          "house": 3,
+          "longitude_degrees": 304.17092959,
+          "sign": "Aquarius",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.04",
+          "house": 4,
+          "longitude_degrees": 334.17092959,
+          "sign": "Pisces",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.05",
+          "house": 5,
+          "longitude_degrees": 4.17092959,
+          "sign": "Aries",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.06",
+          "house": 6,
+          "longitude_degrees": 34.17092959,
+          "sign": "Taurus",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.07",
+          "house": 7,
+          "longitude_degrees": 64.17092959,
+          "sign": "Gemini",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.08",
+          "house": 8,
+          "longitude_degrees": 94.17092959,
+          "sign": "Cancer",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.09",
+          "house": 9,
+          "longitude_degrees": 124.17092959,
+          "sign": "Leo",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.10",
+          "house": 10,
+          "longitude_degrees": 154.17092959,
+          "sign": "Virgo",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.11",
+          "house": 11,
+          "longitude_degrees": 184.17092959,
+          "sign": "Libra",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "fact_id": "western.house_cusp.12",
+          "house": 12,
+          "longitude_degrees": 214.17092959,
+          "sign": "Scorpio",
+          "source_ids": [
+            "SRC-WESTERN-PROJECT-SPEC-001"
+          ]
+        }
+      ],
+      "positions": [
+        {
+          "body": "sun",
+          "degree_in_sign": 7.76346789,
+          "distance_au": 1.0135972504,
+          "fact_id": "western.position.sun",
+          "house": 7,
+          "latitude_degrees": -2.319e-05,
+          "longitude_degrees": 67.76346789,
+          "retrograde": false,
+          "sign": "Gemini",
+          "sign_index": 2,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": 0.95909706
+        },
+        {
+          "body": "moon",
+          "degree_in_sign": 24.16094523,
+          "distance_au": 0.0025280422,
+          "fact_id": "western.position.moon",
+          "house": 3,
+          "latitude_degrees": -4.71120612,
+          "longitude_degrees": 324.16094523,
+          "retrograde": false,
+          "sign": "Aquarius",
+          "sign_index": 10,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": 13.56747352
+        },
+        {
+          "body": "mercury",
+          "degree_in_sign": 15.53376001,
+          "distance_au": 1.2836452662,
+          "fact_id": "western.position.mercury",
+          "house": 7,
+          "latitude_degrees": 1.37076372,
+          "longitude_degrees": 75.53376001,
+          "retrograde": false,
+          "sign": "Gemini",
+          "sign_index": 2,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": 2.13248231
+        },
+        {
+          "body": "venus",
+          "degree_in_sign": 9.42087783,
+          "distance_au": 1.3447339915,
+          "fact_id": "western.position.venus",
+          "house": 8,
+          "latitude_degrees": 1.71155107,
+          "longitude_degrees": 99.42087783,
+          "retrograde": false,
+          "sign": "Cancer",
+          "sign_index": 3,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": 1.19448962
+        },
+        {
+          "body": "mars",
+          "degree_in_sign": 22.43292023,
+          "distance_au": 0.563987703,
+          "fact_id": "western.position.mars",
+          "house": 2,
+          "latitude_degrees": -2.69132216,
+          "longitude_degrees": 292.43292023,
+          "retrograde": false,
+          "sign": "Capricorn",
+          "sign_index": 9,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": 0.12636074
+        },
+        {
+          "body": "jupiter",
+          "degree_in_sign": 19.85825383,
+          "distance_au": 5.1122326545,
+          "fact_id": "western.position.jupiter",
+          "house": 4,
+          "latitude_degrees": -1.08447207,
+          "longitude_degrees": 349.85825383,
+          "retrograde": false,
+          "sign": "Pisces",
+          "sign_index": 11,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": 0.1285312
+        },
+        {
+          "body": "saturn",
+          "degree_in_sign": 6.30926064,
+          "distance_au": 8.9789324141,
+          "fact_id": "western.position.saturn",
+          "house": 1,
+          "latitude_degrees": 2.03292565,
+          "longitude_degrees": 246.30926064,
+          "retrograde": true,
+          "sign": "Sagittarius",
+          "sign_index": 8,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": -0.07436123
+        },
+        {
+          "body": "uranus",
+          "degree_in_sign": 20.91201681,
+          "distance_au": 18.1571917089,
+          "fact_id": "western.position.uranus",
+          "house": 1,
+          "latitude_degrees": -0.08803145,
+          "longitude_degrees": 260.91201681,
+          "retrograde": true,
+          "sign": "Sagittarius",
+          "sign_index": 8,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": -0.03952547
+        },
+        {
+          "body": "neptune",
+          "degree_in_sign": 5.14621383,
+          "distance_au": 29.3427020634,
+          "fact_id": "western.position.neptune",
+          "house": 2,
+          "latitude_degrees": 1.10902806,
+          "longitude_degrees": 275.14621383,
+          "retrograde": true,
+          "sign": "Capricorn",
+          "sign_index": 9,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": -0.02307456
+        },
+        {
+          "body": "pluto",
+          "degree_in_sign": 5.10740117,
+          "distance_au": 28.8969599391,
+          "fact_id": "western.position.pluto",
+          "house": 12,
+          "latitude_degrees": 16.99213633,
+          "longitude_degrees": 215.10740117,
+          "retrograde": true,
+          "sign": "Scorpio",
+          "sign_index": 7,
+          "source_ids": [
+            "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+          ],
+          "speed_degrees_per_day": -0.02253193
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A life event is guaranteed.",
+    "An unsupported house system was silently substituted."
+  ],
+  "lineage": "tropical-geocentric-v0.1",
+  "must_match_rules": [
+    "WESTERN-CAL-POSITION-001",
+    "WESTERN-CAL-ANGLES-001",
+    "WESTERN-HOUSE-EQUAL-001",
+    "WESTERN-ASPECT-MAJOR-001",
+    "WESTERN-INTERPRET-STRUCTURE-001"
+  ],
+  "normalized_input": {
+    "coordinate_frame": "geocentric_true_ecliptic_of_date",
+    "fold": 0,
+    "house_system": "equal",
+    "latitude": 31.2304,
+    "local_datetime": "1986-05-29T19:30:00+09:00",
+    "longitude": 121.4737,
+    "timezone": "Asia/Shanghai",
+    "utc_datetime": "1986-05-29T10:30:00Z",
+    "zodiac": "tropical"
+  },
+  "raw_input": {
+    "house_system": "equal",
+    "latitude": 31.2304,
+    "local_datetime": "1986-05-29T19:30:00",
+    "longitude": 121.4737,
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression fixture; independent practitioner sign-off remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-astronomy-engine-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "Pinned 2.1.19 calculation",
+      "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001"
+    },
+    {
+      "locator": "Tropical house and aspect contract",
+      "source_id": "SRC-WESTERN-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "western-astrology",
+  "title": "Tropical natal calculation 002"
+}

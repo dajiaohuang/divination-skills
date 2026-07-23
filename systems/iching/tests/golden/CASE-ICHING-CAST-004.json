@@ -1,0 +1,224 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-ICHING-CAST-004",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "line_values": [
+      8,
+      8,
+      8,
+      7,
+      8,
+      9
+    ]
+  },
+  "expected_output": {
+    "audit": {
+      "cast_id": "ac5ef14f0ac9263d26fdf7db2e6281f98144a368ab557e8e813d6e6db42183bd"
+    },
+    "computed_facts": {
+      "changed_hexagram": {
+        "english": "Enthusiasm",
+        "hanzi": "豫",
+        "lines_bottom_to_top": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "lower_trigram": {
+          "hanzi": "坤",
+          "id": "kun",
+          "image": "earth"
+        },
+        "number": 16,
+        "pinyin": "Yu",
+        "project_themes": [
+          "current structure: enthusiasm",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "震",
+          "id": "zhen",
+          "image": "thunder"
+        }
+      },
+      "lines": [
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.001",
+          "moving": false,
+          "polarity": "yin",
+          "position_from_bottom": 1,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            2,
+            3,
+            3
+          ],
+          "fact_id": "iching.cast.line.002",
+          "moving": false,
+          "polarity": "yin",
+          "position_from_bottom": 2,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.003",
+          "moving": false,
+          "polarity": "yin",
+          "position_from_bottom": 3,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yang",
+          "coins": [
+            2,
+            2,
+            3
+          ],
+          "fact_id": "iching.cast.line.004",
+          "moving": false,
+          "polarity": "yang",
+          "position_from_bottom": 4,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 7
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            2
+          ],
+          "fact_id": "iching.cast.line.005",
+          "moving": false,
+          "polarity": "yin",
+          "position_from_bottom": 5,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 8
+        },
+        {
+          "changed_polarity": "yin",
+          "coins": [
+            3,
+            3,
+            3
+          ],
+          "fact_id": "iching.cast.line.006",
+          "moving": true,
+          "polarity": "yang",
+          "position_from_bottom": 6,
+          "source_ids": [
+            "SRC-ICHING-PROJECT-SPEC-001"
+          ],
+          "value": 9
+        }
+      ],
+      "moving_line_positions": [
+        6
+      ],
+      "primary_hexagram": {
+        "english": "Progress",
+        "hanzi": "晋",
+        "lines_bottom_to_top": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "lower_trigram": {
+          "hanzi": "坤",
+          "id": "kun",
+          "image": "earth"
+        },
+        "number": 35,
+        "pinyin": "Jin",
+        "project_themes": [
+          "current structure: progress",
+          "what can be observed before assuming an outcome",
+          "a small reversible response to the present conditions"
+        ],
+        "source_ids": [
+          "SRC-ICHING-PROJECT-SPEC-001"
+        ],
+        "upper_trigram": {
+          "hanzi": "离",
+          "id": "li",
+          "image": "fire"
+        }
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The cast replaces medical, legal, or financial evidence."
+  ],
+  "lineage": "three-coin-king-wen-structural-v0.1",
+  "must_match_rules": [
+    "ICHING-HEXAGRAM-MAP-001",
+    "ICHING-MOVING-LINES-001",
+    "ICHING-STRUCTURAL-REFLECTION-001"
+  ],
+  "normalized_input": {
+    "line_order": "bottom-to-top",
+    "lineage": "three-coin-king-wen-structural-v0.1",
+    "question_sha256": "21b1a0f85bef487af89d218871422442c6182a149ff15fc6ae5d19a6160f2d00"
+  },
+  "raw_input": {
+    "question": "Synthetic I Ching reflection prompt 4",
+    "seed_hex": "00000000000000000000000000000000000000000000000000000000000000cc"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review only; domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-cast-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "three-coin cast and King Wen mapping",
+      "source_id": "SRC-ICHING-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "iching",
+  "title": "Auditable three-coin cast 004"
+}

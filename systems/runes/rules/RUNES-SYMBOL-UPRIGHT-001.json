@@ -1,0 +1,14 @@
+{
+  "rule_id": "RUNES-SYMBOL-UPRIGHT-001",
+  "title": "Use project keywords without reversal for each rune",
+  "system": "runes",
+  "lineage": "elder-futhark-project-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "symbol.orientation", "operator": "eq", "value": "upright" }],
+  "conclusions": [{ "finding_type": "runes.symbol-theme", "output_path": "derived_findings.symbol", "value": "upright_only", "confidence": "low" }],
+  "priority": 700,
+  "sources": [{ "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "Per-rune keyword data", "support_type": "direct" }],
+  "tests": ["CASE-RUNES-DRAW-001"]
+}

@@ -1,0 +1,512 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-ZIWEI-NATAL-003",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "five_elements_class": "木三局",
+    "time_index": 2
+  },
+  "expected_output": {
+    "computed_facts": {
+      "body_palace_branch": "戌",
+      "body_ruler": "文昌",
+      "bureau_number": 3,
+      "chinese_date": "庚辰年 庚寅时",
+      "five_elements_class": "木三局",
+      "lunar_date": "2000年七月十七",
+      "palaces": [
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 52,
+            "start_age": 43
+          },
+          "earthlyBranch": "寅",
+          "fact_id": "ziwei.palace.000",
+          "heavenlyStem": "戊",
+          "index": 0,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.000.majorStars.001",
+              "mutagen": "权",
+              "name": "武曲",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.000.majorStars.002",
+              "mutagen": null,
+              "name": "天府",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "name": "财帛",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 42,
+            "start_age": 33
+          },
+          "earthlyBranch": "卯",
+          "fact_id": "ziwei.palace.001",
+          "heavenlyStem": "己",
+          "index": 1,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.001.majorStars.001",
+              "mutagen": "禄",
+              "name": "太阳",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.001.majorStars.002",
+              "mutagen": "科",
+              "name": "太阴",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "name": "子女",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 32,
+            "start_age": 23
+          },
+          "earthlyBranch": "辰",
+          "fact_id": "ziwei.palace.002",
+          "heavenlyStem": "庚",
+          "index": 2,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.002.majorStars.001",
+              "mutagen": null,
+              "name": "贪狼",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "name": "夫妻",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 22,
+            "start_age": 13
+          },
+          "earthlyBranch": "巳",
+          "fact_id": "ziwei.palace.003",
+          "heavenlyStem": "辛",
+          "index": 3,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.003.majorStars.001",
+              "mutagen": null,
+              "name": "天机",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.003.majorStars.002",
+              "mutagen": null,
+              "name": "巨门",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.003.minorStars.001",
+              "mutagen": null,
+              "name": "右弼",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "name": "兄弟",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 12,
+            "start_age": 3
+          },
+          "earthlyBranch": "午",
+          "fact_id": "ziwei.palace.004",
+          "heavenlyStem": "壬",
+          "index": 4,
+          "isBodyPalace": false,
+          "isOriginalPalace": true,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.004.majorStars.001",
+              "mutagen": null,
+              "name": "紫微",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            },
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.004.majorStars.002",
+              "mutagen": null,
+              "name": "天相",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "name": "命宫",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 122,
+            "start_age": 113
+          },
+          "earthlyBranch": "未",
+          "fact_id": "ziwei.palace.005",
+          "heavenlyStem": "癸",
+          "index": 5,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.005.majorStars.001",
+              "mutagen": null,
+              "name": "天梁",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "name": "父母",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 112,
+            "start_age": 103
+          },
+          "earthlyBranch": "申",
+          "fact_id": "ziwei.palace.006",
+          "heavenlyStem": "甲",
+          "index": 6,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.006.majorStars.001",
+              "mutagen": null,
+              "name": "七杀",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.006.minorStars.001",
+              "mutagen": null,
+              "name": "文曲",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "name": "福德",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 102,
+            "start_age": 93
+          },
+          "earthlyBranch": "酉",
+          "fact_id": "ziwei.palace.007",
+          "heavenlyStem": "乙",
+          "index": 7,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [],
+          "minorStars": [],
+          "name": "田宅",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 92,
+            "start_age": 83
+          },
+          "earthlyBranch": "戌",
+          "fact_id": "ziwei.palace.008",
+          "heavenlyStem": "丙",
+          "index": 8,
+          "isBodyPalace": true,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.008.majorStars.001",
+              "mutagen": null,
+              "name": "廉贞",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.008.minorStars.001",
+              "mutagen": null,
+              "name": "文昌",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "name": "官禄",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 82,
+            "start_age": 73
+          },
+          "earthlyBranch": "亥",
+          "fact_id": "ziwei.palace.009",
+          "heavenlyStem": "丁",
+          "index": 9,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [],
+          "minorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.009.minorStars.001",
+              "mutagen": null,
+              "name": "左辅",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "minor"
+            }
+          ],
+          "name": "仆役",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 72,
+            "start_age": 63
+          },
+          "earthlyBranch": "子",
+          "fact_id": "ziwei.palace.010",
+          "heavenlyStem": "戊",
+          "index": 10,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.010.majorStars.001",
+              "mutagen": null,
+              "name": "破军",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "name": "迁移",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        },
+        {
+          "adjectiveStars": [],
+          "decadal": {
+            "direction": "reverse",
+            "end_age": 62,
+            "start_age": 53
+          },
+          "earthlyBranch": "丑",
+          "fact_id": "ziwei.palace.011",
+          "heavenlyStem": "己",
+          "index": 11,
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "majorStars": [
+            {
+              "brightness": null,
+              "fact_id": "ziwei.palace.011.majorStars.001",
+              "mutagen": "忌",
+              "name": "天同",
+              "source_ids": [
+                "SRC-ZIWEI-PROJECT-SPEC-001"
+              ],
+              "type": "major"
+            }
+          ],
+          "minorStars": [],
+          "name": "疾厄",
+          "source_ids": [
+            "SRC-ZIWEI-PROJECT-SPEC-001"
+          ]
+        }
+      ],
+      "raw_dates": {
+        "lunar_day": 17,
+        "lunar_month": 7,
+        "lunar_year": 2000,
+        "year_branch": "辰",
+        "year_stem": "庚"
+      },
+      "solar_date": "2000-08-16",
+      "soul_palace_branch": "午",
+      "soul_ruler": "破军",
+      "time_label": "寅",
+      "time_range": "03:00-04:59",
+      "western_sign": "狮子",
+      "zodiac": "龙"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "The calculation-gender parameter was inferred as identity."
+  ],
+  "lineage": "project-native-ziwei-foundation-v0.1",
+  "must_match_rules": [
+    "ZIWEI-NATIVE-NATAL-001",
+    "ZIWEI-TIME-INDEX-001",
+    "ZIWEI-STRUCTURAL-BOUNDARY-001"
+  ],
+  "normalized_input": {
+    "calculation_gender": "female",
+    "calendar_leap_month": false,
+    "fold": 0,
+    "lineage": "project-native-ziwei-foundation-v0.1",
+    "local_datetime": "2000-08-16T03:20:00+08:00",
+    "time_index": 2,
+    "timezone": "Asia/Shanghai",
+    "utc_datetime": "2000-08-15T19:20:00Z"
+  },
+  "raw_input": {
+    "calculation_gender": "female",
+    "local_datetime": "2000-08-16T03:20:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic deterministic regression review; independent Ziwei expert comparison remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "project-native-regression-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "project-native structural calculation",
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "ziwei",
+  "title": "Project-native Ziwei foundation chart 003"
+}

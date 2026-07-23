@@ -1,0 +1,29 @@
+name: Rule proposal
+description: Propose or revise a structured divination rule
+title: "rule: "
+labels: ["rule", "domain-review"]
+body:
+  - type: input
+    id: rule_id
+    attributes:
+      label: Rule ID
+    validations:
+      required: true
+  - type: input
+    id: source_id
+    attributes:
+      label: Accepted source ID and precise locator
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Conditions, conclusion, and exceptions
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Positive, negative, and conflict cases
+    validations:
+      required: true

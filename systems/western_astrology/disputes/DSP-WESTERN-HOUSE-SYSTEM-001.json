@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-WESTERN-HOUSE-SYSTEM-001",
+  "title": "Use whole-sign or equal houses",
+  "system": "western-astrology",
+  "topic": "house system",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "tropical-geocentric-whole-sign-v0.1",
+      "summary": "Start house one at the beginning of the Ascendant sign and use twelve sign-aligned houses.",
+      "rule_ids": ["WESTERN-HOUSE-WHOLE-001"],
+      "sources": [{ "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "whole-sign house contract" }]
+    },
+    {
+      "lineage": "tropical-geocentric-equal-v0.1",
+      "summary": "Start house one at the exact Ascendant and advance in thirty-degree intervals.",
+      "rule_ids": ["WESTERN-HOUSE-EQUAL-001"],
+      "sources": [{ "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "equal-house contract" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "tropical-geocentric-whole-sign-v0.1",
+    "rationale": "Whole sign is the explicit default; equal houses require an input override.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "House placements depend on the recorded whole-sign or equal-house selection.",
+  "sources": [
+    { "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "whole-sign house contract" },
+    { "source_id": "SRC-WESTERN-ASTRONOMY-ENGINE-001", "locator": "angle calculation dependency" }
+  ]
+}

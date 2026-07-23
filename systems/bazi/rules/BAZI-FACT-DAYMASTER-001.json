@@ -1,0 +1,23 @@
+{
+  "rule_id": "BAZI-FACT-DAYMASTER-001",
+  "title": "Identify the day master from the day pillar stem",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.day_master.name", "operator": "exists" }],
+  "conclusions": [{
+    "finding_type": "bazi.fact-label",
+    "output_path": "derived_findings.day_master",
+    "value": "day_pillar_stem",
+    "confidence": "deterministic"
+  }],
+  "priority": 700,
+  "sources": [{
+    "source_id": "SRC-BAZI-LUNARPY-001",
+    "locator": "Pinned EightChar day-pillar API",
+    "support_type": "direct"
+  }],
+  "tests": ["CASE-BAZI-STANDARD-001"]
+}

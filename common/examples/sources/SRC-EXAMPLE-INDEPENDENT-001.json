@@ -1,0 +1,38 @@
+{
+  "source_id": "SRC-EXAMPLE-INDEPENDENT-001",
+  "title": "Independent example comparator",
+  "creators": [{ "name": "Fixture Reviewer", "role": "author" }],
+  "source_type": "dataset",
+  "language": "en",
+  "publication_date": "2026-07-23",
+  "edition_or_version": "1",
+  "locators": [{ "kind": "local", "value": "common/examples/golden-cases", "stable": true }],
+  "retrieved_at": "2026-07-23",
+  "license": {
+    "identifier": "project-authored-example",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "example-fixture",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Synthetic project-authored fixture."
+  },
+  "usage_status": "tested",
+  "systems": ["example"],
+  "lineages": ["alternative"],
+  "quality": {
+    "authority": "scholarly",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Synthetic independent comparison fixture."
+  }
+}

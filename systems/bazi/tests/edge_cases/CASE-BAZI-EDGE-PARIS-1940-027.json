@@ -1,0 +1,55 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-BAZI-EDGE-PARIS-1940-027",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "expected_intermediate": {},
+  "expected_output": {
+    "computed_facts": {
+      "pillars": {
+        "day": "己丑",
+        "hour": "庚午",
+        "month": "壬午",
+        "year": "庚辰"
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed life event is guaranteed.",
+    "An unsupported true-solar-time correction was silently applied."
+  ],
+  "lineage": "ziping-calculation-baseline",
+  "must_match_rules": [
+    "BAZI-TIME-CIVIL-001",
+    "BAZI-CAL-DAY-001"
+  ],
+  "normalized_input": {
+    "day_boundary": "midnight",
+    "timezone": "Europe/Paris"
+  },
+  "raw_input": {
+    "local_datetime": "1940-06-15T12:00:00",
+    "timezone": "Europe/Paris"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic development case checked against pinned APIs; not expert interpretation review.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "pinned-comparator-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "ZoneInfo fold and transition behavior",
+      "source_id": "SRC-TIME-PYTHON-ZONEINFO-001"
+    },
+    {
+      "locator": "EightChar API v1.4.8",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    }
+  ],
+  "system": "bazi",
+  "title": "Historical or calendar boundary case in Europe/Paris"
+}

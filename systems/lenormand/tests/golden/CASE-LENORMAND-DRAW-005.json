@@ -1,0 +1,91 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-LENORMAND-DRAW-005",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "0d7f96786467179104354297c0c5b2b6caf019d170f7dc50b0bc2a47ee94cdb1"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "09d2158ba7da17a40c0a40bd1a89f3f25b49a50235f7b070355ed2a0c1c83bc3"
+    },
+    "computed_facts": {
+      "spread": "three-card",
+      "symbols": [
+        {
+          "fact_id": "lenormand.draw.symbol.001",
+          "name": "Birds",
+          "orientation": "upright",
+          "position": "context",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.12.birds",
+          "symbol_index": 11
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.002",
+          "name": "Stars",
+          "orientation": "upright",
+          "position": "development",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.16.stars",
+          "symbol_index": 15
+        },
+        {
+          "fact_id": "lenormand.draw.symbol.003",
+          "name": "Heart",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.24.heart",
+          "symbol_index": 23
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The symbols establish a hidden fact about a third party."
+  ],
+  "lineage": "lenormand-36-project-v0.1",
+  "must_match_rules": [
+    "LENORMAND-CARD-UPRIGHT-001",
+    "LENORMAND-POSITION-001",
+    "LENORMAND-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "lenormand-36-project-v0.1",
+    "question_sha256": "47ef2b371c363fb5248d1b899221719b2cf212c2913961677d1e04cade699d9b",
+    "spread": "three-card"
+  },
+  "raw_input": {
+    "allow_reversals": false,
+    "question": "Synthetic Lenormand reflection prompt 5",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000005",
+    "spread": "three-card"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; not evidence of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "text-only 36-symbol project deck and draw contract",
+      "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "lenormand",
+  "title": "Auditable Lenormand draw 005"
+}

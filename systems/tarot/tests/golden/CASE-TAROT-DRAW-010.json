@@ -1,0 +1,69 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-TAROT-DRAW-010",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "5e2d1b53933bb3c3faadd77ea255c1779c30e8d13da7839fffb02d74d98821a2"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "12b6300f7fd15494bece75ffd7b405fa412e5b3a3b8703d255ba57a5489d965d"
+    },
+    "computed_facts": {
+      "cards": [
+        {
+          "card_id": "tarot.rws.major-08-strength",
+          "card_index": 8,
+          "fact_id": "tarot.draw.card.001",
+          "name": "Strength",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-TAROT-DECK-SPEC-001"
+          ]
+        }
+      ],
+      "spread": "single"
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The cards establish a hidden fact about a third party."
+  ],
+  "lineage": "rws-text-baseline-v0.1",
+  "must_match_rules": [
+    "TAROT-DRAW-UNIQUE-001",
+    "TAROT-POSITION-001",
+    "TAROT-NARRATIVE-001",
+    "TAROT-ORIENTATION-UPRIGHT-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": true,
+    "question_sha256": "06a43ed2eb578ab23309c4af6e923c7503b0c196a98d83efde128153562dc538",
+    "spread": "single"
+  },
+  "raw_input": {
+    "allow_reversals": true,
+    "question": "Synthetic reflection prompt 10",
+    "seed_hex": "000000000000000000000000000000000000000000000000000000000000000a",
+    "spread": "single"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic deterministic regression case; not proof of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "rws-78.json and auditable draw contract",
+      "source_id": "SRC-TAROT-DECK-SPEC-001"
+    }
+  ],
+  "system": "tarot",
+  "title": "Auditable Tarot draw 010"
+}

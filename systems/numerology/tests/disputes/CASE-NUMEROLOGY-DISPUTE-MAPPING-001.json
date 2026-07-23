@@ -1,0 +1,147 @@
+{
+  "allowed_disagreements": [
+    {
+      "allowed_values": [
+        "pythagorean-a1-i9-repeat",
+        "chaldean"
+      ],
+      "dispute_id": "DSP-NUMEROLOGY-MAPPING-001",
+      "field_path": "normalized_input.mapping"
+    }
+  ],
+  "case_id": "CASE-NUMEROLOGY-DISPUTE-MAPPING-001",
+  "category": "dispute",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "engine": "divination-skills-numerology",
+    "engine_version": "0.1.0"
+  },
+  "expected_output": {
+    "computed_facts": {
+      "birthday": {
+        "fact_id": "numerology.birthday",
+        "master_number": false,
+        "raw_total": 1,
+        "reduction_steps": [
+          1
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "initiative",
+        "value": 1
+      },
+      "expression": {
+        "fact_id": "numerology.expression",
+        "master_number": false,
+        "raw_total": 73,
+        "reduction_steps": [
+          73,
+          10,
+          1
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "initiative",
+        "value": 1
+      },
+      "life_path": {
+        "fact_id": "numerology.life_path",
+        "master_number": false,
+        "raw_total": 4,
+        "reduction_steps": [
+          4
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "structure",
+        "value": 4
+      },
+      "maturity": {
+        "fact_id": "numerology.maturity",
+        "master_number": false,
+        "raw_total": 5,
+        "reduction_steps": [
+          5
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "change",
+        "value": 5
+      },
+      "personality": {
+        "fact_id": "numerology.personality",
+        "master_number": false,
+        "raw_total": 48,
+        "reduction_steps": [
+          48,
+          12,
+          3
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "expression",
+        "value": 3
+      },
+      "soul_urge": {
+        "fact_id": "numerology.soul_urge",
+        "master_number": false,
+        "raw_total": 25,
+        "reduction_steps": [
+          25,
+          7
+        ],
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ],
+        "theme": "inquiry",
+        "value": 7
+      }
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future or life event is guaranteed.",
+    "An unstated lineage or calculation policy was silently substituted."
+  ],
+  "lineage": "pythagorean-latin-project-v0.1",
+  "must_match_rules": [
+    "NUMEROLOGY-CAL-DATE-001",
+    "NUMEROLOGY-CAL-NAME-001",
+    "NUMEROLOGY-INTERPRET-THEME-001"
+  ],
+  "normalized_input": {
+    "birth_date": "2000-01-01",
+    "mapping": "pythagorean-a1-i9-repeat",
+    "masters": [
+      11,
+      22,
+      33
+    ],
+    "name_letters": "SYNTHETICEXAMPLE"
+  },
+  "raw_input": {
+    "birth_date": "2000-01-01",
+    "name": "Synthetic Example"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic regression review; independent domain acceptance remains pending.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-extension-review",
+      "role": "quality"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "v0.1 engine and lineage contract",
+      "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "numerology",
+  "title": "Pythagorean mapping selection"
+}

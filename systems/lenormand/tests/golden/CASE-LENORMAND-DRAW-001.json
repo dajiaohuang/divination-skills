@@ -1,0 +1,69 @@
+{
+  "allowed_disagreements": [],
+  "case_id": "CASE-LENORMAND-DRAW-001",
+  "category": "standard",
+  "data_classification": "synthetic",
+  "expected_intermediate": {
+    "deck_sha256": "0d7f96786467179104354297c0c5b2b6caf019d170f7dc50b0bc2a47ee94cdb1"
+  },
+  "expected_output": {
+    "audit": {
+      "draw_id": "fb8fba199b08ca7f9d6997b9955865631d24085c5539479417f18c6bab9c60a3"
+    },
+    "computed_facts": {
+      "spread": "single",
+      "symbols": [
+        {
+          "fact_id": "lenormand.draw.symbol.001",
+          "name": "Man",
+          "orientation": "upright",
+          "position": "focus",
+          "source_ids": [
+            "SRC-LENORMAND-PROJECT-SPEC-001"
+          ],
+          "symbol_id": "lenormand.28.man",
+          "symbol_index": 27
+        }
+      ]
+    }
+  },
+  "forbidden_conclusions": [
+    "A fixed future event is guaranteed.",
+    "The symbols establish a hidden fact about a third party."
+  ],
+  "lineage": "lenormand-36-project-v0.1",
+  "must_match_rules": [
+    "LENORMAND-CARD-UPRIGHT-001",
+    "LENORMAND-POSITION-001",
+    "LENORMAND-SEQUENCE-001"
+  ],
+  "normalized_input": {
+    "allow_reversals": false,
+    "lineage": "lenormand-36-project-v0.1",
+    "question_sha256": "5b3f9190d6d7255b9dbd72e118d560ed465b37fdea186fd0c529067750ba5c9b",
+    "spread": "single"
+  },
+  "raw_input": {
+    "allow_reversals": false,
+    "question": "Synthetic Lenormand reflection prompt 1",
+    "seed_hex": "0000000000000000000000000000000000000000000000000000000000000001",
+    "spread": "single"
+  },
+  "reviewers": [
+    {
+      "decision": "accepted",
+      "notes": "Synthetic replay review; not evidence of predictive validity.",
+      "reviewed_at": "2026-07-23",
+      "reviewer_id": "deterministic-draw-review",
+      "role": "calculation"
+    }
+  ],
+  "sources": [
+    {
+      "locator": "text-only 36-symbol project deck and draw contract",
+      "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    }
+  ],
+  "system": "lenormand",
+  "title": "Auditable Lenormand draw 001"
+}

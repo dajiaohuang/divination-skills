@@ -1,0 +1,19 @@
+{
+  "rule_id": "TAROT-DRAW-UNIQUE-001",
+  "title": "Draw cards without replacement",
+  "system": "tarot",
+  "lineage": "rws-text-baseline-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "audit.algorithm", "operator": "eq", "value": "sha256-counter-rejection-v1" }],
+  "conclusions": [{
+    "finding_type": "tarot.draw-policy",
+    "output_path": "derived_findings.draw_policy",
+    "value": "without_replacement",
+    "confidence": "deterministic"
+  }],
+  "priority": 900,
+  "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "Auditable draw contract", "support_type": "direct" }],
+  "tests": ["CASE-TAROT-DRAW-001"]
+}

@@ -1,0 +1,19 @@
+{
+  "rule_id": "TAROT-NARRATIVE-001",
+  "title": "Read multiple cards as an ordered reflective sequence",
+  "system": "tarot",
+  "lineage": "rws-text-baseline-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [{ "fact_path": "computed_facts.cards", "operator": "exists" }],
+  "conclusions": [{
+    "finding_type": "tarot.narrative",
+    "output_path": "derived_findings.sequence",
+    "value": "reflective_not_predictive",
+    "confidence": "low"
+  }],
+  "priority": 600,
+  "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "Bounded narrative policy", "support_type": "direct" }],
+  "tests": ["CASE-TAROT-DRAW-003"]
+}

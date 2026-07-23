@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-NUMEROLOGY-MAPPING-001",
+  "title": "Use Pythagorean or Chaldean letter mapping",
+  "system": "numerology",
+  "topic": "letter-to-number mapping",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "pythagorean-latin-project-v0.1",
+      "summary": "Map normalized Latin letters through repeating values 1–9.",
+      "rule_ids": ["NUMEROLOGY-CAL-NAME-001"],
+      "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "Pythagorean mapping table" }]
+    },
+    {
+      "lineage": "chaldean-not-implemented",
+      "summary": "Use a different 1–8 letter mapping and interpretation lineage.",
+      "rule_ids": ["NUMEROLOGY-INTERPRET-THEME-001"],
+      "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "explicitly unsupported mapping" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "pythagorean-latin-project-v0.1",
+    "rationale": "Only the fixed Pythagorean mapping has a calculation contract and tests.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "All name numbers use the Pythagorean Latin mapping; Chaldean values are not mixed in.",
+  "sources": [
+    { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "Pythagorean mapping table" },
+    { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "scope exclusions" }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "default_policy": {
+    "rationale": "Explicit input avoids silently assigning a sensitive attribute and exposes the lineage choice.",
+    "selected_lineage": "ziping-calculation-baseline",
+    "user_disclosure_required": true
+  },
+  "dispute_id": "DSP-BAZI-LUCK-DIRECTION-001",
+  "positions": [
+    {
+      "lineage": "ziping-calculation-baseline",
+      "rule_ids": [
+        "BAZI-LUCK-DIR-001"
+      ],
+      "sources": [
+        {
+          "locator": "Pinned v1.4.8 public API and implementation",
+          "source_id": "SRC-BAZI-LUNARPY-001"
+        }
+      ],
+      "summary": "Require callers to select forward or reverse explicitly."
+    },
+    {
+      "lineage": "traditional-gender-polarity",
+      "rule_ids": [
+        "BAZI-LUCK-DIR-002"
+      ],
+      "sources": [
+        {
+          "locator": "Pinned v1.4.8 public API and implementation",
+          "source_id": "SRC-BAZI-LUNARPY-001"
+        }
+      ],
+      "summary": "Infer direction from recorded sex and year-stem polarity."
+    }
+  ],
+  "sources": [
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    },
+    {
+      "locator": "Pinned v1.4.8 public API and implementation",
+      "source_id": "SRC-BAZI-LUNARPY-001"
+    }
+  ],
+  "status": "resolved_for_product",
+  "system": "bazi",
+  "title": "Explicit or inferred luck-cycle direction",
+  "topic": "luck-cycle direction",
+  "user_disclosure": "Luck-cycle direction must be selected explicitly in v0.1."
+}

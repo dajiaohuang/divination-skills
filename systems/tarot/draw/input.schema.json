@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/systems/tarot/draw/input.schema.json",
+  "title": "Tarot draw input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spread"],
+  "properties": {
+    "spread": { "type": "string", "enum": ["single", "situation-challenge-guidance", "option-a-option-b-focus"] },
+    "question": { "type": "string", "maxLength": 2000 },
+    "seed_hex": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+    "allow_reversals": { "type": "boolean" }
+  }
+}
