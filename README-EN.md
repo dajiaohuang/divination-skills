@@ -4,7 +4,7 @@
 
 **A multi-system, verifiable, and traceable computation and AI Skill framework**
 
-[中文](README.md) · [Implementation status](docs/IMPLEMENTATION_STATUS.md) · [Extension roadmap](docs/EXTENSION_PLAN.md) · [Completion audit](docs/COMPLETION_AUDIT.md)
+[中文](README.md) · [Implementation status](docs/IMPLEMENTATION_STATUS.md) · [Extension roadmap](docs/EXTENSION_PLAN.md) · [Completion audit](docs/COMPLETION_AUDIT.md) · [Engine and Skill audit](docs/ENGINE_SKILL_AUDIT_2026-07-24.md)
 
 [![CI](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
@@ -478,6 +478,7 @@ release artifact. Ordinary builds are technical validation packages.
 - Security reporting: [SECURITY.md](SECURITY.md)
 - Clean-room and source policies: [docs/policies](docs/policies)
 - Complete implementation evidence: [docs/COMPLETION_AUDIT.md](docs/COMPLETION_AUDIT.md)
+- Engine and Skill audit: [docs/ENGINE_SKILL_AUDIT_2026-07-24.md](docs/ENGINE_SKILL_AUDIT_2026-07-24.md)
 
 Project-authored code, rules, documentation, and Skill content are licensed under the
 [Apache License 2.0](LICENSE). Third-party Python packages, external literature, and reference

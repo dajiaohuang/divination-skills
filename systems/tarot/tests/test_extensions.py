@@ -106,6 +106,32 @@ def test_journal_requires_consent_omits_raw_question_and_counts(tmp_path: Path) 
     assert "predictive accuracy" in stats["limitations"][0]
 
 
+def test_journal_rejects_wrong_tag_and_timestamp_types(tmp_path: Path) -> None:
+    journal = tmp_path / "journal.jsonl"
+    draw = draw_cards(
+        {"spread": "situation-challenge-guidance", "seed_hex": "ef" * 32}
+    )
+    with pytest.raises(JournalError) as tags_error:
+        append_entry(
+            journal,
+            draw,
+            reflection="reflection",
+            tags="weekly",  # type: ignore[arg-type]
+            consent_to_store=True,
+        )
+    assert tags_error.value.code == "invalid_tags"
+    with pytest.raises(JournalError) as timestamp_error:
+        append_entry(
+            journal,
+            draw,
+            reflection="reflection",
+            consent_to_store=True,
+            occurred_at=123,  # type: ignore[arg-type]
+        )
+    assert timestamp_error.value.code == "invalid_occurred_at"
+    assert not journal.exists()
+
+
 def test_extension_case_gates_and_no_image_assets() -> None:
     assert len(list((ROOT / "extension_cases" / "spreads").glob("*.json"))) == 50
     disputes = list((ROOT / "extension_cases" / "spread_disputes").glob("*.json"))

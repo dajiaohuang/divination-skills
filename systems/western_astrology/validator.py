@@ -9,6 +9,30 @@ def _angular_delta(left: float, right: float) -> float:
     return abs((left - right + 180) % 360 - 180)
 
 
+def _index_positions(chart: dict[str, Any], label: str) -> dict[str, dict[str, Any]]:
+    positions = chart.get("computed_facts", {}).get("positions", [])
+    if not isinstance(positions, list) or not positions:
+        raise ValueError(f"{label} chart must contain positions.")
+    indexed: dict[str, dict[str, Any]] = {}
+    for position in positions:
+        if not isinstance(position, dict):
+            raise ValueError(f"{label} chart positions must be objects.")
+        body = position.get("body")
+        longitude = position.get("longitude_degrees")
+        if not isinstance(body, str) or not body:
+            raise ValueError(f"{label} chart contains an invalid body.")
+        if body in indexed:
+            raise ValueError(f"{label} chart contains duplicate body: {body}")
+        if (
+            isinstance(longitude, bool)
+            or not isinstance(longitude, (int, float))
+            or not 0 <= longitude < 360
+        ):
+            raise ValueError(f"{label} chart contains an invalid longitude for {body}.")
+        indexed[body] = position
+    return indexed
+
+
 def compare_chart(
     native: dict[str, Any],
     imported: dict[str, Any],
@@ -17,14 +41,8 @@ def compare_chart(
 ) -> dict[str, Any]:
     if not 0 <= longitude_tolerance_degrees <= 1:
         raise ValueError("longitude_tolerance_degrees must be between 0 and 1.")
-    native_positions = {
-        item["body"]: item for item in native.get("computed_facts", {}).get("positions", [])
-    }
-    imported_positions = {
-        item["body"]: item for item in imported.get("computed_facts", {}).get("positions", [])
-    }
-    if not native_positions:
-        raise ValueError("Native chart must contain positions.")
+    native_positions = _index_positions(native, "Native")
+    imported_positions = _index_positions(imported, "Imported")
     differences = []
     for body in sorted(set(native_positions) | set(imported_positions)):
         if body not in native_positions:

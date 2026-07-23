@@ -41,6 +41,11 @@ def append_entry(
             "invalid_reflection",
             "reflection must contain 1 to 10000 characters.",
         )
+    if tags is not None and not isinstance(tags, list):
+        raise JournalError(
+            "invalid_tags",
+            "tags must be a list of non-empty strings of at most 64 characters.",
+        )
     raw_tags = tags or []
     if any(not isinstance(tag, str) or not tag or len(tag) > 64 for tag in raw_tags):
         raise JournalError(
@@ -48,6 +53,11 @@ def append_entry(
             "tags must be non-empty strings of at most 64 characters.",
         )
     clean_tags = sorted(set(raw_tags))
+    if occurred_at is not None and not isinstance(occurred_at, str):
+        raise JournalError(
+            "invalid_occurred_at",
+            "occurred_at must be an ISO 8601 string with a UTC offset.",
+        )
     instant = occurred_at or datetime.now(UTC).isoformat()
     try:
         parsed = datetime.fromisoformat(instant.replace("Z", "+00:00"))

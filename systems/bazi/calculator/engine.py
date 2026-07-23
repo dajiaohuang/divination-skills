@@ -338,7 +338,7 @@ def normalize_input(payload: dict[str, Any]) -> NormalizedBirth:
         )
 
     fold = payload.get("fold")
-    if fold is not None and not isinstance(fold, int):
+    if fold is not None and (isinstance(fold, bool) or not isinstance(fold, int)):
         raise CalculationError("invalid_fold", "fold must be 0 or 1.")
     local, selected_fold = _strict_localize(naive, timezone_name, fold)
 
@@ -464,6 +464,18 @@ def _solar_year(instant_utc: datetime) -> int:
     beijing_year = instant_utc.astimezone(TERM_REFERENCE_ZONE).year
     li_chun = next(term for term in _jie_terms_for_year(beijing_year) if term.name == "立春")
     return beijing_year if instant_utc >= li_chun.utc else beijing_year - 1
+
+
+def solar_year_boundaries(solar_year: int) -> tuple[SolarTerm, SolarTerm]:
+    """Return the exact UTC Li Chun interval for one solar-term year."""
+
+    start = next(
+        term for term in _jie_terms_for_year(solar_year) if term.name == "立春"
+    )
+    end = next(
+        term for term in _jie_terms_for_year(solar_year + 1) if term.name == "立春"
+    )
+    return start, end
 
 
 def _pillar_index(stem_index: int, branch_index: int) -> int:

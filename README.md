@@ -4,7 +4,7 @@
 
 **多体系、可验证、可追溯的占卜计算与 AI Skill 工程**
 
-[English](README-EN.md) · [实施状态](docs/IMPLEMENTATION_STATUS.md) · [扩展路线](docs/EXTENSION_PLAN.md) · [完成审计](docs/COMPLETION_AUDIT.md)
+[English](README-EN.md) · [实施状态](docs/IMPLEMENTATION_STATUS.md) · [扩展路线](docs/EXTENSION_PLAN.md) · [完成审计](docs/COMPLETION_AUDIT.md) · [引擎与 Skill 审计](docs/ENGINE_SKILL_AUDIT_2026-07-24.md)
 
 [![CI](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
@@ -454,5 +454,6 @@ uv run divination-build . --system all --output dist --release
 - 安全报告：[SECURITY.md](SECURITY.md)
 - Clean-room 与来源政策：[docs/policies](docs/policies)
 - 完整实现证据：[docs/COMPLETION_AUDIT.md](docs/COMPLETION_AUDIT.md)
+- 引擎与 Skill 逐项审计：[docs/ENGINE_SKILL_AUDIT_2026-07-24.md](docs/ENGINE_SKILL_AUDIT_2026-07-24.md)
 
 项目自有代码、规则、文档和 Skill 内容采用 [Apache License 2.0](LICENSE)。第三方 Python 包、外部文献和参考项目继续遵守各自许可证；Apache-2.0 不替代专业领域、版权、隐私或高影响用途审核。

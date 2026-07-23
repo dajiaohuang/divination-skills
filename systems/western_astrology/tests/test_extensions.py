@@ -55,6 +55,16 @@ def test_reader_accepts_json_and_csv() -> None:
     assert len(csv_import["imported_chart"]["computed_facts"]["positions"]) == 2
     with pytest.raises(ValueError, match="requires body"):
         read_structured("name,degree\nsun,10\n", format="csv")
+    with pytest.raises(ValueError, match="unique"):
+        read_structured(
+            "body,longitude_degrees\nsun,10\nsun,20\n",
+            format="csv",
+        )
+    with pytest.raises(ValueError, match="outside 1–12"):
+        read_structured(
+            "body,longitude_degrees,house\nsun,10,13\n",
+            format="csv",
+        )
 
 
 def test_validator_uses_tolerance_and_preserves_native() -> None:
@@ -151,6 +161,28 @@ def test_rectifier_requires_hard_events_and_holdout() -> None:
             events=personality,
             interval_minutes=60,
         )
+    invalid_split = _events()
+    invalid_split[0]["split"] = "test"
+    with pytest.raises(ValueError, match="split"):
+        scan_candidates(
+            birth_date="2000-01-01",
+            timezone="UTC",
+            longitude=0.0,
+            latitude=51.4779,
+            events=invalid_split,
+            interval_minutes=60,
+        )
+    duplicate = _events()
+    duplicate[1]["event_id"] = duplicate[0]["event_id"]
+    with pytest.raises(ValueError, match="unique"):
+        scan_candidates(
+            birth_date="2000-01-01",
+            timezone="UTC",
+            longitude=0.0,
+            latitude=51.4779,
+            events=duplicate,
+            interval_minutes=60,
+        )
 
 
 def test_rectifier_returns_intervals_and_no_unique_minute() -> None:
@@ -161,6 +193,11 @@ def test_rectifier_returns_intervals_and_no_unique_minute() -> None:
         latitude=51.4779,
         events=_events(),
         interval_minutes=60,
+    )
+    assert report["event_date_policy"] == "start_date_at_local_noon"
+    assert any(
+        warning["code"] == "event_range_start_policy"
+        for warning in report["validation"]["warnings"]
     )
     assert report["status"] in {"ranked_candidates", "underdetermined"}
     assert len(report["candidates"]) == 24

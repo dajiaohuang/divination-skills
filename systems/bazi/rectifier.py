@@ -44,6 +44,13 @@ def _validate_events(events: list[dict[str, Any]]) -> None:
             raise ValueError("Event end_date precedes start_date.")
         if event["split"] not in {"training", "holdout"}:
             raise ValueError("Event split must be training or holdout.")
+        if event.get("event_type") == "personality":
+            raise ValueError("Soft personality descriptions cannot be rectification events.")
+        if not isinstance(event["event_id"], str) or not event["event_id"].strip():
+            raise ValueError("event_id must be a non-empty string.")
+    event_ids = [event["event_id"] for event in events]
+    if len(event_ids) != len(set(event_ids)):
+        raise ValueError("event_id values must be unique.")
 
 
 def _activation_score(candidate: dict[str, Any], event: dict[str, Any], timezone: str) -> int:
@@ -132,6 +139,7 @@ def scan_candidates(
         "lineage": "ziping-calculation-baseline",
         "birth_date": birth_date,
         "precision": "double_hour_range",
+        "event_date_policy": "start_date_at_local_noon",
         "status": status,
         "candidates": candidates,
         "event_counts": {
@@ -151,6 +159,13 @@ def scan_candidates(
                 {
                     "code": "personality_tiebreaker_forbidden",
                     "message": "Soft personality descriptions are not used as tie-breakers.",
+                },
+                {
+                    "code": "event_range_start_policy",
+                    "message": (
+                        "Each event is calculated at local noon on start_date; end_date "
+                        "is retained only as uncertainty metadata."
+                    ),
                 },
             ],
         },

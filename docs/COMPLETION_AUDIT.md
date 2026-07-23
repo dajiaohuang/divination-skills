@@ -152,9 +152,12 @@ edge_cases = 74
 dispute_cases = 55
 invalid_inputs = 20
 extension_replay_cases = 850
-pytest = 1573 passed
+pytest = 1584 passed
 technical_complete = 12 / 12
 ```
+
+The focused engine and Skill re-audit, confirmed fixes, evidence hierarchy and residual limits are
+recorded in `docs/ENGINE_SKILL_AUDIT_2026-07-24.md`.
 
 ## Terminal release gate
 

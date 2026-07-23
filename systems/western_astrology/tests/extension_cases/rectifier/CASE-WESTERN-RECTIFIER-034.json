@@ -2,7 +2,7 @@
   "case_id": "CASE-WESTERN-RECTIFIER-034",
   "category": "standard",
   "data_classification": "synthetic",
-  "expected_sha256": "eca3fd0ac24a0acc8038dea8e0b81fd1cfcb9ca0ccc627997c040711a036ee4e",
+  "expected_sha256": "b2a0d063a17ad6820c4395a1019a10ea5d421215466e90461d09d531dab9adf6",
   "input": {
     "birth_date": "1993-01-15",
     "events": [

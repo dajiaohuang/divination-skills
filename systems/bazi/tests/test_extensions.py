@@ -62,6 +62,11 @@ def test_reader_accepts_json_and_four_pillar_text() -> None:
     }
     with pytest.raises(ValueError):
         read_structured("甲子 乙丑", format="four_pillar_text")
+    with pytest.raises(ValueError, match="exactly four"):
+        read_structured(
+            "命盘是 " + " ".join(symbols),
+            format="four_pillar_text",
+        )
 
 
 def test_validator_reports_differences_without_mutation() -> None:
@@ -92,6 +97,15 @@ def test_timing_is_deterministic_and_uses_shared_timeline() -> None:
     assert first["active_luck_cycle"] is not None
     assert set(first["period_pillars"]) == {"year", "month"}
     assert first["validation"]["status"] == "valid"
+    year_entry = next(
+        entry for entry in first["timeline"]["entries"] if entry["scope"] == "year"
+    )
+    month_entry = next(
+        entry for entry in first["timeline"]["entries"] if entry["scope"] == "month"
+    )
+    assert year_entry["start"] == "2026-02-03T20:02:08+00:00"
+    assert year_entry["end"] == "2027-02-04T01:46:18+00:00"
+    assert month_entry["start"] != "2026-07-01T00:00:00+08:00"
 
 
 def test_timing_requires_explicit_luck_direction() -> None:
@@ -139,6 +153,22 @@ def test_rectifier_requires_five_events_and_holdout() -> None:
             timezone="Asia/Shanghai",
             events=no_holdout,
         )
+    personality = _events()
+    personality[0]["event_type"] = "personality"
+    with pytest.raises(ValueError, match="personality"):
+        scan_candidates(
+            birth_date="2000-01-01",
+            timezone="Asia/Shanghai",
+            events=personality,
+        )
+    duplicate = _events()
+    duplicate[1]["event_id"] = duplicate[0]["event_id"]
+    with pytest.raises(ValueError, match="unique"):
+        scan_candidates(
+            birth_date="2000-01-01",
+            timezone="Asia/Shanghai",
+            events=duplicate,
+        )
 
 
 def test_rectifier_returns_ranked_ranges_never_a_unique_minute() -> None:
@@ -146,6 +176,11 @@ def test_rectifier_returns_ranked_ranges_never_a_unique_minute() -> None:
         birth_date="2000-01-01",
         timezone="Asia/Shanghai",
         events=_events(),
+    )
+    assert report["event_date_policy"] == "start_date_at_local_noon"
+    assert any(
+        warning["code"] == "event_range_start_policy"
+        for warning in report["validation"]["warnings"]
     )
     assert report["status"] in {"ranked_candidates", "underdetermined"}
     assert len(report["candidates"]) == 13

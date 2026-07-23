@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
@@ -11,21 +10,11 @@ REPO_ROOT = (
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from systems.vedic_astrology.calculator.engine import (  # noqa: E402
-    VedicAstrologyError,
-    calculate_chart,
-)
+from systems.vedic_astrology.lineage_cli import run_lineage_cli  # noqa: E402
 
 
 def main() -> int:
-    try:
-        payload = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
-        payload["lineages"] = ["kp"]
-        print(json.dumps(calculate_chart(payload), ensure_ascii=False, indent=2))
-        return 0
-    except (IndexError, OSError, json.JSONDecodeError, VedicAstrologyError) as exc:
-        print(json.dumps({"error": str(exc)}), file=sys.stderr)
-        return 2
+    return run_lineage_cli("kp", "Calculate the bounded KP stellar identity layer.")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
   "case_id": "CASE-BAZI-TIMING-029",
   "category": "standard",
   "data_classification": "synthetic",
-  "expected_sha256": "897237189aff8c33acfbdc8febf34037147ca16230db6d7478cf0fb270351e44",
+  "expected_sha256": "e3d4d4a9692517fac0624afe5b1cb22f357c47a90c9c387b51581cf365b5c5a6",
   "input": {
     "natal": {
       "day_boundary": "midnight",

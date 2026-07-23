@@ -13,5 +13,5 @@ In v0.3, `primary_hexagram.source_ids` and `changed_hexagram.source_ids` identif
 returns selected logical passage units and edition-aware source locators. `text_included` is always
 false. Edition differences remain `not_collated` until reviewed variant data exists.
 
-Supported policies are `all-moving-lines-v0.2` and `zhu-xi-count-routing-v0.2`. Their selected
+Supported policies are `all-moving-lines-v0.2` and `zhu-xi-count-routing-v0.3`. Their selected
 units are data, not predictions or interpretations.

@@ -9,15 +9,21 @@ from typing import Any
 
 from systems.bazi.calculator.engine import BRANCHES, STEMS
 
-PILLAR_PATTERN = re.compile(
-    rf"([{''.join(STEMS)}][{''.join(BRANCHES)}])"
-)
+PILLAR_PATTERN = re.compile(rf"[{''.join(STEMS)}][{''.join(BRANCHES)}]")
 
 
 def _text_chart(value: str) -> dict[str, Any]:
-    pillars = PILLAR_PATTERN.findall(value)
-    if len(pillars) != 4:
-        raise ValueError("Text import must contain exactly four stem-branch pillars.")
+    pillars = [
+        token
+        for token in re.split(r"[\s,，/|]+", value.strip())
+        if token
+    ]
+    if len(pillars) != 4 or any(
+        PILLAR_PATTERN.fullmatch(pillar) is None for pillar in pillars
+    ):
+        raise ValueError(
+            "Text import must be exactly four delimited stem-branch pillars."
+        )
     return {
         "computed_facts": {
             "pillars": {
@@ -56,6 +62,15 @@ def read_structured(value: str | dict[str, Any], *, format: str = "json") -> dic
     pillars = imported.get("computed_facts", {}).get("pillars")
     if not isinstance(pillars, dict) or set(pillars) != {"year", "month", "day", "hour"}:
         raise ValueError("Imported chart must contain year, month, day, and hour pillars.")
+    for position, pillar in pillars.items():
+        if not isinstance(pillar, dict):
+            raise ValueError(f"Imported {position} pillar must be an object.")
+        stem = pillar.get("stem", {}).get("name")
+        branch = pillar.get("branch", {}).get("name")
+        if stem not in STEMS or branch not in BRANCHES:
+            raise ValueError(
+                f"Imported {position} pillar has an invalid stem or branch."
+            )
     return {
         "schema_version": "0.2.0",
         "system": "bazi",

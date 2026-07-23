@@ -13,7 +13,7 @@ Keep calculation facts separate from project-authored reflection.
 2. Preserve coin totals, six bottom-to-top lines, moving positions, trigram IDs, King Wen numbers, cast ID, disclosed seed, and source IDs exactly.
 3. Use `ICHING-HEXAGRAM-MAP-001` for the primary structure, `ICHING-MOVING-LINES-001` for the changed structure, and `ICHING-CANONICAL-IDENTITY-001` for edition-aware identity provenance.
 4. Use `ICHING-STRUCTURAL-REFLECTION-001` only for bounded reflection.
-5. Require either `all-moving-lines-v0.2` or `zhu-xi-count-routing-v0.2`; never merge them.
+5. Require either `all-moving-lines-v0.2` or `zhu-xi-count-routing-v0.3`; never merge them.
 6. Return the Library of Congress and Project Gutenberg source locators with `text_included: false` and preserve
    `version_comparison.status: not_collated`.
 7. State that replayability does not establish predictive validity.

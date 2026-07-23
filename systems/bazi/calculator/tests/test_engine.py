@@ -93,6 +93,19 @@ def test_ambiguous_dst_time_requires_fold_and_produces_distinct_instants() -> No
     assert early["normalized_input"]["utc_datetime"] != late["normalized_input"]["utc_datetime"]
 
 
+@pytest.mark.parametrize("fold", [True, False])
+def test_boolean_fold_is_rejected_instead_of_coerced_to_integer(fold: bool) -> None:
+    with pytest.raises(CalculationError) as error:
+        calculate_chart(
+            {
+                "local_datetime": "2024-11-03T01:30:00",
+                "timezone": "America/New_York",
+                "fold": fold,
+            }
+        )
+    assert error.value.code == "invalid_fold"
+
+
 def test_same_instant_has_same_year_month_and_local_day_hour() -> None:
     shanghai = calculate_chart(
         {"local_datetime": "2024-02-04T16:27:08", "timezone": "Asia/Shanghai"}

@@ -65,6 +65,7 @@ def _cross_aspects(
 
 def _solar_return_utc(natal_sun: float, year: int, seed: datetime) -> datetime:
     current = seed.astimezone(UTC)
+    converged = False
     for _ in range(12):
         time = _astro_time(current)
         longitude = _longitude(astronomy.Body.Sun, time)[0]
@@ -73,8 +74,18 @@ def _solar_return_utc(natal_sun: float, year: int, seed: datetime) -> datetime:
         speed = _signed_delta(after, before) / 0.5
         error = _signed_delta(natal_sun, longitude)
         if abs(error) < 1e-8:
+            converged = True
             break
         current += timedelta(days=error / speed)
+    if not converged:
+        residual = abs(
+            _signed_delta(
+                natal_sun,
+                _longitude(astronomy.Body.Sun, _astro_time(current))[0],
+            )
+        )
+        if residual >= 1e-8:
+            raise ValueError("Solar return search did not converge.")
     if current.year not in {year - 1, year, year + 1}:
         raise ValueError("Solar return search did not converge near the requested year.")
     return current
@@ -101,6 +112,7 @@ def _return_chart(natal: dict[str, Any], year: int) -> tuple[datetime, dict[str,
         "longitude": natal["normalized_input"]["longitude"],
         "latitude": natal["normalized_input"]["latitude"],
         "house_system": natal["normalized_input"]["house_system"],
+        "fold": local.fold,
     }
     return instant, calculate_chart(payload)
 

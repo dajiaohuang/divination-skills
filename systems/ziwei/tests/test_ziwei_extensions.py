@@ -268,6 +268,16 @@ def test_timing_is_repeatable_and_matches_shared_timeline_schema() -> None:
         and all(star["palace_fact_id"] for star in layer["flow_stars"])
         for layer in first["layers"].values()
     )
+    year_entry = next(
+        entry for entry in first["timeline"]["entries"] if entry["scope"] == "year"
+    )
+    month_entry = next(
+        entry for entry in first["timeline"]["entries"] if entry["scope"] == "month"
+    )
+    assert year_entry["start"] == "2026-02-17T00:00:00+08:00"
+    assert year_entry["end"] == "2027-02-06T00:00:00+08:00"
+    assert month_entry["start"] == "2026-07-14T00:00:00+08:00"
+    assert month_entry["end"] == "2026-08-13T00:00:00+08:00"
 
 
 def test_timing_boundaries_change_only_at_declared_boundary() -> None:

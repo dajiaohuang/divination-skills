@@ -153,6 +153,27 @@ def test_ambiguous_dst_requires_fold() -> None:
     assert result["computed_facts"]["cross_checks"]["utc"]["all_equal"] is True
 
 
+@pytest.mark.parametrize("policy", ["preserve", "split_after_15"])
+def test_every_declared_ziwei_leap_month_policy_routes_to_native_engine(
+    policy: str,
+) -> None:
+    payload = sample_input()
+    payload["policies"] = {"ziwei_leap_month_policy": policy}
+    result = calculate_natal_synthesis(payload)
+    assert result["normalized_input"]["policies"]["ziwei_leap_month_policy"] == policy
+
+
+@pytest.mark.parametrize("policy", ["previous_month", "next_month"])
+def test_unsupported_ziwei_leap_month_policies_fail_at_orchestrator_boundary(
+    policy: str,
+) -> None:
+    payload = sample_input()
+    payload["policies"] = {"ziwei_leap_month_policy": policy}
+    with pytest.raises(NatalSynthesisError) as caught:
+        calculate_natal_synthesis(payload)
+    assert caught.value.code == "invalid_ziwei_leap_month_policy"
+
+
 def test_input_and_output_schemas_accept_runtime_document() -> None:
     input_schema = json.loads(
         (SYSTEM / "calculator" / "input.schema.json").read_text(encoding="utf-8")

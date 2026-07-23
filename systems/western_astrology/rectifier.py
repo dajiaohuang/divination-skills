@@ -19,10 +19,17 @@ def _validate_events(events: list[dict[str, Any]]) -> None:
             raise ValueError("Each event requires id, date range, split, and evidence quality.")
         if event["evidence_quality"] not in {"documented", "reported"}:
             raise ValueError("evidence_quality must be documented or reported.")
+        if event["split"] not in {"training", "holdout"}:
+            raise ValueError("Event split must be training or holdout.")
         if event.get("event_type") == "personality":
             raise ValueError("Soft personality descriptions cannot be rectification events.")
+        if not isinstance(event["event_id"], str) or not event["event_id"].strip():
+            raise ValueError("event_id must be a non-empty string.")
         if date.fromisoformat(event["end_date"]) < date.fromisoformat(event["start_date"]):
             raise ValueError("Event end_date precedes start_date.")
+    event_ids = [event["event_id"] for event in events]
+    if len(event_ids) != len(set(event_ids)):
+        raise ValueError("event_id values must be unique.")
 
 
 def _event_charts(
@@ -156,6 +163,7 @@ def scan_candidates(
         "status": status,
         "birth_date": birth_date,
         "precision": f"{interval_minutes}_minute_range",
+        "event_date_policy": "start_date_at_local_noon",
         "event_counts": {
             "training": sum(event["split"] == "training" for event in events),
             "holdout": sum(event["split"] == "holdout" for event in events),
@@ -174,6 +182,13 @@ def scan_candidates(
                 {
                     "code": "personality_tiebreaker_forbidden",
                     "message": "Soft personality descriptions cannot break a hard-event tie.",
+                },
+                {
+                    "code": "event_range_start_policy",
+                    "message": (
+                        "Each event is calculated at local noon on start_date; end_date "
+                        "is retained only as uncertainty metadata."
+                    ),
                 },
             ],
         },

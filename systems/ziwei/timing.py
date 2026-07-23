@@ -2,13 +2,12 @@
 
 from __future__ import annotations
 
-from calendar import monthrange
 from datetime import UTC, datetime, timedelta
 from typing import Any
 
 from divination_skills.contracts import stable_identifier
 from divination_skills.time import TimeNormalizationError, localize_strict
-from lunar_python import Solar
+from lunar_python import Lunar, LunarMonth, Solar
 
 from systems.ziwei.analyzer import find_star
 from systems.ziwei.engine import (
@@ -120,6 +119,22 @@ def _entry(
     }
 
 
+def _lunar_boundary(
+    lunar_year: int,
+    lunar_month: int,
+    timezone: str,
+) -> datetime:
+    solar = Lunar.fromYmdHms(lunar_year, lunar_month, 1, 0, 0, 0).getSolar()
+    local_text = (
+        f"{solar.getYear():04d}-{solar.getMonth():02d}-{solar.getDay():02d}T00:00:00"
+    )
+    try:
+        boundary, _ = localize_strict(local_text, timezone)
+    except TimeNormalizationError as exc:
+        raise ZiweiError(exc.code, exc.message) from exc
+    return boundary
+
+
 def calculate_timing(
     chart: dict[str, Any],
     *,
@@ -210,11 +225,17 @@ def calculate_timing(
             fact_id=f"ziwei.timing.{key}.{target:%Y%m%d%H%M%S}",
         )
 
-    year_start = target.replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0)
-    year_end = year_start.replace(year=year_start.year + 1)
-    month_start = target.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
-    month_days = monthrange(target.year, target.month)[1]
-    month_end = month_start + timedelta(days=month_days)
+    lunar_year = lunar.getYear()
+    lunar_month = lunar.getMonth()
+    year_start = _lunar_boundary(lunar_year, 1, timezone)
+    year_end = _lunar_boundary(lunar_year + 1, 1, timezone)
+    month_start = _lunar_boundary(lunar_year, lunar_month, timezone)
+    next_lunar_month = LunarMonth.fromYm(lunar_year, lunar_month).next(1)
+    month_end = _lunar_boundary(
+        next_lunar_month.getYear(),
+        next_lunar_month.getMonth(),
+        timezone,
+    )
     day_start = target.replace(hour=0, minute=0, second=0, microsecond=0)
     day_end = day_start + timedelta(days=1)
     target_time_index = _time_index(target.hour)
@@ -235,7 +256,7 @@ def calculate_timing(
 
     entries = [
         _entry(
-            entry_id=f"TIME-ZIWEI-YEAR-{target:%Y}",
+            entry_id=f"TIME-ZIWEI-LUNAR-YEAR-{lunar_year}",
             scope="year",
             start=year_start,
             end=year_end,
@@ -243,7 +264,10 @@ def calculate_timing(
             rule_ids=["ZIWEI-TIMING-ROTATION-001"],
         ),
         _entry(
-            entry_id=f"TIME-ZIWEI-MONTH-{target:%Y%m}",
+            entry_id=(
+                f"TIME-ZIWEI-LUNAR-MONTH-{lunar_year}-"
+                f"{'LEAP-' if lunar_month < 0 else ''}{abs(lunar_month):02d}"
+            ),
             scope="month",
             start=month_start,
             end=month_end,

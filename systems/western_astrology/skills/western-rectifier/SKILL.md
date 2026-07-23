@@ -5,7 +5,7 @@ description: Scan Western birth-time intervals against at least five dated histo
 
 # Western rectifier
 
-1. Require birth date, IANA timezone, coordinates, at least five dated event ranges, evidence quality, and training/holdout labels.
+1. Require birth date, IANA timezone, coordinates, at least five dated event ranges, evidence quality, and training/holdout labels. The current baseline calculates each event at local noon on `start_date`; `end_date` is retained only as uncertainty metadata.
 2. Run `scripts/run.py --birth-date ... --events ... --interval-minutes 30`.
 3. Rank declared time intervals with training events and check the holdout set.
 4. Return `underdetermined` when evidence does not separate candidates.

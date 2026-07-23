@@ -212,7 +212,7 @@ def _normalize(payload: dict[str, Any]) -> dict[str, Any]:
         "western_house_system": {"whole_sign", "equal"},
         "ziwei_year_boundary": {"lunar_new_year", "spring_commences"},
         "ziwei_late_zi_policy": {"current_day", "next_day"},
-        "ziwei_leap_month_policy": {"preserve", "previous_month", "next_month", "split_after_15"},
+        "ziwei_leap_month_policy": {"preserve", "split_after_15"},
         "jaimini_karaka_policy": {"seven", "eight"},
     }
     for field, accepted in allowed_policies.items():

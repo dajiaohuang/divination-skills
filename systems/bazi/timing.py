@@ -8,7 +8,11 @@ from typing import Any
 from divination_skills.contracts import stable_identifier
 from divination_skills.time import TimeNormalizationError, localize_strict
 
-from systems.bazi.calculator.engine import PAIR_RELATIONS, calculate_chart
+from systems.bazi.calculator.engine import (
+    PAIR_RELATIONS,
+    calculate_chart,
+    solar_year_boundaries,
+)
 
 SECONDS_PER_YEAR = 365.2425 * 86_400
 
@@ -109,22 +113,25 @@ def calculate_timing(
                 "confidence": "deterministic",
             }
         )
-    local_year_start = target.replace(
-        month=1, day=1, hour=0, minute=0, second=0, microsecond=0
+    solar_year = period_chart["computed_facts"]["solar_year"]
+    solar_year_start, solar_year_end = solar_year_boundaries(solar_year)
+    solar_month_start = datetime.fromisoformat(
+        period_chart["computed_facts"]["previous_month_boundary"][
+            "utc_datetime"
+        ].replace("Z", "+00:00")
     )
-    local_month_start = target.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
-    local_month_end = (
-        local_month_start.replace(year=target.year + 1, month=1)
-        if target.month == 12
-        else local_month_start.replace(month=target.month + 1)
+    solar_month_end = datetime.fromisoformat(
+        period_chart["computed_facts"]["next_month_boundary"]["utc_datetime"].replace(
+            "Z", "+00:00"
+        )
     )
     entries.extend(
         [
             {
-                "entry_id": f"TIME-BAZI-YEAR-{target:%Y}",
+                "entry_id": f"TIME-BAZI-SOLAR-YEAR-{solar_year}",
                 "scope": "year",
-                "start": local_year_start.isoformat(),
-                "end": local_year_start.replace(year=target.year + 1).isoformat(),
+                "start": solar_year_start.utc.isoformat(),
+                "end": solar_year_end.utc.isoformat(),
                 "start_inclusive": True,
                 "end_inclusive": False,
                 "fact_ids": [period_pillars["year"]["fact_id"]],
@@ -132,10 +139,13 @@ def calculate_timing(
                 "confidence": "deterministic",
             },
             {
-                "entry_id": f"TIME-BAZI-MONTH-{target:%Y%m}",
+                "entry_id": (
+                    "TIME-BAZI-SOLAR-MONTH-"
+                    f"{solar_month_start:%Y%m%d%H%M%S}"
+                ),
                 "scope": "month",
-                "start": local_month_start.isoformat(),
-                "end": local_month_end.isoformat(),
+                "start": solar_month_start.isoformat(),
+                "end": solar_month_end.isoformat(),
                 "start_inclusive": True,
                 "end_inclusive": False,
                 "fact_ids": [period_pillars["month"]["fact_id"]],

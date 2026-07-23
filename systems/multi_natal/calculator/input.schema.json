@@ -129,8 +129,6 @@
           "type": "string",
           "enum": [
             "preserve",
-            "previous_month",
-            "next_month",
             "split_after_15"
           ]
         },

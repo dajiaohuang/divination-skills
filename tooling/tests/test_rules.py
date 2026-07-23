@@ -44,6 +44,7 @@ def test_exception_can_require_review_or_skip() -> None:
     context = {"normalized_input": {"boundary_policy": "later_interval", "boundary_known": False}}
     findings = evaluate_rule(rule, context)
     assert findings[0]["exception_effects"] == ["require_review"]
+    assert findings[0]["review_required"] is True
     skip_rule = deepcopy(rule)
     skip_rule["exceptions"][0]["effect"] = "skip"
     assert evaluate_rule(skip_rule, context) == []

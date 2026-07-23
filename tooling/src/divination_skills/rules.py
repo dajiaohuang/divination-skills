@@ -98,6 +98,8 @@ def evaluate_rule(rule: dict[str, Any], context: dict[str, Any]) -> list[dict[st
         }
         if "downgrade" in exception_effects:
             finding["confidence"] = "low"
+        if "require_review" in exception_effects:
+            finding["review_required"] = True
         findings.append(finding)
     return findings
 
