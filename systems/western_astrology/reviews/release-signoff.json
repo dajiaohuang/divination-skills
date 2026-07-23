@@ -1,6 +1,6 @@
 {
   "system": "western_astrology",
-  "release": "0.2.0",
+  "release": "0.3.0",
   "signoffs": [
     {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/western_astrology/tests/golden", "systems/western_astrology/tests/edge_cases", "systems/western_astrology/tests/disputes", "systems/western_astrology/tests/extension_cases", "systems/western_astrology/evaluations/synastry_expert_candidates.json"], "notes": "Requires an independent Western astrologer to review natal, transit, return, synastry, rectification, house-system, orb, and boundary decisions."},
     {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/western_astrology/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve the astronomy engine and interpretive sources for the deployment model."},

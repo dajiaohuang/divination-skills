@@ -7,3 +7,4 @@
   forms, names, or modern meanings were used identically.
 - No historical rune-poem translation is bundled.
 - Project keywords are modern reflective prompts and have no historical-authority claim.
+- Unicode standardizes encoded characters and names; it is not an authority for rune divination or historical pronunciation.

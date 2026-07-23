@@ -8,18 +8,22 @@
   },
   "expected_output": {
     "audit": {
-      "draw_id": "f7d1480df8f720b5fb477f8eae4431372502172665bae375eadc5c3a779b83c0"
+      "draw_id": "9dc45f52ad05cb89446baa64ce728800ed86a82911fa8344cfd2c80fd19374b3"
     },
     "computed_facts": {
       "spread": "single",
       "symbols": [
         {
+          "card_number": 1,
           "fact_id": "lenormand.draw.symbol.001",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Rider",
           "orientation": "upright",
+          "playing_card": "9-hearts",
           "position": "focus",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.01.rider",
           "symbol_index": 0
@@ -31,15 +35,16 @@
     "A fixed future event is guaranteed.",
     "The symbols establish a hidden fact about a third party."
   ],
-  "lineage": "lenormand-36-project-v0.1",
+  "lineage": "lenormand-36-project-v0.3",
   "must_match_rules": [
     "LENORMAND-CARD-UPRIGHT-001",
     "LENORMAND-POSITION-001",
-    "LENORMAND-SEQUENCE-001"
+    "LENORMAND-SEQUENCE-001",
+    "LENORMAND-CARD-IDENTITY-001"
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "lenormand-36-project-v0.1",
+    "lineage": "lenormand-36-project-v0.3",
     "question_sha256": "0df53d640b550c9dfc5edbaaedcc1b800881ef93350095c42ecadb4ae0453c61",
     "spread": "single"
   },
@@ -62,6 +67,10 @@
     {
       "locator": "text-only 36-symbol project deck and draw contract",
       "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "British Museum complete Game of Hope pack",
+      "source_id": "SRC-LENORMAND-BM-HOPE-001"
     }
   ],
   "system": "lenormand",

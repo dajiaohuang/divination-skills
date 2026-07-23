@@ -15,9 +15,16 @@
           "card_id": "tarot.rws.pentacles-ace",
           "card_index": 64,
           "name": "Ace of Pentacles",
+          "arcana": "minor",
+          "deck_index": 64,
+          "rank": "ace",
+          "suit": "pentacles",
+          "element": "earth",
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -26,9 +33,16 @@
           "card_id": "tarot.rws.wands-ace",
           "card_index": 22,
           "name": "Ace of Wands",
+          "arcana": "minor",
+          "deck_index": 22,
+          "rank": "ace",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -37,9 +51,16 @@
           "card_id": "tarot.rws.major-02-high-priestess",
           "card_index": 2,
           "name": "The High Priestess",
+          "arcana": "major",
+          "deck_index": 2,
+          "rank": "2",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -48,9 +69,16 @@
           "card_id": "tarot.rws.major-12-hanged-man",
           "card_index": 12,
           "name": "The Hanged Man",
+          "arcana": "major",
+          "deck_index": 12,
+          "rank": "12",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -59,9 +87,16 @@
           "card_id": "tarot.rws.swords-nine",
           "card_index": 58,
           "name": "Nine of Swords",
+          "arcana": "minor",
+          "deck_index": 58,
+          "rank": "nine",
+          "suit": "swords",
+          "element": "air",
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -70,9 +105,16 @@
           "card_id": "tarot.rws.pentacles-seven",
           "card_index": 70,
           "name": "Seven of Pentacles",
+          "arcana": "minor",
+          "deck_index": 70,
+          "rank": "seven",
+          "suit": "pentacles",
+          "element": "earth",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         }
       ]

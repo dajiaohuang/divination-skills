@@ -1,0 +1,16 @@
+{
+  "rule_id": "LENORMAND-CARD-IDENTITY-001",
+  "title": "Attach historical card number and French-suit identity",
+  "system": "lenormand",
+  "lineage": "game-of-hope-identity-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.cards", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "lenormand.card_identity", "output_path": "computed_facts.cards.playing_card", "value": "game_of_hope_number_and_suit", "confidence": "high" }],
+  "priority": 995,
+  "sources": [{ "source_id": "SRC-LENORMAND-BM-HOPE-001", "locator": "complete 36-card pack, museum number 1896,0501.495", "support_type": "direct" }],
+  "disputes": ["DSP-LENORMAND-HISTORY-MEANING-001"],
+  "tests": ["CASE-LENORMAND-DRAW-001"],
+  "notes": "Historical identity metadata is independent of project-authored reading keywords."
+}

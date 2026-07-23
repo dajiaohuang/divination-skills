@@ -1,11 +1,11 @@
 {
   "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
-  "title": "Project tropical Western astrology contracts v0.2",
+  "title": "Project tropical Western astrology contracts v0.3",
   "creators": [{ "name": "divination-skills project", "role": "author" }],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
-  "edition_or_version": "0.2.0",
+  "edition_or_version": "0.3.0",
   "locators": [{ "kind": "local", "value": "systems/western_astrology/LINEAGE.md", "stable": true }],
   "retrieved_at": "2026-07-23",
   "local_snapshot": { "retained": true, "path": "systems/western_astrology/LINEAGE.md" },
@@ -25,7 +25,7 @@
   },
   "usage_status": "production",
   "systems": ["western-astrology"],
-  "lineages": ["tropical-geocentric-v0.1", "tropical-geocentric-major-aspects-v0.2", "western-event-retained-rectification-v0.2"],
+  "lineages": ["tropical-geocentric-v0.1", "tropical-geocentric-major-aspects-v0.2", "tropical-traditional-condition-v0.3", "western-event-retained-rectification-v0.2"],
   "quality": {
     "authority": "unknown",
     "independence": "derived",

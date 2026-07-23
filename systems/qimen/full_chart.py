@@ -6,6 +6,7 @@ from copy import deepcopy
 from typing import Any
 
 from systems.qimen.engine import (
+    CLASSICAL_SOURCE_ID,
     ORIGINAL_DOOR,
     ORIGINAL_STAR,
     PALACE_GUA,
@@ -13,7 +14,8 @@ from systems.qimen.engine import (
     calculate,
 )
 
-LINEAGE = "shijia-zhuanpan-chaibu-full-v0.2"
+LINEAGE = "shijia-zhuanpan-chaibu-full-v0.3"
+STRUCTURAL_SOURCE_IDS = [SOURCE_ID, CLASSICAL_SOURCE_ID]
 RING = (1, 8, 3, 4, 9, 2, 7, 6)
 PALACE_BRANCHES = {
     1: ("子",),
@@ -154,7 +156,7 @@ def calculate_full(payload: dict[str, Any]) -> dict[str, Any]:
                 "QIMEN-DOOR-SPIRIT-PLATE-001",
                 "QIMEN-STATE-MARKERS-001",
             ],
-            "source_ids": [SOURCE_ID],
+            "source_ids": STRUCTURAL_SOURCE_IDS,
         }
         for palace in range(1, 10)
     }
@@ -245,7 +247,7 @@ def calculate_full(payload: dict[str, Any]) -> dict[str, Any]:
     if foundation["computed_facts"] != original:
         raise AssertionError("Full-chart extension must not mutate foundation facts.")
     return {
-        "schema_version": "0.2.0",
+        "schema_version": "0.3.0",
         "system": "qimen",
         "lineage": LINEAGE,
         "foundation": foundation,
@@ -274,13 +276,13 @@ def calculate_full(payload: dict[str, Any]) -> dict[str, Any]:
                     "QIMEN-DOOR-SPIRIT-PLATE-001",
                     "QIMEN-STATE-MARKERS-001",
                 ],
-                "source_ids": [SOURCE_ID],
+                "source_ids": STRUCTURAL_SOURCE_IDS,
                 "support": ["All nine palaces are produced by one declared rotation policy."],
                 "counterevidence": [
                     "Other Qimen schools use different ju, hosting, rotation, or marker policies."
                 ],
                 "limitations": [
-                    "The v0.2 rotation policy awaits independent practitioner acceptance.",
+                    "The v0.3 rotation policy awaits independent practitioner acceptance.",
                     "No symbolic marker is converted into a factual or predictive claim.",
                 ],
             }

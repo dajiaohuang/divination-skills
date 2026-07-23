@@ -1,0 +1,32 @@
+{
+  "dispute_id": "DSP-ICHING-STRUCTURE-TEXT-001",
+  "title": "Treat structural identity or edition text as the canonical computed fact",
+  "system": "iching",
+  "topic": "canonical layer",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "three-coin-king-wen-structural-v0.3",
+      "summary": "Compute line states, trigrams, and King Wen identifiers while returning edition-aware locators without embedded text.",
+      "rule_ids": ["ICHING-HEXAGRAM-MAP-001", "ICHING-CANONICAL-IDENTITY-001"],
+      "sources": [{ "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "systems/iching/DATA_CONTRACT.md" }]
+    },
+    {
+      "lineage": "edition-specific-textual-layer",
+      "summary": "Treat the wording of a selected edition or commentary as an additional, separately attributed interpretive layer.",
+      "rule_ids": ["ICHING-CLASSICAL-SOURCE-LAYER-001"],
+      "sources": [{ "source_id": "SRC-ICHING-GUTENBERG-25501", "locator": "Project Gutenberg eBook 25501" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "three-coin-king-wen-structural-v0.3",
+    "rationale": "A deterministic chart must not change when a translation or commentary edition changes.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "The computed result contains structural identifiers and source locators; any quoted or paraphrased edition text must be attributed separately.",
+  "sources": [
+    { "source_id": "SRC-ICHING-PROJECT-SPEC-001", "locator": "three-coin and King Wen mapping contract" },
+    { "source_id": "SRC-ICHING-LOC-17845", "locator": "Library of Congress edition record" },
+    { "source_id": "SRC-ICHING-GUTENBERG-25501", "locator": "Project Gutenberg edition record" }
+  ]
+}

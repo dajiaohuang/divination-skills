@@ -8,3 +8,4 @@
 - 用神 output contains candidates under an explicit question pack, not a guaranteed final selection.
 - The eight-palace, 纳甲, 世应, 六亲, 六神, and 旬空 tables await independent practitioner signoff.
 - Calendar accuracy inherits the documented Bazi engine range and boundary policies.
+- Apparent-solar correction uses the documented NOAA approximation and does not resolve school disagreement about whether it should be used.

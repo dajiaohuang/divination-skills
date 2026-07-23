@@ -15,9 +15,16 @@
           "card_id": "tarot.rws.wands-queen",
           "card_index": 34,
           "name": "Queen of Wands",
+          "arcana": "minor",
+          "deck_index": 34,
+          "rank": "queen",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -26,9 +33,16 @@
           "card_id": "tarot.rws.major-01-magician",
           "card_index": 1,
           "name": "The Magician",
+          "arcana": "major",
+          "deck_index": 1,
+          "rank": "1",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -37,9 +51,16 @@
           "card_id": "tarot.rws.wands-five",
           "card_index": 26,
           "name": "Five of Wands",
+          "arcana": "minor",
+          "deck_index": 26,
+          "rank": "five",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -48,9 +69,16 @@
           "card_id": "tarot.rws.pentacles-knight",
           "card_index": 75,
           "name": "Knight of Pentacles",
+          "arcana": "minor",
+          "deck_index": 75,
+          "rank": "knight",
+          "suit": "pentacles",
+          "element": "earth",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -59,9 +87,16 @@
           "card_id": "tarot.rws.major-10-wheel-of-fortune",
           "card_index": 10,
           "name": "Wheel of Fortune",
+          "arcana": "major",
+          "deck_index": 10,
+          "rank": "10",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -70,9 +105,16 @@
           "card_id": "tarot.rws.pentacles-nine",
           "card_index": 72,
           "name": "Nine of Pentacles",
+          "arcana": "minor",
+          "deck_index": 72,
+          "rank": "nine",
+          "suit": "pentacles",
+          "element": "earth",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -81,9 +123,16 @@
           "card_id": "tarot.rws.swords-knight",
           "card_index": 61,
           "name": "Knight of Swords",
+          "arcana": "minor",
+          "deck_index": 61,
+          "rank": "knight",
+          "suit": "swords",
+          "element": "air",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         }
       ]

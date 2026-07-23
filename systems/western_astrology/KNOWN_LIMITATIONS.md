@@ -11,3 +11,4 @@
 - Rectification ranks intervals with dated-event training and holdout sets; it cannot prove a unique
   birth minute and may return `underdetermined`.
 - Reader and validator accept structured JSON/CSV only, not OCR or PDF.
+- Traditional conditions cover only domicile, detriment, exaltation, and fall table membership; triplicity, terms, faces, reception, sect, accidental dignity, and scoring are absent.

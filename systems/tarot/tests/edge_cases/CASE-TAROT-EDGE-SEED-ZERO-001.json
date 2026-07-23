@@ -5,21 +5,28 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-tarot-draw",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
       "cards": [
         {
+          "arcana": "major",
           "card_id": "tarot.rws.major-08-strength",
           "card_index": 8,
+          "deck_index": 8,
+          "element": null,
           "fact_id": "tarot.draw.card.001",
+          "identity_lineage": "rws-identity-v0.3",
           "name": "Strength",
           "orientation": "upright",
           "position": "focus",
+          "rank": "8",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
-          ]
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
+          ],
+          "suit": null
         }
       ],
       "spread": "single"

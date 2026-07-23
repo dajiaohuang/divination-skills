@@ -15,9 +15,16 @@
           "card_id": "tarot.rws.major-10-wheel-of-fortune",
           "card_index": 10,
           "name": "Wheel of Fortune",
+          "arcana": "major",
+          "deck_index": 10,
+          "rank": "10",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -26,9 +33,16 @@
           "card_id": "tarot.rws.major-13-death",
           "card_index": 13,
           "name": "Death",
+          "arcana": "major",
+          "deck_index": 13,
+          "rank": "13",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -37,9 +51,16 @@
           "card_id": "tarot.rws.wands-six",
           "card_index": 27,
           "name": "Six of Wands",
+          "arcana": "minor",
+          "deck_index": 27,
+          "rank": "six",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -48,9 +69,16 @@
           "card_id": "tarot.rws.wands-ace",
           "card_index": 22,
           "name": "Ace of Wands",
+          "arcana": "minor",
+          "deck_index": 22,
+          "rank": "ace",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -59,9 +87,16 @@
           "card_id": "tarot.rws.swords-queen",
           "card_index": 62,
           "name": "Queen of Swords",
+          "arcana": "minor",
+          "deck_index": 62,
+          "rank": "queen",
+          "suit": "swords",
+          "element": "air",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -70,9 +105,16 @@
           "card_id": "tarot.rws.major-21-world",
           "card_index": 21,
           "name": "The World",
+          "arcana": "major",
+          "deck_index": 21,
+          "rank": "21",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -81,9 +123,16 @@
           "card_id": "tarot.rws.swords-six",
           "card_index": 55,
           "name": "Six of Swords",
+          "arcana": "minor",
+          "deck_index": 55,
+          "rank": "six",
+          "suit": "swords",
+          "element": "air",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         }
       ]

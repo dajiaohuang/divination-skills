@@ -19,6 +19,8 @@ CHALDEAN_VALUES = {
     **dict.fromkeys("FP", 8),
 }
 MAPPINGS = {"pythagorean", "chaldean"}
+PROJECT_SOURCE = "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+CHEIRO_SOURCE = "SRC-NUMEROLOGY-CHEIRO-001"
 THEMES = {
     1: "initiative",
     2: "cooperation",
@@ -121,6 +123,7 @@ def _fact(
     raw_total: int,
     *,
     preserve_masters: bool,
+    source_ids: list[str],
 ) -> dict[str, Any]:
     value, steps = reduce_number(raw_total, preserve_masters=preserve_masters)
     return {
@@ -130,7 +133,7 @@ def _fact(
         "value": value,
         "master_number": preserve_masters and value in MASTERS,
         "theme": THEMES[value],
-        "source_ids": ["SRC-NUMEROLOGY-PROJECT-SPEC-001"],
+        "source_ids": source_ids,
     }
 
 
@@ -171,42 +174,51 @@ def calculate_profile(payload: dict[str, Any]) -> dict[str, Any]:
         )
     date_total = sum(int(digit) for digit in born.isoformat() if digit.isdigit())
     preserve_masters = mapping == "pythagorean"
+    mapping_source_ids = (
+        [PROJECT_SOURCE] if mapping == "pythagorean" else [PROJECT_SOURCE, CHEIRO_SOURCE]
+    )
     life_path = _fact(
         "numerology.life_path",
         date_total,
         preserve_masters=preserve_masters,
+        source_ids=[PROJECT_SOURCE],
     )
     expression = _fact(
         "numerology.expression",
         sum(all_values),
         preserve_masters=preserve_masters,
+        source_ids=mapping_source_ids,
     )
     soul = _fact(
         "numerology.soul_urge",
         sum(vowel_values),
         preserve_masters=preserve_masters,
+        source_ids=mapping_source_ids,
     )
     personality = _fact(
         "numerology.personality",
         sum(consonant_values),
         preserve_masters=preserve_masters,
+        source_ids=mapping_source_ids,
     )
     birthday = _fact(
         "numerology.birthday",
         born.day,
         preserve_masters=preserve_masters,
+        source_ids=[PROJECT_SOURCE],
     )
     maturity = _fact(
         "numerology.maturity",
         life_path["value"] + expression["value"],
         preserve_masters=preserve_masters,
+        source_ids=mapping_source_ids,
     )
     return {
-        "schema_version": "0.2.0",
+        "schema_version": "0.3.0",
         "engine": {
             "name": "divination-skills-numerology",
-            "version": "0.2.0",
-            "source_ids": ["SRC-NUMEROLOGY-PROJECT-SPEC-001"],
+            "version": "0.3.0",
+            "source_ids": mapping_source_ids,
         },
         "raw_input": dict(payload),
         "normalized_input": {
@@ -218,14 +230,36 @@ def calculate_profile(payload: dict[str, Any]) -> dict[str, Any]:
                 else "chaldean-1-through-8-project"
             ),
             "mapping_lineage": (
-                "pythagorean-project-v0.1"
+                "pythagorean-project-v0.3"
                 if mapping == "pythagorean"
-                else "chaldean-name-project-v0.2"
+                else "chaldean-name-cheiro-v0.3"
             ),
             "transliteration_policy": transliteration_policy,
             "masters": sorted(MASTERS) if preserve_masters else [],
         },
         "computed_facts": {
+            "name_trace": {
+                "fact_id": "numerology.name_trace",
+                "letters": [
+                    {
+                        "position": index,
+                        "letter": letter,
+                        "category": "vowel" if letter in VOWELS else "consonant",
+                        "value": value,
+                    }
+                    for index, (letter, value) in enumerate(
+                        zip(letters, all_values, strict=True), start=1
+                    )
+                ],
+                "raw_total": sum(all_values),
+                "source_ids": mapping_source_ids,
+            },
+            "date_trace": {
+                "fact_id": "numerology.date_trace",
+                "digits": [int(digit) for digit in born.isoformat() if digit.isdigit()],
+                "raw_total": date_total,
+                "source_ids": [PROJECT_SOURCE],
+            },
             "life_path": life_path,
             "birthday": birthday,
             "expression": expression,

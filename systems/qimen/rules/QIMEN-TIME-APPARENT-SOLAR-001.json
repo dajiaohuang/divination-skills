@@ -1,0 +1,18 @@
+{
+  "rule_id": "QIMEN-TIME-APPARENT-SOLAR-001",
+  "title": "Apply explicit apparent-solar correction before hour-chart selection",
+  "system": "qimen",
+  "lineage": "shijia-zhuanpan-chaibu-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.time_basis", "operator": "eq", "value": "apparent_solar" }],
+  "conclusions": [{ "finding_type": "qimen.time_basis", "output_path": "normalized_input.calculation_datetime", "value": "longitude_and_equation_of_time_corrected", "confidence": "high" }],
+  "priority": 1000,
+  "sources": [
+    { "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001", "locator": "General Solar Position Calculations, equation of time and true solar time", "support_type": "direct" },
+    { "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "explicit time-basis input policy", "support_type": "corroborating" }
+  ],
+  "tests": ["CASE-QIMEN-FOUNDATION-001"],
+  "notes": "Civil time remains the compatibility default."
+}

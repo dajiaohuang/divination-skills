@@ -10,7 +10,8 @@
       "id": "li",
       "shi_position": 4,
       "source_ids": [
-        "SRC-LIUYAO-PROJECT-SPEC-001"
+        "SRC-LIUYAO-PROJECT-SPEC-001",
+        "SRC-LIUYAO-ZENGSHAN-001"
       ],
       "stage": "wandering-soul",
       "stage_index": 6,
@@ -19,7 +20,7 @@
   },
   "expected_output": {
     "audit": {
-      "cast_id": "695116cfdd402993d674b2fdb8c07f7726e4a83faafa91d35de56c68c20f6b37"
+      "cast_id": "61c71560c8f04788e69cb54fed285deb5a6bf9ce86aa0c069f8725c6699c19cd"
     },
     "computed_facts": {
       "calendar_context": {
@@ -52,6 +53,18 @@
           "index": 3,
           "name": "卯"
         },
+        "six_spirit_start": {
+          "day_stem": "甲",
+          "first_spirit": "青龙",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
+          ]
+        },
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001",
+          "SRC-LIUYAO-ZENGSHAN-001"
+        ],
         "void_branches": [
           "辰",
           "巳"
@@ -81,7 +94,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "艮",
@@ -112,7 +126,8 @@
           "six_relative": "父母",
           "six_spirit": "青龙",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 8
         },
@@ -138,7 +153,8 @@
           "six_relative": "子孙",
           "six_spirit": "朱雀",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 9
         },
@@ -164,7 +180,8 @@
           "six_relative": "兄弟",
           "six_spirit": "勾陈",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 8
         },
@@ -190,7 +207,8 @@
           "six_relative": "兄弟",
           "six_spirit": "螣蛇",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 9
         },
@@ -216,7 +234,8 @@
           "six_relative": "妻财",
           "six_spirit": "白虎",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 9
         },
@@ -242,7 +261,8 @@
           "six_relative": "子孙",
           "six_spirit": "玄武",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 7
         }
@@ -257,7 +277,8 @@
         "id": "li",
         "shi_position": 4,
         "source_ids": [
-          "SRC-LIUYAO-PROJECT-SPEC-001"
+          "SRC-LIUYAO-PROJECT-SPEC-001",
+          "SRC-LIUYAO-ZENGSHAN-001"
         ],
         "stage": "wandering-soul",
         "stage_index": 6,
@@ -287,7 +308,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "乾",
@@ -301,18 +323,24 @@
     "An event outcome is certain.",
     "A response date was inferred without a reviewed timing method."
   ],
-  "lineage": "wen-wang-najia-structural-v0.1",
+  "lineage": "wen-wang-najia-structural-v0.3",
   "must_match_rules": [
     "LIUYAO-NAJIA-001",
     "LIUYAO-PALACE-SHIYING-001",
     "LIUYAO-CALENDAR-CONTEXT-001",
-    "LIUYAO-STRUCTURAL-BOUNDARY-001"
+    "LIUYAO-STRUCTURAL-BOUNDARY-001",
+    "LIUYAO-CLASSICAL-STRUCTURE-001"
   ],
   "normalized_input": {
+    "calculation_datetime": "2026-03-20T23:10:00+08:00",
     "day_boundary": "zi_initial",
-    "lineage": "wen-wang-najia-structural-v0.1",
+    "latitude": null,
+    "lineage": "wen-wang-najia-structural-v0.3",
     "local_datetime": "2026-03-20T23:10:00+08:00",
+    "longitude": null,
     "question_sha256": "62bc278bb2a00221068f1cdce748991d8ab2a5a6b0967b5fb2578389eb5d3832",
+    "solar_time_correction": null,
+    "time_basis": "civil",
     "timezone": "Asia/Shanghai",
     "utc_datetime": "2026-03-20T15:10:00Z"
   },
@@ -336,6 +364,10 @@
     {
       "locator": "Wen Wang Najia structural tables",
       "source_id": "SRC-LIUYAO-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "classical structural formula sections",
+      "source_id": "SRC-LIUYAO-ZENGSHAN-001"
     }
   ],
   "system": "liuyao",

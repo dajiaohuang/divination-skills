@@ -8,3 +8,4 @@
 - No card images, commercial guidebook text, or modern deck assets are included.
 - Journal files may contain sensitive user-authored reflections and remain local by default.
 - Journal statistics do not measure predictive validity or accuracy.
+- The Waite source establishes the selected RWS identity, not universal meanings across Tarot lineages.

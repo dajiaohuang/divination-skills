@@ -10,7 +10,9 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
-SOURCE_ID = "SRC-ICHING-PROJECT-SPEC-001"
+PROJECT_SOURCE_ID = "SRC-ICHING-PROJECT-SPEC-001"
+CLASSICAL_SOURCE_IDS = ["SRC-ICHING-LOC-17845", "SRC-ICHING-GUTENBERG-25501"]
+SOURCE_IDS = [PROJECT_SOURCE_ID, *CLASSICAL_SOURCE_IDS]
 TRIGRAM_BY_BITS = {
     (1, 1, 1): ("qian", "乾", "heaven"),
     (1, 1, 0): ("dui", "兑", "lake"),
@@ -119,7 +121,7 @@ def identify(bits: list[int]) -> dict[str, Any]:
         "lower_trigram": {"id": lower[0], "hanzi": lower[1], "image": lower[2]},
         "upper_trigram": {"id": upper[0], "hanzi": upper[1], "image": upper[2]},
         "lines_bottom_to_top": bits,
-        "source_ids": [SOURCE_ID],
+        "source_ids": CLASSICAL_SOURCE_IDS,
     }
 
 
@@ -168,7 +170,7 @@ def cast(payload: dict[str, Any]) -> dict[str, Any]:
                 "polarity": "yang" if polarity else "yin",
                 "moving": moving,
                 "changed_polarity": "yang" if changed else "yin",
-                "source_ids": [SOURCE_ID],
+                "source_ids": [PROJECT_SOURCE_ID],
             }
         )
     primary = identify(primary_bits)
@@ -176,15 +178,15 @@ def cast(payload: dict[str, Any]) -> dict[str, Any]:
     normalized = {
         "question_sha256": hashlib.sha256(question.encode()).hexdigest(),
         "line_order": "bottom-to-top",
-        "lineage": "three-coin-king-wen-structural-v0.1",
+        "lineage": "three-coin-king-wen-structural-v0.3",
     }
     audit_basis = {"normalized_input": normalized, "seed_hex": seed.hex(), "lines": lines}
     return {
-        "schema_version": "0.1.0",
+        "schema_version": "0.3.0",
         "engine": {
             "name": "divination-skills-iching-cast",
-            "version": "0.1.0",
-            "source_ids": [SOURCE_ID],
+            "version": "0.3.0",
+            "source_ids": SOURCE_IDS,
         },
         "normalized_input": normalized,
         "audit": {
@@ -223,7 +225,7 @@ def explain(result: dict[str, Any]) -> dict[str, Any]:
             "rule_ids": ["ICHING-HEXAGRAM-MAP-001"],
             "confidence": "high",
             "value": primary["number"],
-            "source_ids": [SOURCE_ID],
+            "source_ids": CLASSICAL_SOURCE_IDS,
         },
         {
             "finding_id": "iching.finding.change.001",
@@ -231,7 +233,7 @@ def explain(result: dict[str, Any]) -> dict[str, Any]:
             "rule_ids": ["ICHING-MOVING-LINES-001"],
             "confidence": "high",
             "value": changed["number"],
-            "source_ids": [SOURCE_ID],
+            "source_ids": SOURCE_IDS,
         },
     ]
     report["narrative"] = {

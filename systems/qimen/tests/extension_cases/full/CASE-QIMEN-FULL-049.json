@@ -67,7 +67,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -117,7 +118,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -166,7 +168,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -228,7 +231,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -251,7 +255,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -307,7 +312,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -356,7 +362,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -423,7 +430,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       },
       {
@@ -472,7 +480,8 @@
           "QIMEN-STATE-MARKERS-001"
         ],
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ]
       }
     ]

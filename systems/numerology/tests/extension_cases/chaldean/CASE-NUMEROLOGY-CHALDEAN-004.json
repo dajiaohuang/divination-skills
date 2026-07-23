@@ -11,11 +11,98 @@
       "name_letters": "YAMADATARO",
       "birth_date": "1984-05-05",
       "mapping": "chaldean-1-through-8-project",
-      "mapping_lineage": "chaldean-name-project-v0.2",
+      "mapping_lineage": "chaldean-name-cheiro-v0.3",
       "transliteration_policy": "user_supplied_latin_transliteration-v0.2",
       "masters": []
     },
     "computed_facts": {
+      "name_trace": {
+        "fact_id": "numerology.name_trace",
+        "letters": [
+          {
+            "position": 1,
+            "letter": "Y",
+            "category": "consonant",
+            "value": 1
+          },
+          {
+            "position": 2,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 3,
+            "letter": "M",
+            "category": "consonant",
+            "value": 4
+          },
+          {
+            "position": 4,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 5,
+            "letter": "D",
+            "category": "consonant",
+            "value": 4
+          },
+          {
+            "position": 6,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 7,
+            "letter": "T",
+            "category": "consonant",
+            "value": 4
+          },
+          {
+            "position": 8,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 9,
+            "letter": "R",
+            "category": "consonant",
+            "value": 2
+          },
+          {
+            "position": 10,
+            "letter": "O",
+            "category": "vowel",
+            "value": 7
+          }
+        ],
+        "raw_total": 26,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
+        ]
+      },
+      "date_trace": {
+        "fact_id": "numerology.date_trace",
+        "digits": [
+          1,
+          9,
+          8,
+          4,
+          0,
+          5,
+          0,
+          5
+        ],
+        "raw_total": 32,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "life_path": {
         "fact_id": "numerology.life_path",
         "raw_total": 32,
@@ -54,7 +141,8 @@
         "master_number": false,
         "theme": "stewardship of power and resources",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "soul_urge": {
@@ -68,7 +156,8 @@
         "master_number": false,
         "theme": "cooperation",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "personality": {
@@ -82,7 +171,8 @@
         "master_number": false,
         "theme": "care and responsibility",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "maturity": {
@@ -96,7 +186,8 @@
         "master_number": false,
         "theme": "structure",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       }
     }

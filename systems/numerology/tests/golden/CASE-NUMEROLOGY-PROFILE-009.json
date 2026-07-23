@@ -20,6 +20,23 @@
         "theme": "expression",
         "value": 3
       },
+      "date_trace": {
+        "digits": [
+          1,
+          9,
+          7,
+          5,
+          0,
+          7,
+          3,
+          0
+        ],
+        "fact_id": "numerology.date_trace",
+        "raw_total": 32,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "expression": {
         "fact_id": "numerology.expression",
         "master_number": false,
@@ -62,6 +79,93 @@
         "theme": "stewardship of power and resources",
         "value": 8
       },
+      "name_trace": {
+        "fact_id": "numerology.name_trace",
+        "letters": [
+          {
+            "category": "consonant",
+            "letter": "M",
+            "position": 1,
+            "value": 4
+          },
+          {
+            "category": "vowel",
+            "letter": "A",
+            "position": 2,
+            "value": 1
+          },
+          {
+            "category": "consonant",
+            "letter": "S",
+            "position": 3,
+            "value": 1
+          },
+          {
+            "category": "consonant",
+            "letter": "T",
+            "position": 4,
+            "value": 2
+          },
+          {
+            "category": "vowel",
+            "letter": "E",
+            "position": 5,
+            "value": 5
+          },
+          {
+            "category": "consonant",
+            "letter": "R",
+            "position": 6,
+            "value": 9
+          },
+          {
+            "category": "consonant",
+            "letter": "B",
+            "position": 7,
+            "value": 2
+          },
+          {
+            "category": "vowel",
+            "letter": "U",
+            "position": 8,
+            "value": 3
+          },
+          {
+            "category": "vowel",
+            "letter": "I",
+            "position": 9,
+            "value": 9
+          },
+          {
+            "category": "consonant",
+            "letter": "L",
+            "position": 10,
+            "value": 3
+          },
+          {
+            "category": "consonant",
+            "letter": "D",
+            "position": 11,
+            "value": 4
+          },
+          {
+            "category": "vowel",
+            "letter": "E",
+            "position": 12,
+            "value": 5
+          },
+          {
+            "category": "consonant",
+            "letter": "R",
+            "position": 13,
+            "value": 9
+          }
+        ],
+        "raw_total": 57,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "personality": {
         "fact_id": "numerology.personality",
         "master_number": false,
@@ -100,17 +204,20 @@
   "must_match_rules": [
     "NUMEROLOGY-CAL-DATE-001",
     "NUMEROLOGY-CAL-NAME-001",
-    "NUMEROLOGY-INTERPRET-THEME-001"
+    "NUMEROLOGY-INTERPRET-THEME-001",
+    "NUMEROLOGY-CAL-TRACE-001"
   ],
   "normalized_input": {
     "birth_date": "1975-07-30",
     "mapping": "pythagorean-a1-i9-repeat",
+    "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
       11,
       22,
       33
     ],
-    "name_letters": "MASTERBUILDER"
+    "name_letters": "MASTERBUILDER",
+    "transliteration_policy": "latin_nfkd-v0.1"
   },
   "raw_input": {
     "birth_date": "1975-07-30",

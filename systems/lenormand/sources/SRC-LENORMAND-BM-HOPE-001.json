@@ -1,0 +1,50 @@
+{
+  "source_id": "SRC-LENORMAND-BM-HOPE-001",
+  "title": "Das Spiel der Hofnung — British Museum 1896,0501.495",
+  "creators": [
+    { "name": "Johann Kaspar Hechtel", "role": "author" },
+    { "name": "G. P. J. Bieling", "role": "publisher" },
+    { "name": "British Museum", "role": "organization" }
+  ],
+  "source_type": "other",
+  "language": "de",
+  "publication_date": "1799",
+  "edition_or_version": "British Museum complete 36-card pack, museum number 1896,0501.495",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://www.britishmuseum.org/collection/object/P_1896-0501-495",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "Public-Domain-object/metadata-facts-only",
+    "text_available": true,
+    "additional_terms": false,
+    "notes": "The project uses card numbers, motifs, and French-suit identities as factual metadata. It does not redistribute the museum photography or catalog prose."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Historical public-domain card identities are encoded as project-authored structured facts; no British Museum image or prose is shipped."
+  },
+  "usage_status": "production",
+  "systems": ["lenormand"],
+  "lineages": ["game-of-hope-identity-v0.3", "lenormand-36-project-v0.3"],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Museum catalog and surviving complete pack establish the historical 36-card identity layer; modern reading keywords remain project policy."
+  }
+}

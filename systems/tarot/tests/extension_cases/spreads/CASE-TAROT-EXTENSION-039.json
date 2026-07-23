@@ -15,9 +15,16 @@
           "card_id": "tarot.rws.major-04-emperor",
           "card_index": 4,
           "name": "The Emperor",
+          "arcana": "major",
+          "deck_index": 4,
+          "rank": "4",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -26,9 +33,16 @@
           "card_id": "tarot.rws.major-08-strength",
           "card_index": 8,
           "name": "Strength",
+          "arcana": "major",
+          "deck_index": 8,
+          "rank": "8",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -37,9 +51,16 @@
           "card_id": "tarot.rws.major-15-devil",
           "card_index": 15,
           "name": "The Devil",
+          "arcana": "major",
+          "deck_index": 15,
+          "rank": "15",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -48,9 +69,16 @@
           "card_id": "tarot.rws.pentacles-five",
           "card_index": 68,
           "name": "Five of Pentacles",
+          "arcana": "minor",
+          "deck_index": 68,
+          "rank": "five",
+          "suit": "pentacles",
+          "element": "earth",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -59,9 +87,16 @@
           "card_id": "tarot.rws.swords-king",
           "card_index": 63,
           "name": "King of Swords",
+          "arcana": "minor",
+          "deck_index": 63,
+          "rank": "king",
+          "suit": "swords",
+          "element": "air",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -70,9 +105,16 @@
           "card_id": "tarot.rws.major-01-magician",
           "card_index": 1,
           "name": "The Magician",
+          "arcana": "major",
+          "deck_index": 1,
+          "rank": "1",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -81,9 +123,16 @@
           "card_id": "tarot.rws.major-17-star",
           "card_index": 17,
           "name": "The Star",
+          "arcana": "major",
+          "deck_index": 17,
+          "rank": "17",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         }
       ]

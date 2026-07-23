@@ -1,0 +1,19 @@
+{
+  "rule_id": "ICHING-CANONICAL-IDENTITY-001",
+  "title": "Separate King Wen structural identity from edition text",
+  "system": "iching",
+  "lineage": "three-coin-king-wen-structural-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [{ "fact_path": "computed_facts.primary_hexagram.king_wen_number", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "iching.canonical_identity", "output_path": "computed_facts.primary_hexagram.source_ids", "value": "edition_aware_locators", "confidence": "high" }],
+  "priority": 990,
+  "sources": [
+    { "source_id": "SRC-ICHING-LOC-17845", "locator": "Library of Congress item 2021666491", "support_type": "corroborating" },
+    { "source_id": "SRC-ICHING-GUTENBERG-25501", "locator": "Project Gutenberg eBook 25501 catalog", "support_type": "corroborating" }
+  ],
+  "disputes": ["DSP-ICHING-STRUCTURE-TEXT-001"],
+  "tests": ["CASE-ICHING-CAST-001"],
+  "notes": "The engine emits identifiers and source locators; it does not silently substitute one translation or commentary."
+}

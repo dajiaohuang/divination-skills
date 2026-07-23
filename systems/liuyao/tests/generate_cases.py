@@ -32,7 +32,7 @@ def main() -> None:
             "case_id": f"CASE-LIUYAO-CAST-{number:03d}",
             "title": f"Auditable Wen Wang structural cast {number:03d}",
             "system": "liuyao",
-            "lineage": "wen-wang-najia-structural-v0.1",
+            "lineage": "wen-wang-najia-structural-v0.3",
             "category": "standard",
             "data_classification": "synthetic",
             "raw_input": payload,
@@ -50,6 +50,7 @@ def main() -> None:
                 "LIUYAO-PALACE-SHIYING-001",
                 "LIUYAO-CALENDAR-CONTEXT-001",
                 "LIUYAO-STRUCTURAL-BOUNDARY-001",
+                "LIUYAO-CLASSICAL-STRUCTURE-001",
             ],
             "allowed_disagreements": [],
             "forbidden_conclusions": [
@@ -60,7 +61,11 @@ def main() -> None:
                 {
                     "source_id": "SRC-LIUYAO-PROJECT-SPEC-001",
                     "locator": "Wen Wang Najia structural tables",
-                }
+                },
+                {
+                    "source_id": "SRC-LIUYAO-ZENGSHAN-001",
+                    "locator": "classical structural formula sections",
+                },
             ],
             "reviewers": [
                 {

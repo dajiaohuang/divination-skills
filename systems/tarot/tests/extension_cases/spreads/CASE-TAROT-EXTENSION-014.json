@@ -15,9 +15,16 @@
           "card_id": "tarot.rws.major-11-justice",
           "card_index": 11,
           "name": "Justice",
+          "arcana": "major",
+          "deck_index": 11,
+          "rank": "11",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -26,9 +33,16 @@
           "card_id": "tarot.rws.cups-two",
           "card_index": 37,
           "name": "Two of Cups",
+          "arcana": "minor",
+          "deck_index": 37,
+          "rank": "two",
+          "suit": "cups",
+          "element": "water",
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -37,9 +51,16 @@
           "card_id": "tarot.rws.major-05-hierophant",
           "card_index": 5,
           "name": "The Hierophant",
+          "arcana": "major",
+          "deck_index": 5,
+          "rank": "5",
+          "suit": null,
+          "element": null,
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -48,9 +69,16 @@
           "card_id": "tarot.rws.swords-two",
           "card_index": 51,
           "name": "Two of Swords",
+          "arcana": "minor",
+          "deck_index": 51,
+          "rank": "two",
+          "suit": "swords",
+          "element": "air",
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -59,9 +87,16 @@
           "card_id": "tarot.rws.major-10-wheel-of-fortune",
           "card_index": 10,
           "name": "Wheel of Fortune",
+          "arcana": "major",
+          "deck_index": 10,
+          "rank": "10",
+          "suit": null,
+          "element": null,
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -70,9 +105,16 @@
           "card_id": "tarot.rws.wands-queen",
           "card_index": 34,
           "name": "Queen of Wands",
+          "arcana": "minor",
+          "deck_index": 34,
+          "rank": "queen",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "reversed",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         }
       ]

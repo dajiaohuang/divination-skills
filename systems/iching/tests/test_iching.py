@@ -22,6 +22,15 @@ def test_all_64_pairs_and_identifiers_are_unique() -> None:
     assert set(hexagrams()) == set(range(1, 65))
 
 
+def test_hexagram_identity_uses_independent_classical_locators() -> None:
+    result = cast({"seed_hex": "00" * 32})
+    facts = result["computed_facts"]
+    expected = {"SRC-ICHING-LOC-17845", "SRC-ICHING-GUTENBERG-25501"}
+    assert set(facts["primary_hexagram"]["source_ids"]) == expected
+    assert set(facts["changed_hexagram"]["source_ids"]) == expected
+    assert all(line["source_ids"] == ["SRC-ICHING-PROJECT-SPEC-001"] for line in facts["lines"])
+
+
 @pytest.mark.parametrize(
     ("bits", "number"),
     [

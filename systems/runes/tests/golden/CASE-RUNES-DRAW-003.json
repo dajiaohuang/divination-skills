@@ -8,21 +8,28 @@
   },
   "expected_output": {
     "audit": {
-      "draw_id": "6338da00805029e5ddf28c6fa4740af5ebbddfb447749d95999ec482e5f9fa4b"
+      "draw_id": "4d9aa6f23f9edeedf7cb1ee82647e7b0072ba05945df6ff89491d50c0bd12df7"
     },
     "computed_facts": {
       "spread": "single",
       "symbols": [
         {
+          "character": "ᛃ",
+          "codepoint": "U+16C3",
           "fact_id": "runes.draw.symbol.001",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Jera",
           "orientation": "upright",
           "position": "focus",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.12.jera",
-          "symbol_index": 11
+          "symbol_index": 11,
+          "transliteration": "j",
+          "unicode_name": "RUNIC LETTER JERAN J"
         }
       ]
     }
@@ -31,15 +38,16 @@
     "A fixed future event is guaranteed.",
     "The symbols establish a hidden fact about a third party."
   ],
-  "lineage": "elder-futhark-project-v0.1",
+  "lineage": "elder-futhark-project-v0.3",
   "must_match_rules": [
     "RUNES-SYMBOL-UPRIGHT-001",
     "RUNES-POSITION-001",
-    "RUNES-SEQUENCE-001"
+    "RUNES-SEQUENCE-001",
+    "RUNES-GRAPHEME-IDENTITY-001"
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "elder-futhark-project-v0.1",
+    "lineage": "elder-futhark-project-v0.3",
     "question_sha256": "e4cdb58d34fcd464f94d9b949a12ee72df0120b404404e2bdfcc68063a7c7229",
     "spread": "single"
   },
@@ -62,6 +70,14 @@
     {
       "locator": "text-only 24-symbol project deck and draw contract",
       "source_id": "SRC-RUNES-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "Unicode Runic block names list",
+      "source_id": "SRC-RUNES-UNICODE-001"
+    },
+    {
+      "locator": "Kylver stone 24-character sequence",
+      "source_id": "SRC-RUNES-SHM-KYLVER-001"
     }
   ],
   "system": "runes",

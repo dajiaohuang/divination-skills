@@ -1,0 +1,16 @@
+{
+  "rule_id": "WESTERN-TRADITIONAL-CONDITION-001",
+  "title": "Attach unscored traditional domicile and exaltation conditions",
+  "system": "western-astrology",
+  "lineage": "tropical-traditional-condition-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.positions", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "western.traditional_condition", "output_path": "computed_facts.positions.traditional_condition", "value": "domicile_detriment_exaltation_fall_statuses", "confidence": "high" }],
+  "priority": 890,
+  "sources": [{ "source_id": "SRC-WESTERN-PTOLEMY-001", "locator": "Book I, chapters on planetary houses and exaltations", "support_type": "direct" }],
+  "disputes": ["DSP-WESTERN-RULERSHIP-LAYER-001"],
+  "tests": ["CASE-WESTERN-NATAL-001"],
+  "notes": "The engine reports table membership only and does not assign a synthetic dignity score."
+}

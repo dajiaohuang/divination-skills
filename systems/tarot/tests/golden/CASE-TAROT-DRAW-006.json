@@ -13,37 +13,58 @@
     "computed_facts": {
       "cards": [
         {
+          "arcana": "major",
           "card_id": "tarot.rws.major-00-fool",
           "card_index": 0,
+          "deck_index": 0,
+          "element": null,
           "fact_id": "tarot.draw.card.001",
+          "identity_lineage": "rws-identity-v0.3",
           "name": "The Fool",
           "orientation": "reversed",
           "position": "option_a",
+          "rank": "0",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
-          ]
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
+          ],
+          "suit": null
         },
         {
+          "arcana": "major",
           "card_id": "tarot.rws.major-04-emperor",
           "card_index": 4,
+          "deck_index": 4,
+          "element": null,
           "fact_id": "tarot.draw.card.002",
+          "identity_lineage": "rws-identity-v0.3",
           "name": "The Emperor",
           "orientation": "reversed",
           "position": "option_b",
+          "rank": "4",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
-          ]
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
+          ],
+          "suit": null
         },
         {
+          "arcana": "minor",
           "card_id": "tarot.rws.cups-queen",
           "card_index": 48,
+          "deck_index": 48,
+          "element": "water",
           "fact_id": "tarot.draw.card.003",
+          "identity_lineage": "rws-identity-v0.3",
           "name": "Queen of Cups",
           "orientation": "reversed",
           "position": "decision_focus",
+          "rank": "queen",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
-          ]
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
+          ],
+          "suit": "cups"
         }
       ],
       "spread": "option-a-option-b-focus"
@@ -53,11 +74,12 @@
     "A fixed future event is guaranteed.",
     "The cards establish a hidden fact about a third party."
   ],
-  "lineage": "rws-text-baseline-v0.1",
+  "lineage": "rws-identity-v0.3",
   "must_match_rules": [
     "TAROT-DRAW-UNIQUE-001",
     "TAROT-POSITION-001",
     "TAROT-NARRATIVE-001",
+    "TAROT-CARD-IDENTITY-001",
     "TAROT-ORIENTATION-REVERSED-001"
   ],
   "normalized_input": {
@@ -84,6 +106,10 @@
     {
       "locator": "rws-78.json and auditable draw contract",
       "source_id": "SRC-TAROT-DECK-SPEC-001"
+    },
+    {
+      "locator": "The Pictorial Key to the Tarot",
+      "source_id": "SRC-TAROT-WAITE-WIKISOURCE-001"
     }
   ],
   "system": "tarot",

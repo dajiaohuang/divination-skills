@@ -14,7 +14,11 @@ Create structured draw facts before any interpretation.
    `relationship-six`, `horseshoe-seven`, or `celtic-cross`.
 3. Ask for a seed only when the user wants to supply one. Otherwise allow the script to create and disclose a cryptographic seed.
 4. Run `scripts/draw.py <input.json>`.
-5. Return the spread positions, cards, orientations, draw ID, deck hash, algorithm, and disclosed seed. Do not hide or reroll a result.
-6. Invoke `$tarot-core` only if an explanation is requested.
+5. Return the spread positions, cards, arcana, rank, suit, element, RWS identity lineage,
+   orientations, draw ID, deck hash, algorithm, source IDs, and disclosed seed. Do not hide or
+   reroll a result.
+6. Cite `TAROT-CARD-IDENTITY-001` for identity fields. Do not present RWS as universal Tarot or
+   attribute project-authored keywords to Waite.
+7. Invoke `$tarot-core` only if an explanation is requested.
 
 Read [references/randomness.md](references/randomness.md) when discussing fairness or replay. The draw is symbolic and software-auditable; it cannot prove a metaphysical source of randomness.

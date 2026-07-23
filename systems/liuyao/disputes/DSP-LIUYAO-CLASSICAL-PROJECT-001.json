@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-LIUYAO-CLASSICAL-PROJECT-001",
+  "title": "Separate classical structural formulas from project scoring heuristics",
+  "system": "liuyao",
+  "topic": "structural and judgment layers",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "wen-wang-najia-structural-v0.3",
+      "summary": "Compute eight-palace, Najia, six-relative, six-spirit, void, Shi/Ying, and moving-line facts with classical provenance.",
+      "rule_ids": ["LIUYAO-CLASSICAL-STRUCTURE-001", "LIUYAO-NAJIA-001"],
+      "sources": [{ "source_id": "SRC-LIUYAO-ZENGSHAN-001", "locator": "structural formula chapters" }]
+    },
+    {
+      "lineage": "wen-wang-najia-project-judgment-v0.2",
+      "summary": "Apply bounded project-authored strength, use-deity, and timing candidate heuristics only when explicitly requested.",
+      "rule_ids": ["LIUYAO-STRENGTH-PROJECT-001", "LIUYAO-USE-DEITY-PROJECT-001"],
+      "sources": [{ "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "experimental judgment pack" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "wen-wang-najia-structural-v0.3",
+    "rationale": "Deterministic structural facts remain valid without opting into unreviewed judgment heuristics.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Classical structural calculations and project-authored judgment scores are separate layers; scores are experimental, not classical facts.",
+  "sources": [
+    { "source_id": "SRC-LIUYAO-ZENGSHAN-001", "locator": "classical structural formulas" },
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "project judgment boundary" }
+  ]
+}

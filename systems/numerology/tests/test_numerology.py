@@ -37,9 +37,22 @@ def test_accents_normalize_without_guessing_transliteration() -> None:
 
 def test_master_number_is_not_reduced_further() -> None:
     profile = calculate_profile({"name": "Test Person", "birth_date": "2009-09-18"})
-    for fact in profile["computed_facts"].values():
+    for name, fact in profile["computed_facts"].items():
+        if name.endswith("_trace"):
+            continue
         if fact["value"] in {11, 22, 33}:
             assert fact["master_number"]
+
+
+def test_chaldean_profile_exposes_cheiro_sourced_character_trace() -> None:
+    profile = calculate_profile(
+        {"name": "Robert Example", "birth_date": "1988-11-11", "mapping": "chaldean"}
+    )
+    trace = profile["computed_facts"]["name_trace"]
+    assert [item["value"] for item in trace["letters"][:6]] == [2, 7, 2, 5, 2, 4]
+    assert trace["raw_total"] == sum(item["value"] for item in trace["letters"])
+    assert "SRC-NUMEROLOGY-CHEIRO-001" in trace["source_ids"]
+    assert profile["normalized_input"]["mapping_lineage"] == "chaldean-name-cheiro-v0.3"
 
 
 def test_report_is_traceable_and_immutable() -> None:

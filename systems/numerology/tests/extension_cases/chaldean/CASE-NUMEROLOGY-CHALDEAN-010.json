@@ -11,11 +11,86 @@
       "name_letters": "ZHANGWEI",
       "birth_date": "1990-11-11",
       "mapping": "chaldean-1-through-8-project",
-      "mapping_lineage": "chaldean-name-project-v0.2",
+      "mapping_lineage": "chaldean-name-cheiro-v0.3",
       "transliteration_policy": "user_supplied_latin_transliteration-v0.2",
       "masters": []
     },
     "computed_facts": {
+      "name_trace": {
+        "fact_id": "numerology.name_trace",
+        "letters": [
+          {
+            "position": 1,
+            "letter": "Z",
+            "category": "consonant",
+            "value": 7
+          },
+          {
+            "position": 2,
+            "letter": "H",
+            "category": "consonant",
+            "value": 5
+          },
+          {
+            "position": 3,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 4,
+            "letter": "N",
+            "category": "consonant",
+            "value": 5
+          },
+          {
+            "position": 5,
+            "letter": "G",
+            "category": "consonant",
+            "value": 3
+          },
+          {
+            "position": 6,
+            "letter": "W",
+            "category": "consonant",
+            "value": 6
+          },
+          {
+            "position": 7,
+            "letter": "E",
+            "category": "vowel",
+            "value": 5
+          },
+          {
+            "position": 8,
+            "letter": "I",
+            "category": "vowel",
+            "value": 1
+          }
+        ],
+        "raw_total": 33,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
+        ]
+      },
+      "date_trace": {
+        "fact_id": "numerology.date_trace",
+        "digits": [
+          1,
+          9,
+          9,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "raw_total": 23,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "life_path": {
         "fact_id": "numerology.life_path",
         "raw_total": 23,
@@ -55,7 +130,8 @@
         "master_number": false,
         "theme": "care and responsibility",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "soul_urge": {
@@ -68,7 +144,8 @@
         "master_number": false,
         "theme": "inquiry",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "personality": {
@@ -82,7 +159,8 @@
         "master_number": false,
         "theme": "stewardship of power and resources",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "maturity": {
@@ -96,7 +174,8 @@
         "master_number": false,
         "theme": "cooperation",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       }
     }

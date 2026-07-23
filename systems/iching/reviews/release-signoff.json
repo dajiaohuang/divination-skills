@@ -1,6 +1,6 @@
 {
   "system": "iching",
-  "release": "0.2.0",
+  "release": "0.3.0",
   "signoffs": [
     {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/iching/tests/golden", "systems/iching/tests/edge_cases", "systems/iching/tests/disputes"], "notes": "Requires an independent I Ching practitioner to review line order, change construction, and moving-line policy."},
     {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/iching/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to approve all text, translations, and production rules."},

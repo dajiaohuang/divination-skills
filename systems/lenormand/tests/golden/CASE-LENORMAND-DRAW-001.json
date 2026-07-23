@@ -8,18 +8,22 @@
   },
   "expected_output": {
     "audit": {
-      "draw_id": "fb8fba199b08ca7f9d6997b9955865631d24085c5539479417f18c6bab9c60a3"
+      "draw_id": "4c366fe987e48f84e7a1a35d1d5f7df1a091eb90e8136599a1e4eb793c14c66e"
     },
     "computed_facts": {
       "spread": "single",
       "symbols": [
         {
+          "card_number": 28,
           "fact_id": "lenormand.draw.symbol.001",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Man",
           "orientation": "upright",
+          "playing_card": "ace-hearts",
           "position": "focus",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.28.man",
           "symbol_index": 27
@@ -31,15 +35,16 @@
     "A fixed future event is guaranteed.",
     "The symbols establish a hidden fact about a third party."
   ],
-  "lineage": "lenormand-36-project-v0.1",
+  "lineage": "lenormand-36-project-v0.3",
   "must_match_rules": [
     "LENORMAND-CARD-UPRIGHT-001",
     "LENORMAND-POSITION-001",
-    "LENORMAND-SEQUENCE-001"
+    "LENORMAND-SEQUENCE-001",
+    "LENORMAND-CARD-IDENTITY-001"
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "lenormand-36-project-v0.1",
+    "lineage": "lenormand-36-project-v0.3",
     "question_sha256": "5b3f9190d6d7255b9dbd72e118d560ed465b37fdea186fd0c529067750ba5c9b",
     "spread": "single"
   },
@@ -62,6 +67,10 @@
     {
       "locator": "text-only 36-symbol project deck and draw contract",
       "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "British Museum complete Game of Hope pack",
+      "source_id": "SRC-LENORMAND-BM-HOPE-001"
     }
   ],
   "system": "lenormand",

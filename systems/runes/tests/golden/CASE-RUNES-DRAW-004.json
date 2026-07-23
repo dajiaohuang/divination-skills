@@ -8,43 +8,64 @@
   },
   "expected_output": {
     "audit": {
-      "draw_id": "09fdaa5c8b079e31496a291063aaa766060f5e896a5346a9639ff7afe13c8acf"
+      "draw_id": "7d6009ba85730ced6d72427d4d6d1c199aec131e0e9dded50e14874045994ea9"
     },
     "computed_facts": {
       "spread": "three-rune",
       "symbols": [
         {
+          "character": "ᛊ",
+          "codepoint": "U+16CA",
           "fact_id": "runes.draw.symbol.001",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Sowilo",
           "orientation": "upright",
           "position": "context",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.16.sowilo",
-          "symbol_index": 15
+          "symbol_index": 15,
+          "transliteration": "s",
+          "unicode_name": "RUNIC LETTER SOWILO S"
         },
         {
+          "character": "ᛗ",
+          "codepoint": "U+16D7",
           "fact_id": "runes.draw.symbol.002",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Mannaz",
           "orientation": "upright",
           "position": "tension",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.20.mannaz",
-          "symbol_index": 19
+          "symbol_index": 19,
+          "transliteration": "m",
+          "unicode_name": "RUNIC LETTER MANNAZ MAN M"
         },
         {
+          "character": "ᚦ",
+          "codepoint": "U+16A6",
           "fact_id": "runes.draw.symbol.003",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Thurisaz",
           "orientation": "upright",
           "position": "practice",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.03.thurisaz",
-          "symbol_index": 2
+          "symbol_index": 2,
+          "transliteration": "th",
+          "unicode_name": "RUNIC LETTER THURISAZ THURS THORN"
         }
       ]
     }
@@ -53,15 +74,16 @@
     "A fixed future event is guaranteed.",
     "The symbols establish a hidden fact about a third party."
   ],
-  "lineage": "elder-futhark-project-v0.1",
+  "lineage": "elder-futhark-project-v0.3",
   "must_match_rules": [
     "RUNES-SYMBOL-UPRIGHT-001",
     "RUNES-POSITION-001",
-    "RUNES-SEQUENCE-001"
+    "RUNES-SEQUENCE-001",
+    "RUNES-GRAPHEME-IDENTITY-001"
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "elder-futhark-project-v0.1",
+    "lineage": "elder-futhark-project-v0.3",
     "question_sha256": "341380da2a4f6fd65e0cae0df95eb055ae46167e91a49cf7d51f0c8bcae640a6",
     "spread": "three-rune"
   },
@@ -84,6 +106,14 @@
     {
       "locator": "text-only 24-symbol project deck and draw contract",
       "source_id": "SRC-RUNES-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "Unicode Runic block names list",
+      "source_id": "SRC-RUNES-UNICODE-001"
+    },
+    {
+      "locator": "Kylver stone 24-character sequence",
+      "source_id": "SRC-RUNES-SHM-KYLVER-001"
     }
   ],
   "system": "runes",

@@ -1,0 +1,50 @@
+{
+  "source_id": "SRC-WESTERN-PTOLEMY-001",
+  "title": "Ptolemy's Tetrabiblos, or Quadripartite",
+  "creators": [
+    { "name": "Claudius Ptolemy", "role": "author" },
+    { "name": "J. M. Ashmand", "role": "translator" }
+  ],
+  "source_type": "book",
+  "language": "en",
+  "publication_date": "1822",
+  "edition_or_version": "Project Gutenberg eBook 70850",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://www.gutenberg.org/ebooks/70850",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "Public-Domain-USA/Project-Gutenberg-terms",
+    "url": "https://www.gutenberg.org/policy/license.html",
+    "text_available": true,
+    "additional_terms": false,
+    "notes": "Only traditional domicile, detriment, exaltation, and fall facts are encoded. No Project Gutenberg text is redistributed."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Public-domain underlying work; production stores project-authored dignity tables and chapter locators only."
+  },
+  "usage_status": "production",
+  "systems": ["western-astrology"],
+  "lineages": ["tropical-traditional-condition-v0.3"],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Primary historical source for the selected seven-planet traditional condition layer; modern rulership variants are not mixed into it."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-QIMEN-CLASSICAL-LINEAGE-001",
+  "title": "Use classical shared vocabulary without claiming one universal Qimen algorithm",
+  "system": "qimen",
+  "topic": "classical vocabulary and selected lineage",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "shijia-zhuanpan-chaibu-v0.3",
+      "summary": "Compute the project-selected rotating-plate hour chart with Chaibu ju selection and explicit provenance.",
+      "rule_ids": ["QIMEN-CHAIBU-JU-001", "QIMEN-CLASSICAL-PLATE-PROVENANCE-001"],
+      "sources": [{ "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "Chaibu rotating-plate contract" }]
+    },
+    {
+      "lineage": "classical-shared-structure",
+      "summary": "Use the classical source only for shared nine-palace, star, door, spirit, and dunjia vocabulary, not as proof of every project rotation choice.",
+      "rule_ids": ["QIMEN-CLASSICAL-PLATE-PROVENANCE-001", "QIMEN-FOUNDATION-BOUNDARY-001"],
+      "sources": [{ "source_id": "SRC-QIMEN-BAOJIAN-001", "locator": "shared structural sections" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "shijia-zhuanpan-chaibu-v0.3",
+    "rationale": "A reproducible engine requires one named algorithm while preserving the narrower scope of classical corroboration.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "This implementation is the named Chaibu rotating-plate lineage; classical sources corroborate shared structures but do not make it a universal Qimen standard.",
+  "sources": [
+    { "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "selected algorithm" },
+    { "source_id": "SRC-QIMEN-BAOJIAN-001", "locator": "classical shared vocabulary" }
+  ]
+}

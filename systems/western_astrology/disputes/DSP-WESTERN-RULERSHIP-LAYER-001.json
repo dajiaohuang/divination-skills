@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-WESTERN-RULERSHIP-LAYER-001",
+  "title": "Keep seven-planet traditional conditions separate from modern rulerships",
+  "system": "western-astrology",
+  "topic": "planetary rulership and dignity",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "tropical-traditional-condition-v0.3",
+      "summary": "Apply domicile, detriment, exaltation, and fall tables only to the seven traditional planets.",
+      "rule_ids": ["WESTERN-TRADITIONAL-CONDITION-001"],
+      "sources": [{ "source_id": "SRC-WESTERN-PTOLEMY-001", "locator": "Book I planetary houses and exaltations" }]
+    },
+    {
+      "lineage": "modern-outer-planet-rulerships",
+      "summary": "Modern rulership assignments for Uranus, Neptune, and Pluto are a separate optional lineage and are not computed here.",
+      "rule_ids": ["WESTERN-INTERPRET-STRUCTURE-001"],
+      "sources": [{ "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "unsupported modern-rulership boundary" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "tropical-traditional-condition-v0.3",
+    "rationale": "The selected historical table is internally coherent and does not require silently mixing later outer-planet assignments.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Traditional conditions are reported only for Sun, Moon, Mercury, Venus, Mars, Jupiter, and Saturn; no modern outer-planet rulerships are inferred.",
+  "sources": [
+    { "source_id": "SRC-WESTERN-PTOLEMY-001", "locator": "traditional tables" },
+    { "source_id": "SRC-WESTERN-PROJECT-SPEC-001", "locator": "modern-rulership exclusion" }
+  ]
+}

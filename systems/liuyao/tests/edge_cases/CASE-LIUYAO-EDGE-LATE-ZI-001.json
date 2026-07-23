@@ -5,7 +5,7 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-liuyao",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
@@ -39,6 +39,18 @@
           "index": 3,
           "name": "卯"
         },
+        "six_spirit_start": {
+          "day_stem": "甲",
+          "first_spirit": "青龙",
+          "source_ids": [
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
+          ]
+        },
+        "source_ids": [
+          "SRC-LIUYAO-PROJECT-SPEC-001",
+          "SRC-LIUYAO-ZENGSHAN-001"
+        ],
         "void_branches": [
           "辰",
           "巳"
@@ -68,7 +80,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "离",
@@ -99,7 +112,8 @@
           "six_relative": "子孙",
           "six_spirit": "青龙",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 8
         },
@@ -125,7 +139,8 @@
           "six_relative": "官鬼",
           "six_spirit": "朱雀",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 9
         },
@@ -151,7 +166,8 @@
           "six_relative": "妻财",
           "six_spirit": "勾陈",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 7
         },
@@ -177,7 +193,8 @@
           "six_relative": "妻财",
           "six_spirit": "螣蛇",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 7
         },
@@ -203,7 +220,8 @@
           "six_relative": "子孙",
           "six_spirit": "白虎",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 8
         },
@@ -229,7 +247,8 @@
           "six_relative": "兄弟",
           "six_spirit": "玄武",
           "source_ids": [
-            "SRC-LIUYAO-PROJECT-SPEC-001"
+            "SRC-LIUYAO-PROJECT-SPEC-001",
+            "SRC-LIUYAO-ZENGSHAN-001"
           ],
           "value": 7
         }
@@ -242,7 +261,8 @@
         "id": "li",
         "shi_position": 2,
         "source_ids": [
-          "SRC-LIUYAO-PROJECT-SPEC-001"
+          "SRC-LIUYAO-PROJECT-SPEC-001",
+          "SRC-LIUYAO-ZENGSHAN-001"
         ],
         "stage": "second-change",
         "stage_index": 2,
@@ -272,7 +292,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "离",
@@ -293,10 +314,15 @@
     "LIUYAO-CALENDAR-CONTEXT-001"
   ],
   "normalized_input": {
+    "calculation_datetime": "2026-03-20T23:30:00+08:00",
     "day_boundary": "zi_initial",
-    "lineage": "wen-wang-najia-structural-v0.1",
+    "latitude": null,
+    "lineage": "wen-wang-najia-structural-v0.3",
     "local_datetime": "2026-03-20T23:30:00+08:00",
+    "longitude": null,
     "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solar_time_correction": null,
+    "time_basis": "civil",
     "timezone": "Asia/Shanghai",
     "utc_datetime": "2026-03-20T15:30:00Z"
   },

@@ -108,14 +108,14 @@ Node.js or iztro runtime.
 ```text
 systems = 10
 skills = 30
-structured_rules = 107
-source_manifests = 29
+structured_rules = 117
+source_manifests = 37
 baseline_golden = 255
 edge_cases = 68
 dispute_cases = 48
 invalid_inputs = 20
 extension_replay_cases = 850
-pytest = 1518 passed
+pytest = 1526 passed
 technical_complete = 10 / 10
 ```
 

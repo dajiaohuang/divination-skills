@@ -103,6 +103,7 @@ def main() -> None:
                 house_rule,
                 "WESTERN-ASPECT-MAJOR-001",
                 "WESTERN-INTERPRET-STRUCTURE-001",
+                "WESTERN-TRADITIONAL-CONDITION-001",
             ],
             "allowed_disagreements": [],
             "forbidden_conclusions": [
@@ -117,6 +118,10 @@ def main() -> None:
                 {
                     "source_id": "SRC-WESTERN-PROJECT-SPEC-001",
                     "locator": "Tropical house and aspect contract",
+                },
+                {
+                    "source_id": "SRC-WESTERN-PTOLEMY-001",
+                    "locator": "Book I traditional houses and exaltations",
                 },
             ],
             "reviewers": [

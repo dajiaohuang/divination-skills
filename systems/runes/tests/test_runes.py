@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 import json
+import unicodedata
 from copy import deepcopy
 from pathlib import Path
 
 import pytest
 from divination_skills.auditable_draw import AuditableDrawError
 
-from systems.runes.engine import draw, explain, items
+from systems.runes.engine import RUNE_GRAPHEMES, draw, explain, items
 
 
 def golden_cases() -> list[dict]:
@@ -22,6 +23,20 @@ def test_deck_has_24_unique_ordered_symbols() -> None:
     assert len(deck) == 24
     assert len({item["symbol_id"] for item in deck}) == 24
     assert [item["number"] for item in deck] == list(range(1, 25))
+
+
+def test_grapheme_table_is_complete_unicode_and_source_traced() -> None:
+    assert len(RUNE_GRAPHEMES) == 24
+    assert len({entry[0] for entry in RUNE_GRAPHEMES.values()}) == 24
+    for character, codepoint, unicode_name, _ in RUNE_GRAPHEMES.values():
+        assert f"U+{ord(character):04X}" == codepoint
+        assert unicodedata.name(character) == unicode_name
+    result = draw({"spread": "three-rune", "seed_hex": "00" * 32})
+    for fact in result["computed_facts"]["symbols"]:
+        assert fact["identity_lineage"] == "elder-futhark-grapheme-v0.3"
+        assert {"SRC-RUNES-UNICODE-001", "SRC-RUNES-SHM-KYLVER-001"} <= set(
+            fact["source_ids"]
+        )
 
 
 @pytest.mark.parametrize("case", golden_cases(), ids=lambda case: case["case_id"])

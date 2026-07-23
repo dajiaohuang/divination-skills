@@ -13,9 +13,11 @@ Use only the frozen mapping and show every reduction.
 2. If any non-Latin alphabetic character is present, require a complete user-supplied Latin
    `transliteration`; never infer it.
 3. Run `scripts/calculate.py <input.json>`.
-4. Show mapping lineage, transliteration policy, normalized letters, raw totals, reduction steps,
-   final values, and master-number policy.
-5. Cite `NUMEROLOGY-CAL-CHALDEAN-NAME-001` only for Chaldean name totals.
+4. Show mapping lineage, transliteration policy, every normalized character and assigned value,
+   raw name/date totals, reduction steps, final values, and master-number policy.
+5. Cite `NUMEROLOGY-CAL-TRACE-001` for the audit trace. Cite
+   `NUMEROLOGY-CAL-CHALDEAN-NAME-001` and the Cheiro source only for explicitly selected
+   Chaldean name totals; the Pythagorean mapping remains project policy.
 6. Present themes as optional reflection prompts, not facts about identity or destiny.
 7. Reject silent mapping switches or inferred transliteration.
 

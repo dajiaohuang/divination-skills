@@ -30,7 +30,7 @@ def main() -> None:
             "case_id": f"CASE-QIMEN-FOUNDATION-{number:03d}",
             "title": f"Chaibu Qimen foundation {number:03d}",
             "system": "qimen",
-            "lineage": "shijia-zhuanpan-chaibu-v0.1",
+            "lineage": "shijia-zhuanpan-chaibu-v0.3",
             "category": "standard",
             "data_classification": "synthetic",
             "raw_input": payload,
@@ -45,6 +45,7 @@ def main() -> None:
                 "QIMEN-EARTH-PLATE-001",
                 "QIMEN-DUTY-ORIGIN-001",
                 "QIMEN-FOUNDATION-BOUNDARY-001",
+                "QIMEN-CLASSICAL-PLATE-PROVENANCE-001",
             ],
             "allowed_disagreements": [],
             "forbidden_conclusions": [
@@ -52,7 +53,11 @@ def main() -> None:
                 "An auspicious direction or event outcome was inferred.",
             ],
             "sources": [
-                {"source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "Chaibu foundation tables"}
+                {"source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "Chaibu foundation tables"},
+                {
+                    "source_id": "SRC-QIMEN-BAOJIAN-001",
+                    "locator": "classical shared structural vocabulary",
+                },
             ],
             "reviewers": [
                 {

@@ -1,0 +1,18 @@
+{
+  "rule_id": "LIUYAO-CLASSICAL-STRUCTURE-001",
+  "title": "Trace Najia structural facts to the selected classical lineage",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-structural-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [{ "fact_path": "computed_facts.lines", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "liuyao.structural_provenance", "output_path": "computed_facts.lines.source_ids", "value": "project_and_classical_sources", "confidence": "high" }],
+  "priority": 995,
+  "sources": [
+    { "source_id": "SRC-LIUYAO-ZENGSHAN-001", "locator": "八宫、浑天甲子、六亲、世应、六神及动变 sections", "support_type": "direct" },
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "systems/liuyao/DATA_CONTRACT.md", "support_type": "corroborating" }
+  ],
+  "disputes": ["DSP-LIUYAO-CLASSICAL-PROJECT-001"],
+  "tests": ["CASE-LIUYAO-CAST-001"]
+}

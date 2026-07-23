@@ -14,44 +14,65 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-runes-draw",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
       "spread": "three-rune",
       "symbols": [
         {
+          "character": "ᛜ",
+          "codepoint": "U+16DC",
           "fact_id": "runes.draw.symbol.001",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Ingwaz",
           "orientation": "upright",
           "position": "context",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.22.ingwaz",
-          "symbol_index": 21
+          "symbol_index": 21,
+          "transliteration": "ng",
+          "unicode_name": "RUNIC LETTER INGWAZ"
         },
         {
+          "character": "ᛗ",
+          "codepoint": "U+16D7",
           "fact_id": "runes.draw.symbol.002",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Mannaz",
           "orientation": "upright",
           "position": "tension",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.20.mannaz",
-          "symbol_index": 19
+          "symbol_index": 19,
+          "transliteration": "m",
+          "unicode_name": "RUNIC LETTER MANNAZ MAN M"
         },
         {
+          "character": "ᚹ",
+          "codepoint": "U+16B9",
           "fact_id": "runes.draw.symbol.003",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Wunjo",
           "orientation": "upright",
           "position": "practice",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.08.wunjo",
-          "symbol_index": 7
+          "symbol_index": 7,
+          "transliteration": "w",
+          "unicode_name": "RUNIC LETTER WUNJO WYNN W"
         }
       ]
     }
@@ -68,7 +89,7 @@
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "elder-futhark-project-v0.1",
+    "lineage": "elder-futhark-project-v0.3",
     "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "spread": "three-rune"
   },

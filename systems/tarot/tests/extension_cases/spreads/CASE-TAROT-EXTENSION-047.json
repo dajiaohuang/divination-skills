@@ -15,9 +15,16 @@
           "card_id": "tarot.rws.cups-seven",
           "card_index": 42,
           "name": "Seven of Cups",
+          "arcana": "minor",
+          "deck_index": 42,
+          "rank": "seven",
+          "suit": "cups",
+          "element": "water",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -26,9 +33,16 @@
           "card_id": "tarot.rws.pentacles-seven",
           "card_index": 70,
           "name": "Seven of Pentacles",
+          "arcana": "minor",
+          "deck_index": 70,
+          "rank": "seven",
+          "suit": "pentacles",
+          "element": "earth",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -37,9 +51,16 @@
           "card_id": "tarot.rws.pentacles-king",
           "card_index": 77,
           "name": "King of Pentacles",
+          "arcana": "minor",
+          "deck_index": 77,
+          "rank": "king",
+          "suit": "pentacles",
+          "element": "earth",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -48,9 +69,16 @@
           "card_id": "tarot.rws.major-07-chariot",
           "card_index": 7,
           "name": "The Chariot",
+          "arcana": "major",
+          "deck_index": 7,
+          "rank": "7",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -59,9 +87,16 @@
           "card_id": "tarot.rws.cups-two",
           "card_index": 37,
           "name": "Two of Cups",
+          "arcana": "minor",
+          "deck_index": 37,
+          "rank": "two",
+          "suit": "cups",
+          "element": "water",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -70,9 +105,16 @@
           "card_id": "tarot.rws.wands-queen",
           "card_index": 34,
           "name": "Queen of Wands",
+          "arcana": "minor",
+          "deck_index": 34,
+          "rank": "queen",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -81,9 +123,16 @@
           "card_id": "tarot.rws.wands-nine",
           "card_index": 30,
           "name": "Nine of Wands",
+          "arcana": "minor",
+          "deck_index": 30,
+          "rank": "nine",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         }
       ]

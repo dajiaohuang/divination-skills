@@ -2,7 +2,7 @@
   "case_id": "CASE-WESTERN-SYNASTRY-041",
   "category": "standard",
   "data_classification": "synthetic",
-  "expected_sha256": "785176aa3cd1974a0a3c52787217c69626f85498ec322833ff05cab8b7bcf801",
+  "expected_sha256": "5935eadf5334ed28d08876d3089e5a0dacc93659b6f50e101cf0866251fe2507",
   "input": {
     "chart_a": {
       "house_system": "whole_sign",

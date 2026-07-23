@@ -63,6 +63,25 @@ def test_known_solstice_seasons_change_dun() -> None:
     assert summer["computed_facts"]["dun"] == "yin"
 
 
+def test_classical_provenance_and_apparent_solar_time_are_explicit() -> None:
+    result = calculate(
+        {
+            "local_datetime": "1999-09-15T19:05:00",
+            "timezone": "Asia/Shanghai",
+            "time_basis": "apparent_solar",
+            "longitude": 119.917,
+            "latitude": 31.30,
+        }
+    )
+    assert result["normalized_input"]["time_basis"] == "apparent_solar"
+    assert result["normalized_input"]["calculation_datetime"] != "1999-09-15T19:05:00"
+    assert result["normalized_input"]["solar_time_correction"]["total_correction_minutes"] != 0
+    assert all(
+        "SRC-QIMEN-BAOJIAN-001" in palace["source_ids"]
+        for palace in result["computed_facts"]["earth_plate"]
+    )
+
+
 def test_report_is_immutable_and_explicitly_incomplete() -> None:
     result = calculate({"local_datetime": "2026-07-23T12:00:00", "timezone": "Asia/Shanghai"})
     original = deepcopy(result["computed_facts"])

@@ -1,0 +1,50 @@
+{
+  "source_id": "SRC-RUNES-UNICODE-001",
+  "title": "The Unicode Standard — Runic block U+16A0–U+16FF",
+  "creators": [{ "name": "Unicode Consortium", "role": "author" }],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "Unicode 17.0 names list",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://www.unicode.org/charts/nameslist/n_16A0.html",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://www.unicode.org/charts/PDF/U16A0.pdf",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "Unicode-3.0",
+    "url": "https://www.unicode.org/license.txt",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Unicode character names, scalar values, and characters are used under the Unicode License; required attribution is retained in the source manifest."
+  },
+  "usage_status": "production",
+  "systems": ["runes"],
+  "lineages": ["elder-futhark-grapheme-v0.3"],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Authoritative for encoded character identity and standardized names, not for modern divinatory meanings."
+  }
+}

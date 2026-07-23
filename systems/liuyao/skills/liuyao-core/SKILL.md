@@ -5,14 +5,14 @@ description: Cast and calculate an auditable Wen Wang Liuyao structure with time
 
 # Liuyao core
 
-Calculate the v0.1 structure while keeping every unresolved judgment outside the result.
+Calculate the v0.3 structure while keeping every unresolved judgment outside the result.
 
 ## Workflow
 
-1. Require `--local-datetime` and an IANA `--timezone`; state the `--day-boundary` if it is not `midnight`.
+1. Require `--local-datetime` and an IANA `--timezone`; state the `--day-boundary`. Use civil time by default. Accept apparent solar time only when explicitly selected with longitude.
 2. Run `scripts/run.py` with optional question and 64-character seed.
-3. Preserve coin facts, primary/change hexagrams, calendar normalization, palace and stage, 世应, six 纳甲 lines, 六亲, 六神, and 旬空.
-4. Cite `LIUYAO-NAJIA-001`, `LIUYAO-PALACE-SHIYING-001`, and `LIUYAO-CALENDAR-CONTEXT-001` for calculation claims.
+3. Preserve coin facts, primary/change hexagrams, civil and calculation times, solar correction, palace and stage, 世应, six 纳甲 lines, 六亲, 六神, and 旬空.
+4. Cite `LIUYAO-CLASSICAL-STRUCTURE-001`, `LIUYAO-NAJIA-001`, `LIUYAO-PALACE-SHIYING-001`, and `LIUYAO-CALENDAR-CONTEXT-001` for calculation claims. Cite `LIUYAO-TIME-APPARENT-SOLAR-001` only when that time basis is selected.
 5. Enforce `LIUYAO-STRUCTURAL-BOUNDARY-001`: do not select 用神 or infer 旺衰, outcome, or timing.
 6. Keep Liuyao separate from `$iching-core`; one is a timestamped 纳甲 calculation, the other is a structural three-coin I Ching reading.
 7. Apply [references/safety.md](references/safety.md) to high-impact and third-party questions.

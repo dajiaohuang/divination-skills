@@ -389,7 +389,24 @@
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001"
           ],
-          "speed_degrees_per_day": 1.00193514
+          "speed_degrees_per_day": 1.00193514,
+          "traditional_condition": {
+            "detriment_signs": [
+              "Aquarius"
+            ],
+            "domicile_signs": [
+              "Leo"
+            ],
+            "exaltation_sign": "Aries",
+            "fact_id": "western.traditional_condition.sun",
+            "fall_sign": "Libra",
+            "lineage": "tropical-traditional-condition-v0.3",
+            "scoring_applied": false,
+            "source_ids": [
+              "SRC-WESTERN-PTOLEMY-001"
+            ],
+            "statuses": []
+          }
         },
         {
           "body": "moon",
@@ -405,7 +422,24 @@
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001"
           ],
-          "speed_degrees_per_day": 12.20921257
+          "speed_degrees_per_day": 12.20921257,
+          "traditional_condition": {
+            "detriment_signs": [
+              "Capricorn"
+            ],
+            "domicile_signs": [
+              "Cancer"
+            ],
+            "exaltation_sign": "Taurus",
+            "fact_id": "western.traditional_condition.moon",
+            "fall_sign": "Scorpio",
+            "lineage": "tropical-traditional-condition-v0.3",
+            "scoring_applied": false,
+            "source_ids": [
+              "SRC-WESTERN-PTOLEMY-001"
+            ],
+            "statuses": []
+          }
         },
         {
           "body": "mercury",
@@ -421,7 +455,28 @@
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001"
           ],
-          "speed_degrees_per_day": 1.38612443
+          "speed_degrees_per_day": 1.38612443,
+          "traditional_condition": {
+            "detriment_signs": [
+              "Sagittarius",
+              "Pisces"
+            ],
+            "domicile_signs": [
+              "Gemini",
+              "Virgo"
+            ],
+            "exaltation_sign": "Virgo",
+            "fact_id": "western.traditional_condition.mercury",
+            "fall_sign": "Pisces",
+            "lineage": "tropical-traditional-condition-v0.3",
+            "scoring_applied": false,
+            "source_ids": [
+              "SRC-WESTERN-PTOLEMY-001"
+            ],
+            "statuses": [
+              "detriment"
+            ]
+          }
         },
         {
           "body": "venus",
@@ -437,7 +492,26 @@
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001"
           ],
-          "speed_degrees_per_day": 1.20015441
+          "speed_degrees_per_day": 1.20015441,
+          "traditional_condition": {
+            "detriment_signs": [
+              "Scorpio",
+              "Aries"
+            ],
+            "domicile_signs": [
+              "Taurus",
+              "Libra"
+            ],
+            "exaltation_sign": "Pisces",
+            "fact_id": "western.traditional_condition.venus",
+            "fall_sign": "Virgo",
+            "lineage": "tropical-traditional-condition-v0.3",
+            "scoring_applied": false,
+            "source_ids": [
+              "SRC-WESTERN-PTOLEMY-001"
+            ],
+            "statuses": []
+          }
         },
         {
           "body": "mars",
@@ -453,7 +527,28 @@
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001"
           ],
-          "speed_degrees_per_day": 0.34856437
+          "speed_degrees_per_day": 0.34856437,
+          "traditional_condition": {
+            "detriment_signs": [
+              "Libra",
+              "Taurus"
+            ],
+            "domicile_signs": [
+              "Aries",
+              "Scorpio"
+            ],
+            "exaltation_sign": "Capricorn",
+            "fact_id": "western.traditional_condition.mars",
+            "fall_sign": "Cancer",
+            "lineage": "tropical-traditional-condition-v0.3",
+            "scoring_applied": false,
+            "source_ids": [
+              "SRC-WESTERN-PTOLEMY-001"
+            ],
+            "statuses": [
+              "fall"
+            ]
+          }
         },
         {
           "body": "jupiter",
@@ -469,7 +564,28 @@
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001"
           ],
-          "speed_degrees_per_day": -0.08061818
+          "speed_degrees_per_day": -0.08061818,
+          "traditional_condition": {
+            "detriment_signs": [
+              "Gemini",
+              "Virgo"
+            ],
+            "domicile_signs": [
+              "Sagittarius",
+              "Pisces"
+            ],
+            "exaltation_sign": "Cancer",
+            "fact_id": "western.traditional_condition.jupiter",
+            "fall_sign": "Capricorn",
+            "lineage": "tropical-traditional-condition-v0.3",
+            "scoring_applied": false,
+            "source_ids": [
+              "SRC-WESTERN-PTOLEMY-001"
+            ],
+            "statuses": [
+              "detriment"
+            ]
+          }
         },
         {
           "body": "saturn",
@@ -485,7 +601,26 @@
           "source_ids": [
             "SRC-WESTERN-ASTRONOMY-ENGINE-001"
           ],
-          "speed_degrees_per_day": -0.02144722
+          "speed_degrees_per_day": -0.02144722,
+          "traditional_condition": {
+            "detriment_signs": [
+              "Cancer",
+              "Leo"
+            ],
+            "domicile_signs": [
+              "Capricorn",
+              "Aquarius"
+            ],
+            "exaltation_sign": "Libra",
+            "fact_id": "western.traditional_condition.saturn",
+            "fall_sign": "Aries",
+            "lineage": "tropical-traditional-condition-v0.3",
+            "scoring_applied": false,
+            "source_ids": [
+              "SRC-WESTERN-PTOLEMY-001"
+            ],
+            "statuses": []
+          }
         },
         {
           "body": "uranus",
@@ -548,7 +683,8 @@
     "WESTERN-CAL-ANGLES-001",
     "WESTERN-HOUSE-WHOLE-001",
     "WESTERN-ASPECT-MAJOR-001",
-    "WESTERN-INTERPRET-STRUCTURE-001"
+    "WESTERN-INTERPRET-STRUCTURE-001",
+    "WESTERN-TRADITIONAL-CONDITION-001"
   ],
   "normalized_input": {
     "coordinate_frame": "geocentric_true_ecliptic_of_date",
@@ -558,6 +694,7 @@
     "local_datetime": "2024-11-03T01:30:00-04:00",
     "longitude": -74.006,
     "timezone": "America/New_York",
+    "traditional_condition_lineage": "tropical-traditional-condition-v0.3",
     "utc_datetime": "2024-11-03T05:30:00Z",
     "zodiac": "tropical"
   },
@@ -585,6 +722,10 @@
     {
       "locator": "Tropical house and aspect contract",
       "source_id": "SRC-WESTERN-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "Book I traditional houses and exaltations",
+      "source_id": "SRC-WESTERN-PTOLEMY-001"
     }
   ],
   "system": "western-astrology",

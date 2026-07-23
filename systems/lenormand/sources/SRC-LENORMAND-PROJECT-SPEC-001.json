@@ -1,11 +1,11 @@
 {
   "source_id": "SRC-LENORMAND-PROJECT-SPEC-001",
-  "title": "Project Lenormand 36 text deck and layouts v0.2",
+  "title": "Project Lenormand 36 text deck and layouts v0.3",
   "creators": [{ "name": "divination-skills project", "role": "author" }],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
-  "edition_or_version": "0.2.0",
+  "edition_or_version": "0.3.0",
   "locators": [{ "kind": "local", "value": "systems/lenormand/data/deck.json", "stable": true }],
   "retrieved_at": "2026-07-23",
   "local_snapshot": { "retained": true, "path": "systems/lenormand/data/deck.json" },
@@ -14,6 +14,6 @@
   "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Conventional identifiers with original project keyword wording; no art or guidebook prose." },
   "usage_status": "production",
   "systems": ["lenormand"],
-  "lineages": ["lenormand-36-project-v0.1", "lenormand-36-project-v0.2"],
+  "lineages": ["lenormand-36-project-v0.3", "game-of-hope-identity-v0.3"],
   "quality": { "authority": "unknown", "independence": "derived", "reliability": "low", "notes": "Engineering baseline pending practitioner review." }
 }

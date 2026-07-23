@@ -1,6 +1,8 @@
-# Liuyao v0.2 scope
+# Liuyao v0.3 scope
 
 This slice combines the project's reproducible three-coin cast with a timestamped civil-calendar context. It calculates the primary and changed hexagrams, eight-palace membership, palace element, 世/应 positions, 纳甲 stem-branch assignments, line elements, 六亲, 六神, month commander, day branch, and 旬空.
+
+v0.3 traces structural formulas to 《增删卜易》 and adds an explicit `civil` or `apparent_solar` time basis. Apparent solar time requires longitude, retains the full correction trace, and never replaces the civil compatibility default silently.
 
 An optional, separately versioned judgment layer accepts an explicit question category, returns candidate 用神 lines, applies a transparent month/day/void/moving score, records moving-to-changing relations, and can emit branch-only timing search keys.
 

@@ -1,11 +1,11 @@
 {
   "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001",
-  "title": "Project Pythagorean and Chaldean numerology contracts v0.2",
+  "title": "Project Pythagorean and Chaldean numerology contracts v0.3",
   "creators": [{ "name": "divination-skills project", "role": "author" }],
   "source_type": "standard",
   "language": "en",
   "publication_date": "2026-07-23",
-  "edition_or_version": "0.2.0",
+  "edition_or_version": "0.3.0",
   "locators": [{ "kind": "local", "value": "systems/numerology/LINEAGE.md", "stable": true }],
   "retrieved_at": "2026-07-23",
   "local_snapshot": { "retained": true, "path": "systems/numerology/LINEAGE.md" },
@@ -14,6 +14,6 @@
   "rights_review": { "status": "accepted", "reviewer": "initial-engineering-review", "reviewed_at": "2026-07-23", "evidence": "Original project-authored mapping contract and wording." },
   "usage_status": "production",
   "systems": ["numerology"],
-  "lineages": ["pythagorean-project-v0.1", "chaldean-name-project-v0.2", "cross-lineage-input-policy-v0.2"],
+  "lineages": ["pythagorean-project-v0.3", "chaldean-name-cheiro-v0.3", "numerology-audit-trace-v0.3", "cross-lineage-input-policy-v0.2"],
   "quality": { "authority": "unknown", "independence": "derived", "reliability": "low", "notes": "Transparent symbolic convention pending practitioner review." }
 }

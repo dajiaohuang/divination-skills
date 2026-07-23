@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-LENORMAND-HISTORY-MEANING-001",
+  "title": "Separate historical card identity from modern reading keywords",
+  "system": "lenormand",
+  "topic": "historical and interpretive layers",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "game-of-hope-identity-v0.3",
+      "summary": "Use the surviving complete pack for card numbers, motifs, and French-suit miniatures only.",
+      "rule_ids": ["LENORMAND-CARD-IDENTITY-001"],
+      "sources": [{ "source_id": "SRC-LENORMAND-BM-HOPE-001", "locator": "British Museum 1896,0501.495" }]
+    },
+    {
+      "lineage": "lenormand-36-project-v0.3",
+      "summary": "Use project-authored upright keywords and layout relations as a distinct modern interpretation layer.",
+      "rule_ids": ["LENORMAND-CARD-UPRIGHT-001", "LENORMAND-POSITION-001"],
+      "sources": [{ "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "per-card keyword and position contracts" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "game-of-hope-identity-v0.3",
+    "rationale": "Historical identity is the computed fact; modern keywords may be applied only as labeled interpretation.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Card numbers and suit correspondences are historical identity facts; reading keywords are project-authored and are not claims about the original game.",
+  "sources": [
+    { "source_id": "SRC-LENORMAND-BM-HOPE-001", "locator": "complete historical pack" },
+    { "source_id": "SRC-LENORMAND-PROJECT-SPEC-001", "locator": "modern interpretation contract" }
+  ]
+}

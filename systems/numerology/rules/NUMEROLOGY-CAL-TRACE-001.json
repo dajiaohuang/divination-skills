@@ -1,0 +1,18 @@
+{
+  "rule_id": "NUMEROLOGY-CAL-TRACE-001",
+  "title": "Expose every normalized character and date reduction step",
+  "system": "numerology",
+  "lineage": "numerology-audit-trace-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [{ "fact_path": "normalized_input.name", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "numerology.calculation_trace", "output_path": "computed_facts.name_trace", "value": "per_character_values_and_raw_total", "confidence": "deterministic" }],
+  "priority": 995,
+  "sources": [
+    { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "normalization and reduction contract", "support_type": "direct" },
+    { "source_id": "SRC-NUMEROLOGY-CHEIRO-001", "locator": "historical letter-value table for the Chaldean option", "support_type": "corroborating" }
+  ],
+  "disputes": ["DSP-NUMEROLOGY-HISTORICAL-LABEL-001"],
+  "tests": ["CASE-NUMEROLOGY-PROFILE-001"]
+}

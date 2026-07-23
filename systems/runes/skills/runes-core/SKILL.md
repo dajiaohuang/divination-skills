@@ -11,11 +11,13 @@ Use the project's fixed Elder Futhark order and original project keywords; disti
 
 1. Ask for or choose `single` or `three-rune`; never silently substitute another layout.
 2. Run `scripts/run.py --spread <spread>` and optionally provide `--question` or `--seed-hex`.
-3. Preserve the disclosed seed, deck hash, draw ID, positions, symbol IDs, and names.
-4. Return `RUNES-HISTORICAL-LAYER-001` name evidence separately from
+3. Preserve the disclosed seed, deck hash, draw ID, positions, symbol IDs, Unicode character,
+   code point, standardized name, transliteration, and source IDs.
+4. Use `RUNES-GRAPHEME-IDENTITY-001` for encoded identity. Return
+   `RUNES-HISTORICAL-LAYER-001` name evidence separately from
    `RUNES-MODERN-REFLECTION-LAYER-001` prompts.
 5. Compare symbols in position order only through `RUNES-SEQUENCE-001`; this lineage has no reversals.
-6. State that the historical source does not support the modern divinatory keywords.
+6. State that Unicode and the Kylver stone evidence do not support the modern divinatory keywords.
 7. Apply [references/safety.md](references/safety.md) to high-impact or third-party questions.
 
 The script emits evidence-linked JSON. Supplying its `seed_hex` exactly replays the draw.

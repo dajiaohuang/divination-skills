@@ -15,7 +15,7 @@
   },
   "expected_output": {
     "audit": {
-      "cast_id": "b721f56d3bd145b6d35763724e789335870e6da0b6cb7c10563feb9fbb08a5f6"
+      "cast_id": "2da650c44c48f66b9d7513648f9395e9530d83768bfc94cc3fe35d7174c1605b"
     },
     "computed_facts": {
       "changed_hexagram": {
@@ -42,7 +42,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "乾",
@@ -173,7 +174,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "乾",
@@ -187,15 +189,16 @@
     "A fixed future event is guaranteed.",
     "The cast replaces medical, legal, or financial evidence."
   ],
-  "lineage": "three-coin-king-wen-structural-v0.1",
+  "lineage": "three-coin-king-wen-structural-v0.3",
   "must_match_rules": [
     "ICHING-HEXAGRAM-MAP-001",
     "ICHING-MOVING-LINES-001",
-    "ICHING-STRUCTURAL-REFLECTION-001"
+    "ICHING-STRUCTURAL-REFLECTION-001",
+    "ICHING-CANONICAL-IDENTITY-001"
   ],
   "normalized_input": {
     "line_order": "bottom-to-top",
-    "lineage": "three-coin-king-wen-structural-v0.1",
+    "lineage": "three-coin-king-wen-structural-v0.3",
     "question_sha256": "d5464e013046d4db13781a89cb9e573439050c01452bcf16b0b56d72e0785bd7"
   },
   "raw_input": {
@@ -215,6 +218,14 @@
     {
       "locator": "three-coin cast and King Wen mapping",
       "source_id": "SRC-ICHING-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "Library of Congress edition record",
+      "source_id": "SRC-ICHING-LOC-17845"
+    },
+    {
+      "locator": "Project Gutenberg eBook 25501",
+      "source_id": "SRC-ICHING-GUTENBERG-25501"
     }
   ],
   "system": "iching",

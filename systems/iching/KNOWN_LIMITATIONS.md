@@ -2,7 +2,7 @@
 
 - The deterministic seed protocol provides replayability, not proof of divinatory validity.
 - Project themes are newly authored and do not replace a named classical translation.
-- v0.2 exposes two explicit moving-line policies, but the count-routing lineage remains pending
+- v0.3 exposes two explicit moving-line policies, but the count-routing lineage remains pending
   independent textual and practitioner review.
 - Registered editions have not been textually collated; no variant claim is available.
 - No classical passage or modern translation is bundled.

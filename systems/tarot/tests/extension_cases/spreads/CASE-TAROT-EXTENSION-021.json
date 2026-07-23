@@ -15,9 +15,16 @@
           "card_id": "tarot.rws.wands-king",
           "card_index": 35,
           "name": "King of Wands",
+          "arcana": "minor",
+          "deck_index": 35,
+          "rank": "king",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -26,9 +33,16 @@
           "card_id": "tarot.rws.wands-seven",
           "card_index": 28,
           "name": "Seven of Wands",
+          "arcana": "minor",
+          "deck_index": 28,
+          "rank": "seven",
+          "suit": "wands",
+          "element": "fire",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -37,9 +51,16 @@
           "card_id": "tarot.rws.cups-nine",
           "card_index": 44,
           "name": "Nine of Cups",
+          "arcana": "minor",
+          "deck_index": 44,
+          "rank": "nine",
+          "suit": "cups",
+          "element": "water",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -48,9 +69,16 @@
           "card_id": "tarot.rws.major-16-tower",
           "card_index": 16,
           "name": "The Tower",
+          "arcana": "major",
+          "deck_index": 16,
+          "rank": "16",
+          "suit": null,
+          "element": null,
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         },
         {
@@ -59,9 +87,16 @@
           "card_id": "tarot.rws.cups-knight",
           "card_index": 47,
           "name": "Knight of Cups",
+          "arcana": "minor",
+          "deck_index": 47,
+          "rank": "knight",
+          "suit": "cups",
+          "element": "water",
           "orientation": "upright",
+          "identity_lineage": "rws-identity-v0.3",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
           ]
         }
       ]

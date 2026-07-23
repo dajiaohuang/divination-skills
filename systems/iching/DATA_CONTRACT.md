@@ -1,10 +1,12 @@
-# I Ching data contract v0.1
+# I Ching data contract v0.3
 
 Input accepts an optional question and optional 64-character replay seed. Unknown fields, invalid questions, and invalid seeds fail closed. Questions are retained only as SHA-256.
 
 Output discloses the seed, commitment, cast ID, and algorithm. Six `computed_facts.lines` are ordered bottom-to-top and contain three coin values, total 6–9, polarity, moving flag, changed polarity, fact ID, and source IDs. Primary and changed hexagrams record binary lines, lower/upper trigrams, conventional King Wen number and name, and project themes.
 
 The report layer cites mapping, moving-line, and structural-reflection rules. It reports all moving lines and does not invent classical judgment, image, or line text.
+
+In v0.3, `primary_hexagram.source_ids` and `changed_hexagram.source_ids` identify the two registered classical editions. Each generated coin line cites only the project casting specification.
 ## Classical source layer v0.2
 
 `build_classical_layer` accepts a valid cast, explicit `policy_id`, and optional edition IDs. It

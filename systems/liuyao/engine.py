@@ -10,6 +10,8 @@ from systems.bazi.calculator.engine import CalculationError, calculate_chart
 from systems.iching.engine import CastError, cast
 
 SOURCE_ID = "SRC-LIUYAO-PROJECT-SPEC-001"
+CLASSICAL_SOURCE_ID = "SRC-LIUYAO-ZENGSHAN-001"
+STRUCTURAL_SOURCE_IDS = [SOURCE_ID, CLASSICAL_SOURCE_ID]
 STEMS = tuple("甲乙丙丁戊己庚辛壬癸")
 BRANCHES = tuple("子丑寅卯辰巳午未申酉戌亥")
 BRANCH_ELEMENT = {
@@ -130,7 +132,17 @@ def void_branches(day_index: int) -> list[str]:
 
 
 def calculate(payload: dict[str, Any]) -> dict[str, Any]:
-    allowed = {"question", "seed_hex", "local_datetime", "timezone", "day_boundary", "fold"}
+    allowed = {
+        "question",
+        "seed_hex",
+        "local_datetime",
+        "timezone",
+        "day_boundary",
+        "fold",
+        "time_basis",
+        "longitude",
+        "latitude",
+    }
     unknown = sorted(set(payload) - allowed)
     if unknown:
         raise LiuyaoError("unknown_fields", f"Unknown field(s): {', '.join(unknown)}")
@@ -139,7 +151,15 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
     cast_payload = {key: payload[key] for key in ("question", "seed_hex") if key in payload}
     calendar_payload = {
         key: payload[key]
-        for key in ("local_datetime", "timezone", "day_boundary", "fold")
+        for key in (
+            "local_datetime",
+            "timezone",
+            "day_boundary",
+            "fold",
+            "time_basis",
+            "longitude",
+            "latitude",
+        )
         if key in payload
     }
     calendar_payload.setdefault("day_boundary", "midnight")
@@ -178,24 +198,29 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 "six_spirit": SIX_SPIRITS[(spirit_start + index - 1) % 6],
                 "role": "shi" if index == shi else "ying" if index == ying else None,
                 "is_void": branch in void_branches(day["index"]),
-                "source_ids": [SOURCE_ID],
+                "source_ids": STRUCTURAL_SOURCE_IDS,
             }
         )
     question = payload.get("question", "")
     return {
-        "schema_version": "0.1.0",
+        "schema_version": "0.3.0",
         "engine": {
             "name": "divination-skills-liuyao",
-            "version": "0.1.0",
-            "source_ids": [SOURCE_ID, *calendar["engine"]["source_ids"]],
+            "version": "0.3.0",
+            "source_ids": [*STRUCTURAL_SOURCE_IDS, *calendar["engine"]["source_ids"]],
         },
         "normalized_input": {
             "question_sha256": hashlib.sha256(question.encode()).hexdigest(),
             "local_datetime": calendar["normalized_input"]["local_datetime"],
+            "calculation_datetime": calendar["normalized_input"]["calculation_datetime"],
             "utc_datetime": calendar["normalized_input"]["utc_datetime"],
             "timezone": calendar["normalized_input"]["timezone"],
             "day_boundary": calendar["normalized_input"]["day_boundary"],
-            "lineage": "wen-wang-najia-structural-v0.1",
+            "time_basis": calendar["normalized_input"]["time_basis"],
+            "longitude": calendar["normalized_input"]["longitude"],
+            "latitude": calendar["normalized_input"]["latitude"],
+            "solar_time_correction": calendar["normalized_input"]["solar_time_correction"],
+            "lineage": "wen-wang-najia-structural-v0.3",
         },
         "audit": cast_result["audit"],
         "computed_facts": {
@@ -209,12 +234,18 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 "stage_index": stage_index,
                 "shi_position": shi,
                 "ying_position": ying,
-                "source_ids": [SOURCE_ID],
+                "source_ids": STRUCTURAL_SOURCE_IDS,
             },
             "calendar_context": {
                 "month_commander": month["branch"],
                 "day_pillar": day,
                 "void_branches": void_branches(day["index"]),
+                "six_spirit_start": {
+                    "day_stem": day["stem"]["name"],
+                    "first_spirit": SIX_SPIRITS[spirit_start],
+                    "source_ids": STRUCTURAL_SOURCE_IDS,
+                },
+                "source_ids": STRUCTURAL_SOURCE_IDS,
             },
             "lines": lines,
         },

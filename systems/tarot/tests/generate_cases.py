@@ -37,7 +37,7 @@ def main() -> None:
             "case_id": f"CASE-TAROT-DRAW-{number:03d}",
             "title": f"Auditable Tarot draw {number:03d}",
             "system": "tarot",
-            "lineage": "rws-text-baseline-v0.1",
+            "lineage": "rws-identity-v0.3",
             "category": "standard",
             "data_classification": "synthetic",
             "raw_input": payload,
@@ -51,6 +51,7 @@ def main() -> None:
                 "TAROT-DRAW-UNIQUE-001",
                 "TAROT-POSITION-001",
                 "TAROT-NARRATIVE-001",
+                "TAROT-CARD-IDENTITY-001",
                 *orientation_rules,
             ],
             "allowed_disagreements": [],
@@ -62,7 +63,11 @@ def main() -> None:
                 {
                     "source_id": "SRC-TAROT-DECK-SPEC-001",
                     "locator": "rws-78.json and auditable draw contract",
-                }
+                },
+                {
+                    "source_id": "SRC-TAROT-WAITE-WIKISOURCE-001",
+                    "locator": "The Pictorial Key to the Tarot",
+                },
             ],
             "reviewers": [
                 {

@@ -5,22 +5,29 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-runes-draw",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
       "spread": "single",
       "symbols": [
         {
+          "character": "ᚷ",
+          "codepoint": "U+16B7",
           "fact_id": "runes.draw.symbol.001",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Gebo",
           "orientation": "upright",
           "position": "focus",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.07.gebo",
-          "symbol_index": 6
+          "symbol_index": 6,
+          "transliteration": "g",
+          "unicode_name": "RUNIC LETTER GEBO GYFU G"
         }
       ]
     }
@@ -37,7 +44,7 @@
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "elder-futhark-project-v0.1",
+    "lineage": "elder-futhark-project-v0.3",
     "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "spread": "single"
   },

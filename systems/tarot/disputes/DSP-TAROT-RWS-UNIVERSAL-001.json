@@ -1,0 +1,31 @@
+{
+  "dispute_id": "DSP-TAROT-RWS-UNIVERSAL-001",
+  "title": "Treat RWS identity as a named deck lineage rather than universal Tarot",
+  "system": "tarot",
+  "topic": "deck lineage",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "rws-identity-v0.3",
+      "summary": "Use the Rider–Waite–Smith 78-card identity and ordering with explicit source attribution.",
+      "rule_ids": ["TAROT-CARD-IDENTITY-001", "TAROT-DRAW-UNIQUE-001"],
+      "sources": [{ "source_id": "SRC-TAROT-WAITE-WIKISOURCE-001", "locator": "1910 companion text and 78-card structure" }]
+    },
+    {
+      "lineage": "non-rws-tarot-lineages",
+      "summary": "Marseille, Thoth, and other decks require separate card identity, imagery, ordering, and interpretation rules.",
+      "rule_ids": ["TAROT-CARD-IDENTITY-001"],
+      "sources": [{ "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "RWS-only product boundary" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "rws-identity-v0.3",
+    "rationale": "The shipped deck and rules are explicitly RWS-based and must not silently generalize to other Tarot traditions.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "This engine uses the RWS lineage. Other Tarot decks and traditions need independent rule and source packs.",
+  "sources": [
+    { "source_id": "SRC-TAROT-WAITE-WIKISOURCE-001", "locator": "RWS primary companion source" },
+    { "source_id": "SRC-TAROT-DECK-SPEC-001", "locator": "project RWS deck contract" }
+  ]
+}

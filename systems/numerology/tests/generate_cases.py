@@ -39,6 +39,7 @@ def main() -> None:
                 "NUMEROLOGY-CAL-DATE-001",
                 "NUMEROLOGY-CAL-NAME-001",
                 "NUMEROLOGY-INTERPRET-THEME-001",
+                "NUMEROLOGY-CAL-TRACE-001",
             ],
             "allowed_disagreements": [],
             "forbidden_conclusions": [

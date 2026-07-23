@@ -6,3 +6,4 @@
 - Chaibu yuan selection, ju table, earth plate, and duty-origin mappings await practitioner signoff.
 - Advanced combinations and category-specific 用神 rules remain absent.
 - No 用神, auspicious-direction, event, outcome, or timing conclusion is supported.
+- The classical source corroborates shared vocabulary; project rotation, hosting, and Chaibu transcription still require independent practitioner review.

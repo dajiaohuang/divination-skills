@@ -10,11 +10,104 @@
       "name_letters": "EXAMPLENAME",
       "birth_date": "1989-10-10",
       "mapping": "chaldean-1-through-8-project",
-      "mapping_lineage": "chaldean-name-project-v0.2",
+      "mapping_lineage": "chaldean-name-cheiro-v0.3",
       "transliteration_policy": "latin_nfkd-v0.1",
       "masters": []
     },
     "computed_facts": {
+      "name_trace": {
+        "fact_id": "numerology.name_trace",
+        "letters": [
+          {
+            "position": 1,
+            "letter": "E",
+            "category": "vowel",
+            "value": 5
+          },
+          {
+            "position": 2,
+            "letter": "X",
+            "category": "consonant",
+            "value": 5
+          },
+          {
+            "position": 3,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 4,
+            "letter": "M",
+            "category": "consonant",
+            "value": 4
+          },
+          {
+            "position": 5,
+            "letter": "P",
+            "category": "consonant",
+            "value": 8
+          },
+          {
+            "position": 6,
+            "letter": "L",
+            "category": "consonant",
+            "value": 3
+          },
+          {
+            "position": 7,
+            "letter": "E",
+            "category": "vowel",
+            "value": 5
+          },
+          {
+            "position": 8,
+            "letter": "N",
+            "category": "consonant",
+            "value": 5
+          },
+          {
+            "position": 9,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 10,
+            "letter": "M",
+            "category": "consonant",
+            "value": 4
+          },
+          {
+            "position": 11,
+            "letter": "E",
+            "category": "vowel",
+            "value": 5
+          }
+        ],
+        "raw_total": 46,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
+        ]
+      },
+      "date_trace": {
+        "fact_id": "numerology.date_trace",
+        "digits": [
+          1,
+          9,
+          8,
+          9,
+          1,
+          0,
+          1,
+          0
+        ],
+        "raw_total": 29,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "life_path": {
         "fact_id": "numerology.life_path",
         "raw_total": 29,
@@ -56,7 +149,8 @@
         "master_number": false,
         "theme": "initiative",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "soul_urge": {
@@ -70,7 +164,8 @@
         "master_number": false,
         "theme": "stewardship of power and resources",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "personality": {
@@ -85,7 +180,8 @@
         "master_number": false,
         "theme": "cooperation",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "maturity": {
@@ -98,7 +194,8 @@
         "master_number": false,
         "theme": "expression",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       }
     }

@@ -11,6 +11,8 @@ from lunar_python import Solar
 from systems.bazi.calculator.engine import CalculationError, calculate_chart
 
 SOURCE_ID = "SRC-QIMEN-PROJECT-SPEC-001"
+CLASSICAL_SOURCE_ID = "SRC-QIMEN-BAOJIAN-001"
+STRUCTURAL_SOURCE_IDS = [SOURCE_ID, CLASSICAL_SOURCE_ID]
 STEMS = tuple("甲乙丙丁戊己庚辛壬癸")
 BRANCHES = tuple("子丑寅卯辰巳午未申酉戌亥")
 YANG_TERMS = (
@@ -141,14 +143,22 @@ def earth_plate(dun: str, ju: int) -> list[dict[str, Any]]:
             "earth_stem": stem_by_palace[palace],
             "original_star": ORIGINAL_STAR[palace],
             "original_door": ORIGINAL_DOOR[palace],
-            "source_ids": [SOURCE_ID],
+            "source_ids": STRUCTURAL_SOURCE_IDS,
         }
         for palace in range(1, 10)
     ]
 
 
 def calculate(payload: dict[str, Any]) -> dict[str, Any]:
-    allowed = {"local_datetime", "timezone", "day_boundary", "fold"}
+    allowed = {
+        "local_datetime",
+        "timezone",
+        "day_boundary",
+        "fold",
+        "time_basis",
+        "longitude",
+        "latitude",
+    }
     unknown = sorted(set(payload) - allowed)
     if unknown:
         raise QimenError("unknown_fields", f"Unknown field(s): {', '.join(unknown)}")
@@ -186,20 +196,25 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
         f"{term_solar.getHour():02d}:{term_solar.getMinute():02d}:{term_solar.getSecond():02d}+08:00"
     )
     return {
-        "schema_version": "0.1.0",
+        "schema_version": "0.3.0",
         "engine": {
             "name": "divination-skills-qimen-foundation",
-            "version": "0.1.0",
+            "version": "0.3.0",
             "dependencies": {"lunar_python": "1.4.8"},
-            "source_ids": [SOURCE_ID, *calendar["engine"]["source_ids"]],
+            "source_ids": [*STRUCTURAL_SOURCE_IDS, *calendar["engine"]["source_ids"]],
         },
         "normalized_input": {
             "local_datetime": calendar["normalized_input"]["local_datetime"],
+            "calculation_datetime": calendar["normalized_input"]["calculation_datetime"],
             "utc_datetime": calendar["normalized_input"]["utc_datetime"],
             "beijing_datetime": calendar["normalized_input"]["beijing_datetime"],
             "timezone": calendar["normalized_input"]["timezone"],
             "day_boundary": calendar["normalized_input"]["day_boundary"],
-            "lineage": "shijia-zhuanpan-chaibu-v0.1",
+            "time_basis": calendar["normalized_input"]["time_basis"],
+            "longitude": calendar["normalized_input"]["longitude"],
+            "latitude": calendar["normalized_input"]["latitude"],
+            "solar_time_correction": calendar["normalized_input"]["solar_time_correction"],
+            "lineage": "shijia-zhuanpan-chaibu-v0.3",
         },
         "computed_facts": {
             "solar_term": {"name": term_name, "beijing_datetime": term_datetime},
@@ -213,7 +228,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
             "hour_xun": {
                 "start": xun_start,
                 "hidden_jia_stem": hidden_stem,
-                "source_ids": [SOURCE_ID],
+                "source_ids": STRUCTURAL_SOURCE_IDS,
             },
             "duty_origin": {
                 "palace": duty_origin["palace"],
@@ -221,7 +236,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 "star": duty_origin["original_star"],
                 "door": duty_origin["original_door"],
                 "center_host_palace": center_host,
-                "source_ids": [SOURCE_ID],
+                "source_ids": STRUCTURAL_SOURCE_IDS,
             },
         },
         "derived_findings": [],
@@ -253,14 +268,14 @@ def explain(result: dict[str, Any]) -> dict[str, Any]:
             "rule_ids": ["QIMEN-CHAIBU-JU-001"],
             "confidence": "medium",
             "value": facts["ju_label"],
-            "source_ids": [SOURCE_ID],
+            "source_ids": STRUCTURAL_SOURCE_IDS,
         },
         {
             "finding_id": "qimen.finding.earth.001",
             "fact_ids": earth_ids,
             "rule_ids": ["QIMEN-EARTH-PLATE-001", "QIMEN-DUTY-ORIGIN-001"],
             "confidence": "medium",
-            "source_ids": [SOURCE_ID],
+            "source_ids": STRUCTURAL_SOURCE_IDS,
         },
     ]
     report["narrative"] = {

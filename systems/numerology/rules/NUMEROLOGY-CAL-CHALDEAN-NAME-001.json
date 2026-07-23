@@ -1,15 +1,18 @@
 {
   "rule_id": "NUMEROLOGY-CAL-CHALDEAN-NAME-001",
-  "title": "Calculate name totals with the isolated project Chaldean mapping",
+  "title": "Calculate name totals with the isolated Cheiro-sourced mapping",
   "system": "numerology",
-  "lineage": "chaldean-name-project-v0.2",
-  "version": "0.2.0",
+  "lineage": "chaldean-name-cheiro-v0.3",
+  "version": "0.3.0",
   "status": "tested",
   "kind": "calculation",
-  "conditions": [{ "fact_path": "normalized_input.mapping_lineage", "operator": "eq", "value": "chaldean-name-project-v0.2" }],
+  "conditions": [{ "fact_path": "normalized_input.mapping_lineage", "operator": "eq", "value": "chaldean-name-cheiro-v0.3" }],
   "conclusions": [{ "finding_type": "numerology.chaldean_name_total", "output_path": "computed_facts", "value": "chaldean_1_through_8", "confidence": "deterministic" }],
   "priority": 900,
-  "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "systems/numerology/calculator/engine.py CHALDEAN_VALUES", "support_type": "direct" }],
+  "sources": [
+    { "source_id": "SRC-NUMEROLOGY-CHEIRO-001", "locator": "historical letter-value mapping", "support_type": "direct" },
+    { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "normalization and calculation contract", "support_type": "corroborating" }
+  ],
   "tests": ["CASE-NUMEROLOGY-PROFILE-001"],
-  "notes": "Project mapping pending practitioner review; never blended with Pythagorean values."
+  "notes": "The historical mapping is source-backed but its interpretive claims are not scientific evidence; values are never blended with the Pythagorean project mapping."
 }

@@ -1,0 +1,49 @@
+{
+  "source_id": "SRC-LIUYAO-ZENGSHAN-001",
+  "title": "增删卜易（维基文库校录本）",
+  "creators": [
+    { "name": "野鹤老人", "role": "author" },
+    { "name": "Wikisource contributors", "role": "editor" }
+  ],
+  "source_type": "book",
+  "language": "zh-Hans",
+  "edition_or_version": "Wikisource full-text transcription",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "text_available": true,
+    "additional_terms": false,
+    "notes": "The historical original is public domain. The transcription is used to verify formula structure; no source prose is redistributed."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Production stores project-authored Najia, eight-palace, six-relative, six-spirit, moving-line, and void calculations plus short locators only."
+  },
+  "usage_status": "production",
+  "systems": ["liuyao"],
+  "lineages": ["wen-wang-najia-structural-v0.3"],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Primary practitioner text for the selected Wen Wang Najia lineage. Later school differences remain explicit disputes."
+  }
+}

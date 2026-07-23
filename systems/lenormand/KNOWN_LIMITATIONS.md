@@ -5,3 +5,4 @@
 - Text-only project keywords are reflective prompts, not predictive evidence.
 - Grand Tableau output is a 4×9 project layout; alternate 8×4+4 layouts are not silently mixed.
 - Houses and coordinate relations are not predictive or factual claims.
+- The British Museum pack validates identity metadata, not the project's modern reading keywords or predictive validity.

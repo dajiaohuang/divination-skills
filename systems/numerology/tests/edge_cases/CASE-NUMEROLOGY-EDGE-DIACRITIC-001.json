@@ -5,7 +5,7 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-numerology",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
@@ -22,6 +22,23 @@
         ],
         "theme": "heightened inspiration",
         "value": 11
+      },
+      "date_trace": {
+        "digits": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          9
+        ],
+        "fact_id": "numerology.date_trace",
+        "raw_total": 15,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
       },
       "expression": {
         "fact_id": "numerology.expression",
@@ -64,6 +81,75 @@
         ],
         "theme": "expression",
         "value": 3
+      },
+      "name_trace": {
+        "fact_id": "numerology.name_trace",
+        "letters": [
+          {
+            "category": "vowel",
+            "letter": "E",
+            "position": 1,
+            "value": 5
+          },
+          {
+            "category": "consonant",
+            "letter": "L",
+            "position": 2,
+            "value": 3
+          },
+          {
+            "category": "vowel",
+            "letter": "O",
+            "position": 3,
+            "value": 6
+          },
+          {
+            "category": "consonant",
+            "letter": "D",
+            "position": 4,
+            "value": 4
+          },
+          {
+            "category": "vowel",
+            "letter": "I",
+            "position": 5,
+            "value": 9
+          },
+          {
+            "category": "vowel",
+            "letter": "E",
+            "position": 6,
+            "value": 5
+          },
+          {
+            "category": "consonant",
+            "letter": "T",
+            "position": 7,
+            "value": 2
+          },
+          {
+            "category": "vowel",
+            "letter": "E",
+            "position": 8,
+            "value": 5
+          },
+          {
+            "category": "consonant",
+            "letter": "S",
+            "position": 9,
+            "value": 1
+          },
+          {
+            "category": "consonant",
+            "letter": "T",
+            "position": 10,
+            "value": 2
+          }
+        ],
+        "raw_total": 42,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
       },
       "personality": {
         "fact_id": "numerology.personality",
@@ -108,12 +194,14 @@
   "normalized_input": {
     "birth_date": "2000-02-29",
     "mapping": "pythagorean-a1-i9-repeat",
+    "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
       11,
       22,
       33
     ],
-    "name_letters": "ELODIETEST"
+    "name_letters": "ELODIETEST",
+    "transliteration_policy": "latin_nfkd-v0.1"
   },
   "raw_input": {
     "birth_date": "2000-02-29",

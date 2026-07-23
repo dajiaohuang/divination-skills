@@ -46,6 +46,8 @@ POSITIONS = {
 }
 ALGORITHM = "sha256-counter-rejection-v1"
 DECK_PATH = Path(__file__).resolve().parents[1] / "data" / "rws-78.json"
+PROJECT_SOURCE = "SRC-TAROT-DECK-SPEC-001"
+HISTORICAL_SOURCE = "SRC-TAROT-WAITE-WIKISOURCE-001"
 
 
 class DrawError(ValueError):
@@ -147,8 +149,14 @@ def draw_cards(payload: dict[str, Any]) -> dict[str, Any]:
                 "card_id": card["card_id"],
                 "card_index": card_index,
                 "name": card["name"],
+                "arcana": card["arcana"],
+                "deck_index": card["index"],
+                "rank": card["rank"],
+                "suit": card["suit"],
+                "element": card["element"],
                 "orientation": orientation,
-                "source_ids": ["SRC-TAROT-DECK-SPEC-001"],
+                "identity_lineage": "rws-identity-v0.3",
+                "source_ids": [PROJECT_SOURCE, HISTORICAL_SOURCE],
             }
         )
 
@@ -160,11 +168,11 @@ def draw_cards(payload: dict[str, Any]) -> dict[str, Any]:
     seed_hex = seed.hex()
     audit_basis = {"normalized_input": normalized, "seed_hex": seed_hex, "deck_sha256": deck_hash}
     return {
-        "schema_version": "0.1.0",
+        "schema_version": "0.3.0",
         "engine": {
             "name": "divination-skills-tarot-draw",
-            "version": "0.1.0",
-            "source_ids": ["SRC-TAROT-DECK-SPEC-001"],
+            "version": "0.3.0",
+            "source_ids": [PROJECT_SOURCE, HISTORICAL_SOURCE],
         },
         "normalized_input": normalized,
         "audit": {

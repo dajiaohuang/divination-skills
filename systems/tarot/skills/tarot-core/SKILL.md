@@ -10,9 +10,11 @@ Explain the existing draw without changing it.
 ## Workflow
 
 1. Require structured draw output with `validation.status=valid`; otherwise invoke `$tarot-draw` or reject mismatched external data.
-2. For each card, retain its `fact_id`, position, card ID, and orientation exactly.
+2. For each card, retain its `fact_id`, position, card ID, arcana, rank, suit, element, identity
+   lineage, source IDs, and orientation exactly.
 3. Use the corresponding project-authored orientation keywords and constrain language by the named position.
-4. Cite `TAROT-POSITION-001` plus the applicable orientation rule for every card statement.
+4. Cite `TAROT-CARD-IDENTITY-001` for RWS identity and `TAROT-POSITION-001` plus the applicable
+   orientation rule for every interpretive statement.
 5. Read multiple cards in position order; when combinations are requested, expose only
    `TAROT-COMBINATION-RELATION-001` metadata facts.
 6. Frame the output as reflection, questions, tradeoffs, or small reversible actions—not facts or fixed predictions.

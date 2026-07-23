@@ -1,8 +1,10 @@
 # Liuyao lineage
 
-`wen-wang-najia-structural-v0.1` uses the `three-coin-king-wen-structural-v0.1` casting contract, the eight-palace sequences, traditional inner/outer trigram 纳甲 tables, palace-element 六亲 derivation, and day-stem 六神 rotation.
+`wen-wang-najia-structural-v0.3` uses the `three-coin-king-wen-structural-v0.3` casting contract, the eight-palace sequences, traditional inner/outer trigram 纳甲 tables, palace-element 六亲 derivation, and day-stem 六神 rotation.
 
 The civil timestamp is normalized through the Bazi calculation layer. The caller must state an IANA time zone and may choose `midnight` or `zi_initial` as the day boundary; the selection is retained. This baseline is a transparent engineering transcription pending independent domain acceptance, not a claim that all Liuyao schools agree.
+
+v0.3 cites 《增删卜易》 for the selected structural vocabulary and formulas. The project tables remain separately cited because a historical source does not by itself prove every transcription choice.
 
 `wen-wang-najia-project-judgment-v0.2` is a physically separate and opt-in project
 judgment lineage. It routes an explicit question category to 世、应 or one 六亲, exposes a

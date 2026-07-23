@@ -5,7 +5,7 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-qimen-foundation",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
@@ -37,7 +37,8 @@
         "gua": "乾",
         "palace": 6,
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ],
         "star": "天心"
       },
@@ -50,7 +51,8 @@
           "original_star": "天蓬",
           "palace": 1,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -61,7 +63,8 @@
           "original_star": "天芮",
           "palace": 2,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -72,7 +75,8 @@
           "original_star": "天冲",
           "palace": 3,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -83,7 +87,8 @@
           "original_star": "天辅",
           "palace": 4,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -94,7 +99,8 @@
           "original_star": "天禽",
           "palace": 5,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -105,7 +111,8 @@
           "original_star": "天心",
           "palace": 6,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -116,7 +123,8 @@
           "original_star": "天柱",
           "palace": 7,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -127,7 +135,8 @@
           "original_star": "天任",
           "palace": 8,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -138,7 +147,8 @@
           "original_star": "天英",
           "palace": 9,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         }
       ],
@@ -166,7 +176,8 @@
       "hour_xun": {
         "hidden_jia_stem": "辛",
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ],
         "start": "甲午"
       },
@@ -197,9 +208,14 @@
   ],
   "normalized_input": {
     "beijing_datetime": "2026-06-22T00:30:00+08:00",
+    "calculation_datetime": "2026-06-22T00:30:00+08:00",
     "day_boundary": "midnight",
-    "lineage": "shijia-zhuanpan-chaibu-v0.1",
+    "latitude": null,
+    "lineage": "shijia-zhuanpan-chaibu-v0.3",
     "local_datetime": "2026-06-22T00:30:00+08:00",
+    "longitude": null,
+    "solar_time_correction": null,
+    "time_basis": "civil",
     "timezone": "Asia/Shanghai",
     "utc_datetime": "2026-06-21T16:30:00Z"
   },

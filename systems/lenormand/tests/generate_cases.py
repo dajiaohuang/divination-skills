@@ -25,7 +25,7 @@ def main() -> None:
             "case_id": f"CASE-LENORMAND-DRAW-{number:03d}",
             "title": f"Auditable Lenormand draw {number:03d}",
             "system": "lenormand",
-            "lineage": "lenormand-36-project-v0.1",
+            "lineage": "lenormand-36-project-v0.3",
             "category": "standard",
             "data_classification": "synthetic",
             "raw_input": payload,
@@ -39,6 +39,7 @@ def main() -> None:
                 "LENORMAND-CARD-UPRIGHT-001",
                 "LENORMAND-POSITION-001",
                 "LENORMAND-SEQUENCE-001",
+                "LENORMAND-CARD-IDENTITY-001",
             ],
             "allowed_disagreements": [],
             "forbidden_conclusions": [
@@ -49,7 +50,11 @@ def main() -> None:
                 {
                     "source_id": "SRC-LENORMAND-PROJECT-SPEC-001",
                     "locator": "text-only 36-symbol project deck and draw contract",
-                }
+                },
+                {
+                    "source_id": "SRC-LENORMAND-BM-HOPE-001",
+                    "locator": "British Museum complete Game of Hope pack",
+                },
             ],
             "reviewers": [
                 {

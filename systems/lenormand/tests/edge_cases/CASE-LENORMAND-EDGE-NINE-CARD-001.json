@@ -5,107 +5,143 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-lenormand-draw",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
       "spread": "nine-card",
       "symbols": [
         {
+          "card_number": 36,
           "fact_id": "lenormand.draw.symbol.001",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Cross",
           "orientation": "upright",
+          "playing_card": "6-clubs",
           "position": "p1",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.36.cross",
           "symbol_index": 35
         },
         {
+          "card_number": 7,
           "fact_id": "lenormand.draw.symbol.002",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Snake",
           "orientation": "upright",
+          "playing_card": "queen-clubs",
           "position": "p2",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.07.snake",
           "symbol_index": 6
         },
         {
+          "card_number": 20,
           "fact_id": "lenormand.draw.symbol.003",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Garden",
           "orientation": "upright",
+          "playing_card": "8-spades",
           "position": "p3",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.20.garden",
           "symbol_index": 19
         },
         {
+          "card_number": 8,
           "fact_id": "lenormand.draw.symbol.004",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Coffin",
           "orientation": "upright",
+          "playing_card": "9-diamonds",
           "position": "p4",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.08.coffin",
           "symbol_index": 7
         },
         {
+          "card_number": 4,
           "fact_id": "lenormand.draw.symbol.005",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "House",
           "orientation": "upright",
+          "playing_card": "king-hearts",
           "position": "p5",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.04.house",
           "symbol_index": 3
         },
         {
+          "card_number": 6,
           "fact_id": "lenormand.draw.symbol.006",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Clouds",
           "orientation": "upright",
+          "playing_card": "king-clubs",
           "position": "p6",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.06.clouds",
           "symbol_index": 5
         },
         {
+          "card_number": 2,
           "fact_id": "lenormand.draw.symbol.007",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Clover",
           "orientation": "upright",
+          "playing_card": "6-diamonds",
           "position": "p7",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.02.clover",
           "symbol_index": 1
         },
         {
+          "card_number": 15,
           "fact_id": "lenormand.draw.symbol.008",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Bear",
           "orientation": "upright",
+          "playing_card": "10-clubs",
           "position": "p8",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.15.bear",
           "symbol_index": 14
         },
         {
+          "card_number": 13,
           "fact_id": "lenormand.draw.symbol.009",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Child",
           "orientation": "upright",
+          "playing_card": "jack-spades",
           "position": "p9",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.13.child",
           "symbol_index": 12
@@ -125,7 +161,7 @@
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "lenormand-36-project-v0.1",
+    "lineage": "lenormand-36-project-v0.3",
     "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "spread": "nine-card"
   },

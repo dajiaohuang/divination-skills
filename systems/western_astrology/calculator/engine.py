@@ -46,9 +46,29 @@ ASPECTS = (
 SOURCE_IDS = [
     "SRC-WESTERN-ASTRONOMY-ENGINE-001",
     "SRC-WESTERN-PROJECT-SPEC-001",
+    "SRC-WESTERN-PTOLEMY-001",
     "SRC-TIME-PYTHON-ZONEINFO-001",
     "SRC-TIME-TZDATA-001",
 ]
+TRADITIONAL_DOMICILES = {
+    "sun": ("Leo",),
+    "moon": ("Cancer",),
+    "mercury": ("Gemini", "Virgo"),
+    "venus": ("Taurus", "Libra"),
+    "mars": ("Aries", "Scorpio"),
+    "jupiter": ("Sagittarius", "Pisces"),
+    "saturn": ("Capricorn", "Aquarius"),
+}
+TRADITIONAL_EXALTATIONS = {
+    "sun": "Aries",
+    "moon": "Taurus",
+    "mercury": "Virgo",
+    "venus": "Pisces",
+    "mars": "Capricorn",
+    "jupiter": "Cancer",
+    "saturn": "Libra",
+}
+OPPOSITE_SIGN = {sign: SIGNS[(index + 6) % 12] for index, sign in enumerate(SIGNS)}
 
 
 class AstrologyError(ValueError):
@@ -119,13 +139,44 @@ def _signed_delta(later: float, earlier: float) -> float:
     return (later - earlier + 180) % 360 - 180
 
 
+def traditional_condition(body: str, sign: str) -> dict[str, Any] | None:
+    """Return unscored Ptolemaic domicile/exaltation facts for the seven traditional planets."""
+
+    if body not in TRADITIONAL_DOMICILES:
+        return None
+    domiciles = TRADITIONAL_DOMICILES[body]
+    exaltation = TRADITIONAL_EXALTATIONS[body]
+    detriments = tuple(OPPOSITE_SIGN[item] for item in domiciles)
+    fall = OPPOSITE_SIGN[exaltation]
+    statuses = []
+    if sign in domiciles:
+        statuses.append("domicile")
+    if sign in detriments:
+        statuses.append("detriment")
+    if sign == exaltation:
+        statuses.append("exaltation")
+    if sign == fall:
+        statuses.append("fall")
+    return {
+        "fact_id": f"western.traditional_condition.{body}",
+        "lineage": "tropical-traditional-condition-v0.3",
+        "statuses": statuses,
+        "domicile_signs": list(domiciles),
+        "detriment_signs": list(detriments),
+        "exaltation_sign": exaltation,
+        "fall_sign": fall,
+        "scoring_applied": False,
+        "source_ids": ["SRC-WESTERN-PTOLEMY-001"],
+    }
+
+
 def _position(name: str, body: astronomy.Body, time: astronomy.Time) -> dict[str, Any]:
     longitude, latitude, distance = _longitude(body, time)
     before = _longitude(body, time.AddDays(-0.25))[0]
     after = _longitude(body, time.AddDays(0.25))[0]
     speed = _signed_delta(after, before) / 0.5
     sign_index = int(longitude // 30)
-    return {
+    position = {
         "fact_id": f"western.position.{name}",
         "body": name,
         "longitude_degrees": round(longitude, 8),
@@ -138,6 +189,10 @@ def _position(name: str, body: astronomy.Body, time: astronomy.Time) -> dict[str
         "degree_in_sign": round(longitude % 30, 8),
         "source_ids": ["SRC-WESTERN-ASTRONOMY-ENGINE-001"],
     }
+    condition = traditional_condition(name, position["sign"])
+    if condition is not None:
+        position["traditional_condition"] = condition
+    return position
 
 
 def _cross(
@@ -244,10 +299,10 @@ def calculate_chart(payload: dict[str, Any]) -> dict[str, Any]:
     cusps = _houses(ascendant, normalized["house_system"])
     _assign_houses(positions, cusps)
     return {
-        "schema_version": "0.1.0",
+        "schema_version": "0.3.0",
         "engine": {
             "name": "divination-skills-western-natal",
-            "version": "0.1.0",
+            "version": "0.3.0",
             "dependencies": {"astronomy-engine": "2.1.19", "tzdata": "2026.3"},
             "source_ids": SOURCE_IDS,
         },
@@ -262,6 +317,7 @@ def calculate_chart(payload: dict[str, Any]) -> dict[str, Any]:
             "house_system": normalized["house_system"],
             "zodiac": "tropical",
             "coordinate_frame": "geocentric_true_ecliptic_of_date",
+            "traditional_condition_lineage": "tropical-traditional-condition-v0.3",
         },
         "computed_facts": {
             "positions": positions,

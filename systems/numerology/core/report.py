@@ -11,9 +11,11 @@ def build_report(profile: dict[str, Any]) -> dict[str, Any]:
     original = deepcopy(profile["computed_facts"])
     explanations = []
     for name, fact in profile["computed_facts"].items():
+        if name.endswith("_trace"):
+            continue
         if name in {"life_path", "birthday"}:
             calculation_rule = "NUMEROLOGY-CAL-DATE-001"
-        elif profile["normalized_input"]["mapping_lineage"] == "chaldean-name-project-v0.2":
+        elif profile["normalized_input"]["mapping_lineage"] == "chaldean-name-cheiro-v0.3":
             calculation_rule = "NUMEROLOGY-CAL-CHALDEAN-NAME-001"
         else:
             calculation_rule = "NUMEROLOGY-CAL-NAME-001"
@@ -35,7 +37,9 @@ def build_report(profile: dict[str, Any]) -> dict[str, Any]:
             "rule_ids": item["rule_ids"],
             "confidence": "low",
             "statement": item["statement"],
-            "source_ids": ["SRC-NUMEROLOGY-PROJECT-SPEC-001"],
+            "source_ids": profile["computed_facts"][item["fact_ids"][0].split(".")[-1]][
+                "source_ids"
+            ],
         }
         for index, item in enumerate(explanations, start=1)
     ]

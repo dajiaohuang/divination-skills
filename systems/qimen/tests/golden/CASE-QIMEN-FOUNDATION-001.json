@@ -48,7 +48,8 @@
         "gua": "震",
         "palace": 3,
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ],
         "star": "天冲"
       },
@@ -61,7 +62,8 @@
           "original_star": "天蓬",
           "palace": 1,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -72,7 +74,8 @@
           "original_star": "天芮",
           "palace": 2,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -83,7 +86,8 @@
           "original_star": "天冲",
           "palace": 3,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -94,7 +98,8 @@
           "original_star": "天辅",
           "palace": 4,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -105,7 +110,8 @@
           "original_star": "天禽",
           "palace": 5,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -116,7 +122,8 @@
           "original_star": "天心",
           "palace": 6,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -127,7 +134,8 @@
           "original_star": "天柱",
           "palace": 7,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -138,7 +146,8 @@
           "original_star": "天任",
           "palace": 8,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         },
         {
@@ -149,7 +158,8 @@
           "original_star": "天英",
           "palace": 9,
           "source_ids": [
-            "SRC-QIMEN-PROJECT-SPEC-001"
+            "SRC-QIMEN-PROJECT-SPEC-001",
+            "SRC-QIMEN-BAOJIAN-001"
           ]
         }
       ],
@@ -179,7 +189,8 @@
       "hour_xun": {
         "hidden_jia_stem": "己",
         "source_ids": [
-          "SRC-QIMEN-PROJECT-SPEC-001"
+          "SRC-QIMEN-PROJECT-SPEC-001",
+          "SRC-QIMEN-BAOJIAN-001"
         ],
         "start": "甲戌"
       },
@@ -202,18 +213,24 @@
     "This foundation is a complete Qimen chart.",
     "An auspicious direction or event outcome was inferred."
   ],
-  "lineage": "shijia-zhuanpan-chaibu-v0.1",
+  "lineage": "shijia-zhuanpan-chaibu-v0.3",
   "must_match_rules": [
     "QIMEN-CHAIBU-JU-001",
     "QIMEN-EARTH-PLATE-001",
     "QIMEN-DUTY-ORIGIN-001",
-    "QIMEN-FOUNDATION-BOUNDARY-001"
+    "QIMEN-FOUNDATION-BOUNDARY-001",
+    "QIMEN-CLASSICAL-PLATE-PROVENANCE-001"
   ],
   "normalized_input": {
     "beijing_datetime": "2026-01-06T08:00:00+08:00",
+    "calculation_datetime": "2026-01-06T08:00:00+08:00",
     "day_boundary": "midnight",
-    "lineage": "shijia-zhuanpan-chaibu-v0.1",
+    "latitude": null,
+    "lineage": "shijia-zhuanpan-chaibu-v0.3",
     "local_datetime": "2026-01-06T08:00:00+08:00",
+    "longitude": null,
+    "solar_time_correction": null,
+    "time_basis": "civil",
     "timezone": "Asia/Shanghai",
     "utc_datetime": "2026-01-06T00:00:00Z"
   },
@@ -235,6 +252,10 @@
     {
       "locator": "Chaibu foundation tables",
       "source_id": "SRC-QIMEN-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "classical shared structural vocabulary",
+      "source_id": "SRC-QIMEN-BAOJIAN-001"
     }
   ],
   "system": "qimen",

@@ -13,15 +13,22 @@
     "computed_facts": {
       "cards": [
         {
+          "arcana": "minor",
           "card_id": "tarot.rws.cups-seven",
           "card_index": 42,
+          "deck_index": 42,
+          "element": "water",
           "fact_id": "tarot.draw.card.001",
+          "identity_lineage": "rws-identity-v0.3",
           "name": "Seven of Cups",
           "orientation": "reversed",
           "position": "focus",
+          "rank": "seven",
           "source_ids": [
-            "SRC-TAROT-DECK-SPEC-001"
-          ]
+            "SRC-TAROT-DECK-SPEC-001",
+            "SRC-TAROT-WAITE-WIKISOURCE-001"
+          ],
+          "suit": "cups"
         }
       ],
       "spread": "single"
@@ -31,11 +38,12 @@
     "A fixed future event is guaranteed.",
     "The cards establish a hidden fact about a third party."
   ],
-  "lineage": "rws-text-baseline-v0.1",
+  "lineage": "rws-identity-v0.3",
   "must_match_rules": [
     "TAROT-DRAW-UNIQUE-001",
     "TAROT-POSITION-001",
     "TAROT-NARRATIVE-001",
+    "TAROT-CARD-IDENTITY-001",
     "TAROT-ORIENTATION-REVERSED-001"
   ],
   "normalized_input": {
@@ -62,6 +70,10 @@
     {
       "locator": "rws-78.json and auditable draw contract",
       "source_id": "SRC-TAROT-DECK-SPEC-001"
+    },
+    {
+      "locator": "The Pictorial Key to the Tarot",
+      "source_id": "SRC-TAROT-WAITE-WIKISOURCE-001"
     }
   ],
   "system": "tarot",

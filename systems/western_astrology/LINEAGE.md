@@ -4,6 +4,8 @@ The natal baseline is `tropical-geocentric-v0.1`; v0.2 extensions use
 `tropical-geocentric-major-aspects-v0.2`, while retained-event rectification is isolated as
 `western-event-retained-rectification-v0.2`.
 
+v0.3 adds `tropical-traditional-condition-v0.3`, an unscored Ptolemaic table layer limited to Sun, Moon, Mercury, Venus, Mars, Jupiter, and Saturn. It never assigns modern outer-planet rulerships.
+
 - Zodiac: tropical, true ecliptic and equinox of date.
 - Planet frame: geocentric apparent positions from Astronomy Engine 2.1.19; no topocentric lunar parallax.
 - Bodies: ten conventional planets/luminaries from Sun through Pluto.

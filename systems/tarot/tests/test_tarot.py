@@ -30,6 +30,18 @@ def test_deck_has_78_unique_schema_valid_cards() -> None:
     assert [card["index"] for card in deck["cards"]] == list(range(78))
 
 
+def test_rws_identity_is_complete_and_source_traced() -> None:
+    draw = draw_cards({"spread": "celtic-cross", "seed_hex": "00" * 32})
+    for fact in draw["computed_facts"]["cards"]:
+        assert fact["deck_index"] == fact["card_index"]
+        assert fact["identity_lineage"] == "rws-identity-v0.3"
+        assert "SRC-TAROT-WAITE-WIKISOURCE-001" in fact["source_ids"]
+        if fact["arcana"] == "major":
+            assert fact["suit"] is None and fact["element"] is None
+        else:
+            assert fact["suit"] and fact["rank"] and fact["element"]
+
+
 @pytest.mark.parametrize("case", golden_cases(), ids=lambda case: case["case_id"])
 def test_golden_draw_replays_exactly(case: dict) -> None:
     draw = draw_cards(case["raw_input"])

@@ -8,43 +8,64 @@
   },
   "expected_output": {
     "audit": {
-      "draw_id": "d4786c704509f69f1517ea1d2830a81882fe33ca78a3f07eff01053508e423aa"
+      "draw_id": "407c6c611376b6ddc3acaec16ab03dfead6e0c146d53fdf95d53a1bfe0352d5e"
     },
     "computed_facts": {
       "spread": "three-rune",
       "symbols": [
         {
+          "character": "ᛉ",
+          "codepoint": "U+16C9",
           "fact_id": "runes.draw.symbol.001",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Algiz",
           "orientation": "upright",
           "position": "context",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.15.algiz",
-          "symbol_index": 14
+          "symbol_index": 14,
+          "transliteration": "z",
+          "unicode_name": "RUNIC LETTER ALGIZ EOLHX"
         },
         {
+          "character": "ᛈ",
+          "codepoint": "U+16C8",
           "fact_id": "runes.draw.symbol.002",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Perthro",
           "orientation": "upright",
           "position": "tension",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.14.perthro",
-          "symbol_index": 13
+          "symbol_index": 13,
+          "transliteration": "p",
+          "unicode_name": "RUNIC LETTER PERTHO PEORTH P"
         },
         {
+          "character": "ᚺ",
+          "codepoint": "U+16BA",
           "fact_id": "runes.draw.symbol.003",
+          "identity_lineage": "elder-futhark-grapheme-v0.3",
           "name": "Hagalaz",
           "orientation": "upright",
           "position": "practice",
           "source_ids": [
-            "SRC-RUNES-PROJECT-SPEC-001"
+            "SRC-RUNES-PROJECT-SPEC-001",
+            "SRC-RUNES-UNICODE-001",
+            "SRC-RUNES-SHM-KYLVER-001"
           ],
           "symbol_id": "runes.09.hagalaz",
-          "symbol_index": 8
+          "symbol_index": 8,
+          "transliteration": "h",
+          "unicode_name": "RUNIC LETTER HAGLAZ H"
         }
       ]
     }
@@ -53,15 +74,16 @@
     "A fixed future event is guaranteed.",
     "The symbols establish a hidden fact about a third party."
   ],
-  "lineage": "elder-futhark-project-v0.1",
+  "lineage": "elder-futhark-project-v0.3",
   "must_match_rules": [
     "RUNES-SYMBOL-UPRIGHT-001",
     "RUNES-POSITION-001",
-    "RUNES-SEQUENCE-001"
+    "RUNES-SEQUENCE-001",
+    "RUNES-GRAPHEME-IDENTITY-001"
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "elder-futhark-project-v0.1",
+    "lineage": "elder-futhark-project-v0.3",
     "question_sha256": "67d40ff4d80a16abe5e706a338d4feb6ba49a845cb95edead6a60371a9ee8e5d",
     "spread": "three-rune"
   },
@@ -84,6 +106,14 @@
     {
       "locator": "text-only 24-symbol project deck and draw contract",
       "source_id": "SRC-RUNES-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "Unicode Runic block names list",
+      "source_id": "SRC-RUNES-UNICODE-001"
+    },
+    {
+      "locator": "Kylver stone 24-character sequence",
+      "source_id": "SRC-RUNES-SHM-KYLVER-001"
     }
   ],
   "system": "runes",

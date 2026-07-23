@@ -43,7 +43,10 @@ def test_chaldean_mapping_covers_alphabet_without_nine() -> None:
         }
     )
     assert profile["normalized_input"]["masters"] == []
-    assert all(fact["master_number"] is False for fact in profile["computed_facts"].values())
+    number_facts = [
+        fact for name, fact in profile["computed_facts"].items() if not name.endswith("_trace")
+    ]
+    assert all(fact["master_number"] is False for fact in number_facts)
 
 
 def test_non_latin_requires_explicit_complete_transliteration() -> None:

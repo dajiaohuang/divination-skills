@@ -14,7 +14,7 @@
   "data_classification": "synthetic",
   "expected_intermediate": {
     "engine": "divination-skills-iching-cast",
-    "engine_version": "0.1.0"
+    "engine_version": "0.3.0"
   },
   "expected_output": {
     "computed_facts": {
@@ -42,7 +42,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "兑",
@@ -177,7 +178,8 @@
           "a small reversible response to the present conditions"
         ],
         "source_ids": [
-          "SRC-ICHING-PROJECT-SPEC-001"
+          "SRC-ICHING-LOC-17845",
+          "SRC-ICHING-GUTENBERG-25501"
         ],
         "upper_trigram": {
           "hanzi": "离",
@@ -199,7 +201,7 @@
   ],
   "normalized_input": {
     "line_order": "bottom-to-top",
-    "lineage": "three-coin-king-wen-structural-v0.1",
+    "lineage": "three-coin-king-wen-structural-v0.3",
     "question_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "raw_input": {

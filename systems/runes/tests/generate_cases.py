@@ -25,7 +25,7 @@ def main() -> None:
             "case_id": f"CASE-RUNES-DRAW-{number:03d}",
             "title": f"Auditable Elder Futhark draw {number:03d}",
             "system": "runes",
-            "lineage": "elder-futhark-project-v0.1",
+            "lineage": "elder-futhark-project-v0.3",
             "category": "standard",
             "data_classification": "synthetic",
             "raw_input": payload,
@@ -39,6 +39,7 @@ def main() -> None:
                 "RUNES-SYMBOL-UPRIGHT-001",
                 "RUNES-POSITION-001",
                 "RUNES-SEQUENCE-001",
+                "RUNES-GRAPHEME-IDENTITY-001",
             ],
             "allowed_disagreements": [],
             "forbidden_conclusions": [
@@ -49,7 +50,15 @@ def main() -> None:
                 {
                     "source_id": "SRC-RUNES-PROJECT-SPEC-001",
                     "locator": "text-only 24-symbol project deck and draw contract",
-                }
+                },
+                {
+                    "source_id": "SRC-RUNES-UNICODE-001",
+                    "locator": "Unicode Runic block names list",
+                },
+                {
+                    "source_id": "SRC-RUNES-SHM-KYLVER-001",
+                    "locator": "Kylver stone 24-character sequence",
+                },
             ],
             "reviewers": [
                 {

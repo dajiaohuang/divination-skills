@@ -1,0 +1,51 @@
+{
+  "source_id": "SRC-RUNES-SHM-KYLVER-001",
+  "title": "Kylverstenen — Swedish History Museum collection 267753",
+  "creators": [{ "name": "Swedish History Museum", "role": "organization" }],
+  "source_type": "other",
+  "language": "sv",
+  "publication_date": "0400",
+  "edition_or_version": "Collection record and museum interpretation",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://samlingar.shm.se/redirect/historiska/object/267753",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://historiska.se/historien-om-sverige-kylverstenen/?exhibition=true",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": { "retained": false },
+  "license": {
+    "identifier": "metadata-facts-only",
+    "text_available": true,
+    "additional_terms": false,
+    "notes": "The project uses the museum-established facts that the inscription is an early complete 24-character older futhark. No museum image or prose is redistributed."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Only uncopyrightable artifact facts and a source locator are retained."
+  },
+  "usage_status": "production",
+  "systems": ["runes"],
+  "lineages": ["elder-futhark-grapheme-v0.3"],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Supports the 24-character historical identity layer; modern reflective keywords are explicitly separate."
+  }
+}

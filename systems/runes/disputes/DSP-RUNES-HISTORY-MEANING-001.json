@@ -1,0 +1,32 @@
+{
+  "dispute_id": "DSP-RUNES-HISTORY-MEANING-001",
+  "title": "Separate historical grapheme evidence from modern divination meanings",
+  "system": "runes",
+  "topic": "historical and reflective layers",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "elder-futhark-grapheme-v0.3",
+      "summary": "Treat characters, code points, transliterations, and the 24-rune sequence as historical or standards-backed identity facts.",
+      "rule_ids": ["RUNES-GRAPHEME-IDENTITY-001", "RUNES-HISTORICAL-LAYER-001"],
+      "sources": [{ "source_id": "SRC-RUNES-SHM-KYLVER-001", "locator": "24-character older futhark artifact record" }]
+    },
+    {
+      "lineage": "elder-futhark-project-reflection-v0.2",
+      "summary": "Treat keywords and prompts as a separately labeled modern reflection layer.",
+      "rule_ids": ["RUNES-MODERN-REFLECTION-LAYER-001", "RUNES-SYMBOL-UPRIGHT-001"],
+      "sources": [{ "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "project-authored reflection prompts" }]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "elder-futhark-grapheme-v0.3",
+    "rationale": "Historical identity can be asserted as fact; modern divination meanings cannot be back-projected onto the artifact evidence.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Rune characters and sequence have historical or standards provenance; the reading keywords are modern project-authored reflection.",
+  "sources": [
+    { "source_id": "SRC-RUNES-UNICODE-001", "locator": "encoded character identities" },
+    { "source_id": "SRC-RUNES-SHM-KYLVER-001", "locator": "24-character sequence evidence" },
+    { "source_id": "SRC-RUNES-PROJECT-SPEC-001", "locator": "modern reflection layer" }
+  ]
+}

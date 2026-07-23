@@ -20,6 +20,23 @@
         "theme": "initiative",
         "value": 1
       },
+      "date_trace": {
+        "digits": [
+          1,
+          9,
+          0,
+          5,
+          1,
+          2,
+          1,
+          0
+        ],
+        "fact_id": "numerology.date_trace",
+        "raw_total": 19,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "expression": {
         "fact_id": "numerology.expression",
         "master_number": false,
@@ -63,6 +80,69 @@
         "theme": "cooperation",
         "value": 2
       },
+      "name_trace": {
+        "fact_id": "numerology.name_trace",
+        "letters": [
+          {
+            "category": "vowel",
+            "letter": "A",
+            "position": 1,
+            "value": 1
+          },
+          {
+            "category": "consonant",
+            "letter": "R",
+            "position": 2,
+            "value": 9
+          },
+          {
+            "category": "consonant",
+            "letter": "D",
+            "position": 3,
+            "value": 4
+          },
+          {
+            "category": "vowel",
+            "letter": "E",
+            "position": 4,
+            "value": 5
+          },
+          {
+            "category": "consonant",
+            "letter": "N",
+            "position": 5,
+            "value": 5
+          },
+          {
+            "category": "consonant",
+            "letter": "V",
+            "position": 6,
+            "value": 4
+          },
+          {
+            "category": "vowel",
+            "letter": "A",
+            "position": 7,
+            "value": 1
+          },
+          {
+            "category": "consonant",
+            "letter": "L",
+            "position": 8,
+            "value": 3
+          },
+          {
+            "category": "vowel",
+            "letter": "E",
+            "position": 9,
+            "value": 5
+          }
+        ],
+        "raw_total": 37,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "personality": {
         "fact_id": "numerology.personality",
         "master_number": false,
@@ -101,17 +181,20 @@
   "must_match_rules": [
     "NUMEROLOGY-CAL-DATE-001",
     "NUMEROLOGY-CAL-NAME-001",
-    "NUMEROLOGY-INTERPRET-THEME-001"
+    "NUMEROLOGY-INTERPRET-THEME-001",
+    "NUMEROLOGY-CAL-TRACE-001"
   ],
   "normalized_input": {
     "birth_date": "1905-12-10",
     "mapping": "pythagorean-a1-i9-repeat",
+    "mapping_lineage": "pythagorean-project-v0.3",
     "masters": [
       11,
       22,
       33
     ],
-    "name_letters": "ARDENVALE"
+    "name_letters": "ARDENVALE",
+    "transliteration_policy": "latin_nfkd-v0.1"
   },
   "raw_input": {
     "birth_date": "1905-12-10",

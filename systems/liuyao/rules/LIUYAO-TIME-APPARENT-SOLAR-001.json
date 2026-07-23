@@ -1,0 +1,18 @@
+{
+  "rule_id": "LIUYAO-TIME-APPARENT-SOLAR-001",
+  "title": "Apply explicit apparent-solar correction before calendar context",
+  "system": "liuyao",
+  "lineage": "wen-wang-najia-structural-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "normalized_input.time_basis", "operator": "eq", "value": "apparent_solar" }],
+  "conclusions": [{ "finding_type": "liuyao.time_basis", "output_path": "normalized_input.calculation_datetime", "value": "longitude_and_equation_of_time_corrected", "confidence": "high" }],
+  "priority": 1000,
+  "sources": [
+    { "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001", "locator": "General Solar Position Calculations, equation of time and true solar time", "support_type": "direct" },
+    { "source_id": "SRC-LIUYAO-PROJECT-SPEC-001", "locator": "explicit time-basis input policy", "support_type": "corroborating" }
+  ],
+  "tests": ["CASE-LIUYAO-CAST-001"],
+  "notes": "Civil time remains the default and longitude is required for apparent solar time."
+}

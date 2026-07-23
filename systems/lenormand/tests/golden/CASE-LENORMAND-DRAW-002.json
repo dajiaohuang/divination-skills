@@ -8,40 +8,52 @@
   },
   "expected_output": {
     "audit": {
-      "draw_id": "a3e23351a9512f587a0f6781c921714af0460a251345d9007c868584c80bb633"
+      "draw_id": "943009e917a8b76e4e6105faffe499f3358581339173ff10969628acb3e14572"
     },
     "computed_facts": {
       "spread": "three-card",
       "symbols": [
         {
+          "card_number": 1,
           "fact_id": "lenormand.draw.symbol.001",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Rider",
           "orientation": "upright",
+          "playing_card": "9-hearts",
           "position": "context",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.01.rider",
           "symbol_index": 0
         },
         {
+          "card_number": 30,
           "fact_id": "lenormand.draw.symbol.002",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Lily",
           "orientation": "upright",
+          "playing_card": "king-spades",
           "position": "development",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.30.lily",
           "symbol_index": 29
         },
         {
+          "card_number": 26,
           "fact_id": "lenormand.draw.symbol.003",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Book",
           "orientation": "upright",
+          "playing_card": "10-diamonds",
           "position": "focus",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.26.book",
           "symbol_index": 25
@@ -53,15 +65,16 @@
     "A fixed future event is guaranteed.",
     "The symbols establish a hidden fact about a third party."
   ],
-  "lineage": "lenormand-36-project-v0.1",
+  "lineage": "lenormand-36-project-v0.3",
   "must_match_rules": [
     "LENORMAND-CARD-UPRIGHT-001",
     "LENORMAND-POSITION-001",
-    "LENORMAND-SEQUENCE-001"
+    "LENORMAND-SEQUENCE-001",
+    "LENORMAND-CARD-IDENTITY-001"
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "lenormand-36-project-v0.1",
+    "lineage": "lenormand-36-project-v0.3",
     "question_sha256": "a06b14d9e06e36a0678192c7f699eaf821b3ba646f0c504590030293888b6285",
     "spread": "three-card"
   },
@@ -84,6 +97,10 @@
     {
       "locator": "text-only 36-symbol project deck and draw contract",
       "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "British Museum complete Game of Hope pack",
+      "source_id": "SRC-LENORMAND-BM-HOPE-001"
     }
   ],
   "system": "lenormand",

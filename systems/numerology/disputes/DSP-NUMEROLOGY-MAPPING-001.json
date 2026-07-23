@@ -1,31 +1,31 @@
 {
   "dispute_id": "DSP-NUMEROLOGY-MAPPING-001",
-  "title": "Use Pythagorean or Chaldean letter mapping",
+  "title": "Use the Pythagorean project or Cheiro-sourced letter mapping",
   "system": "numerology",
   "topic": "letter-to-number mapping",
   "status": "resolved_for_product",
   "positions": [
     {
-      "lineage": "pythagorean-latin-project-v0.1",
-      "summary": "Map normalized Latin letters through repeating values 1–9.",
-      "rule_ids": ["NUMEROLOGY-CAL-NAME-001"],
+      "lineage": "pythagorean-project-v0.3",
+      "summary": "Map normalized Latin letters through repeating values 1–9 as an explicit modern project policy.",
+      "rule_ids": ["NUMEROLOGY-CAL-NAME-001", "NUMEROLOGY-CAL-TRACE-001"],
       "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "Pythagorean mapping table" }]
     },
     {
-      "lineage": "chaldean-not-implemented",
-      "summary": "Use a different 1–8 letter mapping and interpretation lineage.",
-      "rule_ids": ["NUMEROLOGY-INTERPRET-THEME-001"],
-      "sources": [{ "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "explicitly unsupported mapping" }]
+      "lineage": "chaldean-name-cheiro-v0.3",
+      "summary": "Use the isolated historical 1–8 letter mapping with Cheiro provenance and no Pythagorean master-number preservation.",
+      "rule_ids": ["NUMEROLOGY-CAL-CHALDEAN-NAME-001", "NUMEROLOGY-CAL-TRACE-001"],
+      "sources": [{ "source_id": "SRC-NUMEROLOGY-CHEIRO-001", "locator": "historical letter-value mapping" }]
     }
   ],
   "default_policy": {
-    "selected_lineage": "pythagorean-latin-project-v0.1",
-    "rationale": "Only the fixed Pythagorean mapping has a calculation contract and tests.",
+    "selected_lineage": "pythagorean-project-v0.3",
+    "rationale": "The existing Pythagorean project mapping remains the compatibility default; Chaldean requires explicit selection.",
     "user_disclosure_required": true
   },
-  "user_disclosure": "All name numbers use the Pythagorean Latin mapping; Chaldean values are not mixed in.",
+  "user_disclosure": "The selected Pythagorean or Cheiro-sourced Chaldean mapping is recorded; values and reduction policies are never mixed.",
   "sources": [
-    { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "Pythagorean mapping table" },
-    { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "scope exclusions" }
+    { "source_id": "SRC-NUMEROLOGY-PROJECT-SPEC-001", "locator": "Pythagorean mapping policy" },
+    { "source_id": "SRC-NUMEROLOGY-CHEIRO-001", "locator": "historical Chaldean-style mapping" }
   ]
 }

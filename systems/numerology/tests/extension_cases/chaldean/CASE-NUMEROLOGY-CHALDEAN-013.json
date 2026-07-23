@@ -10,11 +10,104 @@
       "name_letters": "GRACEHOPPER",
       "birth_date": "1993-02-14",
       "mapping": "chaldean-1-through-8-project",
-      "mapping_lineage": "chaldean-name-project-v0.2",
+      "mapping_lineage": "chaldean-name-cheiro-v0.3",
       "transliteration_policy": "latin_nfkd-v0.1",
       "masters": []
     },
     "computed_facts": {
+      "name_trace": {
+        "fact_id": "numerology.name_trace",
+        "letters": [
+          {
+            "position": 1,
+            "letter": "G",
+            "category": "consonant",
+            "value": 3
+          },
+          {
+            "position": 2,
+            "letter": "R",
+            "category": "consonant",
+            "value": 2
+          },
+          {
+            "position": 3,
+            "letter": "A",
+            "category": "vowel",
+            "value": 1
+          },
+          {
+            "position": 4,
+            "letter": "C",
+            "category": "consonant",
+            "value": 3
+          },
+          {
+            "position": 5,
+            "letter": "E",
+            "category": "vowel",
+            "value": 5
+          },
+          {
+            "position": 6,
+            "letter": "H",
+            "category": "consonant",
+            "value": 5
+          },
+          {
+            "position": 7,
+            "letter": "O",
+            "category": "vowel",
+            "value": 7
+          },
+          {
+            "position": 8,
+            "letter": "P",
+            "category": "consonant",
+            "value": 8
+          },
+          {
+            "position": 9,
+            "letter": "P",
+            "category": "consonant",
+            "value": 8
+          },
+          {
+            "position": 10,
+            "letter": "E",
+            "category": "vowel",
+            "value": 5
+          },
+          {
+            "position": 11,
+            "letter": "R",
+            "category": "consonant",
+            "value": 2
+          }
+        ],
+        "raw_total": 49,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
+        ]
+      },
+      "date_trace": {
+        "fact_id": "numerology.date_trace",
+        "digits": [
+          1,
+          9,
+          9,
+          3,
+          0,
+          2,
+          1,
+          4
+        ],
+        "raw_total": 29,
+        "source_ids": [
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+        ]
+      },
       "life_path": {
         "fact_id": "numerology.life_path",
         "raw_total": 29,
@@ -56,7 +149,8 @@
         "master_number": false,
         "theme": "structure",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "soul_urge": {
@@ -70,7 +164,8 @@
         "master_number": false,
         "theme": "completion and broad concern",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "personality": {
@@ -84,7 +179,8 @@
         "master_number": false,
         "theme": "structure",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       },
       "maturity": {
@@ -97,7 +193,8 @@
         "master_number": false,
         "theme": "care and responsibility",
         "source_ids": [
-          "SRC-NUMEROLOGY-PROJECT-SPEC-001"
+          "SRC-NUMEROLOGY-PROJECT-SPEC-001",
+          "SRC-NUMEROLOGY-CHEIRO-001"
         ]
       }
     }

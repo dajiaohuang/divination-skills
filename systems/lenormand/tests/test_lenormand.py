@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 from divination_skills.auditable_draw import AuditableDrawError
 
-from systems.lenormand.engine import draw, explain, items
+from systems.lenormand.engine import PLAYING_CARDS, draw, explain, items
 
 
 def golden_cases() -> list[dict]:
@@ -22,6 +22,16 @@ def test_deck_has_36_unique_ordered_symbols() -> None:
     assert len(deck) == 36
     assert len({item["symbol_id"] for item in deck}) == 36
     assert [item["number"] for item in deck] == list(range(1, 37))
+
+
+def test_historical_playing_card_correspondences_are_complete_and_traced() -> None:
+    assert len(PLAYING_CARDS) == 36
+    assert len(set(PLAYING_CARDS)) == 36
+    result = draw({"spread": "grand-tableau", "seed_hex": "00" * 32})
+    for fact in result["computed_facts"]["symbols"]:
+        assert fact["playing_card"] == PLAYING_CARDS[fact["card_number"] - 1]
+        assert fact["identity_lineage"] == "game-of-hope-identity-v0.3"
+        assert "SRC-LENORMAND-BM-HOPE-001" in fact["source_ids"]
 
 
 @pytest.mark.parametrize("case", golden_cases(), ids=lambda case: case["case_id"])

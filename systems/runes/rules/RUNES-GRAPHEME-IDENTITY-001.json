@@ -1,0 +1,18 @@
+{
+  "rule_id": "RUNES-GRAPHEME-IDENTITY-001",
+  "title": "Attach Unicode grapheme identity to the 24-rune sequence",
+  "system": "runes",
+  "lineage": "elder-futhark-grapheme-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [{ "fact_path": "computed_facts.symbols", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "runes.grapheme_identity", "output_path": "computed_facts.symbols.codepoint", "value": "unicode_scalar_name_and_transliteration", "confidence": "high" }],
+  "priority": 995,
+  "sources": [
+    { "source_id": "SRC-RUNES-UNICODE-001", "locator": "Runic block U+16A0–U+16FF names list", "support_type": "direct" },
+    { "source_id": "SRC-RUNES-SHM-KYLVER-001", "locator": "Kylver stone complete 24-character older futhark", "support_type": "corroborating" }
+  ],
+  "disputes": ["DSP-RUNES-HISTORY-MEANING-001"],
+  "tests": ["CASE-RUNES-DRAW-001"]
+}

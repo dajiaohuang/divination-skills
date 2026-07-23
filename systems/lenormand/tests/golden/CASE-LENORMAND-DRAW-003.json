@@ -8,106 +8,142 @@
   },
   "expected_output": {
     "audit": {
-      "draw_id": "7f6d7ad06eb2cf17374dd0c7ac90e89829cd6fe3ebf987ffa7c5f04b9f8077e1"
+      "draw_id": "7ec49b05b0351be8e8aae9ddf2db448dc5cca2ff3e24e6576552538eeded80b5"
     },
     "computed_facts": {
       "spread": "nine-card",
       "symbols": [
         {
+          "card_number": 31,
           "fact_id": "lenormand.draw.symbol.001",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Sun",
           "orientation": "upright",
+          "playing_card": "ace-diamonds",
           "position": "p1",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.31.sun",
           "symbol_index": 30
         },
         {
+          "card_number": 16,
           "fact_id": "lenormand.draw.symbol.002",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Stars",
           "orientation": "upright",
+          "playing_card": "6-hearts",
           "position": "p2",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.16.stars",
           "symbol_index": 15
         },
         {
+          "card_number": 10,
           "fact_id": "lenormand.draw.symbol.003",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Scythe",
           "orientation": "upright",
+          "playing_card": "jack-diamonds",
           "position": "p3",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.10.scythe",
           "symbol_index": 9
         },
         {
+          "card_number": 18,
           "fact_id": "lenormand.draw.symbol.004",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Dog",
           "orientation": "upright",
+          "playing_card": "10-hearts",
           "position": "p4",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.18.dog",
           "symbol_index": 17
         },
         {
+          "card_number": 5,
           "fact_id": "lenormand.draw.symbol.005",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Tree",
           "orientation": "upright",
+          "playing_card": "7-hearts",
           "position": "p5",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.05.tree",
           "symbol_index": 4
         },
         {
+          "card_number": 13,
           "fact_id": "lenormand.draw.symbol.006",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Child",
           "orientation": "upright",
+          "playing_card": "jack-spades",
           "position": "p6",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.13.child",
           "symbol_index": 12
         },
         {
+          "card_number": 12,
           "fact_id": "lenormand.draw.symbol.007",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Birds",
           "orientation": "upright",
+          "playing_card": "7-diamonds",
           "position": "p7",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.12.birds",
           "symbol_index": 11
         },
         {
+          "card_number": 26,
           "fact_id": "lenormand.draw.symbol.008",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Book",
           "orientation": "upright",
+          "playing_card": "10-diamonds",
           "position": "p8",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.26.book",
           "symbol_index": 25
         },
         {
+          "card_number": 3,
           "fact_id": "lenormand.draw.symbol.009",
+          "identity_lineage": "game-of-hope-identity-v0.3",
           "name": "Ship",
           "orientation": "upright",
+          "playing_card": "10-spades",
           "position": "p9",
           "source_ids": [
-            "SRC-LENORMAND-PROJECT-SPEC-001"
+            "SRC-LENORMAND-PROJECT-SPEC-001",
+            "SRC-LENORMAND-BM-HOPE-001"
           ],
           "symbol_id": "lenormand.03.ship",
           "symbol_index": 2
@@ -119,15 +155,16 @@
     "A fixed future event is guaranteed.",
     "The symbols establish a hidden fact about a third party."
   ],
-  "lineage": "lenormand-36-project-v0.1",
+  "lineage": "lenormand-36-project-v0.3",
   "must_match_rules": [
     "LENORMAND-CARD-UPRIGHT-001",
     "LENORMAND-POSITION-001",
-    "LENORMAND-SEQUENCE-001"
+    "LENORMAND-SEQUENCE-001",
+    "LENORMAND-CARD-IDENTITY-001"
   ],
   "normalized_input": {
     "allow_reversals": false,
-    "lineage": "lenormand-36-project-v0.1",
+    "lineage": "lenormand-36-project-v0.3",
     "question_sha256": "c1c9c8a10f8b07230b48d5de7b3fb8f87a0effd4c822c4bc203f097ea60c2b7f",
     "spread": "nine-card"
   },
@@ -150,6 +187,10 @@
     {
       "locator": "text-only 36-symbol project deck and draw contract",
       "source_id": "SRC-LENORMAND-PROJECT-SPEC-001"
+    },
+    {
+      "locator": "British Museum complete Game of Hope pack",
+      "source_id": "SRC-LENORMAND-BM-HOPE-001"
     }
   ],
   "system": "lenormand",

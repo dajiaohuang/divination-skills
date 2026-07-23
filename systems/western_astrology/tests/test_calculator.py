@@ -8,6 +8,7 @@ import pytest
 from jsonschema import Draft202012Validator
 
 from systems.western_astrology.calculator import AstrologyError, calculate_chart
+from systems.western_astrology.calculator.engine import traditional_condition
 from systems.western_astrology.core import build_report
 
 SYSTEM = Path(__file__).resolve().parents[1]
@@ -32,6 +33,20 @@ def test_j2000_positions_pin_engine_reference_values() -> None:
     assert positions["sun"]["longitude_degrees"] == pytest.approx(280.36873864, abs=1e-8)
     assert positions["moon"]["longitude_degrees"] == pytest.approx(223.32389113, abs=1e-8)
     assert positions["mars"]["longitude_degrees"] == pytest.approx(327.96389908, abs=1e-8)
+
+
+def test_traditional_conditions_are_unscored_and_exclude_outer_planets() -> None:
+    assert traditional_condition("sun", "Aries")["statuses"] == ["exaltation"]
+    assert traditional_condition("sun", "Libra")["statuses"] == ["fall"]
+    assert traditional_condition("saturn", "Libra")["statuses"] == ["exaltation"]
+    assert traditional_condition("saturn", "Aries")["statuses"] == ["fall"]
+    assert traditional_condition("uranus", "Aquarius") is None
+    chart = calculate_chart(cases()[0]["raw_input"])
+    positions = {item["body"]: item for item in chart["computed_facts"]["positions"]}
+    assert "traditional_condition" in positions["sun"]
+    assert positions["sun"]["traditional_condition"]["scoring_applied"] is False
+    assert "SRC-WESTERN-PTOLEMY-001" in positions["sun"]["traditional_condition"]["source_ids"]
+    assert "traditional_condition" not in positions["uranus"]
 
 
 def test_house_cusps_are_exactly_thirty_degrees_apart() -> None:

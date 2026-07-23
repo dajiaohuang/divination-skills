@@ -22,7 +22,7 @@ def main() -> None:
             "case_id": f"CASE-ICHING-CAST-{number:03d}",
             "title": f"Auditable three-coin cast {number:03d}",
             "system": "iching",
-            "lineage": "three-coin-king-wen-structural-v0.1",
+            "lineage": "three-coin-king-wen-structural-v0.3",
             "category": "standard",
             "data_classification": "synthetic",
             "raw_input": payload,
@@ -38,6 +38,7 @@ def main() -> None:
                 "ICHING-HEXAGRAM-MAP-001",
                 "ICHING-MOVING-LINES-001",
                 "ICHING-STRUCTURAL-REFLECTION-001",
+                "ICHING-CANONICAL-IDENTITY-001",
             ],
             "allowed_disagreements": [],
             "forbidden_conclusions": [
@@ -48,7 +49,15 @@ def main() -> None:
                 {
                     "source_id": "SRC-ICHING-PROJECT-SPEC-001",
                     "locator": "three-coin cast and King Wen mapping",
-                }
+                },
+                {
+                    "source_id": "SRC-ICHING-LOC-17845",
+                    "locator": "Library of Congress edition record",
+                },
+                {
+                    "source_id": "SRC-ICHING-GUTENBERG-25501",
+                    "locator": "Project Gutenberg eBook 25501",
+                },
             ],
             "reviewers": [
                 {

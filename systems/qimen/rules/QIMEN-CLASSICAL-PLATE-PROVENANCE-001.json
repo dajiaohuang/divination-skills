@@ -1,0 +1,18 @@
+{
+  "rule_id": "QIMEN-CLASSICAL-PLATE-PROVENANCE-001",
+  "title": "Trace shared plate vocabulary to a classical source",
+  "system": "qimen",
+  "lineage": "shijia-zhuanpan-chaibu-v0.3",
+  "version": "0.3.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [{ "fact_path": "computed_facts.earth_plate", "operator": "exists" }],
+  "conclusions": [{ "finding_type": "qimen.plate_provenance", "output_path": "computed_facts.earth_plate.source_ids", "value": "project_and_classical_sources", "confidence": "high" }],
+  "priority": 995,
+  "sources": [
+    { "source_id": "SRC-QIMEN-BAOJIAN-001", "locator": "九宫、九星、八门、八神 structural vocabulary", "support_type": "direct" },
+    { "source_id": "SRC-QIMEN-PROJECT-SPEC-001", "locator": "selected rotating-plate Chaibu formulas", "support_type": "corroborating" }
+  ],
+  "disputes": ["DSP-QIMEN-CLASSICAL-LINEAGE-001"],
+  "tests": ["CASE-QIMEN-FOUNDATION-001"]
+}

@@ -10,7 +10,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Systems](https://img.shields.io/badge/systems-10-6f42c1)](#system-coverage)
 [![Skills](https://img.shields.io/badge/skills-30-8a2be2)](#the-30-skills)
-[![Rules](https://img.shields.io/badge/rules-101-0f766e)](#rules-sources-and-traceability)
+[![Rules](https://img.shields.io/badge/rules-117-0f766e)](#rules-sources-and-traceability)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 </div>
@@ -106,15 +106,15 @@ Six shared contracts compose the systems:
 | System | Version | Implemented technical scope | Skills |
 |---|---:|---|---:|
 | Bazi | 0.2 | Four Pillars, solar terms, apparent solar time, hidden stems, Ten Gods, Nayin, growth stages, seasonal states, relations, luck cycles, timing, and synastry | 7 |
-| Western astrology | 0.2 | Tropical natal charts, whole-sign/equal houses, major aspects, transits, solar returns, synastry, and time-interval scanning | 7 |
+| Western astrology | 0.3 | Tropical natal charts, whole-sign/equal houses, major aspects, unscored conditions for the seven traditional planets, transits, solar returns, synastry, and time-interval scanning | 7 |
 | Ziwei Dou Shu | 0.5 | Native palaces/stars, classical brightness, transformation paths, optional apparent solar time, six timing scopes, queries, validation, core, and comparison | 6 |
-| Tarot | 0.2 | Project-authored text deck, seven spreads, reversals, combination summaries, and consent-gated local journal statistics | 3 |
-| Liuyao | 0.2 | Eight palaces, Shi/Ying, Najia, Six Relations, Six Spirits, void branches, candidate useful-deity and explicit strength factors | 2 |
-| I Ching | 0.2 | Replayable three-coin casts, 64 hexagrams, moving/changed lines, two explicit selection policies, and source locators | 1 |
-| Qimen Dunjia | 0.2 | Chaibu rotating plate, earth/heaven plates, stars, doors, spirits, duty entities, and structural state markers | 1 |
-| Lenormand | 0.2 | Project-authored 36-card text deck, pairs, nine-card grid, and 4×9 Grand Tableau houses/coordinates | 1 |
-| Runes | 0.2 | Auditable Elder Futhark draws with strict historical-evidence/modern-reflection separation | 1 |
-| Numerology | 0.2 | Isolated Pythagorean and Chaldean mappings with explicit user-supplied transliteration | 1 |
+| Tarot | 0.3 | Source-traced RWS 78-card identity, seven spreads, reversals, combination summaries, and consent-gated local journal statistics | 3 |
+| Liuyao | 0.3 | Eight palaces, Shi/Ying, Najia, Six Relations, Six Spirits, void branches, classical provenance, optional apparent solar time, and bounded judgment factors | 2 |
+| I Ching | 0.3 | Replayable three-coin casts, 64 hexagrams, moving/changed lines, two explicit selection policies, and two classical edition locators | 1 |
+| Qimen Dunjia | 0.3 | Chaibu rotating plate, optional apparent solar time, classical structural provenance, plates, stars, doors, spirits, and state markers | 1 |
+| Lenormand | 0.3 | 36 cards with historical number/French-suit identity, pairs, nine-card grid, and 4×9 Grand Tableau | 1 |
+| Runes | 0.3 | Elder Futhark draws with Unicode graphemes, artifact evidence, and strict modern-reflection separation | 1 |
+| Numerology | 0.3 | Pythagorean and Cheiro-sourced Chaldean mappings with per-character/date traces and explicit transliteration | 1 |
 
 ## Installation
 
@@ -323,14 +323,14 @@ Current automated snapshot:
 |---|---:|
 | Systems | 10 |
 | Skills | 30 |
-| Structured rules | 107 |
-| Source manifests | 29 |
+| Structured rules | 117 |
+| Source manifests | 37 |
 | Baseline Golden Cases | 255 |
 | Boundary cases | 68 |
 | Lineage-dispute cases | 48 |
 | Invalid-input cases | 20 |
 | Extension replay cases | 850 |
-| pytest | 1518 passed |
+| pytest | 1526 passed |
 | Technical completeness | 10/10 |
 
 Run the full verification suite:
