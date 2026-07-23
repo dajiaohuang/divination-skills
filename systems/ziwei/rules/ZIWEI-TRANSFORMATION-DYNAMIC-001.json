@@ -2,8 +2,8 @@
   "rule_id": "ZIWEI-TRANSFORMATION-DYNAMIC-001",
   "title": "Trace dynamic-scope transformations from origin palace to target star and palace",
   "system": "ziwei",
-  "lineage": "project-native-ziwei-structural-v0.4",
-  "version": "0.4.0",
+  "lineage": "project-native-ziwei-structural-v0.5",
+  "version": "0.5.0",
   "status": "tested",
   "kind": "calculation",
   "conditions": [

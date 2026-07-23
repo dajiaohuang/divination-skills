@@ -49,7 +49,7 @@ def test_bazi_skill_packages_are_complete_and_reproducible(tmp_path: Path) -> No
                 json.loads(archive.read(prefix + "THIRD_PARTY_NOTICES.json"))
             )
             assert manifest["package_version"] == "0.2.0"
-            assert manifest["chart_schema_version"] == "0.1.0"
+            assert manifest["chart_schema_version"] == "0.2.0"
             assert manifest["runtime"]["python_version"] == ">=3.11"
             assert prefix + "RUNTIME_REQUIREMENTS.json" in names
             assert prefix + "requirements.txt" in names

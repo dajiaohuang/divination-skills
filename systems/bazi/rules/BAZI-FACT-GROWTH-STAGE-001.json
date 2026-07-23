@@ -1,0 +1,37 @@
+{
+  "rule_id": "BAZI-FACT-GROWTH-STAGE-001",
+  "title": "Calculate ten-stem twelve growth stages",
+  "system": "bazi",
+  "lineage": "ten-stem-yang-forward-yin-reverse",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.pillars",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "bazi.growth_stage",
+      "output_path": "computed_facts.growth_stages",
+      "value": "day_master_and_self_stage",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 704,
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-SANMING-001",
+      "locator": "卷二・論天干陰陽生死",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-BAZI-STANDARD-001"
+  ],
+  "disputes": [
+    "DSP-BAZI-GROWTH-STAGE-001"
+  ]
+}

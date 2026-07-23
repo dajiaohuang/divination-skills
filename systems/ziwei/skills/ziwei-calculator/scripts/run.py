@@ -25,6 +25,13 @@ def main() -> int:
     parser.add_argument("--timezone", required=True)
     parser.add_argument("--calculation-gender", choices=("male", "female"), required=True)
     parser.add_argument("--fold", type=int, choices=(0, 1))
+    parser.add_argument("--longitude", type=float)
+    parser.add_argument("--latitude", type=float)
+    parser.add_argument(
+        "--time-basis",
+        choices=("civil", "apparent_solar"),
+        default="civil",
+    )
     parser.add_argument(
         "--year-boundary",
         choices=("lunar_new_year", "spring_commences"),
@@ -45,6 +52,7 @@ def main() -> int:
         "calendar_type": args.calendar_type,
         "timezone": args.timezone,
         "calculation_gender": args.calculation_gender,
+        "time_basis": args.time_basis,
         "year_boundary": args.year_boundary,
         "late_zi_policy": args.late_zi_policy,
         "leap_month_policy": args.leap_month_policy,
@@ -61,6 +69,10 @@ def main() -> int:
         payload["time_index"] = args.time_index
     if args.fold is not None:
         payload["fold"] = args.fold
+    if args.longitude is not None:
+        payload["longitude"] = args.longitude
+    if args.latitude is not None:
+        payload["latitude"] = args.latitude
     print(json.dumps(structural_report(calculate(payload)), ensure_ascii=False, indent=2))
     return 0
 

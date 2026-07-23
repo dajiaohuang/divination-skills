@@ -328,6 +328,27 @@ def test_reader_and_validator_never_overwrite_native_facts() -> None:
         read_structured("not json")
 
 
+def test_validator_reports_brightness_self_transformation_and_time_basis_paths() -> None:
+    chart = _chart()
+    modified = deepcopy(chart)
+    star = next(
+        star
+        for palace in modified["computed_facts"]["palaces"]
+        for group in ("majorStars", "minorStars", "auxiliaryStars")
+        for star in palace[group]
+        if star["brightness"] is not None and star["self_transformations"]
+    )
+    star["brightness"] = "changed"
+    star["self_transformations"] = []
+    modified["normalized_input"]["time_basis"] = "apparent_solar"
+
+    comparison = compare_chart(chart, modified)
+    classifications = {item["classification"] for item in comparison["differences"]}
+    assert "brightness_difference" in classifications
+    assert "self_transformation_difference" in classifications
+    assert "time_basis_difference" in classifications
+
+
 def test_core_is_experimental_cited_and_non_mutating() -> None:
     chart = _chart()
     original = deepcopy(chart)

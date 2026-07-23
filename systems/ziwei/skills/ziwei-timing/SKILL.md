@@ -1,6 +1,6 @@
 ---
 name: ziwei-timing
-description: Calculate project-native Ziwei v0.4 major-limit, minor-limit, annual, monthly, daily, and hourly structural layers with a shared timeline contract and transformation provenance. Use for 紫微运限, 大限小限, 流年流月流日流时, time-window structure, or deterministic replay. Do not predict guaranteed events, mix timing schools, infer missing birth time, or invoke iztro.
+description: Calculate project-native Ziwei v0.5 major-limit, minor-limit, annual, monthly, daily, and hourly structural layers with a shared timeline contract and transformation provenance. Use for 紫微运限, 大限小限, 流年流月流日流时, time-window structure, or deterministic replay. Do not predict guaranteed events, mix timing schools, infer missing birth time, or invoke iztro.
 ---
 
 # Ziwei timing

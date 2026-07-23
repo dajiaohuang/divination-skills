@@ -1,0 +1,69 @@
+{
+  "source_id": "SRC-BAZI-SANMING-001",
+  "title": "三命通會（維基文庫校錄本）",
+  "creators": [
+    {
+      "name": "萬民英",
+      "role": "author"
+    },
+    {
+      "name": "Wikisource contributors",
+      "role": "editor"
+    }
+  ],
+  "source_type": "book",
+  "language": "zh-Hant",
+  "edition_or_version": "Wikisource full-text transcription",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%91%BD%E9%80%9A%E6%9C%83/%E5%8D%B7%E4%B8%80",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%91%BD%E9%80%9A%E6%9C%83/%E5%8D%B7%E4%BA%8C",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": {
+    "retained": false
+  },
+  "license": {
+    "identifier": "Public-Domain-original/CC-BY-SA-4.0-transcription",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "text_available": true,
+    "additional_terms": false,
+    "notes": "The historical original is public domain. The transcription is consulted for fixed formula facts; no source prose is redistributed."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "Project-authored constant tables encode calculation facts rather than reproducing expressive text."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "Historical public-domain status and Wikisource CC-BY-SA notice inspected."
+  },
+  "usage_status": "production",
+  "systems": [
+    "bazi"
+  ],
+  "lineages": [
+    "ziping-calculation-baseline",
+    "ten-stem-yang-forward-yin-reverse"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Primary historical source for fixed Nayin, ten-stem growth-stage, and seasonal-state tables. Interpretive conclusions remain out of scope."
+  },
+  "notes": "Volume one supports the sixty-Jiazi Nayin sequence. Volume two supports ten-stem life/death directions and 五行旺相休囚死."
+}

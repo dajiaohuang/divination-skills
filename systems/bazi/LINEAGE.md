@@ -4,7 +4,7 @@
 
 The initial product baseline is a narrow Ziping-style calculation layer. It does not claim to represent every Ziping lineage. A separate, project-authored seasonal-support path exists only as an explicit engineering baseline; it is never mixed into the default calculation lineage.
 
-## Frozen v0.1 decisions
+## Frozen v0.2 decisions
 
 | Topic | Decision |
 |---|---|
@@ -15,10 +15,11 @@ The initial product baseline is a narrow Ziping-style calculation layer. It does
 | Solar-term frame | The term is an absolute instant; `lunar_python` term timestamps are interpreted in their fixed UTC+08:00 reference frame and converted to UTC, avoiding accidental historical DST shifts |
 | Day boundary | Default `midnight`; optional `zi_initial` advances the day pillar at 23:00 |
 | Late-Zi hour stem | Derived from the next civil day's day stem for 23:00–23:59 under both day-boundary policies |
-| True solar time | Not applied in v0.1; longitude is retained only as input metadata |
+| True solar time | Civil time is default; explicit `apparent_solar` plus longitude uses NOAA's published fractional-year approximation to select the calculation date/hour |
 | Luck-cycle direction | Must be supplied explicitly as `forward` or `reverse`; never inferred from gender |
 | Luck-cycle start | Interval to the adjacent month-boundary term divided by three days per year; output as a decimal age and marked method-specific |
 | Strength path | Disabled by default; the only selectable path is the isolated `project-seasonal-support-v0.1` feature contract, marked low-confidence and pending independent expert approval |
+| Classical table facts | 纳音, ten-stem 十二长生, and seasonal 旺相休囚死 follow the selected 《三命通会》 transcription; visible counts exclude hidden stems |
 
 ## Explicit disputes
 

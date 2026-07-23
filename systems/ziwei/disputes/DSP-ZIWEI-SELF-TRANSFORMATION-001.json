@@ -1,0 +1,51 @@
+{
+  "dispute_id": "DSP-ZIWEI-SELF-TRANSFORMATION-001",
+  "title": "Direction labels for palace-stem self-transformations",
+  "system": "ziwei",
+  "topic": "self-transformation direction convention",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "project-outward-inward-convention",
+      "summary": "A transformation triggered by the target palace's own stem is outward (↓, 离心); one triggered by the opposite palace stem is inward (↑, 向心).",
+      "rule_ids": [
+        "ZIWEI-TRANSFORMATION-PALACE-STEM-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+          "locator": "systems/ziwei/LINEAGE.md"
+        }
+      ]
+    },
+    {
+      "lineage": "unlabeled-palace-stem-paths",
+      "summary": "Expose only the origin palace, stem, target palace, star, and transformation without assigning inward/outward symbols.",
+      "rule_ids": [
+        "ZIWEI-STRUCTURAL-BOUNDARY-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-ZIWEI-QUANSHU-001",
+          "locator": "卷二十干四化表不定义现代向心、离心符号"
+        }
+      ]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "project-outward-inward-convention",
+    "rationale": "It reproduces the supplied comparison convention while retaining origin and target facts so consumers can ignore the labels.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "The star-to-transformation mapping follows the selected classical table; ↓/↑ and 离心/向心 are declared project direction labels.",
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
+      "locator": "systems/ziwei/LINEAGE.md"
+    },
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "卷二十干四化表"
+    }
+  ]
+}

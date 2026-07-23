@@ -1,0 +1,39 @@
+{
+  "rule_id": "BAZI-FACT-VISIBLE-ELEMENTS-001",
+  "title": "Count visible stem and branch elements without hidden stems",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.pillars",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "bazi.visible_element_count",
+      "output_path": "computed_facts.visible_element_counts",
+      "value": "eight_visible_characters",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 702,
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+      "locator": "systems/bazi/DATA_CONTRACT.md",
+      "support_type": "direct"
+    },
+    {
+      "source_id": "SRC-BAZI-SANMING-001",
+      "locator": "卷一・論五行生剋",
+      "support_type": "corroborating"
+    }
+  ],
+  "tests": [
+    "CASE-BAZI-STANDARD-001"
+  ]
+}

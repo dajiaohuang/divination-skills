@@ -72,8 +72,8 @@ SPECS = [
     (
         "TRUE-SOLAR-TIME",
         {"local_datetime": "2024-01-01T00:00:00", "timezone": "UTC", "true_solar_time": True},
-        "true_solar_time_unsupported",
-        "not implemented",
+        "longitude_required",
+        "longitude is required",
     ),
     (
         "UNKNOWN-FIELD",

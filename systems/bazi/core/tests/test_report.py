@@ -56,6 +56,19 @@ def test_missing_luck_direction_omits_timing_explanation() -> None:
     assert report["narrative"]["method_specific_timing"] == []
 
 
+def test_apparent_solar_time_is_cited_and_disclosed() -> None:
+    report = build_report(
+        sample_chart(
+            local_datetime="1999-09-15T19:05:00",
+            longitude=119.917,
+            time_basis="apparent_solar",
+        )
+    )
+    basis = report["narrative"]["calculation_basis"][0]
+    assert basis["rule_ids"] == ["BAZI-TIME-SOLAR-001"]
+    assert "NOAA apparent-solar" in basis["statement"]
+
+
 def test_strength_path_is_opt_in_and_has_exactly_one_low_confidence_finding() -> None:
     baseline = build_report(sample_chart())
     assert baseline["narrative"]["seasonal_support_path"] == []

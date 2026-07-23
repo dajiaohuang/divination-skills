@@ -162,14 +162,20 @@ def build_report(chart: dict[str, Any], strength_lineage: str | None = None) -> 
         )
 
     report["derived_findings"] = findings
+    apparent_solar = report["normalized_input"]["true_solar_time_applied"]
+    time_rule_id = "BAZI-TIME-SOLAR-001" if apparent_solar else "BAZI-TIME-CIVIL-001"
+    time_statement = (
+        "Calculation uses the explicit NOAA apparent-solar calculation clock; "
+        "the recorded civil UTC instant is preserved."
+        if apparent_solar
+        else "Calculation uses the supplied IANA civil time; true solar time is not applied."
+    )
     report["narrative"] = {
         "calculation_basis": [
             _explanation(
                 fact_ids=[facts["pillars"]["hour"]["fact_id"]],
-                rule_id="BAZI-TIME-CIVIL-001",
-                statement=(
-                    "Calculation uses the supplied IANA civil time; true solar time is not applied."
-                ),
+                rule_id=time_rule_id,
+                statement=time_statement,
                 matched=matched,
             )
         ],

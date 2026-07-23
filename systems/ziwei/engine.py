@@ -6,6 +6,7 @@ from copy import deepcopy
 from datetime import UTC, date, timedelta
 from typing import Any
 
+from divination_skills.solar_time import apparent_solar_time
 from divination_skills.time import TimeNormalizationError, localize_strict
 from lunar_python import Lunar, Solar
 
@@ -21,6 +22,7 @@ from systems.ziwei.star_catalog import (
     TIAN_MA_BY_GROUP,
     YEAR_FRONT_CYCLE_NAMES,
     branch_index,
+    brightness,
     group_value,
     metadata,
     place_cycle,
@@ -28,9 +30,9 @@ from systems.ziwei.star_catalog import (
 
 SOURCE_ID = "SRC-ZIWEI-PROJECT-SPEC-001"
 CALENDAR_SOURCE_ID = "SRC-ZIWEI-LUNARPY-001"
-LINEAGE = "project-native-ziwei-structural-v0.4"
-SCHEMA_VERSION = "0.4.0"
-ENGINE_VERSION = "0.4.1"
+LINEAGE = "project-native-ziwei-structural-v0.5"
+SCHEMA_VERSION = "0.5.0"
+ENGINE_VERSION = "0.5.0"
 MIN_YEAR = 1900
 MAX_YEAR = 2099
 
@@ -112,7 +114,7 @@ TRANSFORMATIONS = {
     "己": ("武曲", "贪狼", "天梁", "文曲"),
     "庚": ("太阳", "武曲", "太阴", "天同"),
     "辛": ("巨门", "太阳", "文曲", "文昌"),
-    "壬": ("天梁", "紫微", "左辅", "武曲"),
+    "壬": ("天梁", "紫微", "天府", "武曲"),
     "癸": ("破军", "巨门", "太阴", "贪狼"),
 }
 TRANSFORMATION_LABELS = ("禄", "权", "科", "忌")
@@ -281,20 +283,85 @@ def _star(
     fact_id: str,
     kind: str,
     transformations: dict[str, str],
+    earthly_branch: str,
 ) -> dict[str, Any]:
     attributes = metadata(name)
+    brightness_value = brightness(name, earthly_branch)
     return {
         "name": name,
         "type": kind,
         "category": attributes["category"],
         "element": attributes["element"],
         "polarity": attributes["polarity"],
-        "brightness": None,
-        "brightness_status": "not_available_in_selected_lineage",
+        "brightness": brightness_value,
+        "brightness_status": (
+            "classical_volume_two_matrix"
+            if brightness_value is not None
+            else "not_listed_in_classical_volume_two_matrix"
+        ),
+        "brightness_source_ids": ([CLASSICAL_SOURCE_ID] if brightness_value is not None else []),
         "mutagen": transformations.get(name),
+        "self_transformations": [],
         "fact_id": fact_id,
         "source_ids": [SOURCE_ID, CLASSICAL_SOURCE_ID],
     }
+
+
+def _attach_self_transformations(palaces: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Attach explicit outward/inward palace-stem transformation paths.
+
+    Outward means the target star is in the palace whose own stem triggers
+    the transformation.  Inward means the target star is in the opposite
+    palace and is triggered by that opposite palace's stem.  The direction
+    naming is a selected product policy; the ten-stem star mapping is the
+    classical table.
+    """
+
+    paths: list[dict[str, Any]] = []
+    for target in palaces:
+        origin_specs = (
+            (target, "outward", "↓", "离心自化"),
+            (palaces[(target["index"] + 6) % 12], "inward", "↑", "向心自化"),
+        )
+        stars = [
+            star
+            for field in ("majorStars", "minorStars", "adjectiveStars", "auxiliaryStars")
+            for star in target[field]
+        ]
+        for origin, direction, symbol, label_zh in origin_specs:
+            transformations = dict(
+                zip(
+                    TRANSFORMATIONS[origin["heavenlyStem"]],
+                    TRANSFORMATION_LABELS,
+                    strict=True,
+                )
+            )
+            for star in stars:
+                transformation = transformations.get(star["name"])
+                if transformation is None:
+                    continue
+                fact_id = f"ziwei.self_transformation.{len(paths) + 1:03d}"
+                nested = {
+                    "fact_id": fact_id,
+                    "direction": direction,
+                    "direction_zh": label_zh,
+                    "symbol": symbol,
+                    "transformation": transformation,
+                    "origin_palace_fact_id": origin["fact_id"],
+                    "origin_stem": origin["heavenlyStem"],
+                    "rule_ids": ["ZIWEI-TRANSFORMATION-PALACE-STEM-001"],
+                    "source_ids": [SOURCE_ID, CLASSICAL_SOURCE_ID],
+                }
+                star["self_transformations"].append(nested)
+                paths.append(
+                    {
+                        **nested,
+                        "target_star": star["name"],
+                        "target_star_fact_id": star["fact_id"],
+                        "target_palace_fact_id": target["fact_id"],
+                    }
+                )
+    return paths
 
 
 def _representative_hour(time_index: int) -> int:
@@ -307,7 +374,7 @@ def _representative_hour(time_index: int) -> int:
 
 def _normalize_input(
     payload: dict[str, Any],
-) -> tuple[Any, int, Any, Any, int, dict[str, str]]:
+) -> tuple[Any, Any, int, Any, Any, int, dict[str, str], dict[str, object] | None]:
     calendar_type = payload.get("calendar_type", "solar")
     if calendar_type not in {"solar", "lunar"}:
         raise ZiweiError("invalid_calendar_type", "calendar_type must be solar or lunar.")
@@ -367,6 +434,58 @@ def _normalize_input(
     if not MIN_YEAR <= local.year <= MAX_YEAR:
         raise ZiweiError("unsupported_year", f"year must be between {MIN_YEAR} and {MAX_YEAR}.")
 
+    longitude = payload.get("longitude")
+    latitude = payload.get("latitude")
+    if longitude is not None and (
+        isinstance(longitude, bool)
+        or not isinstance(longitude, (int, float))
+        or not -180 <= longitude <= 180
+    ):
+        raise ZiweiError("invalid_longitude", "longitude must be between -180 and 180.")
+    if latitude is not None and (
+        isinstance(latitude, bool)
+        or not isinstance(latitude, (int, float))
+        or not -90 <= latitude <= 90
+    ):
+        raise ZiweiError("invalid_latitude", "latitude must be between -90 and 90.")
+
+    time_basis = payload.get("time_basis")
+    legacy_true_solar = payload.get("true_solar_time")
+    if legacy_true_solar is not None and not isinstance(legacy_true_solar, bool):
+        raise ZiweiError("invalid_true_solar_time", "true_solar_time must be boolean.")
+    if time_basis is None:
+        time_basis = "apparent_solar" if legacy_true_solar else "civil"
+    if time_basis not in {"civil", "apparent_solar"}:
+        raise ZiweiError(
+            "invalid_time_basis",
+            "time_basis must be civil or apparent_solar.",
+        )
+    if legacy_true_solar is not None and (
+        (legacy_true_solar and time_basis != "apparent_solar")
+        or (not legacy_true_solar and time_basis != "civil")
+    ):
+        raise ZiweiError(
+            "conflicting_time_basis",
+            "true_solar_time and time_basis select different calculation clocks.",
+        )
+    if time_basis == "apparent_solar":
+        if calendar_type != "solar":
+            raise ZiweiError(
+                "solar_time_requires_solar_input",
+                "apparent_solar time requires a solar local_datetime input.",
+            )
+        if longitude is None:
+            raise ZiweiError(
+                "longitude_required",
+                "longitude is required when time_basis is apparent_solar.",
+            )
+        solar_time = apparent_solar_time(local, float(longitude))
+        calculation_local = solar_time.apparent_datetime
+        solar_time_fact = solar_time.to_dict()
+    else:
+        calculation_local = local
+        solar_time_fact = None
+
     late_zi_policy = payload.get("late_zi_policy", "current_day")
     year_boundary = payload.get("year_boundary", "lunar_new_year")
     leap_month_policy = payload.get("leap_month_policy", "preserve")
@@ -386,9 +505,11 @@ def _normalize_input(
             "leap_month_policy must be preserve or split_after_15.",
         )
 
-    time_index = _time_index(local.hour)
+    time_index = _time_index(calculation_local.hour)
     basis_local = (
-        local + timedelta(days=1) if time_index == 12 and late_zi_policy == "next_day" else local
+        calculation_local + timedelta(days=1)
+        if time_index == 12 and late_zi_policy == "next_day"
+        else calculation_local
     )
     solar = Solar.fromYmdHms(
         basis_local.year,
@@ -401,6 +522,7 @@ def _normalize_input(
     lunar = solar.getLunar()
     return (
         local,
+        calculation_local,
         fold,
         solar,
         lunar,
@@ -410,7 +532,9 @@ def _normalize_input(
             "year_boundary": year_boundary,
             "late_zi_policy": late_zi_policy,
             "leap_month_policy": leap_month_policy,
+            "time_basis": time_basis,
         },
+        solar_time_fact,
     )
 
 
@@ -427,6 +551,10 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
         "year_boundary",
         "late_zi_policy",
         "leap_month_policy",
+        "longitude",
+        "latitude",
+        "time_basis",
+        "true_solar_time",
     }
     unknown = sorted(set(payload) - allowed)
     if unknown:
@@ -437,7 +565,16 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
     gender = payload["calculation_gender"]
     if gender not in {"male", "female"}:
         raise ZiweiError("invalid_calculation_gender", "calculation_gender must be male or female.")
-    local, fold, solar, lunar, time_index, policies = _normalize_input(payload)
+    (
+        local,
+        calculation_local,
+        fold,
+        solar,
+        lunar,
+        time_index,
+        policies,
+        solar_time_fact,
+    ) = _normalize_input(payload)
     calendar_lunar_month = abs(lunar.getMonth())
     lunar_day = lunar.getDay()
     lunar_month = (
@@ -510,6 +647,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                         f"{fact_id}.majorStars.{number:03d}",
                         "major",
                         transformations,
+                        branch,
                     )
                     for number, name in enumerate(major[index], start=1)
                 ],
@@ -519,6 +657,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                         f"{fact_id}.minorStars.{number:03d}",
                         "minor",
                         transformations,
+                        branch,
                     )
                     for number, name in enumerate(minor[index], start=1)
                 ],
@@ -529,6 +668,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                         f"{fact_id}.auxiliaryStars.{number:03d}",
                         "auxiliary",
                         transformations,
+                        branch,
                     )
                     for number, name in enumerate(auxiliary[index], start=1)
                 ],
@@ -543,6 +683,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
             }
         )
 
+    self_transformations = _attach_self_transformations(palaces)
     lunar_month_label = ("闰" if lunar.getMonth() < 0 else "") + lunar.getMonthInChinese()
     cause_palace = next(
         (palace for palace in palaces if palace["heavenlyStem"] == year_stem),
@@ -560,10 +701,16 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 CALENDAR_SOURCE_ID,
                 "SRC-TIME-PYTHON-ZONEINFO-001",
                 "SRC-TIME-TZDATA-001",
+                *(
+                    ["SRC-ASTRONOMY-NOAA-SOLAR-001"]
+                    if policies["time_basis"] == "apparent_solar"
+                    else []
+                ),
             ],
         },
         "normalized_input": {
             "local_datetime": local.isoformat(),
+            "calculation_datetime": calculation_local.isoformat(),
             "utc_datetime": local.astimezone(UTC).isoformat().replace("+00:00", "Z"),
             "timezone": payload["timezone"],
             "fold": fold,
@@ -575,6 +722,15 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
             "year_boundary": policies["year_boundary"],
             "late_zi_policy": policies["late_zi_policy"],
             "leap_month_policy": policies["leap_month_policy"],
+            "longitude": (
+                float(payload["longitude"]) if payload.get("longitude") is not None else None
+            ),
+            "latitude": (
+                float(payload["latitude"]) if payload.get("latitude") is not None else None
+            ),
+            "time_basis": policies["time_basis"],
+            "true_solar_time_applied": policies["time_basis"] == "apparent_solar",
+            "solar_time_correction": solar_time_fact,
             "lineage": LINEAGE,
         },
         "computed_facts": {
@@ -609,6 +765,7 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                 if cause_palace
                 else None
             ),
+            "self_transformations": self_transformations,
             "palaces": palaces,
         },
         "derived_findings": [],
@@ -616,13 +773,23 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
         "validation": {
             "status": "valid",
             "warnings": [
-                {
-                    "code": "local_civil_time_basis",
-                    "message": (
-                        "The engine uses the validated local civil double-hour; "
-                        "true solar time is not applied."
-                    ),
-                },
+                (
+                    {
+                        "code": "apparent_solar_time_approximation",
+                        "message": (
+                            "The double-hour and calculation date use the NOAA fractional-year "
+                            "apparent-solar-time approximation."
+                        ),
+                    }
+                    if policies["time_basis"] == "apparent_solar"
+                    else {
+                        "code": "local_civil_time_basis",
+                        "message": (
+                            "The engine uses the validated local civil double-hour; "
+                            "apparent solar time is not applied."
+                        ),
+                    }
+                ),
                 {
                     "code": "calculation_gender_parameter",
                     "message": (
@@ -631,16 +798,16 @@ def calculate(payload: dict[str, Any]) -> dict[str, Any]:
                     ),
                 },
                 {
-                    "code": "brightness_unavailable",
+                    "code": "bounded_classical_brightness",
                     "message": (
-                        "Brightness is explicitly unavailable in this lineage version; "
-                        "no brightness values are inferred."
+                        "Brightness is emitted only for stars listed in the selected classical "
+                        "Volume Two matrix; unlisted stars remain explicit nulls."
                     ),
                 },
                 {
                     "code": "foundation_only",
                     "message": (
-                        "This project-native v0.4 calculates a bounded structural foundation "
+                        "This project-native v0.5 calculates a bounded structural foundation "
                         "and requires independent practitioner comparison."
                     ),
                 },

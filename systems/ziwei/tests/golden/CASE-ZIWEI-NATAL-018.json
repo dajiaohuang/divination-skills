@@ -100,34 +100,41 @@
     "time_index": 4
   },
   "expected_output": {
-    "computed_facts_sha256": "b177fe5501519208c32b0c1fd26eac229775bdab3c621661ebccba12661e0f86",
+    "computed_facts_sha256": "ccc88a57fce81ef19489b34df9d1889dcd20f5dd0e10766afaa04cbaa256b0a4",
     "palace_count": 12
   },
   "forbidden_conclusions": [
     "A fixed life event is guaranteed.",
     "The calculation-gender parameter was inferred as identity.",
-    "A brightness value was invented."
+    "A brightness value outside the selected classical matrix was invented."
   ],
-  "lineage": "project-native-ziwei-structural-v0.4",
+  "lineage": "project-native-ziwei-structural-v0.5",
   "must_match_rules": [
     "ZIWEI-NATIVE-NATAL-001",
     "ZIWEI-TIME-INDEX-001",
     "ZIWEI-STAR-AUX-001",
+    "ZIWEI-STAR-BRIGHTNESS-001",
     "ZIWEI-CYCLE-DECADAL-001",
     "ZIWEI-STRUCTURAL-BOUNDARY-001"
   ],
   "normalized_input": {
+    "calculation_datetime": "1934-03-02T07:17:00+00:00",
     "calculation_gender": "female",
     "calendar_leap_month": false,
     "calendar_type": "solar",
     "effective_lunar_month": 1,
     "fold": 0,
     "late_zi_policy": "current_day",
+    "latitude": null,
     "leap_month_policy": "preserve",
-    "lineage": "project-native-ziwei-structural-v0.4",
+    "lineage": "project-native-ziwei-structural-v0.5",
     "local_datetime": "1934-03-02T07:17:00+00:00",
+    "longitude": null,
+    "solar_time_correction": null,
+    "time_basis": "civil",
     "time_index": 4,
     "timezone": "UTC",
+    "true_solar_time_applied": false,
     "utc_datetime": "1934-03-02T07:17:00Z",
     "year_boundary": "lunar_new_year"
   },
@@ -147,7 +154,7 @@
   ],
   "sources": [
     {
-      "locator": "project-native structural calculation v0.4",
+      "locator": "project-native structural calculation v0.5",
       "source_id": "SRC-ZIWEI-PROJECT-SPEC-001"
     },
     {

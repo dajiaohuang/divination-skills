@@ -1,0 +1,38 @@
+{
+  "rule_id": "ZIWEI-TIME-APPARENT-SOLAR-001",
+  "title": "Optionally use NOAA apparent solar time before selecting the double hour",
+  "system": "ziwei",
+  "lineage": "apparent-solar-time-noaa",
+  "version": "0.5.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "normalized_input.true_solar_time_applied",
+      "operator": "eq",
+      "value": true
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.calculation_clock",
+      "output_path": "normalized_input.calculation_datetime",
+      "value": "apparent_solar_time",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 995,
+  "sources": [
+    {
+      "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001",
+      "locator": "General Solar Position Calculations, equation-of-time and true-solar-time equations",
+      "support_type": "direct"
+    }
+  ],
+  "disputes": [
+    "DSP-ZIWEI-TIME-BASIS-001"
+  ],
+  "tests": [
+    "CASE-ZIWEI-EDGE-BOUNDARY-001"
+  ]
+}

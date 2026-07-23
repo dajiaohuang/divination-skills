@@ -6,12 +6,12 @@
   "expected_intermediate": {
     "five_elements_class": "火六局",
     "star_placements": {
-      "auxiliaryStars:三台": 3,
+      "auxiliaryStars:三台": 2,
       "auxiliaryStars:丧门": 11,
       "auxiliaryStars:临官": 9,
       "auxiliaryStars:亡神": 0,
       "auxiliaryStars:伏兵": 6,
-      "auxiliaryStars:八座": 7,
+      "auxiliaryStars:八座": 8,
       "auxiliaryStars:养": 1,
       "auxiliaryStars:冠带": 10,
       "auxiliaryStars:凤阁": 9,
@@ -78,54 +78,72 @@
       "auxiliaryStars:飞廉": 10,
       "auxiliaryStars:龙德": 4,
       "auxiliaryStars:龙池": 1,
-      "majorStars:七杀": 2,
-      "majorStars:天同": 11,
-      "majorStars:天府": 8,
-      "majorStars:天机": 3,
-      "majorStars:天梁": 1,
-      "majorStars:天相": 0,
-      "majorStars:太阳": 1,
-      "majorStars:太阴": 9,
-      "majorStars:巨门": 11,
-      "majorStars:廉贞": 8,
-      "majorStars:武曲": 0,
-      "majorStars:破军": 6,
-      "majorStars:紫微": 4,
-      "majorStars:贪狼": 10,
+      "majorStars:七杀": 11,
+      "majorStars:天同": 2,
+      "majorStars:天府": 5,
+      "majorStars:天机": 6,
+      "majorStars:天梁": 10,
+      "majorStars:天相": 9,
+      "majorStars:太阳": 4,
+      "majorStars:太阴": 6,
+      "majorStars:巨门": 8,
+      "majorStars:廉贞": 11,
+      "majorStars:武曲": 3,
+      "majorStars:破军": 3,
+      "majorStars:紫微": 7,
+      "majorStars:贪狼": 7,
       "minorStars:右弼": 8,
       "minorStars:左辅": 2,
       "minorStars:文昌": 8,
       "minorStars:文曲": 2
     },
-    "time_index": 0
+    "time_index": 12
   },
   "expected_output": {
-    "computed_facts_sha256": "5765f9e3ab7ad7b5ebfb547cc58b13ec3de8e01fc5ad9ac29967a61ab25e88ec",
+    "computed_facts_sha256": "85a3e2c12c687ff8375bc668acfbd514aa55408536d7bd61a9899e084dc3d5a8",
     "palace_count": 12
   },
   "forbidden_conclusions": [
     "A fixed life event is guaranteed.",
     "The calculation-gender parameter was inferred as identity.",
-    "A brightness value was invented."
+    "A brightness value outside the selected classical matrix was invented."
   ],
-  "lineage": "project-native-ziwei-structural-v0.4",
+  "lineage": "project-native-ziwei-structural-v0.5",
   "must_match_rules": [
     "ZIWEI-INPUT-POLICY-001",
     "ZIWEI-TIME-INDEX-001",
     "ZIWEI-STRUCTURAL-BOUNDARY-001"
   ],
   "normalized_input": {
+    "calculation_datetime": "1900-01-31T23:40:52.008036+08:05:43",
     "calculation_gender": "male",
     "calendar_leap_month": false,
     "calendar_type": "solar",
     "effective_lunar_month": 1,
     "fold": 0,
     "late_zi_policy": "current_day",
+    "latitude": null,
     "leap_month_policy": "split_after_15",
-    "lineage": "project-native-ziwei-structural-v0.4",
+    "lineage": "project-native-ziwei-structural-v0.5",
     "local_datetime": "1900-02-01T00:00:00+08:05:43",
-    "time_index": 0,
+    "longitude": 119.917,
+    "solar_time_correction": {
+      "apparent_datetime": "1900-01-31T23:40:52.008036+08:05:43",
+      "civil_datetime": "1900-02-01T00:00:00+08:05:43",
+      "equation_of_time_minutes": -13.084533,
+      "longitude_correction_minutes": -6.048667,
+      "longitude_degrees_east": 119.917,
+      "method": "noaa-fractional-year-equation-of-time",
+      "source_ids": [
+        "SRC-ASTRONOMY-NOAA-SOLAR-001"
+      ],
+      "total_correction_minutes": -19.133199,
+      "utc_offset_hours": 8.095278
+    },
+    "time_basis": "apparent_solar",
+    "time_index": 12,
     "timezone": "Asia/Shanghai",
+    "true_solar_time_applied": true,
     "utc_datetime": "1900-01-31T15:54:17Z",
     "year_boundary": "spring_commences"
   },
@@ -134,6 +152,8 @@
     "late_zi_policy": "current_day",
     "leap_month_policy": "split_after_15",
     "local_datetime": "1900-02-01T00:00:00",
+    "longitude": 119.917,
+    "time_basis": "apparent_solar",
     "timezone": "Asia/Shanghai",
     "year_boundary": "spring_commences"
   },
@@ -148,7 +168,7 @@
   ],
   "sources": [
     {
-      "locator": "project-native structural calculation v0.4",
+      "locator": "project-native structural calculation v0.5",
       "source_id": "SRC-ZIWEI-PROJECT-SPEC-001"
     },
     {

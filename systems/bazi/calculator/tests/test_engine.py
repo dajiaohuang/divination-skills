@@ -129,7 +129,7 @@ def test_solar_term_provider_uses_fixed_utc8_not_historical_dst() -> None:
                 "timezone": "UTC",
                 "true_solar_time": True,
             },
-            "true_solar_time_unsupported",
+            "longitude_required",
         ),
     ],
 )
@@ -169,18 +169,19 @@ def test_output_matches_contract_schema() -> None:
     assert chart["computed_facts"]["ten_gods"]["visible"]["day"] == "比肩"
 
 
-def test_input_schema_rejects_true_solar_time() -> None:
+def test_input_schema_accepts_explicit_true_solar_time_policy() -> None:
     schema = json.loads((CALCULATOR_DIR / "input.schema.json").read_text(encoding="utf-8"))
     validator = Draft202012Validator(schema)
     assert not list(
         validator.iter_errors({"local_datetime": "2024-01-01T00:00:00", "timezone": "UTC"})
     )
-    assert list(
+    assert not list(
         validator.iter_errors(
             {
                 "local_datetime": "2024-01-01T00:00:00",
                 "timezone": "UTC",
                 "true_solar_time": True,
+                "longitude": 0,
             }
         )
     )

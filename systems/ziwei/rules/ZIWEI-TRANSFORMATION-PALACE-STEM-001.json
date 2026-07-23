@@ -2,8 +2,8 @@
   "rule_id": "ZIWEI-TRANSFORMATION-PALACE-STEM-001",
   "title": "Trace palace-stem flying transformations and self-transformations",
   "system": "ziwei",
-  "lineage": "project-native-ziwei-structural-v0.4",
-  "version": "0.4.0",
+  "lineage": "project-native-ziwei-structural-v0.5",
+  "version": "0.5.0",
   "status": "tested",
   "kind": "calculation",
   "conditions": [
@@ -29,11 +29,15 @@
     },
     {
       "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
-      "locator": "systems/ziwei/analyzer.py",
+      "locator": "systems/ziwei/LINEAGE.md selected outward/inward direction convention",
       "support_type": "direct"
     }
   ],
+  "disputes": [
+    "DSP-ZIWEI-SELF-TRANSFORMATION-001"
+  ],
   "tests": [
     "CASE-ZIWEI-NATAL-010"
-  ]
+  ],
+  "notes": "The classical source supports the ten-stem star-to-transformation table. The ↓ outward / ↑ inward direction labels are a declared project policy."
 }

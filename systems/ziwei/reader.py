@@ -24,7 +24,7 @@ def read_structured(value: str | dict[str, Any]) -> dict[str, Any]:
     if not isinstance(imported["computed_facts"].get("palaces"), list):
         raise ValueError("Imported chart is missing computed_facts.palaces.")
     return {
-        "schema_version": "0.4.0",
+        "schema_version": "0.5.0",
         "format": "structured_json",
         "imported_chart": imported,
         "native_facts_overwritten": False,

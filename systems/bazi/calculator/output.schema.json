@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://divination-skills.local/systems/bazi/calculator/output.schema.json",
-  "title": "Bazi calculator output v0.1",
+  "title": "Bazi calculator output v0.2",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -15,7 +15,7 @@
     "validation"
   ],
   "properties": {
-    "schema_version": { "const": "0.1.0" },
+    "schema_version": { "const": "0.2.0" },
     "engine": {
       "type": "object",
       "additionalProperties": false,
@@ -33,6 +33,7 @@
       "additionalProperties": false,
       "required": [
         "local_datetime",
+        "calculation_datetime",
         "utc_datetime",
         "beijing_datetime",
         "timezone",
@@ -41,11 +42,14 @@
         "day_boundary",
         "longitude",
         "latitude",
+        "time_basis",
         "true_solar_time_applied",
+        "solar_time_correction",
         "luck_cycle_direction"
       ],
       "properties": {
         "local_datetime": { "type": "string" },
+        "calculation_datetime": { "type": "string" },
         "utc_datetime": { "type": "string" },
         "beijing_datetime": { "type": "string" },
         "timezone": { "type": "string" },
@@ -54,7 +58,9 @@
         "day_boundary": { "type": "string", "enum": ["midnight", "zi_initial"] },
         "longitude": { "type": ["number", "null"] },
         "latitude": { "type": ["number", "null"] },
-        "true_solar_time_applied": { "const": false },
+        "time_basis": { "type": "string", "enum": ["civil", "apparent_solar"] },
+        "true_solar_time_applied": { "type": "boolean" },
+        "solar_time_correction": { "type": ["object", "null"] },
         "luck_cycle_direction": { "type": ["string", "null"] }
       }
     },
@@ -68,6 +74,10 @@
         "pillars",
         "day_master",
         "ten_gods",
+        "nayin",
+        "growth_stages",
+        "seasonal_element_states",
+        "visible_element_counts",
         "branch_relations",
         "luck_cycles"
       ],
@@ -88,6 +98,10 @@
         },
         "day_master": { "type": "object" },
         "ten_gods": { "type": "object" },
+        "nayin": { "type": "object" },
+        "growth_stages": { "type": "object" },
+        "seasonal_element_states": { "type": "object" },
+        "visible_element_counts": { "type": "object" },
         "branch_relations": { "type": "array", "items": { "type": "object" } },
         "luck_cycles": { "type": ["object", "null"] }
       }

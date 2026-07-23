@@ -6,26 +6,26 @@
   "status": "resolved_for_product",
   "positions": [
     {
-      "lineage": "project-native-ziwei-structural-v0.4",
-      "summary": "Validate the IANA local civil time and map its hour to the project's 13 double-hour indices.",
+      "lineage": "project-native-ziwei-structural-v0.5",
+      "summary": "Validate the IANA local civil time and map its civil hour to the project's 13 double-hour indices.",
       "rule_ids": ["ZIWEI-TIME-INDEX-001", "ZIWEI-NATIVE-NATAL-001"],
       "sources": [{ "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/DATA_CONTRACT.md" }]
     },
     {
-      "lineage": "true-solar-time-not-implemented",
-      "summary": "Correct civil time using longitude and apparent-solar-time policy before selecting a double hour.",
-      "rule_ids": ["ZIWEI-STRUCTURAL-BOUNDARY-001"],
-      "sources": [{ "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/SCOPE.md" }]
+      "lineage": "apparent-solar-time-noaa",
+      "summary": "Correct the calculation clock using longitude and NOAA's approximate equation of time before selecting a double hour.",
+      "rule_ids": ["ZIWEI-TIME-APPARENT-SOLAR-001", "ZIWEI-TIME-INDEX-001"],
+      "sources": [{ "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001", "locator": "General Solar Position Calculations, true solar time equations" }]
     }
   ],
   "default_policy": {
-    "selected_lineage": "project-native-ziwei-structural-v0.4",
-    "rationale": "The project-native foundation accepts a validated local civil date and explicit time index; no solar correction is implemented.",
+    "selected_lineage": "project-native-ziwei-structural-v0.5",
+    "rationale": "Civil time remains the compatibility default; apparent solar time is available only when explicitly selected with longitude.",
     "user_disclosure_required": true
   },
-  "user_disclosure": "The chart uses validated local civil time; true solar time is not applied.",
+  "user_disclosure": "Civil time is the default. Apparent solar time uses the documented NOAA approximation only when explicitly selected with longitude.",
   "sources": [
     { "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/DATA_CONTRACT.md" },
-    { "source_id": "SRC-ZIWEI-PROJECT-SPEC-001", "locator": "systems/ziwei/SCOPE.md" }
+    { "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001", "locator": "General Solar Position Calculations, true solar time equations" }
   ]
 }

@@ -9,10 +9,12 @@ from itertools import combinations
 from typing import Any
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
+from divination_skills.solar_time import ApparentSolarTime, apparent_solar_time
 from lunar_python import Solar
 
 ENGINE_NAME = "divination-skills-bazi"
-ENGINE_VERSION = "0.1.1"
+ENGINE_VERSION = "0.2.0"
+SCHEMA_VERSION = "0.2.0"
 MIN_YEAR = 1900
 MAX_YEAR = 2100
 BEIJING = ZoneInfo("Asia/Shanghai")
@@ -22,6 +24,99 @@ STEMS = ("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸")
 BRANCHES = ("子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥")
 ELEMENTS = ("wood", "fire", "earth", "metal", "water")
 POLARITIES = ("yang", "yin")
+GROWTH_STAGES = (
+    "长生",
+    "沐浴",
+    "冠带",
+    "临官",
+    "帝旺",
+    "衰",
+    "病",
+    "死",
+    "墓",
+    "绝",
+    "胎",
+    "养",
+)
+GROWTH_START_BRANCH = {
+    "甲": "亥",
+    "乙": "午",
+    "丙": "寅",
+    "丁": "酉",
+    "戊": "寅",
+    "己": "酉",
+    "庚": "巳",
+    "辛": "子",
+    "壬": "申",
+    "癸": "卯",
+}
+NAYIN_NAMES = (
+    "海中金",
+    "炉中火",
+    "大林木",
+    "路旁土",
+    "剑锋金",
+    "山头火",
+    "涧下水",
+    "城头土",
+    "白蜡金",
+    "杨柳木",
+    "泉中水",
+    "屋上土",
+    "霹雳火",
+    "松柏木",
+    "长流水",
+    "沙中金",
+    "山下火",
+    "平地木",
+    "壁上土",
+    "金箔金",
+    "覆灯火",
+    "天河水",
+    "大驿土",
+    "钗钏金",
+    "桑柘木",
+    "大溪水",
+    "沙中土",
+    "天上火",
+    "石榴木",
+    "大海水",
+)
+ELEMENT_BY_HAN = {
+    "木": "wood",
+    "火": "fire",
+    "土": "earth",
+    "金": "metal",
+    "水": "water",
+}
+BRANCH_ELEMENTS = {
+    "子": "water",
+    "丑": "earth",
+    "寅": "wood",
+    "卯": "wood",
+    "辰": "earth",
+    "巳": "fire",
+    "午": "fire",
+    "未": "earth",
+    "申": "metal",
+    "酉": "metal",
+    "戌": "earth",
+    "亥": "water",
+}
+SEASONAL_ELEMENT = {
+    "寅": "wood",
+    "卯": "wood",
+    "辰": "earth",
+    "巳": "fire",
+    "午": "fire",
+    "未": "earth",
+    "申": "metal",
+    "酉": "metal",
+    "戌": "earth",
+    "亥": "water",
+    "子": "water",
+    "丑": "earth",
+}
 
 HIDDEN_STEMS = {
     "子": ("癸",),
@@ -130,7 +225,8 @@ class CalculationError(ValueError):
 
 @dataclass(frozen=True)
 class NormalizedBirth:
-    local: datetime
+    civil_local: datetime
+    calculation_local: datetime
     utc: datetime
     timezone: str
     fold: int
@@ -138,6 +234,14 @@ class NormalizedBirth:
     longitude: float | None
     latitude: float | None
     luck_cycle_direction: str | None
+    time_basis: str
+    solar_time: ApparentSolarTime | None
+
+    @property
+    def local(self) -> datetime:
+        """Backward-compatible alias for the clock used to select pillars."""
+
+        return self.calculation_local
 
 
 @dataclass(frozen=True)
@@ -206,16 +310,11 @@ def normalize_input(payload: dict[str, Any]) -> NormalizedBirth:
         "latitude",
         "luck_cycle_direction",
         "true_solar_time",
+        "time_basis",
     }
     unknown = sorted(set(payload) - allowed)
     if unknown:
         raise CalculationError("unknown_fields", f"Unknown input field(s): {', '.join(unknown)}")
-    if payload.get("true_solar_time"):
-        raise CalculationError(
-            "true_solar_time_unsupported",
-            "True solar time is not implemented in v0.1; provide civil time without this option.",
-        )
-
     raw_datetime = payload.get("local_datetime")
     timezone_name = payload.get("timezone")
     if not isinstance(raw_datetime, str) or not raw_datetime:
@@ -258,16 +357,53 @@ def normalize_input(payload: dict[str, Any]) -> NormalizedBirth:
     longitude = payload.get("longitude")
     latitude = payload.get("latitude")
     if longitude is not None and (
-        not isinstance(longitude, (int, float)) or not -180 <= longitude <= 180
+        isinstance(longitude, bool)
+        or not isinstance(longitude, (int, float))
+        or not -180 <= longitude <= 180
     ):
         raise CalculationError("invalid_longitude", "longitude must be between -180 and 180.")
     if latitude is not None and (
-        not isinstance(latitude, (int, float)) or not -90 <= latitude <= 90
+        isinstance(latitude, bool)
+        or not isinstance(latitude, (int, float))
+        or not -90 <= latitude <= 90
     ):
         raise CalculationError("invalid_latitude", "latitude must be between -90 and 90.")
 
+    time_basis = payload.get("time_basis")
+    legacy_true_solar = payload.get("true_solar_time")
+    if legacy_true_solar is not None and not isinstance(legacy_true_solar, bool):
+        raise CalculationError("invalid_true_solar_time", "true_solar_time must be boolean.")
+    if time_basis is None:
+        time_basis = "apparent_solar" if legacy_true_solar else "civil"
+    if time_basis not in {"civil", "apparent_solar"}:
+        raise CalculationError(
+            "invalid_time_basis",
+            "time_basis must be 'civil' or 'apparent_solar'.",
+        )
+    if legacy_true_solar is not None and (
+        (legacy_true_solar and time_basis != "apparent_solar")
+        or (not legacy_true_solar and time_basis != "civil")
+    ):
+        raise CalculationError(
+            "conflicting_time_basis",
+            "true_solar_time and time_basis select different calculation clocks.",
+        )
+    if time_basis == "apparent_solar" and longitude is None:
+        raise CalculationError(
+            "longitude_required",
+            "longitude is required when time_basis is 'apparent_solar'.",
+        )
+
+    solar_time = (
+        apparent_solar_time(local, float(longitude))
+        if time_basis == "apparent_solar" and longitude is not None
+        else None
+    )
+    calculation_local = solar_time.apparent_datetime if solar_time else local
+
     return NormalizedBirth(
-        local=local,
+        civil_local=local,
+        calculation_local=calculation_local,
         utc=local.astimezone(UTC),
         timezone=timezone_name,
         fold=selected_fold,
@@ -275,6 +411,8 @@ def normalize_input(payload: dict[str, Any]) -> NormalizedBirth:
         longitude=float(longitude) if longitude is not None else None,
         latitude=float(latitude) if latitude is not None else None,
         luck_cycle_direction=direction,
+        time_basis=time_basis,
+        solar_time=solar_time,
     )
 
 
@@ -416,6 +554,93 @@ def _ten_gods(pillars: dict[str, dict[str, Any]]) -> dict[str, Any]:
     }
 
 
+def _nayin(pillars: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    by_pillar = {}
+    for position, pillar in pillars.items():
+        name = NAYIN_NAMES[pillar["index"] // 2]
+        by_pillar[position] = {
+            "name": name,
+            "element": ELEMENT_BY_HAN[name[-1]],
+        }
+    return {
+        "fact_id": "bazi.nayin",
+        "by_pillar": by_pillar,
+        "source_ids": ["SRC-BAZI-SANMING-001"],
+    }
+
+
+def _growth_stage(stem: str, branch: str) -> str:
+    start = BRANCHES.index(GROWTH_START_BRANCH[stem])
+    target = BRANCHES.index(branch)
+    forward = STEMS.index(stem) % 2 == 0
+    offset = (target - start) % 12 if forward else (start - target) % 12
+    return GROWTH_STAGES[offset]
+
+
+def _growth_stages(pillars: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    day_stem = pillars["day"]["stem"]["name"]
+    return {
+        "fact_id": "bazi.growth_stages",
+        "method": "ten_stems_yang_forward_yin_reverse",
+        "day_master_by_pillar": {
+            position: _growth_stage(day_stem, pillar["branch"]["name"])
+            for position, pillar in pillars.items()
+        },
+        "pillar_self": {
+            position: _growth_stage(
+                pillar["stem"]["name"],
+                pillar["branch"]["name"],
+            )
+            for position, pillar in pillars.items()
+        },
+        "source_ids": ["SRC-BAZI-SANMING-001"],
+        "dispute_ids": ["DSP-BAZI-GROWTH-STAGE-001"],
+    }
+
+
+def _seasonal_element_states(month_branch: str) -> dict[str, Any]:
+    commanding_element = SEASONAL_ELEMENT[month_branch]
+    commanding_index = ELEMENTS.index(commanding_element)
+    states = {
+        ELEMENTS[commanding_index]: "旺",
+        ELEMENTS[(commanding_index + 1) % 5]: "相",
+        ELEMENTS[(commanding_index - 1) % 5]: "休",
+        ELEMENTS[(commanding_index - 2) % 5]: "囚",
+        ELEMENTS[(commanding_index + 2) % 5]: "死",
+    }
+    return {
+        "fact_id": "bazi.seasonal_element_states",
+        "month_branch": month_branch,
+        "commanding_element": commanding_element,
+        "states": states,
+        "source_ids": ["SRC-BAZI-SANMING-001"],
+        "limitations": [
+            "The four earth storage months are represented by the selected whole-month baseline.",
+            "These states do not by themselves determine Day Master strength.",
+        ],
+    }
+
+
+def _visible_element_counts(pillars: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    counts = dict.fromkeys(ELEMENTS, 0)
+    for pillar in pillars.values():
+        counts[pillar["stem"]["element"]] += 1
+        counts[BRANCH_ELEMENTS[pillar["branch"]["name"]]] += 1
+    highest = max(counts.values())
+    return {
+        "fact_id": "bazi.visible_element_counts",
+        "scope": "four_visible_stems_and_four_visible_branches",
+        "counts": counts,
+        "most_present": [
+            {"element": element, "count": count}
+            for element, count in counts.items()
+            if count == highest
+        ],
+        "hidden_stems_included": False,
+        "source_ids": ["SRC-BAZI-PROJECT-SPEC-001", "SRC-BAZI-SANMING-001"],
+    }
+
+
 def _branch_relations(pillars: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
     positions = list(pillars)
     branch_by_position = {position: pillars[position]["branch"]["name"] for position in positions}
@@ -549,12 +774,23 @@ def calculate_chart(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
     warnings: list[dict[str, str]] = []
-    if birth.longitude is not None or birth.latitude is not None:
+    if birth.time_basis == "civil" and (birth.longitude is not None or birth.latitude is not None):
         warnings.append(
             {
                 "code": "coordinates_not_applied",
                 "message": (
-                    "Coordinates are retained as metadata; v0.1 does not apply true solar time."
+                    "Coordinates are retained as metadata under the selected civil-time basis."
+                ),
+            }
+        )
+    if birth.time_basis == "apparent_solar":
+        warnings.append(
+            {
+                "code": "apparent_solar_time_approximation",
+                "message": (
+                    "Pillar date and hour use the NOAA fractional-year apparent-solar-time "
+                    "approximation; the physical UTC instant and solar-term boundaries "
+                    "are unchanged."
                 ),
             }
         )
@@ -590,29 +826,36 @@ def calculate_chart(payload: dict[str, Any]) -> dict[str, Any]:
         )
 
     return {
-        "schema_version": "0.1.0",
+        "schema_version": SCHEMA_VERSION,
         "engine": {
             "name": ENGINE_NAME,
             "version": ENGINE_VERSION,
             "dependencies": {"lunar_python": "1.4.8", "tzdata": "2026.3"},
             "source_ids": [
                 "SRC-BAZI-LUNARPY-001",
+                "SRC-BAZI-SANMING-001",
                 "SRC-TIME-PYTHON-ZONEINFO-001",
                 "SRC-TIME-TZDATA-001",
+                *(["SRC-ASTRONOMY-NOAA-SOLAR-001"] if birth.time_basis == "apparent_solar" else []),
             ],
         },
         "raw_input": dict(payload),
         "normalized_input": {
-            "local_datetime": birth.local.isoformat(),
+            "local_datetime": birth.civil_local.isoformat(),
+            "calculation_datetime": birth.calculation_local.isoformat(),
             "utc_datetime": birth.utc.isoformat().replace("+00:00", "Z"),
             "beijing_datetime": birth.utc.astimezone(BEIJING).isoformat(),
             "timezone": birth.timezone,
-            "utc_offset_seconds": int(birth.local.utcoffset().total_seconds()),
+            "utc_offset_seconds": int(birth.civil_local.utcoffset().total_seconds()),
             "fold": birth.fold,
             "day_boundary": birth.day_boundary,
             "longitude": birth.longitude,
             "latitude": birth.latitude,
-            "true_solar_time_applied": False,
+            "time_basis": birth.time_basis,
+            "true_solar_time_applied": birth.time_basis == "apparent_solar",
+            "solar_time_correction": (
+                birth.solar_time.to_dict() if birth.solar_time is not None else None
+            ),
             "luck_cycle_direction": birth.luck_cycle_direction,
         },
         "computed_facts": {
@@ -626,6 +869,10 @@ def calculate_chart(payload: dict[str, Any]) -> dict[str, Any]:
                 "source_ids": ["SRC-BAZI-LUNARPY-001"],
             },
             "ten_gods": _ten_gods(pillars),
+            "nayin": _nayin(pillars),
+            "growth_stages": _growth_stages(pillars),
+            "seasonal_element_states": _seasonal_element_states(pillars["month"]["branch"]["name"]),
+            "visible_element_counts": _visible_element_counts(pillars),
             "branch_relations": _branch_relations(pillars),
             "luck_cycles": _luck_cycles(birth, month_index, previous_term, next_term),
         },

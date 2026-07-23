@@ -7,6 +7,8 @@
 - exact solar-term instant boundaries supplied by `lunar_python` 1.4.8;
 - year, month, day, and hour pillars;
 - hidden stems, five elements, polarity, visible and hidden Ten Gods;
+- optional NOAA apparent-solar calculation clock from explicit longitude;
+- 纳音, day-master and pillar-self 十二长生, seasonal 旺相休囚死, and visible five-element counts;
 - deterministic branch combinations, clashes, harms, and punishments;
 - optional forward or reverse ten-year luck-cycle sequence using the documented three-days-per-year start-age method;
 - structured JSON facts, validation warnings, source IDs, rule IDs, and engine version;
@@ -23,7 +25,7 @@
 - lunar-calendar birth input;
 - dates outside 1900–2100;
 - automatic geocoding;
-- automatic true-solar-time correction;
+- automatic or undeclared true-solar-time correction, geocoding, or ephemeris-grade solar position;
 - inferred luck-cycle direction from sex or gender;
 - canonical school-specific strength adjudication, special structures, transformation structures, useful-god selection, climate adjustment, blind-school imagery, compatibility scoring, date selection, or deterministic event prediction;
 - OCR/PDF reading, minute-level rectification, personality tie-breakers, and unique birth-time claims;

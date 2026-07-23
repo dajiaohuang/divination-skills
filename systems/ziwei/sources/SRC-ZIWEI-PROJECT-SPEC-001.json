@@ -1,10 +1,10 @@
 {
   "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
-  "title": "Project-native Zi Wei Dou Shu structural foundation v0.4",
+  "title": "Project-native Zi Wei Dou Shu structural foundation v0.5",
   "creators": [{ "name": "divination-skills contributors", "role": "author" }],
   "source_type": "standard",
   "language": "en",
-  "edition_or_version": "0.4.0",
+  "edition_or_version": "0.5.0",
   "locators": [
     { "kind": "local", "value": "systems/ziwei/LINEAGE.md", "stable": true },
     { "kind": "local", "value": "systems/ziwei/DATA_CONTRACT.md", "stable": true }
@@ -27,7 +27,7 @@
   },
   "usage_status": "production",
   "systems": ["ziwei"],
-  "lineages": ["project-native-ziwei-structural-v0.4"],
+  "lineages": ["project-native-ziwei-structural-v0.5"],
   "quality": {
     "authority": "primary",
     "independence": "independent",

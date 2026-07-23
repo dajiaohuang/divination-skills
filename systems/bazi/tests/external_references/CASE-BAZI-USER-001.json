@@ -20,6 +20,12 @@
   },
   "expected": {
     "day_master": "庚",
+    "day_master_growth_stages": {
+      "day": "沐浴",
+      "hour": "衰",
+      "month": "帝旺",
+      "year": "胎"
+    },
     "luck_cycle_display_start_year": 2007,
     "luck_cycle_pillars": [
       "甲戌",
@@ -34,6 +40,12 @@
       "癸未"
     ],
     "luck_cycle_start_age_years": 7.758646,
+    "nayin_by_pillar": {
+      "day": "路旁土",
+      "hour": "屋上土",
+      "month": "剑锋金",
+      "year": "城头土"
+    },
     "pillars": {
       "day": "庚午",
       "hour": "丙戌",
@@ -45,6 +57,19 @@
       "hour": "偏印",
       "month": "劫财",
       "year": "正财"
+    },
+    "seasonal_element_states": {
+      "earth": "休",
+      "fire": "囚",
+      "metal": "旺",
+      "water": "相",
+      "wood": "死"
+    },
+    "self_growth_stages": {
+      "day": "沐浴",
+      "hour": "墓",
+      "month": "病",
+      "year": "病"
     },
     "relations": [
       {
@@ -78,16 +103,21 @@
       "hour": "七杀",
       "month": "伤官",
       "year": "正印"
+    },
+    "visible_element_counts": {
+      "earth": 2,
+      "fire": 2,
+      "metal": 2,
+      "water": 1,
+      "wood": 1
     }
   },
   "comparison_policy": {
     "luck_cycle_prefix_count": 8,
     "transformation_claims": "not_inferred_from_a_branch_pair_alone",
-    "true_solar_time": "the reported corrected time is used as explicit input; the engine does not calculate the correction"
+    "true_solar_time": "the reported corrected time is tested as explicit input and independently reproduced from 19:05 civil time with the NOAA approximation"
   },
   "not_compared": [
-    "growth_phases",
-    "nayin",
     "strength",
     "structure",
     "climate_useful_gods",

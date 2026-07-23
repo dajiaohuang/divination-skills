@@ -1,0 +1,70 @@
+{
+  "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001",
+  "title": "General Solar Position Calculations",
+  "creators": [
+    {
+      "name": "NOAA Global Monitoring Laboratory",
+      "role": "organization"
+    }
+  ],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "retrieved-2026-07-23",
+  "locators": [
+    {
+      "kind": "url",
+      "value": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://gml.noaa.gov/grad/solcalc/calcdetails.html",
+      "stable": true
+    },
+    {
+      "kind": "url",
+      "value": "https://sos.noaa.gov/copyright/",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-23",
+  "local_snapshot": {
+    "retained": false
+  },
+  "license": {
+    "identifier": "US-Government-Public-Domain",
+    "url": "https://sos.noaa.gov/copyright/",
+    "text_available": true,
+    "additional_terms": true,
+    "notes": "NOAA-created government information is generally public domain. Credit NOAA and do not imply endorsement."
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed",
+    "notes": "The implementation independently encodes the published equations and identifies NOAA as the source."
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "initial-engineering-review",
+    "reviewed_at": "2026-07-23",
+    "evidence": "NOAA formula PDF and NOAA public-domain policy inspected."
+  },
+  "usage_status": "production",
+  "systems": [
+    "bazi",
+    "ziwei"
+  ],
+  "lineages": [
+    "apparent-solar-time-noaa"
+  ],
+  "quality": {
+    "authority": "official",
+    "independence": "independent",
+    "reliability": "high",
+    "notes": "Official approximate equation-of-time and true-solar-time equations. The result is an engineering approximation, not an ephemeris-grade SPA implementation."
+  },
+  "notes": "Used only to transform a validated civil clock reading into an optional apparent-solar calculation clock. The physical UTC instant remains unchanged."
+}

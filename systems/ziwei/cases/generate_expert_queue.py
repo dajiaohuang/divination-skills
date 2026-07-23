@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 from systems.ziwei.core import analyze_core
-from systems.ziwei.engine import calculate
+from systems.ziwei.engine import LINEAGE, calculate
 
 SYSTEM_ROOT = Path(__file__).resolve().parents[1]
 GOLDEN_ROOT = SYSTEM_ROOT / "tests" / "golden"
@@ -24,7 +24,7 @@ def main() -> None:
         candidate = {
             "candidate_id": f"ZIWEI-EXPERT-CANDIDATE-{index:03d}",
             "system": "ziwei",
-            "lineage": "project-native-ziwei-structural-v0.4",
+            "lineage": LINEAGE,
             "source_case_id": case["case_id"],
             "status": "pending_expert_review",
             "accepted": False,

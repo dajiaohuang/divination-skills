@@ -23,6 +23,9 @@ The reference agrees with the project on:
 - the selected bounded auxiliary stars present in both outputs;
 - all twelve decadal ranges and the first five listed minor-limit ages in every palace;
 - the 己-year birth transformations 武曲禄、贪狼权、天梁科、文曲忌.
+- every reported 庙旺得利平不陷 value covered by the selected classical matrix;
+- all nine reported ↓离心/↑向心 self-transformations;
+- the reported civil `19:05` to apparent-solar `19:09` minute using longitude `119.917`.
 
 The comparison exposed and corrected three project defects:
 
@@ -30,8 +33,10 @@ The comparison exposed and corrected three project defects:
 2. 月德 incorrectly started from 子 instead of 巳.
 3. The year-based 年解 placement was labeled 解神, while the month-based 解神 was absent.
 
-Brightness, self-transformations, annual limits, uncatalogued small stars, and true-solar-time
-calculation remain outside this comparison.
+The project additionally emits 天府↑科 because the selected 《紫微斗数全书》卷二 table gives 壬干
+天府化科. The reference application does not mark it, so this is retained as an explicit
+four-transformation lineage difference. Annual limits and uncatalogued small stars remain outside
+the comparison.
 
 ## Bazi result
 
@@ -39,6 +44,7 @@ The reference agrees with the project on:
 
 - the four pillars 己卯、癸酉、庚午、丙戌;
 - 庚 day master, visible Ten Gods, and each branch's primary hidden-stem Ten God;
+- all four 纳音, day-master and pillar-self 十二长生, 旺相休囚死, and visible five-element counts;
 - 卯酉冲、卯午破、卯戌合、酉戌害、午戌半合;
 - the forward luck-cycle sequence. The project emits the first eight cycles and they match the
   first eight of the ten displayed by the reference.
@@ -51,9 +57,10 @@ The project reports a precise method-specific start age of `7.758646` years. Thi
 year 2007 and is compatible with the reference's rounded “2007, nominal age 9” display. It is not
 treated as an identical age-format convention.
 
-The Bazi export labels its input as true solar time. The project does not calculate longitude
-correction; the reported corrected time is supplied explicitly. The reported clock and corrected
-times remain in the same 戌 block, so the four pillars are insensitive to this difference.
+The Bazi export labels its input as true solar time. The project now independently converts the
+reported civil `19:05` clock at longitude `119.917` to `19:09:25` with the NOAA fractional-year
+approximation. It also replays the reported corrected `19:11` input directly. Both remain in the
+same 戌 block and produce the same four pillars.
 
 ## Regression artifacts
 
@@ -64,3 +71,6 @@ times remain in the same 戌 block, so the four pillars are insensitive to this 
 
 The project-native Ziwei Golden Cases were deterministically regenerated after the formula repair.
 They remain synthetic project regressions, separate from this external comparison.
+
+The implementation-source review is recorded in
+`docs/research/AUTHORITATIVE_SOURCES_ZIWEI_BAZI.md`.

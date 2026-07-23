@@ -3,6 +3,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from systems.ziwei.engine import calculate
 
 CASE = Path(__file__).resolve().parent / "external_references" / "CASE-ZIWEI-WENMO-001.json"
@@ -66,16 +68,60 @@ def test_wenmo_reference_matches_selected_auxiliaries_and_birth_transformations(
     assert actual_transformations == expected["transformations"]
 
 
-def test_wenmo_civil_and_reported_true_solar_times_keep_the_same_hour_branch() -> None:
+def test_wenmo_reference_matches_classical_brightness_subset() -> None:
     case = _load_case()
-    civil = calculate(
-        {
-            **case["input"],
-            "local_datetime": case["reported_input"]["civil_datetime"],
-        }
-    )
-    reported_true_solar = calculate(case["input"])
+    expected = case["expected"]
+    chart = calculate(case["input"])
+    palaces = {palace["earthlyBranch"]: palace for palace in chart["computed_facts"]["palaces"]}
 
-    assert civil["normalized_input"]["time_index"] == 10
-    assert reported_true_solar["normalized_input"]["time_index"] == 10
-    assert civil["computed_facts"] == reported_true_solar["computed_facts"]
+    for branch, reference_stars in expected["brightness_by_branch"].items():
+        actual = {
+            star["name"]: star["brightness"]
+            for group in ("majorStars", "minorStars", "auxiliaryStars")
+            for star in palaces[branch][group]
+            if star["brightness"] is not None
+        }
+        assert actual == reference_stars
+
+
+def test_wenmo_reference_matches_reported_self_transformations() -> None:
+    case = _load_case()
+    chart = calculate(case["input"])
+    palaces = {
+        palace["fact_id"]: palace["earthlyBranch"] for palace in chart["computed_facts"]["palaces"]
+    }
+    actual = {
+        (
+            palaces[path["target_palace_fact_id"]],
+            path["direction"],
+            path["target_star"],
+            path["transformation"],
+        )
+        for path in chart["computed_facts"]["self_transformations"]
+    }
+    expected = {
+        (
+            item["branch"],
+            item["direction"],
+            item["star"],
+            item["transformation"],
+        )
+        for item in case["expected"]["self_transformations"]
+    }
+
+    assert expected <= actual
+    assert actual - expected == {("寅", "inward", "天府", "科")}
+
+
+def test_wenmo_civil_time_is_converted_to_reported_true_solar_minute() -> None:
+    case = _load_case()
+    chart = calculate(case["input"])
+    normalized = chart["normalized_input"]
+
+    assert normalized["local_datetime"].startswith(case["reported_input"]["civil_datetime"])
+    assert normalized["calculation_datetime"].startswith("1999-09-15T19:09:")
+    assert normalized["time_index"] == 10
+    assert normalized["solar_time_correction"]["total_correction_minutes"] == pytest.approx(
+        4.425781,
+        abs=0.000001,
+    )

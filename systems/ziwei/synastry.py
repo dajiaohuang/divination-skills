@@ -36,10 +36,7 @@ def _directional(
         for match in find_star(target, star_name):
             facts.append(
                 {
-                    "fact_id": (
-                        f"ziwei.synastry.{direction}.transformation."
-                        f"{len(facts) + 1:03d}"
-                    ),
+                    "fact_id": (f"ziwei.synastry.{direction}.transformation.{len(facts) + 1:03d}"),
                     "direction": direction,
                     "source_year_stem": stem,
                     "target_star": star_name,
@@ -58,12 +55,8 @@ def _directional(
 
 
 def _symmetric(chart_a: dict[str, Any], chart_b: dict[str, Any]) -> list[dict[str, Any]]:
-    by_role_a = {
-        palace["name"]: palace for palace in chart_a["computed_facts"]["palaces"]
-    }
-    by_role_b = {
-        palace["name"]: palace for palace in chart_b["computed_facts"]["palaces"]
-    }
+    by_role_a = {palace["name"]: palace for palace in chart_a["computed_facts"]["palaces"]}
+    by_role_b = {palace["name"]: palace for palace in chart_b["computed_facts"]["palaces"]}
     facts = []
     for role in sorted(by_role_a):
         palace_a = by_role_a[role]
@@ -94,7 +87,7 @@ def compare_charts(chart_a: dict[str, Any], chart_b: dict[str, Any]) -> dict[str
         if chart.get("normalized_input", {}).get("lineage") != LINEAGE:
             raise ValueError(f"Chart {label} must use lineage {LINEAGE}.")
     return {
-        "schema_version": "0.4.0",
+        "schema_version": "0.5.0",
         "system": "ziwei",
         "lineage": LINEAGE,
         "chart_refs": {"A": _chart_id(chart_a), "B": _chart_id(chart_b)},

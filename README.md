@@ -96,9 +96,9 @@ flowchart LR
 
 | 体系 | 版本 | 当前技术范围 | Skill |
 |---|---:|---|---:|
-| 八字 | 0.2 | 四柱、节气、藏干、十神、支关系、大运、导入校验、时序、双盘事实、时辰区间扫描 | 7 |
+| 八字 | 0.2 | 四柱、节气、真太阳时、藏干、十神、纳音、十二长生、旺相休囚死、支关系、大运、校验、时序与双盘事实 | 7 |
 | 西方占星 | 0.2 | 热带黄道、本命、整宫/等宫、主要相位、行运、太阳返照、双盘与出生时间区间扫描 | 7 |
-| 紫微斗数 | 0.4 | 原生十二宫与星曜、四套十二神、四化、六层运限、查询、导入校验、结构解读与双盘比较 | 6 |
+| 紫微斗数 | 0.5 | 原生十二宫与星曜、古典庙旺表、四化与自化路径、可选真太阳时、六层运限、查询、校验、解读与双盘比较 | 6 |
 | Tarot | 0.2 | 原创文字版 78 张牌、七种牌阵、正逆位、组合摘要、同意后本地日记与描述统计 | 3 |
 | 六爻 | 0.2 | 八宫、世应、纳甲、六亲、六神、旬空、候选用神、显式强度因子与动变事实 | 2 |
 | 周易 | 0.2 | 可重放三钱起卦、64 卦、动爻与变卦、两种显式动爻策略、经典来源定位层 | 1 |
@@ -155,7 +155,7 @@ Get-ChildItem dist\*.zip | ForEach-Object {
 只安装一个 Skill：
 
 ```powershell
-Expand-Archive dist\ziwei-calculator-0.4.0.zip `
+Expand-Archive dist\ziwei-calculator-0.5.0.zip `
   -DestinationPath "$HOME\.codex\skills" -Force
 python -m pip install -r "$HOME\.codex\skills\ziwei-calculator\requirements.txt"
 ```
@@ -216,7 +216,7 @@ uv run python systems/iching/skills/iching-core/scripts/run.py `
 
 | Skill | 职责 |
 |---|---|
-| `bazi-calculator` | 从公历本地时间和 IANA 时区生成原生四柱事实 |
+| `bazi-calculator` | 从公历本地时间和 IANA 时区生成四柱、纳音、长生与季节状态，可显式选真太阳时 |
 | `bazi-reader` | 隔离导入外部 JSON 或明确的四柱文本 |
 | `bazi-validator` | 校验 Schema、边界、来源，并按路径比较外部盘 |
 | `bazi-core` | 只解释已验证的四柱、藏干、十神与支关系 |
@@ -240,9 +240,9 @@ uv run python systems/iching/skills/iching-core/scripts/run.py `
 
 | Skill | 职责 |
 |---|---|
-| `ziwei-calculator` | 项目原生 v0.4 本命盘，不调用或打包 iztro |
+| `ziwei-calculator` | 项目原生 v0.5 本命盘、古典庙旺表与显式真太阳时，不调用或打包 iztro |
 | `ziwei-reader` | 隔离读取结构化外部 JSON |
-| `ziwei-validator` | 比较宫位、星曜、流派和边界差异，不覆盖任一盘 |
+| `ziwei-validator` | 比较宫位、星曜、庙旺、自化、时间基础和流派差异，不覆盖任一盘 |
 | `ziwei-core` | 实验性宫星、空宫、三方四正与生年四化结构解读 |
 | `ziwei-timing` | 大限、小限、流年、流月、流日、流时结构层 |
 | `ziwei-synastry` | 方向性年干四化目标与对称同宫主星事实 |
@@ -308,14 +308,14 @@ source_id → rule_id → fact path → derived finding → report sentence
 |---|---:|
 | 体系 | 10 |
 | Skill | 30 |
-| 结构化规则 | 101 |
-| 来源清单 | 27 |
+| 结构化规则 | 107 |
+| 来源清单 | 29 |
 | 基线 Golden Cases | 255 |
 | 边界案例 | 68 |
 | 流派分歧案例 | 48 |
 | 错误输入案例 | 20 |
 | 扩展功能回放案例 | 850 |
-| pytest | 1497 passed |
+| pytest | 1518 passed |
 | 技术完整性 | 10/10 |
 
 完整验证：

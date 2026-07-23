@@ -6,7 +6,7 @@
   "status": "resolved_for_product",
   "positions": [
     {
-      "lineage": "project-native-ziwei-structural-v0.4",
+      "lineage": "project-native-ziwei-structural-v0.5",
       "summary": "Require explicit versioned policies and default to lunar-new-year, current-day late-Zi, and preserved leap-month numbering.",
       "rule_ids": [
         "ZIWEI-INPUT-POLICY-001"
@@ -33,7 +33,7 @@
     }
   ],
   "default_policy": {
-    "selected_lineage": "project-native-ziwei-structural-v0.4",
+    "selected_lineage": "project-native-ziwei-structural-v0.5",
     "rationale": "Explicit defaults make replay deterministic while retaining alternate policies as opt-in parameters.",
     "user_disclosure_required": true
   },

@@ -1,4 +1,4 @@
-# Bazi Skill suite v0.1 Model Card
+# Bazi Skill suite v0.2 Model Card
 
 Status: technical candidate; **not approved for production release**. The executable audit in `reviews/release.py` remains blocked until real domain, rights, and privacy reviewers sign the release record.
 
@@ -15,7 +15,7 @@ The suite converts a supported Gregorian local date/time and IANA time zone into
 
 ## Calculation and lineage scope
 
-The baseline uses exact Li Chun year change, 12 Jie month boundaries, IANA civil time, a default midnight day boundary with an explicit 23:00 alternative, no true-solar-time correction, explicit luck-cycle direction, and a three-days-per-year decimal start-age method. See `LINEAGE.md`, `SCOPE.md`, and `KNOWN_DISPUTES.md` for frozen decisions and alternatives.
+The baseline uses exact Li Chun year change, 12 Jie month boundaries, IANA civil time, a default midnight day boundary with an explicit 23:00 alternative, explicit luck-cycle direction, and a three-days-per-year decimal start-age method. Civil time is the default; callers may explicitly select the NOAA apparent-solar approximation with longitude. The calculation layer also emits fixed 纳音, ten-stem 十二长生, seasonal 旺相休囚死, and visible-element counts without treating them as strength or useful-god judgments. See `LINEAGE.md`, `SCOPE.md`, and `KNOWN_DISPUTES.md` for frozen decisions and alternatives.
 
 ## Data and sources
 
@@ -38,7 +38,7 @@ Run `pytest`, `ruff check .`, and `divination-validate .`. Run `python -m system
 
 - Solar-term instants inherit the pinned provider and its fixed UTC+08 interpretation.
 - The supported Gregorian window is 1900–2100; historical time-zone records can be approximate.
-- Coordinates are metadata only; true solar time is not implemented.
+- Apparent solar time is optional, approximate, and never selected implicitly; it is not an ephemeris-grade SPA implementation.
 - No gender-based luck direction is inferred.
 - Classical strength, structure, transformation, climate adjustment, useful-god, relationship, and event-timing modules are not approved.
 - Symbolic descriptions are not evidence of predictive validity. Synthetic fixtures cannot establish real-world accuracy.

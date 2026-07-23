@@ -20,13 +20,14 @@ RULES = [
     "ZIWEI-NATIVE-NATAL-001",
     "ZIWEI-TIME-INDEX-001",
     "ZIWEI-STAR-AUX-001",
+    "ZIWEI-STAR-BRIGHTNESS-001",
     "ZIWEI-CYCLE-DECADAL-001",
     "ZIWEI-STRUCTURAL-BOUNDARY-001",
 ]
 SOURCE_REFS = [
     {
         "source_id": "SRC-ZIWEI-PROJECT-SPEC-001",
-        "locator": "project-native structural calculation v0.4",
+        "locator": "project-native structural calculation v0.5",
     },
     {
         "source_id": "SRC-ZIWEI-QUANSHU-001",
@@ -81,7 +82,7 @@ def build_case(
         "forbidden_conclusions": [
             "A fixed life event is guaranteed.",
             "The calculation-gender parameter was inferred as identity.",
-            "A brightness value was invented.",
+            "A brightness value outside the selected classical matrix was invented.",
         ],
         "sources": SOURCE_REFS,
         "reviewers": [
@@ -145,19 +146,17 @@ def edge_cases() -> list[dict[str, Any]]:
         day = date(year, 2, min(28, index % 27 + 1))
         payload: dict[str, Any] = {
             "local_datetime": (
-                f"{day.isoformat()}T{23 if index % 2 else 0:02d}:"
-                f"{59 if index % 3 else 0:02d}:00"
+                f"{day.isoformat()}T{23 if index % 2 else 0:02d}:{59 if index % 3 else 0:02d}:00"
             ),
             "timezone": "Asia/Shanghai",
             "calculation_gender": "male" if index % 2 == 0 else "female",
             "late_zi_policy": "next_day" if index % 2 else "current_day",
-            "year_boundary": (
-                "spring_commences" if index % 3 == 0 else "lunar_new_year"
-            ),
-            "leap_month_policy": (
-                "split_after_15" if index % 5 == 0 else "preserve"
-            ),
+            "year_boundary": ("spring_commences" if index % 3 == 0 else "lunar_new_year"),
+            "leap_month_policy": ("split_after_15" if index % 5 == 0 else "preserve"),
         }
+        if index == 0:
+            payload["time_basis"] = "apparent_solar"
+            payload["longitude"] = 119.917
         cases.append(
             build_case(
                 case_id=f"CASE-ZIWEI-EDGE-BOUNDARY-{index + 1:03d}",

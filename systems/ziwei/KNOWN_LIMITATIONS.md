@@ -4,8 +4,10 @@
 - The catalog is deliberately bounded and is not a claim to include every named star in every school.
 - Birth minutes only determine the explicit double-hour block; minute-level star placement is not
   claimed.
-- True solar time and longitude correction are not applied.
-- Brightness tables are not implemented; every star records that absence explicitly.
+- Apparent solar time uses NOAA's compact approximation, not an ephemeris-grade SPA implementation,
+  and is never applied implicitly.
+- Brightness is limited to the selected classical 21-star matrix; no interpretive meaning is
+  inferred from a grade.
 - Dynamic rotations are project-native structural policies and still require independent comparison.
 - `ziwei-core` is experimental; expert candidate queues do not equal practitioner acceptance.
 - OCR/PDF reading, unrestricted pattern plugins, and cross-school normalization are not implemented.

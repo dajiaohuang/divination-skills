@@ -25,8 +25,14 @@ All notable project changes are recorded here. The project follows Semantic Vers
 - Project-native Ziwei foundation runtime; iztro is now an ignored comparison reference only.
 - Non-authoritative, user-supplied Ziwei and Bazi external-reference regression fixtures.
 - Bazi `break` and `half_harmony` structural branch-relation facts.
+- Optional NOAA apparent-solar calculation clocks for Bazi and Ziwei with explicit longitude.
+- Bazi 纳音, 十二长生, 旺相休囚死, and visible five-element calculation facts sourced to
+  《三命通会》.
+- Ziwei classical 21-star brightness matrix and auditable outward/inward self-transformation paths.
+- Authoritative-source implementation review and expanded 文墨天机/Bazi regression coverage.
 
 ### Fixed
 
 - Corrected the Ziwei 天府-group mirror formula in the 寅-based palace coordinate system.
 - Corrected Ziwei 月德 placement and separated year-based 年解 from month-based 解神.
+- Corrected the selected Ziwei 壬干 four-transformation mapping from 左辅化科 to 天府化科.

@@ -1,0 +1,34 @@
+{
+  "rule_id": "BAZI-FACT-NAYIN-001",
+  "title": "Map every sexagenary pillar to its fixed Nayin label",
+  "system": "bazi",
+  "lineage": "ziping-calculation-baseline",
+  "version": "0.2.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.pillars",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "bazi.nayin",
+      "output_path": "computed_facts.nayin.by_pillar",
+      "value": "sixty_jiazi_fixed_pair_table",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 705,
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-SANMING-001",
+      "locator": "卷一・總論納音及論納音取象",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-BAZI-STANDARD-001"
+  ]
+}

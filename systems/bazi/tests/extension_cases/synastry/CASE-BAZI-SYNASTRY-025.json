@@ -2,7 +2,7 @@
   "case_id": "CASE-BAZI-SYNASTRY-025",
   "category": "standard",
   "data_classification": "synthetic",
-  "expected_sha256": "4227fab03b83f4aba20139cec2de5852bbbf20883e4a8b281b33e4c3024e68f2",
+  "expected_sha256": "6b7771065bdbc42531c2f19d6606cbe1cb8fab688d19ea66ba6fa25941f0cafe",
   "input": {
     "chart_a": {
       "day_boundary": "midnight",

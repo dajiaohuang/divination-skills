@@ -31,7 +31,7 @@ vendored code, test fixture, or package dependency on those repositories.
 | Ephemeral defaults and log redaction | reading-session contract and privacy tests | passed |
 | Report-section selection without new rules | report-profile contract and `common/product_views.py` | passed |
 
-## M7–M9 — native Ziwei v0.4
+## M7–M9 plus source-backed extension — native Ziwei v0.5
 
 | Requirement | Evidence | Result |
 |---|---|---|
@@ -39,6 +39,7 @@ vendored code, test fixture, or package dependency on those repositories.
 | Extended star catalog and four twelve-stage cycles | `catalog.py`, `cycles.py`, structured rule files | passed |
 | Six dynamic scopes and shared timeline | `systems/ziwei/timing.py` | passed |
 | Palace/star/空宫/三方四正/四化 queries | `systems/ziwei/analyzer.py` | passed |
+| NOAA apparent solar time, classical brightness, and self-transformation provenance | `solar_time.py`, `star_catalog.py`, external regression | passed |
 | Reader, validator, core and synastry boundaries | six Ziwei Skills and supporting modules | passed |
 | 100 standard, 30 boundary, 20 dispute and 50 synastry replay cases | `systems/ziwei/tests/` | passed |
 | Independent upstream difference classification without dependency | ignored iztro reference plus native tests/package audit | passed |
@@ -107,14 +108,14 @@ Node.js or iztro runtime.
 ```text
 systems = 10
 skills = 30
-structured_rules = 101
-source_manifests = 27
+structured_rules = 107
+source_manifests = 29
 baseline_golden = 255
 edge_cases = 68
 dispute_cases = 48
 invalid_inputs = 20
 extension_replay_cases = 850
-pytest = 1497 passed
+pytest = 1518 passed
 technical_complete = 10 / 10
 ```
 

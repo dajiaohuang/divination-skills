@@ -1,6 +1,6 @@
 {
   "default_policy": {
-    "rationale": "No validated apparent-solar-time implementation exists in v0.1.",
+    "rationale": "Civil time remains the compatibility default; apparent solar time is an explicit, source-backed option when longitude is supplied.",
     "selected_lineage": "ziping-calculation-baseline",
     "user_disclosure_required": true
   },
@@ -24,17 +24,17 @@
       "summary": "Use historical local civil time from an IANA time zone."
     },
     {
-      "lineage": "apparent-solar-time",
+      "lineage": "apparent-solar-time-noaa",
       "rule_ids": [
         "BAZI-TIME-SOLAR-001"
       ],
       "sources": [
         {
-          "locator": "24 solar terms longitude table and 2024 calendar",
-          "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+          "locator": "General Solar Position Calculations, true solar time equations",
+          "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001"
         }
       ],
-      "summary": "Correct civil time using longitude and equation of time."
+      "summary": "Correct the calculation clock using longitude and NOAA's approximate equation of time while retaining the physical UTC instant."
     }
   ],
   "sources": [
@@ -47,13 +47,13 @@
       "source_id": "SRC-BAZI-LUNARPY-001"
     },
     {
-      "locator": "24 solar terms longitude table and 2024 calendar",
-      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+      "locator": "General Solar Position Calculations, true solar time equations",
+      "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001"
     }
   ],
   "status": "resolved_for_product",
   "system": "bazi",
   "title": "Civil time or apparent solar time",
   "topic": "time basis",
-  "user_disclosure": "Coordinates are recorded but do not change the v0.1 civil-time chart."
+  "user_disclosure": "Civil time is the default. Apparent solar time is applied only when explicitly selected with longitude, using the documented NOAA approximation."
 }

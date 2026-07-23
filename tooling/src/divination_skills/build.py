@@ -27,16 +27,16 @@ SYSTEM_RUNTIME_DEPENDENCIES = {
 }
 
 SYSTEM_SHARED_MODULES = {
-    "bazi": ("__init__.py", "rules.py", "time.py"),
+    "bazi": ("__init__.py", "rules.py", "solar_time.py", "time.py"),
     "iching": ("__init__.py",),
     "lenormand": ("__init__.py", "auditable_draw.py"),
-    "liuyao": ("__init__.py", "time.py"),
+    "liuyao": ("__init__.py", "solar_time.py", "time.py"),
     "numerology": ("__init__.py",),
-    "qimen": ("__init__.py", "time.py"),
+    "qimen": ("__init__.py", "solar_time.py", "time.py"),
     "runes": ("__init__.py", "auditable_draw.py"),
     "tarot": ("__init__.py",),
     "western_astrology": ("__init__.py", "time.py"),
-    "ziwei": ("__init__.py", "time.py"),
+    "ziwei": ("__init__.py", "solar_time.py", "time.py"),
 }
 
 SYSTEM_EXTERNAL_REQUIREMENTS = {

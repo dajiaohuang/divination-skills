@@ -19,6 +19,10 @@ SOURCE_HKO = {
     "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001",
     "locator": "24 solar terms longitude table and 2024 calendar",
 }
+SOURCE_NOAA = {
+    "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001",
+    "locator": "General Solar Position Calculations, true solar time equations",
+}
 SOURCE_TIME = {
     "source_id": "SRC-TIME-PYTHON-ZONEINFO-001",
     "locator": "ZoneInfo fold and transition behavior",
@@ -277,10 +281,11 @@ def generate_dispute_cases() -> None:
                 "local_datetime": "2024-01-01T12:00:00",
                 "timezone": "Asia/Shanghai",
                 "longitude": 87.62,
+                "time_basis": "apparent_solar",
             },
-            {"normalized_input": {"true_solar_time_applied": False}},
+            {"normalized_input": {"true_solar_time_applied": True}},
             ["BAZI-TIME-CIVIL-001", "BAZI-TIME-SOLAR-001"],
-            sources=[SOURCE_LUNAR, SOURCE_HKO],
+            sources=[SOURCE_LUNAR, SOURCE_NOAA],
             allowed_disagreements=[
                 {
                     "dispute_id": "DSP-BAZI-SOLAR-TIME-001",

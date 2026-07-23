@@ -15,7 +15,7 @@
   "expected_intermediate": {},
   "expected_output": {
     "normalized_input": {
-      "true_solar_time_applied": false
+      "true_solar_time_applied": true
     }
   },
   "forbidden_conclusions": [
@@ -34,6 +34,7 @@
   "raw_input": {
     "local_datetime": "2024-01-01T12:00:00",
     "longitude": 87.62,
+    "time_basis": "apparent_solar",
     "timezone": "Asia/Shanghai"
   },
   "reviewers": [
@@ -51,8 +52,8 @@
       "source_id": "SRC-BAZI-LUNARPY-001"
     },
     {
-      "locator": "24 solar terms longitude table and 2024 calendar",
-      "source_id": "SRC-ASTRONOMY-HKO-SOLAR-TERMS-001"
+      "locator": "General Solar Position Calculations, true solar time equations",
+      "source_id": "SRC-ASTRONOMY-NOAA-SOLAR-001"
     }
   ],
   "system": "bazi",

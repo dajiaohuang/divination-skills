@@ -1,6 +1,6 @@
 {
   "system": "ziwei",
-  "release": "0.4.0",
+  "release": "0.5.0",
   "signoffs": [
     {"role": "domain", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/ziwei/tests/golden", "systems/ziwei/tests/edge_cases", "systems/ziwei/tests/disputes", "systems/ziwei/cases/expert_candidates"], "notes": "Requires an independent Zi Wei Dou Shu practitioner to review the native foundation, dynamic policies, and experimental core candidates."},
     {"role": "rights", "status": "pending", "reviewer_id": null, "signed_at": null, "evidence": ["systems/ziwei/sources", "docs/policies/SOURCE_ACCEPTANCE.md"], "notes": "Requires an authorized reviewer to confirm production sources and that iztro remains reference-only."},

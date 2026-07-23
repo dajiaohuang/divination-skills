@@ -2,8 +2,8 @@
   "rule_id": "ZIWEI-SYNASTRY-DIRECTIONAL-001",
   "title": "Keep A-to-B and B-to-A cross-chart transformation facts directional",
   "system": "ziwei",
-  "lineage": "project-native-ziwei-structural-v0.4",
-  "version": "0.4.0",
+  "lineage": "project-native-ziwei-structural-v0.5",
+  "version": "0.5.0",
   "status": "proposed",
   "kind": "calculation",
   "conditions": [

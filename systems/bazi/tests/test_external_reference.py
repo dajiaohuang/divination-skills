@@ -29,6 +29,13 @@ def test_user_reference_matches_bazi_pillars_ten_gods_and_relations() -> None:
     assert {
         position: labels[0]["ten_god"] for position, labels in facts["ten_gods"]["hidden"].items()
     } == expected["primary_hidden_ten_gods"]
+    assert {
+        position: value["name"] for position, value in facts["nayin"]["by_pillar"].items()
+    } == expected["nayin_by_pillar"]
+    assert facts["growth_stages"]["day_master_by_pillar"] == expected["day_master_growth_stages"]
+    assert facts["growth_stages"]["pillar_self"] == expected["self_growth_stages"]
+    assert facts["seasonal_element_states"]["states"] == expected["seasonal_element_states"]
+    assert facts["visible_element_counts"]["counts"] == expected["visible_element_counts"]
     assert [
         {
             "type": relation["type"],
@@ -69,3 +76,20 @@ def test_reported_true_solar_time_is_not_silently_recalculated() -> None:
     assert {warning["code"] for warning in chart["validation"]["warnings"]} == {
         "coordinates_not_applied"
     }
+
+
+def test_noaa_apparent_solar_time_from_civil_input_preserves_external_pillars() -> None:
+    case = _load_case()
+    chart = calculate_chart(
+        {
+            **case["input"],
+            "local_datetime": "1999-09-15T19:05:00",
+            "time_basis": "apparent_solar",
+        }
+    )
+    assert chart["normalized_input"]["true_solar_time_applied"] is True
+    assert chart["normalized_input"]["calculation_datetime"].startswith("1999-09-15T19:09:")
+    assert {
+        position: pillar["ganzhi"]
+        for position, pillar in chart["computed_facts"]["pillars"].items()
+    } == case["expected"]["pillars"]

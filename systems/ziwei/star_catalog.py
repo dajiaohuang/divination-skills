@@ -10,6 +10,151 @@ from collections.abc import Iterable
 CLASSICAL_SOURCE_ID = "SRC-ZIWEI-QUANSHU-001"
 PROJECT_SOURCE_ID = "SRC-ZIWEI-PROJECT-SPEC-001"
 
+_BRIGHTNESS_GROUPS = {
+    "子": {
+        "庙": "天机天府太阴天相天梁破军禄存",
+        "旺": "武曲天同贪狼巨门七杀",
+        "得": "文昌文曲",
+        "平": "紫微廉贞",
+        "陷": "太阳擎羊火星铃星",
+    },
+    "丑": {
+        "庙": "紫微武曲天府太阴贪狼天相七杀文昌文曲擎羊陀罗",
+        "旺": "天梁破军",
+        "得": "火星铃星",
+        "利": "廉贞",
+        "不": "太阳天同巨门",
+        "陷": "天机",
+    },
+    "寅": {
+        "庙": "廉贞天府巨门天相天梁七杀禄存火星铃星",
+        "旺": "紫微太阳太阴",
+        "得": "天机武曲破军",
+        "利": "天同",
+        "平": "贪狼文曲",
+        "陷": "文昌陀罗",
+    },
+    "卯": {
+        "庙": "太阳巨门天梁禄存",
+        "旺": "紫微天机七杀文曲",
+        "得": "天府",
+        "利": "武曲贪狼文昌火星铃星",
+        "平": "天同廉贞",
+        "陷": "太阴天相破军擎羊",
+    },
+    "辰": {
+        "庙": "武曲天府贪狼天梁七杀擎羊陀罗",
+        "旺": "太阳破军",
+        "得": "紫微天相文昌文曲",
+        "利": "天机廉贞",
+        "平": "天同",
+        "陷": "太阴巨门火星铃星",
+    },
+    "巳": {
+        "庙": "天同文昌文曲禄存",
+        "旺": "紫微太阳巨门",
+        "得": "天府天相火星铃星",
+        "平": "天机武曲七杀破军",
+        "陷": "廉贞太阴贪狼天梁陀罗",
+    },
+    "午": {
+        "庙": "紫微天机天相天梁破军禄存火星铃星",
+        "旺": "太阳武曲天府贪狼巨门七杀",
+        "平": "廉贞",
+        "不": "太阴",
+        "陷": "天同文昌文曲擎羊",
+    },
+    "未": {
+        "庙": "紫微武曲天府贪狼七杀擎羊陀罗",
+        "旺": "天梁破军文曲",
+        "得": "太阳天相",
+        "利": "廉贞文昌火星铃星",
+        "不": "天同太阴巨门",
+        "陷": "天机",
+    },
+    "申": {
+        "庙": "廉贞巨门天相七杀禄存",
+        "旺": "紫微天同",
+        "得": "天机太阳武曲天府破军文昌文曲",
+        "利": "太阴",
+        "平": "贪狼",
+        "陷": "天梁陀罗火星铃星",
+    },
+    "酉": {
+        "庙": "巨门文昌文曲禄存",
+        "旺": "紫微天机天府太阴七杀",
+        "得": "天梁火星铃星",
+        "利": "武曲贪狼",
+        "平": "太阳天同廉贞",
+        "陷": "天相破军擎羊",
+    },
+    "戌": {
+        "庙": "武曲天府贪狼天梁七杀擎羊陀罗火星铃星",
+        "旺": "太阴破军",
+        "得": "紫微天相",
+        "利": "天机廉贞",
+        "平": "天同",
+        "不": "太阳",
+        "陷": "巨门文昌文曲",
+    },
+    "亥": {
+        "庙": "天同太阴禄存",
+        "旺": "紫微巨门文曲",
+        "得": "天府天相",
+        "利": "文昌火星铃星",
+        "平": "天机武曲七杀破军",
+        "陷": "太阳廉贞贪狼天梁陀罗",
+    },
+}
+
+# The source prints one-character star abbreviations in a matrix.  Expand each
+# row into an explicit star -> grade table once so runtime lookup remains
+# deterministic and reviewable.
+_BRIGHTNESS_STAR_NAMES = (
+    "紫微",
+    "天机",
+    "太阳",
+    "武曲",
+    "天同",
+    "廉贞",
+    "天府",
+    "太阴",
+    "贪狼",
+    "巨门",
+    "天相",
+    "天梁",
+    "七杀",
+    "破军",
+    "文昌",
+    "文曲",
+    "禄存",
+    "擎羊",
+    "陀罗",
+    "火星",
+    "铃星",
+)
+
+
+def _build_brightness_table() -> dict[str, dict[str, str]]:
+    table: dict[str, dict[str, str]] = {}
+    for branch, grades in _BRIGHTNESS_GROUPS.items():
+        table[branch] = {}
+        for grade, joined_names in grades.items():
+            for star_name in _BRIGHTNESS_STAR_NAMES:
+                if star_name in joined_names:
+                    table[branch][star_name] = grade
+    return table
+
+
+BRIGHTNESS_BY_BRANCH = _build_brightness_table()
+
+
+def brightness(name: str, branch: str) -> str | None:
+    """Return the classical 卷二 matrix grade when that star is tabulated."""
+
+    return BRIGHTNESS_BY_BRANCH.get(branch, {}).get(name)
+
+
 PALACE_BRANCHES = tuple("寅卯辰巳午未申酉戌亥子丑")
 BRANCH_INDEX = {branch: index for index, branch in enumerate(PALACE_BRANCHES)}
 

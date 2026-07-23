@@ -51,7 +51,8 @@
     "ziwei"
   ],
   "lineages": [
-    "project-native-ziwei-structural-v0.4"
+    "project-native-ziwei-structural-v0.4",
+    "project-native-ziwei-structural-v0.5"
   ],
   "quality": {
     "authority": "primary",

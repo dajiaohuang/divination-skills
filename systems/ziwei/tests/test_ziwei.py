@@ -9,6 +9,7 @@ import pytest
 from divination_skills.contracts import canonical_json
 
 from systems.ziwei.engine import ZiweiError, _time_index, calculate, structural_report
+from systems.ziwei.star_catalog import BRIGHTNESS_BY_BRANCH
 
 
 def golden_cases() -> list[dict]:
@@ -54,6 +55,23 @@ def test_chart_has_twelve_unique_palaces_and_star_facts() -> None:
         for star in palace[group]
     ]
     assert stars and all(star["fact_id"] and star["source_ids"] for star in stars)
+
+
+def test_classical_brightness_matrix_has_one_grade_per_possible_placement() -> None:
+    assert set(BRIGHTNESS_BY_BRANCH) == set("子丑寅卯辰巳午未申酉戌亥")
+    assert all(len(stars) == 20 for stars in BRIGHTNESS_BY_BRANCH.values())
+    assert {grade for stars in BRIGHTNESS_BY_BRANCH.values() for grade in stars.values()} == {
+        "庙",
+        "旺",
+        "得",
+        "利",
+        "平",
+        "不",
+        "陷",
+    }
+    assert hashlib.sha256(canonical_json(BRIGHTNESS_BY_BRANCH)).hexdigest() == (
+        "17e06cd41036f18b20fdddb7d13a6c63d8f5abc2074a08fd18bcd60b5a0e921f"
+    )
 
 
 def test_report_is_structural_and_immutable() -> None:
@@ -110,6 +128,28 @@ def test_report_is_structural_and_immutable() -> None:
                 "extra": 1,
             },
             "unknown_fields",
+        ),
+        (
+            {
+                "local_datetime": "2026-01-01T00:00:00",
+                "timezone": "Asia/Shanghai",
+                "calculation_gender": "male",
+                "time_basis": "apparent_solar",
+            },
+            "longitude_required",
+        ),
+        (
+            {
+                "calendar_type": "lunar",
+                "lunar_date": "2026-01-01",
+                "is_leap_month": False,
+                "time_index": 0,
+                "timezone": "Asia/Shanghai",
+                "calculation_gender": "male",
+                "time_basis": "apparent_solar",
+                "longitude": 120.0,
+            },
+            "solar_time_requires_solar_input",
         ),
     ],
 )

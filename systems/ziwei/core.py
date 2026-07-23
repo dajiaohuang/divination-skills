@@ -70,10 +70,7 @@ def analyze_core(chart: dict[str, Any], *, locale: str = "zh-Hans") -> dict[str,
                 ],
                 "limitations": [
                     "No fixed event is inferred from this structure.",
-                    (
-                        "Brightness is not interpreted because the selected lineage "
-                        "does not provide it."
-                    ),
+                    "Classical brightness is preserved as a fact but is not interpreted.",
                 ],
             }
         )
@@ -82,7 +79,7 @@ def analyze_core(chart: dict[str, Any], *, locale: str = "zh-Hans") -> dict[str,
     if chart["computed_facts"] != original:
         raise AssertionError("Core analysis must not mutate natal facts.")
     return {
-        "schema_version": "0.4.0",
+        "schema_version": "0.5.0",
         "status": "experimental",
         "system": "ziwei",
         "lineage": LINEAGE,

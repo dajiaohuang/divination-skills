@@ -56,12 +56,8 @@ def _layer(
                     "target_star_fact_id": match["star"]["fact_id"],
                     "target_palace_fact_id": match["palace_fact_id"],
                     "transformation": label,
-                    "self_transformation": match["palace_fact_id"]
-                    == target_palace["fact_id"],
-                    "fact_id": (
-                        f"{fact_id}.transformation."
-                        f"{len(transformations) + 1:03d}"
-                    ),
+                    "self_transformation": match["palace_fact_id"] == target_palace["fact_id"],
+                    "fact_id": (f"{fact_id}.transformation.{len(transformations) + 1:03d}"),
                     "rule_ids": ["ZIWEI-TRANSFORMATION-DYNAMIC-001"],
                     "source_ids": ["SRC-ZIWEI-PROJECT-SPEC-001"],
                 }
@@ -277,10 +273,7 @@ def calculate_timing(
         entries.insert(
             0,
             _entry(
-                entry_id=(
-                    f"TIME-ZIWEI-MAJOR-"
-                    f"{decadal_palace['decadal']['start_age']:03d}"
-                ),
+                entry_id=(f"TIME-ZIWEI-MAJOR-{decadal_palace['decadal']['start_age']:03d}"),
                 scope="major_period",
                 start=target.replace(
                     year=start_year,
@@ -318,7 +311,7 @@ def calculate_timing(
         "entries": entries,
     }
     return {
-        "schema_version": "0.4.0",
+        "schema_version": "0.5.0",
         "system": "ziwei",
         "lineage": LINEAGE,
         "target": {

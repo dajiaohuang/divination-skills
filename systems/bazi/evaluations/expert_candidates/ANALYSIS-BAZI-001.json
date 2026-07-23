@@ -1,7 +1,7 @@
 {
   "analysis_id": "ANALYSIS-BAZI-001",
   "case_id": "CASE-BAZI-STANDARD-001",
-  "computed_facts_sha256": "089d0bf93eb86f0a028a142465f5a9f5ccb6a857cc36afc05d9c6ca2acf8baba",
+  "computed_facts_sha256": "a41ce4956c12c5ada0e49dcfc1c8a83e01a9a6b001ace8f689038f3e310d2fa0",
   "data_classification": "synthetic",
   "reasoning_chain": [
     {

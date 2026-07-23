@@ -10,7 +10,9 @@
   "input": {
     "calculation_gender": "female",
     "calendar_type": "solar",
-    "local_datetime": "1999-09-15T19:09:00",
+    "local_datetime": "1999-09-15T19:05:00",
+    "longitude": 119.917,
+    "time_basis": "apparent_solar",
     "timezone": "Asia/Shanghai"
   },
   "reported_input": {
@@ -22,6 +24,53 @@
   "expected": {
     "body_palace_branch": "未",
     "body_ruler": "天同",
+    "brightness_by_branch": {
+      "丑": {
+        "天机": "陷"
+      },
+      "亥": {
+        "太阳": "陷"
+      },
+      "午": {
+        "天相": "庙",
+        "廉贞": "平",
+        "禄存": "庙"
+      },
+      "卯": {
+        "太阴": "陷"
+      },
+      "子": {
+        "文昌": "得",
+        "破军": "庙"
+      },
+      "寅": {
+        "天府": "庙",
+        "文曲": "平",
+        "紫微": "旺"
+      },
+      "巳": {
+        "巨门": "旺",
+        "陀罗": "陷"
+      },
+      "戌": {
+        "武曲": "庙"
+      },
+      "未": {
+        "天梁": "旺",
+        "擎羊": "庙",
+        "火星": "利"
+      },
+      "申": {
+        "七杀": "庙",
+        "铃星": "陷"
+      },
+      "辰": {
+        "贪狼": "庙"
+      },
+      "酉": {
+        "天同": "平"
+      }
+    },
     "cause_palace": "迁移",
     "decadal_by_branch": {
       "丑": [26, 35],
@@ -125,6 +174,62 @@
     },
     "soul_palace_branch": "亥",
     "soul_ruler": "巨门",
+    "self_transformations": [
+      {
+        "branch": "子",
+        "direction": "outward",
+        "star": "文昌",
+        "transformation": "科"
+      },
+      {
+        "branch": "丑",
+        "direction": "outward",
+        "star": "天机",
+        "transformation": "科"
+      },
+      {
+        "branch": "寅",
+        "direction": "inward",
+        "star": "紫微",
+        "transformation": "权"
+      },
+      {
+        "branch": "卯",
+        "direction": "outward",
+        "star": "太阴",
+        "transformation": "禄"
+      },
+      {
+        "branch": "卯",
+        "direction": "inward",
+        "star": "太阴",
+        "transformation": "科"
+      },
+      {
+        "branch": "辰",
+        "direction": "outward",
+        "star": "贪狼",
+        "transformation": "禄"
+      },
+      {
+        "branch": "午",
+        "direction": "inward",
+        "star": "廉贞",
+        "transformation": "忌"
+      },
+      {
+        "branch": "酉",
+        "direction": "inward",
+        "star": "天同",
+        "transformation": "权"
+      },
+      {
+        "branch": "戌",
+        "direction": "outward",
+        "star": "武曲",
+        "transformation": "科"
+      }
+    ],
     "time_label": "戌",
     "transformations": {
       "天梁": "科",
@@ -137,10 +242,15 @@
     "交友": "仆役"
   },
   "not_compared": [
-    "brightness",
-    "self_transformations",
     "annual_limits",
-    "small_stars_outside_the_project_catalog",
-    "true_solar_time_calculation"
+    "small_stars_outside_the_project_catalog"
+  ],
+  "known_lineage_differences": [
+    {
+      "field": "self_transformations.天府",
+      "project_value": "壬干天府化科，因此寅宫天府出现向心自化科",
+      "reference_value": "未标示",
+      "reason": "项目采用《紫微斗数全书》卷二壬干天府化科；参考应用显然采用另一套壬干化科表。"
+    }
   ]
 }

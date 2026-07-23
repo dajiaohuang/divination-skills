@@ -25,7 +25,10 @@
   },
   "usage_status": "production",
   "systems": ["ziwei"],
-  "lineages": ["project-native-ziwei-structural-v0.4"],
+  "lineages": [
+    "project-native-ziwei-structural-v0.4",
+    "project-native-ziwei-structural-v0.5"
+  ],
   "quality": {
     "authority": "community",
     "independence": "independent",

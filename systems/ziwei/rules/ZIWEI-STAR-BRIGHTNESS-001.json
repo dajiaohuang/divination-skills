@@ -1,0 +1,35 @@
+{
+  "rule_id": "ZIWEI-STAR-BRIGHTNESS-001",
+  "title": "Assign bounded classical star brightness by earthly branch",
+  "system": "ziwei",
+  "lineage": "project-native-ziwei-structural-v0.5",
+  "version": "0.5.0",
+  "status": "tested",
+  "kind": "calculation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.palaces",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "ziwei.star_brightness",
+      "output_path": "computed_facts.palaces.stars.brightness",
+      "value": "classical_volume_two_matrix_or_null",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 940,
+  "sources": [
+    {
+      "source_id": "SRC-ZIWEI-QUANSHU-001",
+      "locator": "卷二，诸星庙旺落陷表",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-ZIWEI-NATAL-001"
+  ],
+  "notes": "Only the 21 stars tabulated in the selected classical matrix can receive a value; structurally impossible placements and unlisted stars remain null."
+}

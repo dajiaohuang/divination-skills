@@ -42,8 +42,15 @@ def validate_chart(path: Path) -> list[str]:
     for source_id in chart.get("engine", {}).get("source_ids", []):
         if source_id not in known:
             errors.append(f"Unknown engine source_id: {source_id}")
-    if chart.get("normalized_input", {}).get("true_solar_time_applied") is not False:
-        errors.append("v0.1 chart must not claim true solar time was applied")
+    normalized = chart.get("normalized_input", {})
+    solar_applied = normalized.get("true_solar_time_applied")
+    correction = normalized.get("solar_time_correction")
+    if solar_applied and (
+        normalized.get("time_basis") != "apparent_solar" or not isinstance(correction, dict)
+    ):
+        errors.append("apparent-solar charts must include a traceable solar-time correction")
+    if not solar_applied and correction is not None:
+        errors.append("civil-time charts must not include a solar-time correction")
     return sorted(set(errors))
 
 

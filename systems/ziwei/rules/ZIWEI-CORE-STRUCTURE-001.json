@@ -2,8 +2,8 @@
   "rule_id": "ZIWEI-CORE-STRUCTURE-001",
   "title": "Explain only cited Ziwei structural relationships",
   "system": "ziwei",
-  "lineage": "project-native-ziwei-structural-v0.4",
-  "version": "0.4.0",
+  "lineage": "project-native-ziwei-structural-v0.5",
+  "version": "0.5.0",
   "status": "proposed",
   "kind": "interpretation",
   "conditions": [

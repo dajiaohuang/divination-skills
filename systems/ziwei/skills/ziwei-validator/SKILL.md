@@ -1,6 +1,6 @@
 ---
 name: ziwei-validator
-description: Validate or compare a structured Zi Wei Dou Shu chart against the project-native v0.4 calculation without overwriting either source. Use for 紫微斗数排盘校验, external JSON comparison, palace or star-placement diffs, lineage mismatch review, or reproducible validation reports. Do not invoke iztro, accept screenshots or PDFs, silently normalize another school, or turn differences into life claims.
+description: Validate or compare a structured Zi Wei Dou Shu chart against the project-native v0.5 calculation without overwriting either source. Use for 紫微斗数排盘校验, external JSON comparison, palace, star, brightness, self-transformation, or time-basis diffs, lineage mismatch review, or reproducible validation reports. Do not invoke iztro, accept screenshots or PDFs, silently normalize another school, or turn differences into life claims.
 ---
 
 # Ziwei validator

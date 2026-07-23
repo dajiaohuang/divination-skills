@@ -350,7 +350,7 @@
         "term_id": "ziwei.palace.siblings"
       }
     ],
-    "lineage": "project-native-ziwei-structural-v0.4",
+    "lineage": "project-native-ziwei-structural-v0.5",
     "locale": "zh-Hans",
     "palace_stem_transformation_paths": [
       {
@@ -808,8 +808,8 @@
           "SRC-ZIWEI-QUANSHU-001"
         ],
         "target_palace_fact_id": "ziwei.palace.003",
-        "target_star": "左辅",
-        "target_star_fact_id": "ziwei.palace.003.minorStars.002",
+        "target_star": "天府",
+        "target_star_fact_id": "ziwei.palace.003.majorStars.001",
         "transformation": "科"
       },
       {
@@ -1170,7 +1170,7 @@
         "transformation": "忌"
       }
     ],
-    "schema_version": "0.4.0",
+    "schema_version": "0.5.0",
     "sections": [
       {
         "fact_ids": [
@@ -1190,7 +1190,7 @@
         "label": "命宫",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1225,7 +1225,7 @@
         "label": "父母",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1257,7 +1257,7 @@
         "label": "福德",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1290,7 +1290,7 @@
         "label": "田宅",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1321,7 +1321,7 @@
         "label": "官禄",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1355,7 +1355,7 @@
         "label": "仆役",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1388,7 +1388,7 @@
         "label": "迁移",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1423,7 +1423,7 @@
         "label": "疾厄",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1457,7 +1457,7 @@
         "label": "财帛",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1489,7 +1489,7 @@
         "label": "子女",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1521,7 +1521,7 @@
         "label": "夫妻",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1552,7 +1552,7 @@
         "label": "兄弟",
         "limitations": [
           "No fixed event is inferred from this structure.",
-          "Brightness is not interpreted because the selected lineage does not provide it."
+          "Classical brightness is preserved as a fact but is not interpreted."
         ],
         "rule_ids": [
           "ZIWEI-CORE-STRUCTURE-001",
@@ -1651,7 +1651,7 @@
       ]
     }
   },
-  "lineage": "project-native-ziwei-structural-v0.4",
+  "lineage": "project-native-ziwei-structural-v0.5",
   "review": {
     "decision": "pending",
     "notes": "",

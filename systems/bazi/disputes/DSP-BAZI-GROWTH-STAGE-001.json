@@ -1,0 +1,51 @@
+{
+  "dispute_id": "DSP-BAZI-GROWTH-STAGE-001",
+  "title": "Ten-stem or five-element growth-stage direction",
+  "system": "bazi",
+  "topic": "twelve growth stages",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "ten-stem-yang-forward-yin-reverse",
+      "summary": "Treat every heavenly stem separately; Yang stems advance and Yin stems reverse from their documented growth branch.",
+      "rule_ids": [
+        "BAZI-FACT-GROWTH-STAGE-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-BAZI-SANMING-001",
+          "locator": "卷二・論天干陰陽生死"
+        }
+      ]
+    },
+    {
+      "lineage": "four-major-growth-cycles",
+      "summary": "Treat paired Yin/Yang stems as one element cycle; retained as an explicit classical alternative but not emitted by default.",
+      "rule_ids": [
+        "BAZI-FACT-GROWTH-STAGE-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-BAZI-SANMING-001",
+          "locator": "卷二・論天干陰陽生死末段所記四大長生之說"
+        }
+      ]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "ten-stem-yang-forward-yin-reverse",
+    "rationale": "The selected table reproduces the explicit ten-stem life/death sequence and the supplied external regression's 星运/自坐 labels.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Growth-stage labels use the ten-stem Yang-forward/Yin-reverse table; they are structural labels and do not determine strength or events.",
+  "sources": [
+    {
+      "source_id": "SRC-BAZI-SANMING-001",
+      "locator": "卷二・論天干陰陽生死"
+    },
+    {
+      "source_id": "SRC-BAZI-PROJECT-SPEC-001",
+      "locator": "systems/bazi/LINEAGE.md selected ten-stem policy"
+    }
+  ]
+}

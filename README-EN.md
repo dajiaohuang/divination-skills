@@ -105,9 +105,9 @@ Six shared contracts compose the systems:
 
 | System | Version | Implemented technical scope | Skills |
 |---|---:|---|---:|
-| Bazi | 0.2 | Four Pillars, solar terms, hidden stems, Ten Gods, branch relations, luck cycles, imports, timing, synastry facts, and double-hour scanning | 7 |
+| Bazi | 0.2 | Four Pillars, solar terms, apparent solar time, hidden stems, Ten Gods, Nayin, growth stages, seasonal states, relations, luck cycles, timing, and synastry | 7 |
 | Western astrology | 0.2 | Tropical natal charts, whole-sign/equal houses, major aspects, transits, solar returns, synastry, and time-interval scanning | 7 |
-| Ziwei Dou Shu | 0.4 | Native palaces/stars, four twelve-stage cycles, transformations, six timing scopes, queries, imports, structural core, and comparison | 6 |
+| Ziwei Dou Shu | 0.5 | Native palaces/stars, classical brightness, transformation paths, optional apparent solar time, six timing scopes, queries, validation, core, and comparison | 6 |
 | Tarot | 0.2 | Project-authored text deck, seven spreads, reversals, combination summaries, and consent-gated local journal statistics | 3 |
 | Liuyao | 0.2 | Eight palaces, Shi/Ying, Najia, Six Relations, Six Spirits, void branches, candidate useful-deity and explicit strength factors | 2 |
 | I Ching | 0.2 | Replayable three-coin casts, 64 hexagrams, moving/changed lines, two explicit selection policies, and source locators | 1 |
@@ -165,7 +165,7 @@ Get-ChildItem dist\*.zip | ForEach-Object {
 Install one package:
 
 ```powershell
-Expand-Archive dist\ziwei-calculator-0.4.0.zip `
+Expand-Archive dist\ziwei-calculator-0.5.0.zip `
   -DestinationPath "$HOME\.codex\skills" -Force
 python -m pip install -r "$HOME\.codex\skills\ziwei-calculator\requirements.txt"
 ```
@@ -228,7 +228,7 @@ time-policy input explicitly.
 
 | Skill | Responsibility |
 |---|---|
-| `bazi-calculator` | Produce native Four Pillars facts from Gregorian local time and IANA zone |
+| `bazi-calculator` | Produce Four Pillars, Nayin, growth-stage, and seasonal facts with an explicit apparent-solar option |
 | `bazi-reader` | Isolate untrusted JSON or explicit pillar-text imports |
 | `bazi-validator` | Validate schema/boundaries/provenance and compare external charts by path |
 | `bazi-core` | Explain only validated pillars, hidden stems, Ten Gods, and branch relations |
@@ -252,9 +252,9 @@ time-policy input explicitly.
 
 | Skill | Responsibility |
 |---|---|
-| `ziwei-calculator` | Project-native v0.4 natal structure with no iztro runtime |
+| `ziwei-calculator` | Project-native v0.5 natal structure, classical brightness, and explicit solar-time option with no iztro runtime |
 | `ziwei-reader` | Isolate structured external JSON |
-| `ziwei-validator` | Compare palace, star, lineage, and boundary differences without overwrites |
+| `ziwei-validator` | Compare palace, star, brightness, self-transformation, time-basis, and lineage differences without overwrites |
 | `ziwei-core` | Experimental palace/star/empty-palace/surrounded/transformation explanation |
 | `ziwei-timing` | Major, minor, annual, monthly, daily, and hourly structural layers |
 | `ziwei-synastry` | Directional year-stem transformation targets and symmetric shared-star facts |
@@ -323,14 +323,14 @@ Current automated snapshot:
 |---|---:|
 | Systems | 10 |
 | Skills | 30 |
-| Structured rules | 101 |
-| Source manifests | 27 |
+| Structured rules | 107 |
+| Source manifests | 29 |
 | Baseline Golden Cases | 255 |
 | Boundary cases | 68 |
 | Lineage-dispute cases | 48 |
 | Invalid-input cases | 20 |
 | Extension replay cases | 850 |
-| pytest | 1497 passed |
+| pytest | 1518 passed |
 | Technical completeness | 10/10 |
 
 Run the full verification suite:
