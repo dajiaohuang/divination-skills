@@ -18,6 +18,14 @@ SYSTEM_RUNTIME_DEPENDENCIES = {
     "iching": ("iching",),
     "lenormand": ("lenormand",),
     "liuyao": ("liuyao", "bazi", "iching"),
+    "multi_natal": (
+        "multi_natal",
+        "bazi",
+        "western_astrology",
+        "ziwei",
+        "vedic_astrology",
+        "numerology",
+    ),
     "numerology": ("numerology",),
     "qimen": ("qimen", "bazi"),
     "runes": ("runes",),
@@ -32,6 +40,7 @@ SYSTEM_SHARED_MODULES = {
     "iching": ("__init__.py",),
     "lenormand": ("__init__.py", "auditable_draw.py"),
     "liuyao": ("__init__.py", "solar_time.py", "time.py"),
+    "multi_natal": ("__init__.py", "rules.py", "solar_time.py", "time.py"),
     "numerology": ("__init__.py",),
     "qimen": ("__init__.py", "solar_time.py", "time.py"),
     "runes": ("__init__.py", "auditable_draw.py"),
@@ -52,6 +61,13 @@ SYSTEM_EXTERNAL_REQUIREMENTS = {
     "iching": {"python_packages": []},
     "lenormand": {"python_packages": []},
     "liuyao": {"python_packages": ["lunar_python==1.4.8", "tzdata==2026.3"]},
+    "multi_natal": {
+        "python_packages": [
+            "astronomy-engine==2.1.19",
+            "lunar_python==1.4.8",
+            "tzdata==2026.3",
+        ]
+    },
     "numerology": {"python_packages": []},
     "qimen": {"python_packages": ["lunar_python==1.4.8", "tzdata==2026.3"]},
     "runes": {"python_packages": []},

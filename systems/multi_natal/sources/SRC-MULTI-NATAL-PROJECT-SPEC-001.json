@@ -1,0 +1,73 @@
+{
+  "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+  "title": "Project-authored multi-natal orchestration and synthesis contract v0.1",
+  "creators": [
+    {
+      "name": "divination-skills contributors",
+      "role": "author"
+    }
+  ],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "0.1.0",
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/multi_natal/DATA_CONTRACT.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/multi_natal/LINEAGE.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/multi_natal/SCOPE.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "common/report-spec/AUDITABLE_REPORT.md",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "license": {
+    "identifier": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "project-owner-license-decision",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Project-authored orchestration contracts are released under Apache-2.0."
+  },
+  "usage_status": "production",
+  "systems": [
+    "multi-natal"
+  ],
+  "lineages": [
+    "cross-system-structural-bridge-v0.1"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Defines routing, audit, and non-equivalence policy; it does not validate any divination system empirically."
+  },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-MULTI-NATAL-PROJECT-SPEC-001.md",
+    "sha256": "f6c03a6ec91a4ea6f7fb83a47e774f19fe2e6e448f7c4e667067fd2eb4636afb"
+  }
+}

@@ -18,6 +18,7 @@ from divination_skills.contracts import (
 from divination_skills.validation import load_contract_schemas
 from jsonschema import Draft202012Validator, FormatChecker
 
+from systems.multi_natal.engine import calculate_natal_synthesis
 from systems.ziwei.engine import calculate as calculate_ziwei
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -157,21 +158,35 @@ def test_every_existing_system_golden_chart_can_be_wrapped_without_migration() -
     systems = sorted(
         path for path in (ROOT / "systems").iterdir() if (path / "skills").is_dir()
     )
-    assert len(systems) == 11
+    assert len(systems) == 12
     for system in systems:
         case_path = next(iter(sorted((system / "tests" / "golden").glob("*.json"))))
         case = load(case_path)
         chart = case["expected_output"]
-        if "computed_facts" not in chart and case["system"] == "ziwei":
-            chart = calculate_ziwei(case["raw_input"])
-        reference = legacy_chart_reference(chart, system=case["system"])
+        if case["system"] == "multi-natal":
+            result = calculate_natal_synthesis(case["raw_input"])
+            references = [
+                legacy_chart_reference(native_chart, system=native_system)
+                for native_system, native_chart in result["computed_facts"]["charts"].items()
+                if isinstance(native_chart, dict) and "computed_facts" in native_chart
+            ]
+            assert {reference["system"] for reference in references} >= {
+                "bazi",
+                "western-astrology",
+                "ziwei",
+                "vedic-astrology",
+            }
+        else:
+            if "computed_facts" not in chart and case["system"] == "ziwei":
+                chart = calculate_ziwei(case["raw_input"])
+            references = [legacy_chart_reference(chart, system=case["system"])]
         validate(
             "reading-session",
             build_reading_session(
                 data_classification="synthetic",
                 question_category="validation",
                 question_text=f"Wrap the existing {case['system']} chart.",
-                chart_refs=[reference],
+                chart_refs=references,
             ),
         )
 

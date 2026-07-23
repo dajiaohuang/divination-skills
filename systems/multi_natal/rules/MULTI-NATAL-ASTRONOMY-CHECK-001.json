@@ -1,0 +1,39 @@
+{
+  "rule_id": "MULTI-NATAL-ASTRONOMY-CHECK-001",
+  "title": "Cross-check retained tropical astronomy without comparing zodiac frames",
+  "system": "multi-natal",
+  "lineage": "cross-system-structural-bridge-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "validation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.charts.western-astrology",
+      "operator": "exists"
+    },
+    {
+      "fact_path": "computed_facts.charts.vedic-astrology",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "validation.tropical_coordinates",
+      "output_path": "computed_facts.cross_checks.tropical_astronomy.status",
+      "value": "consistent",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 95,
+  "sources": [
+    {
+      "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+      "locator": "KNOWN_DISPUTES.md zodiac frames",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-MULTI-NATAL-STANDARD-001",
+    "CASE-MULTI-NATAL-EDGE-DST-FOLD-001"
+  ]
+}

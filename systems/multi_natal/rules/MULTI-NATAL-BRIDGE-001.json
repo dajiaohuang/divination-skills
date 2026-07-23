@@ -1,0 +1,51 @@
+{
+  "rule_id": "MULTI-NATAL-BRIDGE-001",
+  "title": "Build non-equivalent structural navigation axes",
+  "system": "multi-natal",
+  "lineage": "cross-system-structural-bridge-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "interpretation",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.system_summaries",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "synthesis.structural_crosswalk",
+      "output_path": "computed_facts.synthesis_axes",
+      "value": "navigation_only",
+      "confidence": "low",
+      "explanation_template": "Display cited structures together without equivalence, recurrence scoring, or predictive claims."
+    }
+  ],
+  "exceptions": [
+    {
+      "when": [
+        {
+          "fact_path": "normalized_input.birthplace.resolution_source",
+          "operator": "absent"
+        }
+      ],
+      "effect": "skip",
+      "rationale": "An unresolved birth place invalidates time-sensitive cross-system routing."
+    }
+  ],
+  "priority": 70,
+  "sources": [
+    {
+      "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+      "locator": "LINEAGE.md required isolation",
+      "support_type": "direct"
+    }
+  ],
+  "disputes": [
+    "DSP-MULTI-NATAL-COMPARABILITY-001"
+  ],
+  "tests": [
+    "CASE-MULTI-NATAL-STANDARD-001",
+    "CASE-MULTI-NATAL-DISPUTE-TIME-BASIS-001"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "rule_id": "MULTI-NATAL-SUMMARY-001",
+  "title": "Select bounded headline facts from each native chart",
+  "system": "multi-natal",
+  "lineage": "cross-system-structural-bridge-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [
+    {
+      "fact_path": "computed_facts.charts",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "summary.per_system",
+      "output_path": "computed_facts.system_summaries",
+      "value": "source-fact-linked",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 90,
+  "sources": [
+    {
+      "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+      "locator": "SCOPE.md output boundary",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-MULTI-NATAL-STANDARD-001"
+  ]
+}

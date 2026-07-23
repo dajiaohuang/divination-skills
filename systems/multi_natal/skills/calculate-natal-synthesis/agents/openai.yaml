@@ -1,0 +1,4 @@
+interface:
+  display_name: "综合本命排盘"
+  short_description: "一次计算八字、西占、紫微、印度占星并生成可追溯结构综合"
+  default_prompt: "使用 $calculate-natal-synthesis，根据生日、出生时间和地点生成全部本命盘及有边界的综合。"

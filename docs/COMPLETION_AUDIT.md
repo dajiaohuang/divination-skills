@@ -111,9 +111,27 @@ judgments, copy modern guidebooks or deck art, or silently merge disputed method
 The implementation does not claim to cover all Jyotiṣa schools. Modern Jaimini and KP pages are
 reference-only corroboration and are excluded from installable packages.
 
+## M15 — multi-natal birth orchestration
+
+| Requirement | Evidence | Result |
+|---|---|---|
+| One confirmed birth profile | `systems/multi_natal/calculator/input.schema.json`, strict IANA zone/coordinate/location-source/gender validation | passed |
+| Native independent charts | Bazi, Western, Ziwei and Vedic engines run unchanged; optional numerology requires an explicit name and mapping | passed |
+| Shared-instant audit | all four core charts must normalize to one UTC instant or calculation fails | passed |
+| Astronomy audit | Western tropical and Vedic retained tropical Sun–Saturn/Ascendant coordinates agree within `1e-6°` | passed |
+| Lineage isolation | civil/apparent-solar, house, Ziwei boundary, Parāśarī/Jaimini/KP and numerology policies remain explicit | passed |
+| Bounded synthesis | five navigation axes retain source fact/rule IDs and prohibit equivalence, voting, recurrence or agreement scores | passed |
+| Replay evidence | one Golden, one DST-fold edge and one time-basis dispute case plus schema/failure/property tests | passed |
+| Standalone package | package contains required native project runtimes and pinned Python requirements with no external repository dependency | passed |
+| Expert acceptance | 3 pending domain-review records | pending |
+
+The orchestration layer is counted as a technical system directory, not as a twelfth divination
+tradition. It stores every native chart under its original system identity and never rewrites a
+school-specific fact into a universal prediction.
+
 ## Installable Skill artifacts
 
-The builder packages 34 Skills with fixed ZIP timestamps, directly installable pinned
+The builder packages 35 Skills with fixed ZIP timestamps, directly installable pinned
 `requirements.txt` files, SHA-256 sidecars, a per-file `CONTENT_MANIFEST.json`, an extracted-package
 verifier, Apache-2.0 license materials and third-party notices.
 
@@ -125,17 +143,17 @@ Node.js or iztro runtime.
 ## Automated evidence snapshot
 
 ```text
-systems = 11
-skills = 34
-structured_rules = 136
-source_manifests = 45
-baseline_golden = 263
-edge_cases = 73
-dispute_cases = 54
+technical_system_directories = 12
+skills = 35
+structured_rules = 141
+source_manifests = 47
+baseline_golden = 264
+edge_cases = 74
+dispute_cases = 55
 invalid_inputs = 20
 extension_replay_cases = 850
-pytest = 1563 passed
-technical_complete = 11 / 11
+pytest = 1573 passed
+technical_complete = 12 / 12
 ```
 
 ## Terminal release gate
@@ -143,11 +161,11 @@ technical_complete = 11 / 11
 Technical implementation is complete while formal release remains closed:
 
 ```text
-release_ready = 0 / 11
+release_ready = 0 / 12
 project_license_status = selected
 deployment_privacy_status = undecided
 bazi expert_accepted = 0 / 50
-extension domain-review cases accepted = 0 / 240
+extension domain-review cases accepted = 0 / 243
 ```
 
 `divination-build --release` enforces this gate before creating an output directory. Ordinary

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://divination-skills.local/schemas/multi-natal-output.schema.json",
+  "title": "Multi-natal synthesis output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "engine",
+    "raw_input",
+    "normalized_input",
+    "computed_facts",
+    "derived_findings",
+    "narrative",
+    "validation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "engine": {
+      "type": "object",
+      "required": [
+        "name",
+        "version",
+        "lineage",
+        "repository_dependencies",
+        "source_ids"
+      ],
+      "properties": {
+        "name": {
+          "const": "divination-skills-multi-natal"
+        },
+        "version": {
+          "const": "0.1.0"
+        },
+        "lineage": {
+          "const": "cross-system-structural-bridge-v0.1"
+        },
+        "repository_dependencies": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "source_ids": {
+          "type": "array",
+          "contains": {
+            "const": "SRC-MULTI-NATAL-PROJECT-SPEC-001"
+          }
+        }
+      }
+    },
+    "raw_input": {
+      "type": "object"
+    },
+    "normalized_input": {
+      "type": "object",
+      "required": [
+        "birth_date",
+        "birth_time",
+        "local_datetime",
+        "birthplace",
+        "calculation_gender",
+        "policies",
+        "included_systems"
+      ]
+    },
+    "computed_facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "charts",
+        "cross_checks",
+        "system_summaries",
+        "synthesis_axes"
+      ],
+      "properties": {
+        "charts": {
+          "type": "object",
+          "required": [
+            "bazi",
+            "western-astrology",
+            "ziwei",
+            "vedic-astrology"
+          ]
+        },
+        "cross_checks": {
+          "type": "object",
+          "required": [
+            "utc",
+            "tropical_astronomy"
+          ],
+          "properties": {
+            "utc": {
+              "type": "object",
+              "properties": {
+                "all_equal": {
+                  "const": true
+                }
+              }
+            },
+            "tropical_astronomy": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "const": "consistent"
+                }
+              }
+            }
+          }
+        },
+        "system_summaries": {
+          "type": "object",
+          "required": [
+            "bazi",
+            "western-astrology",
+            "ziwei",
+            "vedic-astrology"
+          ]
+        },
+        "synthesis_axes": {
+          "type": "array",
+          "minItems": 5,
+          "items": {
+            "type": "object",
+            "required": [
+              "axis_id",
+              "fact_id",
+              "observations",
+              "statement",
+              "rule_ids",
+              "dispute_ids"
+            ]
+          }
+        }
+      }
+    },
+    "derived_findings": {
+      "type": "array",
+      "minItems": 7
+    },
+    "narrative": {
+      "type": "object",
+      "required": [
+        "calculation_basis",
+        "system_summaries",
+        "cross_system_synthesis",
+        "limitations"
+      ]
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "valid_with_warnings"
+        }
+      }
+    }
+  }
+}

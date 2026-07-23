@@ -1,0 +1,26 @@
+{
+  "system": "multi_natal",
+  "release": "0.1.0",
+  "status": "pending",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "evidence": null,
+  "case_reviews": [
+    {
+      "case_id": "CASE-MULTI-NATAL-DISPUTE-TIME-BASIS-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-MULTI-NATAL-EDGE-DST-FOLD-001",
+      "decision": "pending",
+      "notes": ""
+    },
+    {
+      "case_id": "CASE-MULTI-NATAL-STANDARD-001",
+      "decision": "pending",
+      "notes": ""
+    }
+  ],
+  "notes": "Independent domain review has not yet been performed."
+}

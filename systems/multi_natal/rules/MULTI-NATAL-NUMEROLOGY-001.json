@@ -1,0 +1,35 @@
+{
+  "rule_id": "MULTI-NATAL-NUMEROLOGY-001",
+  "title": "Include numerology only with explicit name and mapping inputs",
+  "system": "multi-natal",
+  "lineage": "cross-system-structural-bridge-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [
+    {
+      "fact_path": "normalized_input.numerology_selected",
+      "operator": "eq",
+      "value": true
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "routing.optional_numerology",
+      "output_path": "computed_facts.charts.numerology",
+      "value": "explicit_mappings_only",
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 80,
+  "sources": [
+    {
+      "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+      "locator": "DATA_CONTRACT.md optional numerology",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-MULTI-NATAL-STANDARD-001"
+  ]
+}

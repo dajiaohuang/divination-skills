@@ -115,6 +115,7 @@ def test_all_system_skills_build_reproducibly(tmp_path: Path) -> None:
         "iching",
         "lenormand",
         "liuyao",
+        "multi-natal",
         "numerology",
         "qimen",
         "runes",
@@ -309,6 +310,40 @@ def test_all_built_skill_scripts_run_outside_the_repository(tmp_path: Path) -> N
         install_root / "numerology-core/scripts/calculate.py", str(numerology_input)
     )
     assert numerology["validation"]["status"] == "valid"
+
+    multi_natal_input = tmp_path / "multi-natal-input.json"
+    multi_natal_input.write_text(
+        json.dumps(
+            {
+                "birth_date": "2000-01-01",
+                "birth_time": "12:00",
+                "birthplace": {
+                    "name": "Greenwich, London, United Kingdom",
+                    "timezone": "UTC",
+                    "longitude": 0.0,
+                    "latitude": 51.4779,
+                    "resolution_source": "user_confirmed",
+                },
+                "calculation_gender": "male",
+            }
+        ),
+        encoding="utf-8",
+    )
+    multi_natal = _run_installed(
+        install_root / "calculate-natal-synthesis/scripts/calculate.py",
+        str(multi_natal_input),
+    )
+    assert multi_natal["computed_facts"]["cross_checks"]["utc"]["all_equal"] is True
+    assert (
+        multi_natal["computed_facts"]["cross_checks"]["tropical_astronomy"]["status"]
+        == "consistent"
+    )
+    assert set(multi_natal["computed_facts"]["charts"]) == {
+        "bazi",
+        "western-astrology",
+        "ziwei",
+        "vedic-astrology",
+    }
 
     tarot_input = tmp_path / "tarot-input.json"
     tarot_input.write_text(

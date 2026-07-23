@@ -1,0 +1,217 @@
+{
+  "case_id": "CASE-MULTI-NATAL-EDGE-DST-FOLD-001",
+  "title": "Ambiguous civil time resolved with explicit fold",
+  "system": "multi-natal",
+  "lineage": "cross-system-structural-bridge-v0.1",
+  "category": "edge_case",
+  "data_classification": "synthetic",
+  "subject": {
+    "pseudonymized": true,
+    "reliability_grade": "A"
+  },
+  "raw_input": {
+    "birth_date": "2021-11-07",
+    "birth_time": "01:30",
+    "birthplace": {
+      "name": "New York, New York, United States",
+      "timezone": "America/New_York",
+      "longitude": -74.006,
+      "latitude": 40.7128,
+      "resolution_source": "gazetteer",
+      "source_url": "https://www.naturalearthdata.com/"
+    },
+    "calculation_gender": "male",
+    "fold": 1
+  },
+  "normalized_input": {
+    "birth_date": "2021-11-07",
+    "birth_time": "01:30:00",
+    "local_datetime": "2021-11-07T01:30:00",
+    "birthplace": {
+      "name": "New York, New York, United States",
+      "timezone": "America/New_York",
+      "longitude": -74.006,
+      "latitude": 40.7128,
+      "resolution_source": "gazetteer",
+      "source_url": "https://www.naturalearthdata.com/"
+    },
+    "calculation_gender": "male",
+    "fold": 1,
+    "policies": {
+      "east_asian_time_basis": "civil",
+      "bazi_day_boundary": "midnight",
+      "bazi_luck_cycle_direction": null,
+      "western_house_system": "whole_sign",
+      "ziwei_year_boundary": "lunar_new_year",
+      "ziwei_late_zi_policy": "current_day",
+      "ziwei_leap_month_policy": "preserve",
+      "vedic_lineages": [
+        "parashari",
+        "jaimini",
+        "kp"
+      ],
+      "jaimini_karaka_policy": "seven"
+    },
+    "included_systems": [
+      "bazi",
+      "western-astrology",
+      "ziwei",
+      "vedic-astrology"
+    ],
+    "numerology_selected": false
+  },
+  "expected_intermediate": {
+    "utc_by_system": {
+      "bazi": "2021-11-07T06:30:00Z",
+      "western-astrology": "2021-11-07T06:30:00Z",
+      "ziwei": "2021-11-07T06:30:00Z",
+      "vedic-astrology": "2021-11-07T06:30:00Z"
+    },
+    "native_validation": {
+      "bazi": "valid",
+      "western-astrology": "valid",
+      "ziwei": "valid",
+      "vedic-astrology": "valid_with_warnings"
+    }
+  },
+  "expected_output": {
+    "included_systems": [
+      "bazi",
+      "western-astrology",
+      "ziwei",
+      "vedic-astrology"
+    ],
+    "system_summaries": {
+      "bazi": {
+        "fact_id": "multi-natal.summary.bazi",
+        "pillars": {
+          "year": "辛丑",
+          "month": "己亥",
+          "day": "己未",
+          "hour": "乙丑"
+        },
+        "day_master": {
+          "name": "己",
+          "element": "earth",
+          "polarity": "yin"
+        },
+        "source_fact_ids": [
+          "bazi.pillar.year",
+          "bazi.pillar.month",
+          "bazi.pillar.day",
+          "bazi.pillar.hour",
+          "bazi.day_master"
+        ],
+        "rule_ids": [
+          "MULTI-NATAL-SUMMARY-001"
+        ],
+        "source_ids": [
+          "SRC-MULTI-NATAL-PROJECT-SPEC-001"
+        ]
+      },
+      "western-astrology": {
+        "fact_id": "multi-natal.summary.western",
+        "sun_sign": "Scorpio",
+        "moon_sign": "Sagittarius",
+        "ascendant_sign": "Virgo",
+        "midheaven_sign": "Gemini",
+        "house_system": "whole_sign",
+        "source_fact_ids": [
+          "western.position.sun",
+          "western.position.moon",
+          "western.angle.ascendant",
+          "western.angle.midheaven"
+        ],
+        "rule_ids": [
+          "MULTI-NATAL-SUMMARY-001"
+        ],
+        "source_ids": [
+          "SRC-MULTI-NATAL-PROJECT-SPEC-001"
+        ]
+      },
+      "ziwei": {
+        "fact_id": "multi-natal.summary.ziwei",
+        "life_palace_branch": "戌",
+        "life_palace_major_stars": [
+          "武曲"
+        ],
+        "body_palace": "福德",
+        "body_palace_branch": "子",
+        "soul_ruler": "禄存",
+        "body_ruler": "天相",
+        "five_elements_class": "木三局",
+        "source_fact_ids": [
+          "ziwei.palace.008",
+          "ziwei.palace.010"
+        ],
+        "rule_ids": [
+          "MULTI-NATAL-SUMMARY-001"
+        ],
+        "source_ids": [
+          "SRC-MULTI-NATAL-PROJECT-SPEC-001"
+        ]
+      },
+      "vedic-astrology": {
+        "fact_id": "multi-natal.summary.vedic",
+        "lagna_sign": "Leo",
+        "sun_sign": "Libra",
+        "moon_sign": "Scorpio",
+        "moon_nakshatra": "Jyeshtha",
+        "moon_pada": 3,
+        "ayanamsha": "true_citra",
+        "selected_lineages": [
+          "jaimini",
+          "kp",
+          "parashari"
+        ],
+        "source_fact_ids": [
+          "vedic.angle.lagna",
+          "vedic.position.sun",
+          "vedic.position.moon"
+        ],
+        "rule_ids": [
+          "MULTI-NATAL-SUMMARY-001"
+        ],
+        "source_ids": [
+          "SRC-MULTI-NATAL-PROJECT-SPEC-001"
+        ]
+      }
+    },
+    "axis_ids": [
+      "core-identity",
+      "inner-reflection",
+      "vocation",
+      "relationships",
+      "resources"
+    ],
+    "utc_all_equal": true,
+    "astronomy_status": "consistent",
+    "maximum_astronomy_difference_degrees": 0.0
+  },
+  "must_match_rules": [
+    "MULTI-NATAL-ROUTING-001",
+    "MULTI-NATAL-ASTRONOMY-CHECK-001",
+    "MULTI-NATAL-BRIDGE-001"
+  ],
+  "allowed_disagreements": [],
+  "forbidden_conclusions": [
+    "Do not claim that different systems are equivalent.",
+    "Do not count symbolic recurrence as probability or proof.",
+    "Do not produce deterministic medical, legal, financial, safety, employment, or relationship outcomes."
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+      "locator": "systems/multi_natal/DATA_CONTRACT.md"
+    }
+  ],
+  "reviewers": [
+    {
+      "reviewer_id": "deterministic-fixture-generator",
+      "role": "calculation",
+      "reviewed_at": "2026-07-24",
+      "decision": "accepted",
+      "notes": "Generated by the committed native calculators; independent domain review remains pending."
+    }
+  ]
+}

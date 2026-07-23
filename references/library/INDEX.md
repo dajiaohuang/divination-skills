@@ -5,8 +5,8 @@ registered source manifest. It excludes `references/upstream/`, which remains
 an ignored collection of non-production comparison repositories.
 
 - Parser version: `1.0.1`
-- Registered sources: `45`
-- Sources without failed locators: `45`
+- Registered sources: `47`
+- Sources without failed locators: `47`
 - Sources with at least one failed locator: `0`
 
 | Source ID | Systems | Mode | Captures | Failed | Snapshot |
@@ -29,6 +29,8 @@ an ignored collection of non-production comparison repositories.
 | SRC-LENORMAND-PROJECT-SPEC-001 | lenormand | full | 1 | 0 | [Markdown](SRC-LENORMAND-PROJECT-SPEC-001.md) |
 | SRC-LIUYAO-PROJECT-SPEC-001 | liuyao | full | 1 | 0 | [Markdown](SRC-LIUYAO-PROJECT-SPEC-001.md) |
 | SRC-LIUYAO-ZENGSHAN-001 | liuyao | full | 1 | 0 | [Markdown](SRC-LIUYAO-ZENGSHAN-001.md) |
+| SRC-MULTI-NATAL-BRIDGE-POLICY-001 | multi-natal | full | 3 | 0 | [Markdown](SRC-MULTI-NATAL-BRIDGE-POLICY-001.md) |
+| SRC-MULTI-NATAL-PROJECT-SPEC-001 | multi-natal | full | 4 | 0 | [Markdown](SRC-MULTI-NATAL-PROJECT-SPEC-001.md) |
 | SRC-NUMEROLOGY-CHEIRO-001 | numerology | metadata | 1 | 0 | [Markdown](SRC-NUMEROLOGY-CHEIRO-001.md) |
 | SRC-NUMEROLOGY-PROJECT-SPEC-001 | numerology | full | 1 | 0 | [Markdown](SRC-NUMEROLOGY-PROJECT-SPEC-001.md) |
 | SRC-QIMEN-BAOJIAN-001 | qimen | full | 1 | 0 | [Markdown](SRC-QIMEN-BAOJIAN-001.md) |

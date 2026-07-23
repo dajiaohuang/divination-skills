@@ -1,0 +1,51 @@
+{
+  "dispute_id": "DSP-MULTI-NATAL-COMPARABILITY-001",
+  "title": "Do not treat cross-system structures as equivalent variables",
+  "system": "multi-natal",
+  "topic": "cross-system comparability",
+  "status": "resolved_for_product",
+  "positions": [
+    {
+      "lineage": "universal-convergence",
+      "summary": "Count similarly described placements across systems as confirmation of one conclusion.",
+      "rule_ids": [
+        "MULTI-NATAL-BRIDGE-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+          "locator": "Rejected recurrence-scoring approach"
+        }
+      ]
+    },
+    {
+      "lineage": "cross-system-structural-bridge-v0.1",
+      "summary": "Display independently calculated structures side by side without equivalence or agreement scoring.",
+      "rule_ids": [
+        "MULTI-NATAL-BRIDGE-001"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+          "locator": "LINEAGE.md required isolation"
+        }
+      ]
+    }
+  ],
+  "default_policy": {
+    "selected_lineage": "cross-system-structural-bridge-v0.1",
+    "rationale": "The repository has no validated universal ontology or empirical convergence model.",
+    "user_disclosure_required": true
+  },
+  "user_disclosure": "Facts grouped under one synthesis axis remain method-specific and are not votes for one prediction.",
+  "sources": [
+    {
+      "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+      "locator": "KNOWN_DISPUTES.md cross-system comparability"
+    },
+    {
+      "source_id": "SRC-MULTI-NATAL-BRIDGE-POLICY-001",
+      "locator": "KNOWN_DISPUTES.md non-equivalence policy"
+    }
+  ]
+}

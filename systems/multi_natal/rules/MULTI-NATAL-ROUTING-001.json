@@ -1,0 +1,41 @@
+{
+  "rule_id": "MULTI-NATAL-ROUTING-001",
+  "title": "Route one confirmed birth profile to independent native calculators",
+  "system": "multi-natal",
+  "lineage": "cross-system-structural-bridge-v0.1",
+  "version": "0.1.0",
+  "status": "tested",
+  "kind": "routing",
+  "conditions": [
+    {
+      "fact_path": "normalized_input.birthplace.resolution_source",
+      "operator": "exists"
+    }
+  ],
+  "conclusions": [
+    {
+      "finding_type": "routing.native_charts",
+      "output_path": "computed_facts.charts",
+      "value": [
+        "bazi",
+        "western-astrology",
+        "ziwei",
+        "vedic-astrology"
+      ],
+      "confidence": "deterministic"
+    }
+  ],
+  "priority": 100,
+  "sources": [
+    {
+      "source_id": "SRC-MULTI-NATAL-PROJECT-SPEC-001",
+      "locator": "DATA_CONTRACT.md required input and independent routing",
+      "support_type": "direct"
+    }
+  ],
+  "tests": [
+    "CASE-MULTI-NATAL-STANDARD-001",
+    "CASE-MULTI-NATAL-EDGE-DST-FOLD-001"
+  ],
+  "notes": "Native outputs are retained without overwriting or cross-lineage calculation."
+}

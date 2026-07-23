@@ -8,22 +8,22 @@
 
 [![CI](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![Systems](https://img.shields.io/badge/systems-11-6f42c1)](#体系能力)
-[![Skills](https://img.shields.io/badge/skills-34-8a2be2)](#34-个-skill)
-[![Rules](https://img.shields.io/badge/rules-136-0f766e)](#规则来源与可追溯性)
+[![Systems](https://img.shields.io/badge/systems-12-6f42c1)](#体系能力)
+[![Skills](https://img.shields.io/badge/skills-35-8a2be2)](#35-个-skill)
+[![Rules](https://img.shields.io/badge/rules-141-0f766e)](#规则来源与可追溯性)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 </div>
 
 ---
 
-`divination-skills` 不是一个把十一种占卜术塞进同一段 Prompt 的项目。它把每个体系拆成独立的计算器、导入器、验证器、时间层、双盘比较、解释层和安全边界，再用统一契约把它们组合起来。
+`divination-skills` 不是一个把十一种占卜术塞进同一段 Prompt 的项目。它把每个体系拆成独立的计算器、导入器、验证器、时间层、双盘比较、解释层和安全边界，再用统一契约把它们组合起来。当前仓库包含十一种占卜体系，以及一个只负责编排出生资料型体系的综合层。
 
-当前技术路线 M0–M14 已实现并通过自动化验收；正式生产发布仍保持关闭，等待真实领域、版权与部署隐私审核。
+当前技术路线 M0–M15 已实现并通过自动化验收；正式生产发布仍保持关闭，等待真实领域、版权与部署隐私审核。
 
 ```text
-technical_complete = 11 / 11
-release_ready = 0 / 11
+technical_complete = 12 / 12
+release_ready = 0 / 12
 ```
 
 ## 目录
@@ -33,7 +33,7 @@ release_ready = 0 / 11
 - [体系能力](#体系能力)
 - [安装](#安装)
 - [快速开始](#快速开始)
-- [34 个 Skill](#34-个-skill)
+- [35 个 Skill](#35-个-skill)
 - [规则、来源与可追溯性](#规则来源与可追溯性)
 - [测试与可复现构建](#测试与可复现构建)
 - [项目结构](#项目结构)
@@ -65,7 +65,8 @@ release_ready = 0 / 11
 
 ```mermaid
 flowchart LR
-    A["出生/事件/问题输入"] --> C["Calculator / Cast / Draw"]
+    A["出生/事件/问题输入"] --> O["Birth orchestrator"]
+    O --> C["Calculator / Cast / Draw"]
     B["外部 JSON / CSV"] --> R["Reader / Importer"]
     C --> V["Validator"]
     R --> V
@@ -96,6 +97,7 @@ flowchart LR
 
 | 体系 | 版本 | 当前技术范围 | Skill |
 |---|---:|---|---:|
+| 综合本命编排 | 0.1 | 一次确认出生日期、当地时间、IANA 时区、经纬度与排盘性别；独立运行八字、西占、紫微与印度占星，可选数字命理；校验统一 UTC 与共同热带天文坐标，再按五个导航轴并列事实 | 1 |
 | 八字 | 0.2 | 四柱、节气、真太阳时、藏干、十神、纳音、十二长生、旺相休囚死、支关系、大运、校验、时序与双盘事实 | 7 |
 | 西方占星 | 0.3 | 热带黄道、本命、整宫/等宫、主要相位、七传统星体无评分尊贵状态、行运、太阳返照、双盘与出生时间区间扫描 | 7 |
 | 印度占星 / Jyotiṣa | 0.1 | 真 Citra 恒星黄道、平均交点、D1 整宫、星宿/四足、D9、Vimśottarī 大运；Jaimini 七/八 kāraka、rāśi dṛṣṭi、ārūḍha；KP 星宿/Sub-lord 限定层 | 4 |
@@ -177,6 +179,10 @@ done
 安装 Skill 后，可以直接描述任务；Skill 的 frontmatter 会根据触发语义路由。
 
 ```text
+用 calculate-natal-synthesis 根据 1999-09-15 19:05、
+Asia/Shanghai、东经 119.917、北纬 30.0、女盘，一次生成
+八字、西方占星、紫微和印度占星，并做不混淆流派的结构综合。
+
 用 bazi-calculator 给我排四柱：1990-03-15 14:30，Asia/Shanghai。
 
 先用 western-natal 生成本命盘，再用 western-timing 查看
@@ -202,6 +208,10 @@ vedic-parashari、vedic-jaimini 或 vedic-kp 查看对应模块，
 uv run python systems/bazi/skills/bazi-calculator/scripts/calculate.py `
   systems/bazi/examples/sample-input.json
 
+# 综合本命（输入 JSON）
+uv run python systems/multi_natal/skills/calculate-natal-synthesis/scripts/calculate.py `
+  systems/multi_natal/examples/sample-input.json
+
 # 紫微
 uv run python systems/ziwei/skills/ziwei-calculator/scripts/run.py `
   --local-datetime 2000-01-01T12:00:00 `
@@ -215,7 +225,13 @@ uv run python systems/iching/skills/iching-core/scripts/run.py `
 
 每个入口支持 `--help`；确定性测试应显式传入种子或完整时间策略。
 
-## 34 个 Skill
+## 35 个 Skill
+
+### 综合本命
+
+| Skill | 职责 |
+|---|---|
+| `calculate-natal-synthesis` | 将一份已确认的出生资料路由到八字、西占、紫微和印度占星原生引擎；姓名存在时可加入两种数字映射；保留每套原生盘和流派边界，只做可追溯的结构并列 |
 
 ### 八字
 
@@ -320,17 +336,17 @@ source_id → rule_id → fact path → derived finding → report sentence
 
 | 指标 | 数量 / 状态 |
 |---|---:|
-| 体系 | 11 |
-| Skill | 34 |
-| 结构化规则 | 136 |
-| 来源清单 | 45 |
-| 基线 Golden Cases | 263 |
-| 边界案例 | 73 |
-| 流派分歧案例 | 54 |
+| 技术系统目录 | 12（十一种体系 + 一个综合编排层） |
+| Skill | 35 |
+| 结构化规则 | 141 |
+| 来源清单 | 47 |
+| 基线 Golden Cases | 264 |
+| 边界案例 | 74 |
+| 流派分歧案例 | 55 |
 | 错误输入案例 | 20 |
 | 扩展功能回放案例 | 850 |
-| pytest | 1563 passed |
-| 技术完整性 | 11/11 |
+| pytest | 1573 passed |
+| 技术完整性 | 12/12 |
 
 完整验证：
 
@@ -345,7 +361,7 @@ uv run divination-build . --system all --output dist
 构建测试会：
 
 - 连续构建两次并比较 ZIP 哈希；
-- 在仓库外解压全部 34 个包；
+- 在仓库外解压全部 35 个包；
 - 以隔离 Python 路径执行每个 Skill 的入口工作流；
 - 校验包内逐文件大小和 SHA-256；
 - 断言没有 `.git`、submodule、上游源码、`reference_only` 资料或 iztro/Node 运行时。
@@ -361,6 +377,7 @@ divination-skills/
 │   ├── evaluation/              # 发布复核协议
 │   └── deployment/              # fail-closed 部署隐私决策
 ├── systems/
+│   ├── multi_natal/            # 出生资料路由、原生盘保留与结构综合
 │   ├── bazi/
 │   ├── western_astrology/
 │   ├── ziwei/
@@ -404,17 +421,18 @@ Vedic clean-room 对照与缺口见
 技术完整不等于领域认可或生产授权。当前：
 
 ```text
-technical_complete = 11 / 11
-release_ready = 0 / 11
+technical_complete = 12 / 12
+release_ready = 0 / 12
 project_license_status = selected
 deployment_privacy_status = undecided
 bazi expert_accepted = 0 / 50
-extension domain-review cases accepted = 0 / 240
+extension domain-review cases accepted = 0 / 243
 ```
 
 主要边界：
 
 - 八字强弱、用神、格局和确定事件预测没有被包装成专家共识；
+- 综合本命只并列各体系结构，不把日主、行星、宫位、星曜或 kāraka 当成等价变量，也不按“重复出现”给结论打分；
 - 西方卜卦占星被评估为未来独立体系，没有混入本命模块；
 - Vedic 的 Parāśarī、Jaimini 与 KP 分开运行；KP v0.1 仅为 Stellar/Sub-lord 层；
 - 紫微解释与双盘规则仍是 experimental；

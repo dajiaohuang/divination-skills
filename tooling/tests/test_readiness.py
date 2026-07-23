@@ -31,8 +31,8 @@ def test_release_signoff_schema_rejects_machine_placeholder_acceptance() -> None
 def test_all_systems_are_technically_complete_but_fail_closed() -> None:
     report = audit_readiness(ROOT)
     assert report["summary"] == {
-        "system_count": 11,
-        "technical_complete": 11,
+        "system_count": 12,
+        "technical_complete": 12,
         "release_ready": 0,
         "project_license_status": "selected",
         "deployment_privacy_status": "undecided",

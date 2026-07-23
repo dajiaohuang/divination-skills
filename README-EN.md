@@ -8,9 +8,9 @@
 
 [![CI](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/dajiaohuang/divination-skills/actions/workflows/validate.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![Systems](https://img.shields.io/badge/systems-11-6f42c1)](#system-coverage)
-[![Skills](https://img.shields.io/badge/skills-34-8a2be2)](#the-34-skills)
-[![Rules](https://img.shields.io/badge/rules-136-0f766e)](#rules-sources-and-traceability)
+[![Systems](https://img.shields.io/badge/systems-12-6f42c1)](#system-coverage)
+[![Skills](https://img.shields.io/badge/skills-35-8a2be2)](#the-35-skills)
+[![Rules](https://img.shields.io/badge/rules-141-0f766e)](#rules-sources-and-traceability)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 </div>
@@ -20,14 +20,15 @@
 `divination-skills` does not place eleven divination systems inside one giant prompt. Each system has
 isolated calculation, import, validation, timing, comparison, interpretation, provenance, and
 safety boundaries. System-neutral contracts compose those parts without silently blending
-lineages.
+lineages. The repository now contains eleven divination systems plus one orchestration layer for
+systems that consume birth data.
 
-The M0–M14 technical roadmap is implemented and automatically verified. Formal production release
+The M0–M15 technical roadmap is implemented and automatically verified. Formal production release
 remains closed until real domain, rights, and deployment-privacy reviews are complete.
 
 ```text
-technical_complete = 11 / 11
-release_ready = 0 / 11
+technical_complete = 12 / 12
+release_ready = 0 / 12
 ```
 
 ## Contents
@@ -37,7 +38,7 @@ release_ready = 0 / 11
 - [System coverage](#system-coverage)
 - [Installation](#installation)
 - [Quick start](#quick-start)
-- [The 34 Skills](#the-34-skills)
+- [The 35 Skills](#the-35-skills)
 - [Rules, sources, and traceability](#rules-sources-and-traceability)
 - [Testing and reproducible packages](#testing-and-reproducible-packages)
 - [Repository layout](#repository-layout)
@@ -73,7 +74,8 @@ The resulting engineering constraints are:
 
 ```mermaid
 flowchart LR
-    A["Birth / event / question input"] --> C["Calculator / Cast / Draw"]
+    A["Birth / event / question input"] --> O["Birth orchestrator"]
+    O --> C["Calculator / Cast / Draw"]
     B["External JSON / CSV"] --> R["Reader / Importer"]
     C --> V["Validator"]
     R --> V
@@ -105,6 +107,7 @@ Six shared contracts compose the systems:
 
 | System | Version | Implemented technical scope | Skills |
 |---|---:|---|---:|
+| Multi-natal orchestration | 0.1 | Confirm birth date, local time, IANA zone, coordinates, and calculation gender once; independently run Bazi, Western, Ziwei, and Vedic charts with optional numerology; verify UTC and shared tropical astronomy before presenting five navigation axes | 1 |
 | Bazi | 0.2 | Four Pillars, solar terms, apparent solar time, hidden stems, Ten Gods, Nayin, growth stages, seasonal states, relations, luck cycles, timing, and synastry | 7 |
 | Western astrology | 0.3 | Tropical natal charts, whole-sign/equal houses, major aspects, unscored conditions for the seven traditional planets, transits, solar returns, synastry, and time-interval scanning | 7 |
 | Ziwei Dou Shu | 0.5 | Native palaces/stars, classical brightness, transformation paths, optional apparent solar time, six timing scopes, queries, validation, core, and comparison | 6 |
@@ -187,6 +190,11 @@ Skills without third-party Python dependencies contain an empty `requirements.tx
 Once installed, describe the task directly. Skill frontmatter provides semantic routing.
 
 ```text
+Use calculate-natal-synthesis with 1999-09-15 19:05,
+Asia/Shanghai, longitude 119.917, latitude 30.0, and female
+calculation gender. Produce Bazi, Western, Ziwei, and Vedic charts,
+then provide a structural synthesis without blending lineages.
+
 Use bazi-calculator to calculate a Four Pillars chart for
 1990-03-15 14:30 in Asia/Shanghai.
 
@@ -212,6 +220,10 @@ Repository-local CLI examples:
 uv run python systems/bazi/skills/bazi-calculator/scripts/calculate.py `
   systems/bazi/examples/sample-input.json
 
+# Multi-natal synthesis (input JSON)
+uv run python systems/multi_natal/skills/calculate-natal-synthesis/scripts/calculate.py `
+  systems/multi_natal/examples/sample-input.json
+
 # Ziwei
 uv run python systems/ziwei/skills/ziwei-calculator/scripts/run.py `
   --local-datetime 2000-01-01T12:00:00 `
@@ -226,7 +238,13 @@ uv run python systems/iching/skills/iching-core/scripts/run.py `
 Every entry point supports `--help`. Deterministic test workflows should provide a seed or complete
 time-policy input explicitly.
 
-## The 34 Skills
+## The 35 Skills
+
+### Multi-natal synthesis
+
+| Skill | Responsibility |
+|---|---|
+| `calculate-natal-synthesis` | Route one confirmed birth profile to native Bazi, Western, Ziwei, and Vedic engines; optionally add two name-number mappings; preserve every native chart and lineage boundary while producing a traceable structural crosswalk |
 
 ### Bazi
 
@@ -334,17 +352,17 @@ Current automated snapshot:
 
 | Metric | Count / state |
 |---|---:|
-| Systems | 11 |
-| Skills | 34 |
-| Structured rules | 136 |
-| Source manifests | 45 |
-| Baseline Golden Cases | 263 |
-| Boundary cases | 73 |
-| Lineage-dispute cases | 54 |
+| Technical system directories | 12 (eleven systems plus one orchestration layer) |
+| Skills | 35 |
+| Structured rules | 141 |
+| Source manifests | 47 |
+| Baseline Golden Cases | 264 |
+| Boundary cases | 74 |
+| Lineage-dispute cases | 55 |
 | Invalid-input cases | 20 |
 | Extension replay cases | 850 |
-| pytest | 1563 passed |
-| Technical completeness | 11/11 |
+| pytest | 1573 passed |
+| Technical completeness | 12/12 |
 
 Run the full verification suite:
 
@@ -359,7 +377,7 @@ uv run divination-build . --system all --output dist
 Package tests:
 
 - build every ZIP twice and compare hashes;
-- extract all 34 packages outside the repository;
+- extract all 35 packages outside the repository;
 - run every Skill entry workflow with isolated Python-path handling;
 - verify per-file sizes and SHA-256 values;
 - reject `.git`, submodules, upstream source, `reference_only` content, and iztro/Node runtime.
@@ -375,6 +393,7 @@ divination-skills/
 │   ├── evaluation/              # Release-review protocol
 │   └── deployment/              # Fail-closed deployment privacy decision
 ├── systems/
+│   ├── multi_natal/            # Birth routing, native charts, structural synthesis
 │   ├── bazi/
 │   ├── western_astrology/
 │   ├── ziwei/
@@ -422,17 +441,19 @@ in [the Vedic implementation audit](docs/VEDIC_IMPLEMENTATION_AUDIT.md) and
 Technical completeness is not domain acceptance or production authorization:
 
 ```text
-technical_complete = 11 / 11
-release_ready = 0 / 11
+technical_complete = 12 / 12
+release_ready = 0 / 12
 project_license_status = selected
 deployment_privacy_status = undecided
 bazi expert_accepted = 0 / 50
-extension domain-review cases accepted = 0 / 240
+extension domain-review cases accepted = 0 / 243
 ```
 
 Important boundaries:
 
 - Bazi strength/useful-god/structure and deterministic event claims are not presented as consensus;
+- multi-natal output only juxtaposes structures; it does not equate Day Masters, planets, palaces,
+  stars, or karakas, and it never scores repeated symbols as confirmation;
 - Western horary was assessed as a future independent system, not merged into natal astrology;
 - Ziwei interpretation and synastry remain experimental;
 - Vedic Parashari, Jaimini, and KP calculations remain isolated; KP v0.1 stops at the stellar

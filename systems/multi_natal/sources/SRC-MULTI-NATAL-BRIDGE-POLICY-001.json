@@ -1,0 +1,68 @@
+{
+  "source_id": "SRC-MULTI-NATAL-BRIDGE-POLICY-001",
+  "title": "Project-authored cross-system structural bridge policy v0.1",
+  "creators": [
+    {
+      "name": "divination-skills contributors",
+      "role": "author"
+    }
+  ],
+  "source_type": "standard",
+  "language": "en",
+  "edition_or_version": "0.1.0",
+  "locators": [
+    {
+      "kind": "local",
+      "value": "systems/multi_natal/KNOWN_DISPUTES.md",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/multi_natal/rules/MULTI-NATAL-BRIDGE-001.json",
+      "stable": true
+    },
+    {
+      "kind": "local",
+      "value": "systems/multi_natal/KNOWN_LIMITATIONS.md",
+      "stable": true
+    }
+  ],
+  "retrieved_at": "2026-07-24",
+  "license": {
+    "identifier": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "text_available": true,
+    "additional_terms": false
+  },
+  "rights": {
+    "commercial_use": "allowed",
+    "derivative_use": "allowed",
+    "translation": "allowed",
+    "images": "not_applicable",
+    "dataset": "allowed"
+  },
+  "rights_review": {
+    "status": "accepted",
+    "reviewer": "project-owner-license-decision",
+    "reviewed_at": "2026-07-24",
+    "evidence": "Project-authored bridge policy is released under Apache-2.0."
+  },
+  "usage_status": "production",
+  "systems": [
+    "multi-natal"
+  ],
+  "lineages": [
+    "cross-system-structural-bridge-v0.1"
+  ],
+  "quality": {
+    "authority": "primary",
+    "independence": "independent",
+    "reliability": "medium",
+    "notes": "Defines the product's non-equivalence policy; it does not establish empirical convergence among divination systems."
+  },
+  "local_snapshot": {
+    "retained": true,
+    "path": "references/library/SRC-MULTI-NATAL-BRIDGE-POLICY-001.md",
+    "sha256": "aa1065336c2c01e5e25d07fa4509a816d560394601af304641191d0feb378de4"
+  }
+}
