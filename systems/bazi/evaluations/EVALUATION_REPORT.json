@@ -18,7 +18,7 @@
     "locators": [
       "systems/bazi/tests/golden"
     ],
-    "sha256": "cd456e77b7f9d2bc368132395e3737f61c76eb4f578ea4ef0bfb23564c7101b5"
+    "sha256": "dcdfa866ac91bd59ca5cc391e687c4b1f1b08a5d2192e66c77641dfd26c35245"
   },
   "generated_by": "systems.bazi.evaluations.run_evaluation:v0.1.0",
   "layers": {

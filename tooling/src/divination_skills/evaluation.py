@@ -19,7 +19,8 @@ def corpus_sha256(paths: list[Path]) -> str:
     for path in sorted(paths):
         digest.update(path.name.encode("utf-8"))
         digest.update(b"\x00")
-        digest.update(path.read_bytes())
+        value = json.loads(path.read_text(encoding="utf-8"))
+        digest.update(canonical_json(value))
         digest.update(b"\x00")
     return digest.hexdigest()
 
